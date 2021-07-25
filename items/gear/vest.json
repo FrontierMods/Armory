@@ -1,0 +1,43 @@
+[
+
+	{
+	
+		"//TODO": "statify",
+		"//TODO2": "override default vests? (if reasonable)",
+	
+		"id": "vest_molle",
+		"copy-from": "ballistic_vest_empty",
+		"type": "ARMOR",
+		
+		"name": {
+		
+			"str": "MOLLE modular vest"
+		
+		},
+		"description": "TBD",
+		
+		"//source": "https://tacticalworldstore.com/products/modular-rapid-assault-tactical-vest",
+		
+		"max_encumbrance": 24,
+		
+		"pocket_data": [
+		
+			{
+			
+				"//": "chest plate",
+			
+				"pocket_type": "CONTAINER",
+				
+				"//max_contains_volume": "calculated from dimensions of source item, with 4cm of depth, since there's no way to account for the surface area alone",
+				"max_contains_volume": "9 L",
+				"max_contains_weight": "20 kg",
+				
+				"flag_restriction": [ "MOLLE_GEAR" ]
+				
+			}
+		
+		]
+		
+	}
+
+]

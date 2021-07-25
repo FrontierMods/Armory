@@ -1,0 +1,230 @@
+[
+
+	{
+	
+		"abstract": "molle_gear",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"name": { "str": "MOLLE gear" },
+		"description": "TBD",
+		
+		"material": [ "cotton" ],
+		
+		"symbol": "+",
+		"color": "light_blue",
+		
+		"weight": "100 g",
+		"volume": "1 L",
+		"longest_side": "20 cm",
+		
+		"flags": [ "MOLLE_GEAR" ]
+	
+	},
+	
+	{
+	
+		"id": "molle_holster",
+		"copy-from": "molle_gear",
+		"type": "GENERIC",
+		"category": "armor",
+
+		
+		"name": { "str": "MOLLE holster" },
+		"description": "TBD",
+		
+		"volume": "750 ml",
+		"longest_side": "20 cm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_contains_volume": "1000 ml",
+				"max_contains_weight": "2 kg",
+				"min_item_volume": "300 ml",				
+				"max_item_length": "30 cm",
+				
+				"//magazine_well": "350 baseline + 400 leeway for MOLLE system",
+				"magazine_well": "750 ml",
+				
+				"holster": true,
+				"rigid": true,
+				
+				"moves": 50
+				
+			}
+			
+		],
+		
+		"use_action": { "type": "holster" }
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_rifle_large",
+		"copy-from": "molle_gear",
+		"type": "GENERIC",
+		"category": "armor",
+
+		
+		"name": { "str": "MOLLE rifle magazine pouch" },
+		"description": "TBD",
+		
+		"volume": "1350 ml",
+		"longest_side": "24 cm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "175 leeway for the mag sticking out",
+				"magazine_well": "175 ml",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+			},
+			
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "175 leeway for the mag sticking out",
+				"magazine_well": "175 ml",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+			},
+			
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "175 leeway for the mag sticking out",
+				"magazine_well": "175 ml",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_rifle_single",
+		"copy-from": "molle_gear",
+		"type": "GENERIC",
+		"category": "armor",
+
+		
+		"name": { "str": "MOLLE rifle magazine pocket" },
+		"description": "TBD",
+		
+		"volume": "650 ml",
+		"longest_side": "24 cm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "175 leeway for the mag sticking out",
+				"magazine_well": "175 ml",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_drum",
+		"copy-from": "molle_gear",
+		"type": "GENERIC",
+		"category": "armor",
+
+		
+		"name": { "str": "MOLLE drum magazine pocket" },
+		"description": "TBD",
+		
+		"volume": "1500 ml",
+		"longest_side": "24 cm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "300 mm",
+				"max_contains_volume": "1500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "250 leeway for the mag sticking out",
+				"magazine_well": "250 ml",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MAG_COMPACT", "MAG_BULKY" ]
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	}
+
+]
