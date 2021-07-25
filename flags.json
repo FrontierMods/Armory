@@ -1,0 +1,14 @@
+[
+
+	{
+	
+		"id": "MOLLE_GEAR",
+		"type": "json_flag",
+		
+		"context": [ "ARMOR", "TOOL_ARMOR", "GENERIC" ],
+		
+		"info": "This item is part of the <info>MOLLE gear system</info>.  It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack."
+		
+	}
+
+]
