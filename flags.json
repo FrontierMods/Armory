@@ -2,7 +2,7 @@
 
 	{
 	
-		"id": "MOLLE_GEAR",
+		"id": "MOLLE_POUCH",
 		"type": "json_flag",
 		
 		"context": [ "ARMOR", "TOOL_ARMOR", "GENERIC" ],
