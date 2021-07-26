@@ -1,0 +1,71 @@
+[
+
+	{
+	
+		"id": "vest_molle",
+		"copy-from": "ballistic_vest_empty",
+		"type": "ARMOR",
+		
+		"name": {
+		
+			"str": "MOLLE modular vest"
+		
+		},
+		"description": "TBD",
+		
+		"//source": "https://tacticalworldstore.com/products/modular-rapid-assault-tactical-vest",
+		
+		"max_encumbrance": 24,
+		
+		"pocket_data": [
+		
+			{
+			
+				"//": "front MOLLE patches",
+			
+				"pocket_type": "CONTAINER",
+				
+				"//dimensions": "300 × 750 mm",
+				
+				"//max_contains_volume": "calculated from dimensions of source item, with the default assumption of 40mm of depth for many common pouches, since there's no way to account for the surface area alone",
+				"max_contains_volume": "9 L",
+				"max_contains_weight": "20 kg",
+				
+				"flag_restriction": [ "MOLLE_POUCH" ]
+				
+			},
+			
+			{
+			
+				"//": "full-height admin pouch",
+			
+				"pocket_type": "CONTAINER",
+				
+				"//max_contains_volume": "should be thickness, but that's not an option either :(",
+				"max_contains_volume": "1 L",
+				"max_contains_weight": "1 kg",
+				
+				"flag_restriction": [ "PAPER_FILE_SIZED" ]
+				
+			},
+			
+			{
+			
+				"//": "small chest pocket for cards and IDs",
+			
+				"pocket_type": "CONTAINER",
+				
+				"//max_contains_volume": "ISO/IEC_7810 ID-1, the most common format for both credit cards and IDs, has dimensions of 85.6 × 53.98 mm, with thickness of 0.76 mm; this pocket is designed to accomodate 5 cards",
+				"max_contains_volume": "20 ml",
+				"max_contains_weight": "100 g",
+				"max_item_length":     "86 mm",
+				
+				"flag_restriction": [ "CARD_STANDARD" ]
+				
+			}
+		
+		]
+		
+	}
+
+]
