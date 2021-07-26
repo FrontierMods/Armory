@@ -1,0 +1,142 @@
+[
+
+	{
+	
+		"type": "GENERIC",
+		"id": "id_science",
+		"copy-from": "id_science",
+		
+		"//weight": "average weight of many US credit cards, presumably including RFID chips",
+		"weight": "5 g",
+		"//volume": "rounded up from 3.5 ml; volume from dimensions, without minor trimming for rounded corners"
+		"//dimensions": "85.6 × 53.98 × 0.76, as per the ISO/IEC_7810 ID-1 standard",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "id_military",
+		"copy-from": "id_military",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "id_industrial",
+		"copy-from": "id_industrial",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "cash_card",
+		"copy-from": "cash_card",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "gasdiscount_silver",
+		"copy-from": "gasdiscount_silver",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "gasdiscount_gold",
+		"copy-from": "gasdiscount_gold",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "gasdiscount_platinum",
+		"copy-from": "gasdiscount_platinum",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
+		"id": "fp_loyalty_card",
+		"copy-from": "fp_loyalty_card",
+		
+		"weight": "5 g",
+		"volume": "4 ml",
+		
+		"extend": {
+		
+			"flags": [ "CARD_STANDARD" ]
+		
+		}
+	
+	}
+
+]

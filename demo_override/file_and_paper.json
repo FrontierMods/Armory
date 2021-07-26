@@ -1,0 +1,279 @@
+[
+
+	{
+
+
+			"type": "GENERIC",
+			"id": "labmap",
+			"copy-from": "labmap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "militarymap",
+			"copy-from": "militarymap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "survivormap",
+			"copy-from": "survivormap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "roadmap",
+			"copy-from": "roadmap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "subwaymap",
+			"copy-from": "subwaymap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "trailmap",
+			"copy-from": "trailmap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "touristmap",
+			"copy-from": "touristmap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "restaurantmap",
+			"copy-from": "restaurantmap",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "character_sheet",
+			"copy-from": "character_sheet",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "BOOK",
+			"id": "mag_comic",
+			"copy-from": "mag_comic",
+			
+			"//weight": "from weight of an average DC 36-page comic",
+			"weight": "51 ml",
+			"//volume": "from dimensions",
+			"//dimensions": "260 × 170 × 2 mm; just about standard modern comic book size",
+			"volume": "85 ml",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "newest_newspaper",
+			"copy-from": "newest_newspaper",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "many_years_old_newspaper",
+			"copy-from": "many_years_old_newspaper",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "years_old_newspaper",
+			"copy-from": "years_old_newspaper",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "one_year_old_newspaper",
+			"copy-from": "one_year_old_newspaper",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "months_old_newspaper",
+			"copy-from": "months_old_newspaper",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "weeks_old_newspaper",
+			"copy-from": "weeks_old_newspaper",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "necropolis_leaflet",
+			"copy-from": "necropolis_leaflet",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	},
+	
+	{
+
+
+			"type": "GENERIC",
+			"id": "evac_pamphlet",
+			"copy-from": "evac_pamphlet",
+			
+			"extend": {
+			
+				"flags": [ "PAPER_FILE_SIZED" ] 
+			
+			}
+
+	}
+
+]
