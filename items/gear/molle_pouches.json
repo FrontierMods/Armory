@@ -77,6 +77,8 @@
 		"type": "GENERIC",
 		"category": "armor",
 
+		"//source": "https://www.spartanarmorsystems.com/condor-kangaroo-triple-mag-pouch/",
+		"//source_note": "sans front pistol mag pockets",
 		
 		"name": { "str": "MOLLE Kangaroo 3x rifle magazine pouch" },
 		"description": "TBD",
