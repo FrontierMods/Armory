@@ -29,7 +29,7 @@
 		"name": { "str": "MOLLE patch, plastic" },
 		"description": "some sort of decorative patch made of plastic",
 		
-		"material": [ "plastic" ],
+		"material": [ "plastic" ]
 	
 	},
 	
@@ -42,7 +42,7 @@
 		"name": { "str": "MOLLE patch, embroidery" },
 		"description": "some sort of decorative patch made of woven cotton",
 		
-		"material": [ "cotton" ],
+		"material": [ "cotton" ]
 	
 	},
 	
@@ -55,7 +55,7 @@
 		"name": { "str": "MOLLE patch, leather" },
 		"description": "some sort of decorative patch made of leather",
 		
-		"material": [ "leather" ],
+		"material": [ "leather" ]
 	
 	},
 	
