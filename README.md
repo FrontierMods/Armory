@@ -13,6 +13,8 @@ In particular, it adds a modular equipment framework that gives players the abil
 
 The goal of **DEMO 1** is to gauge public interest and get feedback on both the concept and the details of implementation. Feel free to play with the modular equipment via debug menu and leave your impressions in the Discussions section, and criticism or feature requests – in the Issues section.
 
+**NOTE**: this mod, including demo versions, is compatible with the latest stable release only.
+
 
 ### How to Test Modular Equipment in DEMO 1
 
