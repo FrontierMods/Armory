@@ -81,8 +81,8 @@
 		"name": { "str": "MOLLE rifle magazine pouch" },
 		"description": "TBD",
 		
-		"volume": "1350 ml",
-		"longest_side": "24 cm",
+		"volume": "1625 ml",
+		"longest_side": "267 mm",
 		
 		"pocket_data": [
 		
@@ -94,10 +94,12 @@
 				"max_contains_volume": "500 ml",
 				"max_contains_weight": "2 kg",
 				
-				"//magazine_well": "175 leeway for the mag sticking out",
-				"magazine_well": "175 ml",
+				"//magazine_well": "40 leeway for the mag sticking out",
+				"magazine_well": "40 ml",
 				
 				"moves": 40,
+				
+				"holster": true,
 				
 				"flag_restriction": [ "MAG_COMPACT" ]
 			},
