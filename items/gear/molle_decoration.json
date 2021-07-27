@@ -63,7 +63,7 @@
 	
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_22",
-		"abstract": "molle_patch_plastic",
+		"copy-from": "molle_patch_plastic",
 		
 		"name": { "str": "MOLLE patch: .22LR" },
 		"description": "Polymer patch with a dark background and light text which says \".22LR\" in large letters."
@@ -74,7 +74,7 @@
 	
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_556",
-		"abstract": "molle_patch_plastic",
+		"copy-from": "molle_patch_plastic",
 		
 		"name": { "str": "MOLLE patch: 5.56" },
 		"description": "Polymer patch with a dark background and light text which says \"5.56\" in large letters."
@@ -85,7 +85,7 @@
 	
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_9mm",
-		"abstract": "molle_patch_plastic",
+		"copy-from": "molle_patch_plastic",
 		
 		"name": { "str": "MOLLE patch: 9mm" },
 		"description": "Polymer patch with a dark background and light text which says \"9mm\" in large letters."
@@ -96,7 +96,7 @@
 	
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_45acp",
-		"abstract": "molle_patch_plastic",
+		"copy-from": "molle_patch_plastic",
 		
 		"name": { "str": "MOLLE patch: .45ACP" },
 		"description": "Polymer patch with a dark background and light text which says \".45ACP\" in large letters."
