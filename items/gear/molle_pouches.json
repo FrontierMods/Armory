@@ -627,7 +627,9 @@
 				
 				"moves": 50,
 				
-				"holster": true
+				"holster": true,
+				
+				"flag_restriction": [ "CARD_STANDARD" ]
 				
 			}
 			
