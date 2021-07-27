@@ -26,7 +26,7 @@
 		"abstract": "molle_patch_plastic",
 		"copy-from": "molle_patch",
 		
-		"name": { "str": "MOLLE patch, plastic" },
+		"name": { "str": "MOLLE patch: plastic" },
 		"description": "some sort of decorative patch made of plastic",
 		
 		"material": [ "plastic" ]
@@ -39,7 +39,7 @@
 		"abstract": "molle_patch_embroidery",
 		"copy-from": "molle_patch",
 		
-		"name": { "str": "MOLLE patch, embroidery" },
+		"name": { "str": "MOLLE patch: embroidery" },
 		"description": "some sort of decorative patch made of woven cotton",
 		
 		"material": [ "cotton" ]
@@ -52,7 +52,7 @@
 		"abstract": "molle_patch_leather",
 		"copy-from": "molle_patch",
 		
-		"name": { "str": "MOLLE patch, leather" },
+		"name": { "str": "MOLLE patch: leather" },
 		"description": "some sort of decorative patch made of leather",
 		
 		"material": [ "leather" ]
@@ -65,7 +65,7 @@
 		"id": "molle_patch_caliber_22",
 		"abstract": "molle_patch_plastic",
 		
-		"name": { "str": "MOLLE patch, .22LR" },
+		"name": { "str": "MOLLE patch: .22LR" },
 		"description": "Polymer patch with a dark background and light text which says \".22LR\" in large letters."
 	
 	},
@@ -76,7 +76,7 @@
 		"id": "molle_patch_caliber_556",
 		"abstract": "molle_patch_plastic",
 		
-		"name": { "str": "MOLLE patch, 5.56" },
+		"name": { "str": "MOLLE patch: 5.56" },
 		"description": "Polymer patch with a dark background and light text which says \"5.56\" in large letters."
 	
 	},
@@ -87,7 +87,7 @@
 		"id": "molle_patch_caliber_9mm",
 		"abstract": "molle_patch_plastic",
 		
-		"name": { "str": "MOLLE patch, 9mm" },
+		"name": { "str": "MOLLE patch: 9mm" },
 		"description": "Polymer patch with a dark background and light text which says \"9mm\" in large letters."
 	
 	},
@@ -98,7 +98,7 @@
 		"id": "molle_patch_caliber_45acp",
 		"abstract": "molle_patch_plastic",
 		
-		"name": { "str": "MOLLE patch, .45ACP" },
+		"name": { "str": "MOLLE patch: .45ACP" },
 		"description": "Polymer patch with a dark background and light text which says \".45ACP\" in large letters."
 	
 	}
