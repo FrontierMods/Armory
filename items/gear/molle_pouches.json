@@ -29,10 +29,10 @@
 		"type": "GENERIC",
 		"category": "armor",
 		
+		"//source": "https://www.511tactical.com/tactec-holster-2.html",
+
 		"name": { "str": "MOLLE TacTec™ holster" },
 		"description": "TBD",
-		
-		"//source": "https://www.511tactical.com/tactec-holster-2.html",
 		
 		"volume": "350 ml",
 		"longest_side": "10 cm",
