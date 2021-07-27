@@ -625,9 +625,6 @@
 				"max_contains_volume": "90 ml",
 				"max_contains_weight": "250 g",
 				
-				"//magazine_well": "10 leeway for the pen sticking out",
-				"magazine_well": "10 ml",
-				
 				"moves": 50,
 				
 				"holster": true
