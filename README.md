@@ -16,13 +16,13 @@ The goal of **DEMO 1** is to gauge public interest and get feedback on both the 
 
 ### How to Test Modular Equipment in DEMO 1
 
-You can spawn MOLLE equipment via the debug menu.
+* You can spawn MOLLE equipment via the debug menu.
 
-`[i]`nsert MOLLE accessories into MOLLE modular vest.
+* `[i]`nsert MOLLE accessories into MOLLE modular vest.
 
-The accessories remain usable as storage while inserted into the vest. They cannot be worn as separate pieces of equipment. Attached accessories are part of the vest and will be taken off and put back on along with it.
+* The accessories remain usable as storage while inserted into the vest. They cannot be worn as separate pieces of equipment. Attached accessories are part of the vest and will be taken off and put back on along with it.
 
-The accessories may also be used as dedicated containers outside the modular equipment system.
+* The accessories may also be used as dedicated containers outside the modular equipment system.
 
 NOTE: MOLLE items currently have no description. This is adequate for the early stage this mod is in. Polish shall be applied down the line.
 
