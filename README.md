@@ -27,6 +27,21 @@ The goal of **DEMO 1** is to gauge public interest and get feedback on both the 
 NOTE: MOLLE items currently have no description. This is adequate for the early stage this mod is in. Polish shall be applied down the line.
 
 
+#### New Pocket Restrictions
+
+Several pockets within the system only allow a handful of items in.
+
+This has been done in part as a proof of concept, and in part to demonstrate the depth of the system. These changes are likely to be carried through the mod, as they add further depth and detail to gameplay.
+
+1. `PAPER_FILE_SIZED`: papers, files, small journals. Simulates carrying documents inside the admin pouch. Intended for important documentation, such as lab journals.¹ Several existing documents have been modified to more closely resemble reality, so that their size could be reliably used in modelling pocket sizes.
+
+2. `CARD_STANDARD`: credit cards and IDs. Specifically, cards following the ISO/IEC_7810 ID-1 standard, the most commonly used standard such purposes. The vest itself, as well as some pouches, have pockets dedicated specifically for these cards. Some existing cards have had their size and weight modified to more closely resemble reality, so that their size could be reliably used in modelling pocket sizes.
+
+¹ During development it turned out that lab journals are significantly bigger than anticipated, and would not fit into the admin pouch under any circumstance. This may be omitted in the future, or mod-side changes may be made to accomodate that purpose. It's from the movies, so it's too cool to just pass on.
+
+Unfortunately, there's currently no way to tell which is which. Consult the JSON to alleviate that: item descriptions contain generous comments on their origins and details.
+
+
 # Content
 
 
