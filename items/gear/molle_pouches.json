@@ -28,7 +28,6 @@
 		"copy-from": "molle_pouch",
 		"type": "GENERIC",
 		"category": "armor",
-
 		
 		"name": { "str": "MOLLE TacTec™ holster" },
 		"description": "TBD",
@@ -104,6 +103,7 @@
 				"holster": true,
 				
 				"flag_restriction": [ "MAG_COMPACT" ]
+				
 			},
 			
 			{
@@ -122,6 +122,7 @@
 				"holster": true,
 				
 				"flag_restriction": [ "MAG_COMPACT" ]
+				
 			},
 			
 			{
