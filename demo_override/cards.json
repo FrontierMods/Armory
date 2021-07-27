@@ -8,7 +8,7 @@
 		
 		"//weight": "average weight of many US credit cards, presumably including RFID chips",
 		"weight": "5 g",
-		"//volume": "rounded up from 3.5 ml; volume from dimensions, without minor trimming for rounded corners"
+		"//volume": "rounded up from 3.5 ml; volume from dimensions, without minor trimming for rounded corners",
 		"//dimensions": "85.6 × 53.98 × 0.76, as per the ISO/IEC_7810 ID-1 standard",
 		"volume": "4 ml",
 		
