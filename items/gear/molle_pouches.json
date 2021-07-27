@@ -44,18 +44,17 @@
 			
 				"pocket_type": "CONTAINER",
 				
-				"max_contains_volume": "1000 ml",
+				"max_contains_volume": "750 ml",
 				"max_contains_weight": "2 kg",
 				"min_item_volume": "300 ml",				
 				"max_item_length": "30 cm",
 				
-				"//magazine_well": "350 baseline + 400 leeway for MOLLE system",
-				"magazine_well": "750 ml",
+				"//magazine_well": "skinny hook-and-loop holster; most of the pistol sticks out",
+				"magazine_well": "150 ml",
 				
 				"holster": true,
-				"rigid": true,
 				
-				"moves": 50
+				"moves": 100
 				
 			}
 			
