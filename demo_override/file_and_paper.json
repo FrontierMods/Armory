@@ -163,7 +163,7 @@
 			"name": { "str": "comic book" },
 			
 			"//weight": "from weight of an average DC 36-page comic",
-			"weight": "51 ml",
+			"weight": "51 g",
 			"//volume": "from dimensions",
 			"//dimensions": "260 × 170 × 2 mm; just about standard modern comic book size",
 			"volume": "85 ml",
