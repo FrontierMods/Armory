@@ -159,6 +159,7 @@
 		"type": "GENERIC",
 		"category": "armor",
 
+		"//source": "https://www.511tactical.com/flex-single-ar-mag-pouch.html",
 		
 		"name": { "str": "MOLLE rifle magazine pouch" },
 		"description": "TBD",
