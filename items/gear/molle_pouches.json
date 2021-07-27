@@ -561,7 +561,7 @@
 	
 	{
 	
-		"id": "molle_mags_stationary",
+		"id": "molle_mags_stationery",
 		"copy-from": "molle_pouch",
 		"type": "GENERIC",
 		"category": "armor",
@@ -569,7 +569,7 @@
 		"//source": "https://www.511tactical.com/light-writing-patch.html",
 		"//source_note": "idea; in-game pouch is bigger to accomodate a larger, regular-sized flashlight",
 		
-		"name": { "str": "MOLLE stationary pouch" },
+		"name": { "str": "MOLLE stationery pouch" },
 		"description": "TBD",
 		
 		"volume": "204 ml",
