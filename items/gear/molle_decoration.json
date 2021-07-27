@@ -62,6 +62,19 @@
 	{
 	
 		"type": "GENERIC",
+		"abstract": "molle_patch_nylon",
+		"copy-from": "molle_patch",
+		
+		"name": { "str": "MOLLE patch: nylon" },
+		"description": "some sort of decorative patch made of nylon",
+		
+		"material": [ "nylon" ]
+	
+	},
+	
+	{
+	
+		"type": "GENERIC",
 		"id": "molle_patch_caliber_22",
 		"copy-from": "molle_patch_plastic",
 		
