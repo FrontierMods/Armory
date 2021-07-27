@@ -139,6 +139,7 @@
 				"moves": 40,
 				
 				"flag_restriction": [ "MAG_COMPACT" ]
+				
 			}
 			
 		],
@@ -184,6 +185,7 @@
 				"moves": 40,
 				
 				"flag_restriction": [ "MAG_COMPACT" ]
+				
 			}
 			
 		],
@@ -228,6 +230,7 @@
 				"moves": 40,
 				
 				"flag_restriction": [ "MAG_COMPACT", "MAG_BULKY" ]
+				
 			}
 			
 		],
