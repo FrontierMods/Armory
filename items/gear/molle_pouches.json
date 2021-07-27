@@ -133,8 +133,8 @@
 				"max_contains_volume": "500 ml",
 				"max_contains_weight": "2 kg",
 				
-				"//magazine_well": "175 leeway for the mag sticking out",
-				"magazine_well": "175 ml",
+				"//magazine_well": "40 leeway for the mag sticking out",
+				"magazine_well": "40 ml",
 				
 				"moves": 40,
 				
