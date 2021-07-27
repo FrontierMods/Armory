@@ -138,6 +138,75 @@
 				
 				"moves": 40,
 				
+				"holster": true,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+				
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_rifle_double",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": "https://www.511tactical.com/flex-double-ar-mag-pouch.html",
+		
+		"name": { "str": "MOLLE 2x rifle magazine pouch" },
+		"description": "TBD",
+		
+		"volume": "725 ml",
+		"longest_side": "159 mm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "225 leeway for the mag sticking out",
+				"magazine_well": "225 ml",
+				
+				"moves": 40,
+				
+				"holster": true,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+				
+			},
+			
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
+				
+				"//magazine_well": "225 leeway for the mag sticking out",
+				"magazine_well": "225 ml",
+				
+				"moves": 40,
+				
+				"holster": true,
+				
 				"flag_restriction": [ "MAG_COMPACT" ]
 				
 			}
@@ -239,6 +308,338 @@
 		
 			"type": "holster", 
 			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	},
+	
+	{
+	
+		"id": "molle_pouch_storage_six",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": "https://www.511tactical.com/66-padded-pouch.html",
+		
+		"name": { "str": "MOLLE 6x6 padded pouch" },
+		"description": "TBD",
+		
+		"volume": "1770 ml",
+		"longest_side": "153 mm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "1700 ml",
+				"max_contains_weight": "2 kg",
+				
+				"moves": 100
+				
+			},
+			
+			{
+			
+				"//": "external MOLLE web for patches",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MOLLE_DECOR" ]
+				
+			}
+			
+		]
+	
+	},
+	
+	{
+	
+		"id": "molle_pouch_medical_three",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": "https://www.511tactical.com/flex-med-pouch.html",
+		
+		"name": { "str": "MOLLE 3x6 med pouch" },
+		"description": "TBD",
+		
+		"volume": "716 ml",
+		"longest_side": "178 mm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"//": "main pocket",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "170 mm",
+				"max_contains_volume": "650 ml",
+				"max_contains_weight": "750 g",
+				
+				"moves": 120
+				
+			},
+			
+			{
+			
+				"//": "side pocket",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g",
+				
+				"magazine_well": "25 ml",
+				
+				"moves": 40
+				
+			},
+			
+			{
+			
+				"//": "side pocket",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g",
+				
+				"magazine_well": "25 ml",
+				
+				"moves": 40
+				
+			},
+			
+			{
+			
+				"//": "external MOLLE web for patches",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g",
+				
+				"moves": 40,
+				
+				"flag_restriction": [ "MOLLE_DECOR" ]
+				
+			}
+			
+		]
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_pistol_double",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": "https://www.511tactical.com/flex-double-pistol-mag-pouch.html",
+		
+		"name": { "str": "MOLLE 2x pistol magazine pouch" },
+		"description": "TBD",
+		
+		"volume": "407 ml",
+		"longest_side": "115 mm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "1 kg",
+				
+				"//magazine_well": "50 leeway for the mag sticking out",
+				"magazine_well": "50 ml",
+				
+				"moves": 50,
+				
+				"holster": true,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+				
+			},
+			
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "1 kg",
+				
+				"//magazine_well": "50 leeway for the mag sticking out",
+				"magazine_well": "50 ml",
+				
+				"moves": 50,
+				
+				"holster": true,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+				
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_pistol_single",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": "https://www.511tactical.com/flex-single-pistol-mag-pouch.html",
+		
+		"name": { "str": "MOLLE pistol magazine pouch" },
+		"description": "TBD",
+		
+		"volume": "204 ml",
+		"longest_side": "115 mm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "1 kg",
+				
+				"//magazine_well": "50 leeway for the mag sticking out",
+				"magazine_well": "50 ml",
+				
+				"moves": 50,
+				
+				"holster": true,
+				
+				"flag_restriction": [ "MAG_COMPACT" ]
+				
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash ammo", 
+			"holster_msg": "You stash your %s." 
+		
+		}
+	
+	},
+	
+	{
+	
+		"id": "molle_mags_stationary",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": "https://www.511tactical.com/light-writing-patch.html",
+		"//source_note": "idea; in-game pouch is bigger to accomodate a larger, regular-sized flashlight",
+		
+		"name": { "str": "MOLLE stationary pouch" },
+		"description": "TBD",
+		
+		"volume": "204 ml",
+		"longest_side": "115 mm",
+		
+		"pocket_data": [
+		
+			{
+			
+				"//": "pen holder",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "20 ml",
+				"max_contains_weight": "50 g",
+				
+				"//magazine_well": "5 leeway for the pen sticking out",
+				"magazine_well": "5 ml",
+				
+				"moves": 50,
+				
+				"holster": true
+				
+			},
+			
+			{
+			
+				"//": "flashlight holder",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "90 ml",
+				"max_contains_weight": "250 g",
+				
+				"//magazine_well": "10 leeway for the pen sticking out",
+				"magazine_well": "10 ml",
+				
+				"moves": 50,
+				
+				"holster": true
+				
+			},
+			
+			{
+			
+				"//": "credit card pocket",
+			
+				"pocket_type": "CONTAINER",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "90 ml",
+				"max_contains_weight": "250 g",
+				
+				"//magazine_well": "10 leeway for the pen sticking out",
+				"magazine_well": "10 ml",
+				
+				"moves": 50,
+				
+				"holster": true
+				
+			}
+			
+		],
+		
+		"use_action": { 
+		
+			"type": "holster", 
+			"holster_prompt": "Stash equipment", 
 			"holster_msg": "You stash your %s." 
 		
 		}
