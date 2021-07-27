@@ -60,7 +60,13 @@
 			
 		],
 		
-		"use_action": { "type": "holster" }
+		"use_action": { "type": "holster" },
+		
+		"extend": {
+		
+			"flags": [ "TARDIS" ]
+		
+		}
 	
 	},
 	
