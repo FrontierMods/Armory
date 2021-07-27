@@ -31,7 +31,12 @@
 				"max_contains_volume": "9 L",
 				"max_contains_weight": "20 kg",
 				
-				"flag_restriction": [ "MOLLE_POUCH" ]
+				"flag_restriction": [ 
+				
+					"MOLLE_POUCH",
+					"MOLLE_DECOR"
+					
+				]
 				
 			},
 			
