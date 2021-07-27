@@ -11,7 +11,7 @@
 		"name": { "str": "pen" },
 		
 		"weight": "8 g",
-		"volume": "15 ml",
+		"volume": "15 ml"
 	
 	},
 	
@@ -26,7 +26,7 @@
 		"name": { "str": "permanent marker" },
 		
 		"weight": "28 g",
-		"volume": "16 ml",
+		"volume": "16 ml"
 	
 	}
 
