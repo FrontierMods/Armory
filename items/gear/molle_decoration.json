@@ -1,7 +1,5 @@
-[
-
-	{
-	
+[ 
+	{ 
 		"type": "GENERIC",
 		"abstract": "molle_patch",
 		
@@ -23,12 +21,10 @@
 		
 		"flags": [ 
 			"MOLLE_DECOR" 
-		]
-	
+		] 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"abstract": "molle_patch_plastic",
 		"copy-from": "molle_patch",
@@ -40,12 +36,10 @@
 		
 		"material": [ 
 			"plastic" 
-		]
-	
+		] 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"abstract": "molle_patch_embroidery",
 		"copy-from": "molle_patch",
@@ -57,12 +51,10 @@
 		
 		"material": [ 
 			"cotton" 
-		]
-	
+		] 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"abstract": "molle_patch_leather",
 		"copy-from": "molle_patch",
@@ -74,12 +66,10 @@
 		
 		"material": [ 
 			"leather" 
-		]
-	
+		] 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"abstract": "molle_patch_nylon",
 		"copy-from": "molle_patch",
@@ -91,12 +81,10 @@
 		
 		"material": [ 
 			"nylon" 
-		]
-	
+		] 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_22",
 		"copy-from": "molle_patch_plastic",
@@ -104,12 +92,10 @@
 		"name": { 
 			"str": "MOLLE patch: .22LR"
 		},
-		"description": "Polymer patch with a dark background and light text which says \".22LR\" in large letters."
-	
+		"description": "Polymer patch with a dark background and light text which says \".22LR\" in large letters." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_556",
 		"copy-from": "molle_patch_plastic",
@@ -117,12 +103,10 @@
 		"name": { 
 			"str": "MOLLE patch: 5.56"
 		},
-		"description": "Polymer patch with a dark background and light text which says \"5.56\" in large letters."
-	
+		"description": "Polymer patch with a dark background and light text which says \"5.56\" in large letters." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_9mm",
 		"copy-from": "molle_patch_plastic",
@@ -130,12 +114,10 @@
 		"name": { 
 			"str": "MOLLE patch: 9mm"
 		},
-		"description": "Polymer patch with a dark background and light text which says \"9mm\" in large letters."
-	
+		"description": "Polymer patch with a dark background and light text which says \"9mm\" in large letters." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_45acp",
 		"copy-from": "molle_patch_plastic",
@@ -143,12 +125,10 @@
 		"name": { 
 			"str": "MOLLE patch: .45ACP"
 		},
-		"description": "Polymer patch with a dark background and light text which says \".45ACP\" in large letters."
-	
+		"description": "Polymer patch with a dark background and light text which says \".45ACP\" in large letters." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_caliber_c4",
 		"copy-from": "molle_patch_plastic",
@@ -156,12 +136,10 @@
 		"name": { 
 			"str": "MOLLE patch: C4"
 		},
-		"description": "Polymer patch with a dark background and light text which says \"C4\" in large letters."
-	
+		"description": "Polymer patch with a dark background and light text which says \"C4\" in large letters." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_mountaineer",
 		"copy-from": "molle_patch_leather",
@@ -169,12 +147,10 @@
 		"name": { 
 			"str": "MOLLE patch: Mountaineer"
 		},
-		"description": "Leather shield patch portraying tall mountain peeks."
-	
+		"description": "Leather shield patch portraying tall mountain peeks." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_no_clowns",
 		"copy-from": "molle_patch_embroidery",
@@ -182,12 +158,10 @@
 		"name": { 
 			"str": "MOLLE patch: No Clowns"
 		},
-		"description": "Head of a cartoonish clown with green hair, crossed out inside a red circle."
-	
+		"description": "Head of a cartoonish clown with green hair, crossed out inside a red circle." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_fire_department",
 		"copy-from": "molle_patch_embroidery",
@@ -195,12 +169,10 @@
 		"name": { 
 			"str": "MOLLE patch: Fire Department"
 		},
-		"description": "Round orange patch with a red firefighter's helmet inside a dark-orange circle."
-	
+		"description": "Round orange patch with a red firefighter's helmet inside a dark-orange circle." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_eagle",
 		"copy-from": "molle_patch_leather",
@@ -208,12 +180,10 @@
 		"name": { 
 			"str": "MOLLE patch: Eagle"
 		},
-		"description": "Shield leather patch portrayng an star-spangled eagle flying up and to the right."
-	
+		"description": "Shield leather patch portrayng an star-spangled eagle flying up and to the right." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_smiley",
 		"copy-from": "molle_patch_plastic",
@@ -221,12 +191,10 @@
 		"name": { 
 			"str": "MOLLE patch: Smiley"
 		},
-		"description": "Big round yellow smiley face."
-	
+		"description": "Big round yellow smiley face." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_folded_flag",
 		"copy-from": "molle_patch_plastic",
@@ -234,12 +202,10 @@
 		"name": { 
 			"str": "MOLLE patch: Folded Flag"
 		},
-		"description": "Two-tone square of a folded American flag."
-	
+		"description": "Two-tone square of a folded American flag." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_join_or_die",
 		"copy-from": "molle_patch_embroidery",
@@ -247,12 +213,10 @@
 		"name": { 
 			"str": "MOLLE patch: JOIN, or DIE"
 		},
-		"description": "The famous cartoon by Benjamin Franklin, depicting the then-separate American colonies of the East Coast as a chopped snake, drawn as a call for unification and independence."
-	
+		"description": "The famous cartoon by Benjamin Franklin, depicting the then-separate American colonies of the East Coast as a chopped snake, drawn as a call for unification and independence." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_join_or_pie",
 		"copy-from": "molle_patch_embroidery",
@@ -260,12 +224,10 @@
 		"name": { 
 			"str": "MOLLE patch: JOIN, or PIE"
 		},
-		"description": "A parody of the famous political cartoon by Benjamin Franklin, it depicts a slice of pizza being cut into four, length-wise."
-	
+		"description": "A parody of the famous political cartoon by Benjamin Franklin, it depicts a slice of pizza being cut into four, length-wise." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_spartan",
 		"copy-from": "molle_patch_plastic",
@@ -273,12 +235,10 @@
 		"name": { 
 			"str": "MOLLE patch: Spartan Helmet"
 		},
-		"description": "The sight of a golden Spartan helmet, in profile, within a circle with a ribbed border."
-	
+		"description": "The sight of a golden Spartan helmet, in profile, within a circle with a ribbed border." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_smoke_em",
 		"copy-from": "molle_patch_plastic",
@@ -286,12 +246,10 @@
 		"name": { 
 			"str": "MOLLE patch: Smoke 'Em if You Got 'Em"
 		},
-		"description": "Outlined M8 smoke grenade, with the words \"SMOKE 'EM IF YOU GOT 'EM\" on the grenade's body."
-	
+		"description": "Outlined M8 smoke grenade, with the words \"SMOKE 'EM IF YOU GOT 'EM\" on the grenade's body." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_smoke_em",
 		"copy-from": "molle_patch_leather",
@@ -299,12 +257,10 @@
 		"name": { 
 			"str": "MOLLE patch: Coffee, then Conquer"
 		},
-		"description": "Round patch centered around a cup of coffee made to look like skull, with the words \"COFFEE, THEN CONQUER\" above it."
-	
+		"description": "Round patch centered around a cup of coffee made to look like skull, with the words \"COFFEE, THEN CONQUER\" above it." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_flag_us",
 		"copy-from": "molle_patch_plastic",
@@ -312,12 +268,10 @@
 		"name": { 
 			"str": "MOLLE patch: Flag, U.S."
 		},
-		"description": "The Stars and Stripes inside a thick black outline."
-	
+		"description": "The Stars and Stripes inside a thick black outline." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_flag_puerto_rico",
 		"copy-from": "molle_patch_plastic",
@@ -325,12 +279,10 @@
 		"name": { 
 			"str": "MOLLE patch: Flag, Puerto Rico"
 		},
-		"description": "The flag of Puerto Rico: five horizontal lines alternating between red and white, covered from the left by a triangle facing east, in the center of which is a big white star."
-	
+		"description": "The flag of Puerto Rico: five horizontal lines alternating between red and white, covered from the left by a triangle facing east, in the center of which is a big white star." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_flag_texas",
 		"copy-from": "molle_patch_plastic",
@@ -338,12 +290,10 @@
 		"name": { 
 			"str": "MOLLE patch: Flag, Texas"
 		},
-		"description": "The flag of Texas: thick blue stripe with centered white star on the left, and a horizontal white line on top of a red line on the right."
-	
+		"description": "The flag of Texas: thick blue stripe with centered white star on the left, and a horizontal white line on top of a red line on the right." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_flag_chicago_four",
 		"copy-from": "molle_patch_plastic",
@@ -351,12 +301,10 @@
 		"name": { 
 			"str": "MOLLE patch: Flag, Chicago *4"
 		},
-		"description": "The flag of Chicago: three white bars, two bars of light blue. This one has four six-angled stars on it."
-	
+		"description": "The flag of Chicago: three white bars, two bars of light blue. This one has four six-angled stars on it." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_flag_chicago_five",
 		"copy-from": "molle_patch_plastic",
@@ -364,12 +312,10 @@
 		"name": { 
 			"str": "MOLLE patch: Flag, Chicago *5"
 		},
-		"description": "The flag of Chicago: three white bars, two bars of light blue. This one has five six-angled stars on it."
-	
+		"description": "The flag of Chicago: three white bars, two bars of light blue. This one has five six-angled stars on it." 
 	},
 	
-	{
-	
+	{ 
 		"type": "GENERIC",
 		"id": "molle_patch_writebar",
 		"copy-from": "molle_patch_plastic",
@@ -379,8 +325,7 @@
 		},
 		"description": "Medium-length red nylon patch. Designed to be written on and attached to pouches to distinguish different kinds of equipment carried inside.",
 		
-		"volume": "12 ml"
-	
+		"volume": "12 ml" 
 	}
 
 ]
