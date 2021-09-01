@@ -1,31 +1,29 @@
-[
-
-	{
-	
+[ 
+	{ 
 		"id": "glockmag",
 		"copy-from": "glockmag",
 		"type": "MAGAZINE",
 		
-		"name": { "str": "Glock 9x19mm 15-round magazine" },
+		"name": { 
+			"str": "Glock 9x19mm 15-round magazine" 
+		},
 		
 		"//volume": "from dimensions",
 		"//dimensions": "0.9 × 1.31 × 4.75 inches",
 		"//source": "https://www.glocktalk.com/threads/glock-17-9mm-and-40-mag-dimensions.1669367/",
-		"volume": "92 ml"
-	
+		"volume": "92 ml" 
 	},
 	
-	{
-	
+	{ 
 		"id": "glock17_17",
 		"copy-from": "glock17_17",
 		"type": "MAGAZINE",
 		
-		"name": { "str": "Glock 9x19mm 17-round magazine" },
+		"name": { 
+			"str": "Glock 9x19mm 17-round magazine" 
+		},
 		
 		"//volume": "slightly bigger than 15-round version",
-		"volume": "101 ml"
-	
-	}
-
+		"volume": "101 ml" 
+	} 
 ]
