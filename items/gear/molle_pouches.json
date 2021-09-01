@@ -22,8 +22,7 @@
 		
 		"flags": [ 
 			"MOLLE_POUCH" 
-		]
-	
+		] 
 	},
 	
 	{
@@ -58,6 +57,7 @@
 				"magazine_well": "150 ml",
 				
 				"holster": true,
+				"rigid": false,
 				
 				"moves": 100 
 			} 
@@ -67,7 +67,7 @@
 			"type": "holster" 
 		},
 		
-		"extend": { 
+		"//extend": { 
 			"flags": [ 
 				"TARDIS" 
 			] 
@@ -353,8 +353,7 @@
 					"MOLLE_DECOR" 
 				] 
 			} 
-		]
-	
+		] 
 	},
 	
 	{ 
@@ -429,10 +428,8 @@
 				"flag_restriction": [ 
 					"MOLLE_DECOR" 
 				] 
-			}
-			
-		]
-	
+			} 
+		] 
 	},
 	
 	{ 
@@ -497,8 +494,7 @@
 			"type": "holster", 
 			"holster_prompt": "Stash ammo", 
 			"holster_msg": "You stash your %s." 
-		}
-	
+		} 
 	},
 	
 	{ 
@@ -544,8 +540,7 @@
 			"type": "holster", 
 			"holster_prompt": "Stash ammo", 
 			"holster_msg": "You stash your %s." 
-		}
-	
+		} 
 	},
 	
 	{ 
@@ -570,10 +565,10 @@
 		
 		"pocket_data": [ 
 			{ 
-				"//": "pen holder",
-			
 				"pocket_type": "CONTAINER",
 				
+				"//": "pen holder",
+
 				"max_item_length": "150 mm",
 				"max_contains_volume": "20 ml",
 				"max_contains_weight": "50 g",
@@ -587,9 +582,9 @@
 			},
 			
 			{ 
-				"//": "flashlight holder",
-			
 				"pocket_type": "CONTAINER",
+				
+				"//": "flashlight holder",
 				
 				"max_item_length": "150 mm",
 				"max_contains_volume": "90 ml",
@@ -604,9 +599,9 @@
 			},
 			
 			{ 
-				"//": "credit card pocket",
-			
 				"pocket_type": "CONTAINER",
+				
+				"//": "credit card pocket",
 				
 				"max_item_length": "150 mm",
 				"max_contains_volume": "90 ml",
