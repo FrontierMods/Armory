@@ -1,20 +1,19 @@
-[
-
-	{
-	
+[ 
+	{ 
 		"type": "MOD_INFO",
 		"id": "armory",
 		
 		"name": "Armory",
 		"description": "Armory expands your character's choice of military, riot, police, and militia outfits and equipment, and includes modular equipment",
 		
-		"authors": [ "Hyperseeker" ],
-		"maintainers": [ "Hyperseeker" ],
+		"authors": [ 
+			"Hyperseeker" 
+		],
 		
 		"category": "items",
 		
-		"dependencies": [ "dda" ]
-		
-	}
-	
+		"dependencies": [ 
+			"dda" 
+		] 
+	} 
 ]
