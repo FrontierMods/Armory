@@ -1,47 +1,50 @@
-[
-
-	{
-	
+[ 
+	{ 
 		"id": "MOLLE_POUCH",
 		"type": "json_flag",
 		
-		"context": [ "ARMOR", "TOOL_ARMOR", "GENERIC" ],
+		"context": [ 
+			"ARMOR", 
+			"TOOL_ARMOR", 
+			"GENERIC" 
+		],
 		
 		"info": "This item is part of the <info>MOLLE gear system</info>.  It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack."
 		
 	},
 	
-	{
-	
+	{ 
 		"id": "MOLLE_DECOR",
 		"type": "json_flag",
 		
-		"context": [ "ARMOR", "TOOL_ARMOR", "GENERIC" ],
+		"context": [ 
+			"ARMOR", 
+			"TOOL_ARMOR", 
+			"GENERIC" 
+		],
 		
-		"info": "This item is a decorative piece for the <info>MOLLE gear system</info>.  It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack.  It does not provide any benefit beyond asserting you into the empty world."
-		
+		"info": "This item is a decorative piece for the <info>MOLLE gear system</info>.  It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack.  It does not provide any benefit beyond asserting you into the empty world." 
 	},
 	
-	{
-	
+	{ 
 		"id": "PAPER_FILE_SIZED",
 		"type": "json_flag",
 		
-		"context": [ "GENERIC" ],
+		"context": [ 
+			"GENERIC" 
+		],
 		
-		"info": "This item has the right dimensions to be stored in <info>file compartments</info>."
-		
+		"info": "This item has the right dimensions to be stored in <info>file compartments</info>." 
 	},
 	
-	{
-	
+	{ 
 		"id": "CARD_STANDARD",
 		"type": "json_flag",
 		
-		"context": [ "GENERIC" ],
+		"context": [ 
+			"GENERIC" 
+		],
 		
-		"info": "This item has the right dimensions to be stored in <info>credit and ID card compartments</info>"
-		
-	}
-
+		"info": "This item has the right dimensions to be stored in <info>credit and ID card compartments</info>" 
+	} 
 ]

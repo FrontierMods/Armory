@@ -6,21 +6,19 @@
 		"copy-from": "ballistic_vest_empty",
 		"type": "ARMOR",
 		
-		"name": {
+		"//source": [ 
+			"https://tacticalworldstore.com/products/modular-rapid-assault-tactical-vest" 
+		],
 		
-			"str": "MOLLE modular vest"
-		
+		"name": { 
+			"str": "MOLLE modular vest" 
 		},
 		"description": "TBD",
-		
-		"//source": "https://tacticalworldstore.com/products/modular-rapid-assault-tactical-vest",
-		
+				
 		"max_encumbrance": 24,
 		
-		"pocket_data": [
-		
-			{
-			
+		"pocket_data": [ 
+			{ 
 				"//": "front MOLLE patches",
 			
 				"pocket_type": "CONTAINER",
@@ -32,16 +30,12 @@
 				"max_contains_weight": "20 kg",
 				
 				"flag_restriction": [ 
-				
 					"MOLLE_POUCH",
-					"MOLLE_DECOR"
-					
+					"MOLLE_DECOR" 
 				]
-				
 			},
 			
 			{
-			
 				"//": "top admin pouch",
 			
 				"pocket_type": "CONTAINER",
@@ -50,12 +44,12 @@
 				"max_contains_volume": "1 L",
 				"max_contains_weight": "1 kg",
 				
-				"flag_restriction": [ "PAPER_FILE_SIZED" ]
-				
+				"flag_restriction": [ 
+					"PAPER_FILE_SIZED" 
+				]
 			},
 			
 			{
-			
 				"//": "small chest pocket for cards and IDs",
 			
 				"pocket_type": "CONTAINER",
@@ -65,7 +59,9 @@
 				"max_contains_weight": "100 g",
 				"max_item_length":     "86 mm",
 				
-				"flag_restriction": [ "CARD_STANDARD" ]
+				"flag_restriction": [ 
+					"CARD_STANDARD" 
+				]
 				
 			}
 		

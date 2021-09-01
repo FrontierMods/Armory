@@ -1,33 +1,35 @@
-[
-
-	{
-	
+[ 
+	{ 
 		"id": "pen",
 		"copy-from": "pen",
 		"type": "TOOL",
 		
-		"//source": "https://www.amazon.com/AmazonBasics-Retractable-Ballpoint-Pen-12-Pack/dp/B07BDWD8B7/136-7078052-5616057",
+		"//source": [ 
+			"https://www.amazon.com/AmazonBasics-Retractable-Ballpoint-Pen-12-Pack/dp/B07BDWD8B7/136-7078052-5616057" 
+		],
 		
-		"name": { "str": "pen" },
+		"name": { 
+			"str": "pen" 
+		},
 		
 		"weight": "8 g",
-		"volume": "15 ml"
-	
+		"volume": "15 ml" 
 	},
 	
-	{
-	
+	{ 
 		"id": "permanent_marker",
 		"copy-from": "permanent_marker",
 		"type": "TOOL",
 		
-		"//source": "https://www.amazon.com/Artline-Permanent-Fabric-Markers-clothing/dp/B089F8MSF1?c=ts&ts_id=1069802",
+		"//source": [ 
+			"https://www.amazon.com/Artline-Permanent-Fabric-Markers-clothing/dp/B089F8MSF1?c=ts&ts_id=1069802"
+		],
 		
-		"name": { "str": "permanent marker" },
+		"name": { 
+			"str": "permanent marker" 
+		},
 		
 		"weight": "28 g",
-		"volume": "16 ml"
-	
-	}
-
+		"volume": "16 ml" 
+	} 
 ]
