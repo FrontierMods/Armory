@@ -46,7 +46,6 @@ Unfortunately, there's currently no way to tell which is which. Consult the JSON
 
 # Content
 
-
 ## Modular Equipment
 
 *Armory* introduces the concept of modular equipment into the game.
