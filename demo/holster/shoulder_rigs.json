@@ -44,7 +44,7 @@
 				
 				"holster": true,
 				
-				"moves": 50,
+				"moves": 600,
 				
 				"max_contains_volume": 	"1000 ml",
 				"max_contains_weight": 	"2 kg",
@@ -61,7 +61,7 @@
 				
 				"holster": true,
 				
-				"moves": 50,
+				"moves": 600,
 				
 				"max_contains_volume": 	"1000 ml",
 				"max_contains_weight": 	"2 kg",
