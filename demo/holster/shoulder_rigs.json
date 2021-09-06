@@ -63,8 +63,8 @@
 				
 				"moves": 600,
 				
-				"max_contains_volume": 	"1000 ml",
-				"max_contains_weight": 	"2 kg",
+				"max_contains_volume": "1000 ml",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"SHOULDER_RIG_MODULE" 
@@ -127,8 +127,8 @@
 				
 				"moves": 600,
 				
-				"max_contains_volume": 	"1 L",
-				"max_contains_weight": 	"2 kg",
+				"max_contains_volume": "1 L",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"SHOULDER_RIG_MODULE" 
