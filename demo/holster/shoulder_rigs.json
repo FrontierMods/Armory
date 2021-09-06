@@ -1,6 +1,6 @@
 [ 
 	{ 
-		"id": "holster_base_leather",
+		"id": "shoulder_rig_leather",
 		"type": "ARMOR",
 		
 		"//source": [ 
@@ -78,8 +78,8 @@
 	},
 	
 	{ 
-		"id": "holster_base_nylon",
-		"copy-from": "holster_base_leather",
+		"id": "shoulder_rig_nylon",
+		"copy-from": "shoulder_rig_leather",
 		"type": "ARMOR",
 		
 		"//source": [ 
