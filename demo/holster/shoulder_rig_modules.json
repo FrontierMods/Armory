@@ -132,6 +132,92 @@
 			} 
 		],
 		
+	
+	{ 
+		"id": "rig_module_mags_four",
+		"copy-from": "rig_module_leather",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.craftholsters.com/leather-double-magazine-pouch",
+			"x2, width-wise",
+			"original is belted; this assumes shoulder rig attachment instead of belt loop"
+		],
+		
+		"name": { 
+			"str": "shoulder rig quad magazine pouch" 
+		},
+		"description": "Shoulder rig modular magazine pouch, made from premium Italian leather.  Fitted for four standard-capacity pistol magazines.",
+		
+		"looks_like": "legpouch_large",
+		
+		"//volume": "assumes depth of 0.7 in.",
+		"volume": "155 ml",
+		"longest_side": "114 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "magazine pouch",
+				
+				"holster": true,
+				
+				"moves": 100,
+				
+				"max_contains_volume": "100 ml",
+				"max_contains_weight": "500 g",
+				"//max_item_length": "fits Glock 17-round magazine and smaller",
+				"max_item_length": "15 cm" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "magazine pouch",
+				
+				"holster": true,
+				
+				"moves": 100,
+				
+				"max_contains_volume": "100 ml",
+				"max_contains_weight": "500 g",
+				"//max_item_length": "fits Glock 17-round magazine and smaller",
+				"max_item_length": "15 cm" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "magazine pouch",
+				
+				"holster": true,
+				
+				"moves": 100,
+				
+				"max_contains_volume": "100 ml",
+				"max_contains_weight": "500 g",
+				"//max_item_length": "fits Glock 17-round magazine and smaller",
+				"max_item_length": "15 cm" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "magazine pouch",
+				
+				"holster": true,
+				
+				"moves": 100,
+				
+				"max_contains_volume": "100 ml",
+				"max_contains_weight": "500 g",
+				"//max_item_length": "fits Glock 17-round magazine and smaller",
+				"max_item_length": "15 cm" 
+			} 
+		],
+		
 		"use_action": { 
 			"type": "holster",
 			
