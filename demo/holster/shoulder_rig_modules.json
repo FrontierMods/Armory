@@ -132,6 +132,13 @@
 			} 
 		],
 		
+		"use_action": { 
+			"type": "holster",
+			
+			"holster_prompt": "Stash magazine",
+			"holster_msg": "You stash your %s." 
+		} 
+	},
 	
 	{ 
 		"id": "rig_module_mags_four",
