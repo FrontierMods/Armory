@@ -73,7 +73,10 @@
 		],
 		
 		"use_action": { 
-			"type": "holster" 
+			"type": "holster",
+			
+			"holster_prompt": "Attach module",
+			"holster_msg": "You attach %s to your shoulder rig." 
 		} 
 	},
 	
@@ -137,7 +140,10 @@
 		],
 		
 		"use_action": { 
-			"type": "holster" 
+			"type": "holster",
+			
+			"holster_prompt": "Attach module",
+			"holster_msg": "You attach %s to your shoulder rig." 
 		} 
 	} 
 ]
