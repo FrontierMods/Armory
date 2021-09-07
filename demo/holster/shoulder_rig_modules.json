@@ -45,7 +45,7 @@
 	
 	{ 
 		"id": "rig_module_holster",
-		"copy-from": "rig_module_leather",
+		"copy-from": "rig_module_nylon",
 		"type": "GENERIC",
 		"category": "armor",
 		
