@@ -51,7 +51,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//type": "small chest pocket for cards and IDs",
+				"//type": "card pocket",
 				
 				"//max_contains_volume": "ISO/IEC_7810 ID-1, the most common format for both credit cards and IDs, has dimensions of 85.6 × 53.98 mm, with thickness of 0.76 mm; this pocket is designed to accomodate 5 cards",
 				"max_contains_volume": "20 ml",
