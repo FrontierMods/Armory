@@ -86,7 +86,7 @@
 		],
 		
 		"name": { 
-			"str": "MOLLE Kangaroo 3x rifle magazine pouch" 
+			"str": "MOLLE Kangaroo triple rifle magazine pouch" 
 		},
 		"description": "TBD",
 		
@@ -155,7 +155,7 @@
 		
 		"use_action": {  
 			"type": "holster", 
-			"holster_prompt": "Stash ammo", 
+			"holster_prompt": "Stash magazine", 
 			"holster_msg": "You stash your %s."  
 		} 
 	},
@@ -171,7 +171,7 @@
 		],
 		
 		"name": { 
-			"str": "MOLLE 2x rifle magazine pouch" 
+			"str": "MOLLE double rifle magazine pouch" 
 		},
 		"description": "TBD",
 		
@@ -220,7 +220,7 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash ammo", 
+			"holster_prompt": "Stash magazine", 
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -264,7 +264,7 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash ammo", 
+			"holster_prompt": "Stash magazine", 
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -305,7 +305,7 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash ammo", 
+			"holster_prompt": "Stash magazine", 
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -443,7 +443,7 @@
 		],
 		
 		"name": { 
-			"str": "MOLLE 2x pistol magazine pouch" 
+			"str": "MOLLE double pistol magazine pouch" 
 		},
 		"description": "TBD",
 		
@@ -492,7 +492,7 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash ammo", 
+			"holster_prompt": "Stash magazine", 
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -538,13 +538,13 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash ammo", 
+			"holster_prompt": "Stash magazine", 
 			"holster_msg": "You stash your %s." 
 		} 
 	},
 	
 	{ 
-		"id": "molle_mags_stationery",
+		"id": "molle_stationery",
 		"copy-from": "molle_pouch",
 		"type": "GENERIC",
 		"category": "armor",
@@ -620,7 +620,7 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash equipment", 
+			"holster_prompt": "Stash stationary", 
 			"holster_msg": "You stash your %s." 
 		} 
 	} 
