@@ -48,18 +48,20 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_contains_volume": "750 ml",
-				"max_contains_weight": "2 kg",
-				"min_item_volume": "300 ml",				
-				"max_item_length": "30 cm",
+				"//type": "holster",
+				
+				"moves": 70,
+				
+				"rigid": false,
+				"holster": true,
 				
 				"//magazine_well": "skinny hook-and-loop holster; most of the pistol sticks out",
 				"magazine_well": "150 ml",
 				
-				"holster": true,
-				"rigid": false,
-				
-				"moves": 100 
+				"max_contains_volume": "750 ml",
+				"max_contains_weight": "2 kg",
+				"min_item_volume": "300 ml",				
+				"max_item_length": "30 cm" 
 			} 
 		],
 		
@@ -97,16 +99,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "240 mm",
-				"max_contains_volume": "500 ml",
-				"max_contains_weight": "2 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 80,
+				
+				"holster": true,
 				
 				"//magazine_well": "40 leeway for the mag sticking out",
 				"magazine_well": "40 ml",
 				
-				"moves": 40,
-				
-				"holster": true,
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -116,16 +120,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "240 mm",
-				"max_contains_volume": "500 ml",
-				"max_contains_weight": "2 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 80,
+				
+				"holster": true,
 				
 				"//magazine_well": "40 leeway for the mag sticking out",
 				"magazine_well": "40 ml",
 				
-				"moves": 40,
-				
-				"holster": true,
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -135,27 +141,29 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "240 mm",
-				"max_contains_volume": "500 ml",
-				"max_contains_weight": "2 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 80,
+				
+				"holster": true,
 				
 				"//magazine_well": "40 leeway for the mag sticking out",
 				"magazine_well": "40 ml",
 				
-				"moves": 40,
-				
-				"holster": true,
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
 				] 
-			}
-			
+			} 
 		],
 		
 		"use_action": {  
 			"type": "holster", 
-			"holster_prompt": "Stash magazine", 
+			
+			"holster_prompt": "Stash magazine",
 			"holster_msg": "You stash your %s."  
 		} 
 	},
@@ -182,16 +190,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "240 mm",
-				"max_contains_volume": "500 ml",
-				"max_contains_weight": "2 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 70,
+				
+				"holster": true,
 				
 				"//magazine_well": "225 leeway for the mag sticking out",
 				"magazine_well": "225 ml",
 				
-				"moves": 40,
-				
-				"holster": true,
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -201,16 +211,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "240 mm",
-				"max_contains_volume": "500 ml",
-				"max_contains_weight": "2 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 70,
+				
+				"holster": true,
 				
 				"//magazine_well": "225 leeway for the mag sticking out",
 				"magazine_well": "225 ml",
 				
-				"moves": 40,
-				
-				"holster": true,
+				"max_item_length": "240 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -220,7 +232,8 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash magazine", 
+			
+			"holster_prompt": "Stash magazine",
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -247,14 +260,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
+				"//type": "magazine pouch",
+				
+				"moves": 70,
+				
+				"holster": true,
+				
+				"//magazine_well": "225 leeway for the mag sticking out",
+				"magazine_well": "225 ml",
+				
 				"max_item_length": "240 mm",
 				"max_contains_volume": "500 ml",
 				"max_contains_weight": "2 kg",
-				
-				"//magazine_well": "175 leeway for the mag sticking out",
-				"magazine_well": "175 ml",
-				
-				"moves": 40,
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -264,26 +281,8 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash magazine", 
-			"holster_msg": "You stash your %s." 
-		} 
-	},
-	
-				"pocket_type": "CONTAINER",
-				
-				"max_item_length": "300 mm",
-				"max_contains_volume": "1500 ml",
-				"max_contains_weight": "2 kg",
-				
-				"flag_restriction": [ 
-					"MAG_COMPACT", 
-				] 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster", 
-			"holster_prompt": "Stash magazine", 
+			
+			"holster_prompt": "Stash magazine",
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -310,22 +309,24 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
+				"//type": "pouch",
+				
+				"moves": 100,
+				
 				"max_item_length": "150 mm",
 				"max_contains_volume": "1700 ml",
-				"max_contains_weight": "2 kg",
-				
-				"moves": 100 
+				"max_contains_weight": "2 kg" 
 			},
 			
 			{ 
-				"//": "external MOLLE web for patches",
-			
 				"pocket_type": "CONTAINER",
+				
+				"//": "MOLLE web for patches",
+				
+				"moves": 120,
 				
 				"max_contains_volume": "50 ml",
 				"max_contains_weight": "100 g",
-				
-				"moves": 40,
 				
 				"flag_restriction": [ 
 					"MOLLE_DECOR" 
@@ -354,54 +355,54 @@
 		
 		"pocket_data": [ 
 			{ 
-				"//": "main pocket",
-			
 				"pocket_type": "CONTAINER",
+				
+				"//": "pouch",
+				
+				"moves": 120,
 				
 				"max_item_length": "170 mm",
 				"max_contains_volume": "650 ml",
-				"max_contains_weight": "750 g",
-				
-				"moves": 120 
+				"max_contains_weight": "750 g" 
 			},
 			
 			{ 
+				"pocket_type": "CONTAINER",
+				
 				"//": "side pocket",
-			
-				"pocket_type": "CONTAINER",
-				
-				"max_item_length": "150 mm",
-				"max_contains_volume": "50 ml",
-				"max_contains_weight": "100 g",
-				
-				"magazine_well": "25 ml",
-				
-				"moves": 40 
-			},
-			
-			{ 
-				"//": "side pocket",
-			
-				"pocket_type": "CONTAINER",
-				
-				"max_item_length": "150 mm",
-				"max_contains_volume": "50 ml",
-				"max_contains_weight": "100 g",
-				
-				"magazine_well": "25 ml",
-				
-				"moves": 40 
-			},
-			
-			{ 
-				"//": "external MOLLE web for patches",
-			
-				"pocket_type": "CONTAINER",
-				
-				"max_contains_volume": "50 ml",
-				"max_contains_weight": "100 g",
 				
 				"moves": 40,
+				
+				"magazine_well": "25 ml",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "side pocket",
+				
+				"moves": 40,
+				
+				"magazine_well": "25 ml",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "MOLLE web for patches",
+				
+				"moves": 120,
+				
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g",
 				
 				"flag_restriction": [ 
 					"MOLLE_DECOR" 
@@ -432,16 +433,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "150 mm",
-				"max_contains_volume": "150 ml",
-				"max_contains_weight": "1 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 90,
+				
+				"holster": true,
 				
 				"//magazine_well": "50 leeway for the mag sticking out",
 				"magazine_well": "50 ml",
 				
-				"moves": 50,
-				
-				"holster": true,
+				"max_item_length": "150 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "1 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -451,16 +454,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "150 mm",
-				"max_contains_volume": "150 ml",
-				"max_contains_weight": "1 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 90,
+				
+				"holster": true,
 				
 				"//magazine_well": "50 leeway for the mag sticking out",
 				"magazine_well": "50 ml",
 				
-				"moves": 50,
-				
-				"holster": true,
+				"max_item_length": "150 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "1 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -470,7 +475,8 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash magazine", 
+			
+			"holster_prompt": "Stash magazine",
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -497,16 +503,18 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"max_item_length": "150 mm",
-				"max_contains_volume": "150 ml",
-				"max_contains_weight": "1 kg",
+				"//type": "magazine pouch",
+				
+				"moves": 90,
+				
+				"holster": true,
 				
 				"//magazine_well": "50 leeway for the mag sticking out",
 				"magazine_well": "50 ml",
 				
-				"moves": 50,
-				
-				"holster": true,
+				"max_item_length": "150 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "1 kg",
 				
 				"flag_restriction": [ 
 					"MAG_COMPACT" 
@@ -516,7 +524,8 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash magazine", 
+			
+			"holster_prompt": "Stash magazine",
 			"holster_msg": "You stash your %s." 
 		} 
 	},
@@ -545,49 +554,49 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "pen holder",
-
-				"max_item_length": "150 mm",
-				"max_contains_volume": "20 ml",
-				"max_contains_weight": "50 g",
+				"//type": "pen holder",
 				
-				"//magazine_well": "5 leeway for the pen sticking out",
-				"magazine_well": "5 ml",
+				"holster": true,
 				
 				"moves": 50,
 				
-				"holster": true 
+				"//magazine_well": "5 leeway for the pen sticking out",
+				"magazine_well": "5 ml",
+
+				"max_item_length": "150 mm",
+				"max_contains_volume": "20 ml",
+				"max_contains_weight": "50 g" 
 			},
 			
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "flashlight holder",
+				"//type": "flashlight holder",
 				
-				"max_item_length": "150 mm",
-				"max_contains_volume": "90 ml",
-				"max_contains_weight": "450 g",
+				"holster": true,
+				
+				"moves": 50,
 				
 				"//magazine_well": "10 leeway for the flashlight sticking out",
 				"magazine_well": "10 ml",
 				
-				"moves": 50,
-				
-				"holster": true 
+				"max_item_length": "150 mm",
+				"max_contains_volume": "90 ml",
+				"max_contains_weight": "450 g" 
 			},
 			
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "credit card pocket",
+				"//type": "credit card pocket",
+				
+				"holster": true,
+				
+				"moves": 50,
 				
 				"max_item_length": "150 mm",
 				"max_contains_volume": "90 ml",
 				"max_contains_weight": "250 g",
-				
-				"moves": 50,
-				
-				"holster": true,
 				
 				"flag_restriction": [ 
 					"CARD_STANDARD" 
@@ -598,7 +607,8 @@
 		
 		"use_action": { 
 			"type": "holster", 
-			"holster_prompt": "Stash stationary", 
+			
+			"holster_prompt": "Stash stationary",
 			"holster_msg": "You stash your %s." 
 		} 
 	},
