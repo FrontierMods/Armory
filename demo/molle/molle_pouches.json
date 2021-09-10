@@ -744,5 +744,481 @@
 		},
 		
 		"price": "30 USD" 
+	},
+	
+	{ 
+		"id": "taco_pistol_single",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/11pt-13pt" 
+		],
+		
+		"name": { 
+			"str": "TACO pistol magazine pouch" 
+		},
+		"description": "This soft pouch can hold a single pistol magazine, or an item of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "50 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "49 ml",
+		"longest_side": "102 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "29 USD" 
+	},
+	
+	{ 
+		"id": "taco_pistol_double",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/11pt-13pt" 
+		],
+		
+		"name": { 
+			"str": "TACO double pistol magazine pouch" 
+		},
+		"description": "This soft pouch can hold two pistol magazines, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "118 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "123 ml",
+		"longest_side": "102 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "55 USD" 
+	},
+	
+	{ 
+		"id": "taco_pistol_triple",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/11pt-13pt" 
+		],
+		
+		"name": { 
+			"str": "TACO triple pistol magazine pouch" 
+		},
+		"description": "This soft pouch can hold three pistol magazines, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "159 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "180 ml",
+		"longest_side": "140 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "79 USD" 
+	},
+	
+	{ 
+		"id": "taco_pistol_extended",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/11ex00-13ex10" 
+		],
+		
+		"name": { 
+			"str": "TACO extended pistol magazine pouch" 
+		},
+		"description": "This pouch can hold a single extended magazine from a pistol or an SMG, or an item of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "73 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "74 ml",
+		"longest_side": "165 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "extended magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "225 mm",
+				"max_contains_volume": "225 ml",
+				"max_contains_weight": "750 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "32 USD" 
+	},
+	
+	{ 
+		"id": "taco_flashbang_double",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/41sg02" 
+		],
+		
+		"name": { 
+			"str": "TACO double flashbang pouch" 
+		},
+		"description": "This soft pouch can hold two flashbangs, 40mm grenades, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "153 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "244 ml",
+		"longest_side": "108 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "flashbang pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "200 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "flashbang pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "200 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "56 USD" 
+	},
+	
+	{ 
+		"id": "taco_canteen",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/12cp01" 
+		],
+		
+		"name": { 
+			"str": "TACO canteen pouch" 
+		},
+		"description": "This spacious pouch is intended to hold a single standard USGI 1-quart canteen, though it can hold other large or loose items.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "196 g",
+		"//volume": "quarter of total volume, to account for contents",
+		"volume": "885 ml",
+		"longest_side": "229 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "canteen pouch",
+				
+				"rigid": false,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "1100 ml",
+				"max_contains_weight": "1500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "50 USD" 
+	},
+	
+	{ 
+		"id": "taco_grenade",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/12cp01" 
+		],
+		
+		"name": { 
+			"str": "TACO frag grenade pouch" 
+		},
+		"description": "This pouch can hold one standard US Army fragmentation grenade.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "196 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "203 ml",
+		"longest_side": "114 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "grenade pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "100 mm",
+				"max_contains_volume": "250 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "35 USD" 
+	},
+	
+	{ 
+		"id": "taco_rifle_double",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/112r00-132r10" 
+		],
+		
+		"name": { 
+			"str": "TACO stacked rifle magazine pouch" 
+		},
+		"description": "This pouch can hold two rifles magazines stacked on top of each other.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "136 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "123 ml",
+		"longest_side": "127 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "250 mm",
+				"max_contains_volume": "400 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "250 mm",
+				"max_contains_volume": "400 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "46 USD" 
 	} 
 ]
