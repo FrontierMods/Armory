@@ -666,7 +666,7 @@
 		"use_action": { 
 			"type": "holster", 
 			
-			"holster_prompt": "Stash item", 
+			"holster_prompt": "Stash item",
 			"holster_msg": "You stash your %s." 
 		},
 		
@@ -751,7 +751,7 @@
 		"use_action": { 
 			"type": "holster", 
 			
-			"holster_prompt": "Stash item", 
+			"holster_prompt": "Stash item",
 			"holster_msg": "You stash your %s." 
 		},
 		
