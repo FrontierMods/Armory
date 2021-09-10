@@ -269,36 +269,14 @@
 		} 
 	},
 	
-	{ 
-		"id": "molle_mags_drum",
-		"copy-from": "molle_pouch",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"name": { 
-			"str": "MOLLE drum magazine pouch" 
-		},
-		"description": "TBD",
-		
-		"volume": "1500 ml",
-		"longest_side": "24 cm",
-		
-		"pocket_data": [ 
-			{ 
 				"pocket_type": "CONTAINER",
 				
 				"max_item_length": "300 mm",
 				"max_contains_volume": "1500 ml",
 				"max_contains_weight": "2 kg",
 				
-				"//magazine_well": "250 leeway for the mag sticking out",
-				"magazine_well": "250 ml",
-				
-				"moves": 40,
-				
 				"flag_restriction": [ 
 					"MAG_COMPACT", 
-					"MAG_BULKY" 
 				] 
 			} 
 		],
