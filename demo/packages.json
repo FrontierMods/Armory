@@ -1,0 +1,91 @@
+[ 
+	{ 
+		"type": "GENERIC",
+		"id": "armory_demo2_package",
+		
+		"name": { 
+			"str": "Armory Demo 2 package" 
+		},
+		"description": "Deconstruct this package to get all items from the Armory demo 2",
+		
+		"symbol": "+",
+		
+		"flags": [ 
+			"ZERO_WEIGHT" 
+		] 
+	},
+	
+	{ 
+		"type": "uncraft",
+		"result": "armory_demo2_package",
+		
+		"activity_level": "NO_EXERCISE",
+		
+		"time": "1 s",
+		
+		"components": [ 
+			[ [ "vest_molle", 1 ] ],
+			[ [ "belt_molle", 1 ] ],
+
+			[ [ "molle_holster", 1 ] ],
+			[ [ "molle_mags_rifle_large", 1 ] ],
+			[ [ "molle_mags_rifle_double", 1 ] ],
+			[ [ "molle_mags_rifle_single", 1 ] ],
+			[ [ "molle_pouch_storage_six", 1 ] ],
+			[ [ "molle_pouch_medical_three", 1 ] ],
+			[ [ "molle_mags_pistol_double", 1 ] ],
+			[ [ "molle_mags_pistol_single", 1 ] ],
+			[ [ "molle_stationery", 1 ] ],
+
+			[ [ "taco_soft", 1 ] ],
+			[ [ "taco_tech", 1 ] ],
+			[ [ "taco_pistol_single", 1 ] ],
+			[ [ "taco_pistol_double", 1 ] ],
+			[ [ "taco_pistol_triple", 1 ] ],
+			[ [ "taco_pistol_extended", 1 ] ],
+			[ [ "taco_flashbang_double", 1 ] ],
+			[ [ "taco_canteen", 1 ] ],
+			[ [ "taco_grenade", 1 ] ],
+			[ [ "taco_rifle_double", 1 ] ],
+			[ [ "taco_med", 1 ] ],
+			[ [ "taco_rifle_extended", 1 ] ],
+			[ [ "taco_shot", 1 ] ],
+			[ [ "taco_rifle_double", 1 ] ],
+
+			[ [ "molle_patch_caliber_22", 1 ] ],
+			[ [ "molle_patch_caliber_556", 1 ] ],
+			[ [ "molle_patch_caliber_9mm", 1 ] ],
+			[ [ "molle_patch_caliber_45acp", 1 ] ],
+			[ [ "molle_patch_caliber_c4", 1 ] ],
+			[ [ "molle_patch_mountaineer", 1 ] ],
+			[ [ "molle_patch_no_clowns", 1 ] ],
+			[ [ "molle_patch_fire_department", 1 ] ],
+			[ [ "molle_patch_eagle", 1 ] ],
+			[ [ "molle_patch_smiley", 1 ] ],
+			[ [ "molle_patch_folded_flag", 1 ] ],
+			[ [ "molle_patch_join_or_die", 1 ] ],
+			[ [ "molle_patch_join_or_pie", 1 ] ],
+			[ [ "molle_patch_spartan", 1 ] ],
+			[ [ "molle_patch_smoke_em", 1 ] ],
+			[ [ "molle_patch_coffee_then_conquer", 1 ] ],
+			[ [ "molle_patch_flag_us", 1 ] ],
+			[ [ "molle_patch_flag_puerto_rico", 1 ] ],
+			[ [ "molle_patch_flag_texas", 1 ] ],
+			[ [ "molle_patch_flag_chicago_four", 1 ] ],
+			[ [ "molle_patch_flag_chicago_five", 1 ] ],
+			[ [ "molle_patch_writebar", 1 ] ],
+				  
+			[ [ "rig_module_holster", 2 ] ],
+			[ [ "rig_module_mags_two", 2 ] ],
+			[ [ "rig_module_mags_four", 2 ] ],
+			[ [ "rig_module_book", 2 ] ],
+				  
+			[ [ "shoulder_rig_leather", 1 ] ],
+			[ [ "shoulder_rig_nylon", 1 ] ]  
+		],
+		
+		"flags": [ 
+			"BLIND_EASY" 
+		] 
+	}
+]
