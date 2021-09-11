@@ -1481,5 +1481,242 @@
 		},
 		
 		"price": "64 USD" 
+	},
+	
+	{ 
+		"id": "taco_holster",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/60ua01" 
+		],
+		
+		"name": { 
+			"str": "MOLLE universal holster" 
+		},
+		"description": "Ambidextrous nylon universal holster.  This one is open on the muzzle end: it will comfortably accept long revolvers, as well as pistols with muzzle devices.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "159 g",
+		"//volume": "third of total volume, to account for non-rectangular shape and contents",
+		"volume": "123 ml",
+		"longest_side": "254 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "holster",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 100,
+				
+				"magazine_well": "150 ml",
+				
+				"max_item_length": "350 mm",
+				"max_contains_volume": "900 ml",
+				"max_contains_weight": "4 kg" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster" 
+		},
+		
+		"price": "67 USD" 
+	},
+	
+	{ 
+		"id": "taco_gas_mask",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/12gm01" 
+		],
+		
+		"name": { 
+			"str": "MOLLE gas mask pouch" 
+		},
+		"description": "Very spacious pouch, intended to hold even the largest models of gas masks, or serve as a dump pouch for spent magazines.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "454 g",
+		"//volume": "quarter of total volume, to account for contents",
+		"volume": "1967 ml",
+		"longest_side": "305 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "gas mask pouch",
+				
+				"rigid": false,
+				
+				"moves": 200,
+				
+				"magazine_well": "100 ml",
+				
+				"max_item_length": "300 mm",
+				"//max_contains_volume": "is that correct??",
+				"max_contains_volume": "7600 ml",
+				"max_contains_weight": "6 kg" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "83 USD" 
+	},
+	
+	{ 
+		"id": "taco_utility",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/12rp00-12rp10" 
+		],
+		
+		"name": { 
+			"str": "MOLLE utility pouch" 
+		},
+		"description": "Small pouch with upper zipper closure.  Intended for medium-sized items, such as radios, GPS, or binoculars.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "142 g",
+		"volume": "719 ml",
+		"longest_side": "152 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "utilty pouch",
+				
+				"//rigid": "more or less: won't expand much under given stats",
+				"rigid": true,
+				
+				"moves": 300,
+				
+				"max_item_length": "150 mm",
+				"max_contains_volume": "700 ml",
+				"max_contains_weight": "1 kg" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "28 USD" 
+	},
+	
+	{ 
+		"id": "taco_ifak",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/12rx00-12rr01-12rc00",
+			"has a tiny MOLLE patch panel with a default medical cross patch",
+			"demo version assumes the patch is already there",
+			"assumes there's one pull tab for tourniquets, and two ×2 pen loops" 
+		],
+		
+		"name": { 
+			"str": "ReFlex™ IFAK pouch" 
+		},
+		"description": "Two-part system of pouches and loops designed to carry medical equipment.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "220 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "1082 ml",
+		"longest_side": "203 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "med roll",
+				
+				"rigid": false,
+				
+				"moves": 300,
+				
+				"max_item_length": "200 mm",
+				"max_contains_volume": "2150 ml",
+				"max_contains_weight": "2 kg" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "double pen loop",
+				
+				"rigid": true,
+				"holster": true,
+				"multi": 2,
+				
+				"moves": 80,
+				
+				"max_item_length": "200 mm",
+				"max_contains_volume": "40 ml",
+				"max_contains_weight": "100 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "double pen loop",
+				
+				"rigid": true,
+				"holster": true,
+				"multi": 2,
+				
+				"moves": 80,
+				
+				"max_item_length": "200 mm",
+				"max_contains_volume": "40 ml",
+				"max_contains_weight": "100 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "pull tab",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 120,
+				
+				"max_item_length": "200 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "150 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "100 USD" 
 	} 
 ]
