@@ -238,5 +238,51 @@
 			"holster_prompt": "Stash magazine",
 			"holster_msg": "You stash your %s." 
 		} 
+	},
+	
+	{ 
+		"id": "rig_module_book",
+		"copy-from": "rig_module_leather",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//note": [
+			"assumes average book size and weight",
+			"probably useful for magic mods where books contain spells or are in other ways useful"
+		],
+		
+		"name": { 
+			"str": "shoulder rig book holster" 
+		},
+		"description": "Shoulder rig modular book holster.  Sturdy enough to hold even heavy books.",
+		
+		"looks_like": "legpouch_large",
+		
+		"volume": "1050 ml",
+		"longest_side": "12 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "book holster",
+				
+				"holster": true,
+				"rigid": true,
+				
+				"moves": 200,
+				
+				"max_contains_volume": "1 L",
+				"max_contains_weight": "650 g",
+				"max_item_length": "11 cm" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster",
+			
+			"holster_prompt": "Stash book",
+			"holster_msg": "You stash your %s." 
+		} 
 	} 
 ]
