@@ -321,7 +321,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "MOLLE web for patches",
+				"//type": "MOLLE web for patches",
 				
 				"moves": 120,
 				
@@ -357,7 +357,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "pouch",
+				"//type": "pouch",
 				
 				"moves": 120,
 				
@@ -369,7 +369,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "side pocket",
+				"//type": "side pocket",
 				
 				"moves": 40,
 				
@@ -383,7 +383,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "side pocket",
+				"//type": "side pocket",
 				
 				"moves": 40,
 				
@@ -397,7 +397,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "MOLLE web for patches",
+				"//type": "MOLLE web for patches",
 				
 				"moves": 120,
 				
@@ -637,7 +637,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "pouch proper",
+				"//type": "bottle pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -686,7 +686,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "smartphone pouch",
+				"//type": "smartphone pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -700,7 +700,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "card pocket",
+				"//type": "card pocket",
 				
 				"//max_contains_volume": "holds two",
 				"max_contains_volume": "8 ml",
@@ -719,7 +719,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "card pocket",
+				"//type": "card pocket",
 				
 				"//max_contains_volume": "holds two",
 				"max_contains_volume": "8 ml",
@@ -770,7 +770,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -819,7 +819,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -836,7 +836,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -885,7 +885,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -902,7 +902,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -919,7 +919,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -968,7 +968,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "extended magazine pouch",
+				"//type": "extended magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -1017,7 +1017,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "flashbang pouch",
+				"//type": "flashbang pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -1034,7 +1034,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "flashbang pouch",
+				"//type": "flashbang pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -1083,7 +1083,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "canteen pouch",
+				"//type": "canteen pouch",
 				
 				"rigid": false,
 				
@@ -1131,7 +1131,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "grenade pouch",
+				"//type": "grenade pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -1180,7 +1180,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
@@ -1197,7 +1197,7 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//": "magazine pouch",
+				"//type": "magazine pouch",
 				
 				"rigid": false,
 				"holster": true,
