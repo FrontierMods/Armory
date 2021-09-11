@@ -9,7 +9,7 @@
 			"GENERIC" 
 		],
 		
-		"info": "This item is part of the <info>MOLLE gear system</info>.  It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack."
+		"info": "This item is part of the <info>MOLLE gear system</info>. It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack."
 		
 	},
 	
@@ -23,7 +23,7 @@
 			"GENERIC" 
 		],
 		
-		"info": "This item is a decorative piece for the <info>MOLLE gear system</info>.  It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack.  It does not provide any benefit beyond asserting you into the empty world." 
+		"info": "This item is a decorative piece for the <info>MOLLE gear system</info>. It can be attached to <info>MOLLE carrying equipment</info>, such as a vest or a backpack.  It does not provide any benefit beyond asserting you into the empty world." 
 	},
 	
 	{ 
@@ -58,7 +58,7 @@
 			"GENERIC" 
 		],
 		
-		"info": "This item is worn on your shoulders.  It can host up to two <info>shoulder rig modules</info>, such as pistol holsters or magazine pouches, on your torso."
+		"info": "This item is worn on your shoulders. It can hold up to two <info>shoulder rig modules</info>, such as pistol holsters or magazine pouches, on your torso."
 		
 	},
 	
@@ -72,7 +72,7 @@
 			"GENERIC" 
 		],
 		
-		"info": "This item is a <info>shoulder rig module</info>.  It can be attached to a shoulder rig and be used as a piece of carrying equipment."
+		"info": "This item is a <info>shoulder rig module</info>. It can be attached to a shoulder rig and used as a piece of carrying equipment."
 		
 	} 
 ]
