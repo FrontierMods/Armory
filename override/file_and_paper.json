@@ -24,7 +24,7 @@
 			"str": "military operations map" 
 		},
 		
-		"extend": {
+		"extend": { 
 			"flags": [ 
 				"PAPER_FILE_SIZED" 
 			] 
