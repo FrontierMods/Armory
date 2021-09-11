@@ -109,7 +109,11 @@
 				
 				"moves": 100,
 				
-				"max_contains_volume": "100 ml",
+				"//max_contains_volume": [
+					"fits Glock 17-round magazine and smaller",
+					"proportions of some Glock mags have been changed for the demo" 
+				],
+				"max_contains_volume": "105 ml",
 				"max_contains_weight": "500 g",
 				"//max_item_length": "fits Glock 17-round magazine and smaller",
 				"max_item_length": "15 cm" 
@@ -124,7 +128,11 @@
 				
 				"moves": 100,
 				
-				"max_contains_volume": "100 ml",
+				"//max_contains_volume": [
+					"fits Glock 17-round magazine and smaller",
+					"proportions of some Glock mags have been changed for the demo" 
+				],
+				"max_contains_volume": "105 ml",
 				"max_contains_weight": "500 g",
 				"//max_item_length": "fits Glock 17-round magazine and smaller",
 				"max_item_length": "15 cm" 
