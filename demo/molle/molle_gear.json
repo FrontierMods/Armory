@@ -65,7 +65,14 @@
 					"CARD_STANDARD" 
 				] 
 			} 
-		] 
+		],
+		
+		"use_action": { 
+			"type": "holster",
+			
+			"holster_prompt": "Attach module",
+			"holster_msg": "You attach %s to your vest." 
+		}  
 	},
 	
 	{
@@ -115,6 +122,13 @@
 				]
 			} 
 		],
+		
+		"use_action": { 
+			"type": "holster",
+			
+			"holster_prompt": "Attach module",
+			"holster_msg": "You attach %s to your belt." 
+		},
 		
 		"price": "198 USD" 
 	} 
