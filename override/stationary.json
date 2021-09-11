@@ -13,7 +13,8 @@
 		},
 		
 		"weight": "8 g",
-		"volume": "15 ml" 
+		"volume": "15 ml",
+		"longest_side": "145 mm" 
 	},
 	
 	{ 
@@ -30,6 +31,7 @@
 		},
 		
 		"weight": "28 g",
-		"volume": "16 ml" 
+		"volume": "16 ml",
+		"longest_side": "127 mm" 
 	} 
 ]
