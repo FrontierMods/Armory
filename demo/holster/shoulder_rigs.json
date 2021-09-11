@@ -46,7 +46,7 @@
 				
 				"moves": 600,
 				
-				"max_contains_volume": 	"1000 ml",
+				"max_contains_volume": 	"1100 ml",
 				"max_contains_weight": 	"2 kg",
 				
 				"flag_restriction": [ 
@@ -63,7 +63,7 @@
 				
 				"moves": 600,
 				
-				"max_contains_volume": "1000 ml",
+				"max_contains_volume": "1100 ml",
 				"max_contains_weight": "2 kg",
 				
 				"flag_restriction": [ 
