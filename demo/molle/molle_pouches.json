@@ -626,7 +626,7 @@
 		"name": { 
 			"str": "TACO soft pouch" 
 		},
-		"description": "This soft spacious pouch is intended for storing bottles or items of similar shape and volume.  Can be attached to MOLLE and ABM belts.",
+		"description": "Spacious pouch, intended for storing water bottles or items of similar shape and volume.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "136 g",
 		"//volume": "quarter of total volume, to account for contents",
@@ -675,7 +675,7 @@
 		"name": { 
 			"str": "TACO smartphone pouch" 
 		},
-		"description": "This thin pouch holds a smartphone up to 6 inches, display-wise.  It also has two pockets for cards, each holding two.  Can be attached to MOLLE and ABM belts.",
+		"description": "Thin pouch intended to hold a smartphone of up to 6 inches in diagonal.  Also has two pockets for ID and credit cards, each holding two.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "66 g",
 		"//volume": "half of total volume, to account for smartphone insert",
@@ -759,7 +759,7 @@
 		"name": { 
 			"str": "TACO pistol magazine pouch" 
 		},
-		"description": "This soft pouch can hold a single pistol magazine, or an item of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		"description": "Soft pouch, intended to hold a single pistol magazine, or an item of similar dimensions.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "50 g",
 		"//volume": "half of total volume, to account for contents",
@@ -808,7 +808,7 @@
 		"name": { 
 			"str": "TACO double pistol magazine pouch" 
 		},
-		"description": "This soft pouch can hold two pistol magazines, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		"description": "Soft pouch, intended to hold two pistol magazines, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "118 g",
 		"//volume": "half of total volume, to account for contents",
@@ -874,7 +874,7 @@
 		"name": { 
 			"str": "TACO triple pistol magazine pouch" 
 		},
-		"description": "This soft pouch can hold three pistol magazines, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		"description": "Soft pouch, intended to hold three pistol magazines, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "159 g",
 		"//volume": "half of total volume, to account for contents",
@@ -957,7 +957,7 @@
 		"name": { 
 			"str": "TACO extended pistol magazine pouch" 
 		},
-		"description": "This pouch can hold a single extended magazine from a pistol or an SMG, or an item of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		"description": "Pouch intended to hold a single large magazine for a pistol or an SMG, or an item of similar dimensions.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "73 g",
 		"//volume": "half of total volume, to account for contents",
@@ -1006,7 +1006,7 @@
 		"name": { 
 			"str": "TACO double flashbang pouch" 
 		},
-		"description": "This soft pouch can hold two flashbangs, 40mm grenades, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
+		"description": "Soft pouch, intended to hold two flashbangs, 40mm grenades, or items of similar dimensions.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "153 g",
 		"//volume": "half of total volume, to account for contents",
@@ -1072,7 +1072,7 @@
 		"name": { 
 			"str": "TACO canteen pouch" 
 		},
-		"description": "This spacious pouch is intended to hold a single standard USGI 1-quart canteen, though it can hold other large or loose items.  Can be attached to MOLLE and ABM belts.",
+		"description": "Spacious soft pouch, intended to hold a single standard USGI 1-quart canteen, though it can hold other large or loose items.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "196 g",
 		"//volume": "quarter of total volume, to account for contents",
@@ -1120,7 +1120,7 @@
 		"name": { 
 			"str": "TACO frag grenade pouch" 
 		},
-		"description": "This pouch can hold one standard US Army fragmentation grenade.  Can be attached to MOLLE and ABM belts.",
+		"description": "Small soft pouch, intended to hold one standard US Army fragmentation grenade.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "196 g",
 		"//volume": "half of total volume, to account for contents",
@@ -1169,7 +1169,7 @@
 		"name": { 
 			"str": "TACO stacked rifle magazine pouch" 
 		},
-		"description": "This pouch can hold two rifles magazines stacked on top of each other.  Can be attached to MOLLE and ABM belts.",
+		"description": "Hard-frame pouch, intended to hold two rifles magazines stacked on top of each other.  Can be attached to MOLLE and ABM belts.",
 		
 		"weight": "136 g",
 		"//volume": "half of total volume, to account for contents",
