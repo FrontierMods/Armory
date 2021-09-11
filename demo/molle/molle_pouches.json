@@ -703,6 +703,7 @@
 				"//type": "card pocket",
 				
 				"holster": true,
+				"multi": 2,
 				
 				"moves": 50,
 				
@@ -722,6 +723,7 @@
 				"//type": "card pocket",
 				
 				"holster": true,
+				"multi": 2,
 				
 				"moves": 50,
 				
