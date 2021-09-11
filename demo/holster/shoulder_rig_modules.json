@@ -16,7 +16,6 @@
 		"material": [ 
 			"leather" 
 		],
-		"material_thickness": 1,
 
 		"symbol": "[",
 		"looks_like": "holster",
