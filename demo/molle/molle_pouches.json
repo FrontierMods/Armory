@@ -702,14 +702,14 @@
 				
 				"//type": "card pocket",
 				
+				"holster": true,
+				
+				"moves": 50,
+				
 				"//max_contains_volume": "holds two",
 				"max_contains_volume": "8 ml",
 				"max_contains_weight": "40 g",
 				"max_item_length": "86 mm",
-				
-				"moves": 50,
-				
-				"holster": true,
 				
 				"flag_restriction": [ 
 					"CARD_STANDARD" 
@@ -721,14 +721,14 @@
 				
 				"//type": "card pocket",
 				
+				"holster": true,
+				
+				"moves": 50,
+				
 				"//max_contains_volume": "holds two",
 				"max_contains_volume": "8 ml",
 				"max_contains_weight": "40 g",
 				"max_item_length": "86 mm",
-				
-				"moves": 50,
-				
-				"holster": true,
 				
 				"flag_restriction": [ 
 					"CARD_STANDARD" 
