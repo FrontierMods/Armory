@@ -1220,5 +1220,264 @@
 		},
 		
 		"price": "46 USD" 
+	},
+	
+	{ 
+		"id": "taco_med",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/11re00-11re",
+			"actually two pouches, one a frame, the other structural for contents",
+			"comes with a medical cross patch; assumed to be on in the demo" 
+		],
+		
+		"name": { 
+			"str": "Revive™ medical pouch" 
+		},
+		"description": "Small soft pouch, intended for small medical supplies for use on the battlefield, such as bandages and hemostatic powders.  Has a pull tab on the side for storing a single tourniquet, and a thin pocket on the back for medical shears.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "119 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "559 ml",
+		"longest_side": "133 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "medical pouch",
+				
+				"rigid": false,
+				
+				"moves": 120,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "120 mm",
+				"max_contains_volume": "500 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "pull tab",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"max_item_length": "140 mm",
+				"max_contains_volume": "150 ml",
+				"max_contains_weight": "150 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "thin back pocket",
+				
+				"rigid": false,
+				
+				"moves": 80,
+				
+				"max_item_length": "120 mm",
+				"max_contains_volume": "50 ml",
+				"max_contains_weight": "100 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "74 USD" 
+	},
+	
+	{ 
+		"id": "taco_rifle_extended",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/11hc00" 
+		],
+		
+		"name": { 
+			"str": "TACO high-capacity rifle magazine pouch" 
+		},
+		"description": "Soft pouch, intended to hold a single high-capacity box magazine, or an item of similar proportions.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "145 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "323 ml",
+		"longest_side": "191 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 90,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "250 mm",
+				"max_contains_volume": "400 ml",
+				"max_contains_weight": "300 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "39 USD" 
+	},
+	
+	{ 
+		"id": "taco_shot",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/12sp00" 
+		],
+		
+		"name": { 
+			"str": "shot shell pouch" 
+		},
+		"description": "Soft pouch, intended to hold up to 12 12-gauge shot shells.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "106 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "400 ml",
+		"longest_side": "165 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "inner dual belt",
+				
+				"rigid": false,
+				
+				"moves": 30,
+				
+				"magazine_well": "50 ml",
+				
+				"ammo_restriction": {
+					"shot": 12
+				} 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash shot",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "39 USD" 
+	},
+	
+	{ 
+		"id": "taco_rifle_double",
+		"copy-from": "molle_pouch",
+		"type": "GENERIC",
+		"category": "armor",
+		
+		"//source": [
+			"https://www.highspeedgear.com/41tp02" 
+		],
+		
+		"name": { 
+			"str": "TACO stacked rifle magazine pouch" 
+		},
+		"description": "Hard-frame stacked pouch, intended to hold two standard-capacity pistol magazines stacked on top of a single rifle magazine.  Can be attached to MOLLE and ABM belts.",
+		
+		"weight": "148 g",
+		"//volume": "half of total volume, to account for contents",
+		"volume": "123 ml",
+		"longest_side": "127 mm",
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "rifle magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 80,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "250 mm",
+				"max_contains_volume": "400 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "pistol magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			},
+			
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "pistol magazine pouch",
+				
+				"rigid": false,
+				"holster": true,
+				
+				"moves": 70,
+				
+				"magazine_well": "50 ml",
+				
+				"max_item_length": "175 mm",
+				"max_contains_volume": "175 ml",
+				"max_contains_weight": "500 g" 
+			} 
+		],
+		
+		"use_action": { 
+			"type": "holster", 
+			
+			"holster_prompt": "Stash item",
+			"holster_msg": "You stash your %s." 
+		},
+		
+		"price": "64 USD" 
 	} 
 ]
