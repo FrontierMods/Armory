@@ -39,7 +39,7 @@
 		"name": { 
 			"str": "MOLLE loop holster" 
 		},
-		"description": "TBD",
+		"description": "Minimal MOLLE hook-and-loop universal pistol holster.  Universal holsters are slightly slower to use than form-fitting ones, but fit a wide variety of semi-automatic pistols and revolvers.  This one has no coverage of the muzzle end, enabling user to holster pistols with muzzle devices.",
 		
 		"volume": "350 ml",
 		"longest_side": "100 mm",
@@ -94,7 +94,7 @@
 		"name": { 
 			"str": "MOLLE Kangaroo triple rifle magazine pouch" 
 		},
-		"description": "TBD",
+		"description": "Three large-magazine MOLLE pouches sawn together.  Provide excellent retention of the magazines, while also enabling swift removal.",
 		
 		"volume": "1625 ml",
 		"longest_side": "267 mm",
@@ -185,7 +185,7 @@
 		"name": { 
 			"str": "MOLLE double rifle magazine pouch" 
 		},
-		"description": "TBD",
+		"description": "Two large-magazine MOLLE pouches sawn together.  Provide average magazine retention, without putting anything between you and the magazine you want to extract.",
 		
 		"volume": "725 ml",
 		"longest_side": "159 mm",
@@ -255,7 +255,7 @@
 		"name": { 
 			"str": "MOLLE rifle magazine pouch" 
 		},
-		"description": "TBD",
+		"description": "Single large-magazine MOLLE pouch.  Provides average magazine retention, without putting anything between you and the magazine you want to extract.",
 		
 		"volume": "334 ml",
 		"longest_side": "114 mm",
@@ -304,7 +304,7 @@
 		"name": { 
 			"str": "MOLLE 6x6 padded pouch" 
 		},
-		"description": "TBD",
+		"description": "Spacious MOLLE pouch for extra storage, with upper zipper closure.  Has an external MOLLE web for additional pouches.",
 		
 		"volume": "1770 ml",
 		"longest_side": "153 mm",
@@ -352,7 +352,7 @@
 		"name": { 
 			"str": "MOLLE 3x6 med pouch" 
 		},
-		"description": "TBD",
+		"description": "Slim pouch intended for storing medical supplies.  Has side pockets for extra medical equipment, such as tourniquets and medical shears.  Tiny velcro spot can be used to attach a decorative patch.  Can be attached to MOLLE and ABM belts.",
 		
 		"volume": "716 ml",
 		"longest_side": "178 mm",
@@ -428,7 +428,7 @@
 		"name": { 
 			"str": "MOLLE double pistol magazine pouch" 
 		},
-		"description": "TBD",
+		"description": "Two pistol-magazine MOLLE pouches sawn together.  Provide average magazine retention, without putting anything between you and the magazine you want to extract.",
 		
 		"volume": "407 ml",
 		"longest_side": "115 mm",
@@ -498,7 +498,7 @@
 		"name": { 
 			"str": "MOLLE pistol magazine pouch" 
 		},
-		"description": "TBD",
+		"description": "Single pistol-magazine MOLLE pouch.  Provides average magazine retention, without putting anything between you and the magazine you want to extract.",
 		
 		"volume": "204 ml",
 		"longest_side": "115 mm",
@@ -549,7 +549,7 @@
 		"name": { 
 			"str": "MOLLE stationery pouch" 
 		},
-		"description": "TBD",
+		"description": "Tiny MOLLE patch with three pockets: one for a pen, one for a small flashlight, and one for multiple credit or ID cards.",
 		
 		"volume": "204 ml",
 		"longest_side": "115 mm",
