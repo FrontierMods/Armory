@@ -50,7 +50,7 @@
 				
 				"//type": "holster",
 				
-				"moves": 70,
+				"moves": 120,
 				
 				"rigid": false,
 				"holster": true,
@@ -105,7 +105,7 @@
 				
 				"//type": "magazine pouch",
 				
-				"moves": 80,
+				"moves": 90,
 				
 				"holster": true,
 				
@@ -126,7 +126,7 @@
 				
 				"//type": "magazine pouch",
 				
-				"moves": 80,
+				"moves": 90,
 				
 				"holster": true,
 				
@@ -147,7 +147,7 @@
 				
 				"//type": "magazine pouch",
 				
-				"moves": 80,
+				"moves": 90,
 				
 				"holster": true,
 				
@@ -315,7 +315,7 @@
 				
 				"//type": "pouch",
 				
-				"moves": 100,
+				"moves": 200,
 				
 				"max_item_length": "150 mm",
 				"max_contains_volume": "1700 ml",
@@ -375,7 +375,7 @@
 				
 				"//type": "side pocket",
 				
-				"moves": 40,
+				"moves": 70,
 				
 				"magazine_well": "25 ml",
 				
@@ -389,7 +389,7 @@
 				
 				"//type": "side pocket",
 				
-				"moves": 40,
+				"moves": 70,
 				
 				"magazine_well": "25 ml",
 				
@@ -403,7 +403,7 @@
 				
 				"//type": "MOLLE web for patches",
 				
-				"moves": 120,
+				"moves": 200,
 				
 				"max_contains_volume": "50 ml",
 				"max_contains_weight": "100 g",
@@ -562,7 +562,7 @@
 				
 				"holster": true,
 				
-				"moves": 50,
+				"moves": 100,
 				
 				"//magazine_well": "5 leeway for the pen sticking out",
 				"magazine_well": "5 ml",
@@ -579,7 +579,7 @@
 				
 				"holster": true,
 				
-				"moves": 50,
+				"moves": 100,
 				
 				"//magazine_well": "10 leeway for the flashlight sticking out",
 				"magazine_well": "10 ml",
@@ -596,7 +596,7 @@
 				
 				"holster": true,
 				
-				"moves": 50,
+				"moves": 200,
 				
 				"max_item_length": "150 mm",
 				"max_contains_volume": "90 ml",
