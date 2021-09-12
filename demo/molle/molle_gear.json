@@ -13,7 +13,7 @@
 		"name": { 
 			"str": "MOLLE modular vest" 
 		},
-		"description": "TBD",
+		"description": "Protective vest made with ballistic nylon.  Strong enough to protect wearer from pistol-caliber bullets, but not beyond that.  This vest is outfitted with a MOLLE web, allowing wearer to attach MOLLE modules to it, enhancing their carrying capabilities in exchange for encumbrance.  The vest also has a velcro surface for attaching decorative patches.",
 		
 		"max_encumbrance": 24,
 		
@@ -90,7 +90,7 @@
 		"name": { 
 			"str": "MOLLE operator belt" 
 		},
-		"description": "TBD",
+		"description": "Ballistic nylon belt with a steel buckle.  Has integrated MOLLE web that allows attaching MOLLE and dedicated belt-mounted gear to it, to enhance carrying capability of the wearer in exchange for encumbrance.",
 		
 		"weight": "354 g",
 		"volume": "344 ml",
