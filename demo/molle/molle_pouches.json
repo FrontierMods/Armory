@@ -55,6 +55,10 @@
 				"rigid": false,
 				"holster": true,
 				
+				"skills": [ 
+					"pistol" 
+				],
+				
 				"//magazine_well": "skinny hook-and-loop holster; most of the pistol sticks out",
 				"magazine_well": "150 ml",
 				
@@ -1511,6 +1515,10 @@
 				
 				"rigid": false,
 				"holster": true,
+				
+				"skills": [ 
+					"pistol" 
+				],
 				
 				"moves": 100,
 				
