@@ -100,7 +100,7 @@
 			"nylon"
 		],
 		
-		"max_encumbrance": 16,
+		"max_encumbrance": 20,
 		
 		"pocket_data": [ 
 			{ 
@@ -110,7 +110,7 @@
 				
 				"rigid": false,
 				"//max_contains_volume": "perfectly arbitrary; hard to calculate potential volume of hanging external pockets",
-				"max_contains_volume": "3 L",
+				"max_contains_volume": "4 L",
 				"max_contains_weight": "5 kg",
 				
 				"//dimensions": "45 × 813 mm",
