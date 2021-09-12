@@ -302,7 +302,7 @@
 		],
 		
 		"name": { 
-			"str": "MOLLE 6x6 padded pouch" 
+			"str": "MOLLE 6-by-6 padded pouch" 
 		},
 		"description": "Spacious MOLLE pouch for extra storage, with upper zipper closure.  Has an external MOLLE web for additional pouches.",
 		
@@ -325,15 +325,17 @@
 			{ 
 				"pocket_type": "CONTAINER",
 				
-				"//type": "MOLLE web for patches",
+				"//type": "external MOLLE web",
 				
-				"moves": 120,
+				"moves": 300,
 				
-				"max_contains_volume": "50 ml",
-				"max_contains_weight": "100 g",
+				"max_item_length": "150 mm",
+				"//max_contains_volume": "6 × 6 × 1 in. for external pockets",
+				"max_contains_volume": "590 ml",
+				"max_contains_weight": "1 kg",
 				
 				"flag_restriction": [ 
-					"MOLLE_DECOR" 
+					"MOLLE_POUCH" 
 				] 
 			} 
 		] 
