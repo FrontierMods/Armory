@@ -706,9 +706,6 @@
 				
 				"//type": "card pocket",
 				
-				"holster": true,
-				"multi": 2,
-				
 				"moves": 50,
 				
 				"//max_contains_volume": "holds two",
@@ -725,9 +722,6 @@
 				"pocket_type": "CONTAINER",
 				
 				"//type": "card pocket",
-				
-				"holster": true,
-				"multi": 2,
 				
 				"moves": 50,
 				
