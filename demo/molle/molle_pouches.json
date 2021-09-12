@@ -61,7 +61,7 @@
 				"max_contains_volume": "750 ml",
 				"max_contains_weight": "2 kg",
 				"min_item_volume": "300 ml",
-				"max_item_length": "300 mm" 
+				"max_item_length": "350 mm" 
 			} 
 		],
 		
@@ -1516,7 +1516,7 @@
 				
 				"magazine_well": "150 ml",
 				
-				"max_item_length": "350 mm",
+				"max_item_length": "450 mm",
 				"max_contains_volume": "900 ml",
 				"max_contains_weight": "4 kg" 
 			} 
