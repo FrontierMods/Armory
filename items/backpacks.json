@@ -1,0 +1,186 @@
+[ 
+	{ 
+		"abstract": "frontiers_backpack",
+		"type": "ARMOR",
+		
+		"symbol": ")",
+		"color": "dark_gray",
+		
+		"material": [ 
+			"nylon" 
+		],
+		
+		"flags": [ 
+			"BELTED" 
+		] 
+	},
+	
+	{ 
+		"id": "511tactical_dailydeploy48",
+		"copy-from": "frontiers_backpack",
+		"type": "ARMOR",
+		
+		"//source": [ 
+			"https://www.511tactical.com/daily-deploy-48-pack.html" 
+		],
+		
+		"name": { 
+			"str": "5.11 Tactical Daily Deploy 48 39L backpack" 
+		},
+		"description": "No-nonsense tactical backpack, with the total capacity of 39 liters.  Like in many other 5.11 Tactical packs, the number in the name comes from the amount of hours one's expected to last with supplies packed in such a pack.  Simple clamshell storage, a mesh divider for access to a smaller storage, laptop sleeve in the back, and an admin pouch at the top.  The MOLLE webbing provides plenty of space for additional pouches.  The patch surface could be used for decorative and informatonal patches.",
+		
+		"weight": "1696 g",
+		"//volume": [ 
+			"from dimensions",
+			"21 × 13.5 × 7.5 in.",
+			"5% trim" 
+		],
+		"volume": "33100 ml",
+		"longest_side": "533 mm",
+		
+		"encumbrance": 3,
+		"//max_encumbrance": "discount of 3 points for the effective load-bearing system",
+		"max_encumbrance": 36,
+		
+		"pocket_data": [ 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "laptop sleeve",
+				
+				"rigid": true,
+				"holster": true,
+				
+				"moves": 400,
+				
+				"max_contains_volume": "2 L",
+				"max_contains_weight": "3 kg",
+				"max_item_length": "530 mm" 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "clamshell storage compartment",
+				
+				"rigid": true,
+				
+				"moves": 540,
+				
+				"max_contains_volume": "35 L",
+				"max_contains_weight": "60 kg",
+				"max_item_length": "530 mm" 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "mesh-divided secondary internal compartment",
+				
+				"moves": 440,
+				
+				"max_contains_volume": "1500 ml",
+				"max_contains_weight": "5 kg",
+				"max_item_length": "530 mm" 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "top admin pouch",
+				"//note": "accessible how exactly??",
+				
+				"moves": 400,
+				
+				"max_contains_volume": "1 L",
+				"max_contains_weight": "500 g",
+				"max_item_length": "190 mm" 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "front MOLLE webbing",
+				
+				"//dimensions": [ 
+					"270 × 275 mm",
+					"eyeballed",
+					"~50% of backpack height",
+					"~80% of backpack width",
+					"40mm space of pouch depth",
+					"plus rounding to nearest 5/10" 
+				],
+				"max_contains_volume": "2930 ml",
+				"max_contains_weight": "5 kg",
+				
+				"flag_restriction": [ 
+					"MOLLE_POUCH" 
+				] 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "side MOLLE webbing",
+				
+				"//dimensions": [ 
+					 "135 × 235 mm",
+					"eyeballed",
+					"~50% of front MOLLE webbing height",
+					"~80% of backpack depth",
+					"40mm space of pouch depth",
+					"plus rounding to nearest 5/10" 
+				],
+				"max_contains_volume": "1270 ml",
+				"max_contains_weight": "2500 g",
+				
+				"flag_restriction": [ 
+					"MOLLE_POUCH" 
+				] 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "side MOLLE webbing",
+				
+				"//dimensions": [ 
+					"135 × 235 mm",
+					"eyeballed",
+					"~50% of front MOLLE webbing height",
+					"~80% of backpack depth",
+					"40mm space of pouch depth",
+					"plus rounding to nearest 5/10" 
+				],
+				"max_contains_volume": "1270 ml",
+				"max_contains_weight": "2500 g",
+				
+				"flag_restriction": [ 
+					"MOLLE_POUCH" 
+				] 
+			},
+			 
+			{ 
+				"pocket_type": "CONTAINER",
+				
+				"//type": "front patch surface",
+				
+				"//dimensions": [
+					"180 × 275 mm",
+					"eyeballed",
+					"same width as front MOLLE webbing",
+					"~66% of height of front MOLLE webbing",
+					"5mm height of average patch" 
+				],
+				"max_contains_volume": "248 ml",
+				"max_contains_weight": "1 kg",
+				
+				"flag_restriction": [ 
+					"MOLLE_DECOR" 
+				] 
+			} 
+		],
+		
+		"price": "150 USD" 
+	} 
+]
