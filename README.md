@@ -4,6 +4,8 @@
 
 In particular, it adds a modular equipment framework that gives players the ability to pick the kind of functionality they want their gear to have, without resorting to crafting. This makes the system both easy to manage and easy to expand with other mods.
 
+⚠ Frontier Mods also hosts [a blog](https://github.com/FrontierMods/Blog) and [a design document](https://github.com/FrontierMods/Design). Subscribe to those to stay in touch with the development of the mods.
+
 
 ## Status
 
