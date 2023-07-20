@@ -4,29 +4,16 @@
 
 In particular, it adds a modular equipment framework that gives players the ability to pick the kind of functionality they want their gear to have, without resorting to crafting. This makes the system both easy to manage and easy to expand with other mods.
 
-⚠ Frontier Mods also hosts [a blog](https://github.com/FrontierMods/Blog) and [a design document](https://github.com/FrontierMods/Design). Subscribe to those to stay in touch with the development of the mods.
+⚠ Since July 2023, Frontier Mods are being worked on again. However, Armory and other large mods are on hold because of the amount of work that the developer would have to put into them. Refer to [the Frontier Mods blog](https://github.com/FrontierMods/Blog) for the latest updates.
 
 
 ## Status
 
-*Armory* is currently in **DEMO 2**.
+*Armory* is currently **on hold**.
 
-Demo 2 expands on Demo 1's modular equipment framework, by providing a larger variety of modular gear.
+The mod had been tested up to 0.F-1 stable release of the game, and remains usable as a demonstation of the direction of the mod. All the documentation also remains accessible.
 
-Along with Demo 1's MOLLE vest, Demo 2 adds two new modular platforms:
-
-Operator belt, which has MOLLE web along its length, allowing interchangable use of belt and MOLLE pouches.
-
-Shoulder rig, like those the police uses to hold a gun and a couple of magazines. In Demo 2, you can attach any two of:
-
-* universal pistol holster
-* double pistol magazine pouch
-* quad pistol magazine pouch
-* book holster
-
-The purpose of Demo 2 is to gather public response to new models of equipment. Feel free to leave comments or create discussions in this repository. Also feel free to provide constructive criticism and point out mistakes in modelling of the equipment.
-
-**NOTE**: this mod, including demo versions, is compatible with the latest stable release only.
+Until a positive solution is found to working on such a large-scale mod consistently, *Armory* will remain on hold in favor of smaller, more-actionable mods for *Cataclysm*.
 
 
 ### How to Test: Demo 2
