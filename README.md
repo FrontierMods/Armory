@@ -28,19 +28,6 @@ This has been done in part as a proof of concept, and in part to demonstrate the
 ¹ During development it turned out that lab journals are significantly bigger than anticipated, and would not fit into the admin pouch under any circumstance. This may be omitted in the future, or mod-side changes may be made to accomodate that purpose. It's from the movies, so it's too cool to just pass on.
 
 
-## Future Plans
-
-* expanding on variety of pouches for the MOLLE and belt systems
-* adding standalone protective and carry equipment, such as different types of ballistic vests
-
-
-*Armory* is likely to receive one more demo. The purpose of it would be demonstrating the intent of standalone gear, as well as gathering final player response before a v0.1 release.
-
-Starting with v0.1, *Armory* would be considered a fully-released mod. It will receive updates that add new classes of equipment, until there's enough to qualify for v1.0. Then, releases will focus on quantity and variety within existing classes.
-
-v2.0 and beyond aren't expected, unless entirely new options become available in future releases of the game.
-
-
 # Content
 
 ## Modular Equipment
