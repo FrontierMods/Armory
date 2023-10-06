@@ -1,149 +1,132 @@
-[ 
-	{ 
-		"id": "shoulder_rig_leather",
-		"type": "ARMOR",
-		
-		"//source": [ 
-			"https://www.amazon.com/Galco-Classic-Shoulder-System-Right-hand/dp/B000KOVC08",
-			"inspiration, more like" 
-		],
-		
-		"name": { 
-			"str": "leather shoulder rig" 
-		},
-		"description": "Shoulder rig, much like what detectives wear in TV shows.  Four straps of leather connected to provide a shoulder-wearable minimal modular gear system.  Requires at least one module to be in any way useful.  Insert modules to attach them to the rig.  This rig holds two modules.",
-		
-		"//weight": [
-			"sourced from previous iteration",
-			"source lost" 
-		],
-		"weight": "220 g",
-		"volume": "300 ml",
-		
-		"material": [ 
-			"leather" 
-		],
-		"material_thickness": 1,
+[
+  {
+    "id": "shoulder_rig_leather",
+    "type": "ARMOR",
 
-		"symbol": "[",
-		"looks_like": "holster",
-		"color": "light_gray",
-		
-		"covers": [ 
-			"torso" 
-		],
-		"coverage": 10,
-		"encumbrance": 1,
-		"max_encumbrance": 4,
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "module attachment point",
-				
-				"holster": true,
-				
-				"moves": 600,
-				
-				"max_contains_volume": 	"1100 ml",
-				"max_contains_weight": 	"2 kg",
-				
-				"flag_restriction": [ 
-					"SHOULDER_RIG_MODULE" 
-				] 
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "module attachment point",
-				
-				"holster": true,
-				
-				"moves": 600,
-				
-				"max_contains_volume": "1100 ml",
-				"max_contains_weight": "2 kg",
-				
-				"flag_restriction": [ 
-					"SHOULDER_RIG_MODULE" 
-				] 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Attach module",
-			"holster_msg": "You attach %s to your shoulder rig." 
-		} 
-	},
-	
-	{ 
-		"id": "shoulder_rig_nylon",
-		"copy-from": "shoulder_rig_leather",
-		"type": "ARMOR",
-		
-		"//source": [ 
-			"https://www.amazon.com/XAegis-Shoulder-Holster-Vertical-Adjustable/dp/B081NF7PGC",
-			"inspiration, more like" 
-		],
-		
-		"name": { 
-			"str": "nylon shoulder rig" 
-		},
-		"description": "Shoulder rig, much like what detectives wear in TV shows.  Four straps of ballistic nylon connected via shoulder pads to provide a shoulder-wearable minimal modular gear system.  Requires at least one module to be in any way useful.  Insert modules to attach them to the rig.  This rig holds two modules.",
-		
-		"material": [
-			"nylon"
-		],
-		"material_thickness": 1,
-		
-		"encumbrance": 0,
-		"max_encumbrance": 5,
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "module attachment point",
-				
-				"holster": true,
-				
-				"moves": 600,
-				
-				"max_contains_volume": "1 L",
-				"max_contains_weight": "2 kg",
-				
-				"flag_restriction": [ 
-					"SHOULDER_RIG_MODULE" 
-				] 
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "module attachment point",
-				
-				"holster": true,
-				
-				"moves": 600,
-				
-				"max_contains_volume": "1 L",
-				"max_contains_weight": "2 kg",
-				
-				"flag_restriction": [ 
-					"SHOULDER_RIG_MODULE" 
-				] 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Attach module",
-			"holster_msg": "You attach %s to your shoulder rig." 
-		} 
-	} 
+    "//source": [
+      "https://www.amazon.com/Galco-Classic-Shoulder-System-Right-hand/dp/B000KOVC08",
+      "inspiration, more like"
+    ],
+
+    "name": {
+      "str": "leather shoulder rig"
+    },
+    "description": "Shoulder rig, much like what detectives wear in TV shows.  Four straps of leather connected to provide a shoulder-wearable minimal modular gear system.  Requires at least one module to be in any way useful.  Insert modules to attach them to the rig.  This rig holds two modules.",
+
+    "//weight": ["sourced from previous iteration", "source lost"],
+    "weight": "220 g",
+    "volume": "300 ml",
+
+    "material": ["leather"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "looks_like": "holster",
+    "color": "light_gray",
+
+    "covers": ["torso"],
+    "coverage": 10,
+    "encumbrance": 1,
+    "max_encumbrance": 4,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "module attachment point",
+
+        "holster": true,
+
+        "moves": 600,
+
+        "max_contains_volume": "1100 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["SHOULDER_RIG_MODULE"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "module attachment point",
+
+        "holster": true,
+
+        "moves": 600,
+
+        "max_contains_volume": "1100 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["SHOULDER_RIG_MODULE"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Attach module",
+      "holster_msg": "You attach %s to your shoulder rig."
+    }
+  },
+
+  {
+    "id": "shoulder_rig_nylon",
+    "copy-from": "shoulder_rig_leather",
+    "type": "ARMOR",
+
+    "//source": [
+      "https://www.amazon.com/XAegis-Shoulder-Holster-Vertical-Adjustable/dp/B081NF7PGC",
+      "inspiration, more like"
+    ],
+
+    "name": {
+      "str": "nylon shoulder rig"
+    },
+    "description": "Shoulder rig, much like what detectives wear in TV shows.  Four straps of ballistic nylon connected via shoulder pads to provide a shoulder-wearable minimal modular gear system.  Requires at least one module to be in any way useful.  Insert modules to attach them to the rig.  This rig holds two modules.",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+
+    "encumbrance": 0,
+    "max_encumbrance": 5,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "module attachment point",
+
+        "holster": true,
+
+        "moves": 600,
+
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["SHOULDER_RIG_MODULE"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "module attachment point",
+
+        "holster": true,
+
+        "moves": 600,
+
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["SHOULDER_RIG_MODULE"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Attach module",
+      "holster_msg": "You attach %s to your shoulder rig."
+    }
+  }
 ]

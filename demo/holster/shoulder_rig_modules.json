@@ -1,288 +1,282 @@
-[ 
-	{ 
-		"abstract": "rig_module_leather",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"name": { 
-			"str": "leather shoulder rig module" 
-		},
-		"description": "A shoulder rig module.",
-		
-		"weight": "250 g",
-		"volume": "250 ml",
-		"longest_side": "200 mm",
-		
-		"material": [ 
-			"leather" 
-		],
+[
+  {
+    "abstract": "rig_module_leather",
+    "type": "GENERIC",
+    "category": "armor",
 
-		"symbol": "[",
-		"looks_like": "holster",
-		"color": "light_gray",
-		
-		"flags": [
-			"SHOULDER_RIG_MODULE"
-		] 
-	},
-	
-	{ 
-		"abstract": "rig_module_nylon",
-		"copy-from": "rig_module_leather",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"name": { 
-			"str": "nylon shoulder rig module" 
-		},
-		"description": "A shoulder rig module.",
-		
-		"material": [ 
-			"nylon" 
-		] 
-	},
-	
-	{ 
-		"id": "rig_module_holster",
-		"copy-from": "rig_module_nylon",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"name": { 
-			"str": "shoulder rig universal holster" 
-		},
-		"description": "Shoulder rig universal pistol holster.  Universal holsters are slightly slower to use than form-fitting ones, but fit a wide variety of semi-automatic pistols and revolvers.  This one is sealed at the muzzle end: it will not fit long revolvers, or pistols with muzzle devices.",
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "holster",
-				
-				"holster": true,
-				
-				"moves": 70,
-				
-				"magazine_well": "300 ml",
-				
-				"max_contains_volume": "500 ml",
-				"max_contains_weight": "2 kg",
-				"//max_item_length": "fits M1911 and shorter modern pistols",
-				"max_item_length": "22 cm" 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster" 
-		} 
-	},
-	
-	{ 
-		"id": "rig_module_mags_two",
-		"copy-from": "rig_module_leather",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"//source": [
-			"https://www.craftholsters.com/leather-double-magazine-pouch",
-			"original is belted; this assumes shoulder rig attachment instead of belt loop"
-		],
-		
-		"name": { 
-			"str": "shoulder rig double magazine pouch" 
-		},
-		"description": "Shoulder rig modular magazine pouch, made from premium Italian leather.  Fitted for two standard-capacity pistol magazines.",
-		
-		"looks_like": "legpouch_large",
-		
-		"//volume": "assumes depth of 0.7 in.",
-		"volume": "155 ml",
-		"longest_side": "114 mm",
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "magazine pouch",
-				
-				"holster": true,
-				
-				"moves": 100,
-				
-				"//max_contains_volume": [
-					"fits Glock 17-round magazine and smaller",
-					"proportions of some Glock mags have been changed for the demo" 
-				],
-				"max_contains_volume": "105 ml",
-				"max_contains_weight": "500 g",
-				"//max_item_length": "fits Glock 17-round magazine and smaller",
-				"max_item_length": "15 cm" 
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "magazine pouch",
-				
-				"holster": true,
-				
-				"moves": 100,
-				
-				"//max_contains_volume": [
-					"fits Glock 17-round magazine and smaller",
-					"proportions of some Glock mags have been changed for the demo" 
-				],
-				"max_contains_volume": "105 ml",
-				"max_contains_weight": "500 g",
-				"//max_item_length": "fits Glock 17-round magazine and smaller",
-				"max_item_length": "15 cm" 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Stash magazine",
-			"holster_msg": "You stash your %s." 
-		} 
-	},
-	
-	{ 
-		"id": "rig_module_mags_four",
-		"copy-from": "rig_module_leather",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"//source": [
-			"https://www.craftholsters.com/leather-double-magazine-pouch",
-			"x2, width-wise",
-			"original is belted; this assumes shoulder rig attachment instead of belt loop"
-		],
-		
-		"name": { 
-			"str": "shoulder rig quad magazine pouch" 
-		},
-		"description": "Shoulder rig modular magazine pouch, made from premium Italian leather.  Fitted for four standard-capacity pistol magazines.",
-		
-		"looks_like": "legpouch_large",
-		
-		"//volume": "assumes depth of 0.7 in.",
-		"volume": "155 ml",
-		"longest_side": "114 mm",
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "magazine pouch",
-				
-				"holster": true,
-				
-				"moves": 100,
-				
-				"max_contains_volume": "100 ml",
-				"max_contains_weight": "500 g",
-				"//max_item_length": "fits Glock 17-round magazine and smaller",
-				"max_item_length": "15 cm" 
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "magazine pouch",
-				
-				"holster": true,
-				
-				"moves": 100,
-				
-				"max_contains_volume": "100 ml",
-				"max_contains_weight": "500 g",
-				"//max_item_length": "fits Glock 17-round magazine and smaller",
-				"max_item_length": "15 cm" 
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "magazine pouch",
-				
-				"holster": true,
-				
-				"moves": 100,
-				
-				"max_contains_volume": "100 ml",
-				"max_contains_weight": "500 g",
-				"//max_item_length": "fits Glock 17-round magazine and smaller",
-				"max_item_length": "15 cm" 
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "magazine pouch",
-				
-				"holster": true,
-				
-				"moves": 100,
-				
-				"max_contains_volume": "100 ml",
-				"max_contains_weight": "500 g",
-				"//max_item_length": "fits Glock 17-round magazine and smaller",
-				"max_item_length": "15 cm" 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Stash magazine",
-			"holster_msg": "You stash your %s." 
-		} 
-	},
-	
-	{ 
-		"id": "rig_module_book",
-		"copy-from": "rig_module_leather",
-		"type": "GENERIC",
-		"category": "armor",
-		
-		"//note": [
-			"assumes average book size and weight",
-			"probably useful for magic mods where books contain spells or are in other ways useful"
-		],
-		
-		"name": { 
-			"str": "shoulder rig book holster" 
-		},
-		"description": "Shoulder rig modular book holster.  Sturdy enough to hold even heavy books.",
-		
-		"looks_like": "legpouch_large",
-		
-		"volume": "1050 ml",
-		"longest_side": "12 mm",
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "book holster",
-				
-				"holster": true,
-				"rigid": true,
-				
-				"moves": 200,
-				
-				"max_contains_volume": "1 L",
-				"max_contains_weight": "650 g",
-				"max_item_length": "11 cm" 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Stash book",
-			"holster_msg": "You stash your %s." 
-		} 
-	} 
+    "name": {
+      "str": "leather shoulder rig module"
+    },
+    "description": "A shoulder rig module.",
+
+    "weight": "250 g",
+    "volume": "250 ml",
+    "longest_side": "200 mm",
+
+    "material": ["leather"],
+
+    "symbol": "[",
+    "looks_like": "holster",
+    "color": "light_gray",
+
+    "flags": ["SHOULDER_RIG_MODULE"]
+  },
+
+  {
+    "abstract": "rig_module_nylon",
+    "copy-from": "rig_module_leather",
+    "type": "GENERIC",
+    "category": "armor",
+
+    "name": {
+      "str": "nylon shoulder rig module"
+    },
+    "description": "A shoulder rig module.",
+
+    "material": ["nylon"]
+  },
+
+  {
+    "id": "rig_module_holster",
+    "copy-from": "rig_module_nylon",
+    "type": "GENERIC",
+    "category": "armor",
+
+    "name": {
+      "str": "shoulder rig universal holster"
+    },
+    "description": "Shoulder rig universal pistol holster.  Universal holsters are slightly slower to use than form-fitting ones, but fit a wide variety of semi-automatic pistols and revolvers.  This one is sealed at the muzzle end: it will not fit long revolvers, or pistols with muzzle devices.",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "holster",
+
+        "holster": true,
+
+        "moves": 70,
+
+        "magazine_well": "300 ml",
+
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "2 kg",
+        "//max_item_length": "fits M1911 and shorter modern pistols",
+        "max_item_length": "22 cm"
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    }
+  },
+
+  {
+    "id": "rig_module_mags_two",
+    "copy-from": "rig_module_leather",
+    "type": "GENERIC",
+    "category": "armor",
+
+    "//source": [
+      "https://www.craftholsters.com/leather-double-magazine-pouch",
+      "original is belted; this assumes shoulder rig attachment instead of belt loop"
+    ],
+
+    "name": {
+      "str": "shoulder rig double magazine pouch"
+    },
+    "description": "Shoulder rig modular magazine pouch, made from premium Italian leather.  Fitted for two standard-capacity pistol magazines.",
+
+    "looks_like": "legpouch_large",
+
+    "//volume": "assumes depth of 0.7 in.",
+    "volume": "155 ml",
+    "longest_side": "114 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "magazine pouch",
+
+        "holster": true,
+
+        "moves": 100,
+
+        "//max_contains_volume": [
+          "fits Glock 17-round magazine and smaller",
+          "proportions of some Glock mags have been changed for the demo"
+        ],
+        "max_contains_volume": "105 ml",
+        "max_contains_weight": "500 g",
+        "//max_item_length": "fits Glock 17-round magazine and smaller",
+        "max_item_length": "15 cm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "magazine pouch",
+
+        "holster": true,
+
+        "moves": 100,
+
+        "//max_contains_volume": [
+          "fits Glock 17-round magazine and smaller",
+          "proportions of some Glock mags have been changed for the demo"
+        ],
+        "max_contains_volume": "105 ml",
+        "max_contains_weight": "500 g",
+        "//max_item_length": "fits Glock 17-round magazine and smaller",
+        "max_item_length": "15 cm"
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash magazine",
+      "holster_msg": "You stash your %s."
+    }
+  },
+
+  {
+    "id": "rig_module_mags_four",
+    "copy-from": "rig_module_leather",
+    "type": "GENERIC",
+    "category": "armor",
+
+    "//source": [
+      "https://www.craftholsters.com/leather-double-magazine-pouch",
+      "x2, width-wise",
+      "original is belted; this assumes shoulder rig attachment instead of belt loop"
+    ],
+
+    "name": {
+      "str": "shoulder rig quad magazine pouch"
+    },
+    "description": "Shoulder rig modular magazine pouch, made from premium Italian leather.  Fitted for four standard-capacity pistol magazines.",
+
+    "looks_like": "legpouch_large",
+
+    "//volume": "assumes depth of 0.7 in.",
+    "volume": "155 ml",
+    "longest_side": "114 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "magazine pouch",
+
+        "holster": true,
+
+        "moves": 100,
+
+        "max_contains_volume": "100 ml",
+        "max_contains_weight": "500 g",
+        "//max_item_length": "fits Glock 17-round magazine and smaller",
+        "max_item_length": "15 cm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "magazine pouch",
+
+        "holster": true,
+
+        "moves": 100,
+
+        "max_contains_volume": "100 ml",
+        "max_contains_weight": "500 g",
+        "//max_item_length": "fits Glock 17-round magazine and smaller",
+        "max_item_length": "15 cm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "magazine pouch",
+
+        "holster": true,
+
+        "moves": 100,
+
+        "max_contains_volume": "100 ml",
+        "max_contains_weight": "500 g",
+        "//max_item_length": "fits Glock 17-round magazine and smaller",
+        "max_item_length": "15 cm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "magazine pouch",
+
+        "holster": true,
+
+        "moves": 100,
+
+        "max_contains_volume": "100 ml",
+        "max_contains_weight": "500 g",
+        "//max_item_length": "fits Glock 17-round magazine and smaller",
+        "max_item_length": "15 cm"
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash magazine",
+      "holster_msg": "You stash your %s."
+    }
+  },
+
+  {
+    "id": "rig_module_book",
+    "copy-from": "rig_module_leather",
+    "type": "GENERIC",
+    "category": "armor",
+
+    "//note": [
+      "assumes average book size and weight",
+      "probably useful for magic mods where books contain spells or are in other ways useful"
+    ],
+
+    "name": {
+      "str": "shoulder rig book holster"
+    },
+    "description": "Shoulder rig modular book holster.  Sturdy enough to hold even heavy books.",
+
+    "looks_like": "legpouch_large",
+
+    "volume": "1050 ml",
+    "longest_side": "12 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "book holster",
+
+        "holster": true,
+        "rigid": true,
+
+        "moves": 200,
+
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "650 g",
+        "max_item_length": "11 cm"
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash book",
+      "holster_msg": "You stash your %s."
+    }
+  }
 ]
