@@ -15,17 +15,6 @@ The latest supported version of the game is **0.G**.
 
 
 
-### How to Test: Demo 2
-
-* You can spawn MOLLE equipment via the debug menu. Spawn each item separately (consult JSON files in the `/demo/` folder for available options), or spawn `Armory Demo 2 package` and deconstruct it to get every new item in Demo 2 (two each for shoulder rig modules).
-
-* `[i]`nsert pouches into modular gear, or `[a]`ctivate MOLLE gear to store contents via in-game menu.
-
-* The pouches remain usable as storage while inserted into the gear. They cannot be worn as separate pieces of equipment. Pouches are part of the gear they're attached to and will be taken off along with it.
-
-* The pouches may also be used as dedicated containers outside the modular equipment system.
-
-
 #### New Pocket Restrictions
 
 Several pockets within the system only allow a handful of items in.
