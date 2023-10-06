@@ -1,135 +1,121 @@
 [
+  {
+    "id": "vest_molle",
+    "copy-from": "ballistic_vest_empty",
+    "type": "ARMOR",
 
-	{
-	
-		"id": "vest_molle",
-		"copy-from": "ballistic_vest_empty",
-		"type": "ARMOR",
-		
-		"//source": [ 
-			"https://tacticalworldstore.com/products/modular-rapid-assault-tactical-vest" 
-		],
-		
-		"name": { 
-			"str": "MOLLE modular vest" 
-		},
-		"description": "Protective vest made with ballistic nylon.  Strong enough to protect wearer from pistol-caliber bullets, but not beyond that.  This vest is outfitted with a MOLLE web, allowing wearer to attach MOLLE modules to it, enhancing their carrying capabilities in exchange for encumbrance.  The vest also has a velcro surface for attaching decorative patches.",
-		
-		"max_encumbrance": 24,
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "front MOLLE patches",
-				
-				"//dimensions": "300 × 750 mm",
-				"//max_contains_volume": "calculated from dimensions of source item, with the default assumption of 40mm of depth for many common pouches, since there's no way to account for the surface area alone",
-				"max_contains_volume": "9 L",
-				"max_contains_weight": "20 kg",
-				
-				"flag_restriction": [ 
-					"MOLLE_POUCH",
-					"MOLLE_DECOR" 
-				]
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "top admin pouch",
-				
-				"//max_contains_volume": "should be thickness, but that's not an option either :(",
-				"max_contains_volume": "1 L",
-				"max_contains_weight": "1 kg",
-				
-				"flag_restriction": [ 
-					"PAPER_FILE_SIZED" 
-				]
-			},
-			
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "card pocket",
-				
-				"//max_contains_volume": [
-					"ISO/IEC_7810 ID-1, the most common format for both credit cards and IDs, has dimensions of 85.6 × 53.98 mm, with thickness of 0.76 mm",
-					"this pocket is designed to accomodate 5 cards" 
-				],
-				"max_contains_volume": "20 ml",
-				"max_contains_weight": "100 g",
-				"max_item_length":     "86 mm",
-				
-				"flag_restriction": [ 
-					"CARD_STANDARD" 
-				] 
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Attach module",
-			"holster_msg": "You attach %s to your vest." 
-		}  
-	},
-	
-	{
-	
-		"id": "belt_molle",
-		"copy-from": "police_belt",
-		"type": "ARMOR",
-		
-		"//source": [ 
-			"https://www.highspeedgear.com/31ovi-31ovm",
-			"dimensions from spec sheet linked on the page",
-			"assumes medium-sized 32 in. circumference" 
-		],
-		
-		"name": { 
-			"str": "MOLLE operator belt" 
-		},
-		"description": "Ballistic nylon belt with a steel buckle.  Has integrated MOLLE web that allows attaching MOLLE and dedicated belt-mounted gear to it, to enhance carrying capability of the wearer in exchange for encumbrance.",
-		
-		"weight": "354 g",
-		"volume": "344 ml",
-		"longest_side": "813 mm",
-		
-		"material": [
-			"nylon"
-		],
-		
-		"max_encumbrance": 20,
-		
-		"pocket_data": [ 
-			{ 
-				"pocket_type": "CONTAINER",
-				
-				"//type": "waist-wide MOLLE patches",
-				
-				"rigid": false,
-				"//max_contains_volume": "perfectly arbitrary; hard to calculate potential volume of hanging external pockets",
-				"max_contains_volume": "4 L",
-				"max_contains_weight": "5 kg",
-				
-				"//dimensions": "45 × 813 mm",
-				"//magazine_well": "calculated from dimensions of source item, with the default assumption of 0.7 in. of depth for many common pouches, since there's no way to account for the surface area alone",
-				"magazine_well": "642 ml",
-				
-				"flag_restriction": [ 
-					"MOLLE_POUCH"
-				]
-			} 
-		],
-		
-		"use_action": { 
-			"type": "holster",
-			
-			"holster_prompt": "Attach module",
-			"holster_msg": "You attach %s to your belt." 
-		},
-		
-		"price": "198 USD" 
-	} 
+    "//source": [
+      "https://tacticalworldstore.com/products/modular-rapid-assault-tactical-vest"
+    ],
+
+    "name": {
+      "str": "MOLLE modular vest"
+    },
+    "description": "Protective vest made with ballistic nylon.  Strong enough to protect wearer from pistol-caliber bullets, but not beyond that.  This vest is outfitted with a MOLLE web, allowing wearer to attach MOLLE modules to it, enhancing their carrying capabilities in exchange for encumbrance.  The vest also has a velcro surface for attaching decorative patches.",
+
+    "max_encumbrance": 24,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "front MOLLE patches",
+
+        "//dimensions": "300 × 750 mm",
+        "//max_contains_volume": "calculated from dimensions of source item, with the default assumption of 40mm of depth for many common pouches, since there's no way to account for the surface area alone",
+        "max_contains_volume": "9 L",
+        "max_contains_weight": "20 kg",
+
+        "flag_restriction": ["MOLLE_POUCH", "MOLLE_DECOR"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "top admin pouch",
+
+        "//max_contains_volume": "should be thickness, but that's not an option either :(",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["PAPER_FILE_SIZED"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "card pocket",
+
+        "//max_contains_volume": [
+          "ISO/IEC_7810 ID-1, the most common format for both credit cards and IDs, has dimensions of 85.6 × 53.98 mm, with thickness of 0.76 mm",
+          "this pocket is designed to accomodate 5 cards"
+        ],
+        "max_contains_volume": "20 ml",
+        "max_contains_weight": "100 g",
+        "max_item_length": "86 mm",
+
+        "flag_restriction": ["CARD_STANDARD"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Attach module",
+      "holster_msg": "You attach %s to your vest."
+    }
+  },
+
+  {
+    "id": "belt_molle",
+    "copy-from": "police_belt",
+    "type": "ARMOR",
+
+    "//source": [
+      "https://www.highspeedgear.com/31ovi-31ovm",
+      "dimensions from spec sheet linked on the page",
+      "assumes medium-sized 32 in. circumference"
+    ],
+
+    "name": {
+      "str": "MOLLE operator belt"
+    },
+    "description": "Ballistic nylon belt with a steel buckle.  Has integrated MOLLE web that allows attaching MOLLE and dedicated belt-mounted gear to it, to enhance carrying capability of the wearer in exchange for encumbrance.",
+
+    "weight": "354 g",
+    "volume": "344 ml",
+    "longest_side": "813 mm",
+
+    "material": ["nylon"],
+
+    "max_encumbrance": 20,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "waist-wide MOLLE patches",
+
+        "rigid": false,
+        "//max_contains_volume": "perfectly arbitrary; hard to calculate potential volume of hanging external pockets",
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "5 kg",
+
+        "//dimensions": "45 × 813 mm",
+        "//magazine_well": "calculated from dimensions of source item, with the default assumption of 0.7 in. of depth for many common pouches, since there's no way to account for the surface area alone",
+        "magazine_well": "642 ml",
+
+        "flag_restriction": ["MOLLE_POUCH"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Attach module",
+      "holster_msg": "You attach %s to your belt."
+    },
+
+    "price": "198 USD"
+  }
 ]
