@@ -4,16 +4,15 @@
 
 In particular, it adds a modular equipment framework that gives players the ability to pick the kind of functionality they want their gear to have, without resorting to crafting. This makes the system both easy to manage and easy to expand with other mods.
 
-⚠ Since July 2023, Frontier Mods are being worked on again. However, Armory and other large mods are on hold because of the amount of work that the developer would have to put into them. Refer to [the Frontier Mods blog](https://github.com/FrontierMods/Blog) for the latest updates.
+⚠ Since July 2023, Frontier Mods are being worked on again.
 
 
 ## Status
 
-*Armory* is currently **on hold**.
+*Armory* is currently **in development**.
 
-The mod had been tested up to 0.F-1 stable release of the game, and remains usable as a demonstation of the direction of the mod. All the documentation also remains accessible.
+The latest supported version of the game is **0.G**.
 
-Until a positive solution is found to working on such a large-scale mod consistently, *Armory* will remain on hold in favor of smaller, more-actionable mods for *Cataclysm*.
 
 
 ### How to Test: Demo 2
