@@ -14,6 +14,7 @@ In particular, it adds a modular equipment framework that gives players the abil
 The latest supported version of the game is **0.G**.
 
 
+## Design
 
 ### New Pocket Restrictions
 
