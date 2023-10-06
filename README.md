@@ -15,7 +15,7 @@ The latest supported version of the game is **0.G**.
 
 
 
-#### New Pocket Restrictions
+### New Pocket Restrictions
 
 Several pockets within the system only allow a handful of items in.
 
@@ -28,7 +28,7 @@ This has been done in part as a proof of concept, and in part to demonstrate the
 ¹ During development it turned out that lab journals are significantly bigger than anticipated, and would not fit into the admin pouch under any circumstance. This may be omitted in the future, or mod-side changes may be made to accomodate that purpose. It's from the movies, so it's too cool to just pass on.
 
 
-# Content
+## Content
 
 ## Modular Equipment
 
