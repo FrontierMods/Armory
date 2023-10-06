@@ -1,0 +1,188 @@
+[
+  {
+    "id": "molle_medium_rucksack",
+    "copy-from": "molle_medium_rucksack",
+    "type": "ARMOR",
+
+    "//sources": ["https://www.511tactical.com/daily-deploy-48-pack.html"],
+
+    "//notes": [
+      "presumes the backpack is mostly rigid, which is likely not the case"
+    ],
+
+    "name": {
+      "str": "5.11 Tactical Daily Deploy 48 39L backpack"
+    },
+    "description": "A no-nonsense tactical backpack, with a total capacity of 39 liters.  Like in many other 5.11 Tactical packs, the number in the name comes from the amount of hours the user is expected to last with supplies packed in the available space.  Simple clamshell storage, a mesh divider for access to a smaller storage, laptop sleeve in the back, and an admin pouch at the top.  The MOLLE webbing provides plenty of space for additional pouches.  The velcro patch surface could be used for decorative and informatonal patches.",
+
+    "weight": "1696 g",
+    "//dimensions": {
+      "length": "21 in",
+      "width": "13.5 in",
+      "height": "7.5 in",
+      "raw": "34843 ml",
+      "trim": 0,
+      "notes": [
+        "zero trim assumes the non-cuboid shape of the backpack roughly evens out with latches etc."
+      ]
+    },
+    "//volume": "speculatively collapse a large backpack to 1/3 its volume capacity",
+    "volume": "11614 ml",
+    "longest_side": "533 mm",
+
+    "encumbrance": 5,
+    "//max_encumbrance": "discount of 3 points for the effective load-bearing system",
+    "max_encumbrance": 36,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Belt-secured storage for a hydration pack or a laptop",
+
+        "rigid": true,
+        "holster": true,
+
+        "moves": 400,
+
+        "//max_contains_volume": [
+          "the laptop strap is stated to hold up to a 15-inch laptop",
+          "this volume has been tested with the dimensions of a particular laptop model",
+          "HP 15-cs3019nr Pavilion",
+          "with 15% added on top to potentially accomodate larger laptops, for a total of 1817 ml"
+        ],
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "525 mm",
+        "//min_item_length": [
+          "rationalized as half the total length of the backpack",
+          "this is necessary because on the real backpack, the strap goes horizontally across roughly the middle of the back",
+          "any item shorter than this would simply not be held in place by the strap, thus making the strap quite useless for that item"
+        ],
+        "min_item_length": "267 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Clamshell storage compartment",
+
+        "rigid": true,
+
+        "moves": 540,
+
+        "//magazine_well": "roughly most of the volume of the backpack, rounded to the nearest liter for simplicity",
+        "magazine_well": "11 L",
+        "//max_contains_volume": [
+          "uneven volume here due to accomodating the admin pouch at the top possibly expanding",
+          "minus magazine well of 11 L; see above"
+        ],
+        "max_contains_volume": "25700 ml",
+        "max_contains_weight": "40 kg",
+        "max_item_length": "525 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Mesh-divided secondary internal compartment",
+
+        "moves": 440,
+
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "3500 g",
+        "//max_item_length": "slightly smaller than the rest of the clamshell, to account for mesh stretch",
+        "max_item_length": "515 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Top-side admin pouch",
+
+        "moves": 400,
+
+        "max_contains_volume": "300 ml",
+        "max_contains_weight": "500 g",
+        "max_item_length": "250 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "front MOLLE webbing",
+
+        "//dimensions": [
+          "270 × 275 mm",
+          "eyeballed",
+          "~50% of backpack height",
+          "~80% of backpack width",
+          "40mm space of pouch depth",
+          "plus rounding to nearest 5/10"
+        ],
+        "max_contains_volume": "2930 ml",
+        "max_contains_weight": "5 kg",
+
+        "flag_restriction": ["MOLLE_POUCH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "side MOLLE webbing",
+
+        "//dimensions": [
+          "135 × 235 mm",
+          "eyeballed",
+          "~50% of front MOLLE webbing height",
+          "~80% of backpack depth",
+          "40mm space of pouch depth",
+          "plus rounding to nearest 5/10"
+        ],
+        "max_contains_volume": "1270 ml",
+        "max_contains_weight": "2500 g",
+
+        "flag_restriction": ["MOLLE_POUCH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//type": "side MOLLE webbing",
+
+        "//dimensions": [
+          "135 × 235 mm",
+          "eyeballed",
+          "~50% of front MOLLE webbing height",
+          "~80% of backpack depth",
+          "40mm space of pouch depth",
+          "plus rounding to nearest 5/10"
+        ],
+        "max_contains_volume": "1270 ml",
+        "max_contains_weight": "2500 g",
+
+        "flag_restriction": ["MOLLE_POUCH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Velcro patch surface",
+
+        "//dimensions": [
+          "180 × 275 mm",
+          "eyeballed",
+          "same width as front MOLLE webbing",
+          "~66% of height of front MOLLE webbing",
+          "5mm height of average patch"
+        ],
+        "max_contains_volume": "248 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["MOLLE_DECOR"]
+      }
+    ],
+
+    "price": "150 USD"
+  }
+]
