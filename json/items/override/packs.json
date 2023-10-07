@@ -43,7 +43,7 @@
         "rigid": true,
         "holster": true,
 
-        "moves": 400,
+        "moves": 200,
 
         "//max_contains_volume": [
           "the laptop strap is stated to hold up to a 15-inch laptop",
@@ -69,7 +69,7 @@
 
         "rigid": true,
 
-        "moves": 540,
+        "moves": 110,
 
         "//magazine_well": "roughly most of the volume of the backpack, rounded to the nearest liter for simplicity",
         "magazine_well": "11 L",
@@ -87,7 +87,7 @@
 
         "description": "Mesh-divided secondary internal compartment",
 
-        "moves": 440,
+        "moves": 140,
 
         "max_contains_volume": "1500 ml",
         "max_contains_weight": "3500 g",
@@ -100,7 +100,7 @@
 
         "description": "Top-side admin pouch",
 
-        "moves": 400,
+        "moves": 90,
 
         "max_contains_volume": "300 ml",
         "max_contains_weight": "500 g",
@@ -110,17 +110,35 @@
       {
         "pocket_type": "CONTAINER",
 
-        "//type": "front MOLLE webbing",
+        "description": "Front MOLLE webbing",
 
-        "//dimensions": [
-          "270 × 275 mm",
-          "eyeballed",
+        "//notes": [
+          "dimensions eyeballed to be 270 × 275 mm",
           "~50% of backpack height",
           "~80% of backpack width",
           "40mm space of pouch depth",
           "plus rounding to nearest 5/10"
         ],
         "max_contains_volume": "2930 ml",
+        "max_contains_weight": "10 kg",
+
+        "flag_restriction": ["MOLLE_POUCH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side MOLLE webbing",
+
+        "//notes": [
+          "dimensions eyeballed to be 135 × 235 mm",
+          "eyeballed",
+          "~50% of front MOLLE webbing height",
+          "~80% of backpack depth",
+          "40mm space of pouch depth",
+          "plus rounding to nearest 5/10"
+        ],
+        "max_contains_volume": "1270 ml",
         "max_contains_weight": "5 kg",
 
         "flag_restriction": ["MOLLE_POUCH"]
@@ -129,10 +147,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "//type": "side MOLLE webbing",
+        "description": "Side MOLLE webbing",
 
-        "//dimensions": [
-          "135 × 235 mm",
+        "//notes": [
+          "dimensions eyeballed to be 135 × 235 mm",
           "eyeballed",
           "~50% of front MOLLE webbing height",
           "~80% of backpack depth",
@@ -140,26 +158,7 @@
           "plus rounding to nearest 5/10"
         ],
         "max_contains_volume": "1270 ml",
-        "max_contains_weight": "2500 g",
-
-        "flag_restriction": ["MOLLE_POUCH"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "//type": "side MOLLE webbing",
-
-        "//dimensions": [
-          "135 × 235 mm",
-          "eyeballed",
-          "~50% of front MOLLE webbing height",
-          "~80% of backpack depth",
-          "40mm space of pouch depth",
-          "plus rounding to nearest 5/10"
-        ],
-        "max_contains_volume": "1270 ml",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "5 kg",
 
         "flag_restriction": ["MOLLE_POUCH"]
       },
@@ -170,13 +169,12 @@
         "description": "Velcro patch surface",
 
         "//dimensions": [
-          "180 × 275 mm",
-          "eyeballed",
+          "dimensions eyeballed to be 180 × 275 mm",
           "same width as front MOLLE webbing",
           "~66% of height of front MOLLE webbing",
           "5mm height of average patch"
         ],
-        "max_contains_volume": "248 ml",
+        "max_contains_volume": "200 ml",
         "max_contains_weight": "1 kg",
 
         "flag_restriction": ["MOLLE_DECOR"]
