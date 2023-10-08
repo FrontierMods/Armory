@@ -13,7 +13,8 @@
 		"category": "items",
 		
 		"dependencies": [ 
-			"dda" 
+			"dda",
+			"frontier_core"
 		] 
 	} 
 ]
