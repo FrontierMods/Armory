@@ -4,6 +4,8 @@
 
 In particular, grounds existing equipment in reality by providing them with real names, dimensions, and properties (coverage, protection, breathability etc.), and adds distinct options for each class of items, to provide players with a better choice depending on situation requirements.
 
+Requires [Frontiers *Core*](https://github.com/FrontierMods/Core).
+
 ⚠ Since July 2023, Frontier Mods are being worked on again.
 
 
