@@ -1,0 +1,78 @@
+[
+  {
+    "id": "esapi_plate",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.hoplitearmor.com/collections/sapi-plates-level-iii-1/products/body-armor-two-level-iii-sapi-plates-19513"
+    ],
+
+    "name": { "str": "Hoplite Armor medium ceramic plate, NIJ III+" },
+    "description": "A polygonal ballistic plate with a slightly concave profile, made of alumina (i.e., ballistic ceramic material).  Its inner surface is covered with UHWMPE and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+
+    "weight": "2381 g",
+    "//dimensions": {
+      "length": "12.5 in",
+      "width": "9.5 in",
+      "height": "1.1 in",
+      "raw": "2141 ml",
+      "trim": 0.125
+    },
+    "volume": "1873 ml",
+    "longest_side": "318 mm",
+
+    "material": ["alumina", "uhmwpe"],
+
+    "material_thickness": 28,
+
+    "non_functional": "destroyed_large_ceramic_plate",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 27.5 }
+        ],
+        "encumbrance": 2,
+        "coverage": 42,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 0.5 }
+        ],
+        "encumbrance": 0,
+        "coverage": 42,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_MEDIUM", "CANT_WEAR"],
+
+    "//price": "1450 USD, sold in pairs",
+    "price": "725 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "destroyed_large_ceramic_plate",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised Hoplite Armor medium ceramic plate, NIJ III+",
+      "str_pl": "compromised Hoplite Armor medium ceramic plates, NIJ III+"
+    },
+    "description": "This ceramic plate has been damaged beyond any possible use.  ",
+    "looks_like": "esapi_plate",
+
+    "material": ["alumina_damaged"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
+  }
+]
