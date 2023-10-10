@@ -95,5 +95,105 @@
 
     "price": "0 cent",
     "price_postapoc": "1 cent"
+  },
+
+  {
+    "id": "esbi_plate",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.highcomarmor.com/product/guardian-4sas7/"],
+
+    "//notes": [
+      "research yields very few ceramic side plates from trustworthy sources",
+      "it appears as though both UHMWPE and level IV side plates are significantly more popular"
+    ],
+
+    "name": {
+      "str": "HighCom tall side UHMWPE plate, NIJ IV",
+      "str_pl": "HighCom tall side UHMWPE plates, NIJ IV"
+    },
+    "description": "A rectangular ballistic plate with slightly clipped corners and a slightly concave profile, made of alumina (ballistic ceramic).  Its inner surface is covered with UHMWPE and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit inside side panel pouches on a plate carrier.",
+
+    "weight": "1542 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "8 in",
+      "height": "0.75 in",
+      "raw": "590 ml",
+      "trim": 0.05
+    },
+    "volume": "561 ml",
+    "longest_side": "203 mm",
+
+    "material": ["alumina", "uhmwpe"],
+
+    "material_thickness": 19,
+
+    "non_functional": "destroyed_medium_ceramic_plate",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 18 }
+        ],
+        "encumbrance": 1,
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
+        ],
+        "encumbrance": 0,
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 18 }
+        ],
+        "encumbrance": 1,
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
+        ],
+        "encumbrance": 0,
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+
+    "price": "169 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "destroyed_medium_ceramic_plate",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised HighCom tall side UHMWPE plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esapi_plate",
+
+    "material": ["alumina_damaged"],
+
+    "price": "0 cent",
+    "price_postapoc": "0 cent"
   }
 ]
