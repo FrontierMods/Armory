@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ABLATIVE_SMALL",
+    "type": "json_flag",
+    "info": "This plate will fit in <info>small</info> armor pockets",
+    "restriction": "Item must be a small ablative plate"
+  },
+  {
+    "id": "ABLATIVE_XL",
+    "type": "json_flag",
+    "info": "This plate will fit in <info>extra-large</info> armor pockets",
+    "restriction": "Item must be an extra-large ablative plate"
+  },
+  {
+    "id": "ABLATIVE_SIDE",
+    "type": "json_flag",
+    "info": "This plate will fit in <info>side</info> armor pockets",
+    "restriction": "Item must be a side ablative plate"
+  },
+  {
+    "id": "QASM_ATTACH",
+    "type": "json_flag",
+    "info": "This item will <good>attach directly</good> to <info>QASM buckels</info>"
+  }
+]
