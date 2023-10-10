@@ -20,6 +20,6 @@
   {
     "id": "QASM_ATTACH",
     "type": "json_flag",
-    "info": "This item will <good>attach directly</good> to <info>QASM buckels</info>"
+    "info": "This item can be <good>attached directly</good> to <info>QASM buckels</info>"
   }
 ]
