@@ -36,7 +36,7 @@
     "armor": [
       {
         "material": [
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 27.5 }
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 27 }
         ],
         "encumbrance": 2,
         "coverage": 42,
@@ -45,7 +45,7 @@
       },
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 0.5 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
         ],
         "encumbrance": 0,
         "coverage": 42,
