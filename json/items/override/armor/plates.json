@@ -51,6 +51,25 @@
         "coverage": 42,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 27 }
+        ],
+        "encumbrance": 1,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
+        ],
+        "encumbrance": 0,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
       }
     ],
 
