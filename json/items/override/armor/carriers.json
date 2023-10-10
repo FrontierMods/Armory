@@ -126,14 +126,14 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1mm per side of carrier",
+            "//thickness": "1 mm per side of carrier",
             "thickness": 2
           },
 
           {
             "type": "cotton",
             "covered_by_mat": 100,
-            "//thickness": "3mm per side of carrier",
+            "//thickness": "3 mm per side of carrier",
             "thickness": 6,
             "//notes": [
               "this is supposed to be spacer mesh made of polyester",
@@ -154,14 +154,14 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1mm per side of carrier",
+            "//thickness": "1 mm per side of carrier",
             "thickness": 2
           },
 
           {
             "type": "cotton",
             "covered_by_mat": 100,
-            "//thickness": "3mm per side of carrier",
+            "//thickness": "3 mm per side of carrier",
             "thickness": 6,
             "//notes": [
               "this is supposed to be spacer mesh made of polyester",
