@@ -9,8 +9,11 @@
       "https://www.hoplitearmor.com/collections/sapi-plates-level-iii-1/products/body-armor-two-level-iii-sapi-plates-19513"
     ],
 
-    "name": { "str": "Hoplite Armor medium ceramic plate, NIJ III+" },
-    "description": "A polygonal ballistic plate with a slightly concave profile, made of alumina (i.e., ballistic ceramic material).  Its inner surface is covered with UHWMPE and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+    "name": {
+      "str": "Hoplite Armor medium ceramic plate, NIJ III+",
+      "str_pl": "Hoplite Armor medium ceramic plates, NIJ III+"
+    },
+    "description": "A polygonal ballistic plate with a slightly concave profile, made of alumina (ballistic ceramic).  Its inner surface is covered with UHMWPE and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
 
     "weight": "2381 g",
     "//dimensions": {
@@ -64,10 +67,9 @@
     "type": "ARMOR",
 
     "name": {
-      "str": "compromised Hoplite Armor medium ceramic plate, NIJ III+",
-      "str_pl": "compromised Hoplite Armor medium ceramic plates, NIJ III+"
+      "str": "compromised Hoplite Armor medium ceramic plate"
     },
-    "description": "This ceramic plate has been damaged beyond any possible use.  ",
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
     "looks_like": "esapi_plate",
 
     "material": ["alumina_damaged"],
