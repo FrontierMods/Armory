@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ballistic_vest_light",
+    "copy-from": "ballistic_vest_light",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://perrozdesigns.com/products/low-profile-slick-plate-carrier-lpspc",
+      "https://reddit.com/r/QualityTacticalGear/comments/e7zq94/some_quick_thoughts_on_the_perroz_lpspc/",
+      "https://soldiersystems.net/2015/06/25/perroz-designs-low-profile-slick-plate-carrier-lpspc/"
+    ],
+
+    "//notes": [
+      "while it does have a massive Velcro area at the bottom, it's likely going to be used by a QASM placard",
+      "since there's no multimodality anywhere in the game, we can't use the bottom Velcro panel as EITHER a QASM placard (which would stick its back on the Velcro after connecting with the buckles) OR a Velcro panel (for patches or other Velcro attachments, perhaps player-made)",
+      "earlier reviews/advertisements of the LPSPC also show the top Velcro panel hiding an admin pouch underneath",
+      "this no longer appears to be the case in the model available at the time of release of this mod"
+    ],
+
+    "name": {
+      "str": "Perroz Designs LPSPC plate carrier"
+    },
+    "description": "Minimalist and lightweight, the Low Profile Slick Plate Carrier is quality-made and comfortable.  It features a large, thin laser-cut cummerbund, reinforced pocket stitching, and two Velcro panels.  The larger panel, along with QASM buckles above it, can be used to attach a QASM placard.  The smaller panel could be used for decorative patches.  The LPSPC is designed for use with medium-sized ballistic plates, and will accept one in any weight or material, though thinner plates are recommended for comfort.",
+
+    "variant_type": "generic",
+    "variants": [
+      {
+        "id": "ballistic_vest_light_olive",
+        "//name": "LPSPC does not come in olive",
+        "name": {
+          "str": "Perroz Designs LPSPC plate carrier, ranger green",
+          "str_pl": "Perroz Designs LPSPC plate carriers, ranger green"
+        },
+        "description": "It's styled in a desaturated, gray-ish green color.",
+        "weight": 4,
+        "append": true
+      },
+      {
+        "id": "ballistic_vest_light_tan",
+        "name": {
+          "str": "Perroz Designs LPSPC plate carrier, coyote brown",
+          "str_pl": "Perroz Designs LPSPC plate carriers, coyote brown"
+        },
+        "description": "It's styled in a sand-like light brown color.",
+        "weight": 4,
+        "append": true
+      },
+      {
+        "id": "ballistic_vest_light_black",
+        "name": {
+          "str": "Perroz Designs LPSPC plate carrier, black",
+          "str_pl": "Perroz Designs LPSPC plate carriers, black"
+        },
+        "description": "It's colored a mix of black and very dark gray.",
+        "color": "dark_gray",
+        "weight": 4,
+        "append": true
+      },
+      {
+        "//id": "DCU stands for Desert Camouflage Uniform",
+        "id": "ballistic_vest_light_dcu",
+        "name": {
+          "str": "Perroz Designs LPSPC plate carrier, desert camo",
+          "str_pl": "Perroz Designs LPSPC plate carriers, desert camo"
+        },
+        "description": "It's patterned with islands of light and dark brown, with a mix of dull green.",
+        "weight": 4,
+        "append": true
+      },
+      {
+        "id": "ballistic_vest_light_multicam",
+        "name": {
+          "str": "Perroz Designs LPSPC plate carrier, multicam",
+          "str_pl": "Perroz Designs LPSPC plate carriers, multicam"
+        },
+        "description": "It's patterned with splashes of shades of brown and green, with some dark-earth brown and sandy off-white thrown in.",
+        "weight": 4,
+        "append": true
+      }
+    ],
+
+    "//weight": [
+      "there appear to be no sources available on the weight of this particular model",
+      "however, given that this model is designed to be slick, we can extrapolate its weight from similar models on the market",
+      "for example, LBT Inc. low-profile plate carriers designed for medium SAPI plates start at 1.54 lbs ≈ 699 g",
+      "https://lbtinc.com/collections/plate-carriers/products/6094slk",
+      "https://lbtinc.com/collections/plate-carriers/products/6094lp",
+      "besides, reviews describe it as lightweight",
+      "https://reddit.com/r/QualityTacticalGear/comments/e7zq94/some_quick_thoughts_on_the_perroz_lpspc/",
+      "we're going to assume this as the weight of LPSPC until a better source becomes available"
+    ],
+    "weight": "699 g",
+    "//dimensions": {
+      "length": "1.5 in",
+      "width": "10.25 in",
+      "height": "12.75 in",
+      "raw": "3212 ml",
+      "trim": 0.1,
+      "notes": [
+        "width is supposed to be equal to the width of the lower Velcro surface (10.25 in.), which stretches from edge to edge",
+        "other dimensions acquired from visual reference",
+        "length (thickness) is double the single-panel measurement (~0.75 in.)"
+      ]
+    },
+    "volume": "2891 ml",
+    "//longest_side": [
+      "review says this can fold very compactly",
+      "for now, we leave it as unfolded height, and adjust from testing if necessary"
+    ],
+    "longest_side": "324 mm",
+
+    "//material": "see `armor` for why this plate carrier uses cotton",
+    "material": ["nylon", "cotton"],
+    "//warmth": 0,
+
+    "//armor": [
+      "it does not appear as though this plate carrier provides any sort of ballistic protection on its own",
+      "one of the reviews/advertisements presents it as",
+      "made to MIL-C-43734D Class 3 standard",
+      "which refers to a class 3 inside the spec, not NIJ III-level ballistic protection",
+      "(even then, the description is wrong: class 3 in that spec means 'dyed olive', while the carrier is clearly coyote/tan)"
+    ],
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1mm per side of carrier",
+            "thickness": 2
+          },
+
+          {
+            "type": "cotton",
+            "covered_by_mat": 100,
+            "//thickness": "3mm per side of carrier",
+            "thickness": 6,
+            "//notes": [
+              "this is supposed to be spacer mesh made of polyester",
+              "polyester material does not exist in the game, and the only items stated to be made of it use cotton"
+            ]
+          }
+        ],
+        "encumbrance": 1,
+        "//coverage": "medium SAPI plate upper torso coverage (42%) + straps and extra material (3%) = 45% × 2 sides",
+        "coverage": 90,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1mm per side of carrier",
+            "thickness": 2
+          },
+
+          {
+            "type": "cotton",
+            "covered_by_mat": 100,
+            "//thickness": "3mm per side of carrier",
+            "thickness": 6,
+            "//notes": [
+              "this is supposed to be spacer mesh made of polyester",
+              "polyester material does not exist in the game, and the only items stated to be made of it use cotton"
+            ]
+          }
+        ],
+        "encumbrance": 1,
+        "//coverage": "medium SAPI plate lower torso coverage (10%) + extra material (2%) = 12 × 2 sides",
+        "coverage": 24,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Buckles for QASM modular equipment",
+
+        "holster": true,
+
+        "max_contains_volume": "3 L",
+        "max_contains_weight": "5 kg",
+
+        "flag_restriction": ["QASM_ATTACH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Velcro surface",
+
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "5 in",
+          "height": "4 in",
+          "raw": "65",
+          "trim": 0,
+          "notes": [
+            "length is average height of patch, for pseudo-area calculations"
+          ]
+        },
+        "max_contains_volume": "65 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["VELCRO_ATTACH"]
+      }
+    ],
+
+    "//use_action": [
+      "removes hardcoded MOLLE actions",
+      "(1) there are no MOLLE loops on the carrier itself",
+      "(2) the mod uses Armory form factor of insertable MOLLE/QASM equipment"
+    ],
+    "use_action": [],
+
+    "//flags": "changes carrier layer to be NORMAL, rather than OUTER, since it's meant to be worn under outerwear",
+    "flags": ["STURDY", "NORMAL", "WATER_FRIENDLY"],
+
+    "//price": "280 CAD",
+    "price": "205 USD"
+  }
+]
