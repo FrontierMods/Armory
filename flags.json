@@ -25,6 +25,6 @@
   {
     "id": "VELCRO_ATTACH",
     "type": "json_flag",
-    "info": "This item can be <good>attach directly</good> to <info>Velcro panels</info>, for additional functionality or decoration"
+    "info": "This item can be <good>attached directly</good> to <info>Velcro panels</info>, for additional functionality or decoration"
   }
 ]
