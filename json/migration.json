@@ -1,0 +1,7 @@
+[
+  {
+    "id": ["ballistic_vest_light_pouches", "ballistic_vest_light_operator"],
+    "type": "MIGRATION",
+    "replace": "ballistic_vest_light"
+  }
+]
