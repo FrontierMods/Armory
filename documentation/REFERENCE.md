@@ -32,7 +32,7 @@ Coverage is roughly divided between front/back and side plates. Front/back plate
 
 **Shooter cut** (also: **shooter's cut**): similar to SAPI cut, but with the bottom corners also clipped (to a smaller degree). Trades off a bit of coverage for a bit of increased mobility overall.
 
-**Swimmer cut**: a cut with a sharper angle for top corner clipping. Trades off some coverage for increased shoulder/arm mobility.
+**Swimmer cut** (also: **swimmer's cut**): a cut with a sharper angle for top corner clipping. Trades off some coverage for increased shoulder/arm mobility.
 
 #### Curvature
 
