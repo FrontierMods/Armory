@@ -700,8 +700,7 @@
 
     "//use_action": [
       "removes hardcoded MOLLE actions",
-      "(1) there are no MOLLE loops on the carrier itself",
-      "(2) the mod uses Armory form factor of insertable MOLLE/QASM equipment"
+      "the mod uses Armory form factor of insertable MOLLE/QASM equipment"
     ],
     "use_action": [],
 
