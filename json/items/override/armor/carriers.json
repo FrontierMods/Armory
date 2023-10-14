@@ -117,7 +117,8 @@
       "one of the reviews/advertisements presents it as",
       "made to MIL-C-43734D Class 3 standard",
       "which refers to a class 3 inside the spec, not NIJ III-level ballistic protection",
-      "(even then, the description is wrong: class 3 in that spec means 'dyed olive', while the carrier is clearly coyote/tan)"
+      "(even then, the description is wrong: class 3 in that spec means 'dyed olive', while the carrier is clearly coyote/tan)",
+      "the reference was likely meant to be GL-PD 10-07 Type III Class 3, which defined material density and fire-/waterproofness qualities, or a different material manual"
     ],
     "armor": [
       {
