@@ -23,6 +23,7 @@
     "info": "This plate will fit in <info>side</info> armor pockets",
     "restriction": "Item must be a side ablative plate"
   },
+
   {
     "id": "QASM_ATTACH",
     "type": "json_flag",
