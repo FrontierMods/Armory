@@ -1,5 +1,11 @@
 [
   {
+    "id": "ABLATIVE_XS",
+    "type": "json_flag",
+    "info": "This plate will fit in <info>extra-small</info> armor pockets",
+    "restriction": "Item must be an extra-small ablative plate"
+  },
+  {
     "id": "ABLATIVE_SMALL",
     "type": "json_flag",
     "info": "This plate will fit in <info>small</info> armor pockets",
