@@ -141,11 +141,14 @@
             ]
           }
         ],
+
         "encumbrance": 1,
+
         "//coverage": "medium SAPI plate upper torso coverage (34%) + straps and extra material (2%) + cummerbund (2%) = 38% × 2 sides",
         "coverage": 76,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
+
         "volume_encumber_modifier": 0.3
       },
 
@@ -169,11 +172,14 @@
             ]
           }
         ],
+
         "encumbrance": 1,
+
         "//coverage": "medium SAPI plate lower torso coverage (10%) + extra material (1%) + cummerbund (1%) = 12 × 2 sides",
         "coverage": 24,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
+
         "volume_encumber_modifier": 0.3
       }
     ],
