@@ -3,5 +3,11 @@
     "id": ["ballistic_vest_light_pouches", "ballistic_vest_light_operator"],
     "type": "MIGRATION",
     "replace": "ballistic_vest_light"
+  },
+  
+  {
+    "id": ["ballistic_vest_heavy_arms", "ballistic_vest_heavy_legs"],
+    "type": "MIGRATION",
+    "replace": "ballistic_vest_heavy"
   }
 ]

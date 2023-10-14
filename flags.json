@@ -32,5 +32,26 @@
     "id": "VELCRO_ATTACH",
     "type": "json_flag",
     "info": "This item can be <good>attached directly</good> to <info>Velcro panels</info>, for additional functionality or decoration"
+  },
+
+  {
+    "id": "IOTV_SHOULDER",
+    "type": "json_flag",
+    "info": "This item can be <good>attached</good> to an IOTV vest <info>at the shoulder</info>, for additional protection"
+  },
+  {
+    "id": "IOTV_GROIN",
+    "type": "json_flag",
+    "info": "This item can be <good>attached</good> to an IOTV vest <info>in front of the belt</info>, for additional protection of the groin"
+  },
+  {
+    "id": "IOTV_NECK",
+    "type": "json_flag",
+    "info": "This item can be <good>attached</good> to an IOTV vest <info>at the neck</info>, for additional protection"
+  },
+  {
+    "id": "IOTV_BACK",
+    "type": "json_flag",
+    "info": "This item can be <good>attached</good> to an IOTV vest <info>at lower back</info>, for additional protection"
   }
 ]
