@@ -1,0 +1,155 @@
+[
+  {
+    "id": "iotv_groin_plate",
+    "copy-from": "iotv_groin_plate",
+    "type": "GENERIC",
+    "category": "spare_parts",
+
+    "//sources": [
+      [
+        "https://locknwalkharness.com/products/multicam-iotv-gen-iii-enhanced-groin-protector-w-3a-soft-armor-included",
+        "visual reference",
+        "price"
+      ],
+      ["https://ciehub.info/spec/PD/FQ-PD-07-05.html", "weight"]
+    ],
+
+    "//notes": [
+      "for the sake of simplicity, we're going to pretend that the ballistic insert is embedded into the protector and is repairable"
+    ],
+
+    "name": {
+      "str": "IOTV Gen III groin protector"
+    },
+    "description": "Front nylon armor with a soft armor insert for groin and thigh protection.  Designed to be attached to IOTV Gen III ballistic vest, but could also be worn on a belt.",
+
+    "weight": "417 g",
+    "//dimensions": {
+      "length": "0.30 in",
+      "width": "11.50 in",
+      "height": "12.75 in",
+      "raw": "721 ml",
+      "trim": 0.3,
+      "notes": [
+        "depth (length) is assumed from IOTV vest maximum thickness",
+        "other dimensions acquired from visual reference"
+      ]
+    },
+    "volume": "505 ml",
+    "longest_side": "324 mm",
+
+    "material": ["nylon", "kevlar_layered"],
+
+    "//armor": [
+      "there's also the thick nylon belt that might be worth considering"
+    ],
+    "armor": [
+      {
+        "//description": "Groin protector",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of protector",
+            "thickness": 2
+          },
+
+          {
+            "type": "kevlar_layered",
+            "covered_by_mat": 99,
+            "//thickness": [
+              "assumed 0.27 in.",
+              "similar to other soft armor inserts"
+            ],
+            "thickness": 6.86
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "//coverage": ["approximated from visual reference"],
+        "coverage": 16,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Groin protector",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of protector",
+            "thickness": 2
+          },
+
+          {
+            "type": "kevlar_layered",
+            "covered_by_mat": 99,
+            "//thickness": [
+              "assumed 0.27 in.",
+              "similar to other soft armor inserts"
+            ],
+            "thickness": 6.86
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "//coverage": [
+          "approximated from visual reference",
+          "full front coverage of the waist ← 80% (front/back coverage) / 2"
+        ],
+        "coverage": 40,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Groin protector",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of protector",
+            "thickness": 2
+          },
+
+          {
+            "type": "kevlar_layered",
+            "covered_by_mat": 99,
+            "//thickness": [
+              "assumed 0.27 in.",
+              "similar to other soft armor inserts"
+            ],
+            "thickness": 6.86
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "//coverage": [
+          "approximated from visual reference",
+          "56% of front coverage / 2"
+        ],
+        "coverage": 23,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_hip_l", "leg_hip_r"],
+
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "flags": ["IOTV_GROIN", "BELTED"],
+
+    "price": "150 USD",
+    "//price_postapoc": "1 USD"
+  }
+]
