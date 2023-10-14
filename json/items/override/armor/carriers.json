@@ -264,5 +264,449 @@
 
     "//price": "280 CAD",
     "price": "205 USD"
+  },
+
+  {
+    "id": "ballistic_vest_heavy",
+    "copy-from": "ballistic_vest_heavy",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://ciehub.info/spec/PD/FQ-PD-07-05.html",
+        "material definitions",
+        "weight"
+      ],
+      [
+        "https://store.armyproperty.com/products/base-vest-assembly-iotv-improved-outer-tactical-vest-nsn-8470-01-604-6619-multicam-ocp-gen-iii-usgi-issue-size-medium.html",
+        "price"
+      ]
+    ],
+
+    "//notes": [
+      "this item was supposed to be modelled after MTV in the base game",
+      "the MTV does not have deltoid (shoulder) protectors, while IOTV (still in service) does",
+      "for consistency's sake, and because reality still affords us the opportunity, we're modelling this item after the IOTV Gen III vest",
+      "this item is a standalone vest, with additional protectors worn 'inside' the vest",
+      "additionally, this item is modelled after size M, mostly for consistency",
+      "multicam use was discontinued in 2019"
+    ],
+
+    "name": {
+      "str": "IOTV Gen III ballistic vest"
+    },
+    "description": "A third-generation design of a ballistic vest in service with the US Army, the IOTV (Improved Outer Tactical Vest) is a replacement of the older OTV design.  Itself capable of withstanding shrapnel and pistol-caliber bullets, it can be equipped with ballistic plates for resistance to rifle-caliber hits.  Additionally, it can be augmented with shoulder, groin, lower back, and neck protectors.  This model is patterned in multicam, which makes it at least a few years old.",
+
+    "//weight": [
+      "reference material provides IOTV weight as base vest (this item) + 2 ballistic panels",
+      "we presume these panels to be soft, Kevlar panels",
+      "we also presume (at least at this stage) that these panels are embedded into the vest and are not replaceable"
+    ],
+    "weight": "4704 g",
+    "//dimensions": {
+      "length": "1.50 in",
+      "width": "15.35 in",
+      "height": "21.00 in",
+      "raw": "7924 ml",
+      "trim": 0.2,
+      "notes": [
+        "length (thickness) is taken from Perroz LPSPC",
+        "other dimensions acquired from visual reference",
+        "in IOTV reference, front width likely refers to width of IOTV with cummerbunds laid out ouside",
+        "we assume, for ease of calculations, that cummerbunds are tucked in, without making too much of a difference for other dimensions"
+      ]
+    },
+    "volume": "6339 ml",
+    "longest_side": "533 mm",
+
+    "material": ["nylon", "kevlar_layered"],
+    "//warmth": 0,
+
+    "armor": [
+      {
+        "//description": "Shoulder straps",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "//coverage": [
+          "approximated from large ballistic plate coverage (38% per front/back)",
+          "augmented from visual reference"
+        ],
+        "coverage": 7,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Base vest, upper torso",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          },
+
+          {
+            "type": "kevlar_layered",
+            "//covered_by_mat": "approximated",
+            "covered_by_mat": 95,
+            "//thickness": [
+              "0.3 in. (≈ 7.6 mm) total",
+              "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
+              "this is likely incorrect, but no clearer data seem to be available"
+            ],
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": 6,
+
+        "//coverage": [
+          "approximated from large ballistic plate coverage (38% per front/back)",
+          "augmented from visual reference"
+        ],
+        "coverage": 78,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Base vest, lower torso",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          },
+
+          {
+            "type": "kevlar_layered",
+            "//covered_by_mat": "approximated",
+            "covered_by_mat": 98,
+            "//thickness": [
+              "0.3 in. (≈ 7.6 mm) total",
+              "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
+              "this is likely incorrect, but no clearer data seem to be available"
+            ],
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "//coverage": "roughly approximated from visual reference",
+        "coverage": 50,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Cummerbund",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of body",
+            "thickness": 2
+          }
+        ],
+
+        "encumbrance": 0,
+
+        "//coverage": [
+          "approximated from side ballistic plate coverage (5% per side)",
+          "here, cummerbund also serves as a side plate pouch"
+        ],
+        "coverage": 12,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "//pocket_data": [
+      "this IOTV is based on size M and thus takes medium-sized plates for front and back",
+      "IOTV reference document allows using X-Small plates in place of regular side plates"
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a side armor plate",
+
+        "ablative": true,
+
+        "moves": 600,
+
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1300 g",
+        "max_item_length": "292 mm",
+
+        "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a side armor plate",
+
+        "ablative": true,
+
+        "moves": 600,
+
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "1300 g",
+        "max_item_length": "292 mm",
+
+        "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Attachment points for a shoulder protector",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["IOTV_SHOULDER"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Attachment points for a shoulder protector",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["IOTV_SHOULDER"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Attachment points for a groin protector",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["IOTV_GROIN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Attachment points for a neck protector",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["IOTV_NECK"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Attachment points for a lower back protector",
+
+        "ablative": true,
+
+        "moves": 400,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["IOTV_BACK"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "12.50 in",
+          "height": "9.60 in",
+          "raw": "3097 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from visual reference",
+            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
+            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+          ]
+        },
+        "//max_contains_volume": "rounded up for simplicity",
+        "max_contains_volume": "3100 ml",
+        "max_contains_weight": "20 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side MOLLE webbing",
+
+        "volume_encumber_modifier": 1.5,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "12.50 in",
+          "height": "6.75 in",
+          "raw": "2177 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions assumed to be same as for the front webbing",
+            "except for height, which looks to be 3 steps high, rather than 4 on the front webbing"
+          ]
+        },
+        "//max_contains_volume": "rounded up for simplicity",
+        "max_contains_volume": "2200 ml",
+        "max_contains_weight": "10 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side MOLLE webbing",
+
+        "volume_encumber_modifier": 1.5,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "12.50 in",
+          "height": "6.75 in",
+          "raw": "2177 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions assumed to be same as for the front webbing",
+            "except for height, which looks to be 3 steps high, rather than 4 on the front webbing"
+          ]
+        },
+        "//max_contains_volume": "rounded up for simplicity",
+        "max_contains_volume": "2200 ml",
+        "max_contains_weight": "10 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back MOLLE webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "12.50 in",
+          "height": "18.00 in",
+          "raw": "5806 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions assumed to be same as for the front webbing",
+            "except for height, which on the back is (presumed to be) the entire height of the back",
+            "while the IOTV reference mentions that front and back heights are different, for now we presume they are the same, for simplicity's sake"
+          ]
+        },
+        "//max_contains_volume": "rounded up for simplicity",
+        "max_contains_volume": "5800 ml",
+        "max_contains_weight": "30 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH"]
+      }
+    ],
+
+    "//use_action": [
+      "removes hardcoded MOLLE actions",
+      "(1) there are no MOLLE loops on the carrier itself",
+      "(2) the mod uses Armory form factor of insertable MOLLE/QASM equipment"
+    ],
+    "use_action": [],
+
+    "//flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
+
+    "price": "1449 USD"
   }
 ]
