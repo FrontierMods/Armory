@@ -1,0 +1,205 @@
+[
+  {
+    "id": "bandolier_wrist",
+    "copy-from": "bandolier_wrist",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://www.thisiswhyimbroke.com/leather-ammo-bandolier-bracelet/",
+        "price",
+        "pocket data"
+      ]
+    ],
+
+    "name": { "str": "wrist bandolier" },
+    "description": "A novelty leather wrist band, with 10 small straps for holding spare rounds.  The straps have enough stretch in them to comfortably hold pistol and rifle cartridges.  ",
+
+    "weight": "30 g",
+    "volume": "250 ml",
+
+    "material": ["leather"],
+    "material_thickness": 4,
+
+    "armor": [
+      {
+        "encumbrance": 2,
+        "coverage": 90,
+        "covers": ["hand_l", "hand_r"],
+        "specifically_covers": ["hand_wrist_l", "hand_wrist_r"]
+      }
+    ],
+
+    "//pocket_data": [
+      "removed anything larger in diameter than .45-70",
+      "removed .22 for being too small",
+      "added missing calibers that would make sense"
+    ],
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "223": 10,
+          "9mm": 10,
+          "357sig": 10,
+          "357mag": 10,
+          "9x18": 10,
+          "38": 10,
+          "38super": 10,
+          "40": 10,
+          "10mm": 10,
+          "44": 10,
+          "45": 10,
+          "454": 10,
+          "45colt": 10,
+          "57": 10,
+          "46": 10,
+          "32": 10,
+          "762x25": 10,
+          "flintlock": 10,
+          "36paper": 10,
+          "44paper": 10,
+          "270win": 10,
+          "300blk": 10,
+          "5x50": 10,
+          "545x39": 10,
+          "3006": 10,
+          "308": 10,
+          "300": 10,
+          "762": 10,
+          "762R": 10,
+          "8x40mm": 10,
+          "4570": 10
+        },
+        "moves": 110
+      }
+    ],
+
+    "//flags": [
+      "removed PALS_SMALL",
+      "this is a novelty, possibly handcrafted item that's always been meant to be worn around the wrist"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS"],
+
+    "price": "36 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "legpouch",
+    "copy-from": "legpouch",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://activeprogear.com/product/ankle-holster-magazine-carrier/",
+        "price"
+      ],
+      [
+        "https://www.amazon.com/Concealed-Magazines-Flashlight-Multi-Tool-ActiveProGear/dp/B008LUXABM",
+        "dimensions"
+      ],
+      [
+        "https://www.amazon.com/Active-Pro-Gear-ActiveProGear-Ankle/dp/B00WF65TYO",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Active Pro Gear ankle pouch",
+      "str_pl": "Active Pro Gear ankle pouches"
+    },
+    "description": "A small fabric wrapping around your ankle, with two pouches for EDC gear or pistol magazines.  It's intended for concealed carry, so using it is going to be uncomfortable without much practice.",
+
+    "//weight": [
+      "Amazon source says 'package weight' is 2.4 oz ≈ 68 g",
+      "a similar item from the same company (presumably using the same materials) weighs significantly less while fulfilling a similar function",
+      "we will use the similar item's weight and add 20%"
+    ],
+    "weight": "11 g",
+    "//dimensions": {
+      "length": "15.00 in",
+      "width": "0.10 in",
+      "height": "4.00 in",
+      "raw": "98 ml",
+      "trim": 0.25,
+      "notes": [
+        "it seems as though width of 0.1 in ≈ 2.5 mm covers both the base and the pockets, while pockets only cover about half the width",
+        "we trim by 25% to account for that"
+      ]
+    },
+    "volume": "74 ml",
+    "//longest_side": "assumes folded three times, since the fabric is quite elastic",
+    "longest_side": "48 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 2,
+
+    "//armor": ["extra ankle coverage for pockets?"],
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
+        ],
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_lower_l", "leg_lower_r"],
+        "coverage": 10,
+        "encumbrance": 1,
+        "layers": ["SKINTIGHT"]
+      },
+
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
+        ],
+        "covers": ["foot_l", "foot_r"],
+        "specifically_covers": ["foot_ankle_l", "foot_ankle_r"],
+        "coverage": 60,
+        "encumbrance": 1,
+        "layers": ["SKINTIGHT"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_item_length": "height of pouch",
+        "max_item_length": "102 mm",
+        "max_contains_volume": "250 ml",
+        "max_contains_weight": "500 g",
+
+        "moves": 180
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_item_length": "height of pouch",
+        "max_item_length": "102 mm",
+        "max_contains_volume": "250 ml",
+        "max_contains_weight": "500 g",
+
+        "moves": 180
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash item",
+      "holster_msg": "You stash your %s."
+    },
+
+    "//flags": [
+      "removed PALS_SMALL",
+      "this is a novelty item that's always been meant to be worn around the ankle"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS"],
+
+    "price": "30 USD",
+    "//price_postapoc": "1 USD"
+  }
+]
