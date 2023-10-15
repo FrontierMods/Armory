@@ -1,0 +1,252 @@
+[
+  {
+    "id": "plate_steel_small_3plus",
+    "copy-from": "steel_ballistic_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.customarmorgroup.com/products/cag-ar500",
+      [
+        "https://smithdefense.com/smith-defense-ar550-iii-sapi-steel-armor-set-of-two/",
+        "price"
+      ]
+    ],
+
+    "//notes": ["40 MIL Rhino anti-spalling cover"],
+
+    "name": { "str": "CAG small steel plate, NIJ III+" },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
+
+    "weight": "3629 g",
+    "//dimensions": {
+      "length": "11.75 in",
+      "width": "8.75 in",
+      "height": "0.35 in",
+      "raw": "590 ml",
+      "trim": 0.125
+    },
+    "volume": "516 ml",
+    "longest_side": "299 mm",
+
+    "material": ["hc_steel"],
+
+    "material_thickness": 9,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 5,
+        "coverage": 30,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 5,
+        "coverage": 8,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SMALL", "CANT_WEAR"],
+
+    "//price": "$229 / pair",
+    "price": "114 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "plate_steel_medium_3plus",
+    "copy-from": "steel_ballistic_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.customarmorgroup.com/products/cag-ar500",
+      [
+        "https://smithdefense.com/smith-defense-ar550-iii-sapi-steel-armor-set-of-two/",
+        "price"
+      ]
+    ],
+
+    "name": { "str": "CAG medium steel plate, NIJ III+" },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+
+    "weight": "4173 g",
+    "//dimensions": {
+      "length": "12.5 in",
+      "width": "9.5 in",
+      "height": "0.35 in",
+      "raw": "681 ml",
+      "trim": 0.125
+    },
+    "volume": "596 ml",
+    "longest_side": "318 mm",
+
+    "material": ["hc_steel"],
+
+    "material_thickness": 9,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 6,
+        "coverage": 34,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 6,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_MEDIUM", "CANT_WEAR"],
+
+    "//price": "$259 / pair",
+    "price": "129 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "plate_steel_large_3plus",
+    "copy-from": "steel_ballistic_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.customarmorgroup.com/products/cag-ar500",
+      [
+        "https://smithdefense.com/smith-defense-ar550-iii-sapi-steel-armor-set-of-two/",
+        "price"
+      ]
+    ],
+
+    "name": { "str": "CAG large steel plate, NIJ III+" },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
+
+    "weight": "4808 g",
+    "//dimensions": {
+      "length": "13.25 in",
+      "width": "10.125 in",
+      "height": "0.35 in",
+      "raw": "770 ml",
+      "trim": 0.125
+    },
+    "volume": "674 ml",
+    "longest_side": "337 mm",
+
+    "material": ["hc_steel"],
+
+    "material_thickness": 9,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 8,
+        "coverage": 36,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 8,
+        "coverage": 13,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_LARGE", "CANT_WEAR"],
+
+    "//price": "$279 / pair",
+    "price": "139 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "plate_steel_xl_3plus",
+    "copy-from": "steel_ballistic_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.customarmorgroup.com/products/cag-ar500",
+      [
+        "https://smithdefense.com/smith-defense-ar550-iii-sapi-steel-armor-set-of-two/",
+        "price"
+      ]
+    ],
+
+    "name": { "str": "CAG XL steel plate, NIJ III+" },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"extra-large\" and can only fit in carriers that allow XL-sized plates.",
+
+    "weight": "5489 g",
+    "//dimensions": {
+      "length": "14 in",
+      "width": "11 in",
+      "height": "0.35 in",
+      "raw": "883 ml",
+      "trim": 0.125
+    },
+    "volume": "773 ml",
+    "longest_side": "356 mm",
+
+    "material": ["hc_steel"],
+
+    "material_thickness": 9,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 4,
+        "coverage": 38,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+        ],
+        "encumbrance": 4,
+        "coverage": 16,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_XL", "CANT_WEAR"],
+
+    "//price": [
+      "there's no pricing for a pair of XL plates in the source",
+      "medium → large plate pricing is $259 → $279 = $20 difference",
+      "we assume that the same difference would apply to large → XL transition",
+      "for a final price of $299 / pair"
+    ],
+    "price": "149 USD",
+    "price_postapoc": "1 USD"
+  }
+]
