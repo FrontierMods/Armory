@@ -2,6 +2,10 @@
 
 ## Ballistic Armor
 
+### Dimensions
+
+**MOLLE cell**: 1 in. tall × 1.5 in. wide
+
 ### Ballistic Plates
 
 #### Coverage
