@@ -15,14 +15,14 @@
 
     "weight": "1361 g",
     "//dimensions": {
-      "length": "11.5 in",
+      "length": "11.75 in",
       "width": "8.75 in",
       "height": "1.15 in",
-      "raw": "1896 ml",
+      "raw": "1938 ml",
       "trim": 0.125
     },
-    "volume": "1659 ml",
-    "longest_side": "292 mm",
+    "volume": "1696 ml",
+    "longest_side": "299 mm",
 
     "material": ["uhmwpe", "nylon"],
 
