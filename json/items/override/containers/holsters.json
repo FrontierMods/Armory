@@ -1,0 +1,83 @@
+[
+  {
+    "id": "bootstrap",
+    "copy-from": "bootstrap",
+    "type": "ARMOR",
+
+    "//sources": [
+      ["https://activeprogear.com/product/ankle-concealment-holster/", "price"],
+      ["https://us.glock.com/en/pistols/g33", "pocket restrictions"]
+    ],
+
+    "name": {
+      "str": "Active Pro Gear ankle holster"
+    },
+    "description": "A small concealed holster worn on the ankle.  It is awkward to use without practice.  Activate to holster/draw a small pistol.",
+
+    "//weight": "we will use the weight of Active Pro Gear ankle pouch + 10% for this holster",
+    "weight": "12 g",
+    "//volume": [
+      "dimensions for the holster don't appear to be available",
+      "we're going to use dimensions of Active Pro Gear ankle pouch",
+      "we add 10% to the resulting volume to accomodate for a larger pouch and the lower leg strap"
+    ],
+    "volume": "81 ml",
+    "//longest_side": "like with the ankle pouch, we presume 3× folding of the fabric",
+    "longest_side": "48 ml",
+
+    "material": ["nylon"],
+    "material_thickness": 2,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
+        ],
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_lower_l", "leg_lower_r"],
+        "coverage": 15,
+        "encumbrance": 1,
+        "layers": ["SKINTIGHT"]
+      },
+
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
+        ],
+        "covers": ["foot_l", "foot_r"],
+        "specifically_covers": ["foot_ankle_l", "foot_ankle_r"],
+        "coverage": 60,
+        "encumbrance": 1,
+        "layers": ["SKINTIGHT"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "magazine_well": "100 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": "roughly the volume of a loaded Glock 33, rounded to the nearest 10",
+        "max_contains_volume": "400 ml",
+        "//max_contains_weight": "weight of a loaded Glock 33 + 60 g",
+        "max_contains_weight": "795 g",
+        "//max_item_length": "overall length of Glock 33",
+        "max_item_length": "165 mm",
+
+        "moves": 220
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": ["BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS"],
+
+    "price": "25 USD",
+    "//price_postapoc": "1 USD"
+  }
+]
