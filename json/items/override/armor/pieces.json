@@ -126,10 +126,10 @@
             "type": "kevlar_layered",
             "covered_by_mat": 99,
             "//thickness": [
-              "assumed 0.27 in.",
+              "assumed 0.27 in., minus the 2 mm of nylon",
               "similar to other soft armor inserts"
             ],
-            "thickness": 6.86
+            "thickness": 4.858
           }
         ],
 
