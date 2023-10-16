@@ -151,5 +151,103 @@
 
     "price": "150 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "iotv_shoulder_plate",
+    "copy-from": "iotv_shoulder_plate",
+    "type": "GENERIC",
+    "category": "spare_parts",
+
+    "//sources": [
+      [
+        "https://www.venturesurplus.com/products/usgi-iotv-deltoid-protector-multicam/",
+        "price",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "for the sake of simplicity, we're going to pretend that the ballistic insert is embedded into the protector and is repairable",
+      "size L (fits medium and large IOTVs)"
+    ],
+
+    "name": {
+      "str": "IOTV Gen III deltoid protector"
+    },
+    "description": "Nylon armor with soft armor insert protecting the shoulder and upper arm.  Designed to be attached to IOTV Gen III ballistic vest.",
+
+    "weight": "482 g",
+    "//dimensions": {
+      "length": "0.30 in",
+      "width": "5.90 in",
+      "height": "5.20 in",
+      "raw": "151 ml",
+      "trim": 0.25,
+      "notes": [
+        "depth (length) is assumed from IOTV vest maximum thickness",
+        "other dimensions acquired from visual reference"
+      ]
+    },
+    "volume": "113 ml",
+
+    "material": ["nylon", "kevlar_layered"],
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 2
+          },
+          {
+            "type": "kevlar_layered",
+            "covered_by_mat": 99,
+            "//thickness": [
+              "assumed 0.27 in., minus the 2 mm of nylon",
+              "similar to other soft armor inserts"
+            ],
+            "thickness": 4.858
+          }
+        ],
+        "encumbrance": 3,
+
+        "coverage": 80,
+        "covers": ["arm_l", "arm_r"],
+        "specifically_covers": ["arm_shoulder_l", "arm_shoulder_r"],
+        "volume_encumber_modifier": 0
+      },
+
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 2
+          },
+          {
+            "type": "kevlar_layered",
+            "covered_by_mat": 99,
+            "//thickness": [
+              "assumed 0.27 in., minus the 2 mm of nylon",
+              "similar to other soft armor inserts"
+            ],
+            "thickness": 4.858
+          }
+        ],
+        "encumbrance": 3,
+
+        "coverage": 60,
+        "covers": ["arm_l", "arm_r"],
+        "specifically_covers": ["arm_upper_l", "arm_upper_r"],
+        "volume_encumber_modifier": 0
+      }
+    ],
+
+    "flags": ["IOTV_SHOULDER", "CANT_WEAR"],
+
+    "price": "60 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
