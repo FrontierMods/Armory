@@ -1,0 +1,307 @@
+[
+  {
+    "id": "powered_earmuffs",
+    "copy-from": "powered_earmuffs",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      [
+        "https://www.walkersgameear.com/razor-slim-electronic-ear-muff/",
+        "price"
+      ],
+      [
+        "https://www.walmart.com/ip/Walker-s-Razor-Slim-Shooter-Teal-Electronic-Folding-Hearing-Protection-Earmuffs/50163081",
+        "dimensions"
+      ],
+      [
+        "https://headphonesexpert.com/walkers-razor-slim-earmuffs-review/",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str_sp": "Walker's Razor Slim earmuffs"
+    },
+    "description": "TBD",
+
+    "weight": "272 g",
+    "//dimensions": {
+      "length": "8.10 in",
+      "width": "3.80 in",
+      "height": "10.60 in",
+      "raw": "5347 ml",
+      "trim": 0.75
+    },
+    "volume": "1337 ml",
+
+    "material": ["plastic", "nylon"],
+    "material_thickness": 3,
+
+    "//sound": {
+      "NRR": 23
+    },
+
+    "armor": [
+      {
+        "//description": "Ear muffs",
+
+        "material": [
+          {
+            "//type": "there should also be foam and foam cover materials here",
+            "type": "plastic",
+            "covered_by_mat": 100,
+            "//thickness": [
+              "eyeballed",
+              "includes the foam part",
+              "~0.7 in. ≈ 17.8 mm per side"
+            ],
+            "thickness": 35.6
+          }
+        ],
+
+        "encumbrance": 3,
+
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_ear_r", "head_ear_l"]
+      },
+
+      {
+        "//description": "Ear muffs",
+
+        "material": [
+          {
+            "//type": "there should also be foam and foam cover materials here",
+            "type": "plastic",
+            "covered_by_mat": 100,
+            "//thickness": [
+              "eyeballed",
+              "includes the foam part",
+              "~0.8 in. per side ≈ 40.6 mm"
+            ],
+            "thickness": 40.6
+          }
+        ],
+
+        "encumbrance": 3,
+
+        "coverage": 2,
+        "covers": ["head"],
+        "specifically_covers": ["mouth_cheeks"]
+      },
+
+      {
+        "//description": "Headband",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": ["eyeballed"],
+            "thickness": 3.3
+          }
+        ],
+
+        "encumbrance": 5,
+
+        "coverage": 9,
+        "covers": ["head"],
+        "specifically_covers": ["head_crown"]
+      }
+    ],
+
+    "//pocket_data": "removed support for ultralight batteries",
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": ["BATTERY_LIGHT"],
+        "default_magazine": "light_plus_battery_cell"
+      }
+    ],
+
+    "price": "70 USD",
+    "//price_postapoc": "5 USD"
+  },
+
+  {
+    "id": "powered_earmuffs_on",
+    "copy-from": "powered_earmuffs",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      [
+        "https://headphonesexpert.com/walkers-razor-slim-earmuffs-review/",
+        "battery life"
+      ]
+    ],
+
+    "name": {
+      "str_sp": "Walker's Razor Slim earmuffs (on)"
+    },
+    "description": "TBD",
+
+    "repairs_like": "powered_earmuffs",
+
+    "//power": {
+      "source": [["AAA", "AAA"]],
+      "voltage": "1.5 V",
+      "capacity": "1100 mAh",
+      "runtime": "15 h",
+      "notes": ["voltage and capacity are presumed"]
+    },
+
+    "//power_draw": [
+      "based on a very rough estimate of capacity",
+      "divided by two, to emulate running off one battery"
+    ],
+    "power_draw": "110 mW",
+    "revert_to": "powered_earmuffs",
+
+    "use_action": {
+      "type": "transform",
+      "target": "powered_earmuffs",
+
+      "menu_text": "Turn off",
+
+      "msg": "You turn the earmuffs off.",
+      "ammo_scale": 0
+    },
+
+    "extend": {
+      "//flags": "much like lit flashlights, active earmuffs should be avoided by traders",
+      "flags": ["PARTIAL_DEAF", "TRADER_AVOID"]
+    },
+    "delete": {
+      "flags": ["DEAF"]
+    }
+  },
+
+  {
+    "id": "powered_earplugs",
+    "copy-from": "powered_earplugs",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      ["https://www.walkersgameear.com/silencer-bt-2-0/", "price"],
+      ["https://www.soundguys.com/sony-wf-1000xm5-review-95465/", "dimensions"]
+    ],
+
+    "name": {
+      "str_sp": "Walker's Silencer 2.0 earplugs"
+    },
+    "description": "TBD",
+
+    "weight": "12 g",
+    "//dimensions": {
+      "length": "26 mm",
+      "width": "17 mm",
+      "height": "21 mm",
+      "raw": "9 ml",
+      "trim": 0.125,
+      "notes": [
+        "we use dimensions of a product of similar form factor",
+        "then add 10% to the trimmed weight to account for the ear lobe support",
+        "the dimensions are presumed to be for a pair of ear plugs"
+      ]
+    },
+    "volume": "9 ml",
+    "longest_side": "26 mm",
+
+    "material": ["plastic", "copper"],
+    "material_thickness": 1,
+
+    "//sound": {
+      "NRR": 24
+    },
+
+    "armor": [
+      {
+        "//description": "Ear plugs",
+
+        "material": [
+          {
+            "type": "plastic",
+            "covered_by_mat": 100,
+            "//thickness": ["eyeballed"],
+            "thickness": 1
+          }
+        ],
+
+        "encumbrance": 0,
+
+        "coverage": 14,
+        "covers": ["head"],
+        "specifically_covers": ["head_ear_r", "head_ear_l"]
+      }
+    ],
+
+    "use_action": {
+      "type": "transform",
+      "target": "powered_earplugs_on",
+
+      "active": true,
+      "msg": "You turn the earplugs on.",
+
+      "need_charges": 1,
+      "need_charges_msg": "The earplugs' batteries are dead."
+    },
+
+    "price": "299 USD",
+    "//price_postapoc": "5 USD"
+  },
+
+  {
+    "id": "powered_earplugs_on",
+    "copy-from": "powered_earplugs",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      [
+        "https://www.amazon.com.au/Silencer-Smartphone-Control-Improved-Connection/dp/B08DDKH21R",
+        "battery life"
+      ]
+    ],
+
+    "name": {
+      "str_sp": "Walker's Silencer 2.0 earplugs"
+    },
+    "description": "TBD",
+
+    "repairs_like": "powered_earplugs",
+
+    "//power": {
+      "source": [["internal"]],
+      "voltage": "1.5 V",
+      "capacity": "??? mAh",
+      "runtime": "14 h",
+      "notes": ["voltage is presumed"]
+    },
+
+    "//power_draw": "estimated from earmuffs' draw (110 mW) divided by difference in battery capacity (100 for a light battery / 20 for earplugs' internal battery)",
+    "power_draw": "22 mW",
+    "revert_to": "powered_earplugs",
+
+    "use_action": {
+      "type": "transform",
+      "target": "powered_earplugs",
+
+      "menu_text": "Turn off",
+
+      "msg": "You turn the earplugsoff.",
+      "ammo_scale": 0
+    },
+
+    "extend": {
+      "//flags": "much like lit flashlights, active earplugs should be avoided by traders",
+      "flags": ["PARTIAL_DEAF", "TRADER_AVOID"]
+    },
+    "delete": {
+      "flags": ["DEAF"]
+    }
+  }
+]
