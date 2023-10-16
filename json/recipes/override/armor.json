@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ballistic_vest_heavy",
+    "copy-from": "ballistic_vest_heavy",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "id": "ballistic_vest_heavy_arms",
+    "copy-from": "ballistic_vest_heavy_arms",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "id": "ballistic_vest_heavy_legs",
+    "copy-from": "ballistic_vest_heavy_legs",
+    "type": "recipe",
+    "obsolete": true
+  }
+]
