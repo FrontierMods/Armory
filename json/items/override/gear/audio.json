@@ -21,9 +21,9 @@
     ],
 
     "name": {
-      "str_sp": "Walker's Razor Slim earmuffs"
+      "str_sp": "Walker's Razor Slim headset"
     },
-    "description": "TBD",
+    "description": "A set of low-profile earmuffs designed to protect shooter's ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  Activate to turn on.",
 
     "weight": "272 g",
     "//dimensions": {
@@ -139,9 +139,9 @@
     ],
 
     "name": {
-      "str_sp": "Walker's Razor Slim earmuffs (on)"
+      "str_sp": "Walker's Razor Slim headset (on)"
     },
-    "description": "TBD",
+    "description": "A set of low-profile earmuffs designed to protect shooters' ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  The headset is currently on.  Activate to turn off.",
 
     "repairs_like": "powered_earmuffs",
 
@@ -191,9 +191,9 @@
     ],
 
     "name": {
-      "str_sp": "Walker's Silencer 2.0 earplugs"
+      "str_sp": "Walker's Silencer 2.0 earphones"
     },
-    "description": "TBD",
+    "description": "A set of earphones designed to protect shooter's ears from excessive noise when firing.  When turned on, the earphones let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the reliably block off most sound.  Activate to turn on.",
 
     "weight": "12 g",
     "//dimensions": {
@@ -268,9 +268,9 @@
     ],
 
     "name": {
-      "str_sp": "Walker's Silencer 2.0 earplugs"
+      "str_sp": "Walker's Silencer 2.0 earphones (on)"
     },
-    "description": "TBD",
+    "description": "A set of earphones designed to protect shooter's ears from excessive noise when firing.  When turned on, the earphones let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the reliably block off most sound.  The earphones are currently on.  Activate to turn off.",
 
     "repairs_like": "powered_earplugs",
 
