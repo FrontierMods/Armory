@@ -63,67 +63,6 @@
   },
 
   {
-    "id": "plate_steel_medium_3plus",
-    "copy-from": "steel_ballistic_plate",
-    "type": "ARMOR",
-    "category": "armor",
-
-    "//sources": [
-      "https://www.customarmorgroup.com/products/cag-ar500",
-      [
-        "https://smithdefense.com/smith-defense-ar550-iii-sapi-steel-armor-set-of-two/",
-        "price"
-      ]
-    ],
-
-    "name": { "str": "CAG medium steel plate, NIJ III+" },
-    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
-
-    "weight": "4173 g",
-    "//dimensions": {
-      "length": "12.5 in",
-      "width": "9.5 in",
-      "height": "0.35 in",
-      "raw": "681 ml",
-      "trim": 0.125
-    },
-    "volume": "596 ml",
-    "longest_side": "318 mm",
-
-    "material": ["hc_steel"],
-
-    "material_thickness": 9,
-
-    "armor": [
-      {
-        "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
-        ],
-        "encumbrance": 6,
-        "coverage": 34,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
-      },
-
-      {
-        "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
-        ],
-        "encumbrance": 6,
-        "coverage": 10,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
-      }
-    ],
-
-    "flags": ["ABLATIVE_MEDIUM", "CANT_WEAR"],
-
-    "//price": "$259 / pair",
-    "price": "129 USD",
-    "price_postapoc": "1 USD"
-  },
-
-  {
     "id": "plate_steel_large_3plus",
     "copy-from": "steel_ballistic_plate",
     "type": "ARMOR",
