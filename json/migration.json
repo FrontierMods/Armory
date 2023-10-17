@@ -9,5 +9,16 @@
     "id": ["ballistic_vest_heavy_arms", "ballistic_vest_heavy_legs"],
     "type": "MIGRATION",
     "replace": "ballistic_vest_heavy"
+  },
+
+  {
+    "id": ["load_bearing_vest_sling"],
+    "type": "MIGRATION",
+    "replace": "load_bearing_vest"
+  },
+  {
+    "id": ["heavy_load_bearing_vest_sling"],
+    "type": "MIGRATION",
+    "replace": "heavy_load_bearing_vest"
   }
 ]
