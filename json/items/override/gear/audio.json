@@ -231,7 +231,7 @@
           }
         ],
 
-        "encumbrance": 0,
+        "encumbrance": 1,
 
         "coverage": 14,
         "covers": ["head"],
