@@ -79,5 +79,95 @@
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "holster",
+    "copy-from": "holster",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://condoroutdoor.com/collections/modular-pouches/products/rds-holster",
+        "dimensions",
+        "price"
+      ],
+      [
+        "https://keystonegazette.com/you-can-get-a-1911-at-just-299-dollars-while-supplies-last-sds-1911-review/",
+        "pocket restrictions"
+      ],
+      [
+        "https://www.specshop.pl/RDS-Holster-For-Pistol-Coyote-Condor-191278-498",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Condor RDS holster"
+    },
+    "description": "A holster for pistols of up to 5″ of barrel length.  This model features a small cutout for pistols using compact red dot sights.  It can be worn on the belt or attached to a MOLLE-capable vest or rig.",
+
+    "weight": "170 g",
+    "//dimensions": {
+      "length": "8 in",
+      "width": "3.5 in",
+      "height": "1.5 in",
+      "raw": "688 ml",
+      "trim": 0.125
+    },
+    "volume": "602 ml",
+    "longest_side": "203 ml",
+
+    "material": ["nylon"],
+    "material_thickness": 2,
+
+    "armor": [
+      {
+        "encumbrance": [1, 4],
+        "coverage": 9,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_hip_r", "leg_hip_l"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "magazine_well": "100 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of a loaded M1911",
+          {
+            "length": "8.56 in",
+            "width": "1.27 in",
+            "height": "5.5 in",
+            "raw": "980 ml",
+            "trim": 0.55,
+            "result": "441 ml"
+          },
+          "added 50 ml to account for red dot sights",
+          "red dot sight volume based on Loadout models"
+        ],
+        "max_contains_volume": "491 ml",
+        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
+        "max_contains_weight": "1156 g",
+        "//max_item_length": "overall length of M1911, plus 2.5%",
+        "max_item_length": "222 mm",
+
+        "moves": 95
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["BELTED", "OVERSIZE", "MOLLE_ATTACH", "ALLOWS_NATURAL_ATTACKS"],
+
+    "price": "27 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
