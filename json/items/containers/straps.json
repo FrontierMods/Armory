@@ -44,7 +44,14 @@
         "material": [
           {
             "type": "nylon",
-            "covered_by_mat": 100,
+            "covered_by_mat": 90,
+            "//thickness": ["eyeballed"],
+            "thickness": 1
+          },
+
+          {
+            "type": "plastic",
+            "covered_by_mat": 10,
             "//thickness": ["from dimensions: height (thickness)"],
             "thickness": 2.5
           }
@@ -53,25 +60,6 @@
         "encumbrance": 1,
 
         "coverage": 5,
-        "covers": ["leg_l", "leg_r"],
-        "specifically_covers": ["leg_hip_r", "leg_hip_l"]
-      },
-
-      {
-        "//description": "Plastic buckle",
-
-        "material": [
-          {
-            "type": "plastic",
-            "covered_by_mat": 100,
-            "//thickness": ["estimated based on strap thickness"],
-            "thickness": 3
-          }
-        ],
-
-        "encumbrance": 0,
-
-        "coverage": 1,
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_hip_r", "leg_hip_l"]
       }
