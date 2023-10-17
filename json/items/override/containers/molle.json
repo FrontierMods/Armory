@@ -1,0 +1,129 @@
+[
+  {
+    "id": "legpouch_large",
+    "copy-from": "legpouch_large",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://condoroutdoor.com/products/condor-drop-leg-platform",
+        "dimensions",
+        "price"
+      ],
+      [
+        "https://www.amazon.com/Condor-Drop-Leg-Platform/dp/B0082CWB3C",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "while this kind of leg-attached gear is meant to be worn attached to a belt at the top, we ignore it for the sake of simplifying gear management for the player"
+    ],
+
+    "name": {
+      "str": "Condor large drop leg platform"
+    },
+    "description": "A thin piece of fabric with MOLLE webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.",
+
+    "weight": "227 g",
+    "//dimensions": {
+      "length": "10 in",
+      "width": "9 in",
+      "height": "5 mm",
+      "raw": "290 ml",
+      "trim": 0.05,
+      "notes": ["height (thickness) is assumed from visuals"]
+    },
+    "volume": "276 ml",
+    "//longest_side": "we assume it folds in half along the vertical axis when being transformed",
+    "longest_side": "254 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 5,
+
+    "armor": [
+      {
+        "//description": "Platform and straps",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": ["eyeballed"],
+            "thickness": 2
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 28,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      },
+
+      {
+        "//description": "Nylon straps and buckles",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 90,
+            "//thickness": ["estimated based on strap thickness"],
+            "thickness": 1
+          },
+
+          {
+            "type": "plastic",
+            "covered_by_mat": 10,
+            "//thickness": ["estimated based on strap thickness"],
+            "thickness": 2.5
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 4,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "MOLLE webbing",
+
+        "encumbrance": [0, 8],
+
+        "//max_contains_volume": [
+          "dimensions of platform",
+          {
+            "length": "10 in",
+            "width": "9 in",
+            "height": "40 mm",
+            "raw": "2323 ml",
+            "trim": 0,
+            "notes": ["height (depth) is from average MOLLE pouch height"]
+          }
+        ],
+        "max_contains_volume": "2323 ml",
+        "max_contains_weight": "10 kg",
+        "max_item_length": "254 mm",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "use_action": {},
+
+    "//flags": [
+      "removed PALS_MEDIUM, since this is an item that's intended to be worn on the leg",
+      "added TARDIS to emulate MOLLE webbing"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "TARDIS"],
+
+    "price": "24 USD",
+    "//price_postapoc": "250 cent"
+  }
+]
