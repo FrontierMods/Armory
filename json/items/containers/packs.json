@@ -122,7 +122,7 @@
         "max_contains_volume": "2930 ml",
         "max_contains_weight": "10 kg",
 
-        "flag_restriction": ["MOLLE_POUCH"]
+        "flag_restriction": ["MOLLE_ATTACH"]
       },
 
       {
@@ -141,7 +141,7 @@
         "max_contains_volume": "1270 ml",
         "max_contains_weight": "5 kg",
 
-        "flag_restriction": ["MOLLE_POUCH"]
+        "flag_restriction": ["MOLLE_ATTACH"]
       },
 
       {
@@ -160,7 +160,7 @@
         "max_contains_volume": "1270 ml",
         "max_contains_weight": "5 kg",
 
-        "flag_restriction": ["MOLLE_POUCH"]
+        "flag_restriction": ["MOLLE_ATTACH"]
       },
 
       {
