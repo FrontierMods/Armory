@@ -20,5 +20,11 @@
     "id": ["heavy_load_bearing_vest_sling"],
     "type": "MIGRATION",
     "replace": "heavy_load_bearing_vest"
+  },
+
+  {
+    "id": ["stone_pouch", "leather_stone_pouch"],
+    "type": "MIGRATION",
+    "replace": "dump_pouch"
   }
 ]
