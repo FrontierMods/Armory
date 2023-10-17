@@ -1,0 +1,112 @@
+[
+  {
+    "id": "strap_thigh_trex",
+    "copy-from": "holster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.trex-arms.com/store/New-Thigh-Strap/",
+      ["https://skdtac.com/true-north-mha-leg-strap-kit/", "weight"]
+    ],
+
+    "name": {
+      "str": "T.REX thigh strap"
+    },
+    "description": "An adjustable nylon strap with a buckle lock.  Goes on your thigh, where it helps secure a MOLLE or clipped item in place.  While intended for holsters and such, it can hold tools and similar items.",
+
+    "//weight": [
+      "we use a similar product's weight because none seems to be available for this one",
+      "1.9 oz ≈ 54 g",
+      "we subtract 12 g for the metal adapter plate"
+    ],
+    "weight": "42 g",
+    "//dimensions": {
+      "length": "30 in",
+      "width": "1.5 in",
+      "height": "0.1 in",
+      "raw": "74 ml",
+      "trim": -0.05,
+      "notes": [
+        "negative trim is to account for buckle size",
+        "height (thickness) is assumed"
+      ]
+    },
+    "volume": "77 ml",
+    "//longest_side": "assumes the strap is folded three times",
+    "longest_side": "95 mm",
+
+    "material": ["nylon", "plastic"],
+
+    "armor": [
+      {
+        "//description": "Nylon strap",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": ["from dimensions: height (thickness)"],
+            "thickness": 2.5
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_hip_r", "leg_hip_l"]
+      },
+
+      {
+        "//description": "Plastic buckle",
+
+        "material": [
+          {
+            "type": "plastic",
+            "covered_by_mat": 100,
+            "//thickness": ["estimated based on strap thickness"],
+            "thickness": 3
+          }
+        ],
+
+        "encumbrance": 0,
+
+        "coverage": 1,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_hip_r", "leg_hip_l"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side position",
+
+        "encumbrance": [0, 5],
+
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_POUCH", "BELT_CLIP", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front position",
+
+        "encumbrance": [0, 7],
+
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_POUCH", "BELT_CLIP", "TUCKED_IN"]
+      }
+    ],
+
+    "flags": ["BELTED", "OVERSIZE"],
+
+    "price": "20 USD"
+  }
+]

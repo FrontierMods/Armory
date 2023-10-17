@@ -41,6 +41,12 @@
   },
 
   {
+    "id": "TUCKED_IN",
+    "type": "json_flag",
+    "info": "This item can be <good>tucked in</good> under <info>a strap or a belt</info>"
+  },
+
+  {
     "id": "IOTV_SHOULDER",
     "type": "json_flag",
     "info": "This item can be <good>attached</good> to an IOTV vest <info>at the shoulder</info>, for additional protection"
