@@ -1,0 +1,20 @@
+[
+  {
+    "type": "ITEM_BLACKLIST",
+    "whitelist": false,
+
+    "items": ["dragonskin", "flintlock_pouch"],
+
+    "//notes": {
+      "dragonskin": [
+        "while a perfectly-real design, the armor itself is currently overpowered for the results it's shown in real-world trails",
+        "the armor needs to be represented better in-game, in order to reflect its lackluster nature",
+        "if this happens, the armor will be removed from obsoletion"
+      ],
+      "flintlock_pouch": [
+        "does not appear to be a real item",
+        "possibly an item to be re-evaluated under the planned crafting design system, as a character-crafted blueprint"
+      ]
+    }
+  }
+]
