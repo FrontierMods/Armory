@@ -23,5 +23,10 @@
     "id": ["stone_pouch", "leather_stone_pouch"],
     "type": "MIGRATION",
     "replace": "dump_pouch"
+  },
+  {
+    "id": ["tacvest"],
+    "type": "MIGRATION",
+    "replace": "load_bearing_vest"
   }
 ]
