@@ -1,6 +1,6 @@
 [
   {
-    "id": "plate_steel_small_3plus",
+    "id": "plate_steel_small_cag_iii+",
     "copy-from": "steel_ballistic_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -63,7 +63,7 @@
   },
 
   {
-    "id": "plate_steel_large_3plus",
+    "id": "plate_steel_large_cag_iii+",
     "copy-from": "steel_ballistic_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -124,7 +124,7 @@
   },
 
   {
-    "id": "plate_steel_xl_3plus",
+    "id": "plate_steel_xl_cag_iii+",
     "copy-from": "steel_ballistic_plate",
     "type": "ARMOR",
     "category": "armor",
