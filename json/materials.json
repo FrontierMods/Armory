@@ -113,5 +113,62 @@
     "acid_resist": 10,
     "fire_resist": 10,
     "chip_resist": 15
+  },
+
+  {
+    "type": "material",
+    "id": "si_c",
+    "copy-from": "ceramic",
+
+    "//sources": [
+      "https://www.umicore-ceramics.com/images/silicon-carbide-sic-198d-en.pdf"
+    ],
+
+    "//notes": ["aka SiC, aka carborundum"],
+
+    "name": "Silicon Carbide",
+
+    "bash_resist": 0.05,
+    "//cut_resist": [
+      "ceramics have high hardness value, thus resisting cutting quite well",
+      "this value is intended to be accurate for a ballistic plate that's likely to be around 29 mm thick",
+      "the existing value is improvised"
+    ],
+    "cut_resist": 0.96,
+    "//bullet_resist": [
+      "notable improvement over alumina",
+      "see alumina comments for reasoning for this value"
+    ],
+    "bullet_resist": 0.92,
+    "acid_resist": 10,
+    "fire_resist": 10,
+    "chip_resist": 18,
+
+    "density": 3.1,
+    "specific_heat_solid": 1000,
+
+    "dmg_adj": ["chipped", "cracked", "split", "broken"],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "cut"
+  },
+
+  {
+    "type": "material",
+    "id": "si_c_damaged",
+    "copy-from": "si_c",
+
+    "name": "Compromised silicon carbide",
+
+    "//bash_resist": "pieces of a cracked ceramic plate would likely amplify any blunt damage received",
+    "bash_resist": -0.1,
+    "//cut_resist": [
+      "even damaged, ceramics should provide cutting protection"
+    ],
+    "cut_resist": 0.96,
+    "//bullet_resist": ["still provides a modicum of its former protection"],
+    "bullet_resist": 0.014,
+    "acid_resist": 10,
+    "fire_resist": 10,
+    "chip_resist": 18
   }
 ]
