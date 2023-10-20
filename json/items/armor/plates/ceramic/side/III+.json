@@ -26,7 +26,7 @@
     "volume": "448 ml",
     "longest_side": "152 mm",
 
-    "material": ["si_c", "uhmwpe"],
+    "material": ["silicon_carbide", "uhmwpe"],
 
     "material_thickness": 20,
 
@@ -35,7 +35,9 @@
 
     "armor": [
       {
-        "material": [{ "type": "si_c", "covered_by_mat": 99, "thickness": 19 }],
+        "material": [
+          { "type": "silicon_carbide", "covered_by_mat": 99, "thickness": 19 }
+        ],
         "encumbrance": 1,
         "coverage": 5,
         "covers": ["torso"],
@@ -85,7 +87,7 @@
     "volume": "524 ml",
     "longest_side": "203 mm",
 
-    "material": ["si_c", "uhmwpe"],
+    "material": ["silicon_carbide", "uhmwpe"],
 
     "material_thickness": 18,
 
@@ -95,7 +97,11 @@
     "armor": [
       {
         "material": [
-          { "type": "si_c", "covered_by_mat": 99, "thickness": 17.78 }
+          {
+            "type": "silicon_carbide",
+            "covered_by_mat": 99,
+            "thickness": 17.78
+          }
         ],
         "encumbrance": 2,
         "coverage": 2,
@@ -114,7 +120,11 @@
 
       {
         "material": [
-          { "type": "si_c", "covered_by_mat": 99, "thickness": 17.78 }
+          {
+            "type": "silicon_carbide",
+            "covered_by_mat": 99,
+            "thickness": 17.78
+          }
         ],
         "encumbrance": 1,
         "coverage": 5,

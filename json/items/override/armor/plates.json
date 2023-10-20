@@ -36,7 +36,7 @@
     "armor": [
       {
         "material": [
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 27 }
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
         ],
         "encumbrance": 2,
         "coverage": 42,
@@ -55,7 +55,7 @@
 
       {
         "material": [
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 27 }
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
         ],
         "encumbrance": 1,
         "coverage": 10,
@@ -137,7 +137,7 @@
     "armor": [
       {
         "material": [
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 18 }
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 18 }
         ],
         "encumbrance": 1,
         "coverage": 2,
@@ -156,7 +156,7 @@
 
       {
         "material": [
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 18 }
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 18 }
         ],
         "encumbrance": 1,
         "coverage": 5,
