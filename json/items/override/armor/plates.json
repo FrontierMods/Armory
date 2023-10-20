@@ -121,10 +121,10 @@
       "length": "6 in",
       "width": "8 in",
       "height": "0.75 in",
-      "raw": "590 ml",
+      "raw": "443 ml",
       "trim": 0.05
     },
-    "volume": "561 ml",
+    "volume": "421 ml",
     "longest_side": "203 mm",
 
     "material": ["alumina", "uhmwpe"],
