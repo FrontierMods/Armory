@@ -223,10 +223,10 @@
     ],
 
     "name": {
-      "str": "Condor M16 magazine pouch",
-      "str_pl": "Condor M16 magazine pouches"
+      "str": "Condor AR-15 magazine pouch",
+      "str_pl": "Condor AR-15 magazine pouches"
     },
-    "description": "A small fabric wrapping around your ankle, with two pouches for EDC gear or pistol magazines.  It's intended for concealed carry, so using it is going to be uncomfortable without much practice.",
+    "description": "A nylon pouch fit for a single AR-15 magazine.  When stored, standard-length magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has MOLLE webbing on the front, fit for the same pouch or something smaller.",
 
     "weight": "87 g",
     "//dimensions": {
@@ -237,34 +237,18 @@
       "trim": 0
     },
     "volume": "258 ml",
-    "//longest_side": "assumes folded three times, since the fabric is quite elastic",
-    "longest_side": "48 mm",
+    "longest_side": "152 mm",
 
     "material": ["nylon"],
     "material_thickness": 2,
 
-    "//armor": ["extra ankle coverage for pockets?"],
     "armor": [
       {
-        "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
-        ],
-        "covers": ["leg_l", "leg_r"],
-        "specifically_covers": ["leg_lower_l", "leg_lower_r"],
-        "coverage": 10,
-        "encumbrance": 1,
-        "layers": ["SKINTIGHT"]
-      },
+        "encumbrance": 0,
 
-      {
-        "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
-        ],
-        "covers": ["foot_l", "foot_r"],
-        "specifically_covers": ["foot_ankle_l", "foot_ankle_r"],
-        "coverage": 60,
-        "encumbrance": 1,
-        "layers": ["SKINTIGHT"]
+        "coverage": 3,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
       }
     ],
 
@@ -285,7 +269,7 @@
         ],
         "max_contains_weight": "550 g",
 
-        "moves": 180
+        "moves": 90
       },
 
       {
@@ -316,17 +300,11 @@
       }
     ],
 
-    "use_action": {
-      "type": "holster",
-      "holster_prompt": "Stash item",
-      "holster_msg": "You stash your %s."
-    },
-
     "//flags": [
-      "removed PALS_SMALL",
-      "this is a novelty item that's always been meant to be worn around the ankle"
+      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "replaced BELTED with CANT_WEAR"
     ],
-    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS"],
+    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "CANT_WEAR"],
 
     "price": "14 USD",
     "//price_postapoc": "1 USD"
