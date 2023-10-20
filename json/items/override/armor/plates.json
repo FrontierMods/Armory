@@ -225,14 +225,14 @@
     "volume": "596 ml",
     "longest_side": "318 mm",
 
-    "material": ["hc_steel"],
+    "material": ["mc_steel"],
 
     "material_thickness": 9,
 
     "armor": [
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 6,
         "coverage": 34,
@@ -242,7 +242,7 @@
 
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 6,
         "coverage": 10,
