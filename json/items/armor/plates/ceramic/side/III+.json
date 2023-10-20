@@ -1,0 +1,141 @@
+[
+  {
+    "id": "plate_side_battle_steel_iii+",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://battlesteel.com/level-3-6x6-armor-plates-single-curve/"
+    ],
+
+    "name": {
+      "str": "Battle Steel ceramic side plate, NIJ III+",
+      "str_pl": "Battle Steel ceramic side plates, NIJ III+"
+    },
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of silicon carbide and wrapped in UHMWPE. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "499 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "6 in",
+      "height": "0.8 in",
+      "raw": "472 ml",
+      "trim": 0.05
+    },
+    "volume": "448 ml",
+    "longest_side": "152 mm",
+
+    "material": ["si_c", "uhmwpe"],
+
+    "material_thickness": 20,
+
+    "non_functional": "plate_side_maverick_iv_destroyed",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [{ "type": "si_c", "covered_by_mat": 99, "thickness": 19 }],
+        "encumbrance": 1,
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
+        ],
+        "encumbrance": 0,
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+
+    "price": "80 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "plate_side_tall_hudis_iii+",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://hudis-tactical.com/products/2pcs-level-iii-ballistic-plate-body-armor-6x8-side-panel-level-3"
+    ],
+
+    "name": {
+      "str": "Hudi's Tactical ceramic tall side plate, NIJ III+",
+      "str_pl": "Hudi's Tactical ceramic tall side plates, NIJ III+"
+    },
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of silicon carbide and wrapped in UHMWPE. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "726 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "8 in",
+      "height": "0.7 in",
+      "raw": "551 ml",
+      "trim": 0.05
+    },
+    "volume": "524 ml",
+    "longest_side": "203 mm",
+
+    "material": ["si_c", "uhmwpe"],
+
+    "material_thickness": 18,
+
+    "non_functional": "plate_side_maverick_iv_destroyed",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "si_c", "covered_by_mat": 99, "thickness": 17.78 }
+        ],
+        "encumbrance": 2,
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
+        ],
+        "encumbrance": 0,
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "si_c", "covered_by_mat": 99, "thickness": 17.78 }
+        ],
+        "encumbrance": 1,
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 }
+        ],
+        "encumbrance": 0,
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+
+    "//price": "$160 / pair",
+    "price": "80 USD",
+    "price_postapoc": "1 USD"
+  }
+]
