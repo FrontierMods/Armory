@@ -1,0 +1,429 @@
+[
+  {
+    "id": "tool_pouch",
+    "copy-from": "tool_pouch",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://lbtinc.com/collections/utlp/products/2776c",
+      ["https://repmart.jp/products/lbt2776ccb.html", "item dimensions"]
+    ],
+
+    "name": {
+      "str": "LBT standard tool pouch",
+      "str_pl": "LBT standard tool pouches"
+    },
+    "description": "A large, spacious pouch with a variety of pockets, intended for naval construction.  It is able to carry a large number of different tools, from construction knives and screwdrivers to wrenches and hammers, as well as loose materials and admin stuff.  While it's comfortable for its purpose, when full, it could significantly hinder your movement.  You can carry it on your person by attaching it to a belt.",
+
+    "weight": "386 g",
+    "//dimensions": {
+      "length": "405 mm",
+      "width": "335 mm",
+      "height": "30 mm",
+      "raw": "4070 ml",
+      "trim": 0.4
+    },
+    "volume": "2442 ml",
+    "longest_side": "405 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 1.25,
+
+    "armor": [
+      {
+        "encumbrance": 1,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main pocket",
+
+        "//dimensions": {
+          "length": "8 in",
+          "width": "12 in",
+          "height": "3 in",
+          "raw": "4720 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "4720 ml",
+        "max_contains_weight": "8 kg",
+        "max_item_length": "305 mm",
+
+        "moves": 80
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Interior main pocket",
+
+        "//dimensions": {
+          "length": "4 in",
+          "width": "5 in",
+          "height": "1 in",
+          "raw": "328 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "328 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "127 mm",
+
+        "moves": 150,
+
+        "volume_encumber_modifier": 0.3
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Interior main pocket",
+
+        "//dimensions": {
+          "length": "4 in",
+          "width": "5 in",
+          "height": "1 in",
+          "raw": "328 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "328 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "127 mm",
+
+        "moves": 150,
+
+        "volume_encumber_modifier": 0.3
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Interior main pocket",
+
+        "//dimensions": {
+          "length": "4 in",
+          "width": "5 in",
+          "height": "1 in",
+          "raw": "328 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "328 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "127 mm",
+
+        "moves": 150,
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Admin pouch",
+
+        "//dimensions": {
+          "length": "7 in",
+          "width": "7 in",
+          "height": "0.35 in",
+          "raw": "281 ml",
+          "trim": 0,
+          "notes": ["0.5 in. thickness is taken as the maximum"]
+        },
+        "max_contains_volume": "281 ml",
+        "max_contains_weight": "300 g",
+        "max_item_length": "178 mm",
+
+        "moves": 150,
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Nail pouch",
+
+        "//dimensions": {
+          "length": "5 in",
+          "width": "6 in",
+          "height": "1.25 in",
+          "raw": "615 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "615 ml",
+        "max_contains_weight": "600 g",
+        "max_item_length": "152 mm",
+
+        "moves": 110,
+
+        "volume_encumber_modifier": 0.5
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Left side pocket",
+
+        "//dimensions": {
+          "length": "4.5 in",
+          "width": "4.5 in",
+          "height": "0.5 in",
+          "raw": "166 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "166 ml",
+        "max_contains_weight": "600 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "102 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "140 mm",
+
+        "moves": 130,
+
+        "volume_encumber_modifier": 0.5
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Left side pocket slot",
+
+        "holster": true,
+
+        "//dimensions": {
+          "length": "85.00 mm",
+          "diameter": "28.50 mm",
+          "raw": "54 ml",
+          "trim": -0.2,
+          "notes": ["negative trim to allow larger items to fit in"]
+        },
+        "max_contains_volume": "65 ml",
+        "max_contains_weight": "200 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "80 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "110 mm",
+
+        "moves": 120,
+
+        "volume_encumber_modifier": 0.1
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Left side pocket slot",
+
+        "holster": true,
+
+        "//dimensions": {
+          "length": "85.00 mm",
+          "diameter": "28.50 mm",
+          "raw": "54 ml",
+          "trim": -0.2,
+          "notes": ["negative trim to allow larger items to fit in"]
+        },
+        "max_contains_volume": "65 ml",
+        "max_contains_weight": "200 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "80 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "110 mm",
+
+        "moves": 120,
+
+        "volume_encumber_modifier": 0.1
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Left passthrough pocket",
+
+        "holster": true,
+
+        "//max_contains_volume": "based on volume of `hammer`",
+        "max_contains_volume": "500 ml",
+        "//magazine_well": [
+          "space of the passthrough corridor itself",
+          {
+            "length": "87.00 mm",
+            "diameter": "1.50 in",
+            "raw": "99 ml",
+            "trim": 0,
+            "notes": [
+              "length acquired from visual reference",
+              "diameter presumed"
+            ]
+          }
+        ],
+        "magazine_well": "99 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "305 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Right passthrough pocket",
+
+        "holster": true,
+
+        "//max_contains_volume": "based on volume of `hammer`",
+        "max_contains_volume": "350 ml",
+        "//magazine_well": [
+          "space of the passthrough corridor itself",
+          {
+            "length": "160.00 mm",
+            "diameter": "1.00 in",
+            "raw": "81 ml",
+            "trim": 0,
+            "notes": [
+              "length acquired from visual reference",
+              "diameter presumed"
+            ]
+          }
+        ],
+        "magazine_well": "81 ml",
+        "max_contains_weight": "600 g",
+        "max_item_length": "255 mm",
+
+        "moves": 130
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Right pocket slot",
+
+        "holster": true,
+
+        "//dimensions": {
+          "length": "105.00 mm",
+          "diameter": "20 mm",
+          "raw": "33 ml",
+          "trim": -0.2,
+          "notes": [
+            "dimensions acquired from visual reference",
+            "negative trim to allow larger items to fit in"
+          ]
+        },
+        "max_contains_volume": "40 ml",
+        "max_contains_weight": "100 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "95 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "130 mm",
+
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Right pocket slot",
+
+        "holster": true,
+
+        "//dimensions": {
+          "length": "105.00 mm",
+          "diameter": "20 mm",
+          "raw": "33 ml",
+          "trim": -0.2,
+          "notes": [
+            "dimensions acquired from visual reference",
+            "negative trim to allow larger items to fit in"
+          ]
+        },
+        "max_contains_volume": "40 ml",
+        "max_contains_weight": "100 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "95 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "130 mm",
+
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Right pocket slot",
+
+        "holster": true,
+
+        "//dimensions": {
+          "length": "105.00 mm",
+          "diameter": "20 mm",
+          "raw": "33 ml",
+          "trim": -0.2,
+          "notes": [
+            "dimensions acquired from visual reference",
+            "negative trim to allow larger items to fit in"
+          ]
+        },
+        "max_contains_volume": "40 ml",
+        "max_contains_weight": "100 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "95 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "130 mm",
+
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Right pocket slot",
+
+        "holster": true,
+
+        "//dimensions": {
+          "length": "105.00 mm",
+          "diameter": "20 mm",
+          "raw": "33 ml",
+          "trim": -0.2,
+          "notes": [
+            "dimensions acquired from visual reference",
+            "negative trim to allow larger items to fit in"
+          ]
+        },
+        "max_contains_volume": "40 ml",
+        "max_contains_weight": "100 g",
+        "//min_item_length": [
+          "item needs to be at least slightly shorter than pocket wall",
+          "otherwise, it would be too difficult to retrieve, which we can't account for"
+        ],
+        "min_item_length": "95 mm",
+        "//max_item_length": "another inch's worth of height allowed per item stored",
+        "max_item_length": "130 mm",
+
+        "moves": 150
+      }
+    ],
+
+    "//flags": "use BELT_ATTACH flag when that becomes available",
+    "flags": ["WATER_FRIENDLY", "BELT_CLIP"],
+
+    "price": "134 USD",
+    "price_postapoc": "4 USD"
+  }
+]
