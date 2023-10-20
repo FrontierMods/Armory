@@ -98,21 +98,12 @@
     "id": "alumina_damaged",
     "copy-from": "alumina",
 
-    "//notes": ["aka Aluminum(III) Oxide, aka Al2O3"],
-
     "name": "Compromised alumina",
 
     "//bash_resist": "pieces of a cracked ceramic plate would likely amplify any blunt damage received",
     "bash_resist": -0.1,
-    "//cut_resist": [
-      "even damaged, ceramics should provide cutting protection"
-    ],
-    "cut_resist": 0.96,
     "//bullet_resist": ["still provides a modicum of its former protection"],
-    "bullet_resist": 0.01,
-    "acid_resist": 10,
-    "fire_resist": 10,
-    "chip_resist": 15
+    "bullet_resist": 0.01
   },
 
   {
