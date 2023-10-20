@@ -33,5 +33,10 @@
     "id": ["soft_3a_vest"],
     "type": "MIGRATION",
     "replace": "stab_vest"
+  },
+  {
+    "id": ["chestpouch_leather", "ammo_satchel_leather"],
+    "type": "MIGRATION",
+    "replace": "chestpouch"
   }
 ]
