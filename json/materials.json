@@ -149,5 +149,45 @@
     "cut_resist": 0.96,
     "//bullet_resist": ["still provides a modicum of its former protection"],
     "bullet_resist": 0.014
+  },
+
+  {
+    "type": "material",
+    "id": "boron_carbide",
+    "copy-from": "alumina",
+
+    "//sources": [
+      "https://www.matweb.com/search/datasheet.aspx?MatGUID=45fd34d496fe48e3ab513bcbc4079430"
+    ],
+
+    "//notes": ["aka B4C"],
+
+    "name": "Boron Carbide",
+
+    "//bullet_resist": [
+      "notable improvement over SiC",
+      "see alumina comments for reasoning for this value"
+    ],
+    "bullet_resist": 1.29,
+    "chip_resist": 20,
+
+    "density": 2.5,
+    "specific_heat_solid": 1000,
+
+    "dmg_adj": ["chipped", "cracked", "split", "broken"],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "cut"
+  },
+
+  {
+    "type": "material",
+    "id": "boron_carbide_damaged",
+    "copy-from": "boron_carbide",
+
+    "name": "Compromised boron carbide",
+
+    "//bullet_resist": ["still provides a modicum of its former protection"],
+    "bullet_resist": 0.017,
+    "chip_resist": 20
   }
 ]
