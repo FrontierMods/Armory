@@ -4,13 +4,11 @@
     "type": "MIGRATION",
     "replace": "ballistic_vest_light"
   },
-
   {
     "id": ["ballistic_vest_heavy_arms", "ballistic_vest_heavy_legs"],
     "type": "MIGRATION",
     "replace": "ballistic_vest_heavy"
   },
-
   {
     "id": ["load_bearing_vest_sling"],
     "type": "MIGRATION",
@@ -21,7 +19,6 @@
     "type": "MIGRATION",
     "replace": "heavy_load_bearing_vest"
   },
-
   {
     "id": ["stone_pouch", "leather_stone_pouch"],
     "type": "MIGRATION",
