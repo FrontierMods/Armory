@@ -13,7 +13,7 @@
       "str": "Hoplite Armor ceramic medium plate, NIJ III+",
       "str_pl": "Hoplite Armor ceramic medium plates, NIJ III+"
     },
-    "description": "A SAPI-cut ballistic plate with a multi-curve profile, made of alumina (Al2O3) and wrapped in UHMWPE.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a multi-curve profile, made of alumina and wrapped in UHMWPE.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
 
     "weight": "2381 g",
     "//dimensions": {
