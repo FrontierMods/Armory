@@ -38,5 +38,10 @@
     "id": ["chestpouch_leather", "ammo_satchel_leather"],
     "type": "MIGRATION",
     "replace": "chestpouch"
+  },
+  {
+    "id": ["heavy_load_bearing_vest_breacher"],
+    "type": "MIGRATION",
+    "replace": "heavy_load_bearing_vest"
   }
 ]
