@@ -54,7 +54,6 @@
             "//thickness": "1 mm per side of protector",
             "thickness": 2
           },
-
           {
             "type": "kevlar_layered",
             "covered_by_mat": 99,
@@ -86,7 +85,6 @@
             "//thickness": "1 mm per side of protector",
             "thickness": 2
           },
-
           {
             "type": "kevlar_layered",
             "covered_by_mat": 99,
@@ -121,7 +119,6 @@
             "//thickness": "1 mm per side of protector",
             "thickness": 2
           },
-
           {
             "type": "kevlar_layered",
             "covered_by_mat": 99,
