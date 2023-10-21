@@ -169,5 +169,99 @@
 
     "price": "27 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "sheath",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.rothco.com/product/rothco-molle-knife-sheath",
+      [
+        "https://www.amazon.com/Rothco-MOLLE-Knife-Sheath-Olive/dp/B0BSR548YL",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "while the original sheathe was designed to only ever take knives, this models seems perfectly capable of holding other thin and long items"
+    ],
+
+    "name": {
+      "str": "Rothco MOLLE sheath",
+      "str_pl": "Rothco MOLLE sheathes"
+    },
+    "description": "A nylon sheath designed for holding knives and other small blades.  Has straps for attaching to MOLLE webbing, to be used on a belt or a plate carrier.  Activate to sheathe/draw the holstered item.",
+
+    "//weight": "using the 0.3 lbs value in the description",
+    "weight": "136 g",
+    "//dimensions": {
+      "length": "15.00 in",
+      "width": "2.50 in",
+      "height": "0.5 in",
+      "raw": "307 ml",
+      "trim": 0.25
+    },
+    "volume": "230 ml",
+
+    "material": ["nylon"],
+    "material_thickness": 1.75,
+
+    "symbol": "|",
+    "color": "brown",
+    "looks_like": "scabbard",
+
+    "sided": true,
+
+    "//armor": [
+      {
+        "coverage": 5,
+        "covers": ["leg_l", "leg_r"],
+        "encumbrance": [0, 1],
+        "specifically_covers": ["leg_hip_r", "leg_hip_l"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "from dimensions of a Ka-Bar",
+          {
+            "length": "12.50 in",
+            "diameter": "1.40 in",
+            "raw": "315 ml",
+            "trim": 0.4,
+            "notes": [
+              "modelling the knife as a cylinder due to the shape of the handle",
+              "then trimming for blade and other smaller features"
+            ]
+          },
+          "rounded up from 189 ml for slight deviations"
+        ],
+        "max_contains_volume": "200 ml",
+        "max_contains_weight": "400 g",
+        "//max_item_length": "12 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
+        "max_item_length": "305 mm",
+
+        "moves": 130,
+
+        "//flag_restriction": ["SHEATH_KNIFE"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife or item",
+      "holster_msg": "You sheath your %s"
+    },
+
+    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "PALS_SMALL"],
+
+    "price": "20 USD",
+    "//price_postapoc": "250 cent"
   }
 ]
