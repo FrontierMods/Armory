@@ -1,0 +1,100 @@
+[
+  {
+    "id": "light_load_bearing_vest",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://haleystrategic.com/d3crx",
+      [
+        "https://haleystrategic.com/shop/soft-goods/x-harness-chest-rig-kit",
+        "dimensions",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Haley Strategic D3CR X chest rig"
+    },
+    "description": "A compact and minimal chest rig.  The trade-off for comfort of use is minimal space for pouches.  The rig requires a QASM buckle panel or a hook-and-loop panel attached to be useful.",
+
+    "//weight": [
+      "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz ≈ 238 g",
+      "we add 5 g × (4 + 2) = 30 g for the 4 female buckles included with the rig kit (source for weight/dimensions) and the two other QASM (female) ones on the X-harness, as visible on pictures of the rig itself, presuming that their weight is not included"
+    ],
+    "weight": "268 g",
+    "//dimensions": {
+      "length": "9.50 in",
+      "width": "1.00 in",
+      "height": "6.25 in",
+      "raw": "922 ml",
+      "trim": 0.6,
+      "notes": [
+        "it may be possible to get a more-accurate estimate from directly measuring the parts of the rig kit"
+      ]
+    },
+    "volume": "369 ml",
+    "//longest_side": [
+      "from 6.25 in. dimensions",
+      "since 9 in. (presumed length of harness straps) folded three times (the default way of measuring longest side for Frontier Mods' soft/foldable items) is only 1.1875 in. ≈ 30 mm",
+      "6.25 in. (presumed width of the non-foldable rig panel) ≈ 159 mm is much longer than folded straps"
+    ],
+    "longest_side": "159 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1.5,
+    "repairs_like": "tacvest",
+    "looks_like": "vest",
+
+    "armor": [
+      {
+        "encumbrance": 2,
+
+        "//coverage": [
+          "half of large SAPI plate coverage = 18%",
+          "harness = 4% (front straps) + 4% (back straps) + 1% (side straps) = 9%"
+        ],
+        "coverage": 27,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.5
+      },
+      {
+        "encumbrance": 0,
+
+        "//coverage": "half of large SAPI plate coverage ≈ 6%",
+        "coverage": 6,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.1
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "QASM or Velcro panel space",
+
+        "holster": true,
+
+        "max_contains_volume": "3 L",
+        "max_contains_weight": "5 kg",
+        "//min_item_length": "makes sure that only full hook-and-loop panels could be attached to the rig",
+        "min_item_length": "229 mm",
+        "max_item_length": "254 mm",
+
+        "flag_restriction": ["QASM_ATTACH", "VELCRO_ATTACH"]
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
+
+    "price": "199 USD",
+    "//price_postapoc": "10 USD"
+  }
+]
