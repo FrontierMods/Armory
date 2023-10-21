@@ -50,7 +50,6 @@
 
     "symbol": "[",
     "color": "light_gray",
-    "looks_like": "kevlar",
 
     "material": ["nylon", "kevlar"],
     "warmth": 5,

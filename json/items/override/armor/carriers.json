@@ -26,6 +26,7 @@
     "variants": [
       {
         "id": "ballistic_vest_light_olive",
+
         "//name": "LPSPC does not come in olive",
         "name": {
           "str": "Perroz Designs LPSPC plate carrier, ranger green",
@@ -37,6 +38,7 @@
       },
       {
         "id": "ballistic_vest_light_tan",
+
         "name": {
           "str": "Perroz Designs LPSPC plate carrier, coyote brown",
           "str_pl": "Perroz Designs LPSPC plate carriers, coyote brown"
@@ -47,6 +49,7 @@
       },
       {
         "id": "ballistic_vest_light_black",
+
         "name": {
           "str": "Perroz Designs LPSPC plate carrier, black",
           "str_pl": "Perroz Designs LPSPC plate carriers, black"
@@ -59,6 +62,7 @@
       {
         "//id": "DCU stands for Desert Camouflage Uniform",
         "id": "ballistic_vest_light_dcu",
+
         "name": {
           "str": "Perroz Designs LPSPC plate carrier, desert camo",
           "str_pl": "Perroz Designs LPSPC plate carriers, desert camo"
@@ -69,6 +73,7 @@
       },
       {
         "id": "ballistic_vest_light_multicam",
+
         "name": {
           "str": "Perroz Designs LPSPC plate carrier, multicam",
           "str_pl": "Perroz Designs LPSPC plate carriers, multicam"
@@ -129,7 +134,6 @@
             "//thickness": "1 mm per side of carrier",
             "thickness": 2
           },
-
           {
             "type": "cotton",
             "covered_by_mat": 100,
@@ -160,7 +164,6 @@
             "//thickness": "1 mm per side of carrier",
             "thickness": 2
           },
-
           {
             "type": "cotton",
             "covered_by_mat": 100,
@@ -358,7 +361,6 @@
             "//thickness": "1 mm per side of carrier, per side of body",
             "thickness": 4
           },
-
           {
             "type": "kevlar_layered",
             "//covered_by_mat": "approximated",
@@ -395,7 +397,6 @@
             "//thickness": "1 mm per side of carrier, per side of body",
             "thickness": 4
           },
-
           {
             "type": "kevlar_layered",
             "//covered_by_mat": "approximated",
