@@ -619,7 +619,7 @@
         "max_contains_volume": "3100 ml",
         "max_contains_weight": "20 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
       {
@@ -637,14 +637,14 @@
           "trim": 0,
           "notes": [
             "dimensions assumed to be same as for the front webbing",
-            "except for height, which looks to be 3 steps high, rather than 4 on the front webbing"
+            "except for height, which looks to be 3 cells high, rather than 4 on the front webbing"
           ]
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "2200 ml",
         "max_contains_weight": "10 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
       {
@@ -662,14 +662,14 @@
           "trim": 0,
           "notes": [
             "dimensions assumed to be same as for the front webbing",
-            "except for height, which looks to be 3 steps high, rather than 4 on the front webbing"
+            "except for height, which looks to be 3 cells high, rather than 4 on the front webbing"
           ]
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "2200 ml",
         "max_contains_weight": "10 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
       {
