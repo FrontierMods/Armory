@@ -43,12 +43,14 @@
 
         "material": [
           {
+            "//description": "Nylon strap",
+
             "type": "nylon",
-            "covered_by_mat": 90,
+
+            "covered_by_mat": 100,
             "//thickness": ["eyeballed"],
             "thickness": 1
           },
-
           {
             "type": "plastic",
             "covered_by_mat": 10,

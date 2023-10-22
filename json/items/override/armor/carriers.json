@@ -322,35 +322,10 @@
     "volume": "6339 ml",
     "longest_side": "533 mm",
 
-    "material": ["nylon", "kevlar_layered"],
+    "material": ["nylon", "kevlar"],
     "//warmth": 0,
 
     "armor": [
-      {
-        "//description": "Shoulder straps",
-
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
-          }
-        ],
-
-        "encumbrance": 1,
-
-        "//coverage": [
-          "approximated from large ballistic plate coverage (38% per front/back)",
-          "augmented from visual reference"
-        ],
-        "coverage": 7,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
-        "volume_encumber_modifier": 0.3
-      },
-
       {
         "//description": "Base vest, upper torso",
 
@@ -362,7 +337,7 @@
             "thickness": 4
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "//covered_by_mat": "approximated",
             "covered_by_mat": 95,
             "//thickness": [
@@ -378,15 +353,15 @@
 
         "//coverage": [
           "approximated from large ballistic plate coverage (38% per front/back)",
-          "augmented from visual reference"
+          "augmented from visual reference",
+          "+2% for straps"
         ],
-        "coverage": 78,
+        "coverage": 80,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
         "volume_encumber_modifier": 0.3
       },
-
       {
         "//description": "Base vest, lower torso",
 
@@ -398,7 +373,7 @@
             "thickness": 4
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "//covered_by_mat": "approximated",
             "covered_by_mat": 98,
             "//thickness": [
@@ -412,33 +387,11 @@
 
         "encumbrance": 2,
 
-        "//coverage": "roughly approximated from visual reference",
-        "coverage": 50,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
-        "volume_encumber_modifier": 0.3
-      },
-
-      {
-        "//description": "Cummerbund",
-
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 100,
-            "//thickness": "1 mm per side of body",
-            "thickness": 2
-          }
-        ],
-
-        "encumbrance": 0,
-
         "//coverage": [
-          "approximated from side ballistic plate coverage (5% per side)",
-          "here, cummerbund also serves as a side plate pouch"
+          "roughly approximated from visual reference",
+          "+12% for cummerbund"
         ],
-        "coverage": 12,
+        "coverage": 62,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
@@ -762,35 +715,14 @@
     "volume": "3390 ml",
     "longest_side": "426 mm",
 
-    "material": ["nylon", "kevlar_layered"],
+    "material": ["nylon", "kevlar"],
     "symbol": "[",
     "color": "light_gray",
     "warmth": 10,
 
     "armor": [
       {
-        "//description": "Shoulder straps",
-
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
-          }
-        ],
-
-        "encumbrance": 1,
-
-        "coverage": 7,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
-        "volume_encumber_modifier": 0.3
-      },
-
-      {
-        "//description": "Base vest, upper torso",
+        "//description": "Base vest and straps, upper torso",
 
         "material": [
           {
@@ -800,7 +732,7 @@
             "thickness": 4
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "//covered_by_mat": "approximated",
             "covered_by_mat": 95,
             "//thickness": [
@@ -812,10 +744,11 @@
           }
         ],
 
-        "encumbrance": 4,
+        "encumbrance": 5,
 
         "//coverage": [
-          "approximated from large ballistic plate coverage (36% per front/back)"
+          "approximated from large ballistic plate coverage (36% per front/back)",
+          "+1% for straps"
         ],
         "coverage": 72,
         "covers": ["torso"],
@@ -835,7 +768,7 @@
             "thickness": 4
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "//covered_by_mat": "approximated",
             "covered_by_mat": 98,
             "//thickness": [
@@ -849,30 +782,11 @@
 
         "encumbrance": 1,
 
-        "//coverage": "roughly approximated from visual reference",
-        "coverage": 50,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
-        "volume_encumber_modifier": 0.3
-      },
-
-      {
-        "//description": "Side attachment straps",
-
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 100,
-            "//thickness": "1 mm per side of body",
-            "thickness": 2
-          }
+        "//coverage": [
+          "roughly approximated from visual reference",
+          "+4% for side attachment straps"
         ],
-
-        "encumbrance": 0,
-
-        "//coverage": ["approximated from visuals"],
-        "coverage": 4,
+        "coverage": 54,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
