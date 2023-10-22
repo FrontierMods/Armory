@@ -40,7 +40,6 @@
 
         "description": "Belt-secured storage for a hydration pack or a laptop",
 
-        "rigid": true,
         "holster": true,
 
         "moves": 200,
@@ -66,8 +65,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Clamshell storage compartment",
-
-        "rigid": true,
 
         "moves": 110,
 
