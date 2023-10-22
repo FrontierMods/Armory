@@ -25,11 +25,6 @@
     "replace": "dump_pouch"
   },
   {
-    "id": ["tacvest"],
-    "type": "MIGRATION",
-    "replace": "load_bearing_vest"
-  },
-  {
     "id": ["soft_3a_vest"],
     "type": "MIGRATION",
     "replace": "stab_vest"
