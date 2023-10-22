@@ -143,6 +143,9 @@
     "material": ["kevlar", "nylon"],
     "material_thickness": 3.3,
 
+    "symbol": ",",
+    "color": "dark_gray",
+
     "//repairs_like": "ballistic_vest_esapi",
 
     "armor": [
