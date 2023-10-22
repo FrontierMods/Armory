@@ -1,7 +1,6 @@
 [
   {
     "id": "legpouch_large",
-    "copy-from": "legpouch_large",
     "type": "ARMOR",
 
     "//sources": [
@@ -40,6 +39,11 @@
 
     "material": ["nylon", "plastic"],
     "material_thickness": 5,
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ammo_satchel",
+
+    "sided": true,
 
     "armor": [
       {
@@ -115,13 +119,10 @@
       }
     ],
 
-    "use_action": {},
-
     "//flags": [
-      "removed PALS_MEDIUM, since this is an item that's intended to be worn on the leg",
-      "added TARDIS to emulate MOLLE webbing"
+      "removed PALS_MEDIUM, since this is an item that's intended to be worn on the leg"
     ],
-    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "TARDIS"],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
 
     "price": "24 USD",
     "//price_postapoc": "250 cent"
