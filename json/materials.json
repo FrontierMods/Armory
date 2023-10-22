@@ -30,7 +30,7 @@
     ],
     "cut_resist": 4,
     "//bullet_resist": "UHMWPE is said to be slightly better at bullet resistance than Kevlar",
-    "bullet_resist": 6,
+    "bullet_resist": 0.82,
     "//acid_resist": "UHMWPE is said to perform slightly better against acids than Kevlar",
     "acid_resist": 6,
     "//fire_resist": "UHMWPE is supposed to lack resistance to fire(???), while Kevlar is supposed to be very good at it (as well as to self-extinguish)",
