@@ -708,5 +708,269 @@
     "//flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
 
     "price": "1449 USD"
+  },
+
+  {
+    "id": "ballistic_vest_esapi",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      ["https://ciehub.info/ref/TM/10-8470-209-10_2013.pdf", "weight"],
+      ["https://ciehub.info/spec/PD/AR-PD-10-04A.pdf", "dimensions"],
+      [
+        "https://soldiersystems.net/2009/12/16/the-soldier-plate-carrier-system-a-journey/",
+        "coverage reference"
+      ],
+      [
+        "https://store.armyproperty.com/products/soldier-plate-carrier-system-spcs-nsn-8470-01-580-1391-multicam-no-cummerbund-small.html",
+        "price"
+      ]
+    ],
+
+    "//notes": [
+      "this item was supposed to be modelled after MTV in the base game",
+      "we're modelling it after SPCS to contrast it with the IOTV in terms of coverage, weight, and comfort of use",
+      "we're also modelling this unit as coming without side plate cummerbund pouches by default, which is one of the viable configurations for it, also as an effort to differentiate it from the heavier IOTV",
+      "technical manual says all weights listed include soft-armor ballistic inserts",
+      "for now, we pretend soft armor is included with the vest in the form of Kevlar layers"
+    ],
+
+    "name": {
+      "str": "SPCS plate carrier"
+    },
+    "description": "Soldier Plate Carrier System, commercially known as KDH Magnum TAC-1, is one of the more-recent addition to the U.S. soldier's armory.  Intended as an alternative to the heavier, larger IOTV, the SPCS is more comfortable to wear, in exchange for lower body coverage.  The SPCS was designed for shorter missions and those where heavy gunfire is not expected.  It offers a good amount of MOLLE webbing on the front and the back.  This particular model comes without cummerbunds or side plate pouches, with plain nylon straps connecting front and back plate carriers.",
+
+    "//weight": "weight for medium-sized non-side-plate configuration",
+    "weight": "1982 g",
+    "//dimensions": {
+      "length": "1.26 in",
+      "width": "12.25 in",
+      "height": "16.75 in",
+      "raw": "4237 ml",
+      "trim": 0.2,
+      "notes": [
+        "length (thickness) calculated as 2× the following (per front/back):",
+        [
+          ["foam thickness", "0.25 in."],
+          ["ballistic filler thickness", "0.30 in."],
+          ["nylon cloth cover", "2 × 0.04 in."]
+        ],
+        "other dimensions acquired from visual reference"
+      ]
+    },
+    "volume": "3390 ml",
+    "longest_side": "426 mm",
+
+    "material": ["nylon", "kevlar_layered"],
+    "symbol": "[",
+    "color": "light_gray",
+    "warmth": 10,
+
+    "armor": [
+      {
+        "//description": "Shoulder straps",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 7,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Base vest, upper torso",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          },
+          {
+            "type": "kevlar_layered",
+            "//covered_by_mat": "approximated",
+            "covered_by_mat": 95,
+            "//thickness": [
+              "0.3 in. (≈ 7.6 mm) total",
+              "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
+              "this is likely incorrect, but no clearer data seem to be available"
+            ],
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": 4,
+
+        "//coverage": [
+          "approximated from large ballistic plate coverage (36% per front/back)"
+        ],
+        "coverage": 72,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Base vest, lower torso",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          },
+          {
+            "type": "kevlar_layered",
+            "//covered_by_mat": "approximated",
+            "covered_by_mat": 98,
+            "//thickness": [
+              "0.3 in. (≈ 7.6 mm) total",
+              "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
+              "this is likely incorrect, but no clearer data seem to be available"
+            ],
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "//coverage": "roughly approximated from visual reference",
+        "coverage": 50,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Side attachment straps",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of body",
+            "thickness": 2
+          }
+        ],
+
+        "encumbrance": 0,
+
+        "//coverage": ["approximated from visuals"],
+        "coverage": 4,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 800,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 800,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "9.00 in",
+          "height": "11.00 in",
+          "raw": "2555 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from visual reference",
+            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
+            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+          ]
+        },
+        "max_contains_volume": "2555 ml",
+        "max_contains_weight": "20 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back MOLLE webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "9.00 in",
+          "height": "13.00 in",
+          "raw": "3019 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions assumed to be same as for the front webbing",
+            "except for height, which on the back is (presumed to be) the entire height of the back",
+            "while the IOTV reference mentions that front and back heights are different, for now we presume they are the same, for simplicity's sake"
+          ]
+        },
+        "max_contains_volume": "3019 ml",
+        "max_contains_weight": "30 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH"]
+      }
+    ],
+
+    "flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
+
+    "//price": [
+      "price taken from small-size model",
+      "every size of this model on the website is priced the same"
+    ],
+    "price": "915 USD",
+    "price_postapoc": "20 USD"
   }
 ]
