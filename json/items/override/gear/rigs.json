@@ -442,5 +442,375 @@
     ],
     "price": "199 USD",
     "//price_postapoc": "5 USD"
+  },
+
+  {
+    "id": "heavy_load_bearing_vest",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://condoroutdoor.com/collections/chest-rigs/products/condor-modular-chest-set",
+      [
+        "https://www.amazon.co.uk/Condor-Modular-Chest-Set/dp/B0037MGLVK",
+        "dimensions",
+        "weight"
+      ],
+      [
+        "https://offgridwarehouse.com/spec-operator-condor-tactical-pro-chest-set-w-six-built-in-ar-m4-mag-pouches/",
+        "coverage reference"
+      ]
+    ],
+
+    "//notes": ["see magazine pouch items for pocket restriction reference"],
+
+    "name": {
+      "str": "Condor modular chest rig"
+    },
+    "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in MOLLE webbing and in embedded pockets.  It features six pockets for AR-15 magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.",
+
+    "weight": "812 g",
+    "//dimensions": {
+      "length": "508.00 mm",
+      "width": "271.80 mm",
+      "height": "48.30 mm",
+      "raw": "5344 ml",
+      "trim": 0.6
+    },
+    "volume": "2138 ml",
+    "longest_side": "508 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "//coverage": [
+          "(30% / 2 =) 15% from bib",
+          "36% from back panel sizing",
+          "2% × 2 from shoulders straps",
+          "1% × 2 from back straps"
+        ],
+        "coverage": 57,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.75
+      },
+      {
+        "encumbrance": 1,
+
+        "coverage": 95,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.9
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "12.00 in",
+          "height": "6.00 in",
+          "raw": "1858 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from MOLLE cell count",
+            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
+            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+          ]
+        },
+        "//max_contains_volume": "rounded up for simplicity",
+        "max_contains_volume": "1860 ml",
+        "max_contains_weight": "14 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "12.00 in",
+          "height": "6.00 in",
+          "raw": "1858 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from MOLLE cell count",
+            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
+            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+          ]
+        },
+        "max_contains_volume": "1858 ml",
+        "max_contains_weight": "14 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front bib MOLLE webbing",
+
+        "//notes": [
+          "unlike other bibs, this one is located conveniently away from shoulder straps, thus making it that much more feasible to cover the entire bib in pouches without risking reduction in mobility"
+        ],
+
+        "volume_encumber_modifier": 1.25,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "6 in",
+          "height": "5 in",
+          "raw": "774 ml",
+          "trim": 0,
+          "notes": ["dimensions acquired from MOLLE cell count"]
+        },
+        "max_contains_volume": "774 ml",
+        "max_contains_weight": "6 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Shoulder strap MOLLE webbing",
+
+        "//volume_encumber_modifier": 1.25,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "3 in",
+          "height": "5 in",
+          "raw": "387 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "387 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Shoulder strap MOLLE webbing",
+
+        "//volume_encumber_modifier": 1.25,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "3 in",
+          "height": "5 in",
+          "raw": "387 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "387 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Admin pouch",
+
+        "//notes": [
+          "hidden inside the bib",
+          "goes all the way down to the highest buckle"
+        ],
+
+        "holster": true,
+
+        "moves": 150,
+
+        "//dimensions": {
+          "length": "3 mm",
+          "width": "7.50 in",
+          "height": "7.00 in",
+          "raw": "102 ml",
+          "trim": 0.05,
+          "notes": [
+            "estimated from visuals to be roughly 7 MOLLE rows tall and 5 MOLLE columns wide"
+          ]
+        },
+        "max_contains_volume": "97 ml",
+        "max_contains_weight": "300 g",
+        "max_item_length": "178 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back MOLLE webbing",
+
+        "volume_encumber_modifier": 0.9,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "9.00 in",
+          "height": "12.00 in",
+          "raw": "2787 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from MOLLE cell count"
+          ]
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "25 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hydration pouch",
+
+        "holster": true,
+
+        "moves": 800,
+
+        "//max_contains_volume": "temporary value",
+        "max_contains_volume": "3250 ml",
+        "max_contains_weight": "4 kg"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
+        "max_contains_volume": "332 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "max_contains_weight": "550 g",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
+        "max_contains_volume": "332 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "max_contains_weight": "550 g",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
+        "max_contains_volume": "332 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "max_contains_weight": "550 g",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
+        "max_contains_volume": "332 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "max_contains_weight": "550 g",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
+        "max_contains_volume": "332 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "max_contains_weight": "550 g",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
+        "max_contains_volume": "332 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "max_contains_weight": "550 g",
+
+        "moves": 90
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
+
+    "price": "60 USD",
+    "//price_postapoc": "5 USD"
   }
 ]
