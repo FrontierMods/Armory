@@ -52,33 +52,17 @@
         "material": [
           {
             "type": "nylon",
+
             "covered_by_mat": 100,
             "//thickness": ["eyeballed"],
-            "thickness": 2
-          }
-        ],
-
-        "encumbrance": 1,
-
-        "coverage": 28,
-        "covers": ["leg_l", "leg_r"],
-        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
-      },
-
-      {
-        "//description": "Nylon straps and buckles",
-
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 90,
-            "//thickness": ["estimated based on strap thickness"],
-            "thickness": 1
+            "thickness": 2.5
           },
-
           {
+            "//description": "Plastic buckles",
+
             "type": "plastic",
-            "covered_by_mat": 10,
+
+            "covered_by_mat": 5,
             "//thickness": ["estimated based on strap thickness"],
             "thickness": 2.5
           }
@@ -86,7 +70,8 @@
 
         "encumbrance": 1,
 
-        "coverage": 4,
+        "//coverage": ["28% for platform itself", "6% for straps and buckles"],
+        "coverage": 34,
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_upper_l", "leg_upper_r"]
       }
