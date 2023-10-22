@@ -27,17 +27,20 @@
   {
     "id": "QASM_ATTACH",
     "type": "json_flag",
-    "info": "This item can be <good>attached directly</good> to <info>QASM buckels</info>"
+    "info": "This item can be <good>attached directly</good> to <info>QASM buckles</info>",
+    "restriction": "Item must be a QASM panel"
   },
   {
     "id": "MOLLE_ATTACH",
     "type": "json_flag",
-    "info": "This item can be <good>attached directly</good> to <info>MOLLE webbing</info>"
+    "info": "This item can be <good>attached directly</good> to <info>MOLLE webbing</info>",
+    "restriction": "Item must be a MOLLE pouch"
   },
   {
     "id": "VELCRO_ATTACH",
     "type": "json_flag",
-    "info": "This item can be <good>attached directly</good> to <info>hook-and-loop panels</info>, for additional functionality or decoration"
+    "info": "This item can be <good>attached directly</good> to <info>hook-and-loop panels</info>, for additional functionality or decoration",
+    "restriction": "Item must be a hook-and-loop attachment"
   },
 
   {
