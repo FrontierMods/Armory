@@ -458,7 +458,7 @@
 
         "ablative": true,
 
-        "moves": 400,
+        "moves": 800,
 
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
@@ -474,7 +474,7 @@
 
         "ablative": true,
 
-        "moves": 400,
+        "moves": 800,
 
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
@@ -490,7 +490,7 @@
 
         "ablative": true,
 
-        "moves": 600,
+        "moves": 800,
 
         "max_contains_volume": "1600 ml",
         "max_contains_weight": "1300 g",
@@ -506,7 +506,7 @@
 
         "ablative": true,
 
-        "moves": 600,
+        "moves": 800,
 
         "max_contains_volume": "1600 ml",
         "max_contains_weight": "1300 g",
