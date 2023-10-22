@@ -23,7 +23,7 @@
     ],
     "volume": "81 ml",
     "//longest_side": "like with the ankle pouch, we presume 3× folding of the fabric",
-    "longest_side": "48 ml",
+    "longest_side": "48 mm",
 
     "material": ["nylon"],
     "material_thickness": 2,
@@ -116,7 +116,7 @@
       "trim": 0.125
     },
     "volume": "602 ml",
-    "longest_side": "203 ml",
+    "longest_side": "203 mm",
 
     "material": ["nylon"],
     "material_thickness": 2,
