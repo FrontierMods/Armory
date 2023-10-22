@@ -53,8 +53,8 @@
       { "fuel": 1, "smoke": 5, "burn": 0.008 }
     ],
 
-    "repaired_with": "uhmwpe_sheet",
-    "salvaged_into": "uhmwpe_sheet",
+    "//repaired_with": "uhmwpe_sheet",
+    "//salvaged_into": "uhmwpe_sheet",
 
     "repair_difficulty": 4
   },
