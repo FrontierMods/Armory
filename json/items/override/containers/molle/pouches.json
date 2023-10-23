@@ -444,5 +444,64 @@
 
     "price": "91 USD",
     "//price_postapoc": "3 USD"
+  },
+
+  {
+    "id": "h2o_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.firsttactical.com/products/tactix-series-bottle-pouch-1-0-liter"
+    ],
+
+    "name": {
+      "str": "First Tactical water bottle pouch",
+      "str_pl": "First Tactical water bottle pouches"
+    },
+    "description": "A tall nylon pouch for storing water bottles.  Takes in tall bottles up to 1.5L in capacity.",
+
+    "weight": "136 g",
+    "//dimensions": {
+      "length": "4.25 in",
+      "width": "3.75 in",
+      "height": "8.5 in",
+      "raw": "2220 ml",
+      "trim": 0.125
+    },
+    "volume": "1943 ml",
+    "longest_side": "216 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Water bottle pouch",
+
+        "holster": true,
+
+        "//max_contains_volume": "from source",
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "206 mm"
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "removed BELTED and OVERSIZE"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "price": "25 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
