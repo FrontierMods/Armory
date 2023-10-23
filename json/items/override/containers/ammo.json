@@ -313,7 +313,8 @@
   {
     "id": "ammo_satchel",
     "copy-from": "ammo_satchel",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://condoroutdoor.com/collections/magazine-pouches/products/condor-single-kangaroo-mag-pouch-gen-ii",
