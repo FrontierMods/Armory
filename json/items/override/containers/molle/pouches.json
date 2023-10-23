@@ -312,5 +312,66 @@
     "//price": "120 EUR",
     "price": "127 USD",
     "//price_postapoc": "2 USD"
+  },
+
+  {
+    "id": "ammo_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://condoroutdoor.com/products/condor-ammo-pouch",
+      ["https://www.amazon.com/Condor-Ammo-Pouch/dp/B00865O0HA", "weight"]
+    ],
+
+    "name": {
+      "str": "Condor ammo pouch",
+      "str_pl": "Condor ammo pouches"
+    },
+    "description": "A rectangular nylon pouch with a flap that opens to an internal container.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.",
+
+    "weight": "254 g",
+    "//dimensions": {
+      "length": "3 in",
+      "width": "6.5 in",
+      "height": "7 in",
+      "raw": "2237 ml",
+      "trim": 0
+    },
+    "volume": "2237 ml",
+    "longest_side": "178 mm",
+
+    "symbol": "[",
+    "color": "brown",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Ammo pouch",
+
+        "//max_contains_volume": "95% of total volume",
+        "max_contains_volume": "2125 ml",
+        "max_contains_weight": "5 kg"
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_LARGE with MOLLE_ATTACH",
+      "added WATER_FRIENDLY",
+      "added COLLAPSE_CONTENTS"
+    ],
+    "flags": [
+      "COLLAPSE_CONTENTS",
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "MOLLE_ATTACH"
+    ],
+
+    "price": "24 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
