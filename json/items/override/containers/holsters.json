@@ -84,7 +84,8 @@
   {
     "id": "holster",
     "copy-from": "holster",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       [
@@ -173,7 +174,8 @@
 
   {
     "id": "sheath",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://www.rothco.com/product/rothco-molle-knife-sheath",
