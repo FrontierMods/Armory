@@ -1,0 +1,72 @@
+[
+  {
+    "id": "canteen_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://tacticaltailor.com/canteen-utility-pouch/",
+      ["https://www.entrygear.com/product.asp?id=TT-10049", "weight"]
+    ],
+
+    "name": {
+      "str": "Tactical Tailor canteen pouch",
+      "str_pl": "Tactical Tailor canteen pouches"
+    },
+    "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to US GIs.  In a pinch, it could also serve as an impromptu dump pouch.",
+
+    "weight": "133 g",
+    "//dimensions": {
+      "length": "3.00 in",
+      "width": "5.00 in",
+      "height": "8.50 in",
+      "raw": "2089 ml",
+      "trim": 0.1,
+      "notes": [
+        "trim assumes the pouch is measured by the larger hood, rather than the slimmer body"
+      ]
+    },
+    "volume": "1880 ml",
+    "longest_side": "216 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "repairs_like": "legrig",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Canteen pouch",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "dimensions of a 1-qt canteen",
+          "https://brigadeqm.com/gi-1-quart-plastic-canteen-1qt-w-m1-nbc-drinking-cap-olive",
+          {
+            "length": "9.40 in",
+            "width": "8.00 in",
+            "height": "3.60 in",
+            "raw": "4436 ml",
+            "trim": 0.15
+          }
+        ],
+        "max_contains_volume": "3771 ml",
+        "max_contains_weight": "3 kg",
+        "min_item_length": "76 mm"
+      }
+    ],
+
+    "//flags": ["replaced PALS_MEDIUM with MOLLE_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "//price": "80 EUR",
+    "price": "85 USD",
+    "//price_postapoc": "1 USD"
+  }
+]
