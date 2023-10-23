@@ -503,5 +503,84 @@
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "grenade_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://haleystrategic.com/belts/40mm-single-pouch",
+      ["https://platatac.com/platatac-hw-single-40-nico-pouch.html", "weight"],
+      [
+        "https://www.aalan.hr/grenade-for-grenade-launcher-40x46mm",
+        "https://www.arsenal-bg.com/c/40x53-mm-rounds-high-velocity-for-automatic-grenade-launchers-gdsaco-mk19-hk-gmg-sb-lag40-etc-180/40x53-mm-rhv-hedp-368",
+        "pocket restrictions"
+      ]
+    ],
+
+    "name": {
+      "str": "Haley Strategic 40mm grenade pouch",
+      "str_pl": "Haley Strategic 40mm grenade pouches"
+    },
+    "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other ammunition, like 37mm grenades, flashbangs, smoke grenades, and so on.",
+
+    "//weight": "using weight of a similar product made roughly to the same blueprint",
+    "weight": "20 g",
+    "//dimensions": {
+      "length": "3.5 in",
+      "width": "1.75 in",
+      "height": "1.75 in",
+      "raw": "176 ml",
+      "trim": 0
+    },
+    "volume": "176 ml",
+    "longest_side": "89 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+    "looks_like": "ammo_satchel",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "40mm grenade pouch",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "allows storing 40×46mm and 40×53mm grenades",
+          {
+            "length": "112 mm",
+            "diameter": "40 mm",
+            "raw": "141 ml",
+            "trim": -0.1,
+            "notes": [
+              "negative trim added to account for slightly-larger items, like smoke grenades, which also fit in the same space"
+            ]
+          }
+        ],
+        "max_contains_volume": "155 ml",
+        "max_contains_weight": "365 gr",
+        "min_item_length": "96 mm",
+        "//max_item_length": "added 10% to maximum length of a 40×53mm grenade to allow slightly-larger items, like smoke grenades, to also be stored here",
+        "max_item_length": "123 mm"
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "removed BELTED and OVERSIZE"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "price": "25 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
