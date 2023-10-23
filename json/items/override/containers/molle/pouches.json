@@ -68,5 +68,98 @@
     "//price": "80 EUR",
     "price": "85 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "dump_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.frogpro.eu/en/pouches/166-1083-ctb-dump-pouch-qr.html"
+    ],
+
+    "//notes": ["the unfolded version"],
+
+    "name": {
+      "str": "FROG.PRO dump pouch",
+      "str_pl": "FROG.PRO dump pouches"
+    },
+    "description": "A nylon pouch, intended for collecting random items for sorting later.  It is currently folded, with no container capacity to speak of.  Activate to unfold.",
+
+    "weight": "175 g",
+    "//dimensions": {
+      "length": "14.00 cm",
+      "width": "8.00 cm",
+      "height": "5.00 cm",
+      "raw": "560 ml",
+      "trim": 0.075
+    },
+    "volume": "518 ml",
+    "longest_side": "140 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "repairs_like": "legrig",
+    "looks_like": "holster",
+
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Unfold",
+      "msg": "You unfold the dump pouch.",
+      "target": "dump_pouch_unfolded"
+    },
+
+    "//flags": ["replaced PALS_MEDIUM with MOLLE_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "price": "38 USD",
+    "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "dump_pouch_unfolded",
+    "copy-from": "dump_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "name": {
+      "str": "FROG.PRO dump pouch (unfolded)",
+      "str_pl": "FROG.PRO dump pouches (unfolded)"
+    },
+    "description": "A nylon pouch, intended for collecting random items for sorting later.  It is currently unfolded, ready to collect, and is taking up a fair bit of space.  Activate to fold back.",
+
+    "//dimensions": {
+      "length": "25.00 cm",
+      "width": "15.00 cm",
+      "height": "10.00 cm",
+      "raw": "3750 ml",
+      "trim": 0.15
+    },
+    "volume": "3188 ml",
+    "longest_side": "250 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Dump pouch",
+
+        "//max_contains_volume": "95% of unfolded volume",
+        "max_contains_volume": "3029 ml",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "250 mm"
+      }
+    ],
+
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Fold",
+      "msg": "You fold the dump pouch.",
+      "target": "dump_pouch"
+    }
   }
 ]
