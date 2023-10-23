@@ -373,5 +373,76 @@
 
     "price": "24 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "gas_mask_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://www.highspeedgear.com/12gm01"],
+
+    "//notes": [
+      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description"
+    ],
+
+    "name": {
+      "str": "HSGI gas mask pouch",
+      "str_pl": "HSGI gas mask pouches"
+    },
+    "description": "A large nylon pouch by High Speed Gear.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.",
+
+    "weight": "454 g",
+    "//dimensions": {
+      "length": "10 in",
+      "width": "4 in",
+      "height": "12 in",
+      "raw": "7866 ml",
+      "trim": 0.3
+    },
+    "volume": "5506 ml",
+    "longest_side": "305 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Gas mask pouch",
+
+        "//max_contains_volume": [
+          "dimensions of CM-7M gas mask",
+          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
+          {
+            "length": "6.85 in",
+            "width": "7.75 in",
+            "height": "10.60 in",
+            "raw": "9222 ml",
+            "trim": 0.45,
+            "notes": ["dimensions acquired from visual reference"]
+          }
+        ],
+        "max_contains_volume": "5072 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "305 mm"
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "removed BELTED and OVERSIZE",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_ATTACH"],
+
+    "price": "91 USD",
+    "//price_postapoc": "3 USD"
   }
 ]
