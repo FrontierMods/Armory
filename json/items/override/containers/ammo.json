@@ -260,14 +260,14 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
           "rounded up to the nearest 50 as future-proofing"
         ],
         "max_contains_weight": "550 g",
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
 
         "moves": 90
       },
