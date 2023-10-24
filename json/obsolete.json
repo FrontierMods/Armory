@@ -3,7 +3,7 @@
     "type": "ITEM_BLACKLIST",
     "whitelist": false,
 
-    "items": ["dragonskin", "flintlock_pouch"],
+    "items": ["dragonskin", "flintlock_pouch", "XL_holster"],
 
     "//notes": {
       "dragonskin": [
@@ -14,6 +14,11 @@
       "flintlock_pouch": [
         "does not appear to be a real item",
         "possibly an item to be re-evaluated under the planned crafting design system, as a character-crafted blueprint"
+      ],
+      "XL_holster": [
+        "this holster is meant to hold SMGs and such, judging by the in-game description",
+        "while options exist for carrying something this large on one's leg, most (if not all) of them are airsoft-based, which doesn't suit the character of this mod",
+        "until a suitable replacement (if any is necessary) for the large holster is found, this item shall remain obsoleted"
       ]
     }
   }
