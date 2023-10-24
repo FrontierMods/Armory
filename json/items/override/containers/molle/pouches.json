@@ -806,7 +806,7 @@
       "str": "Condor shotgun ammo pouch",
       "str_pl": "Condor shotgun ammo pouches"
     },
-    "description": "...",
+    "description": "A long nylon pouch, intended to hold up to 12 12-gauge shotgun shells, or ammunition of similar size.  The elastic bands inside the pouch also allow storing up to 20 7.62mm NATO rounds.",
 
     "weight": "136 g",
     "//dimensions": {
@@ -890,7 +890,7 @@
       "str": "Haley Strategic frag grenade pouch",
       "str_pl": "Haley Strategic frag grenade pouches"
     },
-    "description": "...",
+    "description": "A small nylon pouch, intended for storing a single M67 fragmentation grenade.  Can fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.",
 
     "//weight": [
       "using weight of a similar product made roughly to the same blueprint",
