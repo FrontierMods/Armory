@@ -192,5 +192,91 @@
 
     "price": "20 USD",
     "//price_postapoc": "250 cent"
+  },
+
+  {
+    "id": "tactical_holster",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://redrockoutdoorgear.com/universal-holster/"],
+
+    "name": {
+      "str": "Red Rock universal holster"
+    },
+    "description": "A small strip of nylon, intended to allow you to carry a pistol on your vest via MOLLE webbing.  Unlike most holsters, this one doesn't have restrictions on length, so you can -- at the detriment of the space available on your webbing -- use it to store a suppressed pistol with a compact red dot sight.  The pistol is held in place with a hook-and-loop middle strap, and secured by an elastic cord, but of which make taking the pistol out and putting it back in somewhat cumbersome.",
+
+    "weight": "45 g",
+    "//dimensions": {
+      "length": "1 in",
+      "width": "5.75 in",
+      "height": "3 in",
+      "raw": "283 ml",
+      "trim": 0.5
+    },
+    "volume": "142 ml",
+    "longest_side": "146 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1.25,
+    "looks_like": "sheath",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//magazine_well": [
+          "half the raw volume",
+          "assumes strentching of the middle strap"
+        ],
+        "magazine_well": "142 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of a loaded M1911 with a 6.5″ suppressor",
+          {
+            "length": "15.06 in",
+            "width": "1.27 in",
+            "height": "5.5 in",
+            "raw": "1724 ml",
+            "trim": 0.7,
+            "result": "517 ml"
+          },
+          "added 50 ml to account for red dot sights",
+          "red dot sight volume based on Loadout models"
+        ],
+        "max_contains_volume": "567 ml",
+        "//max_contains_weight": "weight of a loaded M1911 with a 6.5″ suppressor (+ 10.2 oz) + 50 g",
+        "max_contains_weight": "1445 g",
+        "//max_item_length": "overall length of M1911 with a 6.5″ suppressor, plus 2.5%",
+        "max_item_length": "392 mm",
+
+        "moves": 135
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "replaced BELTED and OVERSIZE with CANT_WEAR",
+      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "7 USD",
+    "//price_postapoc": "50 cent"
   }
 ]
