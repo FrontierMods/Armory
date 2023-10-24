@@ -242,7 +242,7 @@
           "length": "5 mm",
           "width": "5 in",
           "height": "4 in",
-          "raw": "65",
+          "raw": "65 ml",
           "trim": 0,
           "notes": [
             "length is average height of patch, for pseudo-area calculations"
