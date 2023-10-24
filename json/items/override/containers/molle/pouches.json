@@ -953,5 +953,87 @@
 
     "price": "40 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "radio_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://tasmaniantigerusa.com/product.php?id=33"],
+
+    "name": {
+      "str": "Tasmanian Tiger radio pouch",
+      "str_pl": "Tasmanian Tiger radio pouches"
+    },
+    "description": "A skinny, skeletonized nylon pouch -- or, specifically, two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.",
+
+    "weight": "99 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "3.75 in",
+      "height": "3.75 in",
+      "raw": "1383 ml",
+      "trim": 0.65
+    },
+    "volume": "484 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//min_item_volume": "to prevent storing smaller items that may fall through the open corners of the pouch",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of Motorola SRX 2200 radio",
+          "https://www.motorolasolutions.com/en_us/products/two-way-radios/project-25-radios/portable-radios/srx2200.html",
+          {
+            "length": "5.47 in",
+            "width": "2.89 in",
+            "height": "1.58 in",
+            "raw": "409 ml",
+            "trim": 0.05,
+            "result": "389 ml"
+          }
+        ],
+        "max_contains_volume": "389 ml",
+        "//max_contains_weight": "weight of Motorola SRX 2200 radio (10.9 oz) + brown battery (6.5 oz)",
+        "max_contains_weight": "493 g",
+        "//max_item_length": "length of Motorola SRX 2200 (without antenna?)",
+        "max_item_length": "139 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "replaced BELTED and OVERSIZE with CANT_WEAR",
+      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "18 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
