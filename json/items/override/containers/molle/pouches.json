@@ -1188,5 +1188,78 @@
 
     "price": "19 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "flashlight_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://www.511tactical.com/flex-flashlight-pouch.html"],
+
+    "name": {
+      "str": "5.11 Tactical flashlight pouch",
+      "str_pl": "5.11 Tactical flashlight pouches"
+    },
+    "description": "A small nylon pouch, intended to hold a compact field flashlight.",
+
+    "weight": "70 g",
+    "//dimensions": {
+      "length": "1.25 in",
+      "width": "1.5 in",
+      "height": "6 in",
+      "raw": "184 ml",
+      "trim": 0.075
+    },
+    "volume": "170 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//min_item_volume": [
+          "to prevent storing smaller items that would be hard to reach",
+          "half the volume of the pouch, minus another 5 ml to allow slightly-smaller items"
+        ],
+        "min_item_volume": "80 ml",
+        "//max_contains_volume": ["95% of total volume"],
+        "max_contains_volume": "162 ml",
+        "max_contains_weight": "200 g",
+        "//max_item_length": "5.75 in",
+        "max_item_length": "146 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "replaced BELTED and OVERSIZE with CANT_WEAR",
+      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "22 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
