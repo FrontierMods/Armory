@@ -1035,5 +1035,158 @@
 
     "price": "18 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "gadget_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://condoroutdoor.com/collections/utility-pouches/products/condor-gadget-pouch",
+      [
+        "https://www.specshop.pl/product-eng-35122-Condor-Gadget-Pouch-Navy-Blue-MA26-006.html",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Condor gadget pouch",
+      "str_pl": "Condor gadget pouches"
+    },
+    "description": "A nylon pouch with two pockets.  The smaller front pocket is designed to hold smaller smartphones or other digital devices.  The larger back pocket can hold something larger, like a small power bank; it also has two thin pouches for things like plastic cards.",
+
+    "weight": "190 g",
+    "//dimensions": {
+      "length": "2.5 in",
+      "width": "4 in",
+      "height": "5.5 in",
+      "raw": "901 ml",
+      "trim": 0.05
+    },
+    "volume": "856 ml",
+    "longest_side": "140 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front pocket",
+
+        "holster": true,
+
+        "//min_item_volume": "to prevent storing smaller items that may fall through the open corners of the pouch",
+        "min_item_volume": "175 ml",
+        "//max_contains_volume": [
+          "from assumed dimensions of the front pocket",
+          {
+            "length": "1 in",
+            "width": "3.75 in",
+            "height": "5 in",
+            "raw": "307 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "307 ml",
+        "//max_contains_weight": "roughly the weight of an iPhone 13 (6.14 oz) + 50 g, rounded to the nearest 25",
+        "max_contains_weight": "225 g",
+        "max_item_length": "95 mm",
+
+        "moves": 95
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back pocket",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket",
+          {
+            "length": "1.25 in",
+            "width": "3.75 in",
+            "height": "5.25 in",
+            "raw": "403 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "403 ml",
+        "//max_contains_weight": "rough estimate based on available dimensions",
+        "max_contains_weight": "350 g",
+        "max_item_length": "133 mm",
+
+        "moves": 120
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back pocket thin pouch",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket's thin pouches",
+          {
+            "length": "0.125 in",
+            "width": "3.5 in",
+            "height": "3.5 in",
+            "raw": "27 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "27 ml",
+        "max_contains_weight": "50 g",
+        "max_item_length": "89 mm",
+
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back pocket thin pouch",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket's thin pouches",
+          {
+            "length": "0.125 in",
+            "width": "3.5 in",
+            "height": "3.5 in",
+            "raw": "27 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "27 ml",
+        "max_contains_weight": "50 g",
+        "max_item_length": "89 mm",
+
+        "moves": 150
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "replaced BELTED and OVERSIZE with CANT_WEAR",
+      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "19 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
