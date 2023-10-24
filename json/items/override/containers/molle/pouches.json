@@ -870,5 +870,86 @@
 
     "price": "15 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "grenade_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://haleystrategic.com/belts/frag-pouch",
+      [
+        "https://platatac.com/blue-force-gear-hw-frag-grenade-pouch.html",
+        "weight"
+      ],
+      ["https://en.wikipedia.org/wiki/M67_grenade", "pocket restrictions"]
+    ],
+
+    "name": {
+      "str": "Haley Strategic frag grenade pouch",
+      "str_pl": "Haley Strategic frag grenade pouches"
+    },
+    "description": "...",
+
+    "//weight": [
+      "using weight of a similar product made roughly to the same blueprint",
+      "subtracting 5 g for the plastic buckle"
+    ],
+    "weight": "30 g",
+    "//dimensions": {
+      "length": "3 in",
+      "width": "3 in",
+      "height": "4 in",
+      "raw": "590 ml",
+      "trim": 0.1,
+      "notes": [
+        "trim assumes the pouch is measured at farthest edges when filled",
+        "i.e., the inner pouch already has apple shape"
+      ]
+    },
+    "volume": "531 ml",
+    "longest_side": "102 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "ammo_satchel",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hand grenade pouch",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          {
+            "length": "90 mm",
+            "diameter": "64 mm",
+            "raw": "289 ml",
+            "trim": 0,
+            "notes": ["untrimmed to allow for slightly-larger grenades"]
+          }
+        ],
+        "max_contains_volume": "289 ml",
+        "max_contains_weight": "365 g",
+        "min_item_length": "80 mm",
+        "max_item_length": "115 mm"
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced BELTED and OVERSIZE with"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "price": "40 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
