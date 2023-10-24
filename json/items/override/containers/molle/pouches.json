@@ -939,7 +939,9 @@
         "max_contains_volume": "289 ml",
         "max_contains_weight": "365 g",
         "min_item_length": "80 mm",
-        "max_item_length": "115 mm"
+        "max_item_length": "115 mm",
+
+        "moves": 90
       }
     ],
 
