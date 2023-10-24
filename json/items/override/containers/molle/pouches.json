@@ -781,5 +781,94 @@
 
     "price": "17 USD",
     "//price_postapoc": "2 USD"
+  },
+
+  {
+    "id": "tactical_shotshell_pouch",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://condoroutdoor.com/collections/utility-pouches/products/condor-shotgun-ammo-pouch",
+      [
+        "https://www.amazon.com.be/-/en/Condor-Outdoor-SHOTGUN-POUCH-MA12-002/dp/B0082CWE1Q",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "it appears as though the shell holder is not inherent to the pouch or is removable",
+      "photos of the pouch show a 5.56mm insert inside the pouch",
+      "we model the pouch as if the shell holder is inherent and the listed ammo are compatible with it in some fashion"
+    ],
+
+    "name": {
+      "str": "Condor shotgun ammo pouch",
+      "str_pl": "Condor shotgun ammo pouches"
+    },
+    "description": "...",
+
+    "weight": "136 g",
+    "//dimensions": {
+      "length": "1.75 in",
+      "width": "7.25 in",
+      "height": "3.5 in",
+      "raw": "728 ml",
+      "trim": 0.075
+    },
+    "volume": "673 ml",
+    "longest_side": "184 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "308": 20,
+          "410shot": 12,
+          "shot": 12,
+          "20x66mm": 12,
+          "signal_flare": 12
+        },
+
+        "moves": 100
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Velcro surface",
+
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "6.5 in",
+          "height": "2 in",
+          "raw": "42 ml",
+          "trim": 0,
+          "notes": [
+            "length is average height of patch, for pseudo-area calculations"
+          ]
+        },
+        "max_contains_volume": "42 ml",
+        "max_contains_weight": "200 g",
+
+        "flag_restriction": ["VELCRO_ATTACH"]
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced BELTED and OVERSIZE with CANT_WEAR"
+    ],
+    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "CANT_WEAR"],
+
+    "price": "15 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
