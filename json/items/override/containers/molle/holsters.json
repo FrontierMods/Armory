@@ -84,7 +84,16 @@
       "type": "holster"
     },
 
-    "flags": ["BELTED", "OVERSIZE", "MOLLE_ATTACH", "ALLOWS_NATURAL_ATTACKS"],
+    "//flags": [
+      "replaced BELTED and OVERSIZE with CANT_WEAR",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
 
     "price": "27 USD",
     "//price_postapoc": "1 USD"
