@@ -1488,5 +1488,204 @@
 
     "price": "37 USD",
     "//price_postapoc": "2 USD"
+  },
+
+  {
+    "id": "deployment_bag",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://condoroutdoor.com/products/condor-deployment-bag",
+      [
+        "https://www.military1st.com/127-001-condor-modular-style-deployment-bag-olive-drab.html",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "small straps on the side of pouches are not currently modelled",
+      "has an interior separator inside the main pocket, which it didn't seem wise to model, since there's no way to separate volume of main pocket from volume of separator 'pocket' without breaking something about pocket management for the player",
+      "unlike many other pouches, this one can be worn directly over the shoulder"
+    ],
+
+    "name": {
+      "str": "Condor deployment bag",
+      "str_pl": "Condor deployment bag"
+    },
+    "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder, or it can be attached to a vest or a chest rig.  Best used on an expedition where you may not need a lot of ammo but would need food, drink, medication, or other short-term supplies.",
+
+    "weight": "550 g",
+    "//dimensions": {
+      "length": "5.5 in",
+      "width": "12 in",
+      "height": "6 in",
+      "raw": "6489 ml",
+      "trim": 0.05
+    },
+    "volume": "6165 ml",
+    "longest_side": "305 mm",
+
+    "symbol": "[",
+    "color": "green",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1.5,
+    "looks_like": "fanny",
+    "repairs_like": "backpack",
+
+    "armor": [
+      {
+        "encumbrance": [1, 4],
+
+        "volume_encumber_modifier": 0.3,
+
+        "coverage": 38,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front pocket",
+
+        "//max_contains_volume": [
+          "from eyeballed dimensions of the front pocket",
+          {
+            "length": "1 in",
+            "width": "9 in",
+            "height": "5 in",
+            "raw": "737 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "700 ml",
+        "max_contains_weight": "1250 g",
+        "max_item_length": "216 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front pocket thin pouch",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket's thin pouches",
+          {
+            "length": "0.125 in",
+            "width": "4.5 in",
+            "height": "3.75 in",
+            "raw": "35 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "35 ml",
+        "max_contains_weight": "50 g",
+        "max_item_length": "114 mm",
+
+        "moves": 160
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front pocket thin pouch",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket's thin pouches",
+          {
+            "length": "0.125 in",
+            "width": "4.5 in",
+            "height": "3.75 in",
+            "raw": "35 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "35 ml",
+        "max_contains_weight": "50 g",
+        "max_item_length": "114 mm",
+
+        "moves": 160
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket",
+          {
+            "length": "1.5 in",
+            "width": "3 in",
+            "height": "4 in",
+            "raw": "295 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "280 ml",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "95 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "//max_contains_volume": [
+          "from assumed dimensions of the back pocket",
+          {
+            "length": "1.5 in",
+            "width": "3 in",
+            "height": "4 in",
+            "raw": "295 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "280 ml",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "95 mm",
+
+        "moves": 120
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main pocket",
+
+        "//max_contains_volume": [
+          "from eyeballed dimensions of the front pocket",
+          {
+            "length": "5 in",
+            "width": "9 in",
+            "height": "5.5 in",
+            "raw": "4056 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "3853 ml",
+        "max_contains_weight": "5 kg",
+        "//max_item_length": "8.5 in.",
+        "max_item_length": "216 mm",
+
+        "moves": 110
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": ["replaced PALS_LARGE with MOLLE_ATTACH"],
+    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "MOLLE_ATTACH"],
+
+    "price": "29 USD",
+    "//price_postapoc": "3 USD"
   }
 ]
