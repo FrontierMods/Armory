@@ -9,7 +9,7 @@
       "https://www.hoplitearmor.com/collections/sapi-plates-level-iii-1/products/body-armor-sapi-plates-iiia-single-curve"
     ],
 
-    "name": { "str": "Hoplite Armor small UHMWPE plate, NIJ III+" },
+    "name": { "str": "Hoplite Armor UHMWPE small plate, NIJ III+" },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
 
@@ -68,7 +68,7 @@
       "https://www.hoplitearmor.com/collections/sapi-plates-level-iii-1/products/body-armor-sapi-plates-iiia-single-curve"
     ],
 
-    "name": { "str": "Hoplite Armor medium UHMWPE plate, NIJ III+" },
+    "name": { "str": "Hoplite Armor UHMWPE medium plate, NIJ III+" },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
 
@@ -127,7 +127,7 @@
       "https://www.hoplitearmor.com/collections/sapi-plates-level-iii-1/products/body-armor-sapi-plates-iiia-single-curve"
     ],
 
-    "name": { "str": "Hoplite Armor large UHMWPE plate, NIJ III+" },
+    "name": { "str": "Hoplite Armor UHMWPE large plate, NIJ III+" },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
 
@@ -186,7 +186,7 @@
       "https://www.hoplitearmor.com/collections/sapi-plates-level-iii-1/products/body-armor-sapi-plates-iiia-single-curve"
     ],
 
-    "name": { "str": "Hoplite Armor XL UHMWPE plate, NIJ III+" },
+    "name": { "str": "Hoplite Armor UHMWPE XL plate, NIJ III+" },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"extra-large\" and can only fit in carriers that allow XL-sized plates.",
 
