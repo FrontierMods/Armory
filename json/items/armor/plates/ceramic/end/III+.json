@@ -1,0 +1,247 @@
+[
+  {
+    "id": "plate_ceramic_small_shellback_iiiplus",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.shellbacktactical.com/shellback-tactical-prevail-series-sapi-sized-stand-alone-level-iii-hard-armor-plate-model-h3101/"
+    ],
+
+    "name": {
+      "str": "Shellback ceramic small plate, NIJ III+",
+      "str_pl": "Shellback ceramic small plates, NIJ III+"
+    },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of alumina and wrapped in UHMWPE, produced by Shellback Tactical.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
+
+    "weight": "2132 g",
+    "//dimensions": {
+      "length": "11.75 in",
+      "width": "8.75 in",
+      "height": "1.1 in",
+      "raw": "1853 ml",
+      "trim": 0.125,
+      "notes": [
+        "though there doesn't appear to be any information on the thickness of this particular model of plates, we presume it to be 1.1″ based on similar models"
+      ]
+    },
+    "volume": "1621 ml",
+    "longest_side": "299 mm",
+
+    "material": ["alumina", "uhmwpe"],
+
+    "material_thickness": 28,
+
+    "non_functional": "plate_ceramic_small_shellback_iiiplus_compromised",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
+        ],
+        "encumbrance": 2,
+        "coverage": 42,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
+        ],
+        "encumbrance": 1,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SMALL", "CANT_WEAR"],
+
+    "price": "325 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_ceramic_small_shellback_iiiplus_compromised",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised Shellback small ceramic plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esapi_plate",
+
+    "material": ["alumina_damaged"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
+  },
+
+  {
+    "id": "plate_ceramic_large_shellback_iiiplus",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.shellbacktactical.com/shellback-tactical-prevail-series-sapi-sized-stand-alone-level-iii-hard-armor-plate-model-h3101/"
+    ],
+
+    "name": {
+      "str": "Shellback ceramic large plate, NIJ III+",
+      "str_pl": "Shellback ceramic large plates, NIJ III+"
+    },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of alumina and wrapped in UHMWPE, produced by Shellback Tactical.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
+
+    "weight": "2495 g",
+    "//dimensions": {
+      "length": "13.25 in",
+      "width": "10.25 in",
+      "height": "1.1 in",
+      "raw": "2448 ml",
+      "trim": 0.125,
+      "notes": [
+        "though there doesn't appear to be any information on the thickness of this particular model of plates, we presume it to be 1.1″ based on similar models"
+      ]
+    },
+    "volume": "2142 ml",
+    "longest_side": "337 mm",
+
+    "material": ["alumina", "uhmwpe"],
+
+    "material_thickness": 28,
+
+    "non_functional": "plate_ceramic_large_shellback_iiiplus_compromised",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
+        ],
+        "encumbrance": 2,
+        "coverage": 42,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
+        ],
+        "encumbrance": 1,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_LARGE", "CANT_WEAR"],
+
+    "price": "400 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_ceramic_large_shellback_iiiplus_compromised",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised Shellback large ceramic plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esapi_plate",
+
+    "material": ["alumina_damaged"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
+  },
+
+  {
+    "id": "plate_ceramic_xl_shellback_iiiplus",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.shellbacktactical.com/shellback-tactical-prevail-series-sapi-sized-stand-alone-level-iii-hard-armor-plate-model-h3101/"
+    ],
+
+    "name": {
+      "str": "Shellback ceramic XL plate, NIJ III+",
+      "str_pl": "Shellback ceramic XL plates, NIJ III+"
+    },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of alumina and wrapped in UHMWPE, produced by Shellback Tactical.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"XL\" and can only fit in carriers that allow XL-sized plates.",
+
+    "weight": "2948 g",
+    "//dimensions": {
+      "length": "14 in",
+      "width": "11 in",
+      "height": "1.1 in",
+      "raw": "2776 ml",
+      "trim": 0.125,
+      "notes": [
+        "though there doesn't appear to be any information on the thickness of this particular model of plates, we presume it to be 1.1″ based on similar models"
+      ]
+    },
+    "volume": "2429 ml",
+    "longest_side": "356 mm",
+
+    "material": ["alumina", "uhmwpe"],
+
+    "material_thickness": 28,
+
+    "non_functional": "plate_ceramic_large_shellback_iiiplus_compromised",
+    "damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
+        ],
+        "encumbrance": 2,
+        "coverage": 42,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
+          { "type": "alumina", "covered_by_mat": 99, "thickness": 27 }
+        ],
+        "encumbrance": 1,
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_LARGE", "CANT_WEAR"],
+
+    "price": "420 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_ceramic_xl_shellback_iiiplus_compromised",
+    "copy-from": "esapi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised Shellback XL ceramic plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esapi_plate",
+
+    "material": ["alumina_damaged"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
+  }
+]
