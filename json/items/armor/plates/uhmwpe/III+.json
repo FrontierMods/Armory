@@ -1,6 +1,6 @@
 [
   {
-    "id": "plate_uhmwpe_small_hoplite_iii+",
+    "id": "plate_uhmwpe_small_hoplite_iiiplus",
     "copy-from": "esapi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -59,7 +59,7 @@
   },
 
   {
-    "id": "plate_uhmwpe_medium_hoplite_iii+",
+    "id": "plate_uhmwpe_medium_hoplite_iiiplus",
     "copy-from": "esapi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -118,7 +118,7 @@
   },
 
   {
-    "id": "plate_uhmwpe_large_hoplite_iii+",
+    "id": "plate_uhmwpe_large_hoplite_iiiplus",
     "copy-from": "esapi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -177,7 +177,7 @@
   },
 
   {
-    "id": "plate_uhmwpe_xl_hoplite_iii+",
+    "id": "plate_uhmwpe_xl_hoplite_iiiplus",
     "copy-from": "esapi_plate",
     "type": "ARMOR",
     "category": "armor",
