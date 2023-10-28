@@ -219,5 +219,164 @@
 
     "price": "40 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "leg_sheath6",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.amazon.com/Snake-Eye-Tactical-Throwing-Sheath/dp/B07JB1PW2N",
+      [
+        "https://fitnessvolt.com/average-thigh-circumference/",
+        "partial dimensions"
+      ]
+    ],
+
+    "name": {
+      "str": "Snake Eye Tactical throwing knife sheath"
+    },
+    "description": "A thin, large nylon sheath for thin, long throwing knives.  Can be strapped to either leg.  Holds 6 throwing knives or items of similar dimensions.",
+
+    "//weight": [
+      "using 1.15 g/ml as typical density of nylon",
+      "volume (71 ml) × density (1.15) = 81.65 g ≈ 82 g"
+    ],
+    "weight": "82 g",
+    "//dimensions": {
+      "length": "10.6 in",
+      "width": "6.5 in",
+      "height": "0.07 in",
+      "raw": "79 ml",
+      "trim": 0.1,
+      "notes": [
+        "length presumed from average male thigh circumference (21.2 in.), divided by 2",
+        "height (thickness) is eyeballed from material thickness of both the platform and the pockets combined"
+      ]
+    },
+    "volume": "71 ml",
+    "//longest_side": "we presume 3× folding of the fabric: 269.24 / 3 ≈ 90 mm",
+    "longest_side": "90 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "sheath",
+
+    "material": ["nylon"],
+    "material_thickness": 2,
+
+    "sided": true,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1.78 }
+        ],
+        "encumbrance": 1,
+
+        "coverage": 35,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"],
+
+        "layers": ["BELTED"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "holster": true,
+
+        "magazine_well": "4 ml",
+        "//max_contains_volume": [
+          "from dimensions of Smith & Wesson Bullseye 8″ throwing knife",
+          "https://store.smith-wesson.com/tactical/knives/smith-wesson-bullseye-8-throwing-knives-6-pack/SWTK8CP.html",
+          {
+            "length": "8 in",
+            "width": "1.25 in",
+            "height": "0.04 in",
+            "raw": "7 ml",
+            "trim": 0.2,
+            "notes": [
+              "width acquired from visual reference",
+              "height presumed from visuals"
+            ]
+          }
+        ],
+        "max_contains_volume": "6 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "203 mm",
+
+        "moves": 70,
+
+        "//flag_restriction": ["SHEATH_KNIFE"]
+      },
+      {
+        "holster": true,
+
+        "magazine_well": "4 ml",
+        "max_contains_volume": "6 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "203 mm",
+
+        "moves": 70
+      },
+      {
+        "holster": true,
+
+        "magazine_well": "4 ml",
+        "max_contains_volume": "6 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "203 mm",
+
+        "moves": 70
+      },
+      {
+        "holster": true,
+
+        "magazine_well": "4 ml",
+        "max_contains_volume": "6 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "203 mm",
+
+        "moves": 70
+      },
+      {
+        "holster": true,
+
+        "magazine_well": "4 ml",
+        "max_contains_volume": "6 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "203 mm",
+
+        "moves": 70
+      },
+      {
+        "holster": true,
+
+        "magazine_well": "4 ml",
+        "max_contains_volume": "6 ml",
+        "max_contains_weight": "7 g",
+        "max_item_length": "203 mm",
+
+        "moves": 70
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife",
+      "holster_msg": "You sheath your %s"
+    },
+
+    "//flags": "removed VARSIZE: there seems to be only one size of the sheath",
+    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "NONCONDUCTIVE"],
+
+    "//price": [
+      "price not available directly",
+      "Amazon lists this one under an option starting at $20",
+      "we presume this to be the right price"
+    ],
+    "price": "20 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
