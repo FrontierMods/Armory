@@ -886,5 +886,255 @@
     ],
     "price": "915 USD",
     "price_postapoc": "20 USD"
+  },
+
+  {
+    "id": "level_3_vest",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://whitehorsedefense.com/products/exttact-external-carrier",
+      [
+        "https://whitehorsedefense.com/products/ext-tact-carrier-level-iiia-06",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "White Horse EXTTACT plate carrier"
+    },
+    "description": "...",
+
+    "//weight": "we presume weight based on a similar item by the same manufacturer",
+    "weight": "2359 g",
+    "//dimensions": {
+      "length": "1.26 in",
+      "width": "12.25 in",
+      "height": "16.75 in",
+      "raw": "4237 ml",
+      "trim": 0.2,
+      "notes": [
+        "dimensions copied from SPCS based on a rough estimate of given sizes"
+      ]
+    },
+    "volume": "3390 ml",
+    "longest_side": "426 mm",
+
+    "material": ["nylon"],
+    "symbol": "[",
+    "color": "light_gray",
+    "warmth": 10,
+
+    "//armor": "unless better data becomes available, these values are copied from SPCS'",
+    "armor": [
+      {
+        "//description": "Base vest and straps, upper torso",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          },
+          {
+            "type": "kevlar",
+            "//covered_by_mat": "approximated",
+            "covered_by_mat": 95,
+            "//thickness": [
+              "0.3 in. (≈ 7.6 mm) total",
+              "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
+              "this is likely incorrect, but no clearer data seem to be available"
+            ],
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": 5,
+
+        "//coverage": [
+          "approximated from large ballistic plate coverage (36% per front/back)",
+          "+1% for straps"
+        ],
+        "coverage": 72,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.3
+      },
+
+      {
+        "//description": "Base vest, lower torso",
+
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "1 mm per side of carrier, per side of body",
+            "thickness": 4
+          },
+          {
+            "type": "kevlar",
+            "//covered_by_mat": "approximated",
+            "covered_by_mat": 98,
+            "//thickness": [
+              "0.3 in. (≈ 7.6 mm) total",
+              "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
+              "this is likely incorrect, but no clearer data seem to be available"
+            ],
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "//coverage": [
+          "roughly approximated from visual reference",
+          "+4% for side attachment straps"
+        ],
+        "coverage": 54,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 800,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a medium armor plate",
+
+        "ablative": true,
+
+        "moves": 800,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "2500 g",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_MEDIUM"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "10.5 in",
+          "height": "10 in",
+          "raw": "2710 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from visual reference",
+            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
+            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+          ]
+        },
+        "max_contains_volume": "2710 ml",
+        "max_contains_weight": "20 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back MOLLE webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//dimensions": {
+          "length": "40 mm",
+          "width": "10.5 in",
+          "height": "10 in",
+          "raw": "2710 ml",
+          "trim": 0,
+          "notes": [
+            "depth (length) is rounded average of MOLLE pouches",
+            "other dimensions acquired from visual reference",
+            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
+            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+          ]
+        },
+        "max_contains_volume": "2710 ml",
+        "max_contains_weight": "20 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front hook-and-loop surface",
+
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "11 in",
+          "height": "3 in",
+          "raw": "107 ml",
+          "trim": 0,
+          "notes": [
+            "length is average height of patch, for pseudo-area calculations",
+            "other dimensions based on models that have the same Velcro area, intended for institution identification patches",
+            "https://us.unitedshield.com/portfolio-item/standard-crossover-carrier/"
+          ]
+        },
+        "max_contains_volume": "107 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["VELCRO_ATTACH"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back hook-and-loop surface",
+
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "11 in",
+          "height": "3 in",
+          "raw": "107 ml",
+          "trim": 0,
+          "notes": [
+            "length is average height of patch, for pseudo-area calculations",
+            "other dimensions based on models that have the same Velcro area, intended for institution identification patches",
+            "https://us.unitedshield.com/portfolio-item/standard-crossover-carrier/"
+          ]
+        },
+        "max_contains_volume": "107 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["VELCRO_ATTACH"]
+      }
+    ],
+
+    "flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
+
+    "//price": ["price for non-surcharged (below 3XL) sizes"],
+    "price": "279 USD",
+    "price_postapoc": "15 USD"
   }
 ]
