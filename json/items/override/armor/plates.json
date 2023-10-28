@@ -71,7 +71,7 @@
     "type": "ARMOR",
 
     "name": {
-      "str": "compromised Shellback medium ceramic plate"
+      "str": "compromised Shellback ceramic medium plate"
     },
     "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
     "looks_like": "esapi_plate",
@@ -96,8 +96,8 @@
     ],
 
     "name": {
-      "str": "HighCom tall side UHMWPE plate, NIJ IV",
-      "str_pl": "HighCom tall side UHMWPE plates, NIJ IV"
+      "str": "HighCom UHMWPE tall side plate, NIJ IV",
+      "str_pl": "HighCom UHMWPE tall side plates, NIJ IV"
     },
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of alumina and wrapped in UHMWPE. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
 
