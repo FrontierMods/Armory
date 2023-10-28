@@ -80,7 +80,7 @@
       "type": "holster"
     },
 
-    "//flags": ["BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS"],
+    "flags": ["BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "BOOT_HOLSTER"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
