@@ -1,7 +1,6 @@
 [
   {
     "id": "bootstrap",
-    "copy-from": "bootstrap",
     "type": "ARMOR",
 
     "//sources": [
@@ -25,8 +24,14 @@
     "//longest_side": "like with the ankle pouch, we presume 3× folding of the fabric",
     "longest_side": "48 mm",
 
+    "symbol": "[",
+    "color": "brown",
+    "looks_like": "holster",
+
     "material": ["nylon"],
     "material_thickness": 2,
+
+    "sided": true,
 
     "armor": [
       {
