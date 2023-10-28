@@ -79,5 +79,140 @@
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "bbholster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://comforttac.com/collections/belly-band-holsters/products/belly-band-holster",
+      [
+        "https://guncarrier.com/product/comforttac-gun-holsters-for-concealed-carry-ultimate-belly-band-pistol-holster-for-men-women-belt-compatible-with-smith-and-wesson-shield-glock-firearm-accessories-black/",
+        "accurate dimensions"
+      ],
+      [
+        "https://www.amazon.com/ComfortTac-Ultimate-Holster-Concealed-Compatible/dp/B01JF8JW8S",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "the holster is presented along with a removable Velcro pouch on the manufacturer's page",
+      "we model the holster as if that pouch is not there: i.e., with a single pocket fit for a pistol mag or a similar item"
+    ],
+
+    "name": {
+      "str": "ComfortTac belly band holster"
+    },
+    "description": "A tall neoprene strap that goes around your belly, with pockets for a single pistol and a pistol magazine.",
+
+    "weight": "200 g",
+    "//dimensions": {
+      "length": "42 in",
+      "width": "5 in",
+      "height": "0.05 in",
+      "raw": "172 ml",
+      "trim": 0,
+      "notes": ["height presumed from material thickness"]
+    },
+    "volume": "172 ml",
+    "//longest_side": "band folded thrice: 1067 / 8 ≈ 133 mm",
+    "longest_side": "133 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
+    "material": ["neoprene"],
+    "material_thickness": 1.25,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "neoprene", "covered_by_mat": 100, "thickness": 1.25 }
+        ],
+
+        "encumbrance": [1, 6],
+        "//breathability": "neoprene is advertised as breathable",
+        "breathability": "GOOD",
+
+        "coverage": 50,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower", "torso_waist"],
+
+        "layers": ["SKINTIGHT"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol pouch",
+
+        "holster": true,
+
+        "magazine_well": "100 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of a loaded M1911",
+          {
+            "length": "8.56 in",
+            "width": "1.27 in",
+            "height": "5.5 in",
+            "raw": "980 ml",
+            "trim": 0.55,
+            "result": "441 ml"
+          },
+          "added 50 ml to account for red dot sights",
+          "red dot sight volume based on Loadout models"
+        ],
+        "max_contains_volume": "491 ml",
+        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
+        "max_contains_weight": "1156 g",
+        "//max_item_length": "overall length of M1911, plus 2.5%",
+        "max_item_length": "222 mm",
+
+        "moves": 170
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Auxiliary pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "550 g",
+        "//max_contains_volume": [
+          "volume of loaded M1911 mag, rounded up",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_contains_volume": "70 ml",
+        "//max_contains_weight": [
+          "full 65gr-loaded AR-15 magazine",
+          "rounded up to the nearest 50 as future-proofing"
+        ],
+        "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
+        "min_item_length": "90 mm",
+        "//max_item_length": [
+          "5.1 in., slightly longer than loaded M1911 mag",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_item_length": "130 mm",
+
+        "moves": 140
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["BELTED", "WATER_FRIENDLY"],
+
+    "price": "40 USD",
+    "//price_postapoc": "1 USD"
   }
 ]
