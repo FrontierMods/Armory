@@ -1,6 +1,6 @@
 [
   {
-    "id": "plate_side_maverick_iv",
+    "id": "plate_side_ceramic_maverick_iv",
     "copy-from": "esbi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -30,7 +30,7 @@
 
     "material_thickness": 25,
 
-    "non_functional": "plate_side_maverick_iv_destroyed",
+    "non_functional": "plate_side_ceramic_maverick_iv_destroyed",
     "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
@@ -63,7 +63,7 @@
   },
 
   {
-    "id": "plate_side_tall_maverick_iv",
+    "id": "plate_side_tall_ceramic_maverick_iv",
     "copy-from": "plate_side_maverick_iv",
     "type": "ARMOR",
     "category": "armor",
@@ -93,7 +93,7 @@
 
     "material_thickness": 25,
 
-    "non_functional": "plate_side_tall_maverick_iv_destroyed",
+    "non_functional": "plate_side_tall_ceramic_maverick_iv_destroyed",
     "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
