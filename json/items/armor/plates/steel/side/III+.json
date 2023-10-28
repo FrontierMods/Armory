@@ -1,0 +1,118 @@
+[
+  {
+    "id": "plate_side_steel_highcom_iiiplus",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.highcomarmor.com/product/guardian-ar500/"],
+
+    "//notes": ["40 MIL Rhino anti-spalling cover"],
+
+    "name": { "str": "HighCom steel side plate, NIJ III+" },
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of AR500 steel.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "1179 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "6 in",
+      "height": "0.35 in",
+      "raw": "207 ml",
+      "trim": 0.125
+    },
+    "volume": "181 ml",
+    "longest_side": "152 mm",
+
+    "material": ["hc_steel"],
+
+    "material_thickness": 9,
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "hc_steel",
+            "covered_by_mat": 100,
+            "thickness": 8.89
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+
+    "price": "99 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "plate_side_tall_steel_highcom_iiiplus",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
+
+    "name": { "str": "HighCom steel tall side plate, NIJ III+" },
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of AR500 steel.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "1678 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "8 in",
+      "height": "0.35 in",
+      "raw": "275 ml",
+      "trim": 0.125
+    },
+    "volume": "241 ml",
+    "longest_side": "203 mm",
+
+    "material": ["hc_steel"],
+
+    "material_thickness": 9,
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "hc_steel",
+            "covered_by_mat": 100,
+            "thickness": 8.89
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          {
+            "type": "hc_steel",
+            "covered_by_mat": 100,
+            "thickness": 8.89
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE_TALL", "CANT_WEAR"],
+
+    "price": "109 USD",
+    "price_postapoc": "1 USD"
+  }
+]
