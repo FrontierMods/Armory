@@ -1,6 +1,6 @@
 [
   {
-    "id": "plate_side_battle_steel_iiiplus",
+    "id": "plate_side_ceramic_battle_steel_iiiplus",
     "copy-from": "esbi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -53,7 +53,7 @@
   },
 
   {
-    "id": "plate_side_tall_hudis_iiiplus",
+    "id": "plate_side_tall_ceramic_hudis_iiiplus",
     "copy-from": "esbi_plate",
     "type": "ARMOR",
     "category": "armor",
