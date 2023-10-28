@@ -901,10 +901,79 @@
       ]
     ],
 
+    "//notes": [
+      "colors other than dark gray don't appear to exist for this model",
+      "until a better model can be found, we pretend that this is the plate carrier that's been supplied to many government and municipal services in the New England location in which the game takes place"
+    ],
+
     "name": {
       "str": "White Horse EXTTACT plate carrier"
     },
     "description": "A relatively-thin ballistic plate carrier, made by White Horse Defense.  A no-nonsense design with a variety of convenient features makes it a likely candidate for use with government agencies and public services.  It features adjustable cummerbunds and shoulder straps, front and back MOLLE webbing for pouches, wide front and back hook-and-loop panels for identification panels, and a reinforced handle for carrying its wearer to safety.",
+
+    "variant_type": "generic",
+    "variants": [
+      {
+        "id": "level_3_vest_black",
+
+        "//notes": [
+          "for National Guard",
+          "inspired by DC National Guard",
+          "https://www.military.com/daily-news/2021/01/06/national-guard-will-wear-black-id-vests-stand-out-police-during-dc-protests.html"
+        ],
+
+        "name": {
+          "str": "White Horse EXTTACT plate carrier, black",
+          "str_pl": "White Horse EXTTACT plate carriers, black"
+        },
+        "description": "It's colored stark black.",
+
+        "weight": 1,
+        "append": true
+      },
+      {
+        "id": "level_3_vest_dark_gray",
+
+        "//notes": ["for police", "for FEMA"],
+
+        "name": {
+          "str": "White Horse EXTTACT plate carrier, dark gray",
+          "str_pl": "White Horse EXTTACT plate carriers, dark gray"
+        },
+        "description": "It's colored dark gray.",
+
+        "weight": 10,
+        "append": true
+      },
+      {
+        "id": "level_3_vest_dark_blue",
+
+        "//notes": ["for EMS"],
+
+        "name": {
+          "str": "White Horse EXTTACT plate carrier, dark blue",
+          "str_pl": "White Horse EXTTACT plate carriers, dark blue"
+        },
+        "description": "It's colored dark blue.  Reflective lines at the bottom make sure the wearer is clearly visible in the dark.",
+
+        "weight": 3,
+        "append": true
+      },
+      {
+        "id": "level_3_vest_desert",
+
+        "//notes": ["for firefighters"],
+
+        "name": {
+          "str": "White Horse EXTTACT plate carrier, desert coyote",
+          "str_pl": "White Horse EXTTACT plate carriers, desert coyote"
+        },
+        "description": "It's colored desert brown.  Reflective lines at the bottom make sure the wearer is clearly visible in the dark.",
+
+        "weight": 2,
+        "append": true
+      }
+    ],
 
     "//weight": "we presume weight based on a similar item by the same manufacturer",
     "weight": "2359 g",
@@ -1104,6 +1173,7 @@
         },
         "max_contains_volume": "107 ml",
         "max_contains_weight": "1 kg",
+        "max_item_length": "279 mm",
 
         "flag_restriction": ["VELCRO_ATTACH"]
       },
@@ -1126,6 +1196,7 @@
         },
         "max_contains_volume": "107 ml",
         "max_contains_weight": "1 kg",
+        "max_item_length": "279 mm",
 
         "flag_restriction": ["VELCRO_ATTACH"]
       }
