@@ -1,0 +1,123 @@
+[
+  {
+    "id": "plate_side_uhmwpe_highcom_iiiplusplus",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
+
+    "name": { "str": "HighCom UHMWPE side plate, NIJ III++" },
+    "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of UHMWPE.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "817 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "6 in",
+      "height": "1.15 in",
+      "raw": "678 ml",
+      "trim": 0.125
+    },
+    "volume": "593 ml",
+    "longest_side": "152 mm",
+
+    "//material": "actually uses ceramic-PE composite",
+    "material": ["uhmwpe", "nylon"],
+
+    "material_thickness": 29,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
+          {
+            "type": "uhmwpe",
+            "covered_by_mat": 99,
+            "thickness": 28
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+
+    "price": "309 USD",
+    "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "plate_side_tall_uhmwpe_highcom_iiiplusplus",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
+
+    "name": { "str": "HighCom UHMWPE tall side plate, NIJ III++" },
+    "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of UHMWPE.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "1134 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "8 in",
+      "height": "1.15 in",
+      "raw": "905 ml",
+      "trim": 0.125
+    },
+    "volume": "792 ml",
+    "longest_side": "203 mm",
+
+    "//material": "actually uses ceramic-PE composite",
+    "material": ["uhmwpe", "nylon"],
+
+    "material_thickness": 29,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
+          {
+            "type": "uhmwpe",
+            "covered_by_mat": 99,
+            "thickness": 28
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
+          {
+            "type": "uhmwpe",
+            "covered_by_mat": 99,
+            "thickness": 28
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE_TALL", "CANT_WEAR"],
+
+    "price": "349 USD",
+    "price_postapoc": "1 USD"
+  }
+]
