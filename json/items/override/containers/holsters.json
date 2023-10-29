@@ -462,5 +462,123 @@
 
     "price": "25 USD",
     "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "bootsheath",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.xsscuba.com/knives/neoprene-knife-wrap",
+      ["https://www.scuba.com/p-xssnkw/xs-scuba-neoprene-knife-wrap", "price"],
+      [
+        "https://www.amazon.com.be/-/en/Scuba-Knife-Neoprene-Diving-Strap/dp/B002OF2AQG",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "the item is actually two items: plastic/Kydex knife sheath and neoprene knife wrap (the part that goes around the leg)",
+      "for the sake of simplicity, and because it wouldn't be beneficial to model them as two at this stage, we model both as a single item"
+    ],
+
+    "name": {
+      "str": "XS Scuba knife wrap"
+    },
+    "description": "A neoprene wrap with an attached Kydex knife sheath.  Can be strapped to your leg, going over the rest of the clothes, and hold a single small fixed knife.",
+
+    "weight": "136 g",
+    "//dimensions": {
+      "length": "7.3 in",
+      "width": "6.6 in",
+      "height": "2.5 mm",
+      "raw": "78 ml",
+      "trim": 0.3,
+      "notes": [
+        "height (thickness) is eyeballed",
+        "other dimensions acquired from visual reference"
+      ]
+    },
+    "volume": "55 ml",
+    "longest_side": "185 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "sheath",
+
+    "sided": true,
+
+    "material": ["neoprene", "plastic"],
+    "material_thickness": 2,
+    "warmth": 7,
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "neoprene",
+            "covered_by_mat": 85,
+            "thickness": 2
+          },
+          {
+            "type": "plastic",
+            "covered_by_mat": 15,
+            "thickness": 1
+          }
+        ],
+
+        "encumbrance": [3, 4],
+
+        "coverage": 18,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_lower_l", "leg_lower_r"],
+
+        "layers": ["BELTED"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "holster": true,
+
+        "//max_contains_volume": [
+          "from dimensions of MKC Stonewall knife",
+          "https://www.montanaknifecompany.com/products/the-stonewall-blackfoot-skinner-orange-black",
+          {
+            "length": "9.25 in",
+            "width": "1.25 in",
+            "height": "1 in",
+            "raw": "190 ml",
+            "trim": 0.35,
+            "notes": [
+              "width acquired from visual reference",
+              "height presumed from visuals"
+            ]
+          }
+        ],
+        "max_contains_volume": "124 ml",
+        "max_contains_weight": "170 g",
+        "max_item_length": "235 mm",
+
+        "moves": 100,
+
+        "//flag_restriction": "this shealth is specifically designed to accomodate a thin knife blade",
+        "flag_restriction": ["SHEATH_KNIFE"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife",
+      "holster_msg": "You sheath your %s"
+    },
+
+    "//flags": [
+      "removed VARSIZE: there seems to be only one size of the sheath, and it's adjustable by its very nature"
+    ],
+    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "NONCONDUCTIVE"],
+
+    "price": "19 USD",
+    "price_postapoc": "1 USD"
   }
 ]
