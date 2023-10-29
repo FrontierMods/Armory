@@ -43,5 +43,10 @@
     "id": ["gartersheath2"],
     "type": "MIGRATION",
     "replace": "gartersheath1"
+  },
+  {
+    "id": ["suspenders_holster"],
+    "type": "MIGRATION",
+    "replace": "suspenders_cloth"
   }
 ]
