@@ -580,5 +580,94 @@
 
     "price": "19 USD",
     "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "bholster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.roundedgear.com/collections/athletic-wear-tuckable-iwb-kydex-holsters/products/",
+      ["https://us.glock.com/en/pistols/g17", "partial dimensions"]
+    ],
+
+    "//notes": [
+      "the item is actually two items: a Kydex knife sheath and a belt clip (Ulti-Clip 3+)",
+      "for the sake of simplicity, and because it wouldn't be beneficial to model them as two at this stage, we model both as a single item",
+      "ultimately, this should be an inside-the-waistband holster, but this would require an override effort of base-game items that is currently beyond the scope of this mod",
+      "for now, we pretend that this a regular outside-the-waistband clipped holster for Glock 17 etc."
+    ],
+
+    "name": {
+      "str": "Rounded Gear IWB holster for Glock pistols",
+      "str_pl": "Rounded Gear IWB holsters for Glock pistols"
+    },
+    "description": "A compact ambidexterous Kydex holster fitted for Glock 17-type pistols: Glock 17, Glock 22, and Glock 31.  Has a clip for wearing on a belt or a leg strap.",
+
+    "weight": "85 g",
+    "//dimensions": {
+      "length": "6.25 in",
+      "width": "3.35 in",
+      "height": "1.34 in",
+      "raw": "460 ml",
+      "trim": 0.35,
+      "notes": [
+        "height (thickness) is overall thickness of Glock 17 (1.26 in.) + 0.08 in. of material thickness",
+        "other dimensions acquired from visual reference"
+      ]
+    },
+    "volume": "299 ml",
+    "longest_side": "159 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
+    "//material": "Kydex",
+    "material": ["plastic", "steel"],
+    "material_thickness": 2,
+
+    "pocket_data": [
+      {
+        "holster": true,
+        "rigid": true,
+
+        "//max_contains_volume": [
+          "from dimensions of Glock 17",
+          "https://us.glock.com/en/pistols/g17",
+          {
+            "length": "204 mm",
+            "width": "32 mm",
+            "height": "139 mm",
+            "raw": "907 ml",
+            "trim": 0.525
+          }
+        ],
+        "max_contains_volume": "431 ml",
+        "//max_contains_weight": [
+          "975 g of a loaded Glock 22 (the heaviest of the three included Glock pistols)",
+          "https://us.glock.com/en/pistols/g22",
+          "+50 g overhead for heavier ammo"
+        ],
+        "max_contains_weight": "1025 g",
+        "max_item_length": "204 mm",
+
+        "item_restriction": ["glock_17", "glock_22", "glock_31"],
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "replaced SKINTIGHT with CANT_WEAR: this holster is not meant to be worn directly"
+    ],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY"],
+
+    "price": "55 USD",
+    "price_postapoc": "2 USD"
   }
 ]
