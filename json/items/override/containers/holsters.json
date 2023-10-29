@@ -378,5 +378,89 @@
     ],
     "price": "20 USD",
     "//price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "gartersheath1",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.montanaknifecompany.com/products/stonewall-additional-kydex-sheath"
+    ],
+
+    "name": {
+      "str": "MKC Stonewall sheath"
+    },
+    "description": "A thin Kydex sheath for a small hunting knife.  Has a belt clip, and thus can be worn on a waist belt or on a thigh strap.",
+
+    "//weight": [
+      "using 1.19 g/ml as an average density of Kydex",
+      "volume (9 ml) × density (1.19) = 10.71 g ≈ 11 g"
+    ],
+    "weight": "11 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "2.75 in",
+      "height": "1 mm",
+      "raw": "11 ml",
+      "trim": 0.15,
+      "notes": ["height (thickness) is eyeballed"]
+    },
+    "volume": "9 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "sheath",
+
+    "//material": "Kydex",
+    "material": ["plastic"],
+    "material_thickness": 1,
+
+    "pocket_data": [
+      {
+        "holster": true,
+
+        "//magazine_well": "4 ml",
+        "//max_contains_volume": [
+          "from dimensions of MKC Stonewall knife",
+          "https://www.montanaknifecompany.com/products/the-stonewall-blackfoot-skinner-orange-black",
+          {
+            "length": "9.25 in",
+            "width": "1.25 in",
+            "height": "1 in",
+            "raw": "190 ml",
+            "trim": 0.35,
+            "notes": [
+              "width acquired from visual reference",
+              "height presumed from visuals"
+            ]
+          }
+        ],
+        "max_contains_volume": "124 ml",
+        "max_contains_weight": "170 g",
+        "max_item_length": "235 mm",
+
+        "moves": 80,
+
+        "//flag_restriction": "this shealth is specifically designed to accomodate a thin knife blade",
+        "flag_restriction": ["SHEATH_KNIFE"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife",
+      "holster_msg": "You sheath your %s"
+    },
+
+    "//flags": [
+      "removed VARSIZE: there seems to be only one size of the sheath",
+      "replaced BELTED and OVERSIZE with CANT_WEAR: this sheath is not meant to be worn directly"
+    ],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "NONCONDUCTIVE", "BELT_CLIP"],
+
+    "price": "25 USD",
+    "price_postapoc": "1 USD"
   }
 ]
