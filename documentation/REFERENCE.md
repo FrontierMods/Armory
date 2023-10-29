@@ -4,7 +4,7 @@
 
 ### Dimensions
 
-**MOLLE cell**: 1 in. tall × 1.5 in. wide
+**MOLLE cell**: 1″ tall × 1.5″ wide
 
 ### Ballistic Plates
 
@@ -25,8 +25,8 @@ Coverage is roughly divided between front/back and side plates. Front/back plate
 
 [_visual reference_](https://www.apexarmorsolutions.com/post/are-side-plates-necessary)
 
-- **6 × 6 in. plate**: 00% (×20% → 00%) upper torso coverage + 25% (×20% → 05%) lower torso coverage
-- **6 × 8 in. plate** (aka **tall side plate**): 12% (×20% → 02%) upper torso coverage + 25% (×20% → 05%) lower torso coverage
+- **6″ × 6″ plate**: 00% (×20% → 00%) upper torso coverage + 25% (×20% → 05%) lower torso coverage
+- **6″ × 8″ plate** (aka **tall side plate**): 12% (×20% → 02%) upper torso coverage + 25% (×20% → 05%) lower torso coverage
 
 #### Cut
 
