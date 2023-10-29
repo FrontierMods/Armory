@@ -44,6 +44,7 @@
         "description": "Canteen pouch",
 
         "holster": true,
+        "rigid": true,
 
         "//max_contains_volume": [
           "dimensions of a 1-qt canteen",
@@ -148,6 +149,8 @@
 
         "description": "Dump pouch",
 
+        "rigid": true,
+
         "//max_contains_volume": "95% of unfolded volume",
         "max_contains_volume": "3029 ml",
         "max_contains_weight": "3 kg",
@@ -193,11 +196,11 @@
     "//dimensions": {
       "length": "16.00 cm",
       "width": "12.50 cm",
-      "height": "4.00 cm",
-      "raw": "800 ml",
-      "trim": 0.1
+      "height": "5 mm",
+      "raw": "100 ml",
+      "trim": 0.05
     },
-    "volume": "720 ml",
+    "volume": "95 ml",
     "longest_side": "160 mm",
 
     "symbol": ")",
@@ -221,15 +224,14 @@
             "width": "12.00 cm",
             "height": "2.00 cm",
             "raw": "384 ml",
-            "trim": -0.05,
+            "trim": 0,
             "notes": [
-              "height is assumed to be half the height of pouch",
-              "there are supposed to be two of these inserts in the pouch",
-              "negative trim is to allow items to slightly exceed the boundries of the insert itself, like in source"
+              "height is assumed to be half of what the pouch is capable of, judging by the photos",
+              "there are supposed to be two of these inserts in the pouch"
             ]
           }
         ],
-        "max_contains_volume": "403 ml",
+        "max_contains_volume": "384 ml",
         "max_contains_weight": "1 kg",
         "//max_item_length": "allows items to slightly exceed size of insert",
         "max_item_length": "170 mm",
@@ -248,15 +250,10 @@
             "width": "12.00 cm",
             "height": "2.00 cm",
             "raw": "384 ml",
-            "trim": -0.05,
-            "notes": [
-              "height is assumed to be half the height of pouch",
-              "there are supposed to be two of these inserts in the pouch",
-              "negative trim is to allow items to slightly exceed the boundries of the insert itself, like in source"
-            ]
+            "trim": 0
           }
         ],
-        "max_contains_volume": "403 ml",
+        "max_contains_volume": "384 ml",
         "max_contains_weight": "1 kg",
         "//max_item_length": "allows items to slightly exceed size of insert",
         "max_item_length": "170 mm",
@@ -269,6 +266,7 @@
         "description": "Tourniquet pouch",
 
         "holster": true,
+        "rigid": true,
 
         "//max_contains_volume": [
           "dimensions of a CAT",
@@ -353,6 +351,8 @@
 
         "description": "Ammo pouch",
 
+        "rigid": true,
+
         "//max_contains_volume": "95% of total volume",
         "max_contains_volume": "2125 ml",
         "max_contains_weight": "5 kg"
@@ -416,6 +416,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Gas mask pouch",
+
+        "rigid": true,
 
         "//max_contains_volume": [
           "dimensions of CM-7M gas mask",
@@ -487,6 +489,7 @@
         "description": "Water bottle pouch",
 
         "holster": true,
+        "rigid": true,
 
         "//max_contains_volume": "from source",
         "max_contains_volume": "1600 ml",
@@ -553,6 +556,7 @@
         "description": "40mm grenade pouch",
 
         "holster": true,
+        "rigid": true,
 
         "//max_contains_volume": [
           "allows storing 40×46mm and 40×53mm grenades",
@@ -640,6 +644,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -732,6 +737,7 @@
         "description": "Rifle magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
@@ -750,6 +756,7 @@
         "description": "Pistol magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_weight": "550 g",
         "//max_contains_volume": [
@@ -837,7 +844,7 @@
           "signal_flare": 12
         },
 
-        "moves": 100
+        "moves": 120
       },
 
       {
@@ -926,6 +933,7 @@
         "description": "Hand grenade pouch",
 
         "holster": true,
+        "rigid": true,
 
         "//max_contains_volume": [
           {
@@ -974,9 +982,12 @@
       "width": "3.75 in",
       "height": "3.75 in",
       "raw": "1383 ml",
-      "trim": 0.65
+      "trim": 0.95,
+      "notes": [
+        "large trim to account for the fact that this item is two pieces of thin cloth sewn together, with a lot of space in-between"
+      ]
     },
-    "volume": "484 ml",
+    "volume": "69 ml",
     "longest_side": "152 mm",
 
     "symbol": "[",
@@ -1082,6 +1093,7 @@
         "description": "Front pocket",
 
         "holster": true,
+        "rigid": true,
 
         "//min_item_volume": "to prevent storing smaller items that may fall through the open corners of the pouch",
         "min_item_volume": "175 ml",
@@ -1108,6 +1120,8 @@
 
         "description": "Back pocket",
 
+        "rigid": true,
+
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
           {
@@ -1131,6 +1145,8 @@
 
         "description": "Back pocket thin pouch",
 
+        "rigid": true,
+
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1151,6 +1167,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Back pocket thin pouch",
+
+        "rigid": true,
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
@@ -1227,6 +1245,7 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
+        "rigid": true,
 
         "//min_item_volume": [
           "to prevent storing smaller items that would be hard to reach",
@@ -1308,6 +1327,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -1326,6 +1346,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -1344,6 +1365,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -1362,6 +1384,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -1380,6 +1403,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -1398,6 +1422,7 @@
         "description": "Magazine pouch",
 
         "holster": true,
+        "rigid": true,
 
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
@@ -1552,6 +1577,8 @@
 
         "description": "Front pocket",
 
+        "rigid": true,
+
         "//max_contains_volume": [
           "from eyeballed dimensions of the front pocket",
           {
@@ -1573,6 +1600,8 @@
 
         "description": "Front pocket thin pouch",
 
+        "rigid": true,
+
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1594,6 +1623,8 @@
 
         "description": "Front pocket thin pouch",
 
+        "rigid": true,
+
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1616,6 +1647,8 @@
 
         "description": "Side pocket",
 
+        "rigid": true,
+
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
           {
@@ -1636,6 +1669,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Side pocket",
+
+        "rigid": true,
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
@@ -1658,6 +1693,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Main pocket",
+
+        "rigid": true,
 
         "//max_contains_volume": [
           "from eyeballed dimensions of the front pocket",
