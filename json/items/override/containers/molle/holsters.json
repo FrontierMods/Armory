@@ -106,13 +106,7 @@
     "type": "GENERIC",
     "category": "container",
 
-    "//sources": [
-      "https://www.rothco.com/product/rothco-molle-knife-sheath",
-      [
-        "https://www.amazon.com/Rothco-MOLLE-Knife-Sheath-Olive/dp/B0BSR548YL",
-        "weight"
-      ]
-    ],
+    "//sources": ["https://www.rothco.com/product/rothco-molle-knife-sheath"],
 
     "//notes": [
       "while the original sheathe was designed to only ever take knives, this models seems perfectly capable of holding other thin and long items"
@@ -124,16 +118,20 @@
     },
     "description": "A nylon sheath designed for holding knives and other small blades.  Has straps for attaching to MOLLE webbing, to be used on a belt or a plate carrier.  Activate to sheathe/draw the holstered item.",
 
-    "//weight": "using the 0.3 lbs value in the description",
-    "weight": "136 g",
+    "//weight": [
+      "using 1.15 g/ml as typical density of nylon",
+      "volume (34 ml) × density (1.15) = 39.1 g ≈ 39 g"
+    ],
+    "weight": "39 g",
     "//dimensions": {
       "length": "15.00 in",
       "width": "2.50 in",
-      "height": "0.5 in",
-      "raw": "307 ml",
-      "trim": 0.25
+      "height": "1.75 mm",
+      "raw": "42 ml",
+      "trim": 0.2
     },
-    "volume": "230 ml",
+    "volume": "34 ml",
+    "longest_side": "381 mm",
 
     "material": ["nylon"],
     "material_thickness": 1.75,
@@ -141,17 +139,6 @@
     "symbol": "|",
     "color": "brown",
     "looks_like": "scabbard",
-
-    "sided": true,
-
-    "//armor": [
-      {
-        "coverage": 5,
-        "covers": ["leg_l", "leg_r"],
-        "encumbrance": [0, 1],
-        "specifically_covers": ["leg_hip_r", "leg_hip_l"]
-      }
-    ],
 
     "pocket_data": [
       {
@@ -190,7 +177,7 @@
       "holster_msg": "You sheath your %s"
     },
 
-    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "PALS_SMALL"],
+    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "BELT_CLIP"],
 
     "price": "20 USD",
     "//price_postapoc": "250 cent"
