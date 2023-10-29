@@ -38,5 +38,10 @@
     "id": ["heavy_load_bearing_vest_breacher"],
     "type": "MIGRATION",
     "replace": "heavy_load_bearing_vest"
+  },
+  {
+    "id": ["gartersheath2"],
+    "type": "MIGRATION",
+    "replace": "gartersheath1"
   }
 ]
