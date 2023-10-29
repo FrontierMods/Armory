@@ -54,8 +54,9 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
+        "rigid": true,
 
-        "magazine_well": "100 ml",
+        "//magazine_well": "100 ml",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
           "volume of a loaded M1911",
@@ -145,6 +146,7 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
+        "rigid": true,
 
         "//max_contains_volume": [
           "from dimensions of a Ka-Bar",
@@ -157,10 +159,9 @@
               "modelling the knife as a cylinder due to the shape of the handle",
               "then trimming for blade and other smaller features"
             ]
-          },
-          "rounded up from 189 ml for slight deviations"
+          }
         ],
-        "max_contains_volume": "200 ml",
+        "max_contains_volume": "189 ml",
         "max_contains_weight": "400 g",
         "//max_item_length": "12 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
         "max_item_length": "305 mm",
@@ -201,9 +202,9 @@
       "width": "5.75 in",
       "height": "3 in",
       "raw": "283 ml",
-      "trim": 0.5
+      "trim": 0.75
     },
-    "volume": "142 ml",
+    "volume": "71 ml",
     "longest_side": "146 mm",
 
     "symbol": "[",
