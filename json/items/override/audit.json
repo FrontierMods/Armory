@@ -50,5 +50,73 @@
     "delete": {
       "flags": ["PALS_MEDIUM"]
     }
+  },
+  {
+    "id": "sheath_birchbark",
+    "copy-from": "sheath_birchbark",
+    "type": "ARMOR",
+
+    "//notes": [
+      "we presume that bark sheath is made to roughly the same design as the Armory nylon one",
+      "this might not necessarily be correct, given that the item was supposed to be designed by the survivor, but it makes calculations of size and weight significantly easier"
+    ],
+
+    "name": {
+      "str": "birchbark sheath",
+      "str_pl": "birchbark sheathes"
+    },
+
+    "//weight": [
+      "based on a study published in IAWA Journal",
+      "https://brill.com/view/journals/iawa/3/3-4/article-p207_13.xml",
+      "birch bark density (559.3 kg/m3 = 0.5593 g/ml) × volume (253 ml) = 141.5029 g ≈ 142 g"
+    ],
+    "weight": "142 g",
+    "//dimensions": {
+      "length": "15.00 in",
+      "width": "2.50 in",
+      "height": "0.5 in",
+      "raw": "307 ml",
+      "trim": 0.175,
+      "notes": [
+        "lower trim compared to `sheath` because we assume slightly-bulkier resulting item"
+      ]
+    },
+    "volume": "253 ml",
+    "longest_side": "381 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "from dimensions of a Ka-Bar",
+          {
+            "length": "12.50 in",
+            "diameter": "1.40 in",
+            "raw": "315 ml",
+            "trim": 0.4,
+            "notes": [
+              "modelling the knife as a cylinder due to the shape of the handle",
+              "then trimming for blade and other smaller features"
+            ]
+          },
+          "rounded up from 189 ml for slight deviations"
+        ],
+        "max_contains_volume": "200 ml",
+        "max_contains_weight": "400 g",
+        "//max_item_length": "12 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
+        "max_item_length": "305 mm",
+
+        "moves": 180,
+
+        "//flag_restriction": ["SHEATH_KNIFE"]
+      }
+    ],
+
+    "delete": { "flags": ["BELTED", "OVERSIZE"] },
+    "extend": { "flags": ["CANT_WEAR", "BELT_CLIP"] }
   }
 ]
