@@ -86,12 +86,14 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
+      "added MOLLE_ATTACH and BELT_ATTACH",
       "added WATER_FRIENDLY"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
+      "BELT_ATTACH",
       "ALLOWS_NATURAL_ATTACKS"
     ],
 
