@@ -73,12 +73,14 @@
 
         "description": "Side position",
 
+        "holster": true,
+
         "encumbrance": [0, 5],
 
         "max_contains_volume": "1500 ml",
         "max_contains_weight": "2 kg",
 
-        "flag_restriction": ["MOLLE_POUCH", "BELT_CLIP", "TUCKED_IN"]
+        "flag_restriction": ["MOLLE_ATTACH", "BELT_CLIP", "TUCKED_IN"]
       },
 
       {
@@ -86,12 +88,14 @@
 
         "description": "Front position",
 
+        "holster": true,
+
         "encumbrance": [0, 7],
 
         "max_contains_volume": "1500 ml",
         "max_contains_weight": "2 kg",
 
-        "flag_restriction": ["MOLLE_POUCH", "BELT_CLIP", "TUCKED_IN"]
+        "flag_restriction": ["MOLLE_ATTACH", "BELT_CLIP", "TUCKED_IN"]
       }
     ],
 
