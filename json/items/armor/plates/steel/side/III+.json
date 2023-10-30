@@ -9,7 +9,10 @@
 
     "//notes": ["40 MIL Rhino anti-spalling cover"],
 
-    "name": { "str": "HighCom steel side plate, NIJ III+" },
+    "name": {
+      "str": "HighCom steel side plate, NIJ III+",
+      "str_pl": "HighCom steel side plates, NIJ III+"
+    },
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of AR500 steel.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "1179 g",
@@ -59,7 +62,10 @@
 
     "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
 
-    "name": { "str": "HighCom steel tall side plate, NIJ III+" },
+    "name": {
+      "str": "HighCom steel tall side plate, NIJ III+",
+      "str_pl": "HighCom steel tall side plates, NIJ III+"
+    },
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of AR500 steel.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "1678 g",
