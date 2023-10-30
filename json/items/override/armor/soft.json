@@ -25,7 +25,7 @@
     "name": {
       "str": "SafeGuard covert stab vest"
     },
-    "description": "A simple Level II protection vest.",
+    "description": "A plain-looking vest with adjustable cummerbunds.  It is meant to be worn under everyday clothes, and is equipped with cooling mesh lining meant to assist temperature control while worn.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.",
 
     "//weight": [
       "a similar, lighter-protection vest from SafeGuard is stated to weigh 1.76 kg (panels only)",
