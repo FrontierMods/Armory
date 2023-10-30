@@ -7,7 +7,10 @@
 
     "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
 
-    "name": { "str": "HighCom UHMWPE side plate, NIJ III++" },
+    "name": {
+      "str": "HighCom UHMWPE side plate, NIJ III++",
+      "str_pl": "HighCom UHMWPE side plates, NIJ III++"
+    },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of UHMWPE.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
 
@@ -60,7 +63,10 @@
 
     "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
 
-    "name": { "str": "HighCom UHMWPE tall side plate, NIJ III++" },
+    "name": {
+      "str": "HighCom UHMWPE tall side plate, NIJ III++",
+      "str_pl": "HighCom UHMWPE tall side plates, NIJ III++"
+    },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of UHMWPE.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
 
