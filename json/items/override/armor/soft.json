@@ -41,7 +41,7 @@
       "notes": [
         "we use Army regulations on maximum armor thickness (without plates) for height (thickness)",
         "see: override for `ballistic_vest_heavy`",
-        "~0.275 in × 2 = 0.55 in total height (thickness)"
+        "~0.275 in × 2 = 0.55 in. total height (thickness)"
       ]
     },
     "volume": "1362 ml",
