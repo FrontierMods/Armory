@@ -198,7 +198,7 @@
         "moves": 400,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -214,7 +214,7 @@
         "moves": 400,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -414,7 +414,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -430,7 +430,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -446,7 +446,7 @@
         "moves": 800,
 
         "max_contains_volume": "1600 ml",
-        "max_contains_weight": "1300 g",
+        "max_contains_weight": "3 kg",
         "max_item_length": "292 mm",
 
         "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
@@ -462,7 +462,7 @@
         "moves": 800,
 
         "max_contains_volume": "1600 ml",
-        "max_contains_weight": "1300 g",
+        "max_contains_weight": "3 kg",
         "max_item_length": "292 mm",
 
         "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
@@ -805,7 +805,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -820,7 +820,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -1081,7 +1081,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -1096,7 +1096,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "2500 g",
+        "max_contains_weight": "4 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
