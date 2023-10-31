@@ -1,434 +1,436 @@
-{
-  "id": "molle_medium_rucksack",
-  "type": "ARMOR",
+[
+  {
+    "id": "molle_medium_rucksack",
+    "type": "ARMOR",
 
-  "//sources": [
-    "https://militarydepotusa.com/u-s-military-issue-molle-ii-medium-rucksack-complete/",
-    [
-      "https://store.armyproperty.com/products/molle-medium-rucksack-rfi-issue-multicam-ocp-nsn-8465-01-585-1512.html",
-      "weight"
-    ]
-  ],
+    "//sources": [
+      "https://militarydepotusa.com/u-s-military-issue-molle-ii-medium-rucksack-complete/",
+      [
+        "https://store.armyproperty.com/products/molle-medium-rucksack-rfi-issue-multicam-ocp-nsn-8465-01-585-1512.html",
+        "weight"
+      ]
+    ],
 
-  "//notes": [
-    "we model this rucksack as having only one pocket inside the main compartment (instead of one large one and two smaller ones) for player experience",
-    "the plastic frame is supposed to eliminate discomfort from wearing rear ballistic plate with the backpack",
-    "modelling the pack uses proportional calculations",
-    {
-      "formula": "(volume / total volume) * capacity",
-      "pouch_volume": {
-        "main": 24571,
-        "top": 1475,
-        "bottom": 7967,
+    "//notes": [
+      "we model this rucksack as having only one pocket inside the main compartment (instead of one large one and two smaller ones) for player experience",
+      "the plastic frame is supposed to eliminate discomfort from wearing rear ballistic plate with the backpack",
+      "modelling the pack uses proportional calculations",
+      {
+        "formula": "(volume / total volume) * capacity",
+        "pouch_volume": {
+          "main": 24571,
+          "top": 1475,
+          "bottom": 7967,
 
-        "total": 34013
-      },
-      "pouch_max_volume": {
-        "capacity": 49161,
-
-        "main": 35514,
-        "top": 2132,
-        "bottom": 11515
-      },
-      "pouch_max_weight": {
-        "capacity": 27216,
-
-        "main": 19661,
-        "top": 1180,
-        "bottom": 6375
-      }
-    },
-    "all volume values are in ml",
-    "all weight values are in g",
-    "calculations use volume values after first trim (for shape)",
-    "capacity is converted from 3000 cubic inches"
-  ],
-
-  "name": {
-    "str": "MOLLE II medium rucksack"
-  },
-  "description": "A large-ish backpack with two exterior pouches and a plastic frame.  Developed after soldiers' request more than a decade ago, the medium rucksack fills the gap between the smaller assault pack and the large rucksack, successfully managing a good amount of internal space versus the comfort of its wearer.  The rucksack has a generous amount of MOLLE webbing on the outside, allowing you to mount several MOLLE pouches.  It also features a large hook-and-loop surface for identification patches.  Black letters \"US\" are printed on the top external pouch, over multicam.",
-
-  "weight": "2608 g",
-  "//dimensions": [
-    {
-      "description": "Main compartment",
-
-      "length": "6 in",
-      "width": "14 in",
-      "height": "21 in",
-      "raw": "28907 ml",
-      "trim": [0.15, 0.75],
-      "notes": [
-        "first trim is for shape relative to the box from dimensions",
-        "second trim is for collapsing the rucksack to its most folded state"
-      ],
-      "result": "6143 ml"
-    },
-    {
-      "description": "Top compartment",
-
-      "length": "2 in",
-      "width": "5 in",
-      "height": "10 in",
-      "raw": "1639 ml",
-      "trim": [0.1, 0.75],
-      "notes": [
-        "first trim is for shape relative to the box from dimensions",
-        "second trim is for collapsing the rucksack to its most folded state"
-      ],
-      "result": "369 ml"
-    },
-    {
-      "description": "Bottom compartment",
-
-      "length": "4 in",
-      "width": "11 in",
-      "height": "13 in",
-      "raw": "9373 ml",
-      "trim": [0.15, 0.75],
-      "notes": [
-        "first trim is for shape relative to the box from dimensions",
-        "second trim is for collapsing the rucksack to its most folded state"
-      ],
-      "result": "1992 ml"
-    }
-  ],
-  "volume": "8504 ml",
-  "longest_side": "533 mm",
-
-  "material": ["nylon", "plastic"],
-  "material_thickness": 2,
-  "warmth": 10,
-
-  "symbol": "[",
-  "color": "green",
-  "looks_like": "backpack",
-  "repairs_like": "bigback",
-
-  "armor": [
-    {
-      "encumbrance": 6,
-      "volume_encumber_modifier": 0.15,
-
-      "coverage": 85,
-      "covers": ["torso"],
-      "specifically_covers": ["torso_hanging_back"]
-    }
-  ],
-
-  "pocket_data": [
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Main compartment",
-
-      "//magazine_well": "folded volume of the compartment, minus 5% for materials",
-      "magazine_well": "5836 ml",
-      "//max_contains_volume": "overall capacity of main compartment (35514 ml) - magazine well (5836 ml) - hydration pocket (2965 ml)",
-      "max_contains_volume": "26713 ml",
-      "max_contains_weight": "19661 g",
-      "//max_item_length": "total height (21 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
-      "max_item_length": "508 mm",
-
-      "moves": 300
-    },
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Top compartment",
-
-      "//magazine_well": "folded volume of the compartment, minus 5% for materials",
-      "magazine_well": "351 ml",
-      "//max_contains_volume": "overall capacity of the compartment (2132 ml) - magazine well (351 ml)",
-      "max_contains_volume": "1781 ml",
-      "max_contains_weight": "1180 g",
-      "//max_item_length": "total height (10 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
-      "max_item_length": "229 mm",
-
-      "moves": 220
-    },
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Bottom compartment",
-
-      "//magazine_well": "folded volume of the compartment, minus 5% for materials",
-      "magazine_well": "1892 ml",
-      "//max_contains_volume": "overall capacity of the compartment (11515 ml) - magazine well (1892 ml)",
-      "max_contains_volume": "9623 ml",
-      "max_contains_weight": "6375 g",
-      "//max_item_length": "total height (13 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
-      "max_item_length": "305 mm",
-
-      "moves": 260
-    },
-
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Main compartment: hydration bladder pocket",
-
-      "//max_contains_volume": [
-        "based on dimensions of Red Rock 2.5L hydration bladder",
-        "https://redrockoutdoorgear.com/2-5-liter-hydration-bladder/",
-        {
-          "length": "16 in",
-          "width": "6.75 in",
-          "height": "0.75 in",
-          "raw": "1327 ml",
-          "trim": 0.65,
-          "notes": [
-            "trim assumes 0.75 in. is the height of the clamp and the hose"
-          ],
-          "result": "465 ml"
+          "total": 34013
         },
-        "+ 2500 ml for all possible contained water"
-      ],
-      "max_contains_volume": "2965 ml",
-      "//max_contains_weight": [
-        "weight of bladder (0.56 lbs ≈ 254 g) + 2500 g of all possible contained water"
-      ],
-      "max_contains_weight": "2754 g",
-      "max_item_length": "406 mm",
+        "pouch_max_volume": {
+          "capacity": 49161,
 
-      "moves": 1200
-    },
+          "main": 35514,
+          "top": 2132,
+          "bottom": 11515
+        },
+        "pouch_max_weight": {
+          "capacity": 27216,
 
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Bottom compartment: front MOLLE webbing",
-
-      "volume_encumber_modifier": 1.05,
-
-      "//molle": {
-        "width": 8,
-        "height": 4,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 2,
-        "notes": ["extra height upwards thanks to extra space at the top"]
+          "main": 19661,
+          "top": 1180,
+          "bottom": 6375
+        }
       },
-      "max_contains_volume": "3097 ml",
-      "max_contains_weight": "12 kg",
+      "all volume values are in ml",
+      "all weight values are in g",
+      "calculations use volume values after first trim (for shape)",
+      "capacity is converted from 3000 cubic inches"
+    ],
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+    "name": {
+      "str": "MOLLE II medium rucksack"
     },
-    {
-      "pocket_type": "CONTAINER",
+    "description": "A large-ish backpack with two exterior pouches and a plastic frame.  Developed after soldiers' request more than a decade ago, the medium rucksack fills the gap between the smaller assault pack and the large rucksack, successfully managing a good amount of internal space versus the comfort of its wearer.  The rucksack has a generous amount of MOLLE webbing on the outside, allowing you to mount several MOLLE pouches.  It also features a large hook-and-loop surface for identification patches.  Black letters \"US\" are printed on the top external pouch, over multicam.",
 
-      "description": "Bottom compartment: side MOLLE webbing",
+    "weight": "2608 g",
+    "//dimensions": [
+      {
+        "description": "Main compartment",
 
-      "volume_encumber_modifier": 1.05,
-
-      "//molle": {
-        "width": 2,
-        "height": 3,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 0,
+        "length": "6 in",
+        "width": "14 in",
+        "height": "21 in",
+        "raw": "28907 ml",
+        "trim": [0.15, 0.75],
         "notes": [
-          "cannot add extra height because it would overlap with the zipper"
-        ]
+          "first trim is for shape relative to the box from dimensions",
+          "second trim is for collapsing the rucksack to its most folded state"
+        ],
+        "result": "6143 ml"
       },
-      "max_contains_volume": "465 ml",
-      "max_contains_weight": "2 kg",
+      {
+        "description": "Top compartment",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Bottom compartment: side MOLLE webbing",
-
-      "volume_encumber_modifier": 1.05,
-
-      "//molle": {
-        "width": 2,
-        "height": 3,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 0
-      },
-      "max_contains_volume": "465 ml",
-      "max_contains_weight": "2 kg",
-
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
-
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Main compartment: bottom side MOLLE webbing",
-
-      "//volume_encumber_modifier": 1.0,
-
-      "//molle": {
-        "width": 4,
-        "height": 4,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 2,
+        "length": "2 in",
+        "width": "5 in",
+        "height": "10 in",
+        "raw": "1639 ml",
+        "trim": [0.1, 0.75],
         "notes": [
-          "extra height downwards thanks to extra space at the bottom",
-          "the fourth column cells are hard to spot, since they're almost tucked in on the turn"
-        ]
+          "first trim is for shape relative to the box from dimensions",
+          "second trim is for collapsing the rucksack to its most folded state"
+        ],
+        "result": "369 ml"
       },
-      "max_contains_volume": "1548 ml",
-      "max_contains_weight": "6 kg",
+      {
+        "description": "Bottom compartment",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
-    {
-      "pocket_type": "CONTAINER",
-
-      "description": "Main compartment: bottom side MOLLE webbing",
-
-      "//volume_encumber_modifier": 1.0,
-
-      "//molle": {
-        "width": 4,
-        "height": 4,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 2,
+        "length": "4 in",
+        "width": "11 in",
+        "height": "13 in",
+        "raw": "9373 ml",
+        "trim": [0.15, 0.75],
         "notes": [
-          "extra height downwards thanks to extra space at the bottom",
-          "the fourth column cells are hard to spot, since they're almost tucked in on the turn"
-        ]
+          "first trim is for shape relative to the box from dimensions",
+          "second trim is for collapsing the rucksack to its most folded state"
+        ],
+        "result": "1992 ml"
+      }
+    ],
+    "volume": "8504 ml",
+    "longest_side": "533 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "backpack",
+    "repairs_like": "bigback",
+
+    "armor": [
+      {
+        "encumbrance": 6,
+        "volume_encumber_modifier": 0.15,
+
+        "coverage": 85,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_hanging_back"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment",
+
+        "//magazine_well": "folded volume of the compartment, minus 5% for materials",
+        "magazine_well": "5836 ml",
+        "//max_contains_volume": "overall capacity of main compartment (35514 ml) - magazine well (5836 ml) - hydration pocket (2965 ml)",
+        "max_contains_volume": "26713 ml",
+        "max_contains_weight": "19661 g",
+        "//max_item_length": "total height (21 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "508 mm",
+
+        "moves": 300
       },
-      "max_contains_volume": "1548 ml",
-      "max_contains_weight": "6 kg",
+      {
+        "pocket_type": "CONTAINER",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
+        "description": "Top compartment",
 
-    {
-      "pocket_type": "CONTAINER",
+        "//magazine_well": "folded volume of the compartment, minus 5% for materials",
+        "magazine_well": "351 ml",
+        "//max_contains_volume": "overall capacity of the compartment (2132 ml) - magazine well (351 ml)",
+        "max_contains_volume": "1781 ml",
+        "max_contains_weight": "1180 g",
+        "//max_item_length": "total height (10 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "229 mm",
 
-      "description": "Main compartment: top large side MOLLE webbing",
-
-      "volume_encumber_modifier": 0.95,
-
-      "//molle": {
-        "width": 2,
-        "height": 3,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 1,
-        "notes": ["extra height upwards thanks to extra space at the top"]
+        "moves": 220
       },
-      "max_contains_volume": "542 ml",
-      "max_contains_weight": "2 kg",
+      {
+        "pocket_type": "CONTAINER",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
-    {
-      "pocket_type": "CONTAINER",
+        "description": "Bottom compartment",
 
-      "description": "Main compartment: top large side MOLLE webbing",
+        "//magazine_well": "folded volume of the compartment, minus 5% for materials",
+        "magazine_well": "1892 ml",
+        "//max_contains_volume": "overall capacity of the compartment (11515 ml) - magazine well (1892 ml)",
+        "max_contains_volume": "9623 ml",
+        "max_contains_weight": "6375 g",
+        "//max_item_length": "total height (13 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "305 mm",
 
-      "volume_encumber_modifier": 0.95,
-
-      "//molle": {
-        "width": 2,
-        "height": 3,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 1,
-        "notes": ["extra height upwards thanks to extra space at the top"]
+        "moves": 260
       },
-      "max_contains_volume": "542 ml",
-      "max_contains_weight": "2 kg",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
+      {
+        "pocket_type": "CONTAINER",
 
-    {
-      "pocket_type": "CONTAINER",
+        "description": "Main compartment: hydration bladder pocket",
 
-      "description": "Main compartment: top small side MOLLE webbing",
+        "//max_contains_volume": [
+          "based on dimensions of Red Rock 2.5L hydration bladder",
+          "https://redrockoutdoorgear.com/2-5-liter-hydration-bladder/",
+          {
+            "length": "16 in",
+            "width": "6.75 in",
+            "height": "0.75 in",
+            "raw": "1327 ml",
+            "trim": 0.65,
+            "notes": [
+              "trim assumes 0.75 in. is the height of the clamp and the hose"
+            ],
+            "result": "465 ml"
+          },
+          "+ 2500 ml for all possible contained water"
+        ],
+        "max_contains_volume": "2965 ml",
+        "//max_contains_weight": [
+          "weight of bladder (0.56 lbs ≈ 254 g) + 2500 g of all possible contained water"
+        ],
+        "max_contains_weight": "2754 g",
+        "max_item_length": "406 mm",
 
-      "volume_encumber_modifier": 0.85,
-
-      "//molle": {
-        "width": 1,
-        "height": 3,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 0,
-        "notes": ["extra height upwards thanks to extra space at the top"]
+        "moves": 1200
       },
-      "max_contains_volume": "232 ml",
-      "max_contains_weight": "1 kg",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
-    {
-      "pocket_type": "CONTAINER",
+      {
+        "pocket_type": "CONTAINER",
 
-      "description": "Main compartment: top small side MOLLE webbing",
+        "description": "Bottom compartment: front MOLLE webbing",
 
-      "volume_encumber_modifier": 0.85,
+        "volume_encumber_modifier": 1.05,
 
-      "//molle": {
-        "width": 1,
-        "height": 3,
-        "spaced": true,
-        "width_extra": 0,
-        "height_extra": 0,
-        "notes": ["extra height upwards thanks to extra space at the top"]
+        "//molle": {
+          "width": 8,
+          "height": 4,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2,
+          "notes": ["extra height upwards thanks to extra space at the top"]
+        },
+        "max_contains_volume": "3097 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
-      "max_contains_volume": "232 ml",
-      "max_contains_weight": "1 kg",
+      {
+        "pocket_type": "CONTAINER",
 
-      "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-    },
+        "description": "Bottom compartment: side MOLLE webbing",
 
-    {
-      "pocket_type": "CONTAINER",
+        "volume_encumber_modifier": 1.05,
 
-      "description": "Hook-and-loop surface",
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0,
+          "notes": [
+            "cannot add extra height because it would overlap with the zipper"
+          ]
+        },
+        "max_contains_volume": "465 ml",
+        "max_contains_weight": "2 kg",
 
-      "//velcro": {
-        "width": 9,
-        "height": 2,
-        "notes": ["dimensions eyeballed"]
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
-      "max_contains_volume": "58 ml",
-      "max_contains_weight": "250 g",
+      {
+        "pocket_type": "CONTAINER",
 
-      "flag_restriction": ["VELCRO_ATTACH"]
-    },
+        "description": "Bottom compartment: side MOLLE webbing",
 
-    {
-      "pocket_type": "CONTAINER",
+        "volume_encumber_modifier": 1.05,
 
-      "description": "Tucked between your back and the backpack.",
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
+        },
+        "max_contains_volume": "465 ml",
+        "max_contains_weight": "2 kg",
 
-      "holster": true,
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
 
-      "max_contains_volume": "5 L",
-      "max_contains_weight": "4 kg",
-      "max_item_length": "150 cm",
-      "min_item_length": "60 cm",
+      {
+        "pocket_type": "CONTAINER",
 
-      "moves": 200,
+        "description": "Main compartment: bottom side MOLLE webbing",
 
-      "extra_encumbrance": 10,
-      "ripoff": 3
-    }
-  ],
+        "//volume_encumber_modifier": 1.0,
 
-  "flags": ["BELTED", "WATER_FRIENDLY"],
+        "//molle": {
+          "width": 4,
+          "height": 4,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2,
+          "notes": [
+            "extra height downwards thanks to extra space at the bottom",
+            "the fourth column cells are hard to spot, since they're almost tucked in on the turn"
+          ]
+        },
+        "max_contains_volume": "1548 ml",
+        "max_contains_weight": "6 kg",
 
-  "//price": [
-    "going with the price for best condition",
-    "that price was not immediately available at the time of creating the item",
-    "however, there's the highest-price indicator when no condition is selected, with the maximum being $199.99",
-    "given that 'Fair'-condition backpack costs $179.99, we can surmise that the highest price is for the best-condition pack"
-  ],
-  "price": "200 USD",
-  "price_postapoc": "20 USD"
-}
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: bottom side MOLLE webbing",
+
+        "//volume_encumber_modifier": 1.0,
+
+        "//molle": {
+          "width": 4,
+          "height": 4,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2,
+          "notes": [
+            "extra height downwards thanks to extra space at the bottom",
+            "the fourth column cells are hard to spot, since they're almost tucked in on the turn"
+          ]
+        },
+        "max_contains_volume": "1548 ml",
+        "max_contains_weight": "6 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: top large side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": ["extra height upwards thanks to extra space at the top"]
+        },
+        "max_contains_volume": "542 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: top large side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": ["extra height upwards thanks to extra space at the top"]
+        },
+        "max_contains_volume": "542 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: top small side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//molle": {
+          "width": 1,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0,
+          "notes": ["extra height upwards thanks to extra space at the top"]
+        },
+        "max_contains_volume": "232 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: top small side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//molle": {
+          "width": 1,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0,
+          "notes": ["extra height upwards thanks to extra space at the top"]
+        },
+        "max_contains_volume": "232 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hook-and-loop surface",
+
+        "//velcro": {
+          "width": 9,
+          "height": 2,
+          "notes": ["dimensions eyeballed"]
+        },
+        "max_contains_volume": "58 ml",
+        "max_contains_weight": "250 g",
+
+        "flag_restriction": ["VELCRO_ATTACH"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked between your back and the backpack.",
+
+        "holster": true,
+
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "60 cm",
+
+        "moves": 200,
+
+        "extra_encumbrance": 10,
+        "ripoff": 3
+      }
+    ],
+
+    "flags": ["BELTED", "WATER_FRIENDLY"],
+
+    "//price": [
+      "going with the price for best condition",
+      "that price was not immediately available at the time of creating the item",
+      "however, there's the highest-price indicator when no condition is selected, with the maximum being $199.99",
+      "given that 'Fair'-condition backpack costs $179.99, we can surmise that the highest price is for the best-condition pack"
+    ],
+    "price": "200 USD",
+    "price_postapoc": "20 USD"
+  }
+]
