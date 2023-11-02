@@ -433,5 +433,280 @@
     ],
     "price": "200 USD",
     "price_postapoc": "20 USD"
+  },
+  {
+    "id": "molle_pack",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.varusteleka.com/en/product/us-molle-ii-assault-pack-surplus/20911",
+      [
+        "https://ciehub.info/spec/PD/CO-PD-02-02.html",
+        "confirmation of pocket capacity"
+      ],
+      [
+        "https://www.bradleyssurplus.com/products/molle-ii-assault-pack",
+        "price"
+      ],
+      [
+        "https://otsurplus.com/products/multi-cam-ocp-army-assault-pack-current-issue",
+        "weight"
+      ],
+      [
+        "https://armynavyoutdoors.com/u-s-army-issue-acu-assault-3-day-backpack-used/",
+        "overall dimensions"
+      ]
+    ],
+
+    "//notes": [
+      "manufacturer: The Specialty Group, Inc.",
+      "sources disagree significantly on the dimensions of the pack, as well as on its volume capacity",
+      "we model the pack based primarily on pocket volume capacity, with compartment dimensions being considered of lower priority until a reliable source of both can be found"
+    ],
+
+    "name": {
+      "str": "MOLLE II assault pack"
+    },
+    "description": "A soft nylon backpack with a secondary external pouch.  Adopted as part of the MOLLE II modular equipment system by the US Army and the Marines, it is the smallest of the three available packs, as it is intended to provide enough capacity for three-day excursions.  It is equipped with PALS webbing, which can be used to attach MOLLE pouches to the pack.  The main, larger compartment is fitted with equipment chutes for accessing the antenna of a large radio or a hydration bladder stashed inside.",
+
+    "//weight": "main source appears to have mislabelled weight of the backpack in US units: metric weight is correctly listed as 1.8 kg, while US units weight is listed as 2 lbs (~907 g)",
+    "weight": "1814 g",
+    "//dimensions": {
+      "length": "10.5 in",
+      "width": "13.5 in",
+      "height": "18 in",
+      "raw": "41812 ml",
+      "trim": [0.275, 0.75],
+      "notes": [
+        "first trim is for shape relative to the box from dimensions",
+        "second trim is for collapsing the rucksack to its most folded state"
+      ]
+    },
+    "volume": "7578 ml",
+    "longest_side": "457 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "backpack",
+    "repairs_like": "bigback",
+
+    "armor": [
+      {
+        "encumbrance": 5,
+        "volume_encumber_modifier": 0.15,
+
+        "coverage": 75,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_hanging_back"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment",
+
+        "//magazine_well": "proportional folded value of the compartment (4920 ml), minus 5% for materials",
+        "magazine_well": "4674 ml",
+        "//max_contains_volume": "rated volume of main compartment (1525 cu in = 24490 ml) - magazine well (4674 ml)",
+        "max_contains_volume": "19816 ml",
+        "//max_contains_weight": "proportionally calculated from 27 kg rated maximum load",
+        "max_contains_weight": "17532 g",
+        "//max_item_length": "total height (18 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "432 mm",
+
+        "moves": 300
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "External compartment",
+
+        "//magazine_well": "proportional folded value of the compartment (2657 ml), minus 5% for materials",
+        "magazine_well": "2524 ml",
+        "//max_contains_volume": "overall capacity of the compartment (825 cu in = 13519 ml) - magazine well (2524 ml)",
+        "max_contains_volume": "10995 ml",
+        "//max_contains_weight": "proportionally calculated from 27 kg rated maximum load",
+        "max_contains_weight": "9468 g",
+        "//max_item_length": "assumed total height (13 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "305 mm",
+
+        "moves": 220
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: front MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 5,
+          "height": 1,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2,
+          "notes": ["extra height up and down"]
+        },
+        "max_contains_volume": "774 ml",
+        "max_contains_weight": "3 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: top side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.9,
+
+        "//molle": {
+          "width": 1,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": ["extra height up"]
+        },
+        "max_contains_volume": "194 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: top side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.9,
+
+        "//molle": {
+          "width": 1,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": ["extra height up"]
+        },
+        "max_contains_volume": "194 ml",
+        "max_contains_weight": "1 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: bottom side MOLLE webbing",
+
+        "//volume_encumber_modifier": 1.0,
+
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": [
+            "extra height downwards thanks to extra space at the bottom"
+          ]
+        },
+        "max_contains_volume": "542 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: bottom side MOLLE webbing",
+
+        "//volume_encumber_modifier": 1.0,
+
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": [
+            "extra height downwards thanks to extra space at the bottom"
+          ]
+        },
+        "max_contains_volume": "542 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "External compartment: side MOLLE webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 1,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": ["extra height down"]
+        },
+        "max_contains_volume": "542 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "External compartment: side MOLLE webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 1,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1,
+          "notes": ["extra height down"]
+        },
+        "max_contains_volume": "542 ml",
+        "max_contains_weight": "2 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked between your back and the backpack",
+
+        "holster": true,
+
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "60 cm",
+
+        "moves": 200,
+
+        "extra_encumbrance": 10,
+        "ripoff": 3
+      }
+    ],
+
+    "flags": ["BELTED", "WATER_FRIENDLY"],
+
+    "price": "70 USD",
+    "price_postapoc": "13 USD"
   }
 ]
