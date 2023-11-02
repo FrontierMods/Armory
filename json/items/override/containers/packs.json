@@ -12,6 +12,7 @@
     ],
 
     "//notes": [
+      "manufacturer: Eagle Industries",
       "we model this rucksack as having only one pocket inside the main compartment (instead of one large one and two smaller ones) for player experience",
       "the plastic frame is supposed to eliminate discomfort from wearing rear ballistic plate with the backpack",
       "modelling the pack uses proportional calculations",
@@ -406,7 +407,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Tucked between your back and the backpack.",
+        "description": "Tucked between your back and the backpack",
 
         "holster": true,
 
