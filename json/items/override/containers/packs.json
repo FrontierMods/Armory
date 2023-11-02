@@ -708,5 +708,260 @@
 
     "price": "70 USD",
     "price_postapoc": "13 USD"
+  },
+  {
+    "id": "molle_large_rucksack",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.varusteleka.com/en/product/us-molle-ii-rucksack-with-frame-and-sustainment-pouches-ucp-surplus/68298/",
+      [
+        "https://www.pointblankenterprises.com/protective-apparel/large-rucksack.html",
+        "dimensions"
+      ],
+      [
+        "https://www.fortbraggsurplus.us/MOLLE-II-Large-Rucksack-Backpack--Complete-Multi-CamOCP_p_3237.html",
+        "weight with frame"
+      ],
+      [
+        "https://offbase.co/products/usgi-ocp-multicam-army-large-molle-ii-rucksack-surplus",
+        "price"
+      ],
+      [
+        "https://kommandostore.com/products/usgi-ucp-molle-ii-large-rucksack",
+        "pocket weight restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "manufacturer: Point Blank Enterprises",
+      "the plastic frame is supposed to eliminate discomfort from wearing rear ballistic plate with the backpack",
+      "we are currently modelling the rucksack and the frame as a single item, for convenience and simplicity of design",
+      "we are also not modelling the large rucksack with two sustainment pouches, as it's often depicted, because they're not an inherent part of the rucksack",
+      "technically, the two compartments are not entirely separate, and one could, in theory, stash something long (20+ in.) in the rucksack",
+      "currently this capacity is not being modelled",
+      "the mesh-separated storage space in the top flap is currently also not being modelled",
+      "the extra few MOLLE cells on the flap are not modelled right now, either",
+      "modelling the pack uses proportional calculations",
+      {
+        "formula": "(volume / total volume) * capacity",
+        "pouch_volume": {
+          "main": 45425,
+          "bottom": 32447,
+
+          "total": 77872
+        },
+        "pouch_max_volume": {
+          "capacity": 65548,
+
+          "main": 38236,
+          "bottom": 27312
+        },
+        "pouch_max_weight": {
+          "capacity": 54431,
+
+          "main": 31751,
+          "bottom": 22680
+        }
+      },
+      "all volume values are in ml",
+      "all weight values are in g",
+      "calculations use volume values after first trim (for shape)",
+      "capacity is converted from 4000 cubic inches"
+    ],
+
+    "name": {
+      "str": "MOLLE II large rucksack"
+    },
+    "description": "A large, yet surprisingly light, nylon rucksack strapped to a rigid plastic frame.  Intended to be used for long excursions by active-duty military personnel, this pack could be stuffed with everything you might need on a long mission, and then some.  The bottom compartment is designed to fit a sleeping bag.  The rucksack has ample PALS webbing, on which one could fit a large volume of MOLLE pouches, including the two large sustainment pouches the rucksack often comes with.",
+
+    "weight": "4309 g",
+    "//dimensions": [
+      {
+        "description": "Main compartment",
+
+        "length": "10 in",
+        "width": "22 in",
+        "height": "14 in",
+        "raw": "50472 ml",
+        "trim": [0.1, 0.8],
+        "notes": [
+          "first trim is for shape relative to the box from dimensions",
+          "second trim is for collapsing the rucksack to its most folded state"
+        ],
+        "result": "9085 ml"
+      },
+      {
+        "description": "Bottom compartment",
+
+        "length": "10 in",
+        "width": "22 in",
+        "height": "10 in",
+        "raw": "36052 ml",
+        "trim": [0.1, 0.8],
+        "notes": [
+          "first trim is for shape relative to the box from dimensions",
+          "second trim is for collapsing the rucksack to its most folded state"
+        ],
+        "result": "6489 ml"
+      }
+    ],
+    "volume": "15574 ml",
+    "//longest_side": "24 in., collective height of the backpack",
+    "longest_side": "610 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "backpack",
+    "repairs_like": "bigback",
+
+    "armor": [
+      {
+        "encumbrance": 8,
+        "volume_encumber_modifier": 0.15,
+
+        "coverage": 90,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_hanging_back"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment",
+
+        "//magazine_well": "folded volume of the compartment, minus 5% for materials",
+        "magazine_well": "8631 ml",
+        "//max_contains_volume": "overall capacity of main compartment (38236 ml) - magazine well (8631 ml)",
+        "max_contains_volume": "29605 ml",
+        "max_contains_weight": "31751 g",
+        "//max_item_length": "total height (14 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "330 mm",
+
+        "moves": 340
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Bottom compartment",
+
+        "//magazine_well": "folded volume of the compartment, minus 5% for materials",
+        "magazine_well": "6165 ml",
+        "//max_contains_volume": "overall capacity of the compartment (27312 ml) - magazine well (6165 ml)",
+        "max_contains_volume": "21147 ml",
+        "max_contains_weight": "22680 g",
+        "//max_item_length": "total height (10 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "229 mm",
+
+        "moves": 290
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Top front/side MOLLE webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 15,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2903 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Middle front/side MOLLE webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 15,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1
+        },
+        "max_contains_volume": "4065 ml",
+        "max_contains_weight": "17 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Bottom side MOLLE webbing",
+
+        "volume_encumber_modifier": 1.1,
+
+        "//molle": {
+          "width": 6,
+          "height": 3,
+          "spaced": true,
+          "width_extra": -1,
+          "height_extra": 1
+        },
+        "max_contains_volume": "1355 ml",
+        "max_contains_weight": "6 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Bottom side MOLLE webbing",
+
+        "volume_encumber_modifier": 1.1,
+
+        "//molle": {
+          "width": 6,
+          "height": 3,
+          "spaced": true,
+          "width_extra": -1,
+          "height_extra": 1
+        },
+        "max_contains_volume": "1355 ml",
+        "max_contains_weight": "6 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked between your back and the backpack",
+
+        "holster": true,
+
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "60 cm",
+
+        "moves": 200,
+
+        "extra_encumbrance": 10,
+        "ripoff": 3
+      }
+    ],
+
+    "flags": ["BELTED", "WATER_FRIENDLY"],
+
+    "price": "200 USD",
+    "price_postapoc": "25 USD"
   }
 ]
