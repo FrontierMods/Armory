@@ -13,7 +13,7 @@
     "name": {
       "str": "5.11 Tactical Daily Deploy 48 39L backpack"
     },
-    "description": "A no-nonsense tactical backpack, with a total capacity of 39 liters.  Like in many other 5.11 Tactical packs, the number in the name comes from the amount of hours the user is expected to last with supplies packed in the available space.  Simple clamshell storage, a mesh divider for access to a smaller storage, laptop sleeve in the back, and an admin pouch at the top.  The MOLLE webbing provides plenty of space for additional pouches.  The velcro patch surface could be used for decorative and informatonal patches.",
+    "description": "A no-nonsense tactical backpack, with a total capacity of 39 liters.  Like in many other 5.11 Tactical packs, the number in the name comes from the amount of hours the user is expected to last with supplies packed in the available space.  Simple clamshell storage, a mesh divider for access to a smaller storage, laptop sleeve in the back, and an admin pouch at the top.  The PALS webbing provides plenty of space for additional pouches.  The velcro patch surface could be used for decorative and informatonal patches.",
 
     "weight": "1696 g",
     "//dimensions": {
@@ -107,7 +107,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front MOLLE webbing",
+        "description": "Front PALS webbing",
 
         "//notes": [
           "dimensions eyeballed to be 270 × 275 mm",
@@ -125,7 +125,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Side MOLLE webbing",
+        "description": "Side PALS webbing",
 
         "//notes": [
           "dimensions eyeballed to be 135 × 235 mm",
@@ -144,7 +144,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Side MOLLE webbing",
+        "description": "Side PALS webbing",
 
         "//notes": [
           "dimensions eyeballed to be 135 × 235 mm",

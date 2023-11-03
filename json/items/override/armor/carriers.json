@@ -551,7 +551,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front MOLLE webbing",
+        "description": "Front PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -578,7 +578,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Side MOLLE webbing",
+        "description": "Side PALS webbing",
 
         "volume_encumber_modifier": 1.5,
 
@@ -603,7 +603,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Side MOLLE webbing",
+        "description": "Side PALS webbing",
 
         "volume_encumber_modifier": 1.5,
 
@@ -628,7 +628,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back MOLLE webbing",
+        "description": "Back PALS webbing",
 
         "volume_encumber_modifier": 0.85,
 
@@ -692,7 +692,7 @@
     "name": {
       "str": "SPCS plate carrier"
     },
-    "description": "Soldier Plate Carrier System, commercially known as KDH Magnum TAC-1, is one of the more-recent addition to the U.S. soldier's armory.  Intended as an alternative to the heavier, larger IOTV, the SPCS is more comfortable to wear, in exchange for lower body coverage.  The SPCS was designed for shorter missions and those where heavy gunfire is not expected.  It offers a good amount of MOLLE webbing on the front and the back.  This particular model comes without cummerbunds or side plate pouches, with plain nylon straps connecting front and back plate carriers.",
+    "description": "Soldier Plate Carrier System, commercially known as KDH Magnum TAC-1, is one of the more-recent addition to the U.S. soldier's armory.  Intended as an alternative to the heavier, larger IOTV, the SPCS is more comfortable to wear, in exchange for lower body coverage.  The SPCS was designed for shorter missions and those where heavy gunfire is not expected.  It offers a good amount of PALS webbing on the front and the back.  This particular model comes without cummerbunds or side plate pouches, with plain nylon straps connecting front and back plate carriers.",
 
     "//weight": "weight for medium-sized non-side-plate configuration",
     "weight": "1982 g",
@@ -829,7 +829,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front MOLLE webbing",
+        "description": "Front PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -855,7 +855,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back MOLLE webbing",
+        "description": "Back PALS webbing",
 
         "volume_encumber_modifier": 0.85,
 
@@ -909,7 +909,7 @@
     "name": {
       "str": "White Horse EXTTACT plate carrier"
     },
-    "description": "A relatively-thin ballistic plate carrier, made by White Horse Defense.  A no-nonsense design with a variety of convenient features makes it a likely candidate for use with government agencies and public services.  It features adjustable cummerbunds and shoulder straps, front and back MOLLE webbing for pouches, wide front and back hook-and-loop panels for identification panels, and a reinforced handle for carrying its wearer to safety.",
+    "description": "A relatively-thin ballistic plate carrier, made by White Horse Defense.  A no-nonsense design with a variety of convenient features makes it a likely candidate for use with government agencies and public services.  It features adjustable cummerbunds and shoulder straps, front and back PALS webbing for pouches, wide front and back hook-and-loop panels for identification panels, and a reinforced handle for carrying its wearer to safety.",
 
     "variant_type": "generic",
     "variants": [
@@ -1105,7 +1105,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front MOLLE webbing",
+        "description": "Front PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -1131,7 +1131,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back MOLLE webbing",
+        "description": "Back PALS webbing",
 
         "volume_encumber_modifier": 0.85,
 
