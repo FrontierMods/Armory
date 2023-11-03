@@ -22,7 +22,7 @@
     "name": {
       "str": "Condor large drop leg platform"
     },
-    "description": "A thin piece of fabric with MOLLE webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.",
+    "description": "A thin piece of fabric with PALS webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.",
 
     "weight": "227 g",
     "//dimensions": {
@@ -81,7 +81,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "MOLLE webbing",
+        "description": "PALS webbing",
 
         "encumbrance": [0, 8],
 

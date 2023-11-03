@@ -117,7 +117,7 @@
       "str": "Rothco MOLLE sheath",
       "str_pl": "Rothco MOLLE sheathes"
     },
-    "description": "A nylon sheath designed for holding knives and other small blades.  Has straps for attaching to MOLLE webbing, to be used on a belt or a plate carrier.  Activate to sheathe/draw the holstered item.",
+    "description": "A nylon sheath designed for holding knives and other small blades.  Has straps for attaching to PALS webbing, to be used on a belt or a plate carrier.  Activate to sheathe/draw the holstered item.",
 
     "//weight": [
       "using 1.15 g/ml as typical density of nylon",
@@ -194,7 +194,7 @@
     "name": {
       "str": "Red Rock universal holster"
     },
-    "description": "A small strip of nylon, intended to allow you to carry a pistol on your vest via MOLLE webbing.  Unlike most holsters, this one doesn't have restrictions on length, so you can -- at the detriment of the space available on your webbing -- use it to store a suppressed pistol with a compact red dot sight.  The pistol is held in place with a hook-and-loop middle strap, and secured by an elastic cord, but of which make taking the pistol out and putting it back in somewhat cumbersome.",
+    "description": "A small strip of nylon, intended to allow you to carry a pistol on your vest via PALS webbing.  Unlike most holsters, this one doesn't have restrictions on length, so you can -- at the detriment of the space available on your webbing -- use it to store a suppressed pistol with a compact red dot sight.  The pistol is held in place with a hook-and-loop middle strap, and secured by an elastic cord, but of which make taking the pistol out and putting it back in somewhat cumbersome.",
 
     "weight": "45 g",
     "//dimensions": {
