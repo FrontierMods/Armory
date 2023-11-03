@@ -49,7 +49,7 @@
     "name": {
       "str": "MOLLE II medium rucksack"
     },
-    "description": "A large-ish backpack with two exterior pouches and a plastic frame.  Developed after soldiers' request more than a decade ago, the medium rucksack fills the gap between the smaller assault pack and the large rucksack, successfully managing a good amount of internal space versus the comfort of its wearer.  The rucksack has a generous amount of MOLLE webbing on the outside, allowing you to mount several MOLLE pouches.  It also features a large hook-and-loop surface for identification patches.  Black letters \"US\" are printed on the top external pouch, over multicam.",
+    "description": "A large-ish backpack with two exterior pouches and a plastic frame.  Developed after soldiers' request more than a decade ago, the medium rucksack fills the gap between the smaller assault pack and the large rucksack, successfully managing a good amount of internal space versus the comfort of its wearer.  The rucksack has a generous amount of PALS webbing on the outside, allowing you to mount several MOLLE pouches.  It also features a large hook-and-loop surface for identification patches.  Black letters \"US\" are printed on the top external pouch, over multicam.",
 
     "weight": "2608 g",
     "//dimensions": [
@@ -169,7 +169,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: hydration bladder pocket",
+        "description": "Hydration bladder pocket",
 
         "//max_contains_volume": [
           "based on dimensions of Red Rock 2.5L hydration bladder",
@@ -200,7 +200,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Bottom compartment: front MOLLE webbing",
+        "description": "Bottom compartment front PALS webbing",
 
         "volume_encumber_modifier": 1.05,
 
@@ -220,7 +220,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Bottom compartment: side MOLLE webbing",
+        "description": "Bottom compartment side PALS webbing",
 
         "volume_encumber_modifier": 1.05,
 
@@ -242,7 +242,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Bottom compartment: side MOLLE webbing",
+        "description": "Bottom compartment side PALS webbing",
 
         "volume_encumber_modifier": 1.05,
 
@@ -262,7 +262,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: bottom side MOLLE webbing",
+        "description": "Bottom side PALS webbing",
 
         "//volume_encumber_modifier": 1.0,
 
@@ -285,7 +285,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: bottom side MOLLE webbing",
+        "description": "Bottom side PALS webbing",
 
         "//volume_encumber_modifier": 1.0,
 
@@ -309,7 +309,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: top large side MOLLE webbing",
+        "description": "Top large side PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -329,7 +329,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: top large side MOLLE webbing",
+        "description": "Top large side PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -350,7 +350,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: top small side MOLLE webbing",
+        "description": "Top small side PALS webbing",
 
         "volume_encumber_modifier": 0.85,
 
@@ -370,7 +370,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: top small side MOLLE webbing",
+        "description": "Top small side PALS webbing",
 
         "volume_encumber_modifier": 0.85,
 
@@ -542,7 +542,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: front MOLLE webbing",
+        "description": "Main compartment front PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -562,7 +562,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: top side MOLLE webbing",
+        "description": "Main compartment top side PALS webbing",
 
         "volume_encumber_modifier": 0.9,
 
@@ -582,7 +582,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: top side MOLLE webbing",
+        "description": "Main compartment top side PALS webbing",
 
         "volume_encumber_modifier": 0.9,
 
@@ -602,7 +602,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: bottom side MOLLE webbing",
+        "description": "Main compartment bottom side PALS webbing",
 
         "//volume_encumber_modifier": 1.0,
 
@@ -624,7 +624,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main compartment: bottom side MOLLE webbing",
+        "description": "Main compartment bottom side PALS webbing",
 
         "//volume_encumber_modifier": 1.0,
 
@@ -647,7 +647,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "External compartment: side MOLLE webbing",
+        "description": "External compartment side PALS webbing",
 
         "//volume_encumber_modifier": 1,
 
@@ -667,7 +667,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "External compartment: side MOLLE webbing",
+        "description": "External compartment side PALS webbing",
 
         "//volume_encumber_modifier": 1,
 
@@ -865,7 +865,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Top front/side MOLLE webbing",
+        "description": "Top front/side PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -884,7 +884,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Middle front/side MOLLE webbing",
+        "description": "Middle front/side PALS webbing",
 
         "//volume_encumber_modifier": 1,
 
@@ -904,7 +904,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Bottom side MOLLE webbing",
+        "description": "Bottom side PALS webbing",
 
         "volume_encumber_modifier": 1.1,
 
@@ -923,7 +923,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Bottom side MOLLE webbing",
+        "description": "Bottom side PALS webbing",
 
         "volume_encumber_modifier": 1.1,
 
