@@ -611,7 +611,7 @@
       "str": "Condor AR-15 magazine pouch",
       "str_pl": "Condor AR-15 magazine pouches"
     },
-    "description": "A nylon pouch fit for a single AR-15 magazine.  When stored, standard-length magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has MOLLE webbing on the front, fit for the same pouch or something smaller.",
+    "description": "A nylon pouch fit for a single AR-15 magazine.  When stored, standard-length magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.",
 
     "weight": "87 g",
     "//dimensions": {
@@ -661,7 +661,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "MOLLE webbing",
+        "description": "PALS webbing",
 
         "encumbrance": [0, 2],
 
@@ -1299,7 +1299,7 @@
       "str": "Condor Triple Stacker pouch",
       "str_pl": "Condor Triple Stacker pouches"
     },
-    "description": "A set of sewn-together AR-15 magazine pouches, in two rows of 3.  The front row is noticably shorter while allowing the same size of magazines in, thus being slightly quicker to use.  They each also feature small MOLLE webbing, though because the pouches are completely attached to one another at the front, the webbings can't be used as one long MOLLE panel.",
+    "description": "A set of sewn-together AR-15 magazine pouches, in two rows of 3.  The front row is noticably shorter while allowing the same size of magazines in, thus being slightly quicker to use.  They each also feature small PALS webbing, though because the pouches are completely attached to one another at the front, the webbings can't be used as one long MOLLE panel.",
 
     "weight": "255 g",
     "//dimensions": {
@@ -1439,7 +1439,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pouch MOLLE webbing",
+        "description": "Front pouch PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -1458,7 +1458,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pouch MOLLE webbing",
+        "description": "Front pouch PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -1477,7 +1477,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pouch MOLLE webbing",
+        "description": "Front pouch PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
