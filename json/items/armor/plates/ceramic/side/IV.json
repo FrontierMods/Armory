@@ -64,7 +64,7 @@
 
   {
     "id": "plate_side_tall_ceramic_maverick_iv",
-    "copy-from": "plate_side_maverick_iv",
+    "copy-from": "plate_side_ceramic_maverick_iv",
     "type": "ARMOR",
     "category": "armor",
 
