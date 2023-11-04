@@ -146,7 +146,6 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "//max_contains_volume": [
           "from dimensions of a Ka-Bar",
@@ -154,14 +153,14 @@
             "length": "12.50 in",
             "diameter": "1.40 in",
             "raw": "315 ml",
-            "trim": 0.4,
+            "trim": 0.55,
             "notes": [
               "modelling the knife as a cylinder due to the shape of the handle",
               "then trimming for blade and other smaller features"
             ]
           }
         ],
-        "max_contains_volume": "189 ml",
+        "max_contains_volume": "142 ml",
         "max_contains_weight": "400 g",
         "//max_item_length": "12 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
         "max_item_length": "305 mm",
@@ -237,10 +236,11 @@
             "trim": 0.7,
             "result": "517 ml"
           },
-          "added 50 ml to account for red dot sights",
-          "red dot sight volume based on Loadout models"
+          "added 50 ml to account for red dot sights (= 567 ml)",
+          "red dot sight volume based on Loadout models",
+          "minus magazine well"
         ],
-        "max_contains_volume": "567 ml",
+        "max_contains_volume": "425 ml",
         "//max_contains_weight": "weight of a loaded M1911 with a 6.5″ suppressor (+ 10.2 oz) + 50 g",
         "max_contains_weight": "1445 g",
         "//max_item_length": "overall length of M1911 with a 6.5″ suppressor, plus 2.5%",

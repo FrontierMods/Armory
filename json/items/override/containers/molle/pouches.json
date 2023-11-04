@@ -6,7 +6,14 @@
 
     "//sources": [
       "https://tacticaltailor.com/canteen-utility-pouch/",
-      ["https://www.entrygear.com/product.asp?id=TT-10049", "weight"]
+      ["https://www.entrygear.com/product.asp?id=TT-10049", "weight"],
+      ["https://brigadeqm.com/gi-1-quart-plastic-canteen", "dimensions"]
+    ],
+
+    "//notes": [
+      "for this item, we override the dimensions provided by the manufacturer",
+      "these dimensions appear to be out of touch with the item the pouch is supposed to store",
+      "we take the 1-qt canteen's volume as a mostly-intact box for the pouch's overall volume"
     ],
 
     "name": {
@@ -16,17 +23,18 @@
     "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to US GIs.  In a pinch, it could also serve as an impromptu dump pouch.",
 
     "weight": "133 g",
-    "//dimensions": {
-      "length": "3.00 in",
-      "width": "5.00 in",
-      "height": "8.50 in",
-      "raw": "2089 ml",
-      "trim": 0.1,
-      "notes": [
-        "trim assumes the pouch is measured by the larger hood, rather than the slimmer body"
-      ]
-    },
-    "volume": "1880 ml",
+    "//volume": [
+      "from dimensions of a 1-qt canteen",
+      "https://brigadeqm.com/gi-1-quart-plastic-canteen",
+      {
+        "length": "9.40 in",
+        "width": "8.00 in",
+        "height": "3.60 in",
+        "raw": "4436 ml",
+        "trim": 0.125
+      }
+    ],
+    "volume": "3882 ml",
     "longest_side": "216 mm",
 
     "symbol": "[",
@@ -41,23 +49,21 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Canteen pouch",
-
         "holster": true,
         "rigid": true,
 
         "//max_contains_volume": [
-          "dimensions of a 1-qt canteen",
-          "https://brigadeqm.com/gi-1-quart-plastic-canteen-1qt-w-m1-nbc-drinking-cap-olive",
+          "from dimensions of a 1-qt canteen",
+          "https://brigadeqm.com/gi-1-quart-plastic-canteen",
           {
             "length": "9.40 in",
             "width": "8.00 in",
             "height": "3.60 in",
             "raw": "4436 ml",
-            "trim": 0.15
+            "trim": 0.25
           }
         ],
-        "max_contains_volume": "3771 ml",
+        "max_contains_volume": "3327 ml",
         "max_contains_weight": "3 kg",
         "min_item_length": "76 mm"
       }
@@ -147,8 +153,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Dump pouch",
-
         "rigid": true,
 
         "//max_contains_volume": "95% of unfolded volume",
@@ -205,11 +209,11 @@
 
     "symbol": ")",
     "color": "red",
+    "repairs_like": "legrig",
+    "looks_like": "holster",
 
     "material": ["nylon", "plastic"],
     "material_thickness": 2,
-    "repairs_like": "legrig",
-    "looks_like": "holster",
 
     "pocket_data": [
       {
@@ -266,7 +270,6 @@
         "description": "Tourniquet pouch",
 
         "holster": true,
-        "rigid": true,
 
         "//max_contains_volume": [
           "dimensions of a CAT",
@@ -349,8 +352,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Ammo pouch",
-
         "rigid": true,
 
         "//max_contains_volume": "95% of total volume",
@@ -414,8 +415,6 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Gas mask pouch",
 
         "rigid": true,
 
@@ -486,8 +485,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Water bottle pouch",
-
         "holster": true,
         "rigid": true,
 
@@ -552,8 +549,6 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "description": "40mm grenade pouch",
 
         "holster": true,
         "rigid": true,
@@ -646,6 +641,7 @@
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
@@ -662,6 +658,9 @@
         "pocket_type": "CONTAINER",
 
         "description": "PALS webbing",
+
+        "//holster": "additional balancing against smaller capacity of the webbing",
+        "holster": true,
 
         "encumbrance": [0, 2],
 
@@ -698,7 +697,6 @@
 
   {
     "id": "ammo_satchel",
-    "copy-from": "ammo_satchel",
     "type": "GENERIC",
     "category": "container",
 
@@ -727,8 +725,12 @@
     "volume": "234 ml",
     "longest_side": "121 mm",
 
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ragpouch",
+
     "material": ["nylon"],
-    "material_thickness": 3,
+    "material_thickness": 2,
 
     "pocket_data": [
       {
@@ -739,14 +741,15 @@
         "holster": true,
         "rigid": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
           "rounded up to the nearest 50 as future-proofing"
         ],
         "max_contains_weight": "550 g",
+        "min_item_length": "152 mm",
+        "max_item_length": "192 mm",
 
         "moves": 100
       },
@@ -758,16 +761,18 @@
         "holster": true,
         "rigid": true,
 
-        "max_contains_weight": "550 g",
         "//max_contains_volume": [
-          "volume of loaded M1911 mag, rounded up",
+          "volume of loaded M1911 mag, rounded up (70 ml)",
           "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
         ],
         "max_contains_volume": "70 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+          "see: technical manual TM 9-1005-211-34",
+          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
+          "see: technical manual TM 43-0001-27"
         ],
+        "max_contains_weight": "243 g",
         "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
         "min_item_length": "90 mm",
         "//max_item_length": [
@@ -780,6 +785,12 @@
       }
     ],
 
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    },
+
     "//flags": [
       "replaced PALS_MEDIUM with MOLLE_ATTACH",
       "replaced BELTED with CANT_WEAR"
@@ -787,7 +798,7 @@
     "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "CANT_WEAR"],
 
     "price": "17 USD",
-    "//price_postapoc": "2 USD"
+    "price_postapoc": "1 USD"
   },
 
   {
@@ -850,7 +861,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Velcro surface",
+        "description": "Hook-and-loop surface",
 
         "//dimensions": {
           "length": "5 mm",
@@ -929,8 +940,6 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Hand grenade pouch",
 
         "holster": true,
         "rigid": true,
@@ -1324,11 +1333,12 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Inner magazine pouch",
 
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
@@ -1338,54 +1348,57 @@
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
-        "moves": 90
+        "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Inner magazine pouch",
 
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
           "rounded up to the nearest 50 as future-proofing"
         ],
         "max_contains_weight": "550 g",
-        "min_item_length": "95 mm",
+        "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
-        "moves": 90
+        "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Inner magazine pouch",
 
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
           "rounded up to the nearest 50 as future-proofing"
         ],
         "max_contains_weight": "550 g",
-        "min_item_length": "95 mm",
+        "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
-        "moves": 90
+        "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Outer magazine pouch",
 
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
@@ -1400,18 +1413,19 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Outer magazine pouch",
 
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
           "rounded up to the nearest 50 as future-proofing"
         ],
         "max_contains_weight": "550 g",
-        "min_item_length": "102 mm",
+        "min_item_length": "95 mm",
         "max_item_length": "192 mm",
 
         "moves": 100
@@ -1419,18 +1433,19 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Outer magazine pouch",
 
         "holster": true,
         "rigid": true,
 
+        "//max_contains_volume": "AR-15 magazine volume",
         "max_contains_volume": "332 ml",
         "//max_contains_weight": [
           "full 65gr-loaded AR-15 magazine",
           "rounded up to the nearest 50 as future-proofing"
         ],
         "max_contains_weight": "550 g",
-        "min_item_length": "102 mm",
+        "min_item_length": "95 mm",
         "max_item_length": "192 mm",
 
         "moves": 110
@@ -1439,7 +1454,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pouch PALS webbing",
+        "description": "Outer pouch PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -1458,7 +1473,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pouch PALS webbing",
+        "description": "Outer pouch PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -1477,7 +1492,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pouch PALS webbing",
+        "description": "Outer pouch PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -1502,13 +1517,15 @@
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
       "replaced PALS_SMALL with MOLLE_ATTACH",
-      "added WATER_FRIENDLY"
+      "added WATER_FRIENDLY",
+      "added TARDIS: seems to be the only way to manage"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "TARDIS"
     ],
 
     "price": "37 USD",
