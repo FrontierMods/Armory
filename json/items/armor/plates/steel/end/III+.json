@@ -16,8 +16,8 @@
     "//notes": ["40 MIL Rhino anti-spalling cover"],
 
     "name": {
-      "str": "CAG small steel plate, NIJ III+",
-      "str_pl": "CAG small steel plates, NIJ III+"
+      "str": "CAG steel small plate, NIJ III+",
+      "str_pl": "CAG steel small plates, NIJ III+"
     },
     "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
 
@@ -32,14 +32,14 @@
     "volume": "516 ml",
     "longest_side": "299 mm",
 
-    "material": ["hc_steel"],
+    "material": ["mc_steel"],
 
     "material_thickness": 9,
 
     "armor": [
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 5,
         "coverage": 30,
@@ -49,7 +49,7 @@
 
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 5,
         "coverage": 8,
@@ -80,8 +80,8 @@
     ],
 
     "name": {
-      "str": "CAG large steel plate, NIJ III+",
-      "str_pl": "CAG large steel plates, NIJ III+"
+      "str": "CAG steel large plate, NIJ III+",
+      "str_pl": "CAG steel large plates, NIJ III+"
     },
     "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
 
@@ -96,14 +96,14 @@
     "volume": "674 ml",
     "longest_side": "337 mm",
 
-    "material": ["hc_steel"],
+    "material": ["mc_steel"],
 
     "material_thickness": 9,
 
     "armor": [
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 8,
         "coverage": 36,
@@ -113,7 +113,7 @@
 
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 8,
         "coverage": 13,
@@ -144,8 +144,8 @@
     ],
 
     "name": {
-      "str": "CAG XL steel plate, NIJ III+",
-      "str_pl": "CAG XL steel plate, NIJ III+"
+      "str": "CAG steel XL plate, NIJ III+",
+      "str_pl": "CAG steel XL  plate, NIJ III+"
     },
     "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"extra-large\" and can only fit in carriers that allow XL-sized plates.",
 
@@ -160,14 +160,14 @@
     "volume": "773 ml",
     "longest_side": "356 mm",
 
-    "material": ["hc_steel"],
+    "material": ["mc_steel"],
 
     "material_thickness": 9,
 
     "armor": [
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 4,
         "coverage": 38,
@@ -177,7 +177,7 @@
 
       {
         "material": [
-          { "type": "hc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
         ],
         "encumbrance": 4,
         "coverage": 16,
