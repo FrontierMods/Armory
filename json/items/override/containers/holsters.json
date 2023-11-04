@@ -11,7 +11,7 @@
     "name": {
       "str": "Active Pro Gear ankle holster"
     },
-    "description": "A small concealed holster worn on the ankle.  It is awkward to use without practice.  Activate to holster/draw a small pistol.",
+    "description": "A small concealed pistol holster worn on the ankle.  It is intended for concealed carry of a subcompact pistol.  Due to its position, it's awkward to use.  Activate to holster/draw.",
 
     "//weight": "we will use the weight of Active Pro Gear ankle pouch + 10% for this holster",
     "weight": "12 g",

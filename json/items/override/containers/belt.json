@@ -13,7 +13,7 @@
       "str": "LBT standard tool pouch",
       "str_pl": "LBT standard tool pouches"
     },
-    "description": "A large, spacious pouch with a variety of pockets, intended for naval construction.  It is able to carry a large number of different tools, from construction knives and screwdrivers to wrenches and hammers, as well as loose materials and admin stuff.  While it's comfortable for its purpose, when full, it could significantly hinder your movement.  You can carry it on your person by attaching it to a belt.",
+    "description": "A large, spacious pouch with a variety of pockets by London Bridge Trading, intended for naval construction.  It is able to carry a large number of different tools, from construction knives and screwdrivers to wrenches and hammers, as well as loose materials and admin stuff.  While it's comfortable for its purpose, it could significantly hinder your movement when full.  You can carry it on your person by attaching it to a belt.",
 
     "weight": "386 g",
     "//dimensions": {
