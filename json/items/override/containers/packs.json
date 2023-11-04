@@ -1008,11 +1008,7 @@
       "width": "13 in",
       "height": "26 in",
       "raw": "49850 ml",
-      "trim": 0.175,
-      "notes": [
-        "first trim is for shape relative to the box from dimensions",
-        "second trim is for collapsing the rucksack to its most folded state"
-      ]
+      "trim": 0.175
     },
     "volume": "41126 ml",
     "longest_side": "660 mm",
@@ -1138,7 +1134,7 @@
         ],
         "max_contains_volume": "15599 ml",
         "//max_contains_weight": "30% of overall capacity (40 kg)",
-        "max_contains_weight": "12000 g",
+        "max_contains_weight": "12 kg",
         "//max_item_length": "30% total height (26 in.) ≈ 7.8 in. - 1 in. to allow for some wiggle room to make retrieving the item possible",
         "max_item_length": "173 mm",
 
