@@ -198,7 +198,7 @@
         "moves": 400,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -214,7 +214,7 @@
         "moves": 400,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -414,7 +414,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -430,7 +430,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -805,7 +805,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -820,7 +820,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -1081,7 +1081,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
@@ -1096,7 +1096,7 @@
         "moves": 800,
 
         "max_contains_volume": "2 L",
-        "max_contains_weight": "4 kg",
+        "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
