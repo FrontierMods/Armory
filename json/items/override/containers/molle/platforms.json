@@ -81,8 +81,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "PALS webbing",
-
         "encumbrance": [0, 8],
 
         "//max_contains_volume": [

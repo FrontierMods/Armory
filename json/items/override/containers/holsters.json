@@ -72,7 +72,7 @@
         "//max_item_length": "overall length of Glock 33",
         "max_item_length": "165 mm",
 
-        "moves": 220
+        "moves": 250
       }
     ],
 
@@ -80,7 +80,7 @@
       "type": "holster"
     },
 
-    "flags": ["BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "BOOT_HOLSTER"],
+    "flags": ["SKINTIGHT", "ALLOWS_NATURAL_ATTACKS", "BOOT_HOLSTER"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
@@ -517,17 +517,17 @@
         "material": [
           {
             "type": "neoprene",
-            "covered_by_mat": 85,
+            "covered_by_mat": 100,
             "thickness": 2
           },
           {
             "type": "plastic",
-            "covered_by_mat": 15,
+            "covered_by_mat": 18,
             "thickness": 1
           }
         ],
 
-        "encumbrance": [3, 4],
+        "encumbrance": [2, 4],
 
         "coverage": 18,
         "covers": ["leg_l", "leg_r"],
@@ -663,9 +663,10 @@
     },
 
     "//flags": [
-      "replaced SKINTIGHT with CANT_WEAR: this holster is not meant to be worn directly"
+      "replaced SKINTIGHT with CANT_WEAR: this holster is not meant to be worn directly",
+      "added TARDIS: this appears to be the only way to emulate a rigid pocket allowing items that stick out"
     ],
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY"],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "TARDIS"],
 
     "price": "55 USD",
     "price_postapoc": "2 USD"
