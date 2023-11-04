@@ -983,7 +983,8 @@
       "the hook-and-loop multisurface on main pack's top webbing is not currently modelled as usable: otherwise currently would require way too much work for what it's worth",
       "there appears to be an extra pocket available to the user, made out of reinforcement straps between the bases of shoulder straps; it is currently not modelled as a pocket",
       "the main and bottom compartments can be opened and used as one larger compartment; we are not modelling this capability for the sake of simplicity of design, though it would be a desirable change when this can be made to be easy for the player",
-      "the structure of the pack is maintained partially by the stiffener plate on the back (wearer-facing) side; we model this as an inherent part of the pack because there is only a very small opportunity surface should we make it removable"
+      "the structure of the pack is maintained partially by the stiffener plate on the back (wearer-facing) side; we model this as an inherent part of the pack because there is only a very small opportunity surface should we make it removable",
+      "we override the dimensions with stated volume capacity (+5% for materials) in order to align the pack's volume with its capacity"
     ],
 
     "//TODO": [
@@ -1008,9 +1009,14 @@
       "width": "13 in",
       "height": "26 in",
       "raw": "49850 ml",
-      "trim": 0.175
+      "trim": 0.175,
+      "result": "41126 ml",
+      "notes": [
+        "dimensions overridden with stated capacity (~52 L) + 5% for materials",
+        "see notes for explanation"
+      ]
     },
-    "volume": "41126 ml",
+    "volume": "54600 ml",
     "longest_side": "660 mm",
 
     "material": ["nylon", "plastic", "aluminum"],
