@@ -56,7 +56,7 @@
     "description": "A thin nylon panel with hook-and-loop surface for attaching to outfits for identification.  This one is 3″×11″ in size.  On dark gray background, in bold white lettering, it says \"POLICE\"."
   },
   {
-    "id": "velcro_panel_natguard",
+    "id": "velcro_panel_national_guard",
     "copy-from": "velcro_panel_3x11",
     "type": "GENERIC",
 
