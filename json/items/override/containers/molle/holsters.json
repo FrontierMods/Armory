@@ -257,13 +257,15 @@
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
       "replaced PALS_SMALL with MOLLE_ATTACH",
-      "added WATER_FRIENDLY"
+      "added WATER_FRIENDLY",
+      "added TARDIS"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "TARDIS"
     ],
 
     "price": "7 USD",
