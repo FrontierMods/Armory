@@ -1,0 +1,17 @@
+[
+  {
+    "id": "full_ifak",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "ifak_pouch",
+
+    "entries": [
+      { "group": "armory_first_aid_bleed_full", "count": 2 },
+
+      { "item": "tourniquet_upper" },
+      { "item": "gloves_medical" },
+      { "item": "scissors" }
+    ]
+  }
+]
