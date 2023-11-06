@@ -1,0 +1,61 @@
+[
+  {
+    "type": "item_group",
+    "id": "molle_accessories",
+    "subtype": "distribution",
+
+    "//notes": ["civilian pool"],
+
+    "//removed": ["`grenade_pouch` (40mm grenade pouch)", "`tool_pouch`"],
+
+    "entries": [
+      { "item": "chestpouch", "count": 1, "prob": 10 },
+      { "item": "chestpouch", "count": 2, "prob": 45 },
+      { "item": "chestpouch", "count": 3, "prob": 35 },
+
+      { "item": "radio_pouch", "prob": 30 },
+      { "item": "h2o_pouch", "prob": 25 },
+      { "item": "triple_stacker_pouch", "prob": 20 },
+      { "item": "flashlight_pouch", "prob": 20 },
+      { "item": "dump_pouch", "prob": 20 },
+      { "item": "tactical_grenade_pouch", "prob": 15 },
+      { "item": "tactical_holster", "prob": 15 },
+      { "item": "gadget_pouch", "prob": 15 },
+      { "item": "gas_mask_pouch", "prob": 10 },
+      { "item": "canteen_pouch", "prob": 5 },
+      { "item": "deployment_bag", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "molle_backpacks_and_accessories",
+    "subtype": "distribution",
+
+    "//added": [
+      ["`rucksack`", "is now a MOLLE II rucksack, with plenty of webbing"]
+    ],
+
+    "entries": [
+      {
+        "item": "molle_pack",
+        "prob": 30,
+        "contents-group": "molle_backpacks_contents"
+      },
+      {
+        "item": "molle_medium_rucksack",
+        "prob": 35,
+        "contents-group": "molle_backpacks_contents"
+      },
+      {
+        "item": "molle_large_rucksack",
+        "prob": 20,
+        "contents-group": "molle_backpacks_contents"
+      },
+      {
+        "item": "rucksack",
+        "prob": 15,
+        "contents-group": "molle_backpacks_contents"
+      }
+    ]
+  }
+]
