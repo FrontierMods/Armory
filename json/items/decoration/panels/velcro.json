@@ -102,5 +102,15 @@
       "str": "Sheriff hook-and-loop panel"
     },
     "description": "A thin nylon panel with hook-and-loop surface for attaching to outfits for identification.  This one is 3″×11″ in size.  On black background, in bold white lettering, it says \"SHERIFF\"."
+  },
+  {
+    "id": "velcro_panel_swat",
+    "copy-from": "velcro_panel_3x11",
+    "type": "GENERIC",
+
+    "name": {
+      "str": "SWAT hook-and-loop panel"
+    },
+    "description": "A thin nylon panel with hook-and-loop surface for attaching to outfits for identification.  This one is 3″×11″ in size.  On black background, in bold white lettering, it says \"SWAT\"."
   }
 ]
