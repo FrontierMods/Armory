@@ -1,0 +1,238 @@
+[
+  {
+    "id": "military_ballistic_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "distribution": [
+          {
+            "item": "ballistic_vest_esapi",
+            "contents-group": "used_kitted_medium_vest_no_sides",
+            "prob": 100
+          },
+          {
+            "collection": [
+              {
+                "item": "ballistic_vest_esapi",
+                "contents-group": "some_esapi_front_plates"
+              },
+              { "group": "loaded_lbv" }
+            ],
+            "prob": 50
+          }
+        ],
+        "prob": 40
+      },
+      {
+        "collection": [
+          {
+            "item": "level_3_vest",
+            "variant": "level_3_vest_black",
+            "contents-group": "national_guard_vest_group"
+          },
+          { "group": "loaded_lbv" }
+        ],
+        "prob": 50
+      },
+      { "group": "military_ballistic_vest_light", "prob": 10 },
+      { "group": "military_ballistic_vest_heavy", "prob": 5 }
+    ]
+  },
+  {
+    "id": "military_ballistic_vest_pristine",
+    "type": "item_group",
+    "//": "ESAPI vest plus plates",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          {
+            "item": "ballistic_vest_esapi",
+            "contents-group": "kitted_medium_vest_no_sides",
+            "prob": 100
+          },
+          {
+            "collection": [
+              {
+                "item": "ballistic_vest_esapi",
+                "contents-group": "pristine_esapi_front_plates"
+              },
+              { "group": "loaded_lbv" }
+            ],
+            "prob": 50
+          }
+        ],
+        "prob": 40
+      },
+      {
+        "collection": [
+          {
+            "item": "level_3_vest",
+            "variant": "level_3_vest_black",
+            "contents-group": "pristine_national_guard_vest_group"
+          },
+          { "group": "loaded_lbv" }
+        ],
+        "prob": 50
+      },
+      { "group": "military_ballistic_vest_light_pristine", "prob": 10 },
+      { "group": "military_ballistic_vest_heavy_pristine", "prob": 5 }
+    ]
+  },
+
+  {
+    "id": "swat_ballistic_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "it would rather make sense that SWAT would use a different model of armor from 'civilian' agencies"
+    ],
+
+    "entries": [
+      {
+        "item": "level_3_vest",
+        "variant": "level_3_vest_black",
+        "contents-group": "used_kitted_medium_vest_no_sides",
+        "prob": 7
+      },
+      {
+        "collection": [
+          {
+            "item": "level_3_vest",
+            "variant": "level_3_vest_black",
+            "contents-group": "swat_vest_group"
+          },
+          { "item": "tacvest" }
+        ],
+        "prob": 2
+      },
+      {
+        "collection": [
+          {
+            "item": "level_3_vest",
+            "variant": "level_3_vest_black",
+            "contents-group": "swat_vest_group"
+          },
+          {
+            "item": "heavy_load_bearing_vest_breacher",
+            "contents-group": "custom_light_lbv",
+            "contents-item": "remington_870_breacher"
+          }
+        ],
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "id": "swat_ballistic_vest_pristine",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "level_3_vest",
+        "variant": "level_3_vest_black",
+        "contents-group": "kitted_medium_vest_no_sides"
+      }
+    ]
+  },
+  {
+    "id": "us_ballistic_vest_pristine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "ballistic_vest_esapi",
+        "contents-group": "kitted_medium_vest_no_sides"
+      }
+    ]
+  },
+  {
+    "id": "contractor_ballistic_vest_light",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "when we have QASM panels, this would be a good place to add them spawning"
+    ],
+
+    "entries": [
+      {
+        "item": "ballistic_vest_light",
+        "contents-group": "pristine_esapi_front_plates"
+      }
+    ]
+  },
+
+  {
+    "id": "military_ballistic_vest_light",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "remapped to Army-issue vests with light loads",
+      "when we have different models of standard vests, this group should be revamped to using more-modern vests"
+    ],
+
+    "entries": [
+      {
+        "item": "ballistic_vest_esapi",
+        "contents-group": "used_kitted_light_vest"
+      }
+    ]
+  },
+  {
+    "id": "military_ballistic_vest_light_pristine",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": ["see `military_ballistic_vest_light` group for notes"],
+
+    "entries": [
+      {
+        "item": "ballistic_vest_esapi",
+        "contents-group": "kitted_light_vest"
+      }
+    ]
+  },
+  {
+    "id": "ballistic_vest_light_pristine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "ballistic_vest_light",
+        "contents-group": "pristine_esapi_front_plates"
+      }
+    ]
+  },
+  {
+    "id": "military_ballistic_vest_heavy_pristine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "ballistic_vest_heavy",
+        "contents-group": "iotv_gear_complete_pristine"
+      }
+    ]
+  },
+  {
+    "id": "military_ballistic_vest_heavy",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "ballistic_vest_heavy",
+        "contents-group": "iotv_gear_complete"
+      }
+    ]
+  }
+]
