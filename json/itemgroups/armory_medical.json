@@ -1,0 +1,20 @@
+[
+  {
+    "id": "armory_first_aid_bleed_full",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "distribution of possible solutions to bleeding",
+      "for a full IFAK"
+    ],
+
+    "items": [
+      { "item": "bandages", "charges": 3, "count": 3, "prob": 35 },
+      { "item": "quikclot", "charges": 5, "prob": 25 },
+      { "item": "adhesive_bandages", "count": 3, "prob": 20 },
+      { "item": "medical_gauze", "count": 3, "prob": 10 },
+      { "item": "medical_tape", "charges": 20, "prob": 10 }
+    ]
+  }
+]
