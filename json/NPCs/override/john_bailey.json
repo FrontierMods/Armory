@@ -1,0 +1,35 @@
+[
+  {
+    "type": "item_group",
+    "id": "John_Bailey_worn",
+    "subtype": "collection",
+
+    "//TODO": ["holster → thigh strap + holster"],
+
+    "//notes": [
+      "leaving ballistic vest without a specified variant should make it feel that much more scavenged"
+    ],
+
+    "entries": [
+      { "item": "boots_combat" },
+      { "item": "socks" },
+      {
+        "item": "level_3_vest",
+        "contents-group": "some_steel_front_plates"
+      },
+      { "item": "boxer_shorts" },
+      { "item": "pants_army" },
+      { "item": "legguard_hard" },
+      { "item": "tshirt" },
+      { "item": "sweatshirt" },
+      { "item": "spearsling" },
+      { "item": "tac_helmet" },
+      { "item": "backpack_hiking" },
+      { "item": "wristwatch" },
+      { "item": "bandolier_pistol", "contents-group": "john_bailey_bandolier" },
+      { "item": "holster", "contents-group": "john_bailey_pistol" },
+      { "item": "bow_sling", "contents-item": "compbow_low" },
+      { "item": "quiver", "contents-group": "john_bailey_quiver" }
+    ]
+  }
+]
