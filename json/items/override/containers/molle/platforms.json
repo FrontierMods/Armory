@@ -83,19 +83,16 @@
 
         "encumbrance": [0, 8],
 
-        "//max_contains_volume": [
-          "dimensions of platform",
-          {
-            "length": "10 in",
-            "width": "9 in",
-            "height": "40 mm",
-            "raw": "2323 ml",
-            "trim": 0,
-            "notes": ["height (depth) is from average MOLLE pouch height"]
-          }
-        ],
-        "max_contains_volume": "2323 ml",
-        "max_contains_weight": "10 kg",
+        "//molle": {
+          "width": 6,
+          "height": 5,
+          "spaced": true,
+          "width_extra": -1,
+          "height_extra": 1,
+          "notes": ["-1 width to account for top two cells cutting off"]
+        },
+        "max_contains_volume": "2129 ml",
+        "max_contains_weight": "9 kg",
         "max_item_length": "254 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
