@@ -667,20 +667,14 @@
 
         "encumbrance": [0, 2],
 
-        "//max_contains_volume": [
-          {
-            "length": "6.00 in",
-            "width": "3.50 in",
-            "height": "20 mm",
-            "raw": "271 ml",
-            "trim": 0,
-            "notes": [
-              "here, height (depth) is 20 mm (half of average MOLLE pouch height)",
-              "to account for for a much-smaller capacity of this small pouch"
-            ]
-          }
-        ],
-        "max_contains_volume": "271 ml",
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
+        },
+        "max_contains_volume": "465 ml",
         "max_contains_weight": "2 kg",
         "max_item_length": "152 mm",
 
@@ -1463,12 +1457,12 @@
 
         "//volume_encumber_modifier": 1.25,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "3 in",
-          "height": "4 in",
-          "raw": "310 ml",
-          "trim": 0
+        "//molle": {
+          "width": 2,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
         },
         "max_contains_volume": "310 ml",
         "max_contains_weight": "1 kg",
@@ -1482,12 +1476,12 @@
 
         "//volume_encumber_modifier": 1.25,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "3 in",
-          "height": "4 in",
-          "raw": "310 ml",
-          "trim": 0
+        "//molle": {
+          "width": 2,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
         },
         "max_contains_volume": "310 ml",
         "max_contains_weight": "1 kg",
@@ -1501,12 +1495,12 @@
 
         "//volume_encumber_modifier": 1.25,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "3 in",
-          "height": "4 in",
-          "raw": "310 ml",
-          "trim": 0
+        "//molle": {
+          "width": 2,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
         },
         "max_contains_volume": "310 ml",
         "max_contains_weight": "1 kg",
