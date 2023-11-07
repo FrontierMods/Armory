@@ -82,6 +82,47 @@
     ]
   },
   {
+    "id": "fema_vest_maybe_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_fema", "prob": 90 },
+      { "item": "velcro_panel_fema", "prob": 65 }
+    ]
+  },
+  {
+    "id": "fema_vest_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_fema" },
+      { "item": "velcro_panel_fema" }
+    ]
+  },
+  {
+    "id": "police_vest_maybe_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_police", "prob": 90 },
+      { "item": "velcro_panel_police", "prob": 65 }
+    ]
+  },
+  {
+    "id": "police_vest_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_police" },
+      { "item": "velcro_panel_police" }
+    ]
+  },
+
+  {
     "id": "national_guard_vest_group",
     "type": "item_group",
     "subtype": "collection",
