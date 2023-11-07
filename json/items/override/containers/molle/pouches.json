@@ -437,11 +437,11 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
       "removed BELTED and OVERSIZE",
       "added WATER_FRIENDLY"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
 
     "price": "91 USD",
     "//price_postapoc": "3 USD"

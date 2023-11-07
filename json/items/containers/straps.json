@@ -80,7 +80,7 @@
         "max_contains_volume": "1500 ml",
         "max_contains_weight": "2 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH", "BELT_CLIP", "TUCKED_IN"]
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP", "TUCKED_IN"]
       },
 
       {
@@ -95,7 +95,7 @@
         "max_contains_volume": "1500 ml",
         "max_contains_weight": "2 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH", "BELT_CLIP", "TUCKED_IN"]
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP", "TUCKED_IN"]
       }
     ],
 
