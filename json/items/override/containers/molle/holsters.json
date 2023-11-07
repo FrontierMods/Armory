@@ -87,14 +87,14 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "added MOLLE_ATTACH and BELT_ATTACH",
+      "added MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
-      "BELT_ATTACH",
+      "BELT_GEAR",
       "ALLOWS_NATURAL_ATTACKS"
     ],
 
@@ -177,7 +177,7 @@
       "holster_msg": "You sheath your %s"
     },
 
-    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "BELT_CLIP"],
+    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "BELT_GEAR"],
 
     "price": "20 USD",
     "//price_postapoc": "250 cent"
@@ -256,7 +256,7 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY",
       "added TARDIS"
     ],
@@ -264,6 +264,7 @@
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
+      "BELT_GEAR",
       "ALLOWS_NATURAL_ATTACKS",
       "TARDIS"
     ],
