@@ -44,6 +44,8 @@
 
         "description": "Main pocket",
 
+        "rigid": true,
+
         "//dimensions": {
           "length": "8 in",
           "width": "12 in",
@@ -63,25 +65,7 @@
 
         "description": "Interior main pocket",
 
-        "//dimensions": {
-          "length": "4 in",
-          "width": "5 in",
-          "height": "1 in",
-          "raw": "328 ml",
-          "trim": 0
-        },
-        "max_contains_volume": "328 ml",
-        "max_contains_weight": "2 kg",
-        "max_item_length": "127 mm",
-
-        "moves": 150,
-
-        "volume_encumber_modifier": 0.3
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Interior main pocket",
+        "rigid": true,
 
         "//dimensions": {
           "length": "4 in",
@@ -102,6 +86,30 @@
         "pocket_type": "CONTAINER",
 
         "description": "Interior main pocket",
+
+        "rigid": true,
+
+        "//dimensions": {
+          "length": "4 in",
+          "width": "5 in",
+          "height": "1 in",
+          "raw": "328 ml",
+          "trim": 0
+        },
+        "max_contains_volume": "328 ml",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "127 mm",
+
+        "moves": 150,
+
+        "volume_encumber_modifier": 0.3
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Interior main pocket",
+
+        "rigid": true,
 
         "//dimensions": {
           "length": "4 in",
@@ -145,6 +153,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Nail pouch",
+
+        "rigid": true,
 
         "//dimensions": {
           "length": "5 in",
@@ -308,6 +318,7 @@
         "description": "Right pocket slot",
 
         "holster": true,
+        "rigid": true,
 
         "//dimensions": {
           "length": "105.00 mm",
@@ -337,6 +348,7 @@
         "description": "Right pocket slot",
 
         "holster": true,
+        "rigid": true,
 
         "//dimensions": {
           "length": "105.00 mm",
@@ -366,6 +378,7 @@
         "description": "Right pocket slot",
 
         "holster": true,
+        "rigid": true,
 
         "//dimensions": {
           "length": "105.00 mm",
@@ -395,6 +408,7 @@
         "description": "Right pocket slot",
 
         "holster": true,
+        "rigid": true,
 
         "//dimensions": {
           "length": "105.00 mm",
@@ -420,8 +434,7 @@
       }
     ],
 
-    "//flags": "use BELT_ATTACH flag when that becomes available",
-    "flags": ["WATER_FRIENDLY", "BELT_CLIP"],
+    "flags": ["WATER_FRIENDLY", "BELT_GEAR_LARGE", "CANT_WEAR"],
 
     "price": "134 USD",
     "price_postapoc": "4 USD"
