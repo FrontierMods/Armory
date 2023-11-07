@@ -100,6 +100,7 @@
           "MOLLE_ATTACH",
           "BELT_CLIP",
           "BELT_GEAR",
+          "VELCRO_POUCH",
           "TUCKED_IN"
         ]
       },
