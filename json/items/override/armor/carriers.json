@@ -283,6 +283,10 @@
       [
         "https://store.armyproperty.com/products/base-vest-assembly-iotv-improved-outer-tactical-vest-nsn-8470-01-604-6619-multicam-ocp-gen-iii-usgi-issue-size-medium.html",
         "price"
+      ],
+      [
+        "https://locknwalkharness.com/products/gen-3-iotv-multicam-plate-carriers-w-3a-soft-armor-included-large-inventory",
+        "PALS webbing capacity"
       ]
     ],
 
@@ -419,7 +423,6 @@
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
       },
-
       {
         "pocket_type": "CONTAINER",
 
@@ -451,7 +454,6 @@
 
         "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
       },
-
       {
         "pocket_type": "CONTAINER",
 
@@ -483,7 +485,6 @@
 
         "flag_restriction": ["IOTV_SHOULDER"]
       },
-
       {
         "pocket_type": "CONTAINER",
 
@@ -499,7 +500,6 @@
 
         "flag_restriction": ["IOTV_SHOULDER"]
       },
-
       {
         "pocket_type": "CONTAINER",
 
@@ -515,7 +515,6 @@
 
         "flag_restriction": ["IOTV_GROIN"]
       },
-
       {
         "pocket_type": "CONTAINER",
 
@@ -531,7 +530,6 @@
 
         "flag_restriction": ["IOTV_NECK"]
       },
-
       {
         "pocket_type": "CONTAINER",
 
@@ -551,26 +549,38 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front PALS webbing",
+        "description": "Front top PALS webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//molle": {
+          "width": 8,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
+        },
+        "max_contains_volume": "1858 ml",
+        "max_contains_weight": "8 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front bottom PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "12.50 in",
-          "height": "9.60 in",
-          "raw": "3097 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from visual reference",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
-          ]
+        "//molle": {
+          "width": 6,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "3100 ml",
-        "max_contains_weight": "20 kg",
+        "max_contains_volume": "1626 ml",
+        "max_contains_weight": "7 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -580,21 +590,16 @@
 
         "description": "Side PALS webbing",
 
-        "volume_encumber_modifier": 1.5,
+        "volume_encumber_modifier": 1.35,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "12.50 in",
-          "height": "6.75 in",
-          "raw": "2177 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions assumed to be same as for the front webbing",
-            "except for height, which looks to be 3 cells high, rather than 4 on the front webbing"
-          ]
+        "//molle": {
+          "width": 10,
+          "height": 3,
+          "spaced": true,
+          "width_extra": -2,
+          "height_extra": 2
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "2200 ml",
+        "max_contains_volume": "2477 ml",
         "max_contains_weight": "10 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
@@ -605,21 +610,16 @@
 
         "description": "Side PALS webbing",
 
-        "volume_encumber_modifier": 1.5,
+        "volume_encumber_modifier": 1.35,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "12.50 in",
-          "height": "6.75 in",
-          "raw": "2177 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions assumed to be same as for the front webbing",
-            "except for height, which looks to be 3 cells high, rather than 4 on the front webbing"
-          ]
+        "//molle": {
+          "width": 10,
+          "height": 3,
+          "spaced": true,
+          "width_extra": -2,
+          "height_extra": 2
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "2200 ml",
+        "max_contains_volume": "2477 ml",
         "max_contains_weight": "10 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
@@ -630,23 +630,22 @@
 
         "description": "Back PALS webbing",
 
+        "//notes": [
+          "even though the back has two technically-separate webbings, we treat it as a single webbing",
+          "this allows us to mount large MOLLE accessories, like hydration pouches, with no issues"
+        ],
+
         "volume_encumber_modifier": 0.85,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "12.50 in",
-          "height": "18.00 in",
-          "raw": "5806 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions assumed to be same as for the front webbing",
-            "except for height, which on the back is (presumed to be) the entire height of the back",
-            "while the IOTV reference mentions that front and back heights are different, for now we presume they are the same, for simplicity's sake"
-          ]
+        "//molle": {
+          "width": 8,
+          "height": 6,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "5800 ml",
-        "max_contains_weight": "30 kg",
+        "max_contains_volume": "4026 ml",
+        "max_contains_weight": "17 kg",
 
         "flag_restriction": ["MOLLE_ATTACH"]
       }
@@ -688,6 +687,8 @@
       "technical manual says all weights listed include soft-armor ballistic inserts",
       "for now, we pretend soft armor is included with the vest in the form of Kevlar layers"
     ],
+
+    "//TODO": ["attachment strap MOLLE adapter slots"],
 
     "name": {
       "str": "SPCS plate carrier"
@@ -833,21 +834,15 @@
 
         "volume_encumber_modifier": 0.95,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "9.00 in",
-          "height": "11.00 in",
-          "raw": "2555 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from visual reference",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
-          ]
+        "//molle": {
+          "width": 6,
+          "height": 6,
+          "spaced": true,
+          "width_extra": 2,
+          "height_extra": 1
         },
-        "max_contains_volume": "2555 ml",
-        "max_contains_weight": "20 kg",
+        "max_contains_volume": "4026 ml",
+        "max_contains_weight": "17 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -859,20 +854,15 @@
 
         "volume_encumber_modifier": 0.85,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "9.00 in",
-          "height": "13.00 in",
-          "raw": "3019 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions assumed to be same as for the front webbing",
-            "except for height, which on the back is (presumed to be) the entire height of the back",
-            "while the IOTV reference mentions that front and back heights are different, for now we presume they are the same, for simplicity's sake"
-          ]
+        "//molle": {
+          "width": 6,
+          "height": 7,
+          "spaced": true,
+          "width_extra": 2,
+          "height_extra": 1
         },
-        "max_contains_volume": "3019 ml",
-        "max_contains_weight": "30 kg",
+        "max_contains_volume": "4645 ml",
+        "max_contains_weight": "19 kg",
 
         "flag_restriction": ["MOLLE_ATTACH"]
       }
@@ -1109,21 +1099,15 @@
 
         "volume_encumber_modifier": 0.95,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "10.5 in",
-          "height": "10 in",
-          "raw": "2710 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from visual reference",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
-          ]
+        "//molle": {
+          "width": 7,
+          "height": 5,
+          "spaced": true,
+          "width_extra": 2,
+          "height_extra": 0
         },
-        "max_contains_volume": "2710 ml",
-        "max_contains_weight": "20 kg",
+        "max_contains_volume": "3484 ml",
+        "max_contains_weight": "14 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -1135,21 +1119,15 @@
 
         "volume_encumber_modifier": 0.85,
 
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "10.5 in",
-          "height": "10 in",
-          "raw": "2710 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from visual reference",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
-          ]
+        "//molle": {
+          "width": 7,
+          "height": 5,
+          "spaced": true,
+          "width_extra": 2,
+          "height_extra": 0
         },
-        "max_contains_volume": "2710 ml",
-        "max_contains_weight": "20 kg",
+        "max_contains_volume": "3484 ml",
+        "max_contains_weight": "14 kg",
 
         "flag_restriction": ["MOLLE_ATTACH"]
       },
@@ -1159,17 +1137,9 @@
 
         "description": "Front hook-and-loop surface",
 
-        "//dimensions": {
-          "length": "5 mm",
-          "width": "11 in",
-          "height": "3 in",
-          "raw": "107 ml",
-          "trim": 0,
-          "notes": [
-            "length is average height of patch, for pseudo-area calculations",
-            "other dimensions based on models that have the same Velcro area, intended for institution identification patches",
-            "https://us.unitedshield.com/portfolio-item/standard-crossover-carrier/"
-          ]
+        "//velcro": {
+          "width": 11,
+          "height": 3
         },
         "max_contains_volume": "107 ml",
         "max_contains_weight": "1 kg",
@@ -1182,17 +1152,9 @@
 
         "description": "Back hook-and-loop surface",
 
-        "//dimensions": {
-          "length": "5 mm",
-          "width": "11 in",
-          "height": "3 in",
-          "raw": "107 ml",
-          "trim": 0,
-          "notes": [
-            "length is average height of patch, for pseudo-area calculations",
-            "other dimensions based on models that have the same Velcro area, intended for institution identification patches",
-            "https://us.unitedshield.com/portfolio-item/standard-crossover-carrier/"
-          ]
+        "//velcro": {
+          "width": 11,
+          "height": 3
         },
         "max_contains_volume": "107 ml",
         "max_contains_weight": "1 kg",
