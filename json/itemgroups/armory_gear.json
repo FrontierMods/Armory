@@ -5,8 +5,8 @@
     "subtype": "collection",
 
     "entries": [
-      { "item": "velcro_panel_national_guard" },
-      { "item": "velcro_panel_national_guard", "prob": 90 }
+      { "item": "velcro_panel_national_guard", "prob": 90 },
+      { "item": "velcro_panel_national_guard", "prob": 65 }
     ]
   },
   {
@@ -32,20 +32,20 @@
     "entries": [
       {
         "collection": [
-          { "item": "velcro_panel_sheriff" },
-          { "item": "velcro_panel_sheriff", "prob": 90 }
+          { "item": "velcro_panel_sheriff", "prob": 90 },
+          { "item": "velcro_panel_sheriff", "prob": 65 }
         ]
       },
       {
         "collection": [
-          { "item": "velcro_panel_police" },
-          { "item": "velcro_panel_police", "prob": 90 }
+          { "item": "velcro_panel_police", "prob": 90 },
+          { "item": "velcro_panel_police", "prob": 65 }
         ]
       },
       {
         "collection": [
-          { "item": "velcro_panel_swat" },
-          { "item": "velcro_panel_swat", "prob": 90 }
+          { "item": "velcro_panel_swat", "prob": 90 },
+          { "item": "velcro_panel_swat", "prob": 65 }
         ]
       }
     ]
