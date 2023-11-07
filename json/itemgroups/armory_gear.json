@@ -143,16 +143,6 @@
     ]
   },
   {
-    "id": "fema_vest_maybe_panels",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "entries": [
-      { "item": "velcro_panel_fema" },
-      { "item": "velcro_panel_fema", "prob": 90 }
-    ]
-  },
-  {
     "id": "swat_vest_group",
     "type": "item_group",
     "subtype": "collection",
@@ -160,6 +150,20 @@
     "entries": [
       { "group": "some_esapi_front_plates" },
       { "group": "swat_vest_maybe_panels" }
+    ]
+  },
+  {
+    "id": "police_vest_group",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "this group should have NIJ IIIA plates at most: the police does not usually deal with higher-level ballistic threats"
+    ],
+
+    "entries": [
+      { "group": "some_steel_front_plates" },
+      { "group": "police_vest_maybe_panels" }
     ]
   },
 
