@@ -38,7 +38,7 @@
     "volume": "505 ml",
     "longest_side": "324 mm",
 
-    "material": ["nylon", "kevlar_layered"],
+    "material": ["nylon", "kevlar"],
 
     "//armor": [
       "there's also the thick nylon belt that might be worth considering"
@@ -55,7 +55,7 @@
             "thickness": 2
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
               "assumed 0.27 in.",
@@ -72,7 +72,9 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.3,
+
+        "layers": ["OUTER"]
       },
 
       {
@@ -86,7 +88,7 @@
             "thickness": 2
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
               "assumed 0.27 in.",
@@ -100,13 +102,15 @@
 
         "//coverage": [
           "approximated from visual reference",
-          "full front coverage of the waist ← 80% (front/back coverage) / 2"
+          "full front coverage of the waist ← 40% (fronts coverage) / 2"
         ],
-        "coverage": 40,
+        "coverage": 20,
         "covers": ["torso"],
         "specifically_covers": ["torso_waist"],
 
-        "volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.3,
+
+        "layers": ["OUTER"]
       },
 
       {
@@ -120,7 +124,7 @@
             "thickness": 2
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
               "assumed 0.27 in., minus the 2 mm of nylon",
@@ -140,11 +144,13 @@
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_hip_l", "leg_hip_r"],
 
-        "volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.3,
+
+        "layers": ["OUTER"]
       }
     ],
 
-    "flags": ["IOTV_GROIN", "BELTED"],
+    "flags": ["IOTV_GROIN", "CANT_WEAR"],
 
     "price": "150 USD",
     "//price_postapoc": "1 USD"
@@ -188,7 +194,7 @@
     },
     "volume": "113 ml",
 
-    "material": ["nylon", "kevlar_layered"],
+    "material": ["nylon", "kevlar"],
 
     "armor": [
       {
@@ -199,7 +205,7 @@
             "thickness": 2
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
               "assumed 0.27 in., minus the 2 mm of nylon",
@@ -213,7 +219,9 @@
         "coverage": 80,
         "covers": ["arm_l", "arm_r"],
         "specifically_covers": ["arm_shoulder_l", "arm_shoulder_r"],
-        "volume_encumber_modifier": 0
+        "volume_encumber_modifier": 0,
+
+        "layers": ["OUTER"]
       },
 
       {
@@ -224,7 +232,7 @@
             "thickness": 2
           },
           {
-            "type": "kevlar_layered",
+            "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
               "assumed 0.27 in., minus the 2 mm of nylon",
@@ -238,7 +246,9 @@
         "coverage": 60,
         "covers": ["arm_l", "arm_r"],
         "specifically_covers": ["arm_upper_l", "arm_upper_r"],
-        "volume_encumber_modifier": 0
+        "volume_encumber_modifier": 0,
+
+        "layers": ["OUTER"]
       }
     ],
 
