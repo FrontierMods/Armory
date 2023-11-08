@@ -1,8 +1,8 @@
 [
   {
     "id": "ballistic_vest_light",
-    "copy-from": "ballistic_vest_light",
     "type": "ARMOR",
+    "category": "armor",
 
     "//sources": [
       "https://perrozdesigns.com/products/low-profile-slick-plate-carrier-lpspc",
@@ -115,7 +115,11 @@
 
     "//material": "see `armor` for why this plate carrier uses cotton",
     "material": ["nylon", "cotton"],
-    "//warmth": 0,
+    "warmth": 5,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "repairs_like": "survivor_suit",
 
     "//armor": [
       "it does not appear as though this plate carrier provides any sort of ballistic protection on its own",
@@ -195,13 +199,13 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
-        "flag_restriction": ["ABLATIVE_MEDIUM"]
+        "flag_restriction": ["ABLATIVE_MEDIUM"],
+
+        "moves": 400
       },
 
       {
@@ -211,13 +215,13 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
 
-        "flag_restriction": ["ABLATIVE_MEDIUM"]
+        "flag_restriction": ["ABLATIVE_MEDIUM"],
+
+        "moves": 400
       },
 
       {
@@ -227,8 +231,8 @@
 
         "holster": true,
 
-        "max_contains_volume": "3 L",
-        "max_contains_weight": "5 kg",
+        "max_contains_volume": "15 L",
+        "max_contains_weight": "60 kg",
 
         "flag_restriction": ["QASM_ATTACH"]
       },
@@ -236,31 +240,15 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Velcro surface",
+        "description": "Hook-and-loop surface",
 
-        "//dimensions": {
-          "length": "5 mm",
-          "width": "5 in",
-          "height": "4 in",
-          "raw": "65 ml",
-          "trim": 0,
-          "notes": [
-            "length is average height of patch, for pseudo-area calculations"
-          ]
-        },
+        "//velcro": { "length": 5, "width": 4 },
         "max_contains_volume": "65 ml",
         "max_contains_weight": "1 kg",
 
         "flag_restriction": ["VELCRO_ATTACH"]
       }
     ],
-
-    "//use_action": [
-      "removes hardcoded MOLLE actions",
-      "(1) there are no MOLLE loops on the carrier itself",
-      "(2) the mod uses Armory form factor of insertable MOLLE/QASM equipment"
-    ],
-    "use_action": [],
 
     "//flags": "changes carrier layer to be NORMAL, rather than OUTER, since it's meant to be worn under outerwear",
     "flags": ["STURDY", "NORMAL", "WATER_FRIENDLY"],
@@ -271,8 +259,8 @@
 
   {
     "id": "ballistic_vest_heavy",
-    "copy-from": "ballistic_vest_heavy",
     "type": "ARMOR",
+    "category": "armor",
 
     "//sources": [
       [
@@ -327,7 +315,10 @@
     "longest_side": "533 mm",
 
     "material": ["nylon", "kevlar"],
-    "//warmth": 0,
+    "warmth": 15,
+
+    "symbol": "[",
+    "color": "light_gray",
 
     "armor": [
       {
@@ -651,13 +642,7 @@
       }
     ],
 
-    "//use_action": [
-      "removes hardcoded MOLLE actions",
-      "the mod uses Armory form factor of insertable MOLLE/QASM equipment"
-    ],
-    "use_action": [],
-
-    "//flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
+    "flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
 
     "price": "1449 USD"
   },
@@ -717,9 +702,10 @@
     "longest_side": "426 mm",
 
     "material": ["nylon", "kevlar"],
+    "warmth": 10,
+
     "symbol": "[",
     "color": "light_gray",
-    "warmth": 10,
 
     "armor": [
       {
@@ -981,9 +967,10 @@
     "longest_side": "426 mm",
 
     "material": ["nylon"],
+    "warmth": 10,
+
     "symbol": "[",
     "color": "light_gray",
-    "warmth": 10,
 
     "//armor": "unless better data becomes available, these values are copied from SPCS'",
     "armor": [
