@@ -15,8 +15,7 @@
     ],
 
     "name": {
-      "str": "ESAPI medium plate",
-      "str_pl": "ESAPI medium plate"
+      "str": "ESAPI medium plate"
     },
     "description": "The standard ballistic plate issued by the U.S. Army, ESAPI -- Enhanced Small Arms Protective Insert -- is a SAPI-cut ballistic plate with a single-curve profile, composed of a boron carbide strike face a UHMWPE backer.  This plate has been certified ESAPI, which is comparable with the civilian NIJ IV rating.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  On the front, it says <color_yellow>\nMEDIUM\nSTRIKE FACE\nHANDLE WITH CARE</color>\nOn the back, it says <color_yellow>\nTOP\n7.62 mm APM2 PROTECTION\nU.S.</color>, as well as the name of the manufacturer -- Ceradyne, Inc. -- and its serial number.",
 
