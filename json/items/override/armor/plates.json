@@ -11,7 +11,8 @@
         "https://reddit.com/r/QualityTacticalGear/comments/s36eop/xsapi_thickness/",
         "https://www.snipershide.com/shooting/threads/how-thick-are-esapi-plates.30987/",
         "average thickness"
-      ]
+      ],
+      ["TM 10-8470-210-10", "weight"]
     ],
 
     "name": {
@@ -19,7 +20,12 @@
     },
     "description": "The standard ballistic plate issued by the U.S. Army, ESAPI -- Enhanced Small Arms Protective Insert -- is a SAPI-cut ballistic plate with a single-curve profile, composed of a boron carbide strike face a UHMWPE backer.  This plate has been certified ESAPI, which is comparable with the civilian NIJ IV rating.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  On the front, it says <color_yellow>\nMEDIUM\nSTRIKE FACE\nHANDLE WITH CARE</color>\nOn the back, it says <color_yellow>\nTOP\n7.62 mm APM2 PROTECTION\nU.S.</color>, as well as the name of the manufacturer -- Ceradyne, Inc. -- and its serial number.",
 
-    "weight": "2132 g",
+    "//weight": [
+      "Wikipedia lists the weight of a medium-sized ESAPI as 5.5 lbs ≈ 2495 g",
+      "IOTV technical manual (TM 10-8470-210-10) lists it as 10.9 lbs per pair, or 5.45 lbs ≈ 2472 g per plate",
+      "we choose the Army source as likely to be more accurate"
+    ],
+    "weight": "2472 g",
     "//dimensions": {
       "length": "12.5 in",
       "width": "9.5 in",
