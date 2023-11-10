@@ -6,14 +6,7 @@
 
     "//sources": [
       "https://tacticaltailor.com/canteen-utility-pouch/",
-      ["https://www.entrygear.com/product.asp?id=TT-10049", "weight"],
-      ["https://brigadeqm.com/gi-1-quart-plastic-canteen", "dimensions"]
-    ],
-
-    "//notes": [
-      "for this item, we override the dimensions provided by the manufacturer",
-      "these dimensions appear to be out of touch with the item the pouch is supposed to store",
-      "we take the 1-qt canteen's volume as a mostly-intact box for the pouch's overall volume"
+      ["https://www.entrygear.com/product.asp?id=TT-10049", "weight"]
     ],
 
     "name": {
@@ -23,18 +16,14 @@
     "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to US GIs.  In a pinch, it could also serve as an impromptu dump pouch.",
 
     "weight": "133 g",
-    "//volume": [
-      "from dimensions of a 1-qt canteen",
-      "https://brigadeqm.com/gi-1-quart-plastic-canteen",
-      {
-        "length": "9.40 in",
-        "width": "8.00 in",
-        "height": "3.60 in",
-        "raw": "4436 ml",
-        "trim": 0.125
-      }
-    ],
-    "volume": "3882 ml",
+    "//dimensions": {
+      "length": "5 in",
+      "width": "3 in",
+      "height": "8.5 in",
+      "raw": "2089 ml",
+      "trim": 0.05
+    },
+    "volume": "1985 ml",
     "longest_side": "216 mm",
 
     "symbol": "[",
@@ -54,16 +43,16 @@
 
         "//max_contains_volume": [
           "from dimensions of a 1-qt canteen",
-          "https://brigadeqm.com/gi-1-quart-plastic-canteen",
+          "https://www.dimensions.com/element/canteen-military",
           {
-            "length": "9.40 in",
-            "width": "8.00 in",
-            "height": "3.60 in",
-            "raw": "4436 ml",
-            "trim": 0.25
+            "length": "5 in",
+            "width": "2.8 in",
+            "height": "8.5 in",
+            "raw": "1950 ml",
+            "trim": 0.175
           }
         ],
-        "max_contains_volume": "3327 ml",
+        "max_contains_volume": "1609 ml",
         "max_contains_weight": "3 kg",
         "min_item_length": "76 mm"
       }
