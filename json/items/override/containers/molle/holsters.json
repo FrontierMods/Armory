@@ -220,31 +220,39 @@
 
         "holster": true,
 
-        "//magazine_well": [
-          "half the raw volume",
-          "assumes strentching of the middle strap"
-        ],
-        "magazine_well": "142 ml",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
-          "volume of a loaded M1911 with a 6.5″ suppressor",
+          "volume of a loaded M1911",
           {
-            "length": "15.06 in",
+            "length": "8.56 in",
             "width": "1.27 in",
             "height": "5.5 in",
-            "raw": "1724 ml",
-            "trim": 0.7,
-            "result": "517 ml"
+            "raw": "980 ml",
+            "trim": 0.55,
+            "result": "441 ml"
           },
-          "added 50 ml to account for red dot sights (= 567 ml)",
-          "red dot sight volume based on Loadout models",
-          "minus magazine well"
+          "plus volume of a ~6.5″ .45 ACP suppressor",
+          "https://www.silencercentral.com/products/yhm-r45/",
+          {
+            "length": "6.45 in",
+            "diameter": "1.563 in",
+            "raw": "203 ml",
+            "trim": 0,
+            "result": "203 ml"
+          },
+          "plus 50 ml for possible red dot sights",
+          "red dot sight volume based on Loadout models"
         ],
-        "max_contains_volume": "425 ml",
-        "//max_contains_weight": "weight of a loaded M1911 with a 6.5″ suppressor (+ 10.2 oz) + 50 g",
-        "max_contains_weight": "1445 g",
-        "//max_item_length": "overall length of M1911 with a 6.5″ suppressor, plus 2.5%",
-        "max_item_length": "392 mm",
+        "max_contains_volume": "694 ml",
+        "//max_contains_weight": [
+          "weight of a loaded M1911 (45.9 oz ≈ 1301 g)",
+          "with a ~6.5″ suppressor (13 oz ≈ 369 g)",
+          "and with a set of red dot sights (~50 g)",
+          "https://www.diffen.com/difference/Glock_vs_M1911"
+        ],
+        "max_contains_weight": "1720 g",
+        "//max_item_length": "overall length of M1911 (8.5 in. ≈ 216 mm) with a ~6.5″ suppressor (≈ 165 mm), plus 2.5%",
+        "max_item_length": "391 mm",
 
         "moves": 135
       }
