@@ -812,5 +812,200 @@
 
     "price": "60 USD",
     "//price_postapoc": "5 USD"
+  },
+  {
+    "id": "tacvest",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.varusteleka.com/en/product/us-molle-ii-flc-combat-vest-surplus/20787",
+      [
+        "https://smithssurplusandsupply.com/product/molle-ii-fighting-load-carrier-vest-flc-acu/",
+        "weight",
+        "price"
+      ]
+    ],
+
+    "name": {
+      "str": "MOLLE II FLC vest"
+    },
+    "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn outside the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without also doffing ballistic armor.",
+
+    "weight": "765 g",
+    "//dimensions": {
+      "length": "19.9 in",
+      "width": "13.7 in",
+      "height": "5 mm",
+      "raw": "880 ml",
+      "trim": 0.3
+    },
+    "volume": "616 ml",
+    "longest_side": "506 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 2,
+    "looks_like": "vest",
+
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "//coverage": [
+          "35% front coverage",
+          "5% × 2 side coverage",
+          "12% back coverage"
+        ],
+        "coverage": 57,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.75
+      },
+      {
+        "encumbrance": 0,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.9
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Belly PALS webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 9,
+          "height": 3,
+          "cells_extra": 0,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Belly PALS webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 9,
+          "height": 3,
+          "cells_extra": 0,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Vest PALS webbing",
+
+        "volume_encumber_modifier": 0.9,
+
+        "//molle": {
+          "width": 3,
+          "height": 4,
+          "cells_extra": 2,
+          "width_extra": 1,
+          "height_extra": 0,
+          "notes": [
+            "calculations account for uneven webbing distribution between the top and the bottom of the vest"
+          ]
+        },
+        "max_contains_volume": "1316 ml",
+        "max_contains_weight": "6 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Lower back MOLLE webbing",
+
+        "volume_encumber_modifier": 0.9,
+
+        "//molle": {
+          "width": 6,
+          "height": 2,
+          "cells_extra": 0,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "1394 ml",
+        "max_contains_weight": "6 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Inner pocket",
+
+        "//dimensions": {
+          "length": "1.25 in",
+          "width": "9 in",
+          "height": "5.5 in",
+          "raw": "1014 ml",
+          "trim": 0,
+          "notes": [
+            "calculated based on size of PALS webbing in front of the pocket",
+            "added 0.5 in. to height based on extra fabric under the webbing",
+            "length (depth) presumed"
+          ]
+        },
+        "max_contains_volume": "1014 ml",
+        "max_contains_weight": "5 kg",
+        "//max_item_length": "based on height, rather than the larger length, because otherwise hard long items could be stored in it, which would likely make wearing the FLC very uncomfortable",
+        "max_item_length": "140 mm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Inner pocket",
+
+        "//dimensions": {
+          "length": "1.25 in",
+          "width": "9 in",
+          "height": "5.5 in",
+          "raw": "1014 ml",
+          "trim": 0,
+          "notes": [
+            "calculated based on size of PALS webbing in front of the pocket",
+            "added 0.5 in. to height based on extra fabric under the webbing",
+            "length (depth) presumed"
+          ]
+        },
+        "max_contains_volume": "1014 ml",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "140 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "25 USD",
+    "price_postapoc": "1 USD"
   }
 ]
