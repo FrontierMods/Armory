@@ -86,5 +86,77 @@
 
     "price": "18 USD",
     "price_postapoc": "50 cent"
+  },
+  {
+    "id": "torso_bandolier_grenade",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://tacticaltailor.com/40mm-belt-12rd/",
+      [
+        "https://punisher.com.ua/en/bandolera-tyr-tactical-40mm-bandolier-12-round/",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Tactical Tailor 40mm grenade bandolier"
+    },
+    "description": "A nylon bandolier strapped around the torso for keeping 12 40mm grenades at hand.  Its design is quite reminiscent of something you've seen in an action film.",
+
+    "//weight": "based on a model with similar functionality",
+    "weight": "454 g",
+    "//dimensions": {
+      "length": "40.5 in",
+      "width": "2 in",
+      "height": "2 mm",
+      "raw": "105 ml",
+      "trim": 0,
+      "notes": [
+        "height presumed from 2× material thickness",
+        "length is the average of two extremes to which the belt expands/contracts",
+        "width assumed due to being a belt"
+      ]
+    },
+    "volume": "105 ml",
+    "//longest_side": [
+      "assumes the textile item is folded thrice when stored",
+      "40.5 in. / 8 = 5.0625 in. = 128.59 mm ≈ 129 mm"
+    ],
+    "longest_side": "129 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "leather_belt",
+
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "40x46mm": 12,
+          "40x53mm": 12
+        },
+
+        "moves": 110
+      }
+    ],
+
+    "armor": [
+      {
+        "encumbrance": 0,
+
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
+
+    "//price": "price for the khaki model",
+    "price": "73 USD",
+    "price_postapoc": "50 cent"
   }
 ]
