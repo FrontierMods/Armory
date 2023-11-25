@@ -1,0 +1,173 @@
+[
+  {
+    "id": "combat_shirt",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.massif.com/acs-military.html",
+      [
+        "https://www.amazon.com/Massif-Multicam-Combat-Shirt-Large/dp/B011ZG0KAM",
+        "https://www.venturesurplus.com/products/massif-army-combat-shirt-acs/",
+        "https://www.amazon.com/COMBAT-SHIRT-Massif-Resistant-X-Small/dp/B01EIQ0YXO",
+        "average of weight"
+      ],
+      [
+        "https://www.rothco.com/size-chart/bdu-shirts",
+        "https://store.glennsarmysurplus.com/massif-acu-digital-flame-resistant-army-combat-shirt-type-i--or-type-ii-army-strong-logo-p4387.aspx",
+        "sleeve length",
+        "pocket restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "modelled after size MR (medium, regular length)",
+      "this model appears to be the older one, without the neck zipper",
+      "for now, we pretend this is what's been issued to soldiers most-recently"
+    ],
+
+    "//TODO": [
+      "Velcro patch surfaces (amend description)",
+      "fire resistance of the material?"
+    ],
+
+    "name": {
+      "str": "Army combat shirt"
+    },
+    "description": "A thin shirt produced by Massif, with long camouflaged sleeves and khaki body fabric that extends into a tiny collar.  Made of a proprietary synthetic fabric that's breathable and flame-resistant, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Designed primary for hot-weather conditions, it holds its own well in milder weather.  Has a small pocket on each sleeve, and two slots for pens on the left sleeve.",
+
+    "//weight": [
+      "between three available sources of weight (each presumably for a different size), we take an average",
+      "(1.1 lbs + 1.05 lbs + 15 oz) / 3 = (498.95 g + 476.27 g + 425.24 g) / 3 = 466.82 g ≈ 467 g"
+    ],
+    "weight": "467 g",
+    "//dimensions": {
+      "length": "31.7 in",
+      "width": "23 in",
+      "height": "2 mm",
+      "raw": "941 ml",
+      "trim": 0.15,
+      "notes": [
+        "height presumed from 2× material thickness",
+        "other dimensions acquired from visual reference based on BDU back length for size M"
+      ]
+    },
+    "volume": "800 ml",
+    "//longest_side": [
+      "like with many clothes and textile items, we assume the item is thrice folded",
+      "31.7 in. = 805.18 mm / 8 = 100.6475 mm ≈ 101 mm"
+    ],
+    "longest_side": "101 mm",
+
+    "material": ["nylon", "cotton"],
+    "material_thickness": 1,
+    "warmth": 5,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "jacket_army",
+    "repairs_like": "trenchcoat",
+
+    "armor": [
+      {
+        "encumbrance": 2,
+
+        "coverage": 100,
+        "covers": ["torso"]
+      },
+      {
+        "encumbrance": [2, 5],
+
+        "coverage": 100,
+        "covers": ["arm_l", "arm_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Sleeve pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "125 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "~10.75 in. = 273.05 mm",
+          "minus 1 in. in order to make the items easier to stash and extract",
+          "9.75 in. ≈ 247.65 mm = 248 mm"
+        ],
+        "max_item_length": "248 mm",
+
+        "moves": 140
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Sleeve pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "125 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "~10.3 in. = 261.62 mm",
+          "minus 1 in. in order to make the items easier to stash and extract",
+          "9.3 in. ≈ 236.22 mm = 236 mm"
+        ],
+        "max_item_length": "236 mm",
+
+        "moves": 140
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pen slot",
+
+        "holster": true,
+
+        "//max_contains_weight": "based on Core's current `pen` audited volume, +100%, rounded",
+        "max_contains_weight": "16 g",
+        "//max_contains_volume": "based on Core's current `pen` audited volume, +20%, rounded",
+        "max_contains_volume": "13 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "originally measured as 7.7 in. for the entire pocket",
+          "7.25 in. appears to be the length of the usable pocket length"
+        ],
+        "max_item_length": "184 mm",
+
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pen slot",
+
+        "holster": true,
+
+        "//max_contains_weight": "based on Core's current `pen` audited volume, +100%, rounded",
+        "max_contains_weight": "16 g",
+        "//max_contains_volume": "based on Core's current `pen` audited volume, +20%, rounded",
+        "max_contains_volume": "13 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "originally measured as 7.7 in. for the entire pocket",
+          "7.25 in. appears to be the length of the usable pocket length"
+        ],
+        "max_item_length": "184 mm",
+
+        "moves": 80
+      }
+    ],
+
+    "//flags": [
+      "removed POCKETS: while the ACU has some pockets, none of them is convenient to use for storing one's hands in for warmth"
+    ],
+    "flags": ["VARSIZE"],
+
+    "price": "251 USD",
+    "price_postapoc": "2 USD"
+  }
+]
