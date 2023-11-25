@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bandolier_rifle",
+    "type": "ARMOR",
+
+    "//sources": [
+      ["https://www.bulldogcases.com/product/rifle-ammo-bandolier/", "price"],
+      [
+        "https://nightgalaxy.com/bulldog-rifle-ammo-bandolier-holds-24-cartridges-2-webbing-black-finish-wrab",
+        "partial dimensions"
+      ],
+      [
+        "https://www.amazon.com/Bulldog-Cases-Rifle-Bandolier-Cartridges/dp/B000B914ZK",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Bulldog rifle bandolier"
+    },
+    "description": "A nylon bandolier for keeping rifle cartridges at hand.  Wraps around your torso, with the cartridge belt at the front.",
+
+    "weight": "159 g",
+    "//dimensions": {
+      "length": "57.5 in",
+      "width": "2 in",
+      "height": "2 mm",
+      "raw": "148 ml",
+      "trim": 0,
+      "notes": [
+        "height presumed from 2× material thickness",
+        "length acquired from visual reference"
+      ]
+    },
+    "volume": "148 ml",
+    "//longest_side": [
+      "assumes the textile item is folded thrice when stored",
+      "57.5 in. / 8 = 7.1875 in. = 182.56 mm ≈ 183 mm"
+    ],
+    "longest_side": "183 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "leather_belt",
+
+    "armor": [
+      {
+        "encumbrance": 0,
+
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "//ammo_restriction": [
+          "removed .22 LR capacity: the casing appears to be too thin to fit snug into the slots"
+        ],
+        "ammo_restriction": {
+          "50": 24,
+          "223": 24,
+          "300": 24,
+          "308": 24,
+          "762": 24,
+          "3006": 24,
+          "4570": 24,
+          "270win": 24,
+          "300blk": 24,
+          "5x50": 24,
+          "545x39": 24,
+          "762R": 24,
+          "8x40mm": 24,
+          "700nx": 24
+        },
+
+        "moves": 80
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
+
+    "price": "18 USD",
+    "price_postapoc": "50 cent"
+  }
+]
