@@ -117,7 +117,7 @@
     "name": {
       "str": "Tasmanian Tiger Mk II chest rig"
     },
-    "description": "A comfortable chest rig with plenty of space and additional MOLLE webbing to add more.  Comes with two spacious side pouches and four large magazine pouches by default.  This version also comes with an expanded bib for a little bit extra available webbing, though beware putting too many pouches on it: eventually, the accessories are going to start interfering with the shoulder straps, making wearing the rig a lot more uncomfortable.",
+    "description": "A comfortable chest rig with plenty of space and additional PALS webbing to add more.  Comes with two spacious side pouches and four large magazine pouches by default.  This version also comes with an expanded bib for a little bit extra available webbing, though beware putting too many pouches on it: eventually, the accessories are going to start interfering with the shoulder straps, making wearing the rig a lot more uncomfortable.",
 
     "weight": "1106 g",
     "//dimensions": {
@@ -183,7 +183,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front main MOLLE webbing",
+        "description": "Front main PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -209,7 +209,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front bib MOLLE webbing",
+        "description": "Front bib PALS webbing",
 
         "//notes": [
           "full encumbrance should be very high for such a small area, to account for the fact that eventually pouches would directly interfere with shoulder straps"
@@ -235,7 +235,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Pouch external MOLLE webbing",
+        "description": "Pouch external PALS webbing",
 
         "volume_encumber_modifier": 1.5,
 
@@ -259,7 +259,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Pouch external MOLLE webbing",
+        "description": "Pouch external PALS webbing",
 
         "volume_encumber_modifier": 1.5,
 
@@ -466,7 +466,7 @@
     "name": {
       "str": "Condor modular chest rig"
     },
-    "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in MOLLE webbing and in embedded pockets.  It features six pockets for AR-15 magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.",
+    "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for AR-15 magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.",
 
     "weight": "812 g",
     "//dimensions": {
@@ -518,7 +518,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front MOLLE webbing",
+        "description": "Front PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -544,7 +544,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front MOLLE webbing",
+        "description": "Front PALS webbing",
 
         "volume_encumber_modifier": 0.95,
 
@@ -570,7 +570,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front bib MOLLE webbing",
+        "description": "Front bib PALS webbing",
 
         "//notes": [
           "unlike other bibs, this one is located conveniently away from shoulder straps, thus making it that much more feasible to cover the entire bib in pouches without risking reduction in mobility"
@@ -595,7 +595,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Shoulder strap MOLLE webbing",
+        "description": "Shoulder strap PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -614,7 +614,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Shoulder strap MOLLE webbing",
+        "description": "Shoulder strap PALS webbing",
 
         "//volume_encumber_modifier": 1.25,
 
@@ -663,7 +663,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back MOLLE webbing",
+        "description": "Back PALS webbing",
 
         "volume_encumber_modifier": 0.9,
 
@@ -941,7 +941,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Lower back MOLLE webbing",
+        "description": "Lower back PALS webbing",
 
         "volume_encumber_modifier": 0.9,
 
