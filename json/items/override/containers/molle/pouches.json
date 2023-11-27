@@ -893,10 +893,10 @@
     ],
 
     "name": {
-      "str": "Haley Strategic frag grenade pouch",
-      "str_pl": "Haley Strategic frag grenade pouches"
+      "str": "Haley Strategic hand grenade pouch",
+      "str_pl": "Haley Strategic hand grenade pouches"
     },
-    "description": "A small nylon pouch, intended for storing a single M67 fragmentation grenade.  Can fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.",
+    "description": "A small nylon pouch, intended for storing a single small hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.",
 
     "//weight": [
       "using weight of a similar product made roughly to the same blueprint",
@@ -932,19 +932,12 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": [
-          {
-            "length": "90 mm",
-            "diameter": "64 mm",
-            "raw": "289 ml",
-            "trim": 0,
-            "notes": ["untrimmed to allow for slightly-larger grenades"]
-          }
-        ],
-        "max_contains_volume": "289 ml",
-        "max_contains_weight": "365 g",
-        "min_item_length": "80 mm",
-        "max_item_length": "115 mm",
+        "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
+        "max_contains_weight": "440 g",
+        "//max_contains_volume": "volume of M67 fragmentation grenade (213 ml) + 10% extra",
+        "max_contains_volume": "234 ml",
+        "//max_longest_side": "longest side of M67 fragmentation grenade",
+        "max_longest_side": "90 mm",
 
         "moves": 90
       }
