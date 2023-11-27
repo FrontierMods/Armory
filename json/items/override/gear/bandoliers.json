@@ -153,9 +153,12 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
+    "//flags": [
+      "removed OVERSIZE: while this belt is accomodating, it's unlikely to be comfortable for someone significantly larger than even a large regular human"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED"],
 
-    "//price": "price for the khaki model",
+    "//price": "price for the black model",
     "price": "73 USD",
     "price_postapoc": "50 cent"
   }
