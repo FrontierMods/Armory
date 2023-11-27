@@ -1722,5 +1722,90 @@
 
     "price": "29 USD",
     "//price_postapoc": "3 USD"
+  },
+  {
+    "id": "grenadebandolier",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://condoroutdoor.com/products/condor-double-frag-grenade-pouch",
+      [
+        "https://www.amazon.com/Condor-Outdoor-Double-Grenade-Pouch/dp/B00865NYUE",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "there appears to be no 4-grenade pouches on the market or in US military equipment sets, so we're modelling it as a commercial-market double-grenade pouch"
+    ],
+
+    "name": {
+      "str": "Condor double hand grenade pouch",
+      "str_pl": "Condor double hand grenade pouches"
+    },
+    "description": "A pair of small nylon bags sewn together, each designed to hold a single small hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.",
+
+    "weight": "148 g",
+    "//dimensions": {
+      "length": "2.5 in",
+      "width": "7 in",
+      "height": "4 in",
+      "raw": "1147 ml",
+      "trim": 0.075
+    },
+    "volume": "1061 ml",
+    "longest_side": "178 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "looks_like": "leather_belt",
+    "color": "dark_gray",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
+        "max_contains_weight": "440 g",
+        "//max_contains_volume": "volume of M67 fragmentation grenade (213 ml) + 10% extra",
+        "max_contains_volume": "234 ml",
+        "//max_longest_side": "longest side of M67 fragmentation grenade",
+        "max_longest_side": "90 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
+        "max_contains_weight": "440 g",
+        "//max_contains_volume": "volume of M67 fragmentation grenade (213 ml) + 10% extra",
+        "max_contains_volume": "234 ml",
+        "//max_longest_side": "longest side of M67 fragmentation grenade",
+        "max_longest_side": "90 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash grenades",
+      "holster_msg": "You stash your %s."
+    },
+
+    "//flags": ["added MOLLE_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "BELTED", "MOLLE_ATTACH"],
+
+    "price": "16 USD",
+    "price_postapoc": "25 cent"
   }
 ]
