@@ -367,5 +367,207 @@
 
     "price": "36 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "jacket_army_modern",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.propper.com/military-uniforms/army-uniform/acu-uniform/acu-coat-new-spec.html",
+      [
+        "https://www.helikon-tex.com/en_eur/bl-acu-pr-acu-shirt-polycotton-ripstop.html",
+        "weight",
+        "sizing reference"
+      ]
+    ],
+
+    "//notes": [
+      "modelled after size MR (medium, regular length)",
+      [
+        "it isn't readily apparent that Propper is the sole or primary manufacturer of the coat",
+        "however, their blog mentions the company being “the largest supplier of US military uniforms„",
+        "https://www.propper.com/blog/new-acu",
+        "otherwise, the information on who manufactures the coat does not appear to be readily available online",
+        "we assume that Propper is indeed the sole or primary manufacturer, and refer to the company as such in the item's description"
+      ]
+    ],
+
+    "//TODO": [
+      "Velcro patch surfaces (amend description)",
+      "fire resistance of the material?"
+    ],
+
+    "name": {
+      "str": "Army combat coat"
+    },
+    "description": "A thin coat covered in camouflage; produced by Propper.  Made from a ripstop material that combines nylon and cotton, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  It features two sleeve pockets, two chest pockets, and two slots for pens on the left sleeve.",
+
+    "weight": "610 g",
+    "//dimensions": {
+      "length": "78 cm",
+      "width": "71 cm",
+      "height": "3 mm",
+      "raw": "1661.4 ml",
+      "trim": 0.25,
+      "notes": [
+        "trim assumes the coat had been measured laid flat, with sleeve spread to how they'd sit on a person",
+        "height presumed",
+        "width acquired from visual reference"
+      ]
+    },
+    "volume": "1246 ml",
+    "longest_side": "98 mm",
+
+    "//material": "50/50 mix of nylon and ripstop cotton complies with Army's NIR (near-infrared signature) requirements",
+    "material": ["nylon", "cotton"],
+    "material_thickness": 0.4,
+    "warmth": 20,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "jacket_army",
+    "repairs_like": "trenchcoat",
+
+    "armor": [
+      {
+        "encumbrance": [3, 6],
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "coverage": 20,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_neck"]
+      },
+      {
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      },
+
+      {
+        "encumbrance": [2, 3],
+
+        "coverage": 100,
+        "covers": ["arm_l", "arm_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Sleeve pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "125 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "~10.75 in. = 273.05 mm",
+          "minus 1 in. in order to make the items easier to stash and extract",
+          "9.75 in. ≈ 247.65 mm = 248 mm"
+        ],
+        "max_item_length": "248 mm",
+
+        "moves": 140
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Sleeve pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "125 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "~10.3 in. = 261.62 mm",
+          "minus 1 in. in order to make the items easier to stash and extract",
+          "9.3 in. ≈ 236.22 mm = 236 mm"
+        ],
+        "max_item_length": "236 mm",
+
+        "moves": 140
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Chest pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "175 ml",
+        "//max_item_length": "assumed to be the same length as sleeve pockets",
+        "max_item_length": "236 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Chest pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "175 ml",
+        "//max_item_length": "assumed to be the same length as sleeve pockets",
+        "max_item_length": "236 mm",
+
+        "moves": 120
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pen slot",
+
+        "holster": true,
+
+        "//max_contains_weight": "based on Core's current `pen` audited volume, +100%, rounded",
+        "max_contains_weight": "16 g",
+        "//max_contains_volume": "based on Core's current `pen` audited volume, +20%, rounded",
+        "max_contains_volume": "13 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "originally measured as 7.7 in. for the entire pocket",
+          "7.25 in. appears to be the length of the usable pocket length"
+        ],
+        "max_item_length": "184 mm",
+
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pen slot",
+
+        "holster": true,
+
+        "//max_contains_weight": "based on Core's current `pen` audited volume, +100%, rounded",
+        "max_contains_weight": "16 g",
+        "//max_contains_volume": "based on Core's current `pen` audited volume, +20%, rounded",
+        "max_contains_volume": "13 ml",
+        "//max_item_length": [
+          "acquired from visual reference: sleeve length",
+          "originally measured as 7.7 in. for the entire pocket",
+          "7.25 in. appears to be the length of the usable pocket length"
+        ],
+        "max_item_length": "184 mm",
+
+        "moves": 80
+      }
+    ],
+
+    "//flags": [
+      "removed POCKETS: while the coat has some pockets, none of them is convenient to use for storing one's hands in for warmth"
+    ],
+    "flags": ["VARSIZE", "OUTER"],
+
+    "price": "70 USD",
+    "price_postapoc": "250 cent"
   }
 ]
