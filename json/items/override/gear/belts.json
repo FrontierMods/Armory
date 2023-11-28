@@ -135,5 +135,104 @@
 
     "price": "190 USD",
     "price_postapoc": "2 USD"
+  },
+  {
+    "id": "police_belt",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.blackhawk.com/tactical-nylon/gun-belts/foundation-series-black-belt-with-cobra/P1628178.html",
+      [
+        "https://www.walmart.com/ip/Blackhawk-37FS21BK-Foundation-Series-Black-Nylon-Adjustable-34-39-Gun-Belt/544208757",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Blackhawk Foundation duty belt"
+    },
+    "description": "A low-profile, sturdy black belt with PALS webbing.  A \"duty belt\" in the sense of being worn by police officers while on duty, it features plenty of space for pouches to hold items such a duty would imply.  It's surprisingly comfortable even with a large amount of pouches attached.",
+
+    "weight": "318 g",
+    "//dimensions": {
+      "length": "38 in",
+      "width": "2 in",
+      "height": "1.5 mm",
+      "raw": "73.55 ml",
+      "trim": 0.01,
+      "notes": "we assume 38 in. as the standard belt length, for the sake of consistency between different belts"
+    },
+    "volume": "73 ml",
+    "//longest_side": [
+      "assumed to be folded thrice when stored: 38 / 8 = 4.75 in. = 120.65 mm ≈ 121 mm"
+    ],
+    "longest_side": "121 mm",
+
+    "//material": [
+      "the buckles are aluminum",
+      "https://austrialpin.net/product-information/cobra-quick-releases/"
+    ],
+    "material": ["nylon", "aluminum"],
+
+    "symbol": "[",
+    "color": "brown",
+    "looks_like": "fireman_belt",
+    "repairs_like": "tool_belt",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "PALS webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//molle": {
+          "width": 25,
+          "height": 2,
+          "spaced": false,
+          "width_extra": 1,
+          "height_extra": 4,
+          "notes": [
+            "webbing width from belt width: 38 in. ≈ 25 1/3 cells = 25 + 1 cells"
+          ]
+        },
+        "max_contains_volume": "8052 ml",
+        "max_contains_weight": "33 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 1.5
+          },
+          {
+            "type": "aluminum",
+            "covered_by_mat": 3,
+            "thickness": 2
+          }
+        ],
+
+        "volume_encumber_modifier": 0.4,
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"]
+      }
+    ],
+
+    "//flags": [
+      "removed OVERSIZE: while this belt is somewhat-accomodating, it's unlikely to be comfortable for someone significantly larger than even a large regular human"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "125 USD",
+    "price_postapoc": "250 cent"
   }
 ]
