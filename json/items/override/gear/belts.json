@@ -234,5 +234,103 @@
 
     "price": "125 USD",
     "price_postapoc": "250 cent"
+  },
+  {
+    "id": "western_holster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://grommetsleathercraft.com/product/cartridge-gun-belt/"
+    ],
+
+    "//notes": [
+      "we're modelling this item as a separate belt to allow for more modularity with leather gear",
+      "specifically, we're modelling it as only having cartridge loops on one side, despite the original clearly having them on both, to allow for a holster to be added to the belt, much like one would add it to an actual belt"
+    ],
+
+    "name": {
+      "str": "Grommet's Leathercraft gun belt"
+    },
+    "description": "A thick leather belt with cartridge loops on the left side.  The embroidery gives you that cowboy feel.  Can hold up to 12 pistol-caliber rounds.  A holster can be attached to the right side to complete the Western-themed set.",
+
+    "weight": "260 g",
+    "volume": "550 ml",
+
+    "material": ["leather"],
+    "material_thickness": 3.2,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "leather_belt",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Space for a holster",
+
+        "holster": true,
+
+        "max_contains_weight": "8 kg",
+        "max_contains_volume": "4 L",
+        "max_item_length": "38 cm",
+
+        "moves": 90
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "//ammo_restriction": [
+          "removed the following calibers from capacity: the casings appears to be too thin or much too thick to fit snug into the slots",
+          [
+            ".32 ACP",
+            ".500 S&W Magnum",
+            ".460 Rowland",
+            ".454 Casull",
+            "5.7mm",
+            "4.6×30mm"
+          ]
+        ],
+        "ammo_restriction": {
+          "38": 12,
+          "40": 12,
+          "44": 12,
+          "45": 12,
+          "380": 12,
+          "762x25": 12,
+          "357mag": 12,
+          "357sig": 12,
+          "38super": 12,
+          "10mm": 12,
+          "45colt": 12,
+          "9x18": 12,
+          "9mm": 12
+        },
+
+        "moves": 90
+      }
+    ],
+
+    "//flags": [
+      "removed PALS_MEDIUM: even the original item was never intended to be MOLLE-compatible"
+    ],
+    "flags": ["BELTED", "OVERSIZE"],
+
+    "armor": [
+      {
+        "encumbrance": [2, 7],
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"]
+      }
+    ],
+
+    "//price": "price for the suede-lined model",
+    "price": "140 USD",
+    "price_postapoc": "1 USD"
   }
 ]
