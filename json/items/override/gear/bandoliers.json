@@ -328,10 +328,11 @@
     "description": "An embroidered leather bandolier for keeping pistol cartridges at hand.  If this doesn't make you feel like a cowboy, nothing will.",
 
     "//weight": [
-      "we take the larger estimate of weight for the belt itself from source: 10 oz = 283.5 g ≈ 284 g",
-      "we also take the larger estimate of weight for the loops from source, but halve it to account for reduced loop count: 5 oz / 2 = 2.5 oz = 70.874 g ≈ 71 g"
+      "estimated as area of bandolier × leather thickness per sq.ft.",
+      "(bandolier length [60 in.] × bandolier width [1.275 in.]) × leather thickness [8 oz / sq.ft.] = 4.25 oz = 120.49 g ≈ 121 g",
+      "width of bandolier estimated visually based on length of .45 ACP cartridge when stored in a loop of the bandolier"
     ],
-    "weight": "355 g",
+    "weight": "121 g",
     "//dimensions": {
       "length": "60 in",
       "width": "1.5 in",
