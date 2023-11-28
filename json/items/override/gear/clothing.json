@@ -33,7 +33,7 @@
     "name": {
       "str": "Army combat shirt"
     },
-    "description": "A thin shirt produced by Massif, with long camouflaged sleeves and khaki body fabric that extends into a tiny collar.  Made of a proprietary synthetic fabric that's breathable and flame-resistant, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Designed primary for hot-weather conditions, it holds its own well in milder weather.  Has a small pocket on each sleeve, and two slots for pens on the left sleeve.",
+    "description": "A thin shirt with long camouflaged sleeves and khaki body fabric that extends into a tiny collar; produced by Massif.  Made of a proprietary synthetic fabric that's breathable and flame-resistant, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Designed primary for hot-weather conditions, it holds its own well in milder weather.  Has a small pocket on each sleeve, and two slots for pens on the left sleeve.",
 
     "//weight": [
       "between three available sources of weight (each presumably for a different size), we take an average",
@@ -163,7 +163,7 @@
     ],
 
     "//flags": [
-      "removed POCKETS: while the ACU has some pockets, none of them is convenient to use for storing one's hands in for warmth"
+      "removed POCKETS: while the shirt has some pockets, none of them is convenient to use for storing one's hands in for warmth"
     ],
     "flags": ["VARSIZE"],
 
