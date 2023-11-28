@@ -362,7 +362,7 @@
     "pocket_data": [
       {
         "//ammo_restriction": [
-          "removed the following calibers from capacity: the casings appears to be too thin to fit snug into the slots",
+          "removed the following calibers from capacity: the casings appears to be too thin or much too thick to fit snug into the slots",
           [
             ".32 ACP",
             ".500 S&W Magnum",
