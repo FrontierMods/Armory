@@ -833,5 +833,84 @@
 
     "price": "24 USD",
     "price_postapoc": "50 cent"
+  },
+  {
+    "id": "back_holster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://grommetsleathercraft.com/product/handmade-leather-rifle-scabbard/"
+    ],
+
+    "name": {
+      "str": "Grommet's Leathercraft rifle scabbard"
+    },
+    "description": "A long leather holster for storing primarily hunting rifles; in a pinch, it can also be used to hold something else that's long.  Designed as essentially load-bearing equipment, it does not offer a quick way to grab the rifle.  Goes well with a leather belt with loops to store rifle rounds.",
+
+    "//weight": [
+      "estimated as (area of scabbard × 2) × leather thickness per sq.ft.",
+      "(scabbard length [40 in.] × scabbard height [7.4 in.] × (1 - 0.17)) × 2 × leather thickness [8 oz / sq.ft.] = 13.65 oz = 773.88 g ≈ 774 g",
+      "area of bandolier adjusted by 17% as per dimensions calculation"
+    ],
+    "weight": "774 g",
+    "//dimensions": {
+      "length": "40 in",
+      "width": "2 in",
+      "height": "7.4 in",
+      "raw": "9701.14 ml",
+      "trim": 0.17,
+      "notes": [
+        "width is assumed from visual reference",
+        "height is acquired from visual reference"
+      ]
+    },
+    "volume": "8052 ml",
+    "longest_side": "1016 mm",
+
+    "material": ["leather"],
+    "material_thickness": 3.2,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "quiver_large",
+
+    "armor": [
+      {
+        "encumbrance": [2, 12],
+
+        "coverage": 12,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_hanging_back"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "min_item_volume": "1500 ml",
+        "max_contains_volume": "7900 ml",
+        "max_contains_weight": "10 kg",
+        "//min_item_length": "37 in.: anything else would likely be impossible to fetch while the scabbard is hanging off one's back",
+        "min_item_length": "940 mm",
+        "//max_item_length": "42 in.: longer rifles would be sticking out from the outside",
+        "max_item_length": "1067 mm",
+
+        "moves": 420
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": "OVERSIZE stays on the assumption that the imaginary leather strap the scabbard uses to strap around the torso is long enough by default",
+    "flags": ["BELTED", "OVERSIZE", "NO_QUICKDRAW"],
+
+    "//price": "price for the suede-lined model",
+    "price": "200 USD",
+    "price_postapoc": "3 USD"
   }
 ]
