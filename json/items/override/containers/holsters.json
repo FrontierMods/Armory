@@ -676,5 +676,161 @@
 
     "price": "55 USD",
     "price_postapoc": "2 USD"
+  },
+  {
+    "id": "shoulder_holster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://condoroutdoor.com/products/condor-universal-shoulder-holster",
+      [
+        "https://www.amazon.com/Condor-Universal-Shoulder-Holster-USH-498/dp/B01N7MOSRT/",
+        "dimensions"
+      ]
+    ],
+
+    "name": {
+      "str": "Condor universal shoulder holster"
+    },
+    "description": "A universal pistol holster and a double pistol magazine pouch, worn over the shoulders with nylon straps.  The shoulder pads make prolonged wearing less uncomfortable.  Not exactly what detectives used to wear back in the day; this has more of a secret-agent kind of a vibe.",
+
+    "weight": "286 g",
+    "//dimensions": {
+      "length": "2.87 in",
+      "width": "8.78 in",
+      "height": "12.2 in",
+      "raw": "5037.75 ml",
+      "trim": 0.875
+    },
+    "volume": "630 ml",
+    "//longest_side": [
+      "assumes the holster can be folded thrice",
+      "12.2 in. / 8 = 1.525 in. = 38.735 mm ≈ 39 mm"
+    ],
+    "longest_side": "39 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+    "repairs_like": "holster",
+
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 7,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol holster",
+
+        "holster": true,
+
+        "//magazine_well": "100 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of a loaded M1911",
+          {
+            "length": "8.56 in",
+            "width": "1.27 in",
+            "height": "5.5 in",
+            "raw": "980 ml",
+            "trim": 0.55,
+            "result": "441 ml"
+          },
+          "added 50 ml to account for red dot sights",
+          "red dot sight volume based on Loadout models"
+        ],
+        "max_contains_volume": "491 ml",
+        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
+        "max_contains_weight": "1156 g",
+        "//max_item_length": "overall length of M1911, plus 2.5%",
+        "max_item_length": "222 mm",
+
+        "volume_encumber_modifier": 0.3,
+
+        "moves": 110
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pocket",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "volume of loaded M1911 mag, rounded up (70 ml)",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_contains_volume": "70 ml",
+        "//max_contains_weight": [
+          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+          "see: technical manual TM 9-1005-211-34",
+          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
+          "see: technical manual TM 43-0001-27"
+        ],
+        "max_contains_weight": "243 g",
+        "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
+        "min_item_length": "90 mm",
+        "//max_item_length": [
+          "5.1 in., slightly longer than loaded M1911 mag",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_item_length": "130 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pocket",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "volume of loaded M1911 mag, rounded up (70 ml)",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_contains_volume": "70 ml",
+        "//max_contains_weight": [
+          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+          "see: technical manual TM 9-1005-211-34",
+          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
+          "see: technical manual TM 43-0001-27"
+        ],
+        "max_contains_weight": "243 g",
+        "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
+        "min_item_length": "90 mm",
+        "//max_item_length": [
+          "5.1 in., slightly longer than loaded M1911 mag",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_item_length": "130 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "removed PALS_MEDIUM: this item was never meant to be a MOLLE-capable attachment"
+    ],
+    "flags": ["BELTED", "OVERSIZE", "PALS_MEDIUM"],
+
+    "price": "24 USD",
+    "price_postapoc": "50 cent"
   }
 ]
