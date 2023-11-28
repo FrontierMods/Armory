@@ -289,5 +289,83 @@
 
     "price": "217 USD",
     "price_postapoc": "2 USD"
+  },
+  {
+    "id": "gloves_tactical",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      [
+        "https://www.amazon.com/Mechanix-Wear-Specialty-Dexterity-Tactical/dp/B075P4CDD3",
+        "weight",
+        "dimensions"
+      ]
+    ],
+
+    "name": {
+      "str": "Mechanix Wear Specialty tactical gloves",
+      "str_pl": "pairs of Mechanix Wear Specialty tactical gloves"
+    },
+    "description": "A pair of tactical gloves.  Relatively-thin and with numerous changes made to ensure maximum hand and trigger finger dexterity, the Specialty gloves are designed primarily for military and law-enforcement use.  The outer side of the glove is made of a breathable material, ensuring comfort during prolonged wear.  The inner side is made of faux leather, with the goal of improving firearm handling.",
+
+    "weight": "70 g",
+    "//dimensions": {
+      "length": "9.84 in",
+      "width": "3.94 in",
+      "height": "0.51 in",
+      "raw": "324.01 ml",
+      "trim": 0.25,
+      "notes": [
+        "trim assumes the glove had been measured with fingers spread out"
+      ]
+    },
+    "volume": "243 ml",
+    "//longest_side": "assumes the glove being folded in two",
+    "longest_side": "125 mm",
+
+    "to_hit": 2,
+
+    "//material": [
+      "leather stands in for AX Suede: a synthetic material with leather-like texture; a faux leather",
+      "nomex stands in for TrekDry"
+    ],
+    "material": ["leather", "nomex"],
+    "material_thickness": 0.5,
+    "environmental_protection": 2,
+    "warmth": 15,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "fire_gauntlets",
+    "repairs_like": "gloves_survivor",
+
+    "armor": [
+      {
+        "encumbrance": 7,
+
+        "coverage": 100,
+        "covers": ["hand_l", "hand_r"]
+      }
+    ],
+
+    "relic_data": {
+      "passive_effects": [
+        {
+          "id": "GLOVES_RECOIL_CONTROL",
+          "type": "enchantment",
+
+          "has": "WORN",
+          "condition": "ALWAYS",
+
+          "values": [{ "value": "RECOIL_MODIFIER", "multiply": -0.075 }]
+        }
+      ]
+    },
+
+    "flags": ["VARSIZE", "STURDY"],
+
+    "price": "36 USD",
+    "price_postapoc": "1 USD"
   }
 ]
