@@ -172,5 +172,98 @@
     ],
 
     "price": "150 USD"
+  },
+  {
+    "id": "backpack_molle_ii_hydration",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://punisher.com.ua/en/chekhol-dlia-pytevoi-systemy-molle-ii-hydration-system-carrier/"
+    ],
+
+    "name": {
+      "str": "MOLLE II hydration carrier"
+    },
+    "description": "A cotton container similar to a backpack, designed to carry the MOLLE II hydration bladder.  With the carrier, the bladder could be worn like a backpack, in case you don't have a tactical backpack to store it in otherwise.",
+
+    "weight": "376 g",
+    "//dimensions": {
+      "length": "1.58 mm",
+      "width": "20 cm",
+      "height": "50 cm",
+      "raw": "1580 ml",
+      "trim": -0.075,
+      "notes": [
+        "length (depth) is presumed",
+        "trim handles shoulder straps etc."
+      ]
+    },
+    "volume": "1699 ml",
+
+    "to_hit": -1,
+    "bashing": 1,
+
+    "material": ["cotton", "plastic"],
+
+    "symbol": ")",
+    "color": "dark_gray",
+    "looks_like": "runner_bag",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "20 kg",
+        "max_contains_volume": "3500 ml",
+
+        "item_restriction": ["camelbak"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "PALS webbing",
+
+        "//molle": {
+          "width": 5,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "1548 ml",
+        "max_contains_weight": "7 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "cotton",
+            "covered_by_mat": 100,
+            "thickness": 1
+          },
+          {
+            "type": "plastic",
+            "covered_by_mat": 7,
+            "thickness": 1.5
+          }
+        ],
+
+        "coverage": 25,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_hanging_back"]
+      }
+    ],
+
+    "flags": ["BELTED"],
+
+    "price": "35 USD",
+    "price_postapoc": "5 cent"
   }
 ]
