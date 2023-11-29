@@ -569,5 +569,287 @@
 
     "price": "70 USD",
     "price_postapoc": "250 cent"
+  },
+  {
+    "id": "pants_army",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.propper.com/military-uniforms/army-uniform/acu-uniform/acu-trouser-new-spec.html",
+      [
+        "https://www.helikon-tex.com/en_eur/sp-acu-pr-acu-pants-polycotton-ripstop.html",
+        "weight",
+        "dimensions reference"
+      ]
+    ],
+
+    "//notes": ["modelled after size MR (medium, regular length)"],
+
+    "name": {
+      "str_sp": "ACU combat pants"
+    },
+    "description": "A durable pair of pants covered in camouflage; manufactured by Propper.  Made from a ripstop material that combines nylon and cotton, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Design features reinforced seat, felled seams, and leg closure via a drawstring.  Features two front pockets, two backpockets, two slanted cargo pockets, and two knee/ankle pockets.",
+
+    "weight": "715 g",
+    "//dimensions": [
+      {
+        "description": "Waist / crotch area",
+
+        "length": "2 mm",
+        "width": "41.2 cm",
+        "height": "27 cm",
+        "raw": "222.48 ml",
+        "trim": 0.1,
+        "result": "200.232 ml",
+        "notes": [
+          "trim assumes the pants had been measured laid flat",
+          "it also assumes that pockets' inherent internal dimensions even out against the tapering towards the waist"
+        ]
+      },
+      {
+        "description": "Pant",
+
+        "length": "2 mm",
+        "width": "20.2 cm",
+        "height": "82 cm",
+        "raw": "331.28 ml",
+        "trim": 0.1,
+        "result": "298.152 ml",
+        "notes": [
+          "trim assumes the pants had been measured laid flat",
+          "it also assumes that pockets' inherent internal dimensions even out against the tapering towards the ankle"
+        ]
+      },
+      {
+        "description": "Pant",
+
+        "length": "2 mm",
+        "width": "20.2 cm",
+        "height": "82 cm",
+        "raw": "331.28 ml",
+        "trim": 0.1,
+        "result": "298.152 ml",
+        "notes": [
+          "trim assumes the pants had been measured laid flat",
+          "it also assumes that pockets' inherent internal dimensions even out against the tapering towards the ankle"
+        ]
+      }
+    ],
+    "volume": "797 ml",
+    "//longest_side": [
+      "assumes that, much like any pants, this pair could be folded in half vertically, then folded thrice",
+      "109 cm = 1090 mm / 8 = 136.25 mm ≈ 136 mm"
+    ],
+    "longest_side": "136 mm",
+
+    "//material": "50/50 mix of ripstop (nylon and cotton) complies with Army's NIR (near-infrared signature) requirements",
+    "material": ["nylon", "cotton"],
+    "material_thickness": 0.25,
+    "warmth": 15,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "pants_cargo",
+    "repairs_like": "jeans",
+
+    "armor": [
+      {
+        "encumbrance": 3,
+        "volume_encumber_modifier": 0.6,
+
+        "coverage": 100,
+        "covers": ["leg_l", "leg_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front pocket",
+
+        "max_contains_weight": "2 kg",
+        "//dimensions": {
+          "length": "150 mm",
+          "width": "100 mm",
+          "height": "25 mm",
+          "raw": "375 ml",
+          "trim": 0.2
+        },
+        "max_contains_volume": "300 ml",
+        "//max_item_length": "anything longer would likely interfere with the wearer's ability to sit and maybe even walk",
+        "max_item_length": "140 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front pocket",
+
+        "max_contains_weight": "2 kg",
+        "//dimensions": {
+          "length": "150 mm",
+          "width": "100 mm",
+          "height": "25 mm",
+          "raw": "375 ml",
+          "trim": 0.2
+        },
+        "max_contains_volume": "300 ml",
+        "//max_item_length": "anything longer would likely interfere with the wearer's ability to sit and maybe even walk",
+        "max_item_length": "140 mm",
+
+        "moves": 100
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back pocket",
+
+        "max_contains_weight": "2 kg",
+        "//dimensions": {
+          "length": "150 mm",
+          "width": "150 mm",
+          "height": "20 mm",
+          "raw": "450 ml",
+          "trim": 0.2
+        },
+        "max_contains_volume": "360 ml",
+        "max_item_length": "170 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back pocket",
+
+        "max_contains_weight": "2 kg",
+        "//dimensions": {
+          "length": "150 mm",
+          "width": "150 mm",
+          "height": "20 mm",
+          "raw": "450 ml",
+          "trim": 0.2
+        },
+        "max_contains_volume": "360 ml",
+        "max_item_length": "170 mm",
+
+        "moves": 120
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Cargo pocket",
+
+        "max_contains_weight": "5 kg",
+        "//dimensions": {
+          "length": "200 mm",
+          "width": "150 mm",
+          "height": "50 mm",
+          "raw": "1500 ml",
+          "trim": 0.15
+        },
+        "max_contains_volume": "1275 ml",
+        "max_item_length": "225 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Cargo pocket",
+
+        "max_contains_weight": "5 kg",
+        "//dimensions": {
+          "length": "200 mm",
+          "width": "150 mm",
+          "height": "50 mm",
+          "raw": "1500 ml",
+          "trim": 0.15
+        },
+        "max_contains_volume": "1275 ml",
+        "max_item_length": "225 mm",
+
+        "moves": 90
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Ankle pocket",
+
+        "max_contains_weight": "2 kg",
+        "//dimensions": {
+          "length": "150 mm",
+          "width": "100 mm",
+          "height": "25 mm",
+          "raw": "375 ml",
+          "trim": 0.05,
+          "notes": [
+            "length acquired from visual reference",
+            "other dimensions estimated"
+          ]
+        },
+        "max_contains_volume": "356 ml",
+        "//max_item_length": "roughly the length of an AR-15 magazine, which has been shown to fit into the ankle pocket",
+        "max_item_length": "180 mm",
+
+        "moves": 140
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Ankle pocket",
+
+        "max_contains_weight": "2 kg",
+        "//dimensions": {
+          "length": "150 mm",
+          "width": "100 mm",
+          "height": "25 mm",
+          "raw": "375 ml",
+          "trim": 0.05,
+          "notes": [
+            "length acquired from visual reference",
+            "other dimensions estimated"
+          ]
+        },
+        "max_contains_volume": "356 ml",
+        "//max_item_length": "roughly the length of an AR-15 magazine, which has been shown to fit into the ankle pocket",
+        "max_item_length": "180 mm",
+
+        "moves": 140
+      }
+    ],
+
+    "snippet_category": [
+      {
+        "id": "apants_UCP",
+        "text": "A tough pair of pants.  Favored by the military.  This pair sports the US Army's gray, green and tan Universal Camouflage Pattern.  The pattern is notable for its lack of black."
+      },
+      {
+        "id": "apants_desert",
+        "text": "A tough pair of military pants patterned in desert camouflage.  They are lined with deep pockets."
+      },
+      {
+        "id": "apants_MARPAT",
+        "text": "A tough pair of military pants with a black, green and tan pixel camouflage pattern.  Commonly seen worn by US Marines."
+      },
+      {
+        "id": "apants_BDU",
+        "text": "A tough pair of military pants with the black, brown, green and tan Battle Dress camouflage pattern.  They look old."
+      },
+      {
+        "id": "mil_pants_navy",
+        "text": "A tough pair of military pants with a predominantly dark blue camouflage.  Favored by the US Navy."
+      }
+    ],
+
+    "flags": ["VARSIZE", "POCKETS", "SOFT"],
+
+    "price": "65 USD",
+    "price_postapoc": "250 cent"
   }
 ]
