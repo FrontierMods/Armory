@@ -31,7 +31,7 @@
     ],
 
     "name": {
-      "str": "Army combat shirt"
+      "str": "ACU combat shirt"
     },
     "description": "A thin shirt with long camouflaged sleeves and khaki body fabric that extends into a tiny collar; produced by Massif.  Made of a proprietary synthetic fabric that's breathable and flame-resistant, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Designed primary for hot-weather conditions, it holds its own well in milder weather.  Has a small pocket on each sleeve, and two slots for pens on the left sleeve.",
 
@@ -189,9 +189,9 @@
     ],
 
     "name": {
-      "str_sp": "Army combat boots"
+      "str_sp": "ACU combat boots"
     },
-    "description": "Model C790 waterproof combat boots, produced by Belleville.  Approved for flight with both Army and Air Force, these became standard issue in temperate climates, with hot- and cold-climate variants also available.  These boots have solid grip on most terrain.",
+    "description": "Model C790 waterproof combat boots; produced by Belleville.  Approved for flight with both Army and Air Force, these became standard issue in temperate climates, with hot- and cold-climate variants also available.  These boots have solid grip on most terrain.",
 
     "//weight": "31 oz per boot × 2 = 62 oz = 1757.7 g ≈ 1758 g",
     "weight": "1758 g",
@@ -398,9 +398,9 @@
     ],
 
     "name": {
-      "str": "Army combat coat"
+      "str": "ACU combat coat"
     },
-    "description": "A thin coat covered in camouflage; produced by Propper.  Made from a ripstop material that combines nylon and cotton, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  It features two sleeve pockets, two chest pockets, and two slots for pens on the left sleeve.",
+    "description": "A thin coat covered in camouflage; produced by Propper.  Made from a ripstop material that combines nylon and cotton, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Features two sleeve pockets, two chest pockets, and two slots for pens on the left sleeve.",
 
     "weight": "610 g",
     "//dimensions": {
@@ -418,7 +418,7 @@
     "volume": "1246 ml",
     "longest_side": "98 mm",
 
-    "//material": "50/50 mix of nylon and ripstop cotton complies with Army's NIR (near-infrared signature) requirements",
+    "//material": "50/50 mix of ripstop (nylon and cotton) complies with Army's NIR (near-infrared signature) requirements",
     "material": ["nylon", "cotton"],
     "material_thickness": 0.4,
     "warmth": 20,
