@@ -1,0 +1,56 @@
+[
+  {
+    "id": "camelbak",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://punisher.com.ua/en/obzor-komplekta-molle-ii-hydration-system-carrier/",
+      ["https://punisher.com.ua/en/pytevaia-systema-hydramax/697/", "price"]
+    ],
+
+    "name": {
+      "str": "MOLLE II hydration bladder"
+    },
+    "description": "A plastic bladder that can hold up to 3L of liquid.  This model, known as Hydramax, was one of the two hydration pouches supplied to Army soldiers as part of the MOLLE II modular equipment system.  The bladder provides a convenient tube to drink from while the bladder itself is stored in a rucksack or its dedicated carrier.",
+
+    "weight": "190 g",
+    "//dimensions": {
+      "length": "3.8 mm",
+      "width": "18 cm",
+      "height": "46 cm",
+      "raw": "246.89 ml",
+      "trim": -0.05,
+      "notes": [
+        "length (depth) is presumed for the bladder itself",
+        "trim handles the plastic cap"
+      ]
+    },
+    "volume": "259 ml",
+
+    "material": ["plastic"],
+
+    "symbol": ")",
+    "color": "dark_gray",
+    "looks_like": "2lcanteen",
+
+    "to_hit": -1,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "watertight": true,
+
+        "max_contains_weight": "20 kg",
+        "max_contains_volume": "3000 ml",
+        "max_item_volume": "32 ml"
+      }
+    ],
+
+    "flags": ["CANT_WEAR", "COLLAPSE_CONTENTS"],
+
+    "price": "40 USD",
+    "price_postapoc": "50 cent"
+  }
+]
