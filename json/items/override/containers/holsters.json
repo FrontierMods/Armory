@@ -912,5 +912,87 @@
     "//price": "price for the suede-lined model",
     "price": "200 USD",
     "price_postapoc": "3 USD"
+  },
+  {
+    "id": "sholster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.roundedgear.com/collections/trigger-guard-holsters/products/glock-17-19-19x-22-23-26-27-29-31-32-33-34-45-trigger-guard-tuckable-iwb-kydex-holster-pocket-carry-lanyard-combo",
+      [
+        "https://www.amazon.com/Quick-Lock-Holsters-LLC-Trigger/dp/B0854FPHMJ",
+        "weight reference"
+      ]
+    ],
+
+    "//notes": [
+      [
+        "comes standard with a belt clip, which appears to be replaceable",
+        "possibly worth modelling as a separate item"
+      ],
+      "this holster directly overlaps with the underrail, but there's nothing in the pocket settings to prevent the player from inserting a pistol with an underrail attachment"
+    ],
+
+    "name": {
+      "str": "Rounded Gear trigger guard holster for Glock pistols"
+    },
+    "description": "A tiny Kydex platform that holds a single pistol by its trigger guard like a holster.  The miniature retention mechanism allows for a quicker draw of the pistol.  The holster has a clip for attaching to a belt.  Unlike most holsters, this one has plenty of clearance for attachments, including long suppressors.",
+
+    "//weight": [
+      "estimated from a similar item",
+      "we add 100% extra to account for the difference in construction and materials"
+    ],
+    "weight": "40 g",
+    "//dimensions": {
+      "length": "116.2 mm",
+      "width": "32 mm",
+      "height": "79.3 mm",
+      "raw": "294.87 ml",
+      "trim": 0.25,
+      "notes": [
+        "width is that of a Glock 17",
+        "other dimensions acquired from visual reference"
+      ]
+    },
+    "volume": "221 ml",
+    "longest_side": "116 mm",
+
+    "material": ["plastic", "aluminum"],
+    "material_thickness": 2.03,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "2 L",
+        "max_item_length": "550 mm",
+
+        "item_restriction": ["glock_17", "glock_22", "glock_31"],
+
+        "moves": 70
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "replaced BELTED with CANT_WEAR",
+      "removed PALS_MEDIUM: this item is not a MOLLE-capable attachment after the overhaul",
+      "added BELT_GEAR"
+    ],
+    "flags": ["CANT_WEAR", "OVERSIZE", "BELT_GEAR"],
+
+    "price": "37 USD",
+    "price_postapoc": "1 USD"
   }
 ]
