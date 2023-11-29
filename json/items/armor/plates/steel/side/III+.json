@@ -26,17 +26,19 @@
     "volume": "181 ml",
     "longest_side": "152 mm",
 
-    "material": ["mc_steel"],
-
-    "material_thickness": 9,
+    "//material": "rubber stands in for Rhino anti-spalling cover, which is a polyurea",
+    "material": ["mc_steel", "rubber"],
+    "material_thickness": 8.89,
 
     "armor": [
       {
         "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
           {
-            "type": "mc_steel",
+            "type": "rubber",
             "covered_by_mat": 100,
-            "thickness": 8.89
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
           }
         ],
 
@@ -79,17 +81,19 @@
     "volume": "241 ml",
     "longest_side": "203 mm",
 
-    "material": ["mc_steel"],
-
-    "material_thickness": 9,
+    "//material": "rubber stands in for Rhino anti-spalling cover, which is a polyurea",
+    "material": ["mc_steel", "rubber"],
+    "material_thickness": 8.89,
 
     "armor": [
       {
         "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
           {
-            "type": "mc_steel",
+            "type": "rubber",
             "covered_by_mat": 100,
-            "thickness": 8.89
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
           }
         ],
 
@@ -101,10 +105,12 @@
       },
       {
         "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
           {
-            "type": "mc_steel",
+            "type": "rubber",
             "covered_by_mat": 100,
-            "thickness": 8.89
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
           }
         ],
 

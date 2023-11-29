@@ -14,7 +14,7 @@
       "str_pl": "Hoplite Armor UHMWPE small plates, NIJ III+"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
-    "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made from UHMWPE and wrapped in black ballistic nylon; produced by LTC, and sold by Hoplite Armor.  The design is strictly-minimal, with no markings of any sort.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
 
     "weight": "1361 g",
     "//dimensions": {
@@ -28,26 +28,29 @@
     "longest_side": "299 mm",
 
     "material": ["uhmwpe", "nylon"],
-
-    "material_thickness": 29,
+    "material_thickness": 29.21,
 
     "armor": [
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 2,
+
         "coverage": 30,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 2,
+
         "coverage": 8,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
@@ -76,7 +79,7 @@
       "str_pl": "Hoplite Armor UHMWPE medium plates, NIJ III+"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
-    "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made from UHMWPE and wrapped in black ballistic nylon; produced by LTC, and sold by Hoplite Armor.  The design is strictly-minimal, with no markings of any sort.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
 
     "weight": "1588 g",
     "//dimensions": {
@@ -90,26 +93,29 @@
     "longest_side": "318 mm",
 
     "material": ["uhmwpe", "nylon"],
-
-    "material_thickness": 29,
+    "material_thickness": 29.21,
 
     "armor": [
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 3,
+
         "coverage": 34,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 3,
+
         "coverage": 10,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
@@ -138,7 +144,7 @@
       "str_pl": "Hoplite Armor UHMWPE large plates, NIJ III+"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
-    "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made from UHMWPE and wrapped in black ballistic nylon; produced by LTC, and sold by Hoplite Armor.  The design is strictly-minimal, with no markings of any sort.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
 
     "weight": "1769 g",
     "//dimensions": {
@@ -152,26 +158,29 @@
     "longest_side": "337 mm",
 
     "material": ["uhmwpe", "nylon"],
-
-    "material_thickness": 29,
+    "material_thickness": 29.21,
 
     "armor": [
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 3,
+
         "coverage": 36,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 3,
+
         "coverage": 13,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
@@ -200,7 +209,7 @@
       "str_pl": "Hoplite Armor UHMWPE XL plates, NIJ III+"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
-    "description": "A polygonal ballistic plate with a slightly concave profile, made of UHMWPE.  Its inner surface is covered with ballistic nylon and is labeled \"TOP\", while the outward-facing surface is labeled \"STRIKE FACE\".  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"extra-large\" and can only fit in carriers that allow XL-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made from UHMWPE and wrapped in black ballistic nylon; produced by LTC, and sold by Hoplite Armor.  The design is strictly-minimal, with no markings of any sort.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"extra-large\" and can only fit in carriers that allow XL-sized plates.",
 
     "weight": "2041 g",
     "//dimensions": {
@@ -214,26 +223,29 @@
     "longest_side": "356 mm",
 
     "material": ["uhmwpe", "nylon"],
-
-    "material_thickness": 29,
+    "material_thickness": 29.21,
 
     "armor": [
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 4,
+
         "coverage": 38,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 28.91 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 4,
+
         "coverage": 16,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
