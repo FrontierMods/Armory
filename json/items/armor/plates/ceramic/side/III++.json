@@ -1,6 +1,6 @@
 [
   {
-    "id": "plate_side_uhmwpe_highcom_iiiplusplus",
+    "id": "plate_side_ceramic_highcom_iiiplusplus",
     "copy-from": "esbi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -8,10 +8,9 @@
     "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
 
     "name": {
-      "str": "HighCom UHMWPE side plate, NIJ III++",
-      "str_pl": "HighCom UHMWPE side plates, NIJ III++"
+      "str": "HighCom ceramic side plate, NIJ III++",
+      "str_pl": "HighCom ceramic side plates, NIJ III++"
     },
-    "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made with UHMWPE and wrapped in ballistic nylon.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "817 g",
@@ -25,20 +24,27 @@
     "volume": "593 ml",
     "longest_side": "152 mm",
 
-    "//material": "actually uses ceramic-PE composite",
-    "material": ["uhmwpe", "nylon"],
-
-    "material_thickness": 29,
+    "//material": [
+      "it is unclear which ceramic this plate uses",
+      "based on its thickness, we can surmise that it would probably be alumina"
+    ],
+    "material": ["alumina", "uhmwpe", "nylon"],
+    "material_thickness": 29.21,
 
     "armor": [
       {
         "material": [
           {
+            "type": "alumina",
+            "covered_by_mat": 100,
+            "thickness": 19.66
+          },
+          {
             "type": "uhmwpe",
             "covered_by_mat": 100,
-            "thickness": 28
+            "thickness": 9.25
           },
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 }
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
         "encumbrance": 1,
@@ -56,7 +62,7 @@
   },
 
   {
-    "id": "plate_side_tall_uhmwpe_highcom_iiiplusplus",
+    "id": "plate_side_tall_ceramic_highcom_iiiplusplus",
     "copy-from": "esbi_plate",
     "type": "ARMOR",
     "category": "armor",
@@ -64,8 +70,8 @@
     "//sources": ["https://www.highcomarmor.com/product/guardian-3s9/"],
 
     "name": {
-      "str": "HighCom UHMWPE tall side plate, NIJ III++",
-      "str_pl": "HighCom UHMWPE tall side plates, NIJ III++"
+      "str": "HighCom ceramic tall side plate, NIJ III++",
+      "str_pl": "HighCom ceramic tall side plates, NIJ III++"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
     "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made with UHMWPE and wrapped in ballistic nylon.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
@@ -81,20 +87,27 @@
     "volume": "792 ml",
     "longest_side": "203 mm",
 
-    "//material": "actually uses ceramic-PE composite",
-    "material": ["uhmwpe", "nylon"],
-
-    "material_thickness": 29,
+    "//material": [
+      "it is unclear which ceramic this plate uses",
+      "based on its thickness, we can surmise that it would probably be alumina"
+    ],
+    "material": ["alumina", "uhmwpe", "nylon"],
+    "material_thickness": 29.21,
 
     "armor": [
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
+          {
+            "type": "alumina",
+            "covered_by_mat": 100,
+            "thickness": 19.66
+          },
           {
             "type": "uhmwpe",
-            "covered_by_mat": 99,
-            "thickness": 28
-          }
+            "covered_by_mat": 100,
+            "thickness": 9.25
+          },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
         "encumbrance": 2,
@@ -105,12 +118,17 @@
       },
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
+          {
+            "type": "alumina",
+            "covered_by_mat": 100,
+            "thickness": 19.66
+          },
           {
             "type": "uhmwpe",
-            "covered_by_mat": 99,
-            "thickness": 28
-          }
+            "covered_by_mat": 100,
+            "thickness": 9.25
+          },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
         "encumbrance": 1,
