@@ -152,7 +152,12 @@
 
         "encumbrance": 1,
 
-        "//coverage": "medium SAPI plate upper torso coverage (34%) + straps and extra material (2%) + cummerbund (2%) = 38% × 2 sides",
+        "//coverage": [
+          "medium SAPI plate upper torso coverage: 34%",
+          "straps and extra material: 2%",
+          "cummerbund: 2%",
+          "total: 38% × 2 sides"
+        ],
         "coverage": 76,
         "cover_melee": 38,
         "cover_ranged": 76,
