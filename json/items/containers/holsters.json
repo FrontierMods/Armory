@@ -53,11 +53,9 @@
             "raw": "980 ml",
             "trim": 0.55,
             "result": "441 ml"
-          },
-          "added 50 ml to account for red dot sights",
-          "red dot sight volume based on Loadout models"
+          }
         ],
-        "max_contains_volume": "491 ml",
+        "max_contains_volume": "441 ml",
         "//max_contains_weight": "weight of a loaded M1911 + 50 g",
         "max_contains_weight": "1156 g",
         "//max_item_length": [
