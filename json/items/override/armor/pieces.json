@@ -69,6 +69,9 @@
 
         "//coverage": ["approximated from visual reference"],
         "coverage": 16,
+        "cover_melee": 8,
+        "cover_ranged": 16,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
@@ -105,6 +108,9 @@
           "full front coverage of the waist ← 40% (fronts coverage) / 2"
         ],
         "coverage": 20,
+        "cover_melee": 10,
+        "cover_ranged": 20,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_waist"],
 
@@ -141,6 +147,9 @@
           "56% of front coverage / 2"
         ],
         "coverage": 23,
+        "cover_melee": 12,
+        "cover_ranged": 23,
+
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_hip_l", "leg_hip_r"],
 
@@ -217,6 +226,9 @@
         "encumbrance": 3,
 
         "coverage": 80,
+        "cover_melee": 40,
+        "cover_ranged": 80,
+
         "covers": ["arm_l", "arm_r"],
         "specifically_covers": ["arm_shoulder_l", "arm_shoulder_r"],
         "volume_encumber_modifier": 0,
@@ -244,6 +256,9 @@
         "encumbrance": 3,
 
         "coverage": 60,
+        "cover_melee": 30,
+        "cover_ranged": 60,
+
         "covers": ["arm_l", "arm_r"],
         "specifically_covers": ["arm_upper_l", "arm_upper_r"],
         "volume_encumber_modifier": 0,
