@@ -267,7 +267,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Space for a holster",
+        "description": "Gear space",
 
         "holster": true,
 
@@ -275,7 +275,9 @@
         "max_contains_volume": "4 L",
         "max_item_length": "38 cm",
 
-        "moves": 90
+        "moves": 90,
+
+        "flag_restriction": ["BELT_GEAR", "BELT_GEAR_LARGE"]
       },
 
       {
