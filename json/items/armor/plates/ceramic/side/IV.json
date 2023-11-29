@@ -13,7 +13,7 @@
       "str": "Maverick ceramic side plate, NIJ IV",
       "str_pl": "Maverick ceramic side plates, NIJ IV"
     },
-    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of alumina and wrapped in UHMWPE. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, composed of an alumina strike face and a UHMWPE backer, wrapped in ballistic nylon.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "794 g",
     "//dimensions": {
@@ -26,9 +26,8 @@
     "volume": "561 ml",
     "longest_side": "152 mm",
 
-    "material": ["alumina", "uhmwpe"],
-
-    "material_thickness": 25,
+    "material": ["alumina", "uhmwpe", "nylon"],
+    "material_thickness": 25.4,
 
     "non_functional": "plate_side_ceramic_maverick_iv_destroyed",
     "damage_verb": "makes a crunch, something has shifted",
@@ -36,10 +35,13 @@
     "armor": [
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 24 }
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 17.57 },
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 7.53 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 2,
+
         "coverage": 2,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
@@ -61,7 +63,6 @@
     "price": "90 USD",
     "price_postapoc": "1 USD"
   },
-
   {
     "id": "plate_side_tall_ceramic_maverick_iv",
     "copy-from": "plate_side_ceramic_maverick_iv",
@@ -76,7 +77,7 @@
       "str": "Maverick ceramic tall side plate, NIJ IV",
       "str_pl": "Maverick ceramic tall side plates, NIJ IV"
     },
-    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of alumina and wrapped in UHMWPE. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, composed of an alumina strike face and a UHMWPE backer, wrapped in ballistic nylon. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "1247 g",
     "//dimensions": {
@@ -89,9 +90,8 @@
     "volume": "748 ml",
     "longest_side": "203 mm",
 
-    "material": ["alumina", "uhmwpe"],
-
-    "material_thickness": 25,
+    "material": ["alumina", "uhmwpe", "nylon"],
+    "material_thickness": 25.4,
 
     "non_functional": "plate_side_tall_ceramic_maverick_iv_destroyed",
     "damage_verb": "makes a crunch, something has shifted",
@@ -99,20 +99,26 @@
     "armor": [
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "alumina", "covered_by_mat": 99, "thickness": 24 }
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 17.57 },
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 7.53 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 2,
+
         "coverage": 2,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "alumina", "covered_by_mat": 99, "thickness": 24 }
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 17.57 },
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 7.53 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 1,
+
         "coverage": 5,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]

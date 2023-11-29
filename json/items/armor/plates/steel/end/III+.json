@@ -19,7 +19,7 @@
       "str": "CAG steel small plate, NIJ III+",
       "str_pl": "CAG steel small plates, NIJ III+"
     },
-    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel; manufactured by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"small\" and can only fit in carriers that allow small-sized plates.",
 
     "weight": "3629 g",
     "//dimensions": {
@@ -32,16 +32,24 @@
     "volume": "516 ml",
     "longest_side": "299 mm",
 
-    "material": ["mc_steel"],
-
-    "material_thickness": 9,
+    "//material": "rubber stands in for Rhino anti-spalling cover, which is a polyurea",
+    "material": ["mc_steel", "rubber"],
+    "material_thickness": 8.89,
 
     "armor": [
       {
         "material": [
-          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
+          }
         ],
+
         "encumbrance": 5,
+
         "coverage": 30,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
@@ -49,9 +57,17 @@
 
       {
         "material": [
-          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
+          }
         ],
+
         "encumbrance": 5,
+
         "coverage": 8,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
@@ -83,7 +99,7 @@
       "str": "CAG steel large plate, NIJ III+",
       "str_pl": "CAG steel large plates, NIJ III+"
     },
-    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel; manufactured by Custom Armor Group.  On the outward-facing side there's manufacturer's logo.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"large\" and can only fit in carriers that allow large-sized plates.",
 
     "weight": "4808 g",
     "//dimensions": {
@@ -96,16 +112,24 @@
     "volume": "674 ml",
     "longest_side": "337 mm",
 
-    "material": ["mc_steel"],
-
-    "material_thickness": 9,
+    "//material": "rubber stands in for Rhino anti-spalling cover, which is a polyurea",
+    "material": ["mc_steel", "rubber"],
+    "material_thickness": 8.89,
 
     "armor": [
       {
         "material": [
-          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
+          }
         ],
+
         "encumbrance": 8,
+
         "coverage": 36,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
@@ -113,9 +137,17 @@
 
       {
         "material": [
-          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
+          }
         ],
+
         "encumbrance": 8,
+
         "coverage": 13,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
@@ -160,16 +192,24 @@
     "volume": "773 ml",
     "longest_side": "356 mm",
 
-    "material": ["mc_steel"],
-
-    "material_thickness": 9,
+    "//material": "rubber stands in for Rhino anti-spalling cover, which is a polyurea",
+    "material": ["mc_steel", "rubber"],
+    "material_thickness": 8.89,
 
     "armor": [
       {
         "material": [
-          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
+          }
         ],
+
         "encumbrance": 4,
+
         "coverage": 38,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
@@ -177,9 +217,17 @@
 
       {
         "material": [
-          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 9 }
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.87 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm ≈ 1.02 mm",
+            "thickness": 1.02
+          }
         ],
+
         "encumbrance": 4,
+
         "coverage": 16,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
