@@ -12,7 +12,7 @@
       "str_pl": "HighCom UHMWPE side plates, NIJ III++"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
-    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of UHMWPE.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made with UHMWPE and wrapped in ballistic nylon.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "817 g",
     "//dimensions": {
@@ -33,12 +33,12 @@
     "armor": [
       {
         "material": [
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 },
           {
             "type": "uhmwpe",
-            "covered_by_mat": 99,
+            "covered_by_mat": 100,
             "thickness": 28
-          }
+          },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 1 }
         ],
 
         "encumbrance": 1,
@@ -68,7 +68,7 @@
       "str_pl": "HighCom UHMWPE tall side plates, NIJ III++"
     },
     "//description": "when we use Cordura instead of nylon, the description should be changed to reflect that",
-    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of UHMWPE.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made with UHMWPE and wrapped in ballistic nylon.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III++, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some, approaching the level of NIJ IV protection but not quite qualifying for it.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "1134 g",
     "//dimensions": {
