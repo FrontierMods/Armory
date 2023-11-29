@@ -598,7 +598,7 @@
     ],
 
     "//notes": [
-      "the item is actually two items: a Kydex knife sheath and a belt clip (Ulti-Clip 3+)",
+      "the item is actually two items: a Kydex holster and a belt clip (Ulti-Clip 3+)",
       "for the sake of simplicity, and because it wouldn't be beneficial to model them as two at this stage, we model both as a single item",
       "ultimately, this should be an inside-the-waistband holster, but this would require an override effort of base-game items that is currently beyond the scope of this mod",
       "for now, we pretend that this a regular outside-the-waistband clipped holster for Glock 17 etc."
