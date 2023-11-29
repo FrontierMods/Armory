@@ -1,58 +1,55 @@
 [
   {
-    "id": "plate_side_uhmwpe_highcom_iv",
+    "id": "plate_side_uhmwpe_abs_iv",
     "copy-from": "esbi_plate",
     "type": "ARMOR",
     "category": "armor",
 
-    "//sources": ["https://www.highcomarmor.com/product/guardian-4sas7/"],
-
-    "//notes": [
-      "research yields very few ceramic side plates from trustworthy sources",
-      "it appears as though both UHMWPE and level IV side plates are significantly more popular"
+    "//sources": [
+      "https://americanblastsystems.com/collections/lightweight-ballistic-plates/products/nij-level-iv-stand-alone-side-plate-2-2-lbs-1"
     ],
 
     "name": {
-      "str": "HighCom UHMWPE tall side plate, NIJ IV",
-      "str_pl": "HighCom UHMWPE tall side plates, NIJ IV"
+      "str": "ABS UHMWPE side plate, NIJ IV",
+      "str_pl": "ABS UHMWPE side plates, NIJ IV"
     },
-    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, made of alumina and wrapped in UHMWPE. Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, composed of UHMWPE and wrapped in ballistic nylon; manufactured by American Blast Systems.  The outward-facing side says<color_yellow>\nSTRIKE FACE\n\n</color>  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
 
-    "weight": "1542 g",
+    "weight": "998 g",
     "//dimensions": {
       "length": "6 in",
-      "width": "8 in",
-      "height": "0.75 in",
-      "raw": "443 ml",
+      "width": "6 in",
+      "height": "0.8 in",
+      "raw": "471.95 ml",
       "trim": 0.05
     },
-    "volume": "421 ml",
-    "longest_side": "203 mm",
+    "volume": "448 ml",
+    "longest_side": "152 mm",
 
-    "material": ["alumina", "uhmwpe"],
-
-    "material_thickness": 19,
-
-    "//non_functional": "destroyed_medium_ceramic_plate",
-    "//damage_verb": "makes a crunch, something has shifted",
+    "material": ["uhmwpe", "nylon"],
+    "material_thickness": 20.32,
 
     "armor": [
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "alumina", "covered_by_mat": 99, "thickness": 18 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 20.02 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 1,
+
         "coverage": 2,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "alumina", "covered_by_mat": 99, "thickness": 18 }
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 20.02 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
+
         "encumbrance": 1,
+
         "coverage": 5,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
@@ -61,7 +58,69 @@
 
     "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
 
-    "price": "169 USD",
+    "price": "215 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_side_tall_uhmwpe_abs_iv",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://americanblastsystems.com/collections/lightweight-ballistic-plates/products/nij-level-iv-stand-alone-side-plate-2-2-lbs-1"
+    ],
+
+    "name": {
+      "str": "ABS UHMWPE tall side plate, NIJ IV",
+      "str_pl": "ABS UHMWPE tall side plates, NIJ IV"
+    },
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, composed of UHMWPE and wrapped in ballistic nylon; manufactured by American Blast Systems.  The outward-facing side says<color_yellow>\nSTRIKE FACE\n\n</color>  This plate is rated for NIJ IV, which means it's been tested to survive at least 3 rounds of armor-piercing high-energy rifle rounds: some of the most dangerous rounds out there.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×6″ side panel and can only fit in side panel pouches on a plate carrier.",
+
+    "weight": "998 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "8 in",
+      "height": "0.8 in",
+      "raw": "629.26 ml",
+      "trim": 0.05
+    },
+    "volume": "598 ml",
+    "longest_side": "203 mm",
+
+    "material": ["uhmwpe", "nylon"],
+    "material_thickness": 20.32,
+
+    "armor": [
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 20.02 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 20.02 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+
+    "price": "215 USD",
     "price_postapoc": "1 USD"
   }
 ]
