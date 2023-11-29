@@ -78,6 +78,9 @@
           "augmented from visual reference"
         ],
         "coverage": 78,
+        "cover_melee": 39,
+        "cover_ranged": 78,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
@@ -163,8 +166,13 @@
             "thickness": 2.64
           }
         ],
+
         "encumbrance": 1,
+
         "coverage": 42,
+        "cover_melee": 21,
+        "cover_ranged": 42,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
@@ -182,8 +190,13 @@
             "thickness": 2.64
           }
         ],
+
         "encumbrance": 0,
+
         "coverage": 10,
+        "cover_melee": 5,
+        "cover_ranged": 10,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
       }

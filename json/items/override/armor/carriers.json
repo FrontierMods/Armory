@@ -154,6 +154,9 @@
 
         "//coverage": "medium SAPI plate upper torso coverage (34%) + straps and extra material (2%) + cummerbund (2%) = 38% × 2 sides",
         "coverage": 76,
+        "cover_melee": 38,
+        "cover_ranged": 76,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
@@ -184,6 +187,9 @@
 
         "//coverage": "medium SAPI plate lower torso coverage (10%) + extra material (1%) + cummerbund (1%) = 12 × 2 sides",
         "coverage": 24,
+        "cover_melee": 12,
+        "cover_ranged": 24,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
@@ -352,6 +358,9 @@
           "+2% for straps"
         ],
         "coverage": 80,
+        "cover_melee": 40,
+        "cover_ranged": 80,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
@@ -387,6 +396,9 @@
           "+12% for cummerbund"
         ],
         "coverage": 62,
+        "cover_melee": 31,
+        "cover_ranged": 62,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
@@ -738,6 +750,9 @@
           "+1% for straps"
         ],
         "coverage": 72,
+        "cover_melee": 36,
+        "cover_ranged": 72,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
@@ -774,6 +789,9 @@
           "+4% for side attachment straps"
         ],
         "coverage": 54,
+        "cover_melee": 27,
+        "cover_ranged": 54,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
@@ -1004,6 +1022,9 @@
           "+1% for straps"
         ],
         "coverage": 72,
+        "cover_melee": 36,
+        "cover_ranged": 72,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
@@ -1040,6 +1061,9 @@
           "+4% for side attachment straps"
         ],
         "coverage": 54,
+        "cover_melee": 27,
+        "cover_ranged": 54,
+
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
