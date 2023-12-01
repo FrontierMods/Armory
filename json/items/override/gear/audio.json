@@ -1,7 +1,6 @@
 [
   {
     "id": "powered_earmuffs",
-    "copy-from": "powered_earmuffs",
     "type": "TOOL_ARMOR",
     "category": "armor",
 
@@ -37,6 +36,13 @@
 
     "material": ["plastic", "nylon"],
     "material_thickness": 3,
+    "warmth": 5,
+
+    "symbol": "[",
+    "color": "blue",
+
+    "ammo": "battery",
+    "charges_per_use": 1,
 
     "//sound": {
       "NRR": 23
@@ -119,6 +125,16 @@
         "flag_restriction": ["BATTERY_LIGHT"],
         "default_magazine": "light_plus_battery_cell"
       }
+    ],
+
+    "flags": [
+      "DEAF",
+      "OVERSIZE",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "WATER_BREAK",
+      "ELECTRONIC",
+      "PADDED"
     ],
 
     "price": "70 USD",
