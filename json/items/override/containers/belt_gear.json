@@ -44,8 +44,6 @@
 
         "description": "Main pocket",
 
-        "rigid": true,
-
         "//dimensions": {
           "length": "8 in",
           "width": "12 in",
@@ -65,8 +63,6 @@
 
         "description": "Interior main pocket",
 
-        "rigid": true,
-
         "//dimensions": {
           "length": "4 in",
           "width": "5 in",
@@ -87,8 +83,6 @@
 
         "description": "Interior main pocket",
 
-        "rigid": true,
-
         "//dimensions": {
           "length": "4 in",
           "width": "5 in",
@@ -108,8 +102,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Interior main pocket",
-
-        "rigid": true,
 
         "//dimensions": {
           "length": "4 in",
@@ -153,8 +145,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Nail pouch",
-
-        "rigid": true,
 
         "//dimensions": {
           "length": "5 in",
@@ -204,6 +194,7 @@
         "description": "Left side pocket slot",
 
         "holster": true,
+        "rigid": true,
 
         "//dimensions": {
           "length": "85.00 mm",
@@ -232,6 +223,7 @@
         "description": "Left side pocket slot",
 
         "holster": true,
+        "rigid": true,
 
         "//dimensions": {
           "length": "85.00 mm",
