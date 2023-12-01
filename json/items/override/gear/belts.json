@@ -255,10 +255,26 @@
     },
     "description": "A thick leather belt with cartridge loops on the left side.  The embroidery gives you that cowboy feel.  Can hold up to 12 pistol-caliber rounds.  A holster can be attached to the right side to complete the Western-themed set.",
 
-    "weight": "260 g",
-    "volume": "550 ml",
+    "//weight": [
+      "estimated as (area of belt × 2) × leather thickness per sq.ft.",
+      "(belt length [38 in.] × belt height [2 in.]) × leather thickness [8 oz / sq.ft.] = 4.22 oz = 119.68 g ≈ 120 g",
+      "area of bandolier adjusted by 17% as per dimensions calculation"
+    ],
+    "weight": "120 g",
+    "//dimensions": {
+      "length": "38 in",
+      "width": "2 in",
+      "height": "3.2 mm",
+      "raw": "156.9 ml",
+      "trim": -0.05,
+      "notes": [
+        "we assume 38 in. as the standard belt length, for the sake of consistency between different belts",
+        "trim accounts for the cartridge loops and the buckle"
+      ]
+    },
+    "volume": "165 ml",
 
-    "material": ["leather"],
+    "material": ["leather", "mc_steel"],
     "material_thickness": 3.2,
 
     "symbol": "[",
@@ -284,8 +300,6 @@
 
       {
         "pocket_type": "CONTAINER",
-
-        "rigid": true,
 
         "//ammo_restriction": [
           "removed the following calibers from capacity: the casings appears to be too thin or much too thick to fit snug into the slots",
@@ -325,7 +339,16 @@
 
     "armor": [
       {
-        "encumbrance": [2, 7],
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 3.2 },
+          {
+            "type": "mc_steel",
+            "covered_by_mat": 2,
+            "thickness": 0.8
+          }
+        ],
+
+        "encumbrance": [3, 11],
 
         "coverage": 100,
         "covers": ["torso"],
