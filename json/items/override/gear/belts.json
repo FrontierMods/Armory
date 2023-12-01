@@ -160,7 +160,9 @@
       "height": "1.5 mm",
       "raw": "73.55 ml",
       "trim": 0.01,
-      "notes": "we assume 38 in. as the standard belt length, for the sake of consistency between different belts"
+      "notes": [
+        "we assume 38 in. as the standard belt length, for the sake of consistency between different belts"
+      ]
     },
     "volume": "73 ml",
     "//longest_side": [
