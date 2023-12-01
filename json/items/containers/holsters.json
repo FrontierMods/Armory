@@ -36,6 +36,10 @@
     "material": ["leather"],
     "material_thickness": 3.2,
 
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
