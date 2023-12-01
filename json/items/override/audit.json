@@ -1,57 +1,5 @@
 [
   {
-    "id": "western_holster",
-    "copy-from": "western_holster",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "western holster"
-    },
-
-    "delete": {
-      "flags": ["PALS_MEDIUM"]
-    }
-  },
-  {
-    "id": "shoulder_holster",
-    "copy-from": "shoulder_holster",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "shoulder holster"
-    },
-
-    "delete": {
-      "flags": ["PALS_MEDIUM"]
-    }
-  },
-  {
-    "id": "XS_holster",
-    "copy-from": "XS_holster",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "XS holster"
-    },
-
-    "delete": {
-      "flags": ["PALS_MEDIUM"]
-    }
-  },
-  {
-    "id": "sholster",
-    "copy-from": "sholster",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "fast draw holster"
-    },
-
-    "delete": {
-      "flags": ["PALS_MEDIUM"]
-    }
-  },
-  {
     "id": "sheath_birchbark",
     "copy-from": "sheath_birchbark",
     "type": "ARMOR",
