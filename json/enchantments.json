@@ -1,0 +1,20 @@
+[
+  {
+    "id": "BOOTS_SOLID_GRIP",
+    "type": "enchantment",
+
+    "has": "WORN",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "MOVE_COST", "multiply": -0.05 }]
+  },
+  {
+    "id": "GLOVES_RECOIL_CONTROL",
+    "type": "enchantment",
+
+    "has": "WORN",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "RECOIL_MODIFIER", "multiply": -0.075 }]
+  }
+]
