@@ -719,7 +719,7 @@
 
     "armor": [
       {
-        "encumbrance": 1,
+        "encumbrance": [2, 6],
 
         "coverage": 7,
         "covers": ["torso"],
@@ -827,9 +827,10 @@
 
     "//flags": [
       "removed PALS_MEDIUM: this item was never meant to be a MOLLE-capable attachment",
-      "OVERSIZE stays on the assumption that, while the shoulder holster is meant for regular-sized humans, the straps are just adjustable enough to be worn by someone much larger, if directly under their armpits"
+      "OVERSIZE stays on the assumption that, while the shoulder holster is meant for regular-sized humans, the straps are just adjustable enough to be worn by someone much larger, if directly under their armpits",
+      "added TARDIS: this appears to be the only way to emulate a pocket allowing items that stick out"
     ],
-    "flags": ["BELTED", "OVERSIZE"],
+    "flags": ["BELTED", "OVERSIZE", "TARDIS"],
 
     "price": "24 USD",
     "price_postapoc": "50 cent"
