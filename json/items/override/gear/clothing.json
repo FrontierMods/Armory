@@ -274,18 +274,12 @@
     "relic_data": {
       "passive_effects": [
         {
-          "id": "BOOTS_SOLID_GRIP",
-          "type": "enchantment",
-
-          "has": "WORN",
-          "condition": "ALWAYS",
-
-          "values": [{ "value": "MOVE_COST", "multiply": -0.05 }]
+          "id": "BOOTS_SOLID_GRIP"
         }
       ]
     },
 
-    "flags": ["VARSIZE", "WATERPROOF", "STURDY"],
+    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "MUNDANE"],
 
     "price": "217 USD",
     "price_postapoc": "2 USD"
@@ -352,18 +346,12 @@
     "relic_data": {
       "passive_effects": [
         {
-          "id": "GLOVES_RECOIL_CONTROL",
-          "type": "enchantment",
-
-          "has": "WORN",
-          "condition": "ALWAYS",
-
-          "values": [{ "value": "RECOIL_MODIFIER", "multiply": -0.075 }]
+          "id": "GLOVES_RECOIL_CONTROL"
         }
       ]
     },
 
-    "flags": ["VARSIZE", "STURDY"],
+    "flags": ["VARSIZE", "STURDY", "MUNDANE"],
 
     "price": "36 USD",
     "price_postapoc": "1 USD"
