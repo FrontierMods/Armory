@@ -31,6 +31,9 @@
     "material": ["alumina", "uhmwpe", "nylon"],
     "material_thickness": 29.21,
 
+    "non_functional": "plate_side_ceramic_highcom_iiiplusplus_compromised",
+    "damage_verb": "makes a crunch, something has shifted",
+
     "armor": [
       {
         "material": [
@@ -59,6 +62,22 @@
 
     "price": "309 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_side_ceramic_highcom_iiiplusplus_compromised",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised HighCom ceramic side plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esbi_plate",
+
+    "material": ["alumina_damaged", "uhmwpe", "nylon"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
   },
 
   {
@@ -93,6 +112,9 @@
     ],
     "material": ["alumina", "uhmwpe", "nylon"],
     "material_thickness": 29.21,
+
+    "non_functional": "plate_side_tall_ceramic_highcom_iiiplusplus_compromised",
+    "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
       {
@@ -143,5 +165,21 @@
 
     "price": "349 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_side_tall_ceramic_highcom_iiiplusplus_compromised",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised HighCom ceramic tall side plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esbi_plate",
+
+    "material": ["alumina_damaged", "uhmwpe", "nylon"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
   }
 ]

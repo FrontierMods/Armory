@@ -80,7 +80,7 @@
     "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
     "looks_like": "esapi_plate",
 
-    "material": ["alumina_damaged"],
+    "material": ["alumina_damaged", "uhmwpe", "nylon"],
 
     "price": "0 cent",
     "price_postapoc": "1 cent"
@@ -119,7 +119,7 @@
     "material": ["alumina", "uhmwpe", "nylon"],
     "material_thickness": 27.94,
 
-    "non_functional": "destroyed_large_ceramic_plate",
+    "non_functional": "plate_ceramic_medium_shellback_iiiplus_compromised",
     "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
@@ -168,7 +168,7 @@
     "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
     "looks_like": "esapi_plate",
 
-    "material": ["alumina_damaged"],
+    "material": ["alumina_damaged", "uhmwpe", "nylon"],
 
     "price": "0 cent",
     "price_postapoc": "1 cent"
@@ -255,7 +255,7 @@
     "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
     "looks_like": "esapi_plate",
 
-    "material": ["alumina_damaged"],
+    "material": ["alumina_damaged", "uhmwpe", "nylon"],
 
     "price": "0 cent",
     "price_postapoc": "1 cent"
@@ -294,7 +294,7 @@
     "material": ["alumina", "uhmwpe", "nylon"],
     "material_thickness": 27.94,
 
-    "non_functional": "plate_ceramic_large_shellback_iiiplus_compromised",
+    "non_functional": "plate_ceramic_xl_shellback_iiiplus_compromised",
     "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
@@ -342,7 +342,7 @@
     "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
     "looks_like": "esapi_plate",
 
-    "material": ["alumina_damaged"],
+    "material": ["alumina_damaged", "uhmwpe", "nylon"],
 
     "price": "0 cent",
     "price_postapoc": "1 cent"

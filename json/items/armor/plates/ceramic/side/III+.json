@@ -29,7 +29,7 @@
     "material": ["silicon_carbide", "uhmwpe", "nylon"],
     "material_thickness": 20.32,
 
-    "non_functional": "plate_side_maverick_iv_destroyed",
+    "non_functional": "plate_side_ceramic_battle_steel_iiiplus_compromised",
     "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
@@ -57,6 +57,22 @@
     "price": "80 USD",
     "price_postapoc": "1 USD"
   },
+  {
+    "id": "plate_side_ceramic_battle_steel_iiiplus_compromised",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised Battle Steel ceramic side plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esbi_plate",
+
+    "material": ["silicon_carbide_damaged", "uhmwpe", "nylon"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
+  },
 
   {
     "id": "plate_side_tall_ceramic_hudis_iiiplus",
@@ -69,10 +85,10 @@
     ],
 
     "name": {
-      "str": "Hudi's Tactical ceramic tall side plate, NIJ III+",
-      "str_pl": "Hudi's Tactical ceramic tall side plates, NIJ III+"
+      "str": "Hudi's ceramic tall side plate, NIJ III+",
+      "str_pl": "Hudi's ceramic tall side plates, NIJ III+"
     },
-    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, composed of a silicon carbide strike face and a UHMWPE backer, wrapped in ballistic nylon.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
+    "description": "A full-cut ballistic plate with slightly clipped corners and a single-curve profile, composed of a silicon carbide strike face and a UHMWPE backer, wrapped in ballistic nylon; produced by Hudi's Tactical.  Manufacturer's logo is proudly displayed on the outward-facing side.  This plate is rated for NIJ III+, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds, and then some.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is a 6″×8″ side panel and can only fit in side panel pouches on a plate carrier.",
 
     "weight": "726 g",
     "//dimensions": {
@@ -88,7 +104,7 @@
     "material": ["silicon_carbide", "uhmwpe", "nylon"],
     "material_thickness": 17.78,
 
-    "non_functional": "plate_side_maverick_iv_destroyed",
+    "non_functional": "plate_side_tall_ceramic_hudis_iiiplus_compromised",
     "damage_verb": "makes a crunch, something has shifted",
 
     "armor": [
@@ -133,5 +149,21 @@
     "//price": "$160 / pair",
     "price": "80 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "plate_side_tall_ceramic_hudis_iiiplus_compromised",
+    "copy-from": "esbi_plate",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "compromised Hudi's ceramic tall side plate"
+    },
+    "description": "This ceramic plate has been taken out of service by the damage it had suffered.  It will no longer provide significant protection against bullets, and should be replaced or thrown away.",
+    "looks_like": "esbi_plate",
+
+    "material": ["silicon_carbide_damaged", "uhmwpe", "nylon"],
+
+    "price": "0 cent",
+    "price_postapoc": "1 cent"
   }
 ]
