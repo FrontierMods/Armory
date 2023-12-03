@@ -305,5 +305,96 @@
 
     "price": "2040 USD",
     "price_postapoc": "3 USD"
+  },
+  {
+    "id": "tac_fullhelmet",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.securityprousa.com/products/ronin-ballistic-helmet-facemask",
+      [
+        "https://loadoutroom.com/119893/the-devtac-ronin-ballistic-helmet-looks-straight-out-of-a-video-game-heres-a-review/",
+        "material thickness"
+      ]
+    ],
+
+    "//notes": [
+      "modelled after size Regular Long",
+      [
+        "technically, the Ronin is a platform for a variety of helmet attachments, including ballistic and comfort ones",
+        "for now, we presume that it's a helmet with non-replaceable parts",
+        "there's very little information on what it can take, since most designs seem to be bespoke"
+      ]
+    ],
+
+    "name": {
+      "str": "DevTac Ronin ballistic helmet"
+    },
+    "description": "A futuristic-looking helmet that covers the entirety of your head.  Developed by a Japanese company, it features a distinctly Japanese design mixed with deep cyberpunk motifs.  Despite the gimmicky look compared to an average military helmet, the Ronin can hold its own on the battlefield, its full-head coverage proving to be one of its main selling points.  ",
+
+    "//weight": "weight of the entire system (helmet + shroud + rails)",
+    "weight": "2400 g",
+    "//dimensions": {
+      "length": "10.4 in",
+      "width": "9.5 in",
+      "height": "5.77 in",
+      "raw": "9341.87 ml",
+      "trim": 0.825,
+      "notes": [
+        "absent actual dimensions, we use those of the ACH with an slightly-higher trim"
+      ]
+    },
+    "volume": "1635 ml",
+    "longest_side": "264 mm",
+
+    "//material": ["TODO: Flextech foam for the liner"],
+    "material": ["kevlar", "thermo_resin"],
+    "material_thickness": 7,
+    "environmental_protection": 2,
+    "warmth": 25,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "helmet_motor",
+    "repairs_like": "xlkevlar",
+
+    "to_hit": -1,
+    "bashing": 10,
+    "techniques": ["WBLOCK_1"],
+
+    "armor": [
+      {
+        "encumbrance": 10,
+        "encumbrance_modifiers": ["WELL_SUPPORTED"],
+
+        "coverage": 80,
+        "covers": ["head"]
+      },
+      {
+        "encumbrance": 20,
+
+        "coverage": 100,
+        "covers": ["eyes"],
+        "rigid_layer_only": true
+      },
+      {
+        "//encumbrance": "the helmet features plenty of mesh space to not breathing inside it in any significant manner",
+        "encumbrance": 5,
+
+        "coverage": 100,
+        "covers": ["mouth"],
+        "rigid_layer_only": true
+      }
+    ],
+
+    "//pocket_data": [
+      "the Ronin has a mount for NVGs, as well as two sets of short side rails, but we have no real way to use that right now"
+    ],
+
+    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "SUN_GLASSES", "PADDED"],
+
+    "price": "3299 USD",
+    "price_postapoc": "3 USD"
   }
 ]
