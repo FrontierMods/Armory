@@ -22,23 +22,24 @@
     "name": {
       "str": "Condor large drop leg platform"
     },
-    "description": "A thin piece of fabric with PALS webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.",
+    "description": "A thin piece of fabric with PALS webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.  Activate to adjust fit for smaller legs.",
 
     "weight": "227 g",
     "//dimensions": {
       "length": "10 in",
       "width": "9 in",
-      "height": "5 mm",
-      "raw": "290 ml",
+      "height": "1 mm",
+      "raw": "58.06 ml",
       "trim": 0.05,
       "notes": ["height (thickness) is assumed from visuals"]
     },
-    "volume": "276 ml",
+    "volume": "55 ml",
     "//longest_side": "we assume it folds in half along the vertical axis when being transformed",
     "longest_side": "254 mm",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 5,
+    "material_thickness": 1,
+
     "symbol": "[",
     "color": "dark_gray",
     "looks_like": "ammo_satchel",
@@ -81,7 +82,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "encumbrance": [0, 8],
+        "encumbrance": [2, 8],
 
         "//molle": {
           "width": 6,
@@ -105,6 +106,6 @@
     "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
 
     "price": "24 USD",
-    "//price_postapoc": "250 cent"
+    "price_postapoc": "25 cent"
   }
 ]
