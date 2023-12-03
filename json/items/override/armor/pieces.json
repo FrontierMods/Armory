@@ -65,7 +65,7 @@
           }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": 4,
 
         "//coverage": ["approximated from visual reference"],
         "coverage": 16,
@@ -101,7 +101,7 @@
           }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": 4,
 
         "//coverage": [
           "approximated from visual reference",
@@ -140,7 +140,7 @@
           }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": 4,
 
         "//coverage": [
           "approximated from visual reference",
