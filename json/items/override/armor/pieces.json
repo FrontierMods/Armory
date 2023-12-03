@@ -116,7 +116,7 @@
 
         "volume_encumber_modifier": 0.3,
 
-        "layers": ["OUTER", "BELTED"]
+        "layers": ["BELTED"]
       },
 
       {
@@ -153,13 +153,11 @@
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_hip_l", "leg_hip_r"],
 
-        "volume_encumber_modifier": 0.3,
-
-        "layers": ["OUTER"]
+        "volume_encumber_modifier": 0.3
       }
     ],
 
-    "flags": ["IOTV_GROIN", "CANT_WEAR"],
+    "flags": ["IOTV_GROIN", "BELTED"],
 
     "price": "150 USD",
     "//price_postapoc": "1 USD"
@@ -267,7 +265,7 @@
       }
     ],
 
-    "flags": ["IOTV_SHOULDER", "CANT_WEAR"],
+    "flags": ["IOTV_SHOULDER", "OUTER", "BELTED"],
 
     "price": "60 USD",
     "//price_postapoc": "1 USD"
