@@ -106,27 +106,32 @@
 
     "armor": [
       {
-        "encumbrance": 2,
+        "encumbrance": [2, 20],
 
         "//coverage": [
-          "half of large SAPI plate coverage = 18%",
-          "harness = 4% (front straps) + 4% (back straps) + 1% (side straps) = 9%"
+          "~18% of front upper torso coverage = 7%",
+          "~30% of side upper torso coverage = 6% * 2 = 12%",
+          "harness = 4% (front straps) + 6% (upper back straps) = 10%"
         ],
-        "coverage": 27,
+        "coverage": 29,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": 0,
+        "encumbrance": [1, 12],
 
-        "//coverage": "half of large SAPI plate coverage ≈ 6%",
-        "coverage": 6,
+        "//coverage": [
+          "~40% of front lower torso coverage = 16%",
+          "~50% of side lower torso coverage = 10% * 2 = 20%",
+          "3% for lower back straps"
+        ],
+        "coverage": 39,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.1
+        "volume_encumber_modifier": 0.2
       }
     ],
 
