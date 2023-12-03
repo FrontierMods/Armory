@@ -8,6 +8,12 @@ You can help the mod by implementing the following features for the next stable 
 
 [proper outline TBD]
 
+## Multimodal pockets
+
+**TL;DR**: some pockets should be definable as usable in multiple ways (e.g. either a holster for an object above defined dimensions, or a non-holster pocket for many smaller items), where using one way disqualifies all others for that pocket.
+
+[proper outline TBD]
+
 ## Volume calculation from dimensions
 
 **TL;DR**: allow initial volume and longest-side values to be calculated from a provided `dimensions` object (or an array of objects).
