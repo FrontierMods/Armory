@@ -280,7 +280,7 @@
     "armor": [
       {
         "//encumbrance": "the rig itself is reported to be very comfortable to wear",
-        "encumbrance": 2,
+        "encumbrance": [2, 26],
 
         "//coverage": [
           "22% from front panel",
@@ -296,7 +296,7 @@
       },
       {
         "//encumbrance": "the rig itself is reported to be very comfortable to wear",
-        "encumbrance": 1,
+        "encumbrance": [1, 14],
 
         "//coverage": [
           "4% from the front rig panel",
@@ -621,7 +621,7 @@
 
     "armor": [
       {
-        "encumbrance": 1,
+        "encumbrance": [4, 30],
 
         "//coverage": [
           "(30% / 2 =) 15% from bib",
@@ -636,7 +636,7 @@
         "volume_encumber_modifier": 0.75
       },
       {
-        "encumbrance": 1,
+        "encumbrance": [3, 20],
 
         "coverage": 95,
         "covers": ["torso"],
@@ -981,7 +981,7 @@
 
     "armor": [
       {
-        "encumbrance": 1,
+        "encumbrance": [2, 28],
 
         "//coverage": [
           "35% front coverage",
@@ -995,7 +995,7 @@
         "volume_encumber_modifier": 0.75
       },
       {
-        "encumbrance": 0,
+        "encumbrance": [1, 16],
 
         "coverage": 5,
         "covers": ["torso"],
@@ -1189,7 +1189,7 @@
 
     "armor": [
       {
-        "encumbrance": 2,
+        "encumbrance": [2, 15],
 
         "//coverage": [
           "half of large SAPI plate coverage = 18%",
@@ -1202,14 +1202,14 @@
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": 0,
+        "encumbrance": [1, 8],
 
         "//coverage": "half of large SAPI plate coverage ≈ 6%",
         "coverage": 6,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.1
+        "volume_encumber_modifier": 0.2
       }
     ],
 
