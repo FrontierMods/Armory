@@ -100,6 +100,15 @@
       }
     ],
 
+    "use_action": {
+      "type": "transform",
+
+      "target": "platform_leg_molle_condor_xs",
+      "msg": "You adjust the leg platform.",
+
+      "menu_text": "Adjust"
+    },
+
     "//flags": [
       "removed PALS_MEDIUM, since this is an item that's intended to be worn on the leg"
     ],
@@ -107,5 +116,28 @@
 
     "price": "24 USD",
     "price_postapoc": "25 cent"
+  },
+  {
+    "id": "platform_leg_molle_condor_xs",
+    "copy-from": "legpouch_large",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "Condor large drop leg platform (XS)"
+    },
+    "description": "A thin piece of fabric with PALS webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.  Currently adjusted to fit very small thighs.  Activate to adjust back to normal diameter.",
+
+    "use_action": {
+      "type": "transform",
+
+      "target": "legpouch_large",
+      "msg": "You adjust the leg platform.",
+
+      "menu_text": "Adjust"
+    },
+
+    "extend": {
+      "flags": ["TRADER_AVOID"]
+    }
   }
 ]
