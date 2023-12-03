@@ -10,6 +10,11 @@
       [
         "https://www.fortbraggsurplus.us/ach-advanced-combat-helmet-u.s.military",
         "price"
+      ],
+      [
+        "https://www.researchgate.net/figure/Major-dimensions-for-the-ACH-shells-of-four-different-sizes_tbl1_281550950",
+        "material thickness",
+        "dimensions"
       ]
     ],
 
@@ -20,7 +25,7 @@
     "name": {
       "str": "Advanced Combat Helmet"
     },
-    "description": "The ACH is a ballistic helmet intended to protect its wearer from fragmentation, blunt trauma, and, to a smaller extent, bullets.  This model of helmet was standard issue in the Army prior to the Cataclysm.  It features several attachment points for extra equipment; you can use it to add extra protection or to mount combat headphones.",
+    "description": "The ACH is a ballistic helmet intended to protect its wearer from fragmentation, blunt trauma, and, to a smaller extent, bullets. Manufactured by MKU.  This model of helmet was standard issue in the Army prior to the Cataclysm.  It features several attachment points for extra equipment; you can use it to add extra protection or to mount combat headphones.",
 
     "//weight": [
       "MKU, one of the manufacturers of the ACH, says on their page that maximum weight of model L is 1.45 kg",
@@ -30,18 +35,21 @@
     ],
     "weight": "1450 g",
     "//dimensions": {
-      "length": "10.5 in",
+      "length": "10.4 in",
       "width": "9.5 in",
-      "height": "7 in",
-      "raw": "11442.27 ml",
-      "trim": 0.8
+      "height": "5.77 in",
+      "raw": "9341.87 ml",
+      "trim": 0.775,
+      "notes": [
+        "dimensions are adjusted to their inch equivalent from the study source"
+      ]
     },
-    "volume": "2289 ml",
-    "longest_side": "267 mm",
+    "volume": "2102 ml",
+    "longest_side": "264 mm",
 
-    "material": ["kevlar_rigid", "plastic"],
-    "material_thickness": 9,
-    "warmth": 20,
+    "material": ["kevlar", "thermo_resin"],
+    "material_thickness": 7.81,
+    "warmth": 10,
 
     "symbol": "[",
     "color": "green",
@@ -82,6 +90,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Side rail mount",
+
+        "holster": true,
 
         "volume_encumber_modifier": 0,
 
@@ -129,6 +139,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Back mount",
+
+        "holster": true,
 
         "volume_encumber_modifier": 0,
 
