@@ -6,7 +6,11 @@ In particular, grounds existing equipment in reality by providing them with real
 
 Requires [Frontiers _Core_](https://github.com/FrontierMods/Core).
 
-[**Realism score**](https://github.com/FrontierMods/Core/blob/main/documentation/DESIGN_NOTES.md#realism-score): 5
+## Realism score
+
+_[explainer](https://github.com/FrontierMods/Core/blob/main/documentation/DESIGN_NOTES.md#realism-score)_
+
+**Realism score**: **5**
 
 - items are modelled as faithfully as possible
 
@@ -25,6 +29,8 @@ The latest supported version of the game is **0.G**.
 See [`ROADMAP.md`](./documentation/ROADMAP.md) to find out what's coming for Armory.
 
 # How You Can Help
+
+See [`HOW_YOU_CAN_HELP.md`](./documentation/HOW_YOU_CAN_HELP.md) to find out how you can help the mod grow.
 
 # License
 
