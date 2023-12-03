@@ -157,5 +157,153 @@
 
     "price": "310 USD",
     "price_postapoc": "2 USD"
+  },
+  {
+    "id": "tac_helmet",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://shop.gentexcorp.com/ops-core-fast-sf-high-cut-helmet-system/",
+      ["https://punisher.com.ua/en/shlem-ops-core-fast-high-cut/", "materials"]
+    ],
+
+    "//notes": [
+      "modelled after size L, which, in this instance, appear to be the 'average' size"
+    ],
+
+    "//TODO": ["Velcro areas"],
+
+    "name": {
+      "str": "Ops-Core FAST helmet"
+    },
+    "description": "A slick-looking high-cut helmet with a set of rails on the side, as well as front and back mounts.  Manufactured by Gentex under the Ops-Core brand.  Noticably lighter than even the most advanced Army helmet, it's become popular with special forces and private militaries to the point of being frequently featured in the media.  The rails and mounts can be used to install extra equipment; you can use them to add extra protection or to mount combat headphones.",
+
+    "//weight": "weight of the entire system (shell + liner)",
+    "weight": "1059 g",
+    "//dimensions": {
+      "length": "10.4 in",
+      "width": "9.5 in",
+      "height": "5.77 in",
+      "raw": "9341.87 ml",
+      "trim": 0.825,
+      "notes": [
+        "absent actual dimensions, we use those of the ACH with an slightly-higher trim"
+      ]
+    },
+    "volume": "1635 ml",
+    "longest_side": "264 mm",
+
+    "//material": ["TODO: expanded polypropylene for the liner"],
+    "material": ["uhmwpe", "thermo_resin"],
+    "material_thickness": 5.58,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "hat_hard",
+    "repairs_like": "xlkevlar",
+
+    "to_hit": -1,
+    "bashing": 10,
+    "techniques": ["WBLOCK_1"],
+
+    "armor": [
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 40,
+        "covers": ["head"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Top rail mount",
+
+        "ablative": true,
+
+        "volume_encumber_modifier": 0,
+
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "500 g",
+
+        "flag_restriction": ["HELMET_FACE_SHIELD"],
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side rail mount",
+
+        "holster": true,
+
+        "volume_encumber_modifier": 0,
+
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "400 g",
+
+        "flag_restriction": ["HELMET_EAR_ATTACHMENT"],
+        "inherits_flags": true,
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back straps",
+
+        "ablative": true,
+
+        "volume_encumber_modifier": 0,
+
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "250 g",
+
+        "flag_restriction": ["HELMET_NAPE_PROTECTOR"],
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front rail mount",
+
+        "ablative": true,
+
+        "volume_encumber_modifier": 0,
+
+        "max_contains_volume": "500 ml",
+        "max_contains_weight": "400 g",
+
+        "flag_restriction": ["HELMET_MANDIBLE_GUARD_STRAPPED"],
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Back mount",
+
+        "holster": true,
+
+        "volume_encumber_modifier": 0,
+
+        "max_contains_volume": "400 ml",
+        "max_contains_weight": "400 g",
+
+        "flag_restriction": ["HELMET_BACK_POUCH"],
+
+        "moves": 250
+      }
+    ],
+
+    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "PADDED"],
+
+    "price": "2040 USD",
+    "price_postapoc": "3 USD"
   }
 ]
