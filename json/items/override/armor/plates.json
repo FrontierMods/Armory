@@ -57,7 +57,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": 4,
 
         "coverage": 42,
         "covers": ["torso"],
@@ -73,7 +73,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": 2,
 
         "coverage": 10,
         "covers": ["torso"],
@@ -86,7 +86,6 @@
     "price": "359 USD",
     "price_postapoc": "1 USD"
   },
-
   {
     "id": "destroyed_large_ceramic_plate",
     "copy-from": "esapi_plate",
@@ -111,7 +110,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": 4,
 
         "coverage": 42,
         "covers": ["torso"],
@@ -127,7 +126,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": 2,
 
         "coverage": 10,
         "covers": ["torso"],
@@ -202,7 +201,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": 2,
 
         "coverage": 2,
         "covers": ["torso"],
@@ -256,7 +255,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": 2,
 
         "coverage": 2,
         "covers": ["torso"],
@@ -351,7 +350,7 @@
           }
         ],
 
-        "encumbrance": 6,
+        "encumbrance": 4,
 
         "coverage": 10,
         "covers": ["torso"],
@@ -414,7 +413,7 @@
           }
         ],
 
-        "encumbrance": 5,
+        "encumbrance": 6,
 
         "coverage": 34,
         "covers": ["torso"],
@@ -432,7 +431,7 @@
           }
         ],
 
-        "encumbrance": 5,
+        "encumbrance": 6,
 
         "coverage": 10,
         "covers": ["torso"],
