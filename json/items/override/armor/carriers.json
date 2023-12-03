@@ -150,7 +150,7 @@
           }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": [4, 19],
 
         "//coverage": [
           "medium SAPI plate upper torso coverage: 34%",
@@ -188,7 +188,7 @@
           }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": [1, 9],
 
         "//coverage": "medium SAPI plate lower torso coverage (10%) + extra material (1%) + cummerbund (1%) = 12 × 2 sides",
         "coverage": 24,
@@ -355,7 +355,7 @@
           }
         ],
 
-        "encumbrance": 6,
+        "encumbrance": [6, 26],
 
         "//coverage": [
           "approximated from large ballistic plate coverage (38% per front/back)",
@@ -394,7 +394,7 @@
           }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": [2, 14],
 
         "//coverage": [
           "roughly approximated from visual reference",
@@ -423,11 +423,11 @@
 
         "ablative": true,
 
-        "moves": 800,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
+
+        "moves": 800,
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
       },
@@ -438,11 +438,11 @@
 
         "ablative": true,
 
-        "moves": 800,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
+
+        "moves": 800,
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
       },
@@ -454,11 +454,11 @@
 
         "ablative": true,
 
-        "moves": 800,
-
         "max_contains_volume": "1600 ml",
         "max_contains_weight": "3 kg",
         "max_item_length": "292 mm",
+
+        "moves": 800,
 
         "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
       },
@@ -469,11 +469,11 @@
 
         "ablative": true,
 
-        "moves": 800,
-
         "max_contains_volume": "1600 ml",
         "max_contains_weight": "3 kg",
         "max_item_length": "292 mm",
+
+        "moves": 800,
 
         "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
       },
@@ -485,11 +485,11 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
         "max_item_length": "318 mm",
+
+        "moves": 1000,
 
         "flag_restriction": ["IOTV_SHOULDER"]
       },
@@ -500,11 +500,11 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
         "max_item_length": "318 mm",
+
+        "moves": 1000,
 
         "flag_restriction": ["IOTV_SHOULDER"]
       },
@@ -515,11 +515,11 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
         "max_item_length": "318 mm",
+
+        "moves": 1000,
 
         "flag_restriction": ["IOTV_GROIN"]
       },
@@ -530,11 +530,11 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
         "max_item_length": "318 mm",
+
+        "moves": 1200,
 
         "flag_restriction": ["IOTV_NECK"]
       },
@@ -545,11 +545,11 @@
 
         "ablative": true,
 
-        "moves": 400,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "2500 g",
         "max_item_length": "318 mm",
+
+        "moves": 1200,
 
         "flag_restriction": ["IOTV_BACK"]
       },
@@ -748,7 +748,7 @@
           }
         ],
 
-        "encumbrance": 5,
+        "encumbrance": [5, 24],
 
         "//coverage": [
           "approximated from large ballistic plate coverage (36% per front/back)",
@@ -787,7 +787,7 @@
           }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": [1, 10],
 
         "//coverage": [
           "roughly approximated from visual reference",
@@ -812,11 +812,11 @@
 
         "ablative": true,
 
-        "moves": 800,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
+
+        "moves": 800,
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
       },
@@ -827,11 +827,11 @@
 
         "ablative": true,
 
-        "moves": 800,
-
         "max_contains_volume": "2 L",
         "max_contains_weight": "5 kg",
         "max_item_length": "318 mm",
+
+        "moves": 800,
 
         "flag_restriction": ["ABLATIVE_MEDIUM"]
       },
@@ -1020,7 +1020,7 @@
           }
         ],
 
-        "encumbrance": 5,
+        "encumbrance": [5, 24],
 
         "//coverage": [
           "approximated from large ballistic plate coverage (36% per front/back)",
@@ -1059,7 +1059,7 @@
           }
         ],
 
-        "encumbrance": 1,
+        "encumbrance": [1, 11],
 
         "//coverage": [
           "roughly approximated from visual reference",
@@ -1182,7 +1182,7 @@
 
     "flags": ["STURDY", "OUTER", "WATER_FRIENDLY"],
 
-    "//price": ["price for non-surcharged (below 3XL) sizes"],
+    "//price": ["price for non-surcharged (i.e., below 3XL) sizes"],
     "price": "279 USD",
     "price_postapoc": "15 USD"
   }

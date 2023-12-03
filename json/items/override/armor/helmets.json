@@ -57,7 +57,7 @@
     "repairs_like": "xlkevlar",
 
     "to_hit": -1,
-    "bashing": 10,
+    "bashing": 6,
     "techniques": ["WBLOCK_1"],
 
     "armor": [
@@ -82,9 +82,9 @@
         "max_contains_volume": "500 ml",
         "max_contains_weight": "500 g",
 
-        "flag_restriction": ["HELMET_FACE_SHIELD"],
+        "moves": 250,
 
-        "moves": 250
+        "flag_restriction": ["HELMET_FACE_SHIELD"]
       },
       {
         "pocket_type": "CONTAINER",
@@ -98,10 +98,10 @@
         "max_contains_volume": "500 ml",
         "max_contains_weight": "400 g",
 
-        "flag_restriction": ["HELMET_EAR_ATTACHMENT"],
-        "inherits_flags": true,
+        "moves": 250,
 
-        "moves": 250
+        "flag_restriction": ["HELMET_EAR_ATTACHMENT"],
+        "inherits_flags": true
       },
       {
         "pocket_type": "CONTAINER",
@@ -115,9 +115,9 @@
         "max_contains_volume": "500 ml",
         "max_contains_weight": "250 g",
 
-        "flag_restriction": ["HELMET_NAPE_PROTECTOR"],
+        "moves": 250,
 
-        "moves": 250
+        "flag_restriction": ["HELMET_NAPE_PROTECTOR"]
       },
       {
         "pocket_type": "CONTAINER",
@@ -131,9 +131,9 @@
         "max_contains_volume": "500 ml",
         "max_contains_weight": "400 g",
 
-        "flag_restriction": ["HELMET_MANDIBLE_GUARD_STRAPPED"],
+        "moves": 250,
 
-        "moves": 250
+        "flag_restriction": ["HELMET_MANDIBLE_GUARD_STRAPPED"]
       },
       {
         "pocket_type": "CONTAINER",
@@ -147,9 +147,9 @@
         "max_contains_volume": "400 ml",
         "max_contains_weight": "400 g",
 
-        "flag_restriction": ["HELMET_BACK_POUCH"],
+        "moves": 250,
 
-        "moves": 250
+        "flag_restriction": ["HELMET_BACK_POUCH"]
       }
     ],
 
