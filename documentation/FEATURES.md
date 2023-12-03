@@ -24,3 +24,5 @@ While _Armory_'s system is hardly perfect, we believe its advantage outweigh its
 
 Because pouches are interior to a PALS webbing "pocket", there is now a maximum volume the entire webbing's worth of pouches can take at a given time. This means that, while most pouches offer finite capacity, others don't, thereby preventing other pouches to be added to the webbing. For example, stashing a full-sized pistol with a suppressor is now possible in a universal holster, but doing so will prevent you from attaching other pouches to the webbing. (This will also magically "overflow" the webbing and force some pouches out if the stashed pistol ends up taking up more space than the webbing allows, something that remains one of the pocket system's limitations.)
 
+Some of the pouches now also provide their own (limited) PALS webbing. It's intended to be used for attaching supplementary pouches, but can also be used for tucking small items in. This is reflective of what many commercial pouches provide: an increasing (and sometimes excessive) degree of MOLLE modularity.
+
