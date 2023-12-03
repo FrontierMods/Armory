@@ -12,6 +12,7 @@
   - MOLLE II rucksack pouches
   - each adds 7~8 L of volume
 - [ ] **remodel of any of the missing equipment**
+- [ ] **visual variants for existing items**
 
 ## Previous
 
