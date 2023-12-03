@@ -4,49 +4,105 @@
     "type": "ARMOR",
 
     "//sources": [
-      "https://haleystrategic.com/x-chest-rig",
+      "https://tacticaltailor.com/fight-light-mav-2-piece/",
       [
-        "https://haleystrategic.com/x-harness-chest-rig-kit",
+        "https://www.amazon.ca/Tactical-Tailor-Fight-Light-2Piece/dp/B072MSVKCD",
         "dimensions",
         "weight"
+      ],
+      [
+        "https://www.youtube.com/watch?v=UWmKP7a4T-4",
+        "side pocket size reference"
       ]
     ],
 
     "name": {
-      "str": "Haley Strategic D3CR X chest rig"
+      "str": "Tactical Tailor Fight Light MAV 2 rig"
     },
-    "description": "A compact and minimal chest rig.  The trade-off for comfort of use is minimal space for pouches.  The rig requires a QASM buckle panel or a hook-and-loop panel attached to be useful.",
+    "description": "...",
 
     "//weight": [
       "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz ≈ 238 g",
       "we add 5 g × (4 + 2) = 30 g for the 4 female buckles included with the rig kit (source for weight/dimensions) and the two other QASM (female) ones on the X-harness, as visible on pictures of the rig itself, presuming that their weight is not included"
     ],
-    "weight": "268 g",
-    "//dimensions": {
-      "length": "9.50 in",
-      "width": "1.00 in",
-      "height": "6.25 in",
-      "raw": "922 ml",
-      "trim": 0.6,
-      "notes": [
-        "it may be possible to get a more-accurate estimate from directly measuring the parts of the rig kit"
-      ]
-    },
-    "volume": "369 ml",
-    "//longest_side": [
-      "from 6.25 in. dimensions",
-      "since 9 in. (presumed length of harness straps) folded three times (the default way of measuring longest side for Frontier Mods' soft/foldable items) is only 1.1875 in. ≈ 30 mm",
-      "6.25 in. (presumed width of the non-foldable rig panel) ≈ 159 mm is much longer than folded straps"
+    "weight": "352 g",
+    "//dimensions": [
+      {
+        "description": "Webbing panel",
+        "uses": "molle",
+
+        "columns": "8",
+        "rows": "3",
+        "depth": "1 mm",
+        "raw": "48.72 ml",
+        "trim": 0.5,
+        "result": "24.36 ml",
+        "notes": [
+          "depth accounts for both the backing fabric and the PALS loops",
+          "trim, therefore, accounts for not the whole panel being filled with PALS loops"
+        ]
+      },
+      {
+        "description": "Webbing panel",
+        "uses": "molle",
+
+        "columns": "8",
+        "rows": "3",
+        "depth": "1 mm",
+        "raw": "48.72 ml",
+        "trim": 0.5,
+        "result": "24.36 ml",
+        "notes": [
+          "depth accounts for both the backing fabric and the PALS loops",
+          "trim, therefore, accounts for not the whole panel being filled with PALS loops"
+        ]
+      },
+
+      {
+        "description": "Plastic buckle",
+
+        "length": "2.75 in",
+        "width": "1.2 in",
+        "height": "1.5 mm",
+        "raw": "3.19 ml",
+        "trim": 0.15,
+        "result": "2.71 ml",
+        "notes": [
+          "dimensions acquired from visual reference",
+          "the buckle dimensions also account for the fabric strap holding the buckle attached to the panels"
+        ]
+      },
+      {
+        "description": "Plastic buckle",
+
+        "length": "2.75 in",
+        "width": "1.2 in",
+        "height": "1.5 mm",
+        "raw": "3.19 ml",
+        "trim": 0.15,
+        "result": "2.71 ml",
+        "notes": [
+          "dimensions acquired from visual reference",
+          "the buckle dimensions also account for the fabric strap holding the buckle attached to the panels"
+        ]
+      },
+
+      "result: 54.14 ml",
+      "multiplied by 135% to account for the the rest of the straps that are difficult to measure"
     ],
-    "longest_side": "159 mm",
+    "volume": "73 ml",
+    "//longest_side": [
+      "assumes the length of a single PALS panel (8 columns × 1.5 in. = 12 in.), folded in half: 12 / 2 = 6 in. = 152.4 mm ≈ 152 mm"
+    ],
+    "longest_side": "152 mm",
 
     "symbol": "[",
     "color": "dark_gray",
 
     "material": ["nylon"],
-    "material_thickness": 1.5,
-    "repairs_like": "tacvest",
+    "material_thickness": 0.5,
     "looks_like": "vest",
+    "repairs_like": "tacvest",
 
     "armor": [
       {
@@ -78,23 +134,94 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "QASM or Velcro panel space",
+        "description": "Panel PALS webbing",
 
-        "holster": true,
+        "volume_encumber_modifier": 0.95,
 
-        "max_contains_volume": "3 L",
-        "max_contains_weight": "5 kg",
-        "//min_item_length": "makes sure that only full hook-and-loop panels could be attached to the rig",
-        "min_item_length": "229 mm",
-        "max_item_length": "254 mm",
+        "//molle": {
+          "width": 8,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 1,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
 
-        "flag_restriction": ["QASM_ATTACH", "VELCRO_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Panel PALS webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 8,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 1,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "12 in",
+          "height": "6 in",
+          "raw": "232.26 ml",
+          "trim": 0.05,
+          "notes": ["said to span the entire size of the panel"]
+        },
+        "max_contains_volume": "221 ml",
+        "max_contains_weight": "1 kg",
+        "//max_item_length": [
+          "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
+          "9 in. = 228.6 mm ≈ 229 mm"
+        ],
+        "max_item_length": "229 mm",
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "12 in",
+          "height": "6 in",
+          "raw": "232.26 ml",
+          "trim": 0.05,
+          "notes": ["said to span the entire size of the panel"]
+        },
+        "max_contains_volume": "221 ml",
+        "max_contains_weight": "1 kg",
+        "//max_item_length": [
+          "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
+          "9 in. = 228.6 mm ≈ 229 mm"
+        ],
+        "max_item_length": "229 mm",
+
+        "moves": 250
       }
     ],
 
     "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
 
-    "price": "199 USD",
+    "//price": "price for the multicam model",
+    "price": "128 USD",
     "//price_postapoc": "10 USD"
   },
 
@@ -437,7 +564,7 @@
     "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
 
     "//price": [
-      "price for models other than multicam ($219)",
+      "price for models other than multicam (which is $219)",
       "see Item Numbers button in source"
     ],
     "price": "199 USD",
@@ -640,8 +767,6 @@
           "hidden inside the bib",
           "goes all the way down to the highest buckle"
         ],
-
-        "holster": true,
 
         "moves": 150,
 
