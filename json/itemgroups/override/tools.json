@@ -7,7 +7,7 @@
     "container-item": "ifak_pouch",
 
     "entries": [
-      { "group": "armory_first_aid_bleed_full", "count": 2 },
+      { "group": "armory_first_aid_bleed_full", "count": 3 },
 
       { "item": "tourniquet_upper" },
       { "item": "gloves_medical" },
