@@ -356,5 +356,119 @@
     "delete": {
       "flags": ["DEAF"]
     }
+  },
+  {
+    "id": "attachable_ear_muffs",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://www.amazon.com.be/-/en/Peltor-Comfortable-Protection-Headphones-Yellow/dp/B07GTKM27T",
+      ["https://www.3m.com/3M/en_US/p/d/v000137091/", "weight (in data sheet)"],
+      [
+        "https://www.amazon.com/3M-XSeries-X2P3E-CapMount-Earmuffs/dp/B00CPCHDQA",
+        "price"
+      ]
+    ],
+
+    "name": {
+      "str_sp": "3M PELTOR X2 ear muffs"
+    },
+    "description": "A bulky yet light pair of isolation headphones designed to attach to the connectors on a hard hat.  The black-and-yellow design indicates that these are meant to be used in construction or a similar industry.  When attached to a helmet and activated, they press against your ears and remove most outside noise.  Activate to do just that.",
+
+    "weight": "220 g",
+    "//dimensions": {
+      "length": "13 cm",
+      "width": "10.5 cm",
+      "height": "19 cm",
+      "raw": "2593.5 ml",
+      "trim": 0.35,
+      "notes": ["assumes the dimensions to be those of the product box"]
+    },
+    "volume": "1686 ml",
+    "longest_side": "190 mm",
+
+    "material": ["thermo_resin", "plastic_pad"],
+    "material_thickness": 1,
+    "//warmth": "no value provided here because when not active, these earmuffs just hang loosely over your ears, providing no temperature difference",
+
+    "symbol": "[",
+    "color": "yellow",
+    "repairs_like": "helmet_riot",
+
+    "//sound": {
+      "NRR": 24
+    },
+
+    "armor": [
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 55,
+        "coverage_melee": 17,
+        "coverage_ranged": 55,
+
+        "covers": ["head"],
+        "specifically_covers": ["head_ear_r", "head_ear_l"]
+      }
+    ],
+
+    "use_action": {
+      "type": "transform",
+      "target": "attachable_ear_muffs_on",
+
+      "menu_text": "Press tightly to ears",
+
+      "msg": "You put the earmuffs tightly to your ears.",
+
+      "moves": 100
+    },
+
+    "flags": ["HELMET_EAR_ATTACHMENT", "CANT_WEAR"],
+
+    "price": "20 USD",
+    "price_postapoc": "80 cent"
+  },
+  {
+    "id": "attachable_ear_muffs_on",
+    "copy-from": "attachable_ear_muffs",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "name": {
+      "str_sp": "3M PELTOR X2 ear muffs (active)"
+    },
+    "description": "A bulky yet light pair of isolation headphones designed to attach to the connectors on a hard hat.  The black-and-yellow design indicates that these are meant to be used in construction or a similar industry.  They are currently pressed against your ears, blocking most sound.  Activate to pull them away from your ears and regain hearing.",
+
+    "//warmth": "temperature difference only when pressed against the ear",
+    "warmth": 8,
+
+    "armor": [
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 100,
+        "coverage_melee": 100,
+        "coverage_ranged": 100,
+
+        "covers": ["head"],
+        "specifically_covers": ["head_ear_r", "head_ear_l"]
+      }
+    ],
+
+    "use_action": {
+      "type": "transform",
+      "target": "attachable_ear_muffs",
+
+      "menu_text": "Put away from ears",
+
+      "msg": "You put the ear muffs away from your ears.",
+
+      "moves": 100
+    },
+
+    "extend": {
+      "flags": ["DEAF"]
+    }
   }
 ]
