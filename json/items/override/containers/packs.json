@@ -110,7 +110,7 @@
 
     "armor": [
       {
-        "encumbrance": 6,
+        "encumbrance": [4, 46],
         "volume_encumber_modifier": 0.15,
 
         "coverage": 85,
@@ -496,7 +496,7 @@
 
     "armor": [
       {
-        "encumbrance": 5,
+        "encumbrance": [6, 36],
         "volume_encumber_modifier": 0.15,
 
         "coverage": 75,
@@ -821,7 +821,7 @@
 
     "armor": [
       {
-        "encumbrance": 8,
+        "encumbrance": [8, 74],
         "volume_encumber_modifier": 0.15,
 
         "coverage": 90,
@@ -1045,7 +1045,7 @@
           }
         ],
 
-        "encumbrance": [10, 65],
+        "encumbrance": [7, 50],
 
         "coverage": 100,
         "covers": ["torso"],
@@ -1537,7 +1537,7 @@
           }
         ],
 
-        "encumbrance": [10, 60],
+        "encumbrance": [10, 79],
 
         "coverage": 100,
         "covers": ["torso"],

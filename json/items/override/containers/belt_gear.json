@@ -31,7 +31,8 @@
 
     "armor": [
       {
-        "encumbrance": 1,
+        "encumbrance": [3, 28],
+
         "coverage": 10,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
