@@ -10,7 +10,7 @@
         "price"
       ],
       [
-        "https://www.walmart.com/ip/Walker-s-Razor-Slim-Shooter-Teal-Electronic-Folding-Hearing-Protection-Earmuffs/50163081",
+        "https://www.amazon.com/Walkers-Electronic-Protection-Amplification-Suppression/dp/B07MBS4ZBX",
         "dimensions"
       ],
       [
@@ -20,22 +20,29 @@
     ],
 
     "name": {
-      "str_sp": "Walker's Razor Slim headset"
+      "str": "Walker's Razor Slim headset"
     },
     "description": "A set of low-profile earmuffs designed to protect shooter's ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  Activate to turn on.",
 
     "weight": "272 g",
     "//dimensions": {
-      "length": "8.10 in",
-      "width": "3.80 in",
-      "height": "10.60 in",
-      "raw": "5347 ml",
-      "trim": 0.75
+      "length": "5.5 in",
+      "diameter": "4.5 in",
+      "raw": "1433.44 ml",
+      "trim": 0.25,
+      "notes": [
+        "modelled after the dimensions of the carrying case, which is meant to contain a folded pair of Razor Slims"
+      ]
     },
-    "volume": "1337 ml",
+    "volume": "1075 ml",
+    "//longest_side": [
+      "5.25 in.; when folded",
+      "assumes there's 0.25 in. of extra space inside the carrier box"
+    ],
+    "longest_side": "133 mm",
 
-    "material": ["plastic", "nylon"],
-    "material_thickness": 3,
+    "material": ["plastic", "plastic_pad"],
+    "material_thickness": 1,
     "warmth": 5,
 
     "symbol": "[",
@@ -48,21 +55,28 @@
       "NRR": 23
     },
 
+    "//armor": [
+      "source of foam padding thickness",
+      "https://www.amazon.com/dp/B0822RGZH8"
+    ],
     "armor": [
       {
         "//description": "Ear muffs",
 
         "material": [
           {
-            "//type": "there should also be foam and foam cover materials here",
+            "type": "plastic_pad",
+            "covered_by_mat": 100,
+            "//thickness": ["0.6 in. foam padding = 15.24 mm per side"],
+            "thickness": 30.48
+          },
+          {
             "type": "plastic",
             "covered_by_mat": 100,
             "//thickness": [
-              "eyeballed",
-              "includes the foam part",
-              "~0.7 in. ≈ 17.8 mm per side"
+              "~1.2 in. plastic shell (eyeballed) ≈ 30.48 mm per side"
             ],
-            "thickness": 35.6
+            "thickness": 60.96
           }
         ],
 
@@ -78,19 +92,22 @@
 
         "material": [
           {
-            "//type": "there should also be foam and foam cover materials here",
+            "type": "plastic_pad",
+            "covered_by_mat": 100,
+            "//thickness": ["0.6 in. foam padding = 15.24 mm per side"],
+            "thickness": 30.48
+          },
+          {
             "type": "plastic",
             "covered_by_mat": 100,
             "//thickness": [
-              "eyeballed",
-              "includes the foam part",
-              "~0.8 in. per side ≈ 40.6 mm"
+              "~1.2 in. plastic shell (eyeballed) ≈ 30.48 mm per side"
             ],
-            "thickness": 40.6
+            "thickness": 60.96
           }
         ],
 
-        "encumbrance": 3,
+        "encumbrance": 1,
 
         "coverage": 2,
         "covers": ["head"],
@@ -105,11 +122,11 @@
             "type": "nylon",
             "covered_by_mat": 100,
             "//thickness": ["eyeballed"],
-            "thickness": 3.3
+            "thickness": 8.3
           }
         ],
 
-        "encumbrance": 5,
+        "encumbrance": 3,
 
         "coverage": 9,
         "covers": ["head"],
@@ -121,11 +138,24 @@
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",
+
         "rigid": true,
+
         "flag_restriction": ["BATTERY_LIGHT"],
         "default_magazine": "light_plus_battery_cell"
       }
     ],
+
+    "use_action": {
+      "type": "transform",
+      "target": "powered_earmuffs_on",
+      "active": true,
+
+      "msg": "You turn the headset on.",
+
+      "need_charges": 1,
+      "need_charges_msg": "The headset's batteries are dead."
+    },
 
     "flags": [
       "DEAF",
@@ -140,7 +170,6 @@
     "price": "70 USD",
     "price_postapoc": "225 cent"
   },
-
   {
     "id": "powered_earmuffs_on",
     "copy-from": "powered_earmuffs",
@@ -155,7 +184,8 @@
     ],
 
     "name": {
-      "str_sp": "Walker's Razor Slim headset (on)"
+      "str": "Walker's Razor Slim headset (on)",
+      "str_pl": "Walker's Razor Slim headsets (on)"
     },
     "description": "A set of low-profile earmuffs designed to protect shooters' ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  The headset is currently on.  Activate to turn off.",
 
@@ -182,7 +212,8 @@
 
       "menu_text": "Turn off",
 
-      "msg": "You turn the earmuffs off.",
+      "msg": "You turn the headset off.",
+
       "ammo_scale": 0
     },
 
@@ -227,8 +258,8 @@
     "volume": "9 ml",
     "longest_side": "26 mm",
 
-    "material": ["plastic", "copper"],
-    "material_thickness": 1,
+    "material": ["plastic", "plastic_pad"],
+    "material_thickness": 8,
 
     "//sound": {
       "NRR": 24
@@ -240,10 +271,17 @@
 
         "material": [
           {
+            "//type": "substitute for the soft plastic of ear tips",
+            "type": "plastic_pad",
+            "covered_by_mat": 90,
+            "//thickness": ["eyeballed"],
+            "thickness": 3
+          },
+          {
             "type": "plastic",
             "covered_by_mat": 100,
             "//thickness": ["eyeballed"],
-            "thickness": 1
+            "thickness": 5
           }
         ],
 
@@ -269,7 +307,6 @@
     "price": "299 USD",
     "price_postapoc": "1 USD"
   },
-
   {
     "id": "powered_earplugs_on",
     "copy-from": "powered_earplugs",
