@@ -1,0 +1,291 @@
+[
+  {
+    "id": "adapter_audio_arc_sordin",
+    "type": "GENERIC",
+
+    "//sources": [
+      "https://www.amazon.com/Sordin-60160-ARC-Rails-Headbands/dp/B0BKSQQT84",
+      [
+        "https://www.amazon.com/3M-Peltor-ARC-Right-Attachments/dp/B00745WSZE",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "pair of Sordin ARC rail adapters",
+      "str_pl": "pairs of Sordin ARC rail adapters"
+    },
+    "description": "A pair of thin steel wires wrapped in hard plastic.  The round platform at the top of the wires allows mounting onto the ARC rail available on many modern combat helmets.  Put these together with a pair of detached combat headphones to make a headset that could be attached to ARC rails.",
+
+    "weight": "9 g",
+    "//dimensions": {
+      "length": "3.15 in",
+      "width": "3.54 in",
+      "height": "0.79 in",
+      "raw": "144.36 ml",
+      "trim": 0.825
+    },
+    "volume": "25 ml",
+    "longest_side": "90 mm",
+
+    "material": ["plastic", "mc_steel"],
+    "material_thickness": 0.2,
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "//flags": "it would be mostly useless, but these could be installed on the ARC rail already",
+    "flags": ["HELMET_EAR_ATTACHMENT"],
+
+    "price": "119 USD",
+    "price_postapoc": "5 cent"
+  },
+  {
+    "id": "headband_walkers_razor_slim",
+    "type": "GENERIC",
+
+    "//sources": [
+      "https://www.amazon.com/Armorwerx-Headband-Communication-Headsets-Multicam/dp/B07PYHVBFG"
+    ],
+
+    "//notes": [
+      "we're using an item that's obviously not the target source, but from which the target item's dimensions could be reasonably estimated",
+      "this item is meant to be a detached original plastic headband, not a textile cover for one"
+    ],
+
+    "name": {
+      "str": "headband for Walker's Razor Slim headset",
+      "str_pl": "headbands for Walker's Razor Slim headset"
+    },
+    "description": "A plastic headband with some padding, that used to belong to a Razor Slim headset.  If you have a pair of detached headphones of the same model, you can reassemble them into a set that can be worn over your ears.",
+
+    "weight": "53 g",
+    "//dimensions": {
+      "length": "9.45 in",
+      "width": "2.36 in",
+      "height": "0.79 in",
+      "raw": "288.72 ml",
+      "trim": 0.6,
+      "notes": ["80% trim for presumed material thickness"]
+    },
+    "volume": "116 ml",
+    "longest_side": "240 mm",
+
+    "material": ["plastic", "plastic_pad"],
+    "material_thickness": 8.3,
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "//price": "the actual price for this item is hard to estimate, so we take the source's price",
+    "price": "20 USD",
+    "price_postapoc": "5 cent"
+  },
+  {
+    "id": "headphones_detached_walkers_razor_slim",
+    "type": "GENERIC",
+
+    "//notes": [
+      "we're using calculations between the headset and the headband for dimensions"
+    ],
+
+    "name": {
+      "str": "detached Walker's Razor Slim headphones",
+      "str_pl": "pairs of detached Walker's Razor Slim headphones"
+    },
+    "description": "A pair of detached headphones from the Razor Slim headset.  These cannot be worn on their own, because there's nothing that would hold them to your head.  Instead, these could be assembled together with the headband to form a regular headset, or together with a pair of ARC rail adapters to form a headset that could be attached to a modern helmet.",
+
+    "weight": "219 g",
+    "//dimensions": {
+      "length": "3.6 in.",
+      "width": "2.95 in",
+      "height": "4.02 in",
+      "raw": "700 ml",
+      "trim": 0.1,
+      "notes": [
+        "length is double the (foam padding thickness + assumed plastic shell thickness)"
+      ]
+    },
+    "volume": "630 ml",
+    "longest_side": "102 mm",
+
+    "material": ["plastic", "plastic_pad"],
+    "material_thickness": 4,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "powered_earmuffs",
+
+    "//price": "guessed",
+    "price": "45 USD",
+    "price_postapoc": "15 cent"
+  },
+  {
+    "id": "headset_arc_walkers_razor_slim",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+
+    "name": {
+      "str": "Walker's Razor Slim ARC-mount headset"
+    },
+    "description": "A set of low-profile earmuffs designed to protect shooter's ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  This model had been modified to mount onto ARC rails, found on many modern combat helmets, rather than be worn directly with a headband.  Activate to turn on.",
+
+    "weight": "228 g",
+    "//volume": "volume of detached headphones + volume of ARC rail adapters",
+    "volume": "655 ml",
+    "//longest_side": "4.02 in. from headphones + half of 3.54 in. from ARC adapters",
+    "longest_side": "147 mm",
+
+    "material": ["plastic", "plastic_pad", "mc_steel"],
+    "material_thickness": 8.3,
+    "warmth": 5,
+
+    "symbol": "[",
+    "color": "blue",
+    "looks_like": "powered_earmuffs",
+    "repairs_like": "powered_earmuffs",
+
+    "ammo": "battery",
+    "charges_per_use": 1,
+
+    "//sound": {
+      "NRR": 23
+    },
+
+    "armor": [
+      {
+        "//description": "Ear muffs",
+
+        "material": [
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 100,
+            "//thickness": ["0.6 in. foam padding = 15.24 mm per side"],
+            "thickness": 30.48
+          },
+          {
+            "type": "plastic",
+            "covered_by_mat": 100,
+            "//thickness": [
+              "~1.2 in. plastic shell (eyeballed) ≈ 30.48 mm per side"
+            ],
+            "thickness": 60.96
+          }
+        ],
+
+        "encumbrance": 3,
+
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_ear_r", "head_ear_l"]
+      },
+
+      {
+        "//description": "Ear muffs",
+
+        "material": [
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 100,
+            "//thickness": ["0.6 in. foam padding = 15.24 mm per side"],
+            "thickness": 30.48
+          },
+          {
+            "type": "plastic",
+            "covered_by_mat": 100,
+            "//thickness": [
+              "~1.2 in. plastic shell (eyeballed) ≈ 30.48 mm per side"
+            ],
+            "thickness": 60.96
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 2,
+        "covers": ["head"],
+        "specifically_covers": ["mouth_cheeks"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+
+        "rigid": true,
+
+        "flag_restriction": ["BATTERY_LIGHT"],
+        "default_magazine": "light_plus_battery_cell"
+      }
+    ],
+
+    "use_action": {
+      "type": "transform",
+      "target": "headset_arc_walkers_razor_slim_on",
+      "active": true,
+
+      "msg": "You turn the headset on.",
+
+      "need_charges": 1,
+      "need_charges_msg": "The headset's batteries are dead."
+    },
+
+    "flags": [
+      "DEAF",
+      "OVERSIZE",
+      "CANT_WEAR",
+      "ALLOWS_NATURAL_ATTACKS",
+      "WATER_BREAK",
+      "ELECTRONIC",
+      "PADDED"
+    ],
+
+    "price": "55 USD",
+    "price_postapoc": "250 cent"
+  },
+  {
+    "id": "headset_arc_walkers_razor_slim_on",
+    "copy-from": "headset_arc_walkers_razor_slim",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+
+    "name": {
+      "str": "Walker's Razor Slim ARC-mount headset"
+    },
+    "description": "A set of low-profile earmuffs designed to protect shooter's ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  This model had been modified to mount onto ARC rails, found on many modern combat helmets, rather than be worn directly with a headband.  The headset is currently on.  Activate to turn off.",
+
+    "//power": {
+      "source": [["AAA", "AAA"]],
+      "voltage": "1.5 V",
+      "capacity": "1100 mAh",
+      "runtime": "15 h",
+      "notes": ["voltage and capacity are presumed"]
+    },
+
+    "//power_draw": [
+      "based on a very rough estimate of capacity",
+      "divided by two, to emulate running off one battery"
+    ],
+    "power_draw": "110 mW",
+    "revert_to": "headset_arc_walkers_razor_slim",
+
+    "use_action": {
+      "type": "transform",
+      "target": "headset_arc_walkers_razor_slim",
+
+      "menu_text": "Turn off",
+
+      "msg": "You turn the headset off.",
+	  
+      "ammo_scale": 0
+    },
+
+    "extend": {
+      "//flags": "much like lit flashlights, active headsets should be avoided by traders",
+      "flags": ["PARTIAL_DEAF", "TRADER_AVOID"]
+    },
+    "delete": {
+      "flags": ["DEAF"]
+    }
+  }
+]
