@@ -1,0 +1,34 @@
+[
+  {
+    "type": "uncraft",
+    "result": "powered_earmuffs",
+
+    "skill_used": "fabrication",
+    "difficulty": 0,
+
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "30 s",
+
+    "//qualities": [{ "id": "CUT", "level": 1 }],
+
+    "components": [
+      [["headband_walkers_razor_slim", 1]],
+      [["headphones_detached_walkers_razor_slim", 1]]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "headset_arc_walkers_razor_slim",
+
+    "skill_used": "fabrication",
+    "difficulty": 0,
+
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "45 s",
+
+    "components": [
+      [["adapter_audio_arc_sordin", 1]],
+      [["headphones_detached_walkers_razor_slim", 1]]
+    ]
+  }
+]
