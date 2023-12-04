@@ -25,7 +25,7 @@
     "volume": "34843 ml",
     "longest_side": "533 mm",
 
-    "encumbrance": 3,
+    "encumbrance": 4,
     "//max_encumbrance": "discount of 3 points for the effective load-bearing system",
     "max_encumbrance": 32,
 

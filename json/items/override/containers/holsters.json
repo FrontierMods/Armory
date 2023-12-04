@@ -38,10 +38,13 @@
         "material": [
           { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
         ],
+
+        "encumbrance": [1, 2],
+
+        "coverage": 15,
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_lower_l", "leg_lower_r"],
-        "coverage": 15,
-        "encumbrance": 1,
+
         "layers": ["SKINTIGHT"]
       },
 
@@ -49,10 +52,13 @@
         "material": [
           { "type": "nylon", "covered_by_mat": 100, "thickness": 2 }
         ],
+
+        "encumbrance": [1, 4],
+
+        "coverage": 60,
         "covers": ["foot_l", "foot_r"],
         "specifically_covers": ["foot_ankle_l", "foot_ankle_r"],
-        "coverage": 60,
-        "encumbrance": 1,
+
         "layers": ["SKINTIGHT"]
       }
     ],
@@ -142,7 +148,8 @@
           { "type": "neoprene", "covered_by_mat": 100, "thickness": 1.25 }
         ],
 
-        "encumbrance": [1, 6],
+        "encumbrance": [2, 8],
+
         "//breathability": "neoprene is advertised as breathable",
         "breathability": "GOOD",
 
@@ -278,7 +285,8 @@
         "material": [
           { "type": "nylon", "covered_by_mat": 100, "thickness": 1.78 }
         ],
-        "encumbrance": 1,
+
+        "encumbrance": [2, 6],
 
         "coverage": 35,
         "covers": ["leg_l", "leg_r"],
@@ -719,7 +727,7 @@
 
     "armor": [
       {
-        "encumbrance": [2, 6],
+        "encumbrance": [2, 9],
 
         "coverage": 7,
         "covers": ["torso"],
@@ -877,7 +885,7 @@
 
     "armor": [
       {
-        "encumbrance": [2, 12],
+        "encumbrance": [2, 14],
 
         "coverage": 12,
         "covers": ["torso"],
