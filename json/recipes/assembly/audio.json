@@ -2,6 +2,9 @@
   {
     "type": "uncraft",
     "result": "powered_earmuffs",
+    
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
 
     "skill_used": "fabrication",
     "difficulty": 0,
@@ -19,6 +22,9 @@
   {
     "type": "recipe",
     "result": "headset_arc_walkers_razor_slim",
+    
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
 
     "skill_used": "fabrication",
     "difficulty": 0,
