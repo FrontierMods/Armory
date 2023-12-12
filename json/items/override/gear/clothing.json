@@ -416,6 +416,7 @@
     "looks_like": "jacket_army",
     "repairs_like": "trenchcoat",
 
+    "//armor": "the coat also has a small collar, but the game does not like neck coverage not being on the BELTED slot",
     "armor": [
       {
         "encumbrance": [2, 6],
@@ -423,11 +424,6 @@
         "coverage": 100,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
-      },
-      {
-        "coverage": 20,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_neck"]
       },
       {
         "encumbrance": 2,
