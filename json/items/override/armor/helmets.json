@@ -212,8 +212,24 @@
       {
         "encumbrance_modifiers": ["NONE"],
 
-        "coverage": 40,
-        "covers": ["head"]
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_crown"]
+      },
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_forehead"]
+      },
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 20,
+        "covers": ["head"],
+        "//specifically_covers": "this emulates coverage of the back of the head",
+        "specifically_covers": ["mouth_cheeks"]
       }
     ],
 
