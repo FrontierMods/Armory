@@ -512,8 +512,8 @@
 
         "rigid": true,
 
-        "max_contains_weight": "130 g",
-        "max_contains_volume": "150 ml",
+        "max_contains_weight": "400 g",
+        "max_contains_volume": "180 ml",
         "max_item_length": "10 cm",
 
         "volume_encumber_modifier": 1.5,
@@ -525,8 +525,8 @@
 
         "rigid": true,
 
-        "max_contains_weight": "130 g",
-        "max_contains_volume": "150 ml",
+        "max_contains_weight": "400 g",
+        "max_contains_volume": "180 ml",
         "max_item_length": "10 cm",
 
         "volume_encumber_modifier": 1.5,
@@ -538,8 +538,8 @@
 
         "rigid": true,
 
-        "max_contains_weight": "130 g",
-        "max_contains_volume": "150 ml",
+        "max_contains_weight": "400 g",
+        "max_contains_volume": "180 ml",
         "max_item_length": "10 cm",
 
         "volume_encumber_modifier": 1.5,
@@ -551,8 +551,8 @@
 
         "rigid": true,
 
-        "max_contains_weight": "130 g",
-        "max_contains_volume": "150 ml",
+        "max_contains_weight": "400 g",
+        "max_contains_volume": "180 ml",
         "max_item_length": "10 cm",
 
         "volume_encumber_modifier": 1.5,
