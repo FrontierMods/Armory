@@ -250,7 +250,8 @@
     "category": "armor",
 
     "name": {
-      "str": "Walker's Razor Slim ARC-mount headset"
+      "str": "Walker's Razor Slim ARC-mount headset (on)",
+      "str_pl": "Walker's Razor Slim ARC-mount headsets (on)"
     },
     "description": "A set of low-profile earmuffs designed to protect shooter's ears from excessive noise when firing.  When turned on, the earmuffs let most sound through, while reducing the sounds of gunfire to a loud pop.  When off, however, the act like any other over-ear headset and reliably block off most sound.  This model had been modified to mount onto ARC rails, found on many modern combat helmets, rather than be worn directly with a headband.  The headset is currently on.  Activate to turn off.",
 
