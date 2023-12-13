@@ -237,7 +237,8 @@
       "ALLOWS_NATURAL_ATTACKS",
       "WATER_BREAK",
       "ELECTRONIC",
-      "PADDED"
+      "PADDED",
+      "HELMET_EAR_ATTACHMENT"
     ],
 
     "price": "55 USD",
