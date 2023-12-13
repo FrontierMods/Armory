@@ -48,8 +48,9 @@
       },
       {
         "material": [
-          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 1 },
-          { "type": "alumina", "covered_by_mat": 100, "thickness": 24 }
+          { "type": "alumina", "covered_by_mat": 100, "thickness": 17.57 },
+          { "type": "uhmwpe", "covered_by_mat": 100, "thickness": 7.53 },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.3 }
         ],
         "encumbrance": 1,
         "coverage": 5,
