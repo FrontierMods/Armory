@@ -33,6 +33,7 @@
     "symbol": ")",
     "color": "dark_gray",
     "looks_like": "2lcanteen",
+    "container": "backpack_molle_ii_hydration",
 
     "to_hit": -1,
 
