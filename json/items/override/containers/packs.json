@@ -1498,7 +1498,7 @@
     "name": {
       "str": "MOLLE 4000 airborne rucksack"
     },
-    "description": "A large nylon rucksack with an external pouch.  Specifically, this is a test unit of the airborne rucksack, intended for use by airborne infantry.  This model had been issued in limited capacity for field testing, but has ended up selling out of military surplus stores.  It is a large rucksack, offering ample storage as well as providing plenty of PALS webbing for attaching MOLLE gear.  The lid contains a large admin pouch for maps and such, and the bottom compartment offers a little bit of extra volume.  There are multiple ways to reach the contents of the rucksack, including channels for hydration bladder hoses.",
+    "description": "A large nylon rucksack with an external pouch.  Specifically, this is a test unit of the airborne rucksack, intended for use by airborne infantry.  This model had been issued in limited capacity for field testing, but has ended up selling out of military surplus stores.  It is a large rucksack, offering ample storage as well as providing plenty of PALS webbing for attaching MOLLE gear.  The lid contains a large admin pouch for maps and such, and the bottom compartment offers a little bit of extra volume.  The belt provides support for the backpack, as well as its own PALS webbing.  There are multiple ways to reach the contents of the rucksack, including channels for hydration bladder hoses.",
 
     "weight": "4309 g",
     "//dimensions": {
