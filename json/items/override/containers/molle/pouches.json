@@ -630,16 +630,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "empty Colt M16 magazine: 117 g",
-          "30 rounds of 55gr Sellier & Bellot .223 FMJ: 12.6 g × 30 = 378 g",
-          "30 rounds of the same with a 65gr bullet: (12.6 g - 55 gr + 65 gr) × 30 = 397.44 g ≈ 397 g",
-          "397 + 117 = 514 g, rounded up to the nearest 50 as future-proofing",
-          "NOTE: 55gr M855 is lighter (190 gr = 12.312 g)"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
@@ -728,13 +725,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
@@ -1319,13 +1316,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
@@ -1339,13 +1336,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
@@ -1359,13 +1356,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
@@ -1379,13 +1376,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "95 mm",
         "max_item_length": "192 mm",
 
@@ -1399,13 +1396,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "95 mm",
         "max_item_length": "192 mm",
 
@@ -1419,13 +1416,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 magazine volume",
-        "max_contains_volume": "349 ml",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
+          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
+          "+50 g as futureproofing"
         ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "800 g",
         "min_item_length": "95 mm",
         "max_item_length": "192 mm",
 
