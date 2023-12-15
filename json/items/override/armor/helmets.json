@@ -64,8 +64,24 @@
       {
         "encumbrance_modifiers": ["NONE"],
 
-        "coverage": 45,
-        "covers": ["head"]
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_crown"]
+      },
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_forehead"]
+      },
+      {
+        "encumbrance_modifiers": ["NONE"],
+
+        "coverage": 20,
+        "covers": ["head"],
+        "//specifically_covers": "this emulates coverage of the back of the head",
+        "specifically_covers": ["mouth_cheeks"]
       }
     ],
 
@@ -77,10 +93,10 @@
 
         "ablative": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "500 g",
+        "max_contains_volume": "500 ml",
 
         "moves": 250,
 
@@ -93,10 +109,11 @@
 
         "holster": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "400 g",
+        "max_contains_volume": "500 ml",
+        "max_item_length": "26 cm",
 
         "moves": 250,
 
@@ -110,10 +127,10 @@
 
         "ablative": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "250 g",
+        "max_contains_volume": "500 ml",
 
         "moves": 250,
 
@@ -126,10 +143,10 @@
 
         "ablative": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "400 g",
+        "max_contains_volume": "500 ml",
 
         "moves": 250,
 
@@ -142,10 +159,10 @@
 
         "holster": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.25,
 
-        "max_contains_volume": "400 ml",
         "max_contains_weight": "400 g",
+        "max_contains_volume": "400 ml",
 
         "moves": 250,
 
@@ -153,7 +170,7 @@
       }
     ],
 
-    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "PADDED"],
+    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "PADDED", "BELTED"],
 
     "price": "310 USD",
     "price_postapoc": "2 USD"
@@ -241,10 +258,10 @@
 
         "ablative": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "500 g",
+        "max_contains_volume": "500 ml",
 
         "flag_restriction": ["HELMET_FACE_SHIELD"],
 
@@ -257,10 +274,11 @@
 
         "holster": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "400 g",
+        "max_contains_volume": "750 ml",
+        "max_item_length": "166 mm",
 
         "flag_restriction": ["HELMET_EAR_ATTACHMENT"],
         "inherits_flags": true,
@@ -274,10 +292,10 @@
 
         "ablative": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "250 g",
+        "max_contains_volume": "500 ml",
 
         "flag_restriction": ["HELMET_NAPE_PROTECTOR"],
 
@@ -290,10 +308,10 @@
 
         "ablative": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.5,
 
-        "max_contains_volume": "500 ml",
         "max_contains_weight": "400 g",
+        "max_contains_volume": "500 ml",
 
         "flag_restriction": ["HELMET_MANDIBLE_GUARD_STRAPPED"],
 
@@ -306,10 +324,10 @@
 
         "holster": true,
 
-        "volume_encumber_modifier": 0,
+        "volume_encumber_modifier": 0.25,
 
-        "max_contains_volume": "400 ml",
         "max_contains_weight": "400 g",
+        "max_contains_volume": "400 ml",
 
         "flag_restriction": ["HELMET_BACK_POUCH"],
 
@@ -317,7 +335,7 @@
       }
     ],
 
-    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "PADDED"],
+    "flags": ["VARSIZE", "WATERPROOF", "STURDY", "PADDED", "BELTED"],
 
     "price": "2040 USD",
     "price_postapoc": "3 USD"
