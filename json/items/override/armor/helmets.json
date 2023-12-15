@@ -384,7 +384,7 @@
         "encumbrance": 10,
         "encumbrance_modifiers": ["WELL_SUPPORTED"],
 
-        "coverage": 80,
+        "coverage": 100,
         "covers": ["head"]
       },
       {
