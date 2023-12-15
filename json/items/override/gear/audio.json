@@ -289,7 +289,8 @@
 
         "coverage": 14,
         "covers": ["head"],
-        "specifically_covers": ["head_ear_r", "head_ear_l"]
+        "specifically_covers": ["head_ear_r", "head_ear_l"],
+        "layers": ["SKINTIGHT"]
       }
     ],
 
