@@ -1,0 +1,148 @@
+[
+  {
+    "id": "jacket_wild_things_soft_shell",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.wildthingsgear.com/products/soft-shell-jacket-lightweight-so-1-0"
+    ],
+
+    "//notes": [
+      "this may or may not have been, at one point, a Level V ECWCS top"
+    ],
+
+    "name": {
+      "str": "Wild Things soft-shell jacket"
+    },
+    "description": "A lightweight, comfortable soft-shell jacket.  ...  The jacket features two sleeve pockets and two chest pockets; you can keep your hands warm in the chest pockets.",
+
+    "//weight": [
+      "it is unclear whether the 18-oz weight listed in source is universal or for a specific size",
+      "if it's the latter, it's unclear which size it is for",
+      "until better data becomes available, we assume this to be the target weight of the medium-size model"
+    ],
+    "weight": "510 g",
+    "//upperwear": {
+      "chest": "112 cm",
+      "height": "78 cm",
+      "sleeve": "64 cm",
+      "thickness": "1.1 mm",
+      "raw": "740.7 ml",
+      "trim": 0,
+      "notes": [
+        "dimensions based on those of the ACU combat coat",
+        "thickness presumed to be noticably thicker than the coat"
+      ]
+    },
+    "volume": "741 ml",
+
+    "//material": [
+      "Tweave Durastretch (520E)",
+      "91% rugged nylon, 9% spandex",
+      "https://backpackinglight.com/forums/topic/85454/"
+    ],
+    "material": [
+      { "type": "nylon", "portion": 91 },
+      { "type": "lycra", "portion": 9 }
+    ],
+    "//material_thickness": "half the assumed overall thickness of the jacket",
+    "material_thickness": 0.55,
+    "//warmth": "non-insulated, intended to be worn with ECWCS underlayer",
+    "warmth": 25,
+
+    "symbol": "[",
+    "color": "white",
+    "looks_like": "coat_winter",
+    "repairs_like": "trenchcoat",
+
+    "armor": [
+      {
+        "encumbrance": [10, 20],
+
+        "coverage": 100,
+        "covers": ["torso"]
+      },
+
+      {
+        "encumbrance": [8, 12],
+
+        "coverage": 100,
+        "covers": ["arm_l", "arm_r"]
+      },
+      {
+        "encumbrance": 1,
+
+        "coverage": 100,
+        "covers": ["hand_l", "hand_r"],
+        "specifically_covers": ["hand_wrist_l", "hand_wrist_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Sleeve pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "125 ml",
+        "//max_item_length": ["acquired from visual reference"],
+        "max_item_length": "232 mm",
+
+        "moves": 140
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Sleeve pocket",
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "125 ml",
+        "//max_item_length": ["acquired from visual reference"],
+        "max_item_length": "232 mm",
+
+        "moves": 140
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Chest pocket",
+
+        "max_contains_weight": "500 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "250 ml",
+        "//max_item_length": [
+          "zipper length (from visual reference) is 303 mm",
+          "we multiply it by 0.9 to get an adequate length of item"
+        ],
+        "max_item_length": "273 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Chest pocket",
+
+        "max_contains_weight": "500 g",
+        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
+        "max_contains_volume": "250 ml",
+        "//max_item_length": [
+          "zipper length (from visual reference) is 303 mm",
+          "we multiply it by 0.9 to get an adequate length of item"
+        ],
+        "max_item_length": "273 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "flags": ["VARSIZE", "POCKETS", "OUTER", "WATERPROOF", "SOFT"],
+
+    "price": "450 USD",
+    "price_postapoc": "15 USD"
+  }
+]
