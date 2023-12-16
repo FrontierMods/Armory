@@ -251,5 +251,15 @@
       { "group": "iotv_set" },
       { "group": "custom_heavy_lbv" }
     ]
+  },
+
+  {
+    "id": "gun_belt_with_holster",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "western_holster",
+
+    "entries": [{ "item": "holster_leather_grommets" }]
   }
 ]
