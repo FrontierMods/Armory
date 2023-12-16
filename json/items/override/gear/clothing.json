@@ -11,10 +11,10 @@
         "https://www.amazon.com/COMBAT-SHIRT-Massif-Resistant-X-Small/dp/B01EIQ0YXO",
         "average of weight"
       ],
+      ["https://www.propper.com/size-chart", "dimensions"],
       [
         "https://www.rothco.com/size-chart/bdu-shirts",
         "https://store.glennsarmysurplus.com/massif-acu-digital-flame-resistant-army-combat-shirt-type-i--or-type-ii-army-strong-logo-p4387.aspx",
-        "sleeve length",
         "pocket restrictions"
       ]
     ],
@@ -40,26 +40,23 @@
       "(1.1 lbs + 1.05 lbs + 15 oz) / 3 = (498.95 g + 476.27 g + 425.24 g) / 3 = 466.82 g ≈ 467 g"
     ],
     "weight": "467 g",
-    "//dimensions": {
-      "length": "31.7 in",
-      "width": "23 in",
-      "height": "2 mm",
-      "raw": "941 ml",
-      "trim": 0.15,
+    "//upperwear": {
+      "chest": "78 in",
+      "height": "69 in",
+      "sleeve": "44.57 in",
+      "thickness": "0.1 mm",
+      "raw": "274.6 ml",
+      "trim": 0,
       "notes": [
-        "height presumed from 2× material thickness",
-        "other dimensions acquired from visual reference based on BDU back length for size M"
+        "chest circumference doubled (source assumed to be measuring one side only)",
+        "thickness presumed",
+        "sleeve length is (1 / 1.75) × chest circumference"
       ]
     },
-    "volume": "800 ml",
-    "//longest_side": [
-      "like with many clothes and textile items, we assume the item is thrice folded",
-      "31.7 in. = 805.18 mm / 8 = 100.6475 mm ≈ 101 mm"
-    ],
-    "longest_side": "101 mm",
+    "volume": "275 ml",
 
     "material": ["nylon", "cotton"],
-    "material_thickness": 1,
+    "material_thickness": 0.1,
     "warmth": 5,
 
     "symbol": "[",
@@ -79,6 +76,13 @@
 
         "coverage": 100,
         "covers": ["arm_l", "arm_r"]
+      },
+      {
+        "encumbrance": 0,
+
+        "coverage": 50,
+        "covers": ["hand_l", "hand_r"],
+        "specifically_covers": ["hand_wrist_l", "hand_wrist_r"]
       }
     ],
 
@@ -189,25 +193,26 @@
     ],
 
     "name": {
-      "str_sp": "ACU combat boots"
+      "str": "ACU combat boots",
+      "str_pl": "pairs of ACU combat boots"
     },
     "description": "Model C790 waterproof combat boots; produced by Belleville.  Approved for flight with both Army and Air Force, these became standard issue in temperate climates, with hot- and cold-climate variants also available.  These boots have solid grip on most terrain.",
 
     "//weight": "31 oz per boot × 2 = 62 oz = 1757.7 g ≈ 1758 g",
     "weight": "1758 g",
     "//dimensions": {
-      "length": "9.2 in",
-      "width": "3.2 in",
+      "length": "9.3 in",
+      "width": "3.45 in",
       "height": "8 in",
-      "raw": "3860 ml",
-      "trim": 0.45,
+      "raw": "4206.23 ml",
+      "trim": 0.475,
       "notes": [
         "dimensions acquired from visual reference",
         "based on the model in source's photos"
       ]
     },
-    "volume": "2123 ml",
-    "longest_side": "234 mm",
+    "volume": "2208 ml",
+    "longest_side": "236 mm",
 
     "to_hit": -1,
     "bashing": 1,
@@ -217,7 +222,6 @@
     "looks_like": "boots",
     "repairs_like": "boots_survivor",
 
-    "material_thickness": 2.5,
     "environmental_protection": 2,
     "warmth": 15,
 
@@ -227,12 +231,12 @@
           {
             "type": "leather",
             "covered_by_mat": 100,
-            "thickness": 1.25
+            "thickness": 1.4
           },
           {
-            "type": "kevlar",
+            "type": "nylon",
             "covered_by_mat": 100,
-            "thickness": 1.25
+            "thickness": 0.1
           }
         ],
 
@@ -254,7 +258,7 @@
       {
         "material": [
           {
-            "type": "leather",
+            "type": "nylon",
             "covered_by_mat": 100,
             "thickness": 0.1
           },
@@ -305,20 +309,18 @@
 
     "weight": "70 g",
     "//dimensions": {
-      "length": "9.84 in",
-      "width": "3.94 in",
-      "height": "0.51 in",
-      "raw": "324.01 ml",
-      "trim": 0.25,
+      "length": "7.35 in",
+      "width": "3.25 in",
+      "height": "1 mm",
+      "raw": "15.41 ml",
+      "trim": [0.125, -0.17],
       "notes": [
-        "trim assumes the glove had been measured with fingers spread out"
+        "length is 5.25 in. (finger length from source) + 40% (roughly the rest of the palm length)",
+        "first trim is to account for negative space between prism and fingers",
+        "second trim is to account for thumb (thumb is ~16-18% of the volume of the hand)"
       ]
     },
-    "volume": "243 ml",
-    "//longest_side": "assumes the glove being folded in two",
-    "longest_side": "125 mm",
-
-    "to_hit": 2,
+    "volume": "16 ml",
 
     "//material": [
       "leather stands in for AX Suede: a synthetic material with leather-like texture; a faux leather",
@@ -327,7 +329,7 @@
     "material": ["leather", "nomex"],
     "material_thickness": 0.5,
     "environmental_protection": 2,
-    "warmth": 15,
+    "warmth": 10,
 
     "symbol": "[",
     "color": "dark_gray",
@@ -336,7 +338,7 @@
 
     "armor": [
       {
-        "encumbrance": 7,
+        "encumbrance": 5,
 
         "coverage": 100,
         "covers": ["hand_l", "hand_r"]
@@ -364,13 +366,13 @@
       "https://www.propper.com/military-uniforms/army-uniform/acu-uniform/acu-coat-new-spec.html",
       [
         "https://www.helikon-tex.com/en_eur/bl-acu-pr-acu-shirt-polycotton-ripstop.html",
-        "weight",
-        "sizing reference"
-      ]
+        "weight"
+      ],
+      ["GL/PD 14-04A", "pocket dimensions"]
     ],
 
     "//notes": [
-      "modelled after size MR (medium, regular length)",
+      "modelled after size MR (medium, regular length), the unisex model",
       [
         "it isn't readily apparent that Propper is the sole or primary manufacturer of the coat",
         "however, their blog mentions the company being “the largest supplier of US military uniforms„",
@@ -391,20 +393,16 @@
     "description": "A thin coat covered in camouflage; produced by Propper.  Made from a ripstop material that combines nylon and cotton, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Features two sleeve pockets, two chest pockets, and two slots for pens on the left sleeve.",
 
     "weight": "610 g",
-    "//dimensions": {
-      "length": "78 cm",
-      "width": "71 cm",
-      "height": "3 mm",
-      "raw": "1661.4 ml",
-      "trim": 0.25,
-      "notes": [
-        "trim assumes the coat had been measured laid flat, with sleeve spread to how they'd sit on a person",
-        "height presumed",
-        "width acquired from visual reference"
-      ]
+    "//upperwear": {
+      "chest": "112 cm",
+      "height": "78 cm",
+      "sleeve": "64 cm",
+      "thickness": "0.4 mm",
+      "raw": "294.43 ml",
+      "trim": 0,
+      "notes": ["thickness presumed"]
     },
-    "volume": "1246 ml",
-    "longest_side": "98 mm",
+    "volume": "294 ml",
 
     "//material": "50/50 mix of ripstop (nylon and cotton) complies with Army's NIR (near-infrared signature) requirements",
     "material": ["nylon", "cotton"],
@@ -438,6 +436,14 @@
 
         "coverage": 100,
         "covers": ["arm_l", "arm_r"]
+      },
+
+      {
+        "encumbrance": 0,
+
+        "coverage": 100,
+        "covers": ["hand_l", "hand_r"],
+        "specifically_covers": ["hand_wrist_l", "hand_wrist_r"]
       }
     ],
 
@@ -447,16 +453,22 @@
 
         "description": "Sleeve pocket",
 
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
-        "max_contains_volume": "125 ml",
-        "//max_item_length": [
-          "acquired from visual reference: sleeve length",
-          "~10.75 in. = 273.05 mm",
-          "minus 1 in. in order to make the items easier to stash and extract",
-          "9.75 in. ≈ 247.65 mm = 248 mm"
-        ],
-        "max_item_length": "248 mm",
+        "max_contains_weight": "300 g",
+        "//dimensions": {
+          "length": "7.25 in",
+          "width": "5 in",
+          "height": "0.4 in",
+          "raw": "297.02 ml",
+          "trim": 0.05,
+          "notes": [
+            "length is calculated as length of Velcro patch (6 in.) + offset from top/bottom (0.0625 in.) * 2",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket",
+            "trim is to account for the tapering of the pocket"
+          ]
+        },
+        "max_contains_volume": "282 ml",
+        "//max_item_length": "from length of pocket",
+        "max_item_length": "184 mm",
 
         "moves": 140
       },
@@ -465,16 +477,22 @@
 
         "description": "Sleeve pocket",
 
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
-        "max_contains_volume": "125 ml",
-        "//max_item_length": [
-          "acquired from visual reference: sleeve length",
-          "~10.3 in. = 261.62 mm",
-          "minus 1 in. in order to make the items easier to stash and extract",
-          "9.3 in. ≈ 236.22 mm = 236 mm"
-        ],
-        "max_item_length": "236 mm",
+        "max_contains_weight": "300 g",
+        "//dimensions": {
+          "length": "7.25 in",
+          "width": "5 in",
+          "height": "0.4 in",
+          "raw": "297.02 ml",
+          "trim": 0.05,
+          "notes": [
+            "length is calculated as length of Velcro patch (6 in.) + offset from top/bottom (0.0625 in.) * 2",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket",
+            "trim is to account for the tapering of the pocket"
+          ]
+        },
+        "max_contains_volume": "282 ml",
+        "//max_item_length": "from length of pocket",
+        "max_item_length": "184 mm",
 
         "moves": 140
       },
@@ -484,11 +502,22 @@
 
         "description": "Chest pocket",
 
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
-        "max_contains_volume": "175 ml",
-        "//max_item_length": "assumed to be the same length as sleeve pockets",
-        "max_item_length": "236 mm",
+        "max_contains_weight": "450 g",
+        "//dimensions": {
+          "length": "5.25 in",
+          "width": "6.375 in",
+          "height": "0.5 in",
+          "raw": "274.23 ml",
+          "trim": 0.05,
+          "notes": [
+            "length acquired from visual reference",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket",
+            "trim is to account for the tapering of the pocket"
+          ]
+        },
+        "max_contains_volume": "261 ml",
+        "//max_item_length": "pocket width - 0.25 in. to let items fit well",
+        "max_item_length": "152 mm",
 
         "moves": 120
       },
@@ -497,11 +526,22 @@
 
         "description": "Chest pocket",
 
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": "with no clear way to correctly measure the size of the pockets, this is the closest estimate we could come up with",
-        "max_contains_volume": "175 ml",
-        "//max_item_length": "assumed to be the same length as sleeve pockets",
-        "max_item_length": "236 mm",
+        "max_contains_weight": "450 g",
+        "//dimensions": {
+          "length": "5.25 in",
+          "width": "6.375 in",
+          "height": "0.5 in",
+          "raw": "274.23 ml",
+          "trim": 0.05,
+          "notes": [
+            "length acquired from visual reference",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket",
+            "trim is to account for the tapering of the pocket"
+          ]
+        },
+        "max_contains_volume": "261 ml",
+        "//max_item_length": "pocket width - 0.25 in. to let items fit well",
+        "max_item_length": "152 mm",
 
         "moves": 120
       },
@@ -564,69 +604,32 @@
       "https://www.propper.com/military-uniforms/army-uniform/acu-uniform/acu-trouser-new-spec.html",
       [
         "https://www.helikon-tex.com/en_eur/sp-acu-pr-acu-pants-polycotton-ripstop.html",
-        "weight",
-        "dimensions reference"
-      ]
+        "weight"
+      ],
+      ["GL/PD 07-14A", "dimensions"]
     ],
 
     "//notes": ["modelled after size MR (medium, regular length)"],
 
     "name": {
-      "str_sp": "ACU combat pants"
+      "str_sp": "ACU combat trouser"
     },
     "description": "A durable pair of pants covered in camouflage; manufactured by Propper.  Made from a ripstop material that combines nylon and cotton, this model had been issued to Army soldiers as part of the standard uniform prior to the Cataclysm.  Design features reinforced seat, felled seams, and leg closure via a drawstring.  Features two front pockets, two backpockets, two slanted cargo pockets, and two knee/ankle pockets.",
 
     "weight": "715 g",
-    "//dimensions": [
-      {
-        "description": "Waist / crotch area",
-
-        "length": "2 mm",
-        "width": "41.2 cm",
-        "height": "27 cm",
-        "raw": "222.48 ml",
-        "trim": 0.1,
-        "result": "200.232 ml",
-        "notes": [
-          "trim assumes the pants had been measured laid flat",
-          "it also assumes that pockets' inherent internal dimensions even out against the tapering towards the waist"
-        ]
-      },
-      {
-        "description": "Pant",
-
-        "length": "2 mm",
-        "width": "20.2 cm",
-        "height": "82 cm",
-        "raw": "331.28 ml",
-        "trim": 0.1,
-        "result": "298.152 ml",
-        "notes": [
-          "trim assumes the pants had been measured laid flat",
-          "it also assumes that pockets' inherent internal dimensions even out against the tapering towards the ankle"
-        ]
-      },
-      {
-        "description": "Pant",
-
-        "length": "2 mm",
-        "width": "20.2 cm",
-        "height": "82 cm",
-        "raw": "331.28 ml",
-        "trim": 0.1,
-        "result": "298.152 ml",
-        "notes": [
-          "trim assumes the pants had been measured laid flat",
-          "it also assumes that pockets' inherent internal dimensions even out against the tapering towards the ankle"
-        ]
-      }
-    ],
-    "volume": "797 ml",
-    "//longest_side": [
-      "assumes that, much like any pants, this pair could be folded in half vertically, then folded thrice",
-      "109 cm = 1090 mm / 8 = 136.25 mm ≈ 136 mm"
-    ],
-    "longest_side": "136 mm",
+    "//lowerwear": {
+      "waist": "35.5 in",
+      "inseam": "32.375 in",
+      "rise": "11 in",
+      "thickness": "0.3 mm",
+      "raw": "520 ml",
+      "trim": 0.15,
+      "notes": [
+        "rise length is assumed to be between medium and high rise, which would provide a good balance between strictness of the uniform and wearer comfort",
+        "trim accounts for a possible gap between pant legs when the pants are laid out flat"
+      ]
+    },
+    "volume": "442 ml",
 
     "//material": "50/50 mix of ripstop (nylon and cotton) complies with Army's NIR (near-infrared signature) requirements",
     "material": ["nylon", "cotton"],
@@ -732,14 +735,21 @@
 
         "max_contains_weight": "5 kg",
         "//dimensions": {
-          "length": "200 mm",
-          "width": "150 mm",
-          "height": "50 mm",
-          "raw": "1500 ml",
-          "trim": 0.15
+          "length": "13.5 in",
+          "width": "11.25 in",
+          "height": "0.7 in",
+          "raw": "1742.15 ml",
+          "trim": 0.15,
+          "notes": [
+            "length is an average between two edges of the sloped pocket (11.75 in. and 15.25 in.)",
+            "length (both instances) and width acquired from visual reference",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket",
+            "trim is to account for the sloped top of the pocket"
+          ]
         },
-        "max_contains_volume": "1275 ml",
-        "max_item_length": "225 mm",
+        "max_contains_volume": "1481 ml",
+        "//max_item_length": "taken from the length (average of two edges), as a way to manage a more-balanced load on the pocket",
+        "max_item_length": "343 mm",
 
         "moves": 90
       },
@@ -750,14 +760,21 @@
 
         "max_contains_weight": "5 kg",
         "//dimensions": {
-          "length": "200 mm",
-          "width": "150 mm",
-          "height": "50 mm",
-          "raw": "1500 ml",
-          "trim": 0.15
+          "length": "13.5 in",
+          "width": "11.25 in",
+          "height": "0.7 in",
+          "raw": "1742.15 ml",
+          "trim": 0.15,
+          "notes": [
+            "length is an average between two edges of the sloped pocket (11.75 in. and 15.25 in.)",
+            "length (both instances) and width acquired from visual reference",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket",
+            "trim is to account for the sloped top of the pocket"
+          ]
         },
-        "max_contains_volume": "1275 ml",
-        "max_item_length": "225 mm",
+        "max_contains_volume": "1481 ml",
+        "//max_item_length": "taken from the length (average of two edges), as a way to manage a more-balanced load on the pocket",
+        "max_item_length": "343 mm",
 
         "moves": 90
       },
@@ -765,46 +782,46 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Ankle pocket",
+        "description": "Lower leg pocket",
 
         "max_contains_weight": "2 kg",
         "//dimensions": {
-          "length": "150 mm",
-          "width": "100 mm",
-          "height": "25 mm",
-          "raw": "375 ml",
+          "length": "8 in",
+          "width": "5.1 in",
+          "height": "0.4 in",
+          "raw": "267.44 ml",
           "trim": 0.05,
           "notes": [
-            "length acquired from visual reference",
-            "other dimensions estimated"
+            "length and width acquired from visual reference",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket"
           ]
         },
-        "max_contains_volume": "356 ml",
-        "//max_item_length": "roughly the length of an AR-15 magazine, which has been shown to fit into the ankle pocket",
-        "max_item_length": "180 mm",
+        "max_contains_volume": "254 ml",
+        "//max_item_length": "length of pocket (8 in.) + 10% to allow larger items to fit",
+        "max_item_length": "224 mm",
 
         "moves": 140
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Ankle pocket",
+        "description": "Lower leg pocket",
 
         "max_contains_weight": "2 kg",
         "//dimensions": {
-          "length": "150 mm",
-          "width": "100 mm",
-          "height": "25 mm",
-          "raw": "375 ml",
+          "length": "8 in",
+          "width": "5.1 in",
+          "height": "0.4 in",
+          "raw": "267.44 ml",
           "trim": 0.05,
           "notes": [
-            "length acquired from visual reference",
-            "other dimensions estimated"
+            "length and width acquired from visual reference",
+            "height is assumed from visual reference as maximum possible vertical stretch of the pocket"
           ]
         },
-        "max_contains_volume": "356 ml",
-        "//max_item_length": "roughly the length of an AR-15 magazine, which has been shown to fit into the ankle pocket",
-        "max_item_length": "180 mm",
+        "max_contains_volume": "254 ml",
+        "//max_item_length": "length of pocket (8 in.) + 10% to allow larger items to fit",
+        "max_item_length": "224 mm",
 
         "moves": 140
       }
