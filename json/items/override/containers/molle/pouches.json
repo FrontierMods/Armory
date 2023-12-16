@@ -94,6 +94,8 @@
     "volume": "518 ml",
     "longest_side": "140 mm",
 
+    "encumbrance": 0,
+
     "symbol": "[",
     "color": "dark_gray",
 
@@ -137,6 +139,9 @@
     },
     "volume": "3188 ml",
     "longest_side": "250 mm",
+
+    "encumbrance": 1,
+    "max_encumbrance": 6,
 
     "pocket_data": [
       {
@@ -611,15 +616,8 @@
     "material": ["nylon"],
     "material_thickness": 2,
 
-    "armor": [
-      {
-        "encumbrance": 0,
-
-        "coverage": 3,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
-      }
-    ],
+    "encumbrance": 0,
+    "max_encumbrance": 2,
 
     "pocket_data": [
       {
