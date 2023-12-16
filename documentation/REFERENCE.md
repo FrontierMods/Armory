@@ -1,10 +1,35 @@
 # Reference & Notes
 
+## Clothing
+
+### Volume
+
+- **upperwear** (t-shirts, coats, jackets etc.): `chest * (1/2 * height + 1/3 * sleeve) * thickness`, where
+
+  - `chest`: chest circumference; halved to get torso width
+  - `height`: total length (or height) of the torso part, measured at the back
+  - `sleeve`: length of sleeve
+  - `chest` is divided by `6 (= 2 × 3)` to get `1/3` of torso width (assumed to be sleeve width)
+  - initial (unsimplified) formula: `(chest / 2 × height + chest / 6 × sleeve × 2) × thickness`
+  - if `sleeve` is not provided, assume `sleeve` to be `1/1.75 × chest`
+
+- **lowerwear** (pants, shorts etc.): `(2 * inseam + rise) * waist * thickness`, where
+
+  - `inseam`: inseam length (i.e., length of pant leg between hem and crotch)
+  - `rise`: rise length (i.e., length between crotch and top of waistband); if not available, assume:
+    - low rise: `<9 in.` (usually `7—9 in.`) — very casual
+    - regular/mid rise: `9—11 in.` — mix between casual and formal
+    - high rise: `>11 in.` — comfortable
+  - `waist`: waistband circumference
+  - `thickness`: material thickness
+
 ## Ballistic Armor
 
 ### Dimensions
 
-**MOLLE cell**: 1″ tall × 1.5″ wide
+Quick reference:
+
+- **MOLLE cell**: 1″ tall × 1.5″ wide
 
 ### Ballistic Plates
 
