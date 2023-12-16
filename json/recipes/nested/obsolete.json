@@ -1,0 +1,33 @@
+[
+  {
+    "id": "nested_holsters",
+    "type": "nested_category",
+
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+
+    "name": "holsters",
+    "description": "Recipes related to constructing holsters for small, regular and large firearms.",
+
+    "activity_level": "LIGHT_EXERCISE",
+
+    "skill_used": "fabrication",
+    "difficulty": 1,
+
+    "//nested_category_data": "removed `XL_holster`",
+    "nested_category_data": [
+      "baldric_holster",
+      "back_holster",
+      "bholster",
+      "bbholster",
+      "bootstrap",
+      "holster",
+      "western_holster",
+      "shoulder_holster",
+      "tactical_holster",
+      "XS_holster",
+      "sholster",
+      "suspenders_holster"
+    ]
+  }
+]
