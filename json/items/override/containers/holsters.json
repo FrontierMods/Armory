@@ -1004,5 +1004,110 @@
 
     "price": "37 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "suspenders_holster",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://bracefire.com/shop/ols/products/xn--medium-bracefire-shoulder-holster-with-your-choice-of-a-holster-model-100-200-201-203-300-400-or-401-dbe/v/XN-MDM-BRC-SHL-RGH-HND-SNG-STC-MDL-1001"
+    ],
+
+    "//notes": [
+      [
+        "the physical dimensions of this item are entirely speculative, since no information on it appears to be available",
+        "the following ChatGPT 4 conversation has provided us with the best estimates so far",
+        "https://chat.openai.com/share/0490bc54-1f3d-471e-84e9-e490cf392cc9"
+      ],
+      [
+        "this item could be made more-modular: both sides' accessories are detachable and replaceable",
+        "e.g. use holsters for both sides, or replace single-stack magazine holster with one for a double-stack mag"
+      ],
+      "we model the magazine pouch far more permissively than the descriptions in source would suggest"
+    ],
+
+    "name": {
+      "str": "Bracefire holster suspenders",
+      "str_pl": "pairs of Bracefire holster suspenders"
+    },
+    "description": "A pair of nylon suspenders that attach to the sides of the trousers.  When not loaded, they look just like regular suspenders.  You can stash a compact pistol and a single magazine in the holsters on each side.",
+
+    "weight": "88 g",
+    "volume": "78 ml",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+
+    "symbol": "#",
+    "color": "brown",
+    "looks_like": "police_belt",
+
+    "armor": [
+      {
+        "encumbrance": [2, 6],
+
+        "coverage": 16,
+        "covers": ["torso"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Holster for a subcompact pistol",
+
+        "holster": true,
+
+        "magazine_well": "150 ml",
+        "max_contains_weight": "2 kg",
+        "min_item_volume": "150 ml",
+        "max_contains_volume": "300 ml",
+        "max_item_length": "18 cm",
+
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "volume of loaded M1911 mag, rounded up (70 ml)",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_contains_volume": "70 ml",
+        "//max_contains_weight": [
+          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+          "see: TM 9-1005-211-34",
+          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
+          "see: TM 43-0001-27"
+        ],
+        "max_contains_weight": "243 g",
+        "//min_item_length": "slightly shorter than length of pouch (4 in. = 101.6 mm)",
+        "min_item_length": "102 mm",
+        "//max_item_length": [
+          "4.75 in., as per double-stack magazine length capacity",
+          "https://bracefire.com/"
+        ],
+        "max_item_length": "130 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Store pistol or magazine",
+      "holster_msg": "You put your %1$s in your %2$s"
+    },
+
+    "flags": ["BELTED", "WATER_FRIENDLY"],
+
+    "price": "189 USD",
+    "price_postapoc": "25 cent"
   }
 ]
