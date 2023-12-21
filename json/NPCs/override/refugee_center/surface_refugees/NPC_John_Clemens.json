@@ -1,0 +1,23 @@
+[
+  {
+    "id": "REFUGEE_John_worn",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//": "might not be the best choice for a person wielding a revolver",
+
+    "entries": [
+      { "item": "briefs" },
+      { "item": "socks" },
+      { "item": "flag_shirt" },
+      { "item": "jeans" },
+      { "item": "leather_belt" },
+      { "item": "bandana" },
+      { "group": "thigh_strap_with_holster" },
+      { "item": "duster_leather" },
+      { "item": "sunglasses" },
+      { "item": "cowboy_hat" },
+      { "item": "boots_western" }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "security_gear",
+    "type": "item_group",
+
+    "items": [
+      { "group": "full_1st_aid", "prob": 30 },
+      ["airhorn", 5],
+      ["bandages", 10],
+      { "item": "adhesive_bandages", "prob": 10, "count": [1, 20] },
+      ["tacvest", 5],
+      { "item": "heavy_flashlight", "prob": 35, "charges": [0, 300] },
+      { "group": "thigh_strap_with_holster", "prob": 25 },
+      ["armguard_cut_resistant", 2],
+      ["bholster", 3],
+      ["legpouch_large", 5],
+      ["pocket_firstaid", 10],
+      ["police_belt", 20],
+      ["rope_30", 5],
+      ["sm_extinguisher", 5],
+      ["two_way_radio", 30],
+      ["whistle", 5]
+    ]
+  }
+]

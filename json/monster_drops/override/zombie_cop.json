@@ -16,5 +16,81 @@
         "prob": 75
       }
     ]
+  },
+  {
+    "id": "cop_holster",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "holster", "contents-group": "sidearms_cop", "prob": 20 },
+      { "item": "holster", "prob": 80 }
+    ]
+  },
+  {
+    "id": "cop_holster_field",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//": "same as above but with the assumption that you have storage for magazines",
+
+    "entries": [
+      {
+        "collection": [
+          { "item": "holster" },
+          { "group": "sidearms_cop_in_field" }
+        ],
+        "prob": 20
+      },
+      {
+        "collection": [
+          { "item": "holster" },
+          { "group": "sidearms_cop_in_field_no_gun" }
+        ],
+        "prob": 80
+      }
+    ]
+  },
+
+  {
+    "id": "swat_zombie_gear",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "distribution": [
+          { "item": "adhesive_bandages", "prob": 30, "count": [1, 20] },
+          { "item": "bandages", "prob": 30 },
+          { "group": "full_1st_aid", "prob": 20 }
+        ],
+        "prob": 25
+      },
+      {
+        "collection": [
+          { "item": "heavy_flashlight", "prob": 20, "charges": [0, 300] },
+          { "item": "airhorn", "prob": 5 },
+          { "item": "two_way_radio", "prob": 30 },
+          { "item": "whistle", "prob": 5 },
+          { "item": "flashbang", "prob": 10 },
+          { "item": "gasbomb", "prob": 10 },
+          { "item": "sm_extinguisher", "prob": 5 },
+          { "item": "rope_30", "prob": 10 }
+        ],
+        "prob": 30
+      },
+      {
+        "collection": [
+          { "item": "holster", "prob": 35 },
+          { "item": "chestpouch", "prob": 15 },
+          { "item": "ammo_satchel", "prob": 10 },
+          { "item": "bholster", "prob": 25 },
+          { "item": "bandolier_shotgun", "prob": 10 },
+          { "item": "legpouch_large", "prob": 25 },
+          { "item": "police_belt", "prob": 15 }
+        ],
+        "prob": 25
+      }
+    ]
   }
 ]

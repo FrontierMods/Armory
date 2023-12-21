@@ -1,0 +1,26 @@
+[
+  {
+    "id": "NC_COWBOY_storage",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//": "this makes little sense on the surface, but spawning a loose holster is worse",
+
+    "entries": [
+      { "item": "null", "prob": 75 },
+      { "item": "backpack", "prob": 10 },
+      { "item": "backpack_leather", "prob": 10 },
+      { "group": "thigh_strap_with_holster", "prob": 25 }
+    ]
+  },
+  {
+    "id": "NC_COWBOY_holster",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "null", "prob": 25 },
+      { "group": "thigh_strap_with_holster", "prob": 75 }
+    ]
+  }
+]
