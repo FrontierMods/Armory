@@ -638,6 +638,8 @@
 
         "description": "Back PALS webbing",
 
+        "holster": true,
+
         "//notes": [
           "even though the back has two technically-separate webbings, we treat it as a single webbing",
           "this allows us to mount large MOLLE accessories, like hydration pouches, with no issues"
@@ -655,7 +657,7 @@
         "max_contains_volume": "4026 ml",
         "max_contains_weight": "17 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH_BACK"]
       }
     ],
 
@@ -861,6 +863,8 @@
 
         "description": "Back PALS webbing",
 
+        "holster": true,
+
         "volume_encumber_modifier": 0.85,
 
         "//molle": {
@@ -873,7 +877,7 @@
         "max_contains_volume": "4645 ml",
         "max_contains_weight": "19 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH_BACK"]
       }
     ],
 
@@ -1133,6 +1137,8 @@
 
         "description": "Back PALS webbing",
 
+        "holster": true,
+
         "volume_encumber_modifier": 0.85,
 
         "//molle": {
@@ -1145,7 +1151,7 @@
         "max_contains_volume": "3484 ml",
         "max_contains_weight": "14 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH"]
+        "flag_restriction": ["MOLLE_ATTACH_BACK"]
       },
 
       {

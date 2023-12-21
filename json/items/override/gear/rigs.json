@@ -795,6 +795,8 @@
 
         "description": "Back PALS webbing",
 
+        "holster": true,
+
         "volume_encumber_modifier": 0.9,
 
         "//dimensions": {
@@ -811,7 +813,7 @@
         "max_contains_volume": "2787 ml",
         "max_contains_weight": "25 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "flag_restriction": ["MOLLE_ATTACH_BACK"]
       },
 
       {
