@@ -9,6 +9,15 @@
     "values": [{ "value": "MOVE_COST", "multiply": -0.05 }]
   },
   {
+    "id": "BOOTS_HEAVY_NOISE",
+    "type": "enchantment",
+
+    "has": "WORN",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "FOOTSTEP_NOISE", "multiply": 0.05 }]
+  },
+  {
     "id": "GLOVES_RECOIL_CONTROL",
     "type": "enchantment",
 
