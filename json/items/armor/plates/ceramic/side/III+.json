@@ -144,7 +144,7 @@
       }
     ],
 
-    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+    "flags": ["ABLATIVE_SIDE_TALL", "CANT_WEAR"],
 
     "//price": "$160 / pair",
     "price": "80 USD",
