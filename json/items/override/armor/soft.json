@@ -206,5 +206,158 @@
 
     "price": "219 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "kevlar",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://premierbodyarmor.com/collections/bulletproof-vests/products/hybrid-concealment-vest",
+      [
+        "https://nationalbodyarmor.com/products/concealable-bulletproof-carrier-ballistics-1",
+        "weight reference",
+        "thickness reference"
+      ]
+    ],
+
+    "//notes": ["modelled after size Medium"],
+
+    "name": {
+      "str": "Premier Body Armor concealable vest"
+    },
+    "description": "A classic adjustable soft armor vest, with understated looks and minimal additional functionality.  In situations where being shot is a possibility, civilians and non-combatants would be outfitted with one of these.  Embedded with a sheet of aramid textile designed to protect against pistol-caliber rounds, it could also be outfitted with an 8″×10″ ballistic plate of any level of protection, as well as a 5″×8″ trauma pad that would soften the blow from the bullets the plate catches.  In a pinch, the large hook-and-loop surface at the bottom could be used to attach hook-and-loop pouches.",
+
+    "//weight": [
+      "we model the weight of this vest after a similar product, since no weight data is avaiable in source",
+      "specifically, we model the weight after size Medium's Lightest configuration"
+    ],
+    "weight": "1542 g",
+    "//upperwear": {
+      "chest": "40.5 in",
+      "height": "15.5 in",
+      "sleeve": 0,
+      "thickness": "10.6 mm",
+      "raw": "445.73 ml",
+      "trim": 0,
+      "notes": [
+        "thickness is taken from a similar product's Lightest configuration, and multiplied by 2 (for both sides)"
+      ]
+    },
+    "volume": "446 ml",
+    "longest_side": "1029 mm",
+
+    "to_hit": -3,
+    "bashing": 6,
+
+    "material": ["kevlar", "nylon"],
+    "material_thickness": 5.3,
+    "warmth": 9,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "vest_leather",
+    "repairs_like": "survivor_suit",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 1.3
+          },
+          {
+            "type": "kevlar",
+            "covered_by_mat": 95,
+            "thickness": 4
+          }
+        ],
+
+        "encumbrance": 3,
+
+        "coverage": 94,
+        "cover_vitals": 90,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 1.3
+          },
+          {
+            "type": "kevlar",
+            "covered_by_mat": 95,
+            "thickness": 4
+          }
+        ],
+
+        "coverage": 24,
+        "cover_vitals": 18,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for a 5″×8″ trauma pad",
+
+        "ablative": true,
+
+        "moves": 800,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_TRAUMA_5x8"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pocket for an 8″×10″ armor plate",
+
+        "ablative": true,
+
+        "moves": 800,
+
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "5 kg",
+        "max_item_length": "318 mm",
+
+        "flag_restriction": ["ABLATIVE_COMMERCIAL_8x10"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hook-and-loop surface",
+
+        "//velcro": {
+          "width": 20,
+          "height": 6,
+          "notes": [
+            "calculations of volume made with assumed 40 mm vertical space, to enable Velcro panels"
+          ]
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+        "max_item_length": "508 mm",
+
+        "flag_restriction": ["VELCRO_ATTACH"]
+      }
+    ],
+
+    "flags": ["STURDY"],
+
+    "price": "799 USD",
+    "price_postapoc": "11 USD"
   }
 ]
