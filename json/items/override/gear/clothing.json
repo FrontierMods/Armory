@@ -279,6 +279,9 @@
       "passive_effects": [
         {
           "id": "BOOTS_SOLID_GRIP"
+        },
+        {
+          "id": "BOOTS_HEAVY_NOISE"
         }
       ]
     },
