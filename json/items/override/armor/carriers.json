@@ -460,7 +460,11 @@
 
         "moves": 800,
 
-        "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
+        "flag_restriction": [
+          "ABLATIVE_SIDE",
+          "ABLATIVE_SIDE_TALL",
+          "ABLATIVE_XS"
+        ]
       },
       {
         "pocket_type": "CONTAINER",
@@ -475,7 +479,11 @@
 
         "moves": 800,
 
-        "flag_restriction": ["ABLATIVE_SIDE", "ABLATIVE_XS"]
+        "flag_restriction": [
+          "ABLATIVE_SIDE",
+          "ABLATIVE_SIDE_TALL",
+          "ABLATIVE_XS"
+        ]
       },
 
       {

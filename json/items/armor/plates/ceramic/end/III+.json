@@ -45,7 +45,7 @@
 
         "encumbrance": 2,
 
-        "coverage": 42,
+        "coverage": 30,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
@@ -58,7 +58,7 @@
 
         "encumbrance": 1,
 
-        "coverage": 10,
+        "coverage": 8,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
       }
@@ -132,7 +132,7 @@
 
         "encumbrance": 2,
 
-        "coverage": 42,
+        "coverage": 34,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
@@ -220,7 +220,7 @@
 
         "encumbrance": 2,
 
-        "coverage": 42,
+        "coverage": 36,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
@@ -233,7 +233,7 @@
 
         "encumbrance": 1,
 
-        "coverage": 10,
+        "coverage": 13,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
       }
@@ -307,7 +307,7 @@
 
         "encumbrance": 2,
 
-        "coverage": 42,
+        "coverage": 38,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
       },
@@ -320,7 +320,7 @@
 
         "encumbrance": 1,
 
-        "coverage": 10,
+        "coverage": 16,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
       }

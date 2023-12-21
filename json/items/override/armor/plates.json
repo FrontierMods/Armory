@@ -225,7 +225,7 @@
       }
     ],
 
-    "flags": ["ABLATIVE_SIDE", "CANT_WEAR"],
+    "flags": ["ABLATIVE_SIDE", "ABLATIVE_SIDE_TALL", "CANT_WEAR"],
 
     "price": "169 USD",
     "price_postapoc": "1 USD"
