@@ -22,7 +22,7 @@
         "place_npcs": [{ "class": "bandit", "x": 17, "y": 9, "target": true }]
       },
       "effect": [
-        { "u_spawn_item": "gun_belt_with_holster", "use_item_group": true },
+        { "u_spawn_item": "leather_gun_belt_with_holster", "use_item_group": true },
         { "u_spawn_item": "ruger_redhawk" },
         { "u_spawn_item": "44magnum", "count": 12 },
         { "u_spawn_item": "badge_marshal" },
