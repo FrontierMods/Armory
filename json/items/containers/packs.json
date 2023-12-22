@@ -264,5 +264,386 @@
 
     "price": "35 USD",
     "price_postapoc": "5 cent"
+  },
+  {
+    "id": "backpack_molle_ii_4000",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://smithssurplusandsupply.com/product/molle-4000-airborne-field-pack/"
+    ],
+
+    "//notes": [
+      "we are currently modelling the rucksack and the frame as a single item, for convenience and simplicity of design",
+      "the rucksack is also currently modelled as having a permanent (non-detachable) MOLLE II waist belt",
+      "some of the PALS cells on this backpack are 'doubled' (come in double size to allow straps etc. through); we model these as two separate cells each, because they'd still fit the same amount of pouch volume/area"
+    ],
+
+    "//TODO": [
+      "strap carrying?",
+      "carrying a gun on a single-point strap (with noise while moving)"
+    ],
+
+    "name": {
+      "str": "MOLLE 4000 airborne rucksack"
+    },
+    "description": "A large nylon rucksack with an external pouch.  Specifically, this is a test unit of the airborne rucksack, intended for use by airborne infantry.  This model had been issued in limited capacity for field testing, but has ended up selling out of military surplus stores.  It is a large rucksack, offering ample storage as well as providing plenty of PALS webbing for attaching MOLLE gear.  The lid contains a large admin pouch for maps and such, and the bottom compartment offers a little bit of extra volume.  The belt provides support for the backpack, as well as its own PALS webbing.  There are multiple ways to reach the contents of the rucksack, including channels for hydration bladder hoses.",
+
+    "weight": "4309 g",
+    "//dimensions": {
+      "length": "14 in",
+      "width": "16 in",
+      "height": "24 in",
+      "raw": "88097 ml",
+      "trim": [0.25, 0.75]
+    },
+    "volume": "16518 ml",
+    "longest_side": "610 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "backpack",
+    "repairs_like": "bigback",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "2 mm per side of pack",
+            "thickness": 4
+          },
+          {
+            "type": "plastic",
+            "covered_by_mat": 5,
+            "//thickness": "0.25 in.",
+            "thickness": 6.35
+          }
+        ],
+
+        "encumbrance": [10, 79],
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_hanging_back"]
+      },
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "2 mm per side of pack",
+            "thickness": 4
+          }
+        ],
+
+        "//encumbrance": "no encumbrance for hanging top of the pack",
+        "encumbrance": 0,
+
+        "//coverage": [
+          "roughly full coverage from the back (40%), mitigated by the distance between top of pack and neck",
+          "the reasoning for mitigation being: angles still leave the back of the neck exposed",
+          "only neck coverage (as opposed to occiput or no neck coverage) is modelled after tall-ish male models from sources"
+        ],
+        "coverage": 23,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_neck"]
+      },
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "2 mm per side of pack",
+            "thickness": 4
+          },
+          {
+            "type": "plastic",
+            "covered_by_mat": 7.5,
+            "//thickness": "0.3 in.",
+            "thickness": 7.6
+          }
+        ],
+
+        "encumbrance": [1, 6],
+
+        "coverage": 90,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment",
+
+        "//max_contains_volume": "4000 cu. in.",
+        "max_contains_volume": "65548 ml",
+        "//max_contains_weight": "approximated as 100 cu. in. = 1 kg",
+        "max_contains_weight": "40 kg",
+        "//max_item_length": "total height (24 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "584 mm",
+
+        "moves": 310
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "External compartment",
+
+        "//max_contains_volume": "1200 cu. in.",
+        "max_contains_volume": "19665 ml",
+        "//max_contains_weight": "approximated as 100 cu. in. = 1 kg",
+        "max_contains_weight": "12 kg",
+        "//max_item_length": [
+          "width of pouch (12 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
+          "width acquired from visual reference"
+        ],
+        "max_item_length": "279 mm",
+
+        "moves": 180
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Lid admin pouch",
+
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "0.2 in",
+            "width": "16 in",
+            "height": "24 in",
+            "raw": "1258 ml",
+            "trim": 0.225
+          },
+          "using length as maximum possible depth/thickness this pocket can provide"
+        ],
+        "max_contains_volume": "975 ml",
+        "//max_contains_weight": [
+          "this assumes that lid pouches are not included in the weight rating",
+          "calculated as: (pouch capacity [0.975 L] / total pack capacity [52 L]) × weight rating [40 kg]"
+        ],
+        "max_contains_weight": "750 g",
+        "//max_item_length": "total width (22 in.) - 2 in. in this specific case to allow for some wiggle room to make retrieving the item possible",
+        "max_item_length": "508 mm",
+
+        "moves": 220
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//notes": [
+          "this space is intended for a harness used by airborne infantry",
+          "it's unclear whether this space is accounted for in the overall volume capacity of the pack",
+          "we assume that it isn't"
+        ],
+
+        "description": "Bottom compartment",
+
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "0.5 in",
+            "width": "16 in",
+            "height": "24 in",
+            "raw": "3146 ml",
+            "trim": 0.125
+          },
+          "using length as maximum possible depth/thickness this pocket can provide"
+        ],
+        "max_contains_volume": "2753 ml",
+        "//max_contains_weight": "approximated as 250 ml = 1 kg",
+        "max_contains_weight": "12 kg",
+        "//max_item_length": [
+          "width of pouch (24 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible"
+        ],
+        "max_item_length": "584 mm",
+
+        "moves": 180
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "External compartment PALS webbing",
+
+        "volume_encumber_modifier": 1.125,
+
+        "//molle": {
+          "width": 8,
+          "height": 4,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 1
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side PALS webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 6,
+          "height": 5,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side PALS webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 6,
+          "height": 5,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2787 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Top PALS webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 21,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 0
+        },
+        "max_contains_volume": "4877 ml",
+        "max_contains_weight": "20 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Lid PALS webbing",
+
+        "volume_encumber_modifier": 0.95,
+
+        "//molle": {
+          "width": 7,
+          "height": 3,
+          "spaced": true,
+          "width_extra": 2,
+          "height_extra": 1
+        },
+        "max_contains_volume": "2439 ml",
+        "max_contains_weight": "12 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//notes": [
+          "the belt is regular MOLLE II molded waist belt",
+          "those have 6 × 2 webbing on each side"
+        ],
+
+        "description": "Belt PALS webbing",
+
+        "volume_encumber_modifier": 0.875,
+
+        "//molle": {
+          "width": 6,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "1394 ml",
+        "max_contains_weight": "4 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "//notes": [
+          "the belt is regular MOLLE II molded waist belt",
+          "those have 6 × 2 webbing on each side"
+        ],
+
+        "description": "Belt PALS webbing",
+
+        "volume_encumber_modifier": 0.875,
+
+        "//molle": {
+          "width": 6,
+          "height": 2,
+          "spaced": true,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "1394 ml",
+        "max_contains_weight": "4 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked between your back and the backpack",
+
+        "holster": true,
+
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "60 cm",
+
+        "moves": 300,
+
+        "extra_encumbrance": 10,
+        "ripoff": 3
+      }
+    ],
+
+    "flags": ["BELTED", "WATER_FRIENDLY", "ONLY_ONE", "OVERSIZE"],
+
+    "//price": "price for the Premium (pristine) option",
+    "price": "295 USD",
+    "price_postapoc": "35 USD"
   }
 ]

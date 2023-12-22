@@ -1481,35 +1481,36 @@
     "type": "ARMOR",
 
     "//sources": [
-      "https://smithssurplusandsupply.com/product/molle-4000-airborne-field-pack/"
+      "https://www.511tactical.com/rush100.html",
+      [
+        "https://shop.afullmetaljacket.com/product/5-11-tactical-rush100-backpack-60l-2/",
+        "(more) accurate weight"
+      ]
     ],
 
     "//notes": [
-      "we are currently modelling the rucksack and the frame as a single item, for convenience and simplicity of design",
-      "the rucksack is also currently modelled as having a permanent (non-detachable) MOLLE II waist belt",
-      "some of the PALS cells on this backpack are 'doubled' (come in double size to allow straps etc. through); we model these as two separate cells each, because they'd still fit the same amount of pouch volume/area"
-    ],
-
-    "//TODO": [
-      "strap carrying?",
-      "carrying a gun on a single-point strap (with noise while moving)"
+      "the rucksack is also currently modelled as having a permanent (non-detachable) waist belt",
+      "the aluminium reinforcement is currently not modelled as a material",
+      "even with the extrelemy-generous additions of interior pockets, it appears to be decidedly difficult to model this backpack to its advertised capacity (~60 L)",
+      "two extra 3.5L pouches are currently not modelled"
     ],
 
     "name": {
-      "str": "MOLLE 4000 airborne rucksack"
+      "str": "5.11 Tactical RUSH 100 backpack"
     },
-    "description": "A large nylon rucksack with an external pouch.  Specifically, this is a test unit of the airborne rucksack, intended for use by airborne infantry.  This model had been issued in limited capacity for field testing, but has ended up selling out of military surplus stores.  It is a large rucksack, offering ample storage as well as providing plenty of PALS webbing for attaching MOLLE gear.  The lid contains a large admin pouch for maps and such, and the bottom compartment offers a little bit of extra volume.  The belt provides support for the backpack, as well as its own PALS webbing.  There are multiple ways to reach the contents of the rucksack, including channels for hydration bladder hoses.",
+    "description": "...",
 
-    "weight": "4309 g",
+    "weight": "2580 g",
     "//dimensions": {
-      "length": "14 in",
-      "width": "16 in",
-      "height": "24 in",
-      "raw": "88097 ml",
-      "trim": [0.25, 0.75]
+      "length": "11 in",
+      "width": "10.25 in",
+      "height": "28.5 in",
+      "raw": "52657.78 ml",
+      "trim": 0.25,
+      "notes": ["trim for the limited collapsing capacity when empty"]
     },
-    "volume": "16518 ml",
-    "longest_side": "610 mm",
+    "volume": "39493 ml",
+    "longest_side": "724 mm",
 
     "material": ["nylon", "plastic"],
     "material_thickness": 2,
@@ -1526,14 +1527,13 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "2 mm per side of pack",
-            "thickness": 4
+            "thickness": 1
           },
           {
             "type": "plastic",
             "covered_by_mat": 5,
             "//thickness": "0.25 in.",
-            "thickness": 6.35
+            "thickness": 4
           }
         ],
 
@@ -1548,8 +1548,7 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "2 mm per side of pack",
-            "thickness": 4
+            "thickness": 1
           }
         ],
 
@@ -1570,12 +1569,11 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "2 mm per side of pack",
             "thickness": 4
           },
           {
             "type": "plastic",
-            "covered_by_mat": 7.5,
+            "covered_by_mat": 5,
             "//thickness": "0.3 in.",
             "thickness": 7.6
           }
@@ -1595,29 +1593,243 @@
 
         "description": "Main compartment",
 
-        "//max_contains_volume": "4000 cu. in.",
-        "max_contains_volume": "65548 ml",
-        "//max_contains_weight": "approximated as 100 cu. in. = 1 kg",
-        "max_contains_weight": "40 kg",
-        "//max_item_length": "total height (24 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
-        "max_item_length": "584 mm",
+        "rigid": true,
 
-        "moves": 310
+        "max_contains_weight": "38 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "7 in",
+            "width": "10 in",
+            "height": "15 in",
+            "raw": "17206.42 ml",
+            "trim": -0.1
+          }
+        ],
+        "max_contains_volume": "18927 ml",
+        "max_item_length": "381 mm",
+
+        "moves": 360
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Main compartment: stretch pocket",
+
+        "holster": true,
+        "//rigid": "no truly rigid, but for the sake of mechanics",
+        "rigid": true,
+
+        "max_contains_weight": "10 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "1.75 in",
+            "width": "10 in",
+            "height": "9 in",
+            "raw": "2580.96 ml",
+            "trim": -0.25
+          }
+        ],
+        "max_contains_volume": "3226 ml",
+        "//max_item_length": "height × 1.25 (to account for trim)",
+        "max_item_length": "286 mm",
+        "//min_item_length": "8 in. (height - 1 in.)",
+        "min_item_length": "203 mm",
+
+        "moves": 340
       },
 
       {
         "pocket_type": "CONTAINER",
 
-        "description": "External compartment",
+        "description": "Secondary compartment",
 
-        "//max_contains_volume": "1200 cu. in.",
-        "max_contains_volume": "19665 ml",
-        "//max_contains_weight": "approximated as 100 cu. in. = 1 kg",
         "max_contains_weight": "12 kg",
-        "//max_item_length": [
-          "width of pouch (12 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
-          "width acquired from visual reference"
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "2.5 in",
+            "width": "10 in",
+            "height": "14.25 in",
+            "raw": "5837.89 ml",
+            "trim": 0.05
+          }
         ],
+        "max_contains_volume": "5546 ml",
+        "max_item_length": "362 mm",
+
+        "moves": 280
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Secondary compartment: mesh pocket",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "1.5 in",
+            "width": "10 in",
+            "height": "4 in",
+            "raw": "983.22 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "934 ml",
+        "//max_item_length": "9 in., to allow items to be stored extracted without finagling",
+        "max_item_length": "229 mm",
+
+        "moves": 360
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Secondary compartment: admin pocket",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "1 in",
+            "width": "3.25 in",
+            "height": "6 in",
+            "raw": "319.55 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "304 ml",
+        "//max_item_length": "7 in., to allow taller items to fit",
+        "max_item_length": "178 mm",
+        "//min_item_length": "5 in. (height - 1 in.)",
+        "min_item_length": "127 mm",
+
+        "moves": 290
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Secondary compartment: admin pocket",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "1 in",
+            "width": "3.25 in",
+            "height": "6 in",
+            "raw": "319.55 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "304 ml",
+        "//max_item_length": "7 in., to allow taller items to fit",
+        "max_item_length": "178 mm",
+        "//min_item_length": "5 in. (height - 1 in.)",
+        "min_item_length": "127 mm",
+
+        "moves": 290
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Secondary compartment: admin pocket",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "1 in",
+            "width": "3.25 in",
+            "height": "6 in",
+            "raw": "319.55 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "304 ml",
+        "//max_item_length": "7 in., to allow taller items to fit",
+        "max_item_length": "178 mm",
+        "//min_item_length": "5 in. (height - 1 in.)",
+        "min_item_length": "127 mm",
+
+        "moves": 290
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Secondary compartment: back sleeve",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "0.25 in",
+            "width": "10 in",
+            "height": "7 in",
+            "raw": "286.77 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "287 ml",
+        "max_item_length": "178 mm",
+
+        "moves": 410
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Top compartment",
+
+        "max_contains_weight": "5 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "2.75 in",
+            "diameter": "7.75 in",
+            "raw": "2125.82 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "2126 ml",
+        "max_item_length": "197 mm",
+
+        "moves": 220
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Top compartment: sunglasses pocket",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "estimated as ~1/4 of the top compartment's capacity"
+        ],
+        "max_contains_volume": "532 ml",
+        "//max_item_length": "7 in., to allow storing and extracting items without a fuss",
+        "max_item_length": "178 mm",
+
+        "moves": 340
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Bottom compartment",
+
+        "max_contains_weight": "36 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "11 in",
+            "width": "10 in",
+            "height": "10.25 in",
+            "raw": "18476.42 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "17553 ml",
         "max_item_length": "279 mm",
 
         "moves": 180
@@ -1626,80 +1838,18 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Lid admin pouch",
-
-        "//max_contains_volume": [
-          "from approximate dimensions",
-          {
-            "length": "0.2 in",
-            "width": "16 in",
-            "height": "24 in",
-            "raw": "1258 ml",
-            "trim": 0.225
-          },
-          "using length as maximum possible depth/thickness this pocket can provide"
-        ],
-        "max_contains_volume": "975 ml",
-        "//max_contains_weight": [
-          "this assumes that lid pouches are not included in the weight rating",
-          "calculated as: (pouch capacity [0.975 L] / total pack capacity [52 L]) × weight rating [40 kg]"
-        ],
-        "max_contains_weight": "750 g",
-        "//max_item_length": "total width (22 in.) - 2 in. in this specific case to allow for some wiggle room to make retrieving the item possible",
-        "max_item_length": "508 mm",
-
-        "moves": 220
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "//notes": [
-          "this space is intended for a harness used by airborne infantry",
-          "it's unclear whether this space is accounted for in the overall volume capacity of the pack",
-          "we assume that it isn't"
-        ],
-
-        "description": "Bottom compartment",
-
-        "//max_contains_volume": [
-          "from approximate dimensions",
-          {
-            "length": "0.5 in",
-            "width": "16 in",
-            "height": "24 in",
-            "raw": "3146 ml",
-            "trim": 0.125
-          },
-          "using length as maximum possible depth/thickness this pocket can provide"
-        ],
-        "max_contains_volume": "2753 ml",
-        "//max_contains_weight": "approximated as 250 ml = 1 kg",
-        "max_contains_weight": "12 kg",
-        "//max_item_length": [
-          "width of pouch (24 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible"
-        ],
-        "max_item_length": "584 mm",
-
-        "moves": 180
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "External compartment PALS webbing",
+        "description": "Front PALS webbing",
 
         "volume_encumber_modifier": 1.125,
 
         "//molle": {
-          "width": 8,
+          "width": 6,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
-          "height_extra": 1
+          "height_extra": 2
         },
-        "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
+        "max_contains_volume": "2323 ml",
+        "max_contains_weight": "10 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -1712,53 +1862,68 @@
         "//volume_encumber_modifier": 1,
 
         "//molle": {
-          "width": 6,
-          "height": 5,
-          "spaced": true,
-          "width_extra": 0,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Side PALS webbing",
-
-        "//volume_encumber_modifier": 1,
-
-        "//molle": {
-          "width": 6,
-          "height": 5,
-          "spaced": true,
-          "width_extra": 0,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Top PALS webbing",
-
-        "//volume_encumber_modifier": 1,
-
-        "//molle": {
-          "width": 21,
+          "width": 5,
           "height": 3,
-          "spaced": true,
           "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "1548 ml",
+        "max_contains_weight": "7 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side PALS webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 5,
+          "height": 3,
+          "width_extra": 0,
+          "height_extra": 2
+        },
+        "max_contains_volume": "1548 ml",
+        "max_contains_weight": "7 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Shoulder strap PALS webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "width_extra": 1,
           "height_extra": 0
         },
-        "max_contains_volume": "4877 ml",
-        "max_contains_weight": "20 kg",
+        "max_contains_volume": "697 ml",
+        "max_contains_weight": "3 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Shoulder strap PALS webbing",
+
+        "//volume_encumber_modifier": 1,
+
+        "//molle": {
+          "width": 2,
+          "height": 3,
+          "width_extra": 1,
+          "height_extra": 0
+        },
+        "max_contains_volume": "697 ml",
+        "max_contains_weight": "3 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -1766,68 +1931,36 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Lid PALS webbing",
+        "description": "Belt PALS webbing",
 
-        "volume_encumber_modifier": 0.95,
+        "volume_encumber_modifier": 0.875,
 
         "//molle": {
           "width": 7,
-          "height": 3,
-          "spaced": true,
-          "width_extra": 2,
-          "height_extra": 1
-        },
-        "max_contains_volume": "2439 ml",
-        "max_contains_weight": "12 kg",
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "//notes": [
-          "the belt is regular MOLLE II molded waist belt",
-          "those have 6 × 2 webbing on each side"
-        ],
-
-        "description": "Belt PALS webbing",
-
-        "volume_encumber_modifier": 0.875,
-
-        "//molle": {
-          "width": 6,
           "height": 2,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2
         },
-        "max_contains_volume": "1394 ml",
-        "max_contains_weight": "4 kg",
+        "max_contains_volume": "1626 ml",
+        "max_contains_weight": "7 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
         "pocket_type": "CONTAINER",
 
-        "//notes": [
-          "the belt is regular MOLLE II molded waist belt",
-          "those have 6 × 2 webbing on each side"
-        ],
-
         "description": "Belt PALS webbing",
 
         "volume_encumber_modifier": 0.875,
 
         "//molle": {
-          "width": 6,
+          "width": 7,
           "height": 2,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2
         },
-        "max_contains_volume": "1394 ml",
-        "max_contains_weight": "4 kg",
+        "max_contains_volume": "1626 ml",
+        "max_contains_weight": "7 kg",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -1839,22 +1972,77 @@
 
         "holster": true,
 
-        "max_contains_volume": "5 L",
         "max_contains_weight": "4 kg",
+        "max_contains_volume": "5 L",
         "max_item_length": "150 cm",
         "min_item_length": "60 cm",
 
-        "moves": 300,
+        "moves": 250,
 
-        "extra_encumbrance": 10,
+        "extra_encumbrance": 12,
         "ripoff": 3
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked under compression straps",
+
+        "holster": true,
+
+        "max_contains_weight": "5 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "30 in",
+            "diameter": "2 in",
+            "raw": "1544.44 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "1545 L",
+        "//max_item_length": "30 in., slightly longer than the backpack itself",
+        "max_item_length": "762 mm",
+        "//min_item_length": "10 in., slightly longer than distance between compression straps",
+        "min_item_length": "254 mm",
+
+        "moves": 550,
+
+        "extra_encumbrance": 7,
+        "ripoff": 2
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked under compression straps",
+
+        "holster": true,
+
+        "max_contains_weight": "5 kg",
+        "//max_contains_volume": [
+          "from approximate dimensions",
+          {
+            "length": "30 in",
+            "diameter": "2 in",
+            "raw": "1544.44 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "1545 L",
+        "//max_item_length": "30 in., slightly longer than the backpack itself",
+        "max_item_length": "762 mm",
+        "//min_item_length": "10 in., slightly longer than distance between compression straps",
+        "min_item_length": "254 mm",
+
+        "moves": 550,
+
+        "extra_encumbrance": 7,
+        "ripoff": 2
       }
     ],
 
     "flags": ["BELTED", "WATER_FRIENDLY", "ONLY_ONE", "OVERSIZE"],
 
-    "//price": "price for the Premium (pristine) option",
-    "price": "295 USD",
-    "price_postapoc": "35 USD"
+    "price": "255 USD",
+    "price_postapoc": "30 USD"
   }
 ]
