@@ -77,8 +77,9 @@
 
         "encumbrance": [0, 5],
 
-        "max_contains_volume": "1500 ml",
         "max_contains_weight": "2 kg",
+        "max_contains_volume": "1500 ml",
+        "max_item_length": "300 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP", "TUCKED_IN"]
       },
@@ -92,10 +93,11 @@
 
         "encumbrance": [0, 7],
 
-        "max_contains_volume": "1500 ml",
         "max_contains_weight": "2 kg",
+        "max_contains_volume": "1500 ml",
+        "max_item_length": "180 mm",
 
-        "flag_restriction": ["BELT_GEAR", "BELT_CLIP", "TUCKED_IN"]
+        "flag_restriction": ["BELT_CLIP", "TUCKED_IN"]
       }
     ],
 
