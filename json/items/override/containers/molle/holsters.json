@@ -43,6 +43,7 @@
     "armor": [
       {
         "encumbrance": [1, 4],
+
         "coverage": 9,
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_hip_r", "leg_hip_l"]
