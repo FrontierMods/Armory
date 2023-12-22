@@ -1109,7 +1109,7 @@
       "holster_msg": "You put your %1$s in your %2$s"
     },
 
-    "flags": ["BELTED", "WATER_FRIENDLY"],
+    "flags": ["BELTED", "WATER_FRIENDLY", "TARDIS"],
 
     "price": "189 USD",
     "price_postapoc": "25 cent"
