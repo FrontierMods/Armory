@@ -68,7 +68,7 @@
       { "item": "wristwatch", "prob": 30 },
       { "item": "diving_watch", "prob": 5 },
       { "item": "pocketwatch", "prob": 10 },
-      { "group": "thigh_strap_with_holster", "prob": 25 },
+      { "group": "thigh_strap_with_holster_loose", "prob": 25 },
       { "item": "bandana", "prob": 20 },
       { "item": "scarf", "prob": 15 },
       { "item": "hat_boonie", "prob": 20 },
