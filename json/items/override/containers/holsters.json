@@ -206,10 +206,14 @@
         ],
         "max_contains_volume": "70 ml",
         "//max_contains_weight": [
-          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
-          "see: technical manual TM 9-1005-211-34",
-          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
-          "see: technical manual TM 43-0001-27"
+          [
+            "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+            "see: technical manual TM 9-1005-211-34"
+          ],
+          [
+            "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g) × 8 = 171.59 g ≈ 172 g",
+            "see: technical manual TM 43-0001-27"
+          ]
         ],
         "max_contains_weight": "243 g",
         "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
