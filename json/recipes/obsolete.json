@@ -1,4 +1,414 @@
 [
   { "result": "XL_holster", "type": "recipe", "obsolete": true },
-  { "result": "suspenders_holster", "type": "recipe", "obsolete": true }
+  { "result": "suspenders_holster", "type": "recipe", "obsolete": true },
+  {
+    "result": "ballistic_vest_light",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "ballistic_vest_heavy",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "ballistic_vest_esapi",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "level_3_vest",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "helmet_army",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tac_helmet",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tac_fullhelmet",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "iotv_groin_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "iotv_shoulder_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "esapi_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "esbi_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "steel_ballistic_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "heavy_steel_ballistic_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "stab_vest",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "stab_plate",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "kevlar",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "sheath",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tactical_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "legpouch_large",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "canteen_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "dump_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "dump_pouch_unfolded",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "ifak_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "ammo_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "gas_mask_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "h2o_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "grenade_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "chestpouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "ammo_satchel",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tactical_shotshell_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tactical_grenade_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "radio_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "gadget_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "flashlight_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "triple_stacker_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "deployment_bag",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "grenadebandolier",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bandolier_wrist",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "legpouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tool_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bootstrap",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bbholster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "leg_sheath6",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "gartersheath1",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bootsheath",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bholster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "shoulder_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "back_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "sholster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "molle_medium_rucksack",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "molle_pack",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "molle_large_rucksack",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "backpack_tactical_large",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "rucksack",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "powered_earmuffs",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "powered_earplugs",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "attachable_ear_muffs",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bandolier_rifle",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "torso_bandolier_grenade",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bandolier_shotgun",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "torso_bandolier_shotgun",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "bandolier_pistol",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "cheap_ammo_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "webbing_belt",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "police_belt",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "western_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "combat_shirt",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "boots_combat",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "gloves_tactical",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "jacket_army_modern",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "pants_army",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "winter_jacket_army",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "winter_pants_army",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "winter_gloves_army",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "gloves_liner",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "camelbak",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "light_load_bearing_vest",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "load_bearing_vest",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "heavy_load_bearing_vest",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "tacvest",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "chestrig",
+    "type": "recipe",
+    "obsolete": true
+  }
 ]
