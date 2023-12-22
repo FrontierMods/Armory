@@ -1144,42 +1144,23 @@
     "id": "chestrig",
     "type": "ARMOR",
 
-    "//sources": [
-      "https://haleystrategic.com/x-chest-rig",
-      [
-        "https://haleystrategic.com/x-harness-chest-rig-kit",
-        "dimensions",
-        "weight"
-      ]
-    ],
+    "//sources": ["https://haleystrategic.com/molle-placard-chest-rig"],
 
     "name": {
-      "str": "Haley Strategic D3CR X chest rig"
+      "str": "Haley Strategic MOLLE placard chest rig"
     },
-    "description": "A compact and minimal chest rig.  The trade-off for comfort of use is minimal space for pouches.  The rig requires a QASM buckle panel or a hook-and-loop panel attached to be useful.",
+    "description": "A compact and minimal chest rig.  The trade-off for comfort of use is minimal space for pouches.  The spacer-mesh pad on the back of the rig makes wearing it more comfortable; the pad attaches to a hook-and-loop panel, and between the two, hanger pouches could be fitted for additional functionality.",
 
-    "//weight": [
-      "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz ≈ 238 g",
-      "we add 5 g × (4 + 2) = 30 g for the 4 female buckles included with the rig kit (source for weight/dimensions) and the two other QASM (female) ones on the X-harness, as visible on pictures of the rig itself, presuming that their weight is not included"
-    ],
-    "weight": "268 g",
+    "weight": "312 g",
     "//dimensions": {
-      "length": "9.50 in",
-      "width": "1.00 in",
-      "height": "6.25 in",
-      "raw": "922 ml",
-      "trim": 0.6,
-      "notes": [
-        "it may be possible to get a more-accurate estimate from directly measuring the parts of the rig kit"
-      ]
+      "length": "10.25 in",
+      "width": "1 in",
+      "height": "6.75 in",
+      "raw": "1133.78 ml",
+      "trim": 0
     },
-    "volume": "369 ml",
-    "//longest_side": [
-      "from 6.25 in. dimensions",
-      "since 9 in. (presumed length of harness straps) folded three times (the default way of measuring longest side for Frontier Mods' soft/foldable items) is only 1.1875 in. ≈ 30 mm",
-      "6.25 in. (presumed width of the non-foldable rig panel) ≈ 159 mm is much longer than folded straps"
-    ],
-    "longest_side": "159 mm",
+    "volume": "1134 ml",
+    "longest_side": "260 mm",
 
     "symbol": "[",
     "color": "dark_gray",
@@ -1191,7 +1172,7 @@
 
     "armor": [
       {
-        "encumbrance": [2, 15],
+        "encumbrance": [1, 13],
 
         "//coverage": [
           "half of large SAPI plate coverage = 18%",
@@ -1204,7 +1185,7 @@
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 8],
+        "encumbrance": [0, 6],
 
         "//coverage": "half of large SAPI plate coverage ≈ 6%",
         "coverage": 6,
@@ -1219,23 +1200,27 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "QASM / hook-and-loop panel space",
+        "description": "Panel PALS webbing",
 
-        "holster": true,
+        "volume_encumber_modifier": 0.9,
 
-        "max_contains_volume": "3 L",
-        "max_contains_weight": "5 kg",
-        "//min_item_length": "makes sure that only full hook-and-loop panels could be attached to the rig",
-        "min_item_length": "229 mm",
-        "max_item_length": "254 mm",
+        "//molle": {
+          "width": 6,
+          "height": 3,
+          "cells_extra": 0,
+          "width_extra": 2,
+          "height_extra": 2
+        },
+        "max_contains_volume": "2477 ml",
+        "max_contains_weight": "10 kg",
 
-        "flag_restriction": ["QASM_ATTACH", "VELCRO_PANEL", "VELCRO_POUCH"]
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       }
     ],
 
     "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
 
-    "price": "199 USD",
+    "price": "107 USD",
     "price_postapoc": "2 USD"
   }
 ]
