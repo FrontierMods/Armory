@@ -53,6 +53,8 @@
         ],
         "min_item_length": "267 mm",
 
+        "//volume_encumber_modifier": 0.25,
+
         "moves": 300
       },
 
@@ -73,6 +75,8 @@
         "max_contains_weight": "40 kg",
         "max_item_length": "525 mm",
 
+        "volume_encumber_modifier": 0.25,
+
         "moves": 110
       },
 
@@ -86,6 +90,8 @@
         "//max_item_length": "slightly smaller than the rest of the clamshell, to account for mesh stretch",
         "max_item_length": "515 mm",
 
+        "volume_encumber_modifier": 0.25,
+
         "moves": 140
       },
 
@@ -97,6 +103,8 @@
         "max_contains_volume": "300 ml",
         "max_contains_weight": "500 g",
         "max_item_length": "250 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "moves": 90
       },
@@ -116,6 +124,8 @@
         "max_contains_volume": "2787 ml",
         "max_contains_weight": "12 kg",
 
+        "volume_encumber_modifier": 0.25,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -134,6 +144,8 @@
         "max_contains_volume": "1084 ml",
         "max_contains_weight": "5 kg",
 
+        "volume_encumber_modifier": 0.5,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
@@ -150,6 +162,8 @@
         },
         "max_contains_volume": "1084 ml",
         "max_contains_weight": "5 kg",
+
+        "volume_encumber_modifier": 0.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -166,6 +180,8 @@
 
         "max_contains_volume": "119 ml",
         "max_contains_weight": "1 kg",
+
+        "volume_encumber_modifier": 0,
 
         "flag_restriction": ["VELCRO_ATTACH"]
       }
@@ -217,6 +233,8 @@
         "max_contains_weight": "20 kg",
         "max_contains_volume": "3500 ml",
 
+        "volume_encumber_modifier": 0.45,
+
         "item_restriction": ["camelbak"]
       },
 
@@ -234,6 +252,8 @@
         },
         "max_contains_volume": "1548 ml",
         "max_contains_weight": "7 kg",
+
+        "//volume_encumber_modifier": "no change to account for the balance shift with using MOLLE pouches on a well-balanced carrier",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       }
@@ -391,6 +411,8 @@
         "//max_item_length": "total height (24 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
         "max_item_length": "584 mm",
 
+        "volume_encumber_modifier": 0.25,
+
         "moves": 310
       },
 
@@ -408,6 +430,8 @@
           "width acquired from visual reference"
         ],
         "max_item_length": "279 mm",
+
+        "volume_encumber_modifier": 0.25,
 
         "moves": 180
       },
@@ -436,6 +460,8 @@
         "max_contains_weight": "750 g",
         "//max_item_length": "total width (22 in.) - 2 in. in this specific case to allow for some wiggle room to make retrieving the item possible",
         "max_item_length": "508 mm",
+
+        "volume_encumber_modifier": 0.25,
 
         "moves": 220
       },
@@ -470,6 +496,8 @@
         ],
         "max_item_length": "584 mm",
 
+        "volume_encumber_modifier": 0.25,
+
         "moves": 180
       },
 
@@ -477,8 +505,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "External compartment PALS webbing",
-
-        "volume_encumber_modifier": 1.125,
 
         "//molle": {
           "width": 8,
@@ -490,6 +516,8 @@
         "max_contains_volume": "2787 ml",
         "max_contains_weight": "12 kg",
 
+        "volume_encumber_modifier": 1.125,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -497,8 +525,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Side PALS webbing",
-
-        "//volume_encumber_modifier": 1,
 
         "//molle": {
           "width": 6,
@@ -510,14 +536,14 @@
         "max_contains_volume": "2787 ml",
         "max_contains_weight": "12 kg",
 
+        "//volume_encumber_modifier": 1,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Side PALS webbing",
-
-        "//volume_encumber_modifier": 1,
 
         "//molle": {
           "width": 6,
@@ -528,6 +554,8 @@
         },
         "max_contains_volume": "2787 ml",
         "max_contains_weight": "12 kg",
+
+        "//volume_encumber_modifier": 1,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -536,8 +564,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Top PALS webbing",
-
-        "//volume_encumber_modifier": 1,
 
         "//molle": {
           "width": 21,
@@ -549,6 +575,8 @@
         "max_contains_volume": "4877 ml",
         "max_contains_weight": "20 kg",
 
+        "volume_encumber_modifier": 0.75,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -556,8 +584,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Lid PALS webbing",
-
-        "volume_encumber_modifier": 0.95,
 
         "//molle": {
           "width": 7,
@@ -569,6 +595,8 @@
         "max_contains_volume": "2439 ml",
         "max_contains_weight": "12 kg",
 
+        "volume_encumber_modifier": 0.6,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -582,8 +610,6 @@
 
         "description": "Belt PALS webbing",
 
-        "volume_encumber_modifier": 0.875,
-
         "//molle": {
           "width": 6,
           "height": 2,
@@ -593,6 +619,8 @@
         },
         "max_contains_volume": "1394 ml",
         "max_contains_weight": "4 kg",
+
+        "volume_encumber_modifier": 0.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -606,8 +634,6 @@
 
         "description": "Belt PALS webbing",
 
-        "volume_encumber_modifier": 0.875,
-
         "//molle": {
           "width": 6,
           "height": 2,
@@ -617,6 +643,8 @@
         },
         "max_contains_volume": "1394 ml",
         "max_contains_weight": "4 kg",
+
+        "volume_encumber_modifier": 0.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
