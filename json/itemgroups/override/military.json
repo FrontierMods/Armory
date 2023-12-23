@@ -156,14 +156,10 @@
     "type": "item_group",
     "subtype": "distribution",
 
-    "//notes": [
-      "when we have QASM panels, this would be a good place to add them spawning"
-    ],
-
     "entries": [
       {
         "item": "ballistic_vest_light",
-        "contents-group": "pristine_esapi_front_plates"
+        "contents-group": "kitted_vest_qasm"
       }
     ]
   },
