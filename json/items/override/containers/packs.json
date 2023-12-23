@@ -212,7 +212,6 @@
         "//molle": {
           "width": 8,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2,
           "notes": ["extra height upwards thanks to extra space at the top"]
@@ -232,7 +231,6 @@
         "//molle": {
           "width": 2,
           "height": 3,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 0,
           "notes": [
@@ -254,7 +252,6 @@
         "//molle": {
           "width": 2,
           "height": 3,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 0
         },
@@ -274,7 +271,6 @@
         "//molle": {
           "width": 4,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2,
           "notes": [
@@ -297,7 +293,6 @@
         "//molle": {
           "width": 4,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2,
           "notes": [
@@ -1316,7 +1311,6 @@
         "//molle": {
           "width": 4,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2
         },
@@ -1335,7 +1329,6 @@
         "//molle": {
           "width": 4,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2
         },
@@ -1355,7 +1348,6 @@
         "//molle": {
           "width": 5,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 1
         },
@@ -1374,7 +1366,6 @@
         "//molle": {
           "width": 5,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 1
         },
@@ -1394,7 +1385,6 @@
         "//molle": {
           "width": 8,
           "height": 4,
-          "spaced": true,
           "width_extra": 2,
           "height_extra": 0
         },
@@ -1414,7 +1404,6 @@
         "//molle": {
           "width": 6,
           "height": 4,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2
         },
@@ -1434,7 +1423,6 @@
         "//molle": {
           "width": 6,
           "height": 3,
-          "spaced": true,
           "width_extra": -1,
           "height_extra": 2
         },
@@ -1453,7 +1441,6 @@
         "//molle": {
           "width": 6,
           "height": 3,
-          "spaced": true,
           "width_extra": -1,
           "height_extra": 2
         },
