@@ -178,27 +178,28 @@
         "description": "Hydration bladder pocket",
 
         "//max_contains_volume": [
-          "based on dimensions of Red Rock 2.5L hydration bladder",
-          "https://redrockoutdoorgear.com/2-5-liter-hydration-bladder/",
+          "based on dimensions of the MOLLE II hydration bladder",
           {
-            "length": "16 in",
-            "width": "6.75 in",
-            "height": "0.75 in",
-            "raw": "1327 ml",
-            "trim": 0.65,
+            "length": "3.8 mm",
+            "width": "18 cm",
+            "height": "46 cm",
+            "raw": "246.89 ml",
+            "trim": -0.05,
             "notes": [
-              "trim assumes 0.75 in. is the height of the clamp and the hose"
-            ],
-            "result": "465 ml"
+              "length (depth) is presumed for the bladder itself",
+              "trim handles the plastic cap"
+            ]
           },
-          "+ 2500 ml for all possible contained water"
+          "+ 3 L for all possible contained water"
         ],
-        "max_contains_volume": "2965 ml",
+        "max_contains_volume": "3256 ml",
         "//max_contains_weight": [
-          "weight of bladder (0.56 lbs ≈ 254 g) + 2500 g of all possible contained water"
+          "weight of bladder (190 g) + 3 kg of all possible contained water"
         ],
         "max_contains_weight": "3200 g",
         "max_item_length": "460 mm",
+
+        "volume_encumber_modifier": 0.45,
 
         "moves": 1200
       },
