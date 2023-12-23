@@ -62,5 +62,142 @@
 
     "price": "14 USD",
     "price_postapoc": "50 cent"
+  },
+  {
+    "id": "pouch_magazine_pistol_haley_strategic",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://haleystrategic.com/single-pistol-mag-pouch",
+      [
+        "https://www.tyrantcnc.com/glock-17-19x-22-34-45-magazine-extension-pre-assembled.html",
+        "maximum length of the magazine"
+      ]
+    ],
+
+    "name": {
+      "str": "Haley Strategic pistol mag pouch",
+      "str_pl": "Haley Strategic pistol mag pouches"
+    },
+    "description": "A thin nylon pouch with a flexible retention cord.  Can store a single pistol magazine, including some of the extended ones.",
+
+    "weight": "45 g",
+    "//dimensions": {
+      "length": "1 in",
+      "width": "2 in",
+      "height": "4.5 in",
+      "raw": "147.48 ml",
+      "trim": -0.05,
+      "notes": [
+        "negative trim is to account for the extra parts (the cord etc.)"
+      ]
+    },
+    "volume": "155 ml",
+    "longest_side": "114 mm",
+
+    "symbol": "[",
+    "color": "brown",
+
+    "material": ["nylon"],
+    "material_thickness": 0.3,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "max_contains_weight": "500 g",
+        "//max_contains_volume": [
+          "from dimensions of an extended Glock 17 magazine",
+          {
+            "length": "146.05 mm",
+            "width": "28.5 mm",
+            "height": "38 mm",
+            "raw": "158.17 ml",
+            "trim": 0,
+            "notes": [
+              "we use zero trim here in order to enable storing slightly-larger magazines",
+              "normally, trim would be 0.275"
+            ]
+          }
+        ],
+        "max_contains_volume": "158 ml",
+        "max_item_length": "146 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "price": "35 USD",
+    "price_postapoc": "20 cent"
+  },
+  {
+    "id": "pouch_handcuffs_511_tactical",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.511tactical.com/flex-cuff-pouch.html",
+      [
+        "https://www.kantas.com.tw/product/nij-approved-handcuffs-9-45-oz-chain-standard-size/",
+        "dimensions of a pair of handcuffs"
+      ]
+    ],
+
+    "name": {
+      "str": "5.11 Tactical Flex handcuffs pouch",
+      "str_pl": "5.11 Tactical Flex handcuffs pouches"
+    },
+    "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.",
+
+    "weight": "90 g",
+    "//dimensions": {
+      "length": "1.625 in",
+      "width": "3.5 in",
+      "height": "4 in",
+      "raw": "372.81 ml",
+      "trim": 0.075
+    },
+    "volume": "345 ml",
+    "longest_side": "102 mm",
+
+    "symbol": "[",
+    "color": "brown",
+
+    "material": ["nylon"],
+    "material_thickness": 0.2,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "//max_contains_weight": ["268 g + spare weight"],
+        "max_contains_weight": "350 g",
+        "//max_contains_volume": [
+          "from dimensions of a pair of NIJ-compliant handcuffs",
+          {
+            "length": "6 mm",
+            "diameter": "9 in",
+            "raw": "246.25 ml",
+            "trim": 0,
+            "notes": [
+              "we use zero trim here in order to enable storing slightly-larger magazines",
+              "normally, trim would be 0.1"
+            ]
+          }
+        ],
+        "max_contains_volume": "250 ml",
+        "max_item_length": "229 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "price": "26 USD",
+    "price_postapoc": "15 cent"
   }
 ]
