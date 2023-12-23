@@ -82,8 +82,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "encumbrance": [2, 8],
-
         "//molle": {
           "width": 6,
           "height": 5,
@@ -95,6 +93,8 @@
         "max_contains_volume": "2129 ml",
         "max_contains_weight": "9 kg",
         "max_item_length": "254 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       }
