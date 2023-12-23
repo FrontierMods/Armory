@@ -49,6 +49,8 @@
         },
         "max_contains_volume": "1858 ml",
         "max_contains_weight": "8 kg",
+        "//max_item_length": "to allow pouches that are slightly taller than this compact panel",
+        "max_item_length": "20 cm",
 
         "flag_restriction": ["MOLLE_ATTACH", "MULTI_DOT_ATTACH", "TUCKED_IN"]
       }
