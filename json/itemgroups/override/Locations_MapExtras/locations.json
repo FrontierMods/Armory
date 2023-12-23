@@ -200,5 +200,37 @@
       ["pin_reamer", 3],
       { "group": "writing_utensils", "prob": 20 }
     ]
+  },
+  {
+    "id": "cop_locker",
+    "type": "item_group",
+    "magazine": 100,
+    "subtype": "collection",
+    "entries": [
+      { "item": "pants", "prob": 100 },
+      { "item": "badge_deputy", "prob": 100 },
+      { "item": "cowboy_hat", "prob": 10 },
+      { "item": "leather_police_jacket", "prob": 25 },
+      { "item": "sheriffshirt", "prob": 100 },
+      { "group": "police_belt_outfitted_maybe", "prob": 100 },
+      { "group": "cop_shoes", "prob": 100 },
+      { "item": "whistle", "prob": 75 },
+      { "item": "ear_plugs", "prob": 66 },
+      { "group": "charged_two_way_radio", "prob": 50 },
+      { "item": "kevlar_harness", "prob": 20 },
+      { "item": "file", "prob": 25 },
+      { "item": "baton", "prob": 20 },
+      { "item": "kevlar", "prob": 15 },
+      {
+        "item": "usp_45",
+        "ammo-item": "45_acp",
+        "charges": 12,
+        "container-item": "holster",
+        "prob": 10
+      },
+      { "item": "survnote", "prob": 10 },
+      { "item": "family_photo", "prob": 10 },
+      { "item": "tazer", "prob": 5 }
+    ]
   }
 ]
