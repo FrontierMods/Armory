@@ -329,5 +329,94 @@
         "contents-group": "hydration_molle_full"
       }
     ]
+  },
+
+  {
+    "id": "panels_qasm",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "panel_qasm_frog_pro"
+      }
+    ]
+  },
+  {
+    "id": "kitted_vest_qasm",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "pristine_esapi_front_plates" },
+      {
+        "item": "panel_qasm_frog_pro",
+        "contents-group": "custom_light_lbv"
+      }
+    ]
+  },
+
+  {
+    "id": "police_belt_outfitted",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "police_belt",
+        "contents-group": "police_belt_pouches"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_outfitted_maybe",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "police_belt_outfitted",
+        "prob": 50
+      },
+      {
+        "item": "police_belt",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "police_belt_pouches",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "police_belt_pouches_set1"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_pouches_set1",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "count": 2
+      },
+      {
+        "item": "pouch_handcuffs_511_tactical"
+      },
+      {
+        "item": "radio_pouch"
+      },
+      {
+        "item": "holster"
+      },
+      {
+        "item": "flashlight_pouch"
+      }
+    ]
   }
 ]
