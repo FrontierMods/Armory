@@ -408,8 +408,7 @@
         "max_contains_volume": "65548 ml",
         "//max_contains_weight": "approximated as 100 cu. in. = 1 kg",
         "max_contains_weight": "40 kg",
-        "//max_item_length": "total height (24 in.) - 1 in. to allow for some wiggle room to make retrieving the item possible",
-        "max_item_length": "584 mm",
+        "max_item_length": "610 mm",
 
         "volume_encumber_modifier": 0.25,
 
