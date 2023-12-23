@@ -117,7 +117,6 @@
         "//molle": {
           "width": 7,
           "height": 4,
-          "spaced": true,
           "width_extra": 2,
           "height_extra": 0
         },
@@ -246,7 +245,6 @@
         "//molle": {
           "width": 5,
           "height": 3,
-          "spaced": true,
           "width_extra": 0,
           "height_extra": 2
         },
