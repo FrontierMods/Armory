@@ -212,7 +212,7 @@
       { "item": "cowboy_hat", "prob": 10 },
       { "item": "leather_police_jacket", "prob": 25 },
       { "item": "sheriffshirt", "prob": 100 },
-      { "group": "police_belt_outfitted_maybe", "prob": 100 },
+      { "group": "police_belts_outfitted_maybe", "prob": 100 },
       { "group": "cop_shoes", "prob": 100 },
       { "item": "whistle", "prob": 75 },
       { "item": "ear_plugs", "prob": 66 },
