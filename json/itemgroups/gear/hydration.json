@@ -1,0 +1,39 @@
+[
+  {
+    "id": "hydration_molle_contained",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "camelbak",
+        "container-item": "backpack_molle_ii_hydration"
+      }
+    ]
+  },
+  {
+    "id": "hydration_molle_full",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "water_clean",
+        "charges": 12,
+        "container-item": "camelbak"
+      }
+    ]
+  },
+  {
+    "id": "hydration_molle_full_contained",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "backpack_molle_ii_hydration",
+        "contents-group": "hydration_molle_full"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "panels_qasm",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "panel_qasm_frog_pro"
+      }
+    ]
+  },
+  {
+    "id": "kitted_vest_qasm",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "pristine_esapi_front_plates" },
+      {
+        "item": "panel_qasm_frog_pro",
+        "contents-group": "custom_light_lbv"
+      }
+    ]
+  }
+]

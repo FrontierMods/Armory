@@ -1,0 +1,13 @@
+[
+  {
+    "id": "police_sidearm",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "m17"
+      }
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "national_guard_vest_maybe_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_national_guard", "prob": 90 },
+      { "item": "velcro_panel_national_guard", "prob": 65 }
+    ]
+  },
+  {
+    "id": "national_guard_vest_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "velcro_panel_national_guard", "count": 2 }]
+  },
+  {
+    "id": "swat_vest_maybe_panels",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "SWAT may use different insignia depending on the situation",
+      "sheriff's offices (of which there are a few in Maine alone) may have their own SWAT teams"
+    ],
+
+    "entries": [
+      {
+        "collection": [
+          { "item": "velcro_panel_sheriff", "prob": 90 },
+          { "item": "velcro_panel_sheriff", "prob": 65 }
+        ]
+      },
+      {
+        "collection": [
+          { "item": "velcro_panel_police", "prob": 90 },
+          { "item": "velcro_panel_police", "prob": 65 }
+        ]
+      },
+      {
+        "collection": [
+          { "item": "velcro_panel_swat", "prob": 90 },
+          { "item": "velcro_panel_swat", "prob": 65 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "swat_vest_panels",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "SWAT may use different insignia depending on the situation",
+      "sheriff's offices (of which there are a few in Maine alone) may have their own SWAT teams"
+    ],
+
+    "entries": [
+      {
+        "collection": [{ "item": "velcro_panel_sheriff", "count": 2 }]
+      },
+      {
+        "collection": [{ "item": "velcro_panel_police", "count": 2 }]
+      },
+      {
+        "collection": [{ "item": "velcro_panel_swat", "count": 2 }]
+      }
+    ]
+  },
+  {
+    "id": "fema_vest_maybe_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_fema", "prob": 90 },
+      { "item": "velcro_panel_fema", "prob": 65 }
+    ]
+  },
+  {
+    "id": "fema_vest_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "velcro_panel_fema", "count": 2 }]
+  },
+  {
+    "id": "police_vest_maybe_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "velcro_panel_police", "prob": 90 },
+      { "item": "velcro_panel_police", "prob": 65 }
+    ]
+  },
+  {
+    "id": "police_vest_panels",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "velcro_panel_police", "count": 2 }]
+  }
+]
