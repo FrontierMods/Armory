@@ -28,7 +28,7 @@
     ],
 
     "items": [
-      { "item": "bandages", "charges": [0, 1], "count": [0, 1], "prob": 35 },
+      { "item": "bandages", "charges": [0, 2], "count": [0, 1], "prob": 35 },
       { "item": "quikclot", "charges": [0, 1], "prob": 25 },
       { "item": "adhesive_bandages", "count": [0, 1], "prob": 20 },
       { "item": "medical_gauze", "count": [0, 1], "prob": 10 },

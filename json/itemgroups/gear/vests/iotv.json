@@ -1,0 +1,46 @@
+[
+  {
+    "id": "iotv_set_maybe",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "iotv_groin_plate", "prob": 60 },
+      { "item": "iotv_shoulder_plate", "count": 2, "prob": 60 }
+    ]
+  },
+  {
+    "id": "iotv_set",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "iotv_groin_plate" },
+      {
+        "collection": [{ "item": "iotv_shoulder_plate", "count": 2 }]
+      }
+    ]
+  },
+  {
+    "id": "iotv_gear_complete",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "some_esapi_plates" },
+      { "group": "iotv_set_maybe" },
+      { "group": "custom_heavy_lbv" }
+    ]
+  },
+  {
+    "id": "iotv_gear_complete_pristine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "pristine_esapi_plates" },
+      { "group": "iotv_set" },
+      { "group": "custom_heavy_lbv" }
+    ]
+  }
+]

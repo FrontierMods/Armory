@@ -1,0 +1,90 @@
+[
+  {
+    "id": "police_belts",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "police_belt"
+      }
+    ]
+  },
+  {
+    "id": "police_belts_outfitted",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "police_belts",
+        "contents-group": "police_belt_pouches"
+      }
+    ]
+  },
+  {
+    "id": "police_belts_outfitted_maybe",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "police_belts_outfitted",
+        "prob": 50
+      },
+      {
+        "group": "police_belts",
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "id": "police_belt_pouches",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "police_belt_pouches_set_1"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_pouches_set_1",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": [
+      "Massachussets State Police employs a P320 in 9mm Parabellum as their sidearm of choice since 2023",
+      "https://twitter.com/MSPTroopers/status/1641906878740406275",
+      "we currently use M17 (a U.S. Army variant of P320 chambered in 9mm) as the best available alternative",
+      "replacing it would an appropriate option during spawn would be within the domain of another mod",
+      "of note is the fact that the police-issued P320 comes with the Romeo1 red dot sight and Nightstick 550XL underbarrel flashlight",
+      "adding those to the loadout would similarly be within the domain of another mod"
+    ],
+
+    "entries": [
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "contents-item": "p320mag_10rd_9x19mm",
+        "count": 2
+      },
+      {
+        "item": "pouch_handcuffs_511_tactical",
+        "//contents-item": "there should be a pair of handcuffs here, but they don't exist in the game"
+      },
+      {
+        "item": "radio_pouch",
+        "contents-item": "two_way_radio"
+      },
+      {
+        "item": "holster",
+        "contents-group": "police_sidearm"
+      },
+      {
+        "item": "flashlight_pouch",
+        "contents-item": "flashlight"
+      }
+    ]
+  }
+]
