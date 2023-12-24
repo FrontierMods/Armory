@@ -52,7 +52,7 @@
   {
     "id": "police_belt_pouches_set_1",
     "type": "item_group",
-    "subtype": "distribution",
+    "subtype": "collection",
 
     "//notes": [
       "Massachussets State Police employs a P320 in 9mm Parabellum as their sidearm of choice since 2023",
