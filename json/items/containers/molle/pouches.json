@@ -128,7 +128,7 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "TARDIS"],
 
     "price": "35 USD",
     "price_postapoc": "20 cent"
