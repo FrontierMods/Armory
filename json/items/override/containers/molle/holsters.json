@@ -162,9 +162,10 @@
           }
         ],
         "max_contains_volume": "142 ml",
-        "max_contains_weight": "400 g",
-        "//max_item_length": "12 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
-        "max_item_length": "305 mm",
+        "//max_contains_weight": "weight of the M9 bayonet",
+        "max_contains_weight": "558 g",
+        "//max_item_length": "14 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
+        "max_item_length": "356 mm",
 
         "moves": 130,
 
