@@ -56,8 +56,6 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "on_overflow": "discard",
-
     "items": [{ "group": "police_belts_outfitted" }]
   },
 
