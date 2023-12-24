@@ -1,0 +1,42 @@
+[
+  {
+    "id": "leather_gun_belt_with_holster",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "western_holster",
+
+    "entries": [{ "item": "holster_leather_grommets" }]
+  },
+
+  {
+    "id": "thigh_strap_with_holster",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "thigh_strap_trex",
+
+    "entries": [{ "item": "holster" }]
+  },
+  {
+    "id": "thigh_strap_with_holster_loose",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//": "for loose gear spawns, e.g. gun store",
+
+    "entries": [{ "item": "thigh_strap_trex" }, { "item": "holster" }]
+  },
+  {
+    "id": "thigh_strap_with_holster_loose_maybe",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//": "for loose gear spawns inside locations that have been ransacked",
+
+    "entries": [
+      { "item": "thigh_strap_trex", "prob": 40 },
+      { "item": "holster", "prob": 60 }
+    ]
+  }
+]
