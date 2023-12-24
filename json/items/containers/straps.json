@@ -79,7 +79,7 @@
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "1500 ml",
-        "max_item_length": "300 mm",
+        "max_item_length": "400 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP", "TUCKED_IN"]
       },
