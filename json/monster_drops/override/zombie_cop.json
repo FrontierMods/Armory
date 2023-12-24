@@ -51,6 +51,15 @@
       }
     ]
   },
+  {
+    "id": "cop_gear",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "on_overflow": "discard",
+
+    "items": [{ "group": "police_belts_outfitted" }]
+  },
 
   {
     "id": "swat_zombie_gear",
@@ -87,7 +96,7 @@
           { "item": "bholster", "prob": 25 },
           { "item": "bandolier_shotgun", "prob": 10 },
           { "item": "legpouch_large", "prob": 25 },
-          { "item": "police_belt", "prob": 15 }
+          { "group": "police_belts", "prob": 15 }
         ],
         "prob": 25
       }
