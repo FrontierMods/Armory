@@ -982,13 +982,18 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "2 L",
         "max_item_length": "550 mm",
 
-        "item_restriction": ["glock_17", "glock_22", "glock_31"],
+        "item_restriction": [
+          "glock_17",
+          "glock_19",
+          "glock_22",
+          "glock_29",
+          "glock_31"
+        ],
 
         "moves": 70
       }
@@ -1001,10 +1006,9 @@
     "//flags": [
       "replaced BELTED with CANT_WEAR",
       "removed PALS_MEDIUM: this item is not a MOLLE-capable attachment after the overhaul",
-      "added BELT_GEAR",
-      "added TARDIS: this appears to be the only way to emulate a pocket allowing items that stick out"
+      "added BELT_GEAR"
     ],
-    "flags": ["CANT_WEAR", "OVERSIZE", "BELT_GEAR", "TARDIS"],
+    "flags": ["CANT_WEAR", "OVERSIZE", "BELT_GEAR"],
 
     "price": "37 USD",
     "price_postapoc": "1 USD"
