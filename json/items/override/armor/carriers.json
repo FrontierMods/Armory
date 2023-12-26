@@ -95,18 +95,19 @@
     ],
     "weight": "699 g",
     "//dimensions": {
-      "length": "1.5 in",
+      "length": "6.4 mm",
       "width": "10.25 in",
       "height": "12.75 in",
-      "raw": "3212 ml",
+      "raw": "539.61 ml",
       "trim": 0.1,
       "notes": [
         "width is supposed to be equal to the width of the lower Velcro surface (10.25 in.), which stretches from edge to edge",
         "other dimensions acquired from visual reference",
-        "length (thickness) is double the single-panel measurement (~0.75 in.)"
+        "length (thickness) is double the single-panel measurement (3 mm × 2 + 0.1 mm × 2 × 2)",
+        "see `armor` for further explanation of thickness"
       ]
     },
-    "volume": "2891 ml",
+    "volume": "486 ml",
     "//longest_side": [
       "review says this can fold very compactly",
       "for now, we leave it as unfolded height, and adjust from testing if necessary"
@@ -135,18 +136,14 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier",
-            "thickness": 2
+            "//thickness": "0.1 mm × 2 ends",
+            "thickness": 0.2
           },
           {
-            "type": "cotton",
+            "type": "plastic_pad",
             "covered_by_mat": 100,
-            "//thickness": "3 mm per side of carrier",
-            "thickness": 6,
-            "//notes": [
-              "this is supposed to be spacer mesh made of polyester",
-              "polyester material does not exist in the game, and the only items stated to be made of it use cotton"
-            ]
+            "thickness": 3,
+            "//notes": ["this is supposed to be spacer mesh made of polyester"]
           }
         ],
 
@@ -173,18 +170,14 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier",
-            "thickness": 2
+            "//thickness": "0.1 mm × 2 ends",
+            "thickness": 0.2
           },
           {
-            "type": "cotton",
+            "type": "plastic_pad",
             "covered_by_mat": 100,
-            "//thickness": "3 mm per side of carrier",
-            "thickness": 6,
-            "//notes": [
-              "this is supposed to be spacer mesh made of polyester",
-              "polyester material does not exist in the game, and the only items stated to be made of it use cotton"
-            ]
+            "thickness": 3,
+            "//notes": ["this is supposed to be spacer mesh made of polyester"]
           }
         ],
 
@@ -310,10 +303,10 @@
     ],
     "weight": "4704 g",
     "//dimensions": {
-      "length": "1.50 in",
+      "length": "8.42 mm",
       "width": "15.35 in",
       "height": "21.00 in",
-      "raw": "7924 ml",
+      "raw": "1751.09 ml",
       "trim": 0.2,
       "notes": [
         "length (thickness) is taken from Perroz LPSPC",
@@ -322,7 +315,7 @@
         "we assume, for ease of calculations, that cummerbunds are tucked in, without making too much of a difference for other dimensions"
       ]
     },
-    "volume": "6339 ml",
+    "volume": "1401 ml",
     "longest_side": "533 mm",
 
     "material": ["nylon", "kevlar"],
@@ -339,8 +332,8 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
+            "//thickness": "0.2 mm × 2 sides per end of the carrier",
+            "thickness": 0.4
           },
           {
             "type": "kevlar",
@@ -378,13 +371,13 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
+            "//thickness": "0.2 mm × 2 sides per end of the carrier",
+            "thickness": 0.4
           },
           {
             "type": "kevlar",
             "//covered_by_mat": "approximated",
-            "covered_by_mat": 98,
+            "covered_by_mat": 95,
             "//thickness": [
               "0.3 in. (≈ 7.6 mm) total",
               "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
@@ -710,22 +703,22 @@
     "//weight": "weight for medium-sized non-side-plate configuration",
     "weight": "1982 g",
     "//dimensions": {
-      "length": "1.26 in",
+      "length": "1.12 in",
       "width": "12.25 in",
       "height": "16.75 in",
-      "raw": "4237 ml",
+      "raw": "3765.91 ml",
       "trim": 0.2,
       "notes": [
         "length (thickness) calculated as 2× the following (per front/back):",
         [
           ["foam thickness", "0.25 in."],
           ["ballistic filler thickness", "0.30 in."],
-          ["nylon cloth cover", "2 × 0.04 in."]
+          ["nylon cloth cover", "2 × 0.005 in."]
         ],
         "other dimensions acquired from visual reference"
       ]
     },
-    "volume": "3390 ml",
+    "volume": "3013 ml",
     "longest_side": "426 mm",
 
     "material": ["nylon", "kevlar"],
@@ -742,8 +735,14 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
+            "//thickness": "0.12 mm per side of carrier",
+            "thickness": 0.24
+          },
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 95,
+            "//thickness": "0.25 in.",
+            "thickness": 6.35
           },
           {
             "type": "kevlar",
@@ -781,13 +780,19 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
+            "//thickness": "0.12 mm per side of carrier",
+            "thickness": 0.24
+          },
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 95,
+            "//thickness": "0.25 in.",
+            "thickness": 6.35
           },
           {
             "type": "kevlar",
             "//covered_by_mat": "approximated",
-            "covered_by_mat": 98,
+            "covered_by_mat": 95,
             "//thickness": [
               "0.3 in. (≈ 7.6 mm) total",
               "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
@@ -989,16 +994,16 @@
     "//weight": "we presume weight based on a similar item by the same manufacturer",
     "weight": "2359 g",
     "//dimensions": {
-      "length": "1.26 in",
+      "length": "1.12 in",
       "width": "12.25 in",
       "height": "16.75 in",
-      "raw": "4237 ml",
+      "raw": "3765.91 ml",
       "trim": 0.2,
       "notes": [
         "dimensions copied from SPCS based on a rough estimate of given sizes"
       ]
     },
-    "volume": "3390 ml",
+    "volume": "3013 ml",
     "longest_side": "426 mm",
 
     "material": ["nylon"],
@@ -1016,8 +1021,14 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
+            "//thickness": "0.12 mm per side of carrier",
+            "thickness": 0.24
+          },
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 95,
+            "//thickness": "0.25 in.",
+            "thickness": 6.35
           },
           {
             "type": "kevlar",
@@ -1055,13 +1066,19 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of carrier, per side of body",
-            "thickness": 4
+            "//thickness": "0.12 mm per side of carrier",
+            "thickness": 0.24
+          },
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 95,
+            "//thickness": "0.25 in.",
+            "thickness": 6.35
           },
           {
             "type": "kevlar",
             "//covered_by_mat": "approximated",
-            "covered_by_mat": 98,
+            "covered_by_mat": 95,
             "//thickness": [
               "0.3 in. (≈ 7.6 mm) total",
               "conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)",
