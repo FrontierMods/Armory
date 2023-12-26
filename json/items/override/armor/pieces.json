@@ -25,17 +25,17 @@
 
     "weight": "417 g",
     "//dimensions": {
-      "length": "0.30 in",
+      "length": "0.27 in",
       "width": "11.50 in",
       "height": "12.75 in",
-      "raw": "721 ml",
+      "raw": "648.74 ml",
       "trim": 0.3,
       "notes": [
         "depth (length) is assumed from IOTV vest maximum thickness",
         "other dimensions acquired from visual reference"
       ]
     },
-    "volume": "505 ml",
+    "volume": "454 ml",
     "longest_side": "324 mm",
 
     "material": ["nylon", "kevlar"],
@@ -51,17 +51,17 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of protector",
-            "thickness": 2
+            "//thickness": "0.1 mm per side",
+            "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
-              "assumed 0.27 in.",
+              "assumed 0.27 in. - 0.2 mm",
               "similar to other soft armor inserts"
             ],
-            "thickness": 6.86
+            "thickness": 6.658
           }
         ],
 
@@ -87,17 +87,17 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of protector",
-            "thickness": 2
+            "//thickness": "0.1 mm per side",
+            "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
-              "assumed 0.27 in.",
+              "assumed 0.27 in. - 0.2 mm",
               "similar to other soft armor inserts"
             ],
-            "thickness": 6.86
+            "thickness": 6.658
           }
         ],
 
@@ -126,17 +126,17 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "1 mm per side of protector",
-            "thickness": 2
+            "//thickness": "0.1 mm per side",
+            "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
-              "assumed 0.27 in., minus the 2 mm of nylon",
+              "assumed 0.27 in. - 0.2 mm",
               "similar to other soft armor inserts"
             ],
-            "thickness": 4.858
+            "thickness": 6.658
           }
         ],
 
@@ -189,17 +189,19 @@
 
     "weight": "482 g",
     "//dimensions": {
-      "length": "0.30 in",
+      "length": "0.27 in",
       "width": "5.90 in",
       "height": "5.20 in",
-      "raw": "151 ml",
+      "raw": "135.74 ml",
       "trim": 0.25,
       "notes": [
         "depth (length) is assumed from IOTV vest maximum thickness",
         "other dimensions acquired from visual reference"
       ]
     },
-    "volume": "113 ml",
+    "volume": "102 ml",
+    "//longest_side": "height, assuming collapse along the longest side",
+    "longest_side": "132 mm",
 
     "material": ["nylon", "kevlar"],
 
@@ -209,18 +211,19 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "thickness": 2
+            "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
-              "assumed 0.27 in., minus the 2 mm of nylon",
+              "assumed 0.27 in. - 0.2 mm of nylon",
               "similar to other soft armor inserts"
             ],
-            "thickness": 4.858
+            "thickness": 6.658
           }
         ],
+
         "encumbrance": 3,
 
         "coverage": 80,
@@ -239,18 +242,19 @@
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "thickness": 2
+            "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
             "//thickness": [
-              "assumed 0.27 in., minus the 2 mm of nylon",
+              "assumed 0.27 in. - 0.2 mm of nylon",
               "similar to other soft armor inserts"
             ],
-            "thickness": 4.858
+            "thickness": 6.658
           }
         ],
+
         "encumbrance": 3,
 
         "coverage": 60,
