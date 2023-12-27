@@ -1,0 +1,79 @@
+[
+  {
+    "id": "profession_gunslinger_bandolier",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "45colt_jhp", "charges": 12 }]
+  },
+  {
+    "id": "profession_gunslinger_gun_and_ammo",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "colt_saa",
+        "ammo-item": "45colt_jhp",
+        "charges": 6,
+        "container-item": "holster_leather_grommets"
+      },
+      { "group": "profession_gunslinger_bandolier" }
+    ]
+  },
+  {
+    "id": "profession_gunslinger",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "western_holster",
+        "contents-group": "profession_gunslinger_gun_and_ammo"
+      }
+    ]
+  },
+  
+  {
+    "id": "magazine_m14_in_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "m14mag",
+        "ammo-item": "762_51",
+        "charges": 20,
+        "container-item": "chestpouch"
+      }
+    ]
+  },
+  {
+    "id": "profession_old_vet_chest_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "chestrig",
+
+    "entries": [
+      {
+        "group": "magazine_m14_in_pouch",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_old_vet",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "profession_old_vet_chest_rig"
+      },
+      {
+        "group": "knife_in_sheath_on_leather_belt"
+      }
+    ]
+  }
+]
