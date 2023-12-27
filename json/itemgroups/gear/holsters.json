@@ -38,5 +38,24 @@
       { "item": "thigh_strap_trex", "prob": 40 },
       { "item": "holster", "prob": 60 }
     ]
+  },
+
+  {
+    "id": "sheath_on_leather_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "leather_belt",
+
+    "entries": [{ "item": "sheath" }]
+  },
+  {
+    "id": "knife_in_sheath_on_leather_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "sheath_on_leather_belt",
+
+    "entries": [{ "item": "knife_combat" }]
   }
 ]
