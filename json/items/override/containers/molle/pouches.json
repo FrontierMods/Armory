@@ -628,13 +628,13 @@
         "holster": true,
         "rigid": true,
 
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
         "//max_contains_weight": [
           "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
           "+50 g as futureproofing"
         ],
         "max_contains_weight": "800 g",
+        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
+        "max_contains_volume": "350 ml",
         "min_item_length": "152 mm",
         "max_item_length": "192 mm",
 
