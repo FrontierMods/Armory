@@ -34,6 +34,57 @@
     ]
   },
   {
+    "id": "magazine_m14_in_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "m14mag",
+        "ammo-item": "762_51",
+        "charges": 20,
+        "container-item": "chestpouch"
+      }
+    ]
+  },
+  {
+    "id": "profession_old_vet_chest_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "chestrig",
+
+    "entries": [
+      {
+        "group": "magazine_m14_in_pouch",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_old_vet_leather_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "leather_belt",
+
+    "entries": [{ "item": "knife_combat", "container-item": "sheath" }]
+  },
+  {
+    "id": "profession_old_vet",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "profession_old_vet_chest_rig"
+      },
+      {
+        "group": "profession_old_vet_leather_belt"
+      }
+    ]
+  },
+  {
     "id": "gunslinger",
     "type": "profession",
 
@@ -73,6 +124,55 @@
           { "item": "sheriffshirt", "variant": "sheriff" }
         ]
       }
+    }
+  },
+  {
+    "id": "old_vet",
+    "type": "profession",
+
+    "name": "Old Veteran",
+    "description": "You've been through hell once before.  Hopefully those weekend range trips have kept your skills sharp.",
+
+    "points": 4,
+
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "survival" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic", "prof_spotting"],
+
+    "items": {
+      "both": {
+        "items": [
+          "wristwatch",
+          "jacket_army",
+          "pants",
+          "service_medal",
+          "boots_combat",
+          "socks",
+          "officer_uniform",
+          "pipe_tobacco",
+          "tobacco",
+          "beret"
+        ],
+
+        "entries": [
+          { "group": "profession_old_vet" },
+          { "item": "cane", "custom-flags": ["auto_wield"] },
+          {
+            "item": "m1a",
+            "ammo-item": "762_51",
+            "charges": 20,
+            "contents-item": ["shoulder_strap"]
+          }
+        ]
+      },
+
+      "male": ["briefs"],
+
+      "female": ["boy_shorts", "bra"]
     }
   }
 ]
