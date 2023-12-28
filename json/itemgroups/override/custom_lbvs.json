@@ -27,12 +27,15 @@
     ]
   },
   {
-    "type": "item_group",
     "id": "molle_backpacks_and_accessories",
+    "type": "item_group",
     "subtype": "distribution",
 
     "//added": [
-      ["`rucksack`", "is now a MOLLE II rucksack, with plenty of webbing"]
+      [
+        "backpack_molle_ii_4000",
+        "is a MOLLE II rucksack, with plenty of webbing"
+      ]
     ],
 
     "entries": [
@@ -52,7 +55,7 @@
         "contents-group": "molle_backpacks_contents"
       },
       {
-        "item": "rucksack",
+        "item": "backpack_molle_ii_4000",
         "prob": 15,
         "contents-group": "molle_backpacks_contents"
       }
