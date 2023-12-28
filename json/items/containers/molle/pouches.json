@@ -199,5 +199,71 @@
 
     "price": "26 USD",
     "price_postapoc": "15 cent"
+  },
+  {
+    "id": "pouch_magazine_pistol_molle_ii",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.armyandoutdoors.com/products/usgi-molle-ii-9mm-mag-pouch"
+    ],
+
+    "name": {
+      "str": "MOLLE II pistol mag pouch",
+      "str_pl": "MOLLE II pistol mag pouches"
+    },
+    "description": "A thin nylon pouch with a snap button.  Can store a single pistol magazine, though only intended for the M17 standard-issue magazines.",
+
+    "weight": "42 g",
+    "//dimensions": {
+      "length": "12 cm",
+      "width": "4.5 cm",
+      "height": "3 cm",
+      "raw": "162 ml",
+      "trim": 0.1,
+      "notes": [
+        "negative trim is to account for the extra parts (the cord etc.)"
+      ]
+    },
+    "volume": "146 ml",
+    "longest_side": "12 cm",
+
+    "symbol": "[",
+    "color": "brown",
+
+    "material": ["nylon"],
+    "material_thickness": 0.3,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": [
+          "from dimensions of an extended Glock 17 magazine",
+          {
+            "length": "146.05 mm",
+            "width": "28.5 mm",
+            "height": "38 mm",
+            "raw": "158.17 ml",
+            "trim": 0,
+            "notes": [
+              "we use zero trim here in order to enable storing slightly-larger magazines",
+              "normally, trim would be 0.275"
+            ]
+          }
+        ],
+        "max_contains_volume": "158 ml",
+        "max_item_length": "146 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "TARDIS"],
+
+    "price": "35 USD",
+    "price_postapoc": "20 cent"
   }
 ]
