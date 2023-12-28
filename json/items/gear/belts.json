@@ -1,0 +1,98 @@
+[
+  {
+    "id": "belt_army_acu",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://rainetacticalgear.com/collections/belts/products/military-riggers-belt",
+      [
+        "https://www.venturesurplus.com/products/army-riggers-belt-sand-tan/",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "while it's not clear that Raine is the manufacturer of the belt used by the US Army, military-surplus stores online sell it"
+    ],
+
+    "name": {
+      "str": "ACU rigger's belt"
+    },
+    "description": "A low-profile tan-colored nylon belt; manufactured by Raine Tactical Gear.  Used by U.S. soldiers all over the world, this simple belt usually serves as a platform for small pouches and holsters.",
+
+    "weight": "318 g",
+    "//dimensions": {
+      "length": "38 in",
+      "width": "1.75 in",
+      "height": "0.75 mm",
+      "raw": "32.18 ml",
+      "trim": -0.02,
+      "notes": [
+        "we assume 38 in. as the standard belt length, for the sake of consistency between different belts",
+        "trim is to account for the buckle"
+      ]
+    },
+    "volume": "33 ml",
+
+    "//material": ["we assume the buckles are aluminum"],
+    "material": ["nylon", "aluminum"],
+
+    "symbol": "[",
+    "color": "brown",
+    "looks_like": "leather_belt",
+    "repairs_like": "tool_belt",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "PALS webbing",
+
+        "volume_encumber_modifier": 0.85,
+
+        "//molle": {
+          "width": 25,
+          "height": 2,
+          "spaced": false,
+          "width_extra": 1,
+          "height_extra": 4,
+          "notes": [
+            "webbing width from belt width: 38 in. ≈ 25 1/3 cells = 25 + 1 cells"
+          ]
+        },
+        "max_contains_volume": "8052 ml",
+        "max_contains_weight": "33 kg",
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 0.75
+          },
+          {
+            "type": "aluminum",
+            "covered_by_mat": 3,
+            "thickness": 2
+          }
+        ],
+
+        "volume_encumber_modifier": 0.4,
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"]
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "13 USD",
+    "price_postapoc": "20 cent"
+  }
+]
