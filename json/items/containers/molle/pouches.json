@@ -243,27 +243,27 @@
 
         "max_contains_weight": "250 g",
         "//max_contains_volume": [
-          "from dimensions of an extended Glock 17 magazine",
+          "from dimensions of a 21-round M17 magazine",
           {
-            "length": "146.05 mm",
-            "width": "28.5 mm",
-            "height": "38 mm",
-            "raw": "158.17 ml",
-            "trim": 0,
+            "length": "141 mm",
+            "width": "0.875 in",
+            "height": "1.275 in",
+            "raw": "101.49 ml",
+            "trim": -0.035,
             "notes": [
-              "we use zero trim here in order to enable storing slightly-larger magazines",
-              "normally, trim would be 0.275"
+              "other dimensions are slightly-approximate due to the nature of the measuring device",
+              "trim accounts for the base plate, which is wider and longer than the magazine itself"
             ]
           }
         ],
-        "max_contains_volume": "158 ml",
-        "max_item_length": "146 mm"
+        "max_contains_volume": "105 ml",
+        "max_item_length": "141 mm"
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "TARDIS"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
 
-    "price": "35 USD",
-    "price_postapoc": "20 cent"
+    "price": "6 USD",
+    "price_postapoc": "10 cent"
   }
 ]
