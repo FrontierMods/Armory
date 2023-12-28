@@ -6,7 +6,7 @@
 
     "entries": [
       { "item": "iotv_groin_plate", "prob": 60 },
-      { "item": "iotv_shoulder_plate", "count": 2, "prob": 60 }
+      { "item": "iotv_shoulder_plate", "count": [0, 2], "prob": 60 }
     ]
   },
   {
