@@ -1,29 +1,42 @@
 [
   {
+    "id": "molle_accessories_magazines_rifle",
     "type": "item_group",
-    "id": "molle_accessories",
     "subtype": "distribution",
-
-    "//notes": ["civilian pool"],
-
-    "//removed": ["`grenade_pouch` (40mm grenade pouch)", "`tool_pouch`"],
 
     "entries": [
       { "item": "chestpouch", "count": 1, "prob": 10 },
       { "item": "chestpouch", "count": 2, "prob": 45 },
       { "item": "chestpouch", "count": 3, "prob": 35 },
 
+      { "item": "triple_stacker_pouch", "prob": 20 }
+    ]
+  },
+  {
+    "id": "molle_accessories",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "//notes": ["civilian pool"],
+
+    "//removed": [
+      "grenade_pouch (40mm grenade pouch)",
+      "tool_pouch",
+      "deployment_bag",
+      "dump_pouch",
+      "gas_mask_pouch"
+    ],
+
+    "entries": [
+      { "group": "molle_accessories_magazines_rifle" },
+
       { "item": "radio_pouch", "prob": 30 },
       { "item": "h2o_pouch", "prob": 25 },
-      { "item": "triple_stacker_pouch", "prob": 20 },
       { "item": "flashlight_pouch", "prob": 20 },
-      { "item": "dump_pouch", "prob": 20 },
       { "item": "tactical_grenade_pouch", "prob": 15 },
       { "item": "tactical_holster", "prob": 15 },
       { "item": "gadget_pouch", "prob": 15 },
-      { "item": "gas_mask_pouch", "prob": 10 },
-      { "item": "canteen_pouch", "prob": 5 },
-      { "item": "deployment_bag", "prob": 5 }
+      { "item": "canteen_pouch", "prob": 5 }
     ]
   },
   {
