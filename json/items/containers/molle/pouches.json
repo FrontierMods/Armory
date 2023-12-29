@@ -265,5 +265,63 @@
 
     "price": "6 USD",
     "price_postapoc": "10 cent"
+  },
+  {
+    "id": "pouch_multipurpose_tt",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://tacticaltailor.com/fight-light-multi-purpose-pouch/",
+      [
+        "https://highgroundshooter.com/testimonial/tactical-tailor-fight-light-battle-belt-system-light-comfortable-and-efficient/",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "Tactical Tailor multi-purpose pouch",
+      "str_pl": "Tactical Tailor multi-purpose pouches"
+    },
+    "description": "A nylon pouch for storing water bottles.  Takes in bottles up to 0.75L in capacity.",
+
+    "weight": "128 g",
+    "//dimensions": {
+      "length": "7 in",
+      "width": "7 in",
+      "height": "1.5 in",
+      "raw": "1204.45 ml",
+      "trim": 0.05
+    },
+    "volume": "1144 ml",
+    "longest_side": "178 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 0.3,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "//max_contains_volume": "volume × 95%",
+        "max_contains_volume": "1087 ml",
+        "max_contains_weight": "3 kg",
+        "//max_item_length": "full 7 in.",
+        "max_item_length": "178 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+
+    "//price": "for the multicam model",
+    "price": "61 USD",
+    "price_postapoc": "50 cent"
   }
 ]
