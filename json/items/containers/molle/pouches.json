@@ -329,5 +329,83 @@
     "//price": "for the multicam model",
     "price": "61 USD",
     "price_postapoc": "50 cent"
+  },
+  {
+    "id": "pouch_flashbang_tt",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://tacticaltailor.com/fight-light-flashbang-smoke-pouch/",
+      ["https://www.ebay.com/itm/313548946332", "weight"],
+      [
+        "https://home.army.mil/bliss/download_file/view/738/366",
+        "pocket restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "we model pocket dimensions after the M18 smoke grenade, since it's stated to fit inside the pouch and is much larger than the M84 stun grenade aka flashbang"
+    ],
+
+    "name": {
+      "str": "Tactical Tailor flashbang pouch",
+      "str_pl": "Tactical Tailor flashbang pouches"
+    },
+    "description": "A nylon pouch for storing a single flashbang grenade.  It is also large enough to fit a smoke grenade.",
+
+    "weight": "60 g",
+    "//dimensions": {
+      "length": "5.5 in",
+      "width": "2.5 in",
+      "height": "2 in",
+      "raw": "450.64 ml",
+      "trim": 0
+    },
+    "volume": "451 ml",
+    "longest_side": "178 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.3,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "tactical_grenade_pouch",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "//max_contains_weight": "weight of M18 smoke grenade (539 g), rounded to the nearest 50/100 g",
+        "max_contains_weight": "550 g",
+        "//max_contains_volume": [
+          "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
+          {
+            "length": "146 mm",
+            "diameter": "64 mm",
+            "raw": "469.68 ml",
+            "trim": 0.075
+          }
+        ],
+        "max_contains_volume": "450 ml",
+        "//max_item_length": "longest side of M18 smoke grenade",
+        "max_item_length": "146 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash grenade",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+
+    "price": "33 USD",
+    "price_postapoc": "25 cent"
   }
 ]
