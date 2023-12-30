@@ -272,8 +272,6 @@
       ]
     },
     "volume": "71 ml",
-    "//longest_side": "we presume 3× folding of the fabric: 269.24 / 3 ≈ 90 mm",
-    "longest_side": "90 mm",
 
     "symbol": "[",
     "color": "dark_gray",
@@ -409,7 +407,7 @@
     "name": {
       "str": "MKC Stonewall sheath"
     },
-    "description": "A thin Kydex sheath for a small hunting knife.  Has a belt clip, and thus can be worn on a waist belt or on a thigh strap.",
+    "description": "A thin Kydex sheath for a small hunting knife; produced by Montana Knife Company.  Has a belt clip, and thus can be worn on a waist belt or on a thigh strap.",
 
     "//weight": [
       "using 1.19 g/ml as an average density of Kydex",
@@ -605,7 +603,7 @@
     "type": "ARMOR",
 
     "//sources": [
-      "https://www.roundedgear.com/collections/athletic-wear-tuckable-iwb-kydex-holsters/products/",
+      "https://www.roundedgear.com/collections/athletic-wear-tuckable-iwb-kydex-holsters/products/glock-17-22-31-gen-1-5-athletic-wear-tuckable-iwb-holster",
       ["https://us.glock.com/en/pistols/g17", "partial dimensions"]
     ],
 
@@ -620,7 +618,7 @@
       "str": "Rounded Gear IWB holster for Glock pistols",
       "str_pl": "Rounded Gear IWB holsters for Glock pistols"
     },
-    "description": "A compact ambidexterous Kydex holster fitted for Glock 17-type pistols: Glock 17, Glock 22, and Glock 31.  Has a clip for wearing on a belt or a leg strap.",
+    "description": "A compact ambidexterous inside-the-waistbelt (IWB) Kydex holster fitted for Glock 17-type pistols: Glock 17, Glock 22, and Glock 31.  Has a clip for wearing on a belt or a leg strap.",
 
     "weight": "85 g",
     "//dimensions": {
@@ -947,7 +945,7 @@
     ],
 
     "name": {
-      "str": "Rounded Gear trigger guard holster for Glock pistols"
+      "str": "Rounded Gear trigger-guard holster for Glock pistols"
     },
     "description": "A tiny Kydex platform that holds a single pistol by its trigger guard like a holster.  The miniature retention mechanism allows for a quicker draw of the pistol.  The holster has a clip for attaching to a belt.  Unlike most holsters, this one has plenty of clearance for attachments, including long suppressors.",
 
