@@ -89,5 +89,412 @@
 
       "female": ["boy_shorts", "bra"]
     }
+  },
+  {
+    "type": "profession",
+    "id": "mili_medic",
+
+    "name": "Combat Medic",
+    "description": "You were on the front-lines when everything happened, patching up the wounded and providing support.  But they wouldn't stop coming.  Now you're on your own.",
+
+    "points": 5,
+    "traits": ["PROF_MED"],
+
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 1, "name": "dodge" },
+      { "level": 4, "name": "firstaid" },
+      { "level": 2, "name": "swimming" }
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_wound_care",
+      "prof_wound_care_expert",
+      "prof_intro_biology",
+      "prof_physiology",
+      "prof_burn_care"
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "undershirt",
+          "combat_shirt",
+          "helmet_army",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "wristwatch",
+          "thermometer",
+          "bandages",
+          "scalpel",
+          "syringe",
+          "morphine",
+          "aspirin",
+          "antibiotics",
+          "disinfectant",
+          "pepto",
+          "molle_pack"
+        ],
+
+        "//entries": [
+          "it should use a medic backpack with everything necessary for first aid under fire",
+          "Armory + Remedy patch should cover the medical tools, which IRL includes a stethoscope"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "group": "us_army_vest_pristine_outfitted" },
+          { "group": "full_ifak" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "mask_dust",
+            "variant": "camo_mask_dust",
+            "custom-flags": ["no_auto_equip"]
+          },
+          { "item": "stethoscope", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "m4_carbine",
+            "variant": "m4a1",
+            "ammo-item": "556_mk262",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "mili_pilot",
+
+    "name": "Military Pilot",
+    "description": "You got to see things fall apart from the sky, transporting soldiers and survivors from one holdout to the next.  You knew it was only a matter of time before the horrors patrolling the skies shot you down.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 4, "name": "driving" },
+      { "level": 3, "name": "pistol" },
+      { "level": 3, "name": "mechanics" },
+      { "level": 3, "name": "gun" },
+      { "level": 1, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_helicopter_pilot", "prof_spotting"],
+
+    "//items": [
+      "instead of a chest rig, US Army pilots (Aviation Branch) use a harness and a survival vest",
+      "implementation TBD"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "nomex_socks",
+          "boots_combat",
+          "wristwatch",
+          "gloves_tactical",
+          {
+            "item": "flight_helmet",
+            "ammo-item": "light_plus_battery_cell",
+            "charges": 150
+          },
+          "mil_flight_suit",
+          "webbing_belt"
+        ],
+
+        "entries": [
+          { "group": "charged_matches" },
+          { "group": "charged_flashlight" },
+          { "item": "handflare", "count": 2, "charges": 200 },
+          { "item": "whistle" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "container-item": "holster",
+            "charges": 17
+          },
+          { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 },
+          { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boy_shorts"]
+    },
+    "flags": ["SCEN_ONLY"]
+  },
+  {
+    "type": "profession",
+    "id": "mil_undercover",
+
+    "name": "Operator Undercover",
+    "description": "You've been tailing your target for months and now he's a zombie.  So much for that lead.",
+
+    "points": 3,
+
+    "skills": [
+      { "level": 1, "name": "survival" },
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 4, "name": "speech" }
+    ],
+
+    "//items": [
+      "spawn magazines raw until there's a good way to covertly hold onto them",
+      "belt magazine pouches might be a good choice",
+      "alternatively, shoulder holster"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "scarf",
+          "dress_shirt",
+          "jeans",
+          "longshirt",
+          "kevlar",
+          "mbag",
+          "fancy_sunglasses",
+          "socks",
+          "lowtops",
+          "pockknife",
+          "diving_watch",
+          "smart_phone"
+        ],
+
+        "entries": [
+          { "item": "holster", "contents-group": "holster_supp_57" },
+          { "item": "suppressor" },
+          { "item": "fn57mag", "ammo-item": "57mm", "charges": 20, "count": 2 }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["boy_shorts", "sports_bra"]
+    }
+  },
+  {
+    "id": "mil_hacker",
+    "type": "profession",
+
+    "name": "Operator Hacker",
+    "description": "You insist you're not a hacker, you're an \"Electronic Warfare Specialist\"",
+
+    "points": 8,
+
+    "skills": [
+      { "level": 1, "name": "survival" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "smg" },
+      { "level": 4, "name": "electronics" },
+      { "level": 4, "name": "computer" }
+    ],
+
+    "//items": [
+      "we replace the M45 MEU(SOC) pistol with M17 because (1) it's a Marine pistol, while the Hacker is (presumably) Army, (2) M45 had been decommissioned in 2022, (3) M17 is in current service"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "hat_ball",
+          "scarf",
+          "hoodie",
+          "pants_cargo",
+          "longshirt",
+          "kevlar",
+          "mbag",
+          "glasses_bal",
+          "dump_pouch",
+          "socks",
+          "boots_combat",
+          "gloves_tactical",
+          "multitool",
+          "diving_watch"
+        ],
+
+        "entries": [
+          {
+            "item": "hk_mp7",
+            "ammo-item": "46mm",
+            "charges": 20,
+            "contents-item": ["shoulder_strap", "holo_sight", "suppressor"]
+          },
+          { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
+          { "item": "tacvest", "contents-group": "army_mags_mp7" },
+          { "group": "us_army_belt_with_knife_pistol_mags" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["boy_shorts", "sports_bra"]
+    }
+  },
+  {
+    "id": "mil_sniper",
+    "type": "profession",
+
+    "name": "Operator Sniper",
+    "description": "You spent days dueling an enemy sniper, then he just… died.  And then un-died.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 2, "name": "survival" },
+      { "level": 4, "name": "gun" },
+      { "level": 4, "name": "rifle" }
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "hat_cotton",
+          "jacket_army",
+          "pants_army",
+          "longshirt",
+          "rucksack",
+          "knee_pads",
+          "elbow_pads",
+          "socks",
+          "boots_combat",
+          "gloves_tactical",
+          "cloak"
+        ],
+
+        "//entries": [
+          "there is at least one piece of evidence to suggest that active-duty U.S. snipers would carry loose ammunition in pouches on their vest",
+          "https://www.m4carbine.net/showthread.php?70196-How-do-Snipers-carry-ammo"
+        ],
+        "entries": [
+          {
+            "item": "M24",
+            "ammo-item": "762_51",
+            "charges": 5,
+            "contents-item": ["shoulder_strap", "suppressor"]
+          },
+          { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
+          {
+            "group": "ammo_762NATO_loose_in_pouch",
+            "container-item": "tacvest"
+          },
+          { "group": "us_army_belt_with_knife_pistol_mags" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["boy_shorts", "sports_bra"]
+    }
+  },
+  {
+    "id": "mil_breacher",
+    "type": "profession",
+
+    "name": "Military Breacher",
+    "description": "Doors and windows everywhere dare not speak your name.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 1, "name": "survival" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "shotgun" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "bashing" }
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "helmet_army",
+          "pants_army",
+          "tshirt",
+          "ballistic_vest_esapi",
+          "armguard_hard",
+          "legguard_hard",
+          "socks",
+          "boots_combat",
+          "gloves_tactical",
+          "hammer_sledge"
+        ],
+
+        "//entries": [
+          "breachers in Army use (or at least used to, for the longest time) use Mossberg 590 sans stock",
+          "TODO: use MOLLE breaching tool holder and collapsible sledge instead of full-size sledge in the inventory"
+        ],
+        "entries": [
+          {
+            "item": "mossberg_590",
+            "ammo-item": "shot_00",
+            "charges": 9,
+            "contents-item": ["shoulder_strap"]
+          },
+          { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
+          {
+            "group": "profession_mil_breacher_vest"
+          },
+          { "group": "us_army_belt_with_knife_pistol_mags" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["boy_shorts", "sports_bra"]
+    }
+  },
+  {
+    "id": "mil_grenadier",
+    "type": "profession",
+
+    "name": "Military Grenadier",
+    "description": "There's no kill like overkill.",
+
+    "points": 3,
+
+    "skills": [
+      { "level": 1, "name": "survival" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 1, "name": "launcher" }
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "helmet_army",
+          "pants_army",
+          "tshirt",
+          "rucksack",
+          "glasses_bal",
+          "dump_pouch",
+          "knee_pads",
+          "elbow_pads",
+          "socks",
+          "boots_combat",
+          "gloves_tactical",
+          "ballistic_vest_esapi"
+        ],
+
+        "entries": [
+          {
+            "item": "m320",
+            "ammo-item": "40x46mm_m433",
+            "charges": 1,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          },
+          { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
+          { "group": "profession_mil_grenadier_vest" },
+          { "group": "us_army_belt_with_knife_pistol_mags" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["boy_shorts", "sports_bra"]
+    }
   }
 ]
