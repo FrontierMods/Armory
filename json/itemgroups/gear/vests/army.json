@@ -1,0 +1,96 @@
+[
+  {
+    "id": "us_army_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "flashlight_pouch", "contents-item": "flashlight" },
+      {
+        "item": "tactical_grenade_pouch",
+        "count": [1, 2],
+        "contents-item": "grenade"
+      },
+      { "item": "tactical_holster", "contents-item": "m17" },
+      { "item": "radio_pouch", "contents-item": "two_way_radio" },
+      { "item": "sheath", "contents-item": "knife_combat" }
+    ]
+  },
+  {
+    "id": "us_army_belt_with_knife",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "belt_army_acu",
+
+    "entries": [{ "item": "sheath", "contents-item": "knife_combat" }]
+  },
+  {
+    "id": "us_army_belt_with_knife_pistol",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "belt_army_acu",
+
+    "entries": [
+      { "item": "sheath", "contents-item": "knife_combat" },
+      { "item": "holster", "contents-item": "m17" }
+    ]
+  },
+  {
+    "id": "us_army_belt_with_knife_pistol_mags",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "belt_army_acu",
+
+    "entries": [
+      { "item": "sheath", "contents-item": "knife_combat" },
+      { "item": "holster", "contents-item": "m17" },
+      {
+        "item": "pouch_magazine_pistol_molle_ii",
+        "count": 2,
+        "contents-item": "p320mag_17rd_9x19mm"
+      }
+    ]
+  },
+  {
+    "id": "us_army_magazines_m4a1",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": ["Army soldiers usually carry 6 magazines on them"],
+
+    "entries": [{ "item": "stanag30", "count": 6 }]
+  },
+  {
+    "id": "us_army_vest_pristine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//": "should be vest + plates + reasonable accessories (6 mags of ammo, grenades etc.)",
+    "container-item": "ballistic_vest_heavy",
+    "on_overflow": "discard",
+
+    "entries": [{ "group": "pristine_esapi_plates" }]
+  },
+  {
+    "id": "us_army_vest_pristine_outfitted",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//": "should be vest + plates + reasonable accessories (6 mags of ammo, grenades etc.)",
+    "container-item": "ballistic_vest_heavy",
+    "on_overflow": "discard",
+
+    "entries": [
+      { "group": "pristine_esapi_plates" },
+      {
+        "item": "triple_stacker_pouch",
+        "contents-group": "us_army_magazines_m4a1"
+      },
+
+      { "group": "us_army_pouch", "count": [1, 3] }
+    ]
+  }
+]
