@@ -46,24 +46,88 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "PALS webbing",
+        "description": "Space for belt gear",
 
-        "volume_encumber_modifier": 0.85,
+        "volume_encumber_modifier": 0.5,
 
-        "//molle": {
-          "width": 25,
-          "height": 2,
-          "spaced": false,
-          "width_extra": 1,
-          "height_extra": 4,
-          "notes": [
-            "webbing width from belt width: 38 in. ≈ 25 1/3 cells = 25 + 1 cells"
-          ]
-        },
-        "max_contains_volume": "8052 ml",
-        "max_contains_weight": "33 kg",
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2500 ml",
+        "//max_item_length": "10 in.",
+        "max_item_length": "254 mm",
 
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Space for belt gear",
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2500 ml",
+        "//max_item_length": "10 in.",
+        "max_item_length": "254 mm",
+
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Space for belt gear",
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2500 ml",
+        "//max_item_length": "10 in.",
+        "max_item_length": "254 mm",
+
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Space for belt gear",
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2500 ml",
+        "//max_item_length": "10 in.",
+        "max_item_length": "254 mm",
+
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Space for belt gear",
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2500 ml",
+        "//max_item_length": "10 in.",
+        "max_item_length": "254 mm",
+
+        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Space for large belt gear",
+
+        "holster": true,
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "17 kg",
+        "max_contains_volume": "8500 ml",
+        "//max_item_length": "16.5 in",
+        "max_item_length": "419 mm",
+
+        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
       }
     ],
 
