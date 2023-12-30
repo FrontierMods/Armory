@@ -821,7 +821,7 @@
       "str": "Condor shotgun ammo pouch",
       "str_pl": "Condor shotgun ammo pouches"
     },
-    "description": "A long nylon pouch, intended to hold up to 12 12-gauge shotgun shells, or ammunition of similar size.  The elastic bands inside the pouch also allow storing up to 20 7.62mm NATO rounds.",
+    "description": "A long nylon pouch, intended to hold up to 12 12-gauge shotgun shells, or ammunition of similar size.",
 
     "weight": "136 g",
     "//dimensions": {
@@ -845,7 +845,6 @@
     "pocket_data": [
       {
         "ammo_restriction": {
-          "308": 20,
           "410shot": 12,
           "shot": 12,
           "20x66mm": 12,
