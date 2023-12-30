@@ -289,7 +289,7 @@
       "str": "Tactical Tailor multi-purpose pouch",
       "str_pl": "Tactical Tailor multi-purpose pouches"
     },
-    "description": "A nylon pouch for storing water bottles.  Takes in bottles up to 0.75L in capacity.",
+    "description": "A nylon pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, matches, and anything else you might need in the field.",
 
     "weight": "128 g",
     "//dimensions": {
