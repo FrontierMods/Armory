@@ -405,6 +405,7 @@
 
     "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
 
+    "//price": "for the multicam model",
     "price": "33 USD",
     "price_postapoc": "25 cent"
   }
