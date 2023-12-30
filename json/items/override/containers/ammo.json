@@ -77,8 +77,7 @@
     ],
 
     "//flags": [
-      "removed PALS_SMALL",
-      "this is a novelty, possibly handcrafted item that's always been meant to be worn around the wrist"
+      "removed PALS_SMALL: this is a novelty, possibly handcrafted item that's always been meant to be worn around the wrist"
     ],
     "flags": ["WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS"],
 
