@@ -33,7 +33,7 @@
       }
     ]
   },
-  
+
   {
     "id": "magazine_m14_in_pouch",
     "type": "item_group",
@@ -53,7 +53,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "chestrig",
+    "container-item": "tacvest",
 
     "entries": [
       {
@@ -73,6 +73,82 @@
       },
       {
         "group": "knife_in_sheath_on_leather_belt"
+      }
+    ]
+  },
+  {
+    "id": "ammo_762NATO_loose_in_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_multipurpose_tt",
+
+    "entries": [
+      {
+        "item": "762_51",
+        "count": 60
+      }
+    ]
+  },
+  {
+    "id": "ammo_00shot_in_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "tactical_shotshell_pouch",
+
+    "entries": [
+      {
+        "item": "shot_00",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "flashbang_in_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_flashbang_tt",
+
+    "entries": [
+      {
+        "item": "flashbang"
+      }
+    ]
+  },
+  {
+    "id": "profession_mil_breacher_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "tacvest",
+
+    "entries": [
+      {
+        "group": "ammo_00shot_in_pouch"
+      },
+      {
+        "group": "flashbang_in_pouch",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_mil_grenadier_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "tacvest",
+
+    "entries": [
+      {
+        "item": "40x46mm_m433",
+        "count": 4,
+        "container-item": "grenade_pouch"
+      },
+      {
+        "group": "army_mags_m4"
       }
     ]
   }
