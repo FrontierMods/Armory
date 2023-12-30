@@ -58,8 +58,8 @@
       }
     ],
 
-    "//flags": ["replaced PALS_MEDIUM with MOLLE_ATTACH"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+    "//flags": ["replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR_LARGE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
 
     "//price": "80 EUR",
     "price": "85 USD",
@@ -294,14 +294,15 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY"
     ],
     "flags": [
       "COLLAPSE_CONTENTS",
       "WATER_FRIENDLY",
       "CANT_WEAR",
-      "MOLLE_ATTACH"
+      "MOLLE_ATTACH",
+      "BELT_GEAR"
     ],
 
     "//price": "120 EUR",
@@ -320,8 +321,8 @@
     ],
 
     "name": {
-      "str": "Condor ammo pouch",
-      "str_pl": "Condor ammo pouches"
+      "str": "Condor loose ammo pouch",
+      "str_pl": "Condor loose ammo pouches"
     },
     "description": "A rectangular nylon pouch with a flap that opens to an internal container.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.",
 
@@ -355,7 +356,7 @@
     ],
 
     "//flags": [
-      "replaced PALS_LARGE with MOLLE_ATTACH",
+      "replaced PALS_LARGE with MOLLE_ATTACH and BELT_GEAR_LARGE",
       "added WATER_FRIENDLY",
       "added COLLAPSE_CONTENTS"
     ],
@@ -363,7 +364,8 @@
       "COLLAPSE_CONTENTS",
       "WATER_FRIENDLY",
       "CANT_WEAR",
-      "MOLLE_ATTACH"
+      "MOLLE_ATTACH",
+      "BELT_GEAR_LARGE"
     ],
 
     "price": "24 USD",
@@ -431,11 +433,11 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR_LARGE",
       "removed BELTED and OVERSIZE",
       "added WATER_FRIENDLY"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
 
     "price": "91 USD",
     "//price_postapoc": "3 USD"
@@ -490,10 +492,10 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_CLIP",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR_LARGE",
       "removed BELTED and OVERSIZE"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_CLIP"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
@@ -568,10 +570,10 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
       "removed BELTED and OVERSIZE"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
@@ -667,11 +669,17 @@
     ],
 
     "//flags": [
-      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
       "replaced BELTED with CANT_WEAR",
       "added TARDIS: seems to be the only way to manage pockets like these"
     ],
-    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "CANT_WEAR", "TARDIS"],
+    "flags": [
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "BELT_GEAR",
+      "CANT_WEAR",
+      "TARDIS"
+    ],
 
     "price": "14 USD",
     "//price_postapoc": "1 USD"
@@ -774,11 +782,17 @@
     },
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
       "replaced BELTED with CANT_WEAR",
       "added TARDIS: seems to be the only way to manage pockets like these"
     ],
-    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "CANT_WEAR", "TARDIS"],
+    "flags": [
+      "WATER_FRIENDLY",
+      "MOLLE_ATTACH",
+      "BELT_GEAR",
+      "CANT_WEAR",
+      "TARDIS"
+    ],
 
     "price": "17 USD",
     "price_postapoc": "1 USD"
@@ -864,10 +878,10 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH",
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
       "replaced BELTED and OVERSIZE with CANT_WEAR"
     ],
-    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "CANT_WEAR"],
+    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "BELT_GEAR", "CANT_WEAR"],
 
     "price": "15 USD",
     "//price_postapoc": "1 USD"
@@ -939,10 +953,10 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH",
-      "replaced BELTED and OVERSIZE with"
+      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
+      "replaced BELTED and OVERSIZE with CANT_WEAR"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
 
     "price": "40 USD",
     "//price_postapoc": "1 USD"
@@ -1020,7 +1034,8 @@
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
       "replaced PALS_SMALL with MOLLE_ATTACH",
-      "added WATER_FRIENDLY"
+      "added WATER_FRIENDLY",
+      "doesn't appear to be easily-usable while strapped to a regular belt, so no BELT_GEAR"
     ],
     "flags": [
       "CANT_WEAR",
@@ -1179,13 +1194,14 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
+      "BELT_GEAR",
       "ALLOWS_NATURAL_ATTACKS"
     ],
 
@@ -1253,13 +1269,14 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH",
+      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
       "MOLLE_ATTACH",
+      "BELT_GEAR",
       "ALLOWS_NATURAL_ATTACKS"
     ],
 
@@ -1494,7 +1511,8 @@
       "replaced BELTED and OVERSIZE with CANT_WEAR",
       "replaced PALS_SMALL with MOLLE_ATTACH",
       "added WATER_FRIENDLY",
-      "added TARDIS: seems to be the only way to manage pockets like these"
+      "added TARDIS: seems to be the only way to manage pockets like these",
+      "appears too large for a belt, so no BELT_GEAR"
     ],
     "flags": [
       "CANT_WEAR",
@@ -1712,7 +1730,10 @@
       "type": "holster"
     },
 
-    "//flags": ["replaced PALS_LARGE with MOLLE_ATTACH"],
+    "//flags": [
+      "replaced PALS_LARGE with MOLLE_ATTACH",
+      "appears too large for a belt, so no BELT_GEAR"
+    ],
     "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "MOLLE_ATTACH"],
 
     "price": "29 USD",
@@ -1797,8 +1818,8 @@
       "holster_msg": "You stash your %s."
     },
 
-    "//flags": ["added MOLLE_ATTACH"],
-    "flags": ["WATER_FRIENDLY", "BELTED", "MOLLE_ATTACH"],
+    "//flags": ["replaced BELTED with CANT_WEAR, MOLLE_ATTACH, and BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
 
     "price": "16 USD",
     "price_postapoc": "25 cent"
