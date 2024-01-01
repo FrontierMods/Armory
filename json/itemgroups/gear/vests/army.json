@@ -38,6 +38,15 @@
     ]
   },
   {
+    "id": "us_army_belt_with_pistol",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "belt_army_acu",
+
+    "entries": [{ "item": "holster", "contents-item": "m17" }]
+  },
+  {
     "id": "us_army_belt_with_knife_pistol_mags",
     "type": "item_group",
     "subtype": "collection",
