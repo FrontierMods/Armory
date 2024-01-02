@@ -68,12 +68,8 @@
     "subtype": "collection",
 
     "entries": [
-      {
-        "group": "profession_old_vet_chest_rig"
-      },
-      {
-        "group": "knife_in_sheath_on_leather_belt"
-      }
+      { "group": "profession_old_vet_chest_rig" },
+      { "group": "knife_in_sheath_on_leather_belt" }
     ]
   },
   {
@@ -111,11 +107,7 @@
 
     "container-item": "pouch_flashbang_tt",
 
-    "entries": [
-      {
-        "item": "flashbang"
-      }
-    ]
+    "entries": [{ "item": "flashbang" }]
   },
   {
     "id": "profession_mil_breacher_vest",
@@ -125,9 +117,7 @@
     "container-item": "tacvest",
 
     "entries": [
-      {
-        "group": "ammo_00shot_in_pouch"
-      },
+      { "group": "ammo_00shot_in_pouch" },
       {
         "group": "flashbang_in_pouch",
         "count": 2
