@@ -73,6 +73,15 @@
     "entries": [{ "item": "stanag30", "count": 6 }]
   },
   {
+    "id": "us_army_magazines_m4a1_contained",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "triple_stacker_pouch",
+
+    "entries": [{ "item": "stanag30", "count": 6 }]
+  },
+  {
     "id": "us_army_vest_pristine",
     "type": "item_group",
     "subtype": "collection",
@@ -94,11 +103,7 @@
 
     "entries": [
       { "group": "pristine_esapi_plates" },
-      {
-        "item": "triple_stacker_pouch",
-        "contents-group": "us_army_magazines_m4a1"
-      },
-
+      { "group": "us_army_magazines_m4a1_contained" },
       { "group": "us_army_pouch", "count": [1, 3] }
     ]
   }
