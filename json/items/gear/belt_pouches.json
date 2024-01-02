@@ -1,0 +1,123 @@
+[
+  {
+    "id": "holster_baton_bfg",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://www.blueforcegear.com/baton-belt-pouch"],
+
+    "name": {
+      "str": "Blue Force Gear baton pouch"
+    },
+    "description": "A thin black nylon pouch for collapsible batons.  Can hold most models of batons available on the market.",
+
+    "weight": "20 g",
+    "//dimensions": {
+      "length": "0.4 mm",
+      "width": "2.25 in",
+      "height": "5.5 in",
+      "raw": "3.19 ml",
+      "trim": 0.05
+    },
+    "volume": "3 ml",
+    "//longest_side": "width, since we assume that the pouch would fold length-wise",
+    "longest_side": "57 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.2,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "50% over the weight of audited `baton` in order to accomodate heavier batons",
+        "max_contains_weight": "750 g",
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "150 ml",
+        "max_item_length": "250 mm",
+
+        "moves": 85
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "27 USD",
+    "price_postapoc": "20 cent"
+  },
+  {
+    "id": "holster_stun_gun_streetwise",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.streetsmartprotection.com/stun-guns/streetwise-touchdown-stun-gun"
+    ],
+
+    "name": {
+      "str": "Streetwise stun gun pouch"
+    },
+    "description": "A gray nylon pouch for stun guns.  Fit for a specific model, but can fit similar models.",
+
+    "//weight": "guess based on similar pouches",
+    "weight": "25 g",
+    "//volume": "appears to be ~5% larger than the bounding box (raw volume) of the stun gun, so that's what we use",
+    "volume": "280 ml",
+    "//longest_side": "longest side of stun gun (165 mm) + 5%",
+    "longest_side": "173 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.3,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "200 g",
+        "min_item_volume": "200 ml",
+        "max_contains_volume": "245 ml",
+        "max_item_length": "165 mm",
+
+        "moves": 105
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "//price": "sold alongside the stun gun, so no way to estimate a real price",
+    "price": "0 cent",
+    "price_postapoc": "5 cent"
+  }
+]
