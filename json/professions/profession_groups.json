@@ -141,5 +141,100 @@
         "group": "army_mags_m4"
       }
     ]
+  },
+  {
+    "id": "profession_mil_marksman_chest_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "tacvest",
+
+    "entries": [{ "group": "us_army_magazines_m4a1_contained" }]
+  },
+  {
+    "id": "profession_mall_cop_belt_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "leather_belt",
+
+    "entries": [
+      {
+        "item": "holster_stun_gun_streetwise",
+        "container-item": "tazer"
+      },
+      { "item": "flashlight_pouch", "contents-item": "flashlight" },
+      { "item": "baton", "container-item": "holster_baton_bfg" }
+    ]
+  },
+  {
+    "id": "profession_mall_cop",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "police_belts",
+        "contents-group": "profession_mall_cop_belt_contents"
+      }
+    ]
+  },
+  {
+    "id": "profession_winter_army_chest_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "tacvest",
+
+    "entries": [
+      { "group": "us_army_magazines_m4a1_contained" },
+      { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
+      { "item": "sheath", "container-item": "knife_combat" }
+    ]
+  },
+  {
+    "id": "profession_winter_army",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "group": "profession_winter_army_chest_rig" }]
+  },
+  {
+    "id": "profession_rifle_hunter",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "bandolier_rifle_hunter_bandolier" },
+      { "group": "hunting_knife_in_sheath_on_leather_belt" }
+    ]
+  },
+  {
+    "id": "bandolier_rifle_hunter_bandolier",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "bandolier_rifle",
+
+    "entries": [{ "item": "270win_jsp", "charges": 24 }]
+  },
+  {
+    "id": "profession_shotgun_hunter",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "bandolier_shotgun_hunter_bandolier" },
+      { "group": "hunting_knife_in_sheath_on_leather_belt" }
+    ]
+  },
+  {
+    "id": "bandolier_shotgun_hunter_bandolier",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "bandolier_shotgun",
+
+    "entries": [{ "item": "shot_00", "charges": 25 }]
   }
 ]
