@@ -11,11 +11,7 @@
     "type": "item_group",
     "subtype": "distribution",
 
-    "entries": [
-      {
-        "item": "police_belt"
-      }
-    ]
+    "entries": [{ "item": "police_belt" }]
   },
   {
     "id": "police_belts_outfitted",
@@ -50,11 +46,7 @@
     "type": "item_group",
     "subtype": "distribution",
 
-    "entries": [
-      {
-        "group": "police_belt_pouches_set_1"
-      }
-    ]
+    "entries": [{ "group": "police_belt_pouches_set_1" }]
   },
   {
     "id": "police_belt_pouches_set_1",
