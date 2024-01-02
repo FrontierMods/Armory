@@ -50,12 +50,21 @@
     "entries": [{ "item": "sheath" }]
   },
   {
-    "id": "knife_in_sheath_on_leather_belt",
+    "id": "combat_knife_in_sheath_on_leather_belt",
     "type": "item_group",
     "subtype": "collection",
 
     "container-group": "sheath_on_leather_belt",
 
     "entries": [{ "item": "knife_combat" }]
+  },
+  {
+    "id": "hunting_knife_in_sheath_on_leather_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "sheath_on_leather_belt",
+
+    "entries": [{ "item": "knife_hunting" }]
   }
 ]
