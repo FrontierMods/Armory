@@ -15,7 +15,7 @@
     "name": {
       "str": "Grommet's Leathercraft holster"
     },
-    "description": "A leather holster, originally designed for revolvers of around 5″ of barrel length, but able to hold an automatic pistol as well.  ",
+    "description": "A leather holster, originally designed for revolvers of around 5″ of barrel length, but able to hold an automatic pistol as well.  Straps onto a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
 
     "//weight": [
       "estimated as (area of holster × 3) × leather thickness per sq.ft.",
