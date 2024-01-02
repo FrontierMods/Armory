@@ -1,0 +1,28 @@
+[
+  {
+    "id": "militia_belt_with_knife_pistol_mags",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "belt_army_acu",
+
+    "entries": [
+      { "item": "sheath", "contents-item": "knife_combat" },
+      { "item": "holster", "contents-item": "m9" },
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "count": 2,
+        "contents-item": "m9mag"
+      }
+    ]
+  },
+  {
+    "id": "militia_magazines_m4a1_contained",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "triple_stacker_pouch",
+
+    "entries": [{ "item": "stanag30", "count": 6 }]
+  }
+]
