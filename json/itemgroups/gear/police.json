@@ -16,7 +16,7 @@
   {
     "id": "police_belts_outfitted",
     "type": "item_group",
-    "subtype": "distribution",
+    "subtype": "collection",
 
     "entries": [
       {
