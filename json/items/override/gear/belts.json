@@ -202,7 +202,12 @@
         "max_contains_volume": "8052 ml",
         "max_contains_weight": "33 kg",
 
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "flag_restriction": [
+          "MOLLE_ATTACH",
+          "BELT_CLIP",
+          "BELT_GEAR",
+          "TUCKED_IN"
+        ]
       }
     ],
 
