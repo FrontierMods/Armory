@@ -1011,9 +1011,9 @@
             "length": "5.47 in",
             "width": "2.89 in",
             "height": "1.58 in",
-            "raw": "409 ml",
+            "raw": "409.3 ml",
             "trim": 0.05,
-            "result": "389 ml"
+            "result": "388.84 ml"
           }
         ],
         "max_contains_volume": "389 ml",
