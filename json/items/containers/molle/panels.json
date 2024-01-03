@@ -61,5 +61,113 @@
     "//price": "69 EUR",
     "price": "77 USD",
     "price_postapoc": "20 cent"
+  },
+  {
+    "id": "panel_qasm_onetigris_mp5",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.onetigris.com/eu/tactical-placard-04.html",
+      [
+        "https://www.talosdefense.com/ck-corp-hk-mp5-30-round-magazine-9x19mm",
+        "pocket restrictions"
+      ]
+    ],
+
+    "name": {
+      "str": "OneTigris SMG QASM panel"
+    },
+    "description": "A panel that attaches to QASM interfaces on a plate carrier or a chest rig.  The panel hosts four SMG or extended-pistol magazine pouches.  In a pinch, you can also store long items, like flashlights, in them.",
+
+    "weight": "221 g",
+    "//dimensions": {
+      "length": "26 cm",
+      "width": "34 mm",
+      "height": "17 cm",
+      "raw": "1502.8 ml",
+      "trim": 0.55,
+      "notes": [
+        "width is width of an MP5 30-round magazine (32 mm) + 1 mm × 2 sides of the pouch"
+      ]
+    },
+    "volume": "676 ml",
+    "longest_side": "260 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "SMG magazine pouch",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "350 ml",
+        "min_item_length": "15 cm",
+        "max_item_length": "25 cm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "SMG magazine pouch",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "350 ml",
+        "min_item_length": "15 cm",
+        "max_item_length": "25 cm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "SMG magazine pouch",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "350 ml",
+        "min_item_length": "15 cm",
+        "max_item_length": "25 cm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "SMG magazine pouch",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "350 ml",
+        "min_item_length": "15 cm",
+        "max_item_length": "25 cm",
+
+        "moves": 90
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "QASM_ATTACH"],
+
+    "price": "32 USD",
+    "price_postapoc": "25 cent"
   }
 ]
