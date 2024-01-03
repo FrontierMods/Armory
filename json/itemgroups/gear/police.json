@@ -1,5 +1,15 @@
 [
   {
+    "id": "swat_magazines_mp5_contained",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "triple_stacker_pouch",
+
+    "entries": [{ "item": "mp5mag", "count": 6 }]
+  },
+
+  {
     "id": "police_sidearm",
     "type": "item_group",
     "subtype": "distribution",
@@ -83,6 +93,39 @@
       {
         "item": "flashlight_pouch",
         "contents-item": "flashlight"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_melee",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "visual evidence strongly suggests that the police in at least Boston still uses straight wooden batons",
+      "we currently do not have those in the game, so we give them PR-24's"
+    ],
+
+    "entries": [
+      {
+        "item": "PR24-retracted",
+        "container-item": "holster_tonfa_gng"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_suppression",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "this group should also contain pepper spray, once that's available"
+    ],
+
+    "entries": [
+      {
+        "item": "tazer",
+        "container-item": "holster_stun_gun_streetwise"
       }
     ]
   }
