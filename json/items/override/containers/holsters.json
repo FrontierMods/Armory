@@ -495,7 +495,15 @@
 
     "//notes": [
       "the item is actually two items: plastic/Kydex knife sheath and neoprene knife wrap (the part that goes around the leg)",
-      "for the sake of simplicity, and because it wouldn't be beneficial to model them as two at this stage, we model both as a single item"
+      "for the sake of simplicity, and because it wouldn't be beneficial to model them as two at this stage, we model both as a single item",
+      [
+        "the knife it's advertised with",
+        "https://www.xsscuba.com/knives/neuro-knife-titanium"
+      ],
+      [
+        "we are taking some liberties in the capacity of the sheath itself, primarily by adjusting pocket restrictions based on items of similar nature (but not the same ones the sheath is advertised to hold), for the sake development sanity",
+        "in the future, when more options for knife sheating becomes available, we can remodel this sheath in a more-restrictive way"
+      ]
     ],
 
     "name": {
@@ -557,6 +565,7 @@
       {
         "holster": true,
 
+        "max_contains_weight": "250 g",
         "//max_contains_volume": [
           "from dimensions of MKC Stonewall knife",
           "https://www.montanaknifecompany.com/products/the-stonewall-blackfoot-skinner-orange-black",
@@ -572,11 +581,8 @@
             ]
           }
         ],
-        "max_contains_volume": "124 ml",
-        "max_contains_weight": "170 g",
+        "max_contains_volume": "135 ml",
         "max_item_length": "235 mm",
-
-        "moves": 100,
 
         "//flag_restriction": "this shealth is specifically designed to accomodate a thin knife blade",
         "flag_restriction": ["SHEATH_KNIFE"]
