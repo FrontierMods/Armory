@@ -119,5 +119,86 @@
     "//price": "sold alongside the stun gun, so no way to estimate a real price",
     "price": "0 cent",
     "price_postapoc": "5 cent"
+  },
+  {
+    "id": "holster_tonfa_gng",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      [
+        "https://www.amazon.ca/Gould-Goodrich-GGB2070-Holder-Standard/dp/B005HO0A7M",
+        "model",
+        "weight"
+      ],
+      [
+        "https://www.amazon.com/ROCOTACTICAL-Police-Holder-Flashlight-Slide/dp/B07GSN6XKL",
+        "dimensions",
+        "price",
+        "ring material"
+      ]
+    ],
+
+    "//notes": [
+      "while the source of dimensions is not close to the model, we use it because finding dimensions of the model item online has proven to be difficult",
+      "could this be a good location for carabiner-held gear?"
+    ],
+
+    "name": {
+      "str": "Gould & Goodrich baton ring"
+    },
+    "description": "A metal ring with a tongue, held by a thin nylon strap.  Usually worn on the belt by an on-duty police officer, and holds the Monadnock PR-24 side-handle baton.  Can also hold standard-sized flashlight, though not smaller or larger ones.",
+
+    "weight": "23 g",
+    "//dimensions": {
+      "length": "6.1 in",
+      "width": "2.45 in",
+      "height": "1 mm",
+      "raw": "9.64 ml",
+      "trim": 0.45,
+      "notes": ["width acquired from visual reference"]
+    },
+    "volume": "5 ml",
+    "//longest_side": "width, since we assume that while the strap could fold any way, the ring cannot",
+    "longest_side": "62 mm",
+
+    "//material": "the ring is plastic",
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "axe_ring",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "750 g",
+        "min_item_volume": "200 ml",
+        "max_contains_volume": "650 ml",
+        "min_item_length": "330 mm",
+        "max_item_length": "650 mm",
+
+        "moves": 85
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "10 USD",
+    "price_postapoc": "10 cent"
   }
 ]
