@@ -73,7 +73,7 @@
     ]
   },
   {
-    "id": "ammo_762NATO_loose_in_pouch",
+    "id": "ammo_762NATO_loose_in_pouch_60",
     "type": "item_group",
     "subtype": "collection",
 
@@ -87,16 +87,29 @@
     ]
   },
   {
+    "id": "ammo_762NATO_loose_in_pouch_20",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_multipurpose_tt",
+
+    "entries": [
+      {
+        "item": "762_51",
+        "charges": 20
+      }
+    ]
+  },
+  {
     "id": "ammo_00shot_in_pouch",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "tactical_shotshell_pouch",
-
     "entries": [
       {
         "item": "shot_00",
-        "count": 12
+        "charges": 12,
+        "container-item": "tactical_shotshell_pouch"
       }
     ]
   },
@@ -149,7 +162,7 @@
 
     "container-item": "tacvest",
 
-    "entries": [{ "group": "us_army_magazines_m4a1_contained" }]
+    "entries": [{ "group": "us_army_magazines_m4a1_holstered" }]
   },
   {
     "id": "profession_mall_cop_belt_contents",
@@ -187,9 +200,9 @@
     "container-item": "tacvest",
 
     "entries": [
-      { "group": "us_army_magazines_m4a1_contained" },
+      { "group": "us_army_magazines_m4a1_holstered" },
       { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
-      { "item": "sheath", "container-item": "knife_combat" }
+      { "group": "us_army_knife_sheathed" }
     ]
   },
   {
@@ -205,12 +218,12 @@
     "subtype": "collection",
 
     "entries": [
-      { "group": "bandolier_rifle_hunter_bandolier" },
+      { "group": "profession_rifle_hunter_bandolier" },
       { "group": "hunting_knife_in_sheath_on_leather_belt" }
     ]
   },
   {
-    "id": "bandolier_rifle_hunter_bandolier",
+    "id": "profession_rifle_hunter_bandolier",
     "type": "item_group",
     "subtype": "collection",
 
@@ -224,17 +237,246 @@
     "subtype": "collection",
 
     "entries": [
-      { "group": "bandolier_shotgun_hunter_bandolier" },
+      { "group": "profession_shotgun_hunter_bandolier" },
       { "group": "hunting_knife_in_sheath_on_leather_belt" }
     ]
   },
   {
-    "id": "bandolier_shotgun_hunter_bandolier",
+    "id": "profession_shotgun_hunter_bandolier",
     "type": "item_group",
     "subtype": "collection",
 
     "container-item": "bandolier_shotgun",
 
     "entries": [{ "item": "shot_00", "charges": 25 }]
+  },
+  {
+    "id": "profession_riot_police_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "having your radio on the belt probably doesn't make sense, but this seems the best of all available options"
+    ],
+
+    "container-group": "police_belts",
+
+    "entries": [
+      { "group": "police_belt_melee" },
+      { "group": "police_belt_suppression" },
+      { "group": "charged_two_way_radio", "container-item": "radio_pouch" }
+    ]
+  },
+  {
+    "id": "profession_sniper_police_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "having your radio on the belt probably doesn't make sense, but this seems the best of all available options"
+    ],
+
+    "container-group": "police_belts",
+
+    "entries": [
+      {
+        "item": "holster",
+        "contents-group": "police_sidearm"
+      },
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "contents-item": "p320mag_17rd_9x19mm",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_sniper_police_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "having your radio on the belt probably doesn't make sense, but this seems the best of all available options"
+    ],
+
+    "container-group": "chestrig",
+
+    "entries": [
+      { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
+      { "group": "ammo_762NATO_loose_in_pouch_20" }
+    ]
+  },
+  {
+    "id": "profession_swat_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "police_belts",
+
+    "entries": [
+      {
+        "item": "holster",
+        "contents-group": "police_sidearm"
+      },
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "contents-item": "p320mag_10rd_9x19mm",
+        "count": 2
+      },
+      {
+        "group": "flashbang_in_pouch",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_swat_heavy_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "police_belts",
+
+    "entries": [
+      {
+        "item": "holster",
+        "contents-group": "police_sidearm"
+      },
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "contents-item": "p320mag_10rd_9x19mm",
+        "count": 2
+      },
+      {
+        "group": "flashbang_in_pouch",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_swat_heavy_bandolier",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "this makes little sense, but we have it because we have nothing better at the moment"
+    ],
+
+    "container-group": "bandolier_shotgun",
+
+    "entries": [
+      { "item": "shot_00", "charges": 12 },
+      { "item": "shot_slug", "charges": 13 }
+    ]
+  },
+  {
+    "id": "profession_security_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "leather_belt",
+
+    "entries": [
+      {
+        "item": "holster",
+        "contents-item": "m9"
+      },
+      {
+        "item": "pouch_magazine_pistol_haley_strategic",
+        "contents-item": "m9mag",
+        "count": 2
+      },
+      {
+        "item": "flashlight_pouch",
+        "contents-group": "charged_flashlight"
+      },
+      { "item": "baton", "container-item": "holster_baton_bfg" }
+    ]
+  },
+  {
+    "id": "profession_specops_panel",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "panel_qasm_onetigris_mp5",
+
+    "entries": [
+      { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 4 }
+    ]
+  },
+  {
+    "id": "profession_specops_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "ballistic_vest_light",
+
+    "entries": [
+      { "group": "profession_specops_panel" },
+      { "group": "pristine_esapi_front_plates" }
+    ]
+  },
+  {
+    "id": "profession_specops_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "webbing_belt",
+
+    "entries": [
+      { "group": "us_army_knife_sheathed" },
+      { "group": "charged_two_way_radio", "container-item": "radio_pouch" }
+    ]
+  },
+  {
+    "id": "profession_seal_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "load_bearing_vest",
+
+    "entries": [
+      { "item": "stanag30", "count": 4 },
+      { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
+      {
+        "item": "grenade",
+        "container-item": "tactical_grenade_pouch",
+        "count": [1, 2]
+      },
+      { "group": "pristine_esapi_front_plates" }
+    ]
+  },
+  {
+    "id": "profession_seal_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "webbing_belt",
+
+    "//entries": [
+      "the U.S. Navy has adopted the M17/M18 as their sidearm of choice",
+      "https://www.military.com/kitup/2017/05/modular-handgun-system-3.html"
+    ],
+    "entries": [
+      { "group": "us_army_sidearm_holstered" },
+      { "group": "us_army_sidearm_magazine_holstered", "count": [1, 2] },
+      { "group": "us_army_knife_sheathed" }
+    ]
+  },
+  {
+    "id": "profession_rifleman_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-group": "belt_army_acu",
+
+    "//entries": [
+      "the U.S. Navy has adopted the M17/M18 as their sidearm of choice",
+      "https://www.military.com/kitup/2017/05/modular-handgun-system-3.html"
+    ],
+    "entries": [
+      { "group": "us_army_sidearm_holstered" },
+      { "group": "us_army_sidearm_magazine_holstered", "count": [0, 2] },
+      { "group": "us_army_knife_sheathed" }
+    ]
   }
 ]
