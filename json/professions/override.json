@@ -125,20 +125,13 @@
           "undershirt",
           "combat_shirt",
           "helmet_army",
-          "gloves_liner",
           "gloves_tactical",
           "socks",
           "boots_combat",
           "wristwatch",
           "thermometer",
-          "bandages",
           "scalpel",
           "syringe",
-          "morphine",
-          "aspirin",
-          "antibiotics",
-          "disinfectant",
-          "pepto",
           "molle_pack"
         ],
 
@@ -381,7 +374,7 @@
           },
           { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
           {
-            "group": "ammo_762NATO_loose_in_pouch",
+            "group": "ammo_762NATO_loose_in_pouch_60",
             "container-item": "tacvest"
           },
           { "group": "us_army_belt_with_knife_pistol_mags" }
@@ -426,13 +419,14 @@
 
         "//entries": [
           "breachers in Army use (or at least used to, for the longest time) use Mossberg 590 sans stock",
+          "here, we use the closest available option: a Remington 870 sans stock",
           "TODO: use MOLLE breaching tool holder and collapsible sledge instead of full-size sledge in the inventory"
         ],
         "entries": [
           {
-            "item": "mossberg_590",
+            "item": "remington_870_breacher",
             "ammo-item": "shot_00",
-            "charges": 9,
+            "charges": 4,
             "contents-item": ["shoulder_strap"]
           },
           { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
@@ -595,7 +589,7 @@
     "type": "profession",
 
     "name": "Mall Security",
-    "description": "You spent dull nights guarding the local mall against teen hooligans and petty thieves.  Your job training didn't provide any terribly useful skills, but you do have your trusty tazer, baton, and pocket knife.",
+    "description": "You spent dull nights guarding the local mall against teen hooligans and petty thieves.  Your job training didn't provide any terribly useful skills, but you do have your trusty taser, baton, and pocket knife.",
 
     "points": 0,
 
@@ -774,7 +768,6 @@
           "pants_army",
           "socks",
           "badge_deputy",
-          "police_belt",
           "boots",
           "whistle",
           "kevlar",
@@ -946,6 +939,7 @@
 
     "traits": ["PROF_POLICE"],
 
+    "//items": ["should include cut-resistant sleeves"],
     "items": {
       "both": {
         "items": [
@@ -961,22 +955,822 @@
           "gasbomb"
         ],
 
+        "//entries": [
+          "indications are scarce, but it would appear that riot police in the U.S. doesn't actually carry a firearm when employed as riot control"
+        ],
         "entries": [
-          { "group": "charged_two_way_radio" },
           { "group": "full_gasmask" },
-          {
-            "item": "usp_45",
-            "ammo-item": "45_acp",
-            "charges": 12,
-            "container-item": "holster"
-          },
-          { "item": "legpouch_large", "contents-group": "army_mags_usp45" },
-          { "item": "tonfa", "container-item": "police_belt" },
-          { "group": "charged_tazer" }
+          { "group": "profession_riot_police_belt" }
         ]
       },
+
       "male": ["boxer_shorts"],
       "female": ["bra", "boy_shorts"]
     }
+  },
+  {
+    "id": "sniper_police",
+    "type": "profession",
+
+    "name": "Police Sniper",
+    "description": "Your skill as a sharpshooter served you well in the line of duty, protecting the innocent with a single, well-placed bullet.  Now survival itself is on the line, and you can't afford to miss if you don't want to end up as something's dinner.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 5, "name": "gun" },
+      { "level": 4, "name": "rifle" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic", "prof_spotting"],
+
+    "traits": ["PROF_POLICE"],
+
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "pants_army",
+          "police_belt",
+          "sweatshirt",
+          "sneakers",
+          "gloves_tactical",
+          "hat_ball",
+          "badge_deputy",
+          "wristwatch"
+        ],
+
+        "entries": [
+          { "group": "profession_sniper_police_vest" },
+          { "group": "profession_sniper_police_belt" },
+          { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
+          { "group": "charged_powered_earmuffs" },
+          {
+            "item": "M24",
+            "ammo-item": "762_51",
+            "charges": 5,
+            "contents-item": "shoulder_strap"
+          },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["bra", "boy_shorts"]
+    }
+  },
+  {
+    "id": "swat",
+    "type": "profession",
+
+    "name": "SWAT Officer",
+    "description": "As a member of the police force's most elite division, you are more than adequately trained and equipped to survive the brutal onslaught of the apocalypse.  Unfortunately, the chain of command has broken down; your only mission now is to stay alive.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "pistol" },
+      { "level": 3, "name": "smg" },
+      { "level": 2, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic", "prof_spotting"],
+
+    "traits": ["PROF_SWAT"],
+
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "tac_helmet",
+          "boots_combat",
+          "gloves_tactical",
+          "badge_swat",
+          "wristwatch",
+          "pants_cargo",
+          "elbow_pads",
+          "knee_pads"
+        ],
+
+        "entries": [
+          { "group": "swat_ballistic_vest_pristine" },
+          { "group": "profession_swat_belt" },
+          { "item": "sheriffshirt", "variant": "swat_shirt" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "rail_laser_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boy_shorts"]
+    }
+  },
+  {
+    "id": "swat_heavy",
+    "type": "profession",
+
+    "name": "SWAT CQC Specialist",
+    "description": "As a member of the police force's most elite division, you were given special training and became an expert in close-quarters combat.  Unfortunately, the chain of command has broken down; your only mission now is to stay alive.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "shotgun" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "bashing" },
+      { "level": 2, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_spotting"],
+
+    "traits": ["PROF_SWAT"],
+
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "tac_helmet",
+          "boots_combat",
+          "gloves_tactical",
+          "badge_swat",
+          "wristwatch",
+          "pants_cargo",
+          "elbow_pads",
+          "knee_pads"
+        ],
+
+        "entries": [
+          { "group": "swat_ballistic_vest_pristine" },
+          { "group": "profession_swat_heavy_bandolier" },
+          { "group": "profession_swat_heavy_belt" },
+          { "item": "sheriffshirt", "variant": "swat_shirt" },
+          {
+            "item": "remington_870_express",
+            "ammo-item": "shot_00",
+            "charges": 7,
+            "contents-item": ["shoulder_strap"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boy_shorts"]
+    }
+  },
+  {
+    "id": "cop",
+    "type": "profession",
+
+    "name": "Police Officer",
+    "description": "Just a small-town deputy, you got the call and were ready to come to the rescue.  Soon it was you who needed rescuing, and you were lucky to escape with your life.  Who's going to respect your authority when the government this badge represents might not even exist anymore?",
+
+    "points": 2,
+
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "pistol" },
+      { "level": 1, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_spotting"],
+
+    "traits": ["PROF_POLICE"],
+
+    "items": {
+      "both": {
+        "//items": ["pants should be black, as per Boston police uniform"],
+        "items": [
+          "pants",
+          "socks",
+          "badge_deputy",
+          "boots",
+          "whistle",
+          "wristwatch"
+        ],
+
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "group": "police_belts_outfitted" },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["bra", "boy_shorts"]
+    }
+  },
+  {
+    "id": "k9_cop",
+    "type": "profession",
+
+    "name": "K9 Officer",
+    "description": "You spent your career busting drug smugglers with your faithful canine companion.  Now the world has ended, and none of that matters anymore.  Your loyal dog is still at your side, though, ready to face the Cataclysm with you.",
+
+    "points": 4,
+
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 2, "name": "survival" },
+      { "level": 1, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_spotting"],
+
+    "pets": [{ "name": "mon_dog_gshepherd", "amount": 1 }],
+
+    "traits": ["PROF_POLICE"],
+
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "socks",
+          "badge_deputy",
+          "boots",
+          "dog_whistle",
+          "wristwatch",
+          "dogfood_dry"
+        ],
+
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "group": "police_belts_outfitted" },
+          { "item": "kevlar_harness", "container-item": "runner_bag" },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["bra", "boy_shorts"]
+    }
+  },
+  {
+    "id": "security",
+    "type": "profession",
+
+    "name": "Security Guard",
+    "description": "You had a boring, underpaid job watching cameras and patrolling hallways, but things have suddenly gotten a lot more dangerous.  You have some useful equipment, but you've never had any call to use it until now.",
+
+    "points": 1,
+
+    "items": {
+      "both": {
+        "items": [
+          "pants",
+          "socks",
+          "boots_combat",
+          "longshirt",
+          "knife_folding",
+          "hat_ball",
+          "wristwatch"
+        ],
+
+        "entries": [
+          { "group": "charged_smart_phone" },
+          { "group": "profession_security_belt" },
+          { "item": "stab_vest" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["bra", "boy_shorts"]
+    }
+  },
+  {
+    "id": "specops",
+    "type": "profession",
+
+    "name": "Special Operator",
+    "description": "You were the best of the best, the military's finest.  That's why you're still alive, even after all your comrades fell to the undead.  As far as you can tell, military command abandoned you in this hellhole when you missed the emergency evac.",
+
+    "points": 8,
+
+    "skills": [
+      { "level": 6, "name": "gun" },
+      { "level": 6, "name": "smg" },
+      { "level": 6, "name": "rifle" },
+      { "level": 4, "name": "cutting" },
+      { "level": 4, "name": "melee" },
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "traps" },
+      { "level": 3, "name": "firstaid" },
+      { "level": 3, "name": "swimming" },
+      { "level": 4, "name": "survival" }
+    ],
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_traps",
+      "prof_disarming",
+      "prof_spotting"
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "wetsuit",
+          "pants_army",
+          "wetsuit_hood",
+          "tac_helmet",
+          "wetsuit_gloves",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "dive_bag",
+          "diving_watch"
+        ],
+
+        "//entries": [
+          "this being a fancy Special Ops loadout, this should really have a karambit"
+        ],
+        "entries": [
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "group": "charged_powered_earmuffs",
+            "custom-flags": ["no_auto_equip"]
+          },
+          { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
+          { "group": "profession_specops_vest" },
+          { "group": "profession_specops_belt" },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [
+              "shoulder_strap",
+              "suppressor",
+              "sights_mount",
+              "holo_sight"
+            ]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    }
+  },
+  {
+    "id": "seal",
+    "type": "profession",
+
+    "name": "Navy SEAL",
+    "description": "Before the Cataclysm you used to be a member of the SEALs: a key component of the US Navy’s special forces contingent, a highly trained soldier in all respects, and a proficient combatant in both maritime and ground operations.  Called upon to eliminate high-value targets and conduct specialised marine missions, the greatest test of your capabilities now rests before you.  'The only easy day was yesterday', and now its time to square your shoulders and embark on your last and hardest mission to date.",
+
+    "points": 8,
+
+    "skills": [
+      { "level": 6, "name": "gun" },
+      { "level": 6, "name": "rifle" },
+      { "level": 4, "name": "melee" },
+      { "level": 4, "name": "pistol" },
+      { "level": 3, "name": "stabbing" },
+      { "level": 3, "name": "dodge" },
+      { "level": 4, "name": "firstaid" },
+      { "level": 4, "name": "survival" },
+      { "level": 3, "name": "throw" },
+      { "level": 5, "name": "swimming" }
+    ],
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_wound_care"
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "combat_shirt",
+          "tac_helmet",
+          "mask_ski",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "diving_watch",
+          "boots_combat",
+          "ballistic_vest_light"
+        ],
+
+        "entries": [
+          { "group": "charged_powered_earmuffs" },
+          { "group": "profession_seal_belt" },
+          { "group": "profession_seal_vest" },
+          { "item": "pants_army", "variant": "mil_pants_navy" },
+          {
+            "item": "light_battery_cell",
+            "ammo-item": "battery",
+            "charges": 100,
+            "container-item": "goggles_nv"
+          },
+          {
+            "item": "m4_carbine",
+            "variant": "m4_cqbr",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    },
+
+    "flags": ["SCEN_ONLY"]
+  },
+  {
+    "id": "rifleman",
+    "type": "profession",
+
+    "name": "Rifleman",
+    "description": "When you were young, you dreamed of being a soldier.  War is hell and hell is war, but you never thought that it would happen like this.",
+
+    "points": 6,
+
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "dodge" },
+      { "level": 2, "name": "survival" },
+      { "level": 2, "name": "firstaid" },
+      { "level": 2, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic", "prof_spotting"],
+
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "undershirt",
+          "combat_shirt",
+          "helmet_army",
+          "mask_ski",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "wristwatch",
+          "molle_pack"
+        ],
+
+        "entries": [
+          { "group": "us_ballistic_vest_pristine" },
+          { "group": "profession_rifleman_belt" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m4_carbine",
+            "variant": "m4a1",
+            "ammo-item": "556_mk318",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    }
+  },
+  {
+    "id": "diver_navy",
+    "type": "profession",
+
+    "name": "Navy Diver",
+    "description": "Before the Cataclysm, you used to be part of a Naval Special Warfare diving group, a skilled soldier adept at underwater infiltration and marine combat.  You were just finishing suiting up for a practice dive before the screams interrupted your preparations.  Now, you’ve got nothing to ward off your former crew-mates except for your wetsuit, equipment, and training.",
+
+    "points": 3,
+
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 2, "name": "firstaid" },
+      { "level": 4, "name": "survival" },
+      { "level": 6, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_spotting", "prof_gunsmithing_basic"],
+
+    "items": {
+      "both": {
+        "items": [
+          "wetsuit_thick",
+          "wetsuit_hood_thick",
+          "goggles_swim",
+          "wetsuit_gloves_thick",
+          "swim_fins",
+          "dive_bag",
+          "diving_watch"
+        ],
+
+        "entries": [
+          { "group": "full_rebreather_mask" },
+          { "group": "charged_heavy_flashlight" },
+          { "item": "barometer" },
+          { "item": "hygrometer" },
+          { "item": "diveknife", "container-item": "bootsheath" }
+        ]
+      },
+
+      "male": ["rashguard", "wetsuit_shorts"],
+      "female": ["bikini_top", "wetsuit_shorts"]
+    },
+
+    "flags": ["SCEN_ONLY"]
+  },
+  {
+    "id": "recruit",
+    "type": "profession",
+
+    "name": "Military Recruit",
+    "description": "Joining the military has been your dream for years.  You finally got in, just in time for your training to get interrupted by some sort of national emergency.  As far as you can tell, military command abandoned you in this hellhole when you missed the emergency evac.",
+
+    "points": 4,
+
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "survival" },
+      { "level": 1, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic"],
+
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "undershirt",
+          "combat_shirt",
+          "helmet_army",
+          "mask_ski",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "wristwatch",
+          "molle_pack"
+        ],
+
+        "entries": [
+          { "group": "us_ballistic_vest_pristine" },
+          { "group": "us_army_belt_with_knife" },
+          { "group": "charged_two_way_radio" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m4_carbine",
+            "variant": "m4a1",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    }
+  },
+  {
+    "id": "nco",
+    "type": "profession",
+
+    "name": "Non Commissioned Officer",
+    "description": "You're a veteran of several peacekeeping missions.  You led your squad as a sort of parental figure, and they relied on you to give orders and keep them alive.  You failed them.  And now you're alone.",
+
+    "points": 7,
+
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 2, "name": "speech" },
+      { "level": 3, "name": "shotgun" },
+      { "level": 3, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "dodge" },
+      { "level": 3, "name": "firstaid" },
+      { "level": 3, "name": "survival" },
+      { "level": 2, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic", "prof_spotting"],
+
+    "items": {
+      "both": {
+        "items": [
+          "pants_army",
+          "undershirt",
+          "combat_shirt",
+          "helmet_army",
+          "mask_ski",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "diving_watch",
+          "molle_pack"
+        ],
+
+        "//entries": [
+          "this loadout should feature some sort of PALS/Velcro shotgun ammo solution",
+          "no pouches to go with the vest in order to show the character's depressive state after losing their squad"
+        ],
+        "entries": [
+          { "item": "ballistic_vest_esapi" },
+          { "group": "us_army_belt_with_knife" },
+          { "group": "charged_two_way_radio" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "shot_00", "count": 2 },
+          {
+            "item": "mossberg_930",
+            "variant": "m1014",
+            "ammo-item": "shot_00",
+            "charges": 8,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    }
+  },
+  {
+    "id": "marine",
+    "type": "profession",
+
+    "name": { "male": "Marine Infantrymen", "female": "Marine Infantrywoman" },
+    "description": "Some call you a 'Jarhead', other’s a 'Devil Dog', and still others have dubbed you a 'Leatherneck'.  Before the Cataclysm, you were a soldier of the US Marine Corps, a military professional forming the backbone to any amphibious assault.  Whether it had been paratrooping out of helicopters or storming enemy strongholds, the name of the Marines had become renowned all across the world.  Now that that world has come to an end and military command has collapsed in on itself as far as you can tell, you suppose that its up to you to carry the memory of the Marines forwards into the Cataclysm.",
+
+    "points": 6,
+
+    "skills": [
+      { "level": 4, "name": "gun" },
+      { "level": 4, "name": "rifle" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 2, "name": "pistol" },
+      { "level": 1, "name": "dodge" },
+      { "level": 2, "name": "firstaid" },
+      { "level": 2, "name": "survival" },
+      { "level": 3, "name": "swimming" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic"],
+
+    "items": {
+      "both": {
+        "items": [
+          "army_top",
+          "combat_shirt",
+          "jacket_army_modern",
+          "hat_navy",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_combat",
+          "diving_watch"
+        ],
+
+        "//entries": [
+          "once Marine vest has been modelled, this loadout should use it instead of the SPCS"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "group": "military_ballistic_vest_pristine" },
+          { "group": "us_army_belt_with_knife_pistol_mags" },
+          { "item": "pants_army", "variant": "apants_MARPAT" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m4_carbine",
+            "variant": "m4_cqbr",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    },
+    "flags": ["SCEN_ONLY"]
+  },
+  {
+    "id": "major-general",
+    "type": "profession",
+
+    "name": "Major General",
+    "description": "You worked your way up through the ranks from a no-name private to a big shot Major General, respected and decorated.  On the downside, years of desk duty have left your shooting skills rusty, and all the medals in the world won't protect you now.",
+
+    "points": 4,
+
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "melee" },
+      { "level": 6, "name": "speech" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic"],
+
+    "items": {
+      "both": {
+        "//items": ["might need a winter coat for colder weather"],
+        "items": [
+          "undershirt",
+          "officer_uniform",
+          "socks",
+          "boots",
+          "beret",
+          "silver_watch",
+          "fancy_sunglasses"
+        ],
+
+        "entries": [
+          { "item": "cigar", "container-item": "case_cigar", "charges": 2 },
+          { "item": "id_military", "container-item": "wallet_leather" },
+          {
+            "group": "us_army_sidearm_holstered",
+            "container-item": "leather_belt"
+          },
+          { "item": "militarymap" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boxer_shorts"]
+    },
+
+    "missions": ["MISSION_SOCIAL_BUTTERFLY"]
+  },
+  {
+    "id": "sheltered_militia",
+    "type": "profession",
+
+    "name": "Sheltered Militia",
+    "description": "At the start of the Cataclysm, you hunkered down in a bomb shelter with your collection of guns.  You've spent the past months eating canned food and practicing your aim.  Now it is winter - time to face the world above.",
+
+    "points": 4,
+
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "rifle" },
+      { "level": 1, "name": "pistol" }
+    ],
+    "proficiencies": ["prof_gunsmithing_basic", "prof_gunsmithing_improv"],
+
+    "items": {
+      "both": {
+        "items": [
+          "molle_pack",
+          "winter_pants_army",
+          "winter_jacket_army",
+          "undershirt",
+          "socks",
+          "boots_combat",
+          "sweatshirt",
+          "knife_folding",
+          "wristwatch"
+        ],
+
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "group": "charged_matches" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m1911",
+            "ammo-item": "45_acp",
+            "charges": 7,
+            "container-item": "holster"
+          },
+          { "item": "45_acp", "charges": [7, 23] },
+          {
+            "item": "garand",
+            "ammo-item": "3006",
+            "charges": 8,
+            "contents-item": "shoulder_strap"
+          },
+          { "item": "garandclip", "ammo-item": "3006", "charges": 8 },
+          { "item": "3006", "charges": [4, 7] }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "boy_shorts"]
+    },
+
+    "flags": ["SCEN_ONLY"]
   }
 ]

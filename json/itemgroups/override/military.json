@@ -43,8 +43,8 @@
   {
     "id": "military_ballistic_vest_pristine",
     "type": "item_group",
-    "//": "ESAPI vest plus plates",
-    "subtype": "collection",
+    "subtype": "distribution",
+
     "entries": [
       {
         "distribution": [
@@ -89,7 +89,7 @@
     "entries": [
       {
         "item": "ballistic_vest_esapi",
-        "contents-group": "kitted_medium_vest_no_sides"
+        "contents-group": "us_army_kitted_medium_vest_no_sides"
       }
     ]
   },

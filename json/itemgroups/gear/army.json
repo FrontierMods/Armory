@@ -1,19 +1,67 @@
 [
   {
-    "id": "us_army_pouch",
+    "id": "us_army_knife",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "knife_combat" }]
+  },
+  {
+    "id": "us_army_knife_sheathed",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "group": "us_army_knife", "container-item": "sheath" }]
+  },
+  {
+    "id": "us_army_sidearm",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "m17" }]
+  },
+  {
+    "id": "us_army_sidearm_holstered",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "group": "us_army_sidearm", "container-item": "holster" }]
+  },
+  {
+    "id": "us_army_sidearm_magazine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "p320mag_17rd_9x19mm" }]
+  },
+  {
+    "id": "us_army_sidearm_magazine_holstered",
     "type": "item_group",
     "subtype": "collection",
 
     "entries": [
-      { "item": "flashlight_pouch", "contents-item": "flashlight" },
+      {
+        "group": "us_army_sidearm_magazine",
+        "container-item": "pouch_magazine_pistol_molle_ii"
+      }
+    ]
+  },
+  {
+    "id": "us_army_pouch",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "flashlight_pouch", "contents-item": "flashlight", "prob": 35 },
       {
         "item": "tactical_grenade_pouch",
         "count": [1, 2],
-        "contents-item": "grenade"
+        "contents-item": "grenade",
+        "prob": 30
       },
-      { "item": "tactical_holster", "contents-item": "m17" },
-      { "item": "radio_pouch", "contents-item": "two_way_radio" },
-      { "item": "sheath", "contents-item": "knife_combat" }
+      { "item": "tactical_holster", "contents-item": "m17", "prob": 10 },
+      { "item": "radio_pouch", "contents-item": "two_way_radio", "prob": 25 },
+      { "group": "us_army_knife_sheathed", "prob": 10 }
     ]
   },
   {
@@ -23,7 +71,7 @@
 
     "container-item": "belt_army_acu",
 
-    "entries": [{ "item": "sheath", "contents-item": "knife_combat" }]
+    "entries": [{ "group": "us_army_knife_sheathed" }]
   },
   {
     "id": "us_army_belt_with_knife_pistol",
@@ -33,8 +81,8 @@
     "container-item": "belt_army_acu",
 
     "entries": [
-      { "item": "sheath", "contents-item": "knife_combat" },
-      { "item": "holster", "contents-item": "m17" }
+      { "group": "us_army_knife_sheathed" },
+      { "group": "us_army_sidearm_holstered" }
     ]
   },
   {
@@ -44,7 +92,7 @@
 
     "container-item": "belt_army_acu",
 
-    "entries": [{ "item": "holster", "contents-item": "m17" }]
+    "entries": [{ "group": "us_army_sidearm_holstered" }]
   },
   {
     "id": "us_army_belt_with_knife_pistol_mags",
@@ -54,13 +102,9 @@
     "container-item": "belt_army_acu",
 
     "entries": [
-      { "item": "sheath", "contents-item": "knife_combat" },
-      { "item": "holster", "contents-item": "m17" },
-      {
-        "item": "pouch_magazine_pistol_molle_ii",
-        "count": 2,
-        "contents-item": "p320mag_17rd_9x19mm"
-      }
+      { "group": "us_army_knife_sheathed" },
+      { "group": "us_army_sidearm_holstered" },
+      { "group": "us_army_sidearm_magazine_holstered", "count": [1, 2] }
     ]
   },
   {
@@ -73,20 +117,19 @@
     "entries": [{ "item": "stanag30", "count": 6 }]
   },
   {
-    "id": "us_army_magazines_m4a1_contained",
+    "id": "us_army_magazines_m4a1_holstered",
     "type": "item_group",
     "subtype": "collection",
 
     "container-item": "triple_stacker_pouch",
 
-    "entries": [{ "item": "stanag30", "count": 6 }]
+    "entries": [{ "group": "us_army_magazines_m4a1" }]
   },
   {
     "id": "us_army_vest_pristine",
     "type": "item_group",
     "subtype": "collection",
 
-    "//": "should be vest + plates + reasonable accessories (6 mags of ammo, grenades etc.)",
     "container-item": "ballistic_vest_heavy",
     "on_overflow": "discard",
 
@@ -103,7 +146,7 @@
 
     "entries": [
       { "group": "pristine_esapi_plates" },
-      { "group": "us_army_magazines_m4a1_contained" },
+      { "group": "us_army_magazines_m4a1_holstered" },
       { "group": "us_army_pouch", "count": [1, 3] }
     ]
   }
