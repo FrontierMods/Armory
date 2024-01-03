@@ -81,64 +81,6 @@
       { "group": "military_ballistic_vest_heavy_pristine", "prob": 5 }
     ]
   },
-
-  {
-    "id": "swat_ballistic_vest",
-    "type": "item_group",
-    "subtype": "distribution",
-
-    "//notes": [
-      "it would rather make sense that SWAT would use a different model of armor from 'civilian' agencies"
-    ],
-
-    "entries": [
-      {
-        "item": "level_3_vest",
-        "variant": "level_3_vest_black",
-        "contents-group": "used_kitted_medium_vest_no_sides",
-        "prob": 7
-      },
-      {
-        "collection": [
-          {
-            "item": "level_3_vest",
-            "variant": "level_3_vest_black",
-            "contents-group": "swat_vest_group"
-          },
-          { "item": "tacvest" }
-        ],
-        "prob": 2
-      },
-      {
-        "collection": [
-          {
-            "item": "level_3_vest",
-            "variant": "level_3_vest_black",
-            "contents-group": "swat_vest_group"
-          },
-          {
-            "item": "heavy_load_bearing_vest_breacher",
-            "contents-group": "custom_light_lbv",
-            "contents-item": "remington_870_breacher"
-          }
-        ],
-        "prob": 1
-      }
-    ]
-  },
-  {
-    "id": "swat_ballistic_vest_pristine",
-    "type": "item_group",
-    "subtype": "distribution",
-
-    "entries": [
-      {
-        "item": "level_3_vest",
-        "variant": "level_3_vest_black",
-        "contents-group": "kitted_medium_vest_no_sides"
-      }
-    ]
-  },
   {
     "id": "us_ballistic_vest_pristine",
     "type": "item_group",
