@@ -143,15 +143,15 @@
 
         "volume_encumber_modifier": 0.95,
 
+        "max_contains_weight": "12 kg",
         "//molle": {
           "width": 8,
           "height": 3,
-          "spaced": true,
           "width_extra": 1,
           "height_extra": 2
         },
         "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
+        "max_item_length": "305 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -162,15 +162,15 @@
 
         "volume_encumber_modifier": 0.95,
 
+        "max_contains_weight": "12 kg",
         "//molle": {
           "width": 8,
           "height": 3,
-          "spaced": true,
           "width_extra": 1,
           "height_extra": 2
         },
         "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
+        "max_item_length": "305 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -180,6 +180,7 @@
 
         "description": "Side pocket",
 
+        "max_contains_weight": "1 kg",
         "//dimensions": {
           "length": "5 mm",
           "width": "12 in",
@@ -189,7 +190,6 @@
           "notes": ["said to span the entire size of the panel"]
         },
         "max_contains_volume": "221 ml",
-        "max_contains_weight": "1 kg",
         "//max_item_length": [
           "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
           "9 in. = 228.6 mm ≈ 229 mm"
@@ -203,6 +203,7 @@
 
         "description": "Side pocket",
 
+        "max_contains_weight": "1 kg",
         "//dimensions": {
           "length": "5 mm",
           "width": "12 in",
@@ -212,7 +213,6 @@
           "notes": ["said to span the entire size of the panel"]
         },
         "max_contains_volume": "221 ml",
-        "max_contains_weight": "1 kg",
         "//max_item_length": [
           "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
           "9 in. = 228.6 mm ≈ 229 mm"
@@ -319,6 +319,7 @@
 
         "volume_encumber_modifier": 0.95,
 
+        "max_contains_weight": "12 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "13.50 in",
@@ -334,7 +335,7 @@
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "2090 ml",
-        "max_contains_weight": "12 kg",
+        "max_item_length": "343 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -349,6 +350,7 @@
 
         "volume_encumber_modifier": 1.5,
 
+        "max_contains_weight": "8 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "9 in",
@@ -359,7 +361,7 @@
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "1394 ml",
-        "max_contains_weight": "8 kg",
+        "max_item_length": "229 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -371,6 +373,7 @@
 
         "volume_encumber_modifier": 1.5,
 
+        "max_contains_weight": "5 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "6 in",
@@ -384,7 +387,7 @@
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "1250 ml",
-        "max_contains_weight": "5 kg",
+        "max_item_length": "241 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -395,6 +398,7 @@
 
         "volume_encumber_modifier": 1.5,
 
+        "max_contains_weight": "5 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "6 in",
@@ -408,7 +412,7 @@
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "1250 ml",
-        "max_contains_weight": "5 kg",
+        "max_item_length": "241 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -418,8 +422,7 @@
 
         "description": "Side pouch",
 
-        "moves": 140,
-
+        "max_contains_weight": "4 kg",
         "//dimensions": {
           "length": "1 in",
           "width": "6 in",
@@ -432,17 +435,17 @@
           ]
         },
         "max_contains_volume": "794 ml",
-        "max_contains_weight": "4 kg",
         "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
-        "max_item_length": "229 mm"
+        "max_item_length": "229 mm",
+
+        "moves": 140
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Side pouch",
 
-        "moves": 140,
-
+        "max_contains_weight": "4 kg",
         "//dimensions": {
           "length": "1 in",
           "width": "6 in",
@@ -455,9 +458,10 @@
           ]
         },
         "max_contains_volume": "794 ml",
-        "max_contains_weight": "4 kg",
         "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
-        "max_item_length": "229 mm"
+        "max_item_length": "229 mm",
+
+        "moves": 140
       },
 
       {
@@ -465,104 +469,96 @@
 
         "description": "Magazine pouch",
 
-        "moves": 110,
-
+        "max_contains_weight": "4 kg",
         "//dimensions": {
           "length": "2.25 in",
           "width": "1.5 in",
-          "height": "6 in",
-          "raw": "332 ml",
-          "trim": -0.2,
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
           "notes": [
-            "dimensions from an AR-15 magazine, which this could accomodate two of",
-            "trim is for allowing larger magazines in"
+            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
           ]
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "400 ml",
-        "max_contains_weight": "4 kg",
-        "//min_item_lengt": "5.5 in.",
-        "min_item_lengt": "140 mm",
-        "//max_item_length": "7.5 in.",
-        "max_item_length": "191 mm"
+        "max_contains_volume": "1073 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Magazine pouch",
 
-        "moves": 110,
-
+        "max_contains_weight": "4 kg",
         "//dimensions": {
           "length": "2.25 in",
           "width": "1.5 in",
-          "height": "6 in",
-          "raw": "332 ml",
-          "trim": -0.2,
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
           "notes": [
-            "dimensions from an AR-15 magazine, which this could accomodate two of",
-            "trim is for allowing larger magazines in"
+            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
           ]
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "400 ml",
-        "max_contains_weight": "4 kg",
-        "//min_item_lengt": "5.5 in.",
-        "min_item_lengt": "140 mm",
-        "//max_item_length": "7.5 in.",
-        "max_item_length": "191 mm"
+        "max_contains_volume": "1073 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Magazine pouch",
 
-        "moves": 110,
-
+        "max_contains_weight": "4 kg",
         "//dimensions": {
           "length": "2.25 in",
           "width": "1.5 in",
-          "height": "6 in",
-          "raw": "332 ml",
-          "trim": -0.2,
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
           "notes": [
-            "dimensions from an AR-15 magazine, which this could accomodate two of",
-            "trim is for allowing larger magazines in"
+            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
           ]
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "400 ml",
-        "max_contains_weight": "4 kg",
-        "//min_item_lengt": "5.5 in.",
-        "min_item_lengt": "140 mm",
-        "//max_item_length": "7.5 in.",
-        "max_item_length": "191 mm"
+        "max_contains_volume": "1073 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Magazine pouch",
 
-        "moves": 110,
-
+        "max_contains_weight": "4 kg",
         "//dimensions": {
           "length": "2.25 in",
           "width": "1.5 in",
-          "height": "6 in",
-          "raw": "332 ml",
-          "trim": -0.2,
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
           "notes": [
-            "dimensions from an AR-15 magazine, which this could accomodate two of",
-            "trim is for allowing larger magazines in"
+            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
           ]
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "400 ml",
-        "max_contains_weight": "4 kg",
-        "//min_item_lengt": "5.5 in.",
-        "min_item_lengt": "140 mm",
-        "//max_item_length": "7.5 in.",
-        "max_item_length": "191 mm"
+        "max_contains_volume": "1073 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
       }
     ],
 
@@ -654,6 +650,7 @@
 
         "volume_encumber_modifier": 0.95,
 
+        "max_contains_weight": "14 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "12.00 in",
@@ -669,7 +666,7 @@
         },
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "1860 ml",
-        "max_contains_weight": "14 kg",
+        "max_item_length": "305 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -680,6 +677,7 @@
 
         "volume_encumber_modifier": 0.95,
 
+        "max_contains_weight": "14 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "12.00 in",
@@ -694,7 +692,7 @@
           ]
         },
         "max_contains_volume": "1858 ml",
-        "max_contains_weight": "14 kg",
+        "max_item_length": "305 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -710,6 +708,7 @@
 
         "volume_encumber_modifier": 1.25,
 
+        "max_contains_weight": "6 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "6 in",
@@ -719,7 +718,7 @@
           "notes": ["dimensions acquired from MOLLE cell count"]
         },
         "max_contains_volume": "774 ml",
-        "max_contains_weight": "6 kg",
+        "max_item_length": "152 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -731,6 +730,7 @@
 
         "//volume_encumber_modifier": 1.25,
 
+        "max_contains_weight": "2 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "3 in",
@@ -739,7 +739,7 @@
           "trim": 0
         },
         "max_contains_volume": "387 ml",
-        "max_contains_weight": "2 kg",
+        "max_item_length": "127 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -750,6 +750,7 @@
 
         "//volume_encumber_modifier": 1.25,
 
+        "max_contains_weight": "2 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "3 in",
@@ -758,7 +759,7 @@
           "trim": 0
         },
         "max_contains_volume": "387 ml",
-        "max_contains_weight": "2 kg",
+        "max_item_length": "127 mm",
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -799,6 +800,7 @@
 
         "volume_encumber_modifier": 0.9,
 
+        "max_contains_weight": "25 kg",
         "//dimensions": {
           "length": "40 mm",
           "width": "9.00 in",
@@ -811,7 +813,7 @@
           ]
         },
         "max_contains_volume": "2787 ml",
-        "max_contains_weight": "25 kg",
+        "max_item_length": "305 mm",
 
         "flag_restriction": ["MOLLE_ATTACH_BACK"]
       },
@@ -837,14 +839,22 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-        "max_contains_volume": "332 ml",
-        "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
-        ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.25 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions from a 40-round AR-15 magazine",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
+          ]
+        },
+        "max_contains_volume": "537 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
 
         "moves": 90
       },
@@ -855,14 +865,22 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-        "max_contains_volume": "332 ml",
-        "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
-        ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.25 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions from a 40-round AR-15 magazine",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
+          ]
+        },
+        "max_contains_volume": "537 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
 
         "moves": 90
       },
@@ -873,14 +891,22 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-        "max_contains_volume": "332 ml",
-        "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
-        ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.25 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions from a 40-round AR-15 magazine",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
+          ]
+        },
+        "max_contains_volume": "537 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
 
         "moves": 90
       },
@@ -891,14 +917,22 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-        "max_contains_volume": "332 ml",
-        "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
-        ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.25 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions from a 40-round AR-15 magazine",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
+          ]
+        },
+        "max_contains_volume": "537 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
 
         "moves": 90
       },
@@ -909,14 +943,22 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-        "max_contains_volume": "332 ml",
-        "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
-        ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.25 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions from a 40-round AR-15 magazine",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
+          ]
+        },
+        "max_contains_volume": "537 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
 
         "moves": 90
       },
@@ -927,14 +969,22 @@
 
         "holster": true,
 
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-        "max_contains_volume": "332 ml",
-        "//max_contains_weight": [
-          "full 65gr-loaded AR-15 magazine",
-          "rounded up to the nearest 50 as future-proofing"
-        ],
-        "max_contains_weight": "550 g",
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.25 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "536.47 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions from a 40-round AR-15 magazine",
+            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
+          ]
+        },
+        "max_contains_volume": "537 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
 
         "moves": 90
       }
