@@ -516,5 +516,31 @@
       { "group": "us_army_sidearm_magazine_holstered", "count": [0, 2] },
       { "group": "us_army_knife_sheathed" }
     ]
+  },
+  {
+    "id": "profession_mil_undercover_shoulder_holster",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "shoulder_holster",
+
+    "entries": [
+      { "group": "holster_supp_57" },
+      { "item": "fn57mag", "ammo-item": "57mm", "charges": 20, "count": 2 }
+    ]
+  },
+  {
+    "id": "profession_park_ranger_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "leather_belt",
+
+    "//entries": ["maybe also pepper spray"],
+    "entries": [
+      { "group": "charged_flashlight", "container-item": "flashlight_pouch" },
+      { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
+      { "item": "baton", "container-item": "holster_baton_bfg" }
+    ]
   }
 ]
