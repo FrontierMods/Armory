@@ -1,6 +1,6 @@
 [
   {
-    "id": "panels_qasm",
+    "id": "panels_qasm_molle",
     "type": "item_group",
     "subtype": "distribution",
 
@@ -18,7 +18,7 @@
     "entries": [
       { "group": "pristine_esapi_front_plates" },
       {
-        "item": "panel_qasm_frog_pro",
+        "group": "panels_qasm_molle",
         "contents-group": "custom_light_lbv"
       }
     ]
