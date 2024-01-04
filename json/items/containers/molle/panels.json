@@ -165,7 +165,7 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "QASM_ATTACH"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "QASM_ATTACH", "TARDIS"],
 
     "price": "32 USD",
     "price_postapoc": "25 cent"
