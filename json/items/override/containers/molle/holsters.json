@@ -148,22 +148,12 @@
 
         "holster": true,
 
-        "//max_contains_volume": [
-          "from dimensions of a Ka-Bar",
-          {
-            "length": "12.50 in",
-            "diameter": "1.40 in",
-            "raw": "315 ml",
-            "trim": 0.55,
-            "notes": [
-              "modelling the knife as a cylinder due to the shape of the handle",
-              "then trimming for blade and other smaller features"
-            ]
-          }
-        ],
-        "max_contains_volume": "142 ml",
         "//max_contains_weight": "weight of the M9 bayonet",
         "max_contains_weight": "558 g",
+        "//max_contains_volume": [
+          "from dimensions of a kirpan (audited in Core), which should realistically fit into a sheath like that"
+        ],
+        "max_contains_volume": "184 ml",
         "//max_item_length": "14 in. maximum length of an item, since the sheath itself does not reach to the very bottom edge of the backer",
         "max_item_length": "356 mm",
 
