@@ -1,5 +1,33 @@
 [
   {
+    "id": "charged_powered_earmuffs",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "light_plus_battery_cell",
+        "ammo-item": "battery",
+        "charges": 150,
+        "container-item": "powered_earmuffs"
+      }
+    ]
+  },
+  {
+    "id": "charged_tazer",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "battery",
+        "charges": 120,
+        "container-item": "tazer"
+      }
+    ]
+  },
+
+  {
     "id": "profession_gunslinger_bandolier",
     "type": "item_group",
     "subtype": "collection",
@@ -173,10 +201,10 @@
 
     "entries": [
       {
-        "item": "holster_stun_gun_streetwise",
-        "container-item": "tazer"
+        "group": "charged_tazer",
+        "container-item": "holster_stun_gun_streetwise"
       },
-      { "item": "flashlight_pouch", "contents-item": "flashlight" },
+      { "group": "charged_flashlight", "container-item": "flashlight_pouch" },
       { "item": "baton", "container-item": "holster_baton_bfg" }
     ]
   },
@@ -284,9 +312,11 @@
         "contents-group": "police_sidearm"
       },
       {
-        "item": "pouch_magazine_pistol_haley_strategic",
-        "contents-item": "p320mag_17rd_9x19mm",
-        "count": 2
+        "container-item": "pouch_magazine_pistol_haley_strategic",
+        "item": "p320mag_17rd_9x19mm",
+        "ammo-item": "9mm",
+        "charges": 17,
+        "count": [1, 2]
       }
     ]
   },
@@ -319,9 +349,11 @@
         "contents-group": "police_sidearm"
       },
       {
-        "item": "pouch_magazine_pistol_haley_strategic",
-        "contents-item": "p320mag_10rd_9x19mm",
-        "count": 2
+        "container-item": "pouch_magazine_pistol_haley_strategic",
+        "item": "p320mag_17rd_9x19mm",
+        "ammo-item": "9mm",
+        "charges": 17,
+        "count": [1, 2]
       },
       {
         "group": "flashbang_in_pouch",
@@ -342,8 +374,10 @@
         "contents-group": "police_sidearm"
       },
       {
-        "item": "pouch_magazine_pistol_haley_strategic",
-        "contents-item": "p320mag_10rd_9x19mm",
+        "container-item": "pouch_magazine_pistol_haley_strategic",
+        "item": "p320mag_17rd_9x19mm",
+        "ammo-item": "9mm",
+        "charges": 17,
         "count": 2
       },
       {
@@ -377,12 +411,16 @@
 
     "entries": [
       {
-        "item": "holster",
-        "contents-item": "m9"
+        "container-item": "holster",
+        "item": "m9",
+        "ammo-item": "9mm",
+        "charges": 17
       },
       {
-        "item": "pouch_magazine_pistol_haley_strategic",
-        "contents-item": "m9mag",
+        "container-item": "pouch_magazine_pistol_haley_strategic",
+        "item": "m9mag",
+        "ammo-item": "9mm",
+        "charges": 17,
         "count": 2
       },
       {
@@ -435,7 +473,7 @@
     "container-group": "load_bearing_vest",
 
     "entries": [
-      { "item": "stanag30", "count": 4 },
+      { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 4 },
       { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
       {
         "item": "grenade",
