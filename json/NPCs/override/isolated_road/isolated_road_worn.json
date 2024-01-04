@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CODY_MILLER_worn",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "tank_top" },
+      { "item": "under_armor_shorts" },
+      { "item": "apron_leather" },
+      { "item": "jeans" },
+      { "item": "gloves_work" },
+      { "group": "combat_knife_in_sheath_on_thigh_strap" },
+      { "item": "welding_mask_raised" },
+      { "item": "fanny" },
+      { "item": "socks" },
+      { "item": "boots_steel" }
+    ]
+  }
+]
