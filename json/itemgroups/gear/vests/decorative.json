@@ -58,15 +58,9 @@
     ],
 
     "entries": [
-      {
-        "collection": [{ "item": "velcro_panel_sheriff", "count": 2 }]
-      },
-      {
-        "collection": [{ "item": "velcro_panel_police", "count": 2 }]
-      },
-      {
-        "collection": [{ "item": "velcro_panel_swat", "count": 2 }]
-      }
+      { "item": "velcro_panel_sheriff", "count": 2 },
+      { "item": "velcro_panel_police", "count": 2 },
+      { "item": "velcro_panel_swat", "count": 2 }
     ]
   },
   {
