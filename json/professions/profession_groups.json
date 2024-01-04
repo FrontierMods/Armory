@@ -110,7 +110,7 @@
     "entries": [
       {
         "item": "762_51",
-        "count": 60
+        "charges": 60
       }
     ]
   },
@@ -170,7 +170,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "tacvest",
+    "container-item": "ballistic_vest_esapi",
 
     "entries": [
       {
@@ -179,7 +179,7 @@
         "container-item": "grenade_pouch"
       },
       {
-        "group": "army_mags_m4"
+        "group": "us_army_magazines_m4a1_holstered"
       }
     ]
   },
@@ -329,7 +329,7 @@
       "having your radio on the belt probably doesn't make sense, but this seems the best of all available options"
     ],
 
-    "container-group": "chestrig",
+    "container-item": "chestrig",
 
     "entries": [
       { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
@@ -357,7 +357,7 @@
       },
       {
         "group": "flashbang_in_pouch",
-        "count": 2
+        "count": [1, 2]
       }
     ]
   },
@@ -395,7 +395,7 @@
       "this makes little sense, but we have it because we have nothing better at the moment"
     ],
 
-    "container-group": "bandolier_shotgun",
+    "container-item": "bandolier_shotgun",
 
     "entries": [
       { "item": "shot_00", "charges": 12 },
@@ -435,7 +435,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "panel_qasm_onetigris_mp5",
+    "container-item": "panel_qasm_onetigris_mp5",
 
     "entries": [
       { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 4 }
@@ -446,7 +446,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "ballistic_vest_light",
+    "container-item": "ballistic_vest_light",
 
     "entries": [
       { "group": "profession_specops_panel" },
@@ -458,7 +458,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "webbing_belt",
+    "container-item": "webbing_belt",
 
     "entries": [
       { "group": "us_army_knife_sheathed" },
@@ -470,7 +470,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "load_bearing_vest",
+    "container-item": "load_bearing_vest",
 
     "entries": [
       { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 4 },
@@ -488,7 +488,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "webbing_belt",
+    "container-item": "webbing_belt",
 
     "//entries": [
       "the U.S. Navy has adopted the M17/M18 as their sidearm of choice",
@@ -505,7 +505,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "belt_army_acu",
+    "container-item": "belt_army_acu",
 
     "//entries": [
       "the U.S. Navy has adopted the M17/M18 as their sidearm of choice",
