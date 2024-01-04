@@ -54,7 +54,9 @@
 
     "container-item": "triple_stacker_pouch",
 
-    "entries": [{ "item": "mp5mag", "count": 6 }]
+    "entries": [
+      { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 6 }
+    ]
   },
 
   {
@@ -62,7 +64,7 @@
     "type": "item_group",
     "subtype": "distribution",
 
-    "entries": [{ "item": "m17" }]
+    "entries": [{ "item": "m17", "ammo-item": "9mm", "charges": 17 }]
   },
   {
     "id": "police_belts",
@@ -122,8 +124,10 @@
 
     "entries": [
       {
-        "item": "pouch_magazine_pistol_haley_strategic",
-        "contents-item": "p320mag_10rd_9x19mm",
+        "container-item": "pouch_magazine_pistol_haley_strategic",
+        "item": "p320mag_17rd_9x19mm",
+        "ammo-item": "9mm",
+        "charges": 17,
         "count": 2
       },
       {
@@ -132,7 +136,7 @@
       },
       {
         "item": "radio_pouch",
-        "contents-item": "two_way_radio"
+        "contents-group": "charged_two_way_radio"
       },
       {
         "item": "holster",
@@ -140,7 +144,7 @@
       },
       {
         "item": "flashlight_pouch",
-        "contents-item": "flashlight"
+        "contents-group": "charged_flashlight"
       }
     ]
   },
@@ -172,7 +176,7 @@
 
     "entries": [
       {
-        "item": "tazer",
+        "group": "charged_tazer",
         "container-item": "holster_stun_gun_streetwise"
       }
     ]
