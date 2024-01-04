@@ -8,11 +8,18 @@
 
     "entries": [
       { "item": "sheath", "contents-item": "knife_combat" },
-      { "item": "holster", "contents-item": "m9" },
       {
-        "item": "pouch_magazine_pistol_haley_strategic",
+        "container-item": "holster",
+        "item": "m9",
+        "ammo-item": "9mm",
+        "charges": 17
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley_strategic",
         "count": 2,
-        "contents-item": "m9mag"
+        "item": "m9mag",
+        "ammo-item": "9mm",
+        "charges": 17
       }
     ]
   },
@@ -23,6 +30,8 @@
 
     "container-item": "triple_stacker_pouch",
 
-    "entries": [{ "item": "stanag30", "count": 6 }]
+    "entries": [
+      { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 6 }
+    ]
   }
 ]
