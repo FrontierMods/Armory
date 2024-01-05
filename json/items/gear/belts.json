@@ -15,9 +15,7 @@
       "while it's not clear that Raine is the manufacturer of the belt used by the US Army, military-surplus stores online sell it"
     ],
 
-    "name": {
-      "str": "ACU rigger's belt"
-    },
+    "name": { "str": "ACU rigger's belt" },
     "description": "A low-profile tan-colored nylon belt; manufactured by Raine Tactical Gear.  Used by U.S. soldiers all over the world, this simple belt usually serves as a platform for small pouches and holsters.",
 
     "weight": "318 g",
@@ -46,70 +44,60 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Space for belt gear",
-
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "5 kg",
-        "max_contains_volume": "2500 ml",
-        "//max_item_length": "10 in.",
-        "max_item_length": "254 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1 L",
+        "//max_item_length": "13 in.",
+        "max_item_length": "330 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Space for belt gear",
-
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "5 kg",
-        "max_contains_volume": "2500 ml",
-        "//max_item_length": "10 in.",
-        "max_item_length": "254 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1 L",
+        "//max_item_length": "13 in.",
+        "max_item_length": "330 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Space for belt gear",
-
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "5 kg",
-        "max_contains_volume": "2500 ml",
-        "//max_item_length": "10 in.",
-        "max_item_length": "254 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1 L",
+        "//max_item_length": "13 in.",
+        "max_item_length": "330 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Space for belt gear",
-
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "5 kg",
-        "max_contains_volume": "2500 ml",
-        "//max_item_length": "10 in.",
-        "max_item_length": "254 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1 L",
+        "//max_item_length": "13 in.",
+        "max_item_length": "330 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Space for belt gear",
-
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "5 kg",
-        "max_contains_volume": "2500 ml",
-        "//max_item_length": "10 in.",
-        "max_item_length": "254 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "1 L",
+        "//max_item_length": "13 in.",
+        "max_item_length": "330 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
       },
