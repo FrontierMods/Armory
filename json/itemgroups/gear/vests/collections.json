@@ -84,7 +84,7 @@
       { "group": "pristine_esapi_front_plates" },
       { "group": "swat_vest_panels" },
       { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
-      { "group": "swat_magazines_mp5_contained" }
+      { "group": "swat_magazines_mp5_contained", "count": 4 }
     ]
   }
 ]
