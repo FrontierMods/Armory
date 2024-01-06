@@ -122,24 +122,22 @@
     ]
   },
   {
-    "id": "us_army_magazines_m4a1",
+    "id": "us_army_magazine_m4a1",
     "type": "item_group",
     "subtype": "collection",
 
-    "//notes": ["Army soldiers usually carry 6 magazines on them"],
-
-    "entries": [
-      { "item": "stanag30", "ammo-type": "556", "charges": 30, "count": 6 }
-    ]
+    "entries": [{ "item": "stanag30", "ammo-type": "556", "charges": 30 }]
   },
   {
     "id": "us_army_magazines_m4a1_holstered",
     "type": "item_group",
     "subtype": "collection",
 
+    "//notes": ["Army soldiers usually carry 6 magazines on them"],
+
     "container-item": "triple_stacker_pouch",
 
-    "entries": [{ "group": "us_army_magazines_m4a1" }]
+    "entries": [{ "group": "us_army_magazine_m4a1", "count": 6 }]
   },
   {
     "id": "us_army_vest_pristine",
