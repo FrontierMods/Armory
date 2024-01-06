@@ -6,22 +6,10 @@
       ["knife_butcher", 20],
       ["knife_combat", 35],
       ["knife_mkc_stonewall", 20],
+      { "group": "us_army_knife_sheathed", "prob": 5 },
       {
-        "item": "sheath",
-        "container-item": "thigh_strap_trex",
-        "contents-item": "knife_combat",
-        "prob": 5
-      },
-      {
-        "item": "sheath",
-        "container-item": "thigh_strap_trex",
-        "contents-item": "knife_combat",
-        "prob": 5
-      },
-      {
-        "item": "gartersheath1",
-        "container-item": "thigh_strap_trex",
-        "contents-item": "knife_mkc_stonewall",
+        "container-item": "gartersheath1",
+        "item": "knife_mkc_stonewall",
         "prob": 5
       },
       {
@@ -38,9 +26,8 @@
       ["switchblade", 20],
       ["knife_hunting", 20],
       {
-        "item": "sheath_leather_eds",
-        "container-item": "thigh_strap_trex",
-        "contents-item": "knife_hunting",
+        "item": "knife_hunting",
+        "container-item": "sheath_leather_eds",
         "prob": 5
       },
       { "group": "knife_rambo_full", "prob": 5 }
