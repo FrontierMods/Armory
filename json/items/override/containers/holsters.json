@@ -169,6 +169,8 @@
 
         "holster": true,
 
+        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
+        "max_contains_weight": "1156 g",
         "magazine_well": "100 ml",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
@@ -185,10 +187,10 @@
           "red dot sight volume based on Loadout models"
         ],
         "max_contains_volume": "491 ml",
-        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
-        "max_contains_weight": "1156 g",
         "//max_item_length": "overall length of M1911, plus 2.5%",
         "max_item_length": "222 mm",
+
+        "volume_encumber_modifier": 1.5,
 
         "moves": 170
       },
@@ -200,11 +202,6 @@
 
         "holster": true,
 
-        "//max_contains_volume": [
-          "volume of loaded M1911 mag, rounded up",
-          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
-        ],
-        "max_contains_volume": "70 ml",
         "//max_contains_weight": [
           [
             "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
@@ -216,6 +213,11 @@
           ]
         ],
         "max_contains_weight": "243 g",
+        "//max_contains_volume": [
+          "volume of loaded M1911 mag, rounded up",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_contains_volume": "70 ml",
         "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
         "min_item_length": "90 mm",
         "//max_item_length": [
@@ -223,6 +225,8 @@
           "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
         ],
         "max_item_length": "130 mm",
+
+        "volume_encumber_modifier": 1.5,
 
         "moves": 140
       }
@@ -302,6 +306,8 @@
       {
         "holster": true,
 
+        "//max_contains_weight": "weight of a single knife (0.25625 lbs = 116.23 g ≈ 116 g), generously rounded up to accomodate items of similar volume",
+        "max_contains_weight": "150 g",
         "magazine_well": "4 ml",
         "//max_contains_volume": [
           "from dimensions of Smith & Wesson Bullseye 8″ throwing knife",
@@ -319,62 +325,61 @@
           }
         ],
         "max_contains_volume": "6 ml",
-        "max_contains_weight": "7 g",
         "max_item_length": "203 mm",
 
-        "moves": 70,
+        "moves": 90,
 
         "//flag_restriction": ["SHEATH_KNIFE"]
       },
       {
         "holster": true,
 
+        "max_contains_weight": "150 g",
         "magazine_well": "4 ml",
         "max_contains_volume": "6 ml",
-        "max_contains_weight": "7 g",
         "max_item_length": "203 mm",
 
-        "moves": 70
+        "moves": 90
       },
       {
         "holster": true,
 
+        "max_contains_weight": "150 g",
         "magazine_well": "4 ml",
         "max_contains_volume": "6 ml",
-        "max_contains_weight": "7 g",
         "max_item_length": "203 mm",
 
-        "moves": 70
+        "moves": 90
       },
       {
         "holster": true,
 
+        "max_contains_weight": "150 g",
         "magazine_well": "4 ml",
         "max_contains_volume": "6 ml",
-        "max_contains_weight": "7 g",
         "max_item_length": "203 mm",
 
-        "moves": 70
+        "moves": 90
       },
       {
         "holster": true,
 
+        "max_contains_weight": "150 g",
         "magazine_well": "4 ml",
         "max_contains_volume": "6 ml",
-        "max_contains_weight": "7 g",
         "max_item_length": "203 mm",
 
-        "moves": 70
+        "moves": 90
       },
       {
         "holster": true,
 
+        "max_contains_weight": "150 g",
         "magazine_well": "4 ml",
         "max_contains_volume": "6 ml",
-        "max_contains_weight": "7 g",
         "max_item_length": "203 mm",
 
-        "moves": 70
+        "moves": 90
       }
     ],
 
@@ -407,7 +412,7 @@
     "name": {
       "str": "MKC Stonewall sheath"
     },
-    "description": "A thin Kydex sheath for a small hunting knife; produced by Montana Knife Company.  Has a belt clip, and thus can be worn on a waist belt or on a thigh strap.",
+    "description": "A thin Kydex sheath for the Stonewall Skinner model of knives; produced by Montana Knife Company.  Has a belt clip, and thus can be worn on a waist belt or on a thigh strap.",
 
     "//weight": [
       "using 1.19 g/ml as an average density of Kydex",
@@ -459,8 +464,8 @@
 
         "moves": 80,
 
-        "//flag_restriction": "this shealth is specifically designed to accomodate a thin knife blade",
-        "flag_restriction": ["SHEATH_KNIFE"]
+        "//id_restriction": "this shealth is designed to accomodate one specific knife model",
+        "id_restriction": ["knife_mkc_stonewall"]
       }
     ],
 
@@ -471,7 +476,7 @@
     },
 
     "//flags": [
-      "removed VARSIZE: there seems to be only one size of the sheath",
+      "removed VARSIZE: there is only one size of the sheath",
       "replaced BELTED and OVERSIZE with CANT_WEAR: this sheath is not meant to be worn directly"
     ],
     "flags": ["CANT_WEAR", "WATER_FRIENDLY", "NONCONDUCTIVE", "BELT_CLIP"],
@@ -876,7 +881,8 @@
       "trim": 0.17,
       "notes": [
         "width is assumed from visual reference",
-        "height is acquired from visual reference"
+        "height is acquired from visual reference",
+        "volume calculated as for a rigid container because it doesn't appear to be possible for the scabbard to collapse completely flat"
       ]
     },
     "volume": "8052 ml",
@@ -905,9 +911,9 @@
 
         "holster": true,
 
+        "max_contains_weight": "10 kg",
         "min_item_volume": "1500 ml",
         "max_contains_volume": "7900 ml",
-        "max_contains_weight": "10 kg",
         "//min_item_length": "37 in.: anything else would likely be impossible to fetch while the scabbard is hanging off one's back",
         "min_item_length": "940 mm",
         "//max_item_length": "42 in.: longer rifles would be sticking out from the outside",
