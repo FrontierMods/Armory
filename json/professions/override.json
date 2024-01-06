@@ -201,27 +201,11 @@
         "entries": [
           { "group": "charged_matches" },
           { "group": "charged_flashlight" },
+          { "group": "us_army_sidearm_holstered" },
+          { "group": "us_army_sidearm_magazine_holstered", "count": 2 },
           { "item": "handflare", "count": 2, "charges": 200 },
           { "item": "whistle" },
-          { "item": "water_clean", "container-item": "canteen" },
-          {
-            "item": "flight_helmet",
-            "ammo-item": "light_plus_battery_cell",
-            "charges": 150
-          },
-          {
-            "item": "m17",
-            "ammo-item": "9mm",
-            "container-item": "holster",
-            "charges": 17
-          },
-          {
-            "item": "p320mag_17rd_9x19mm",
-            "ammo-item": "9mm",
-            "charges": 17,
-            "count": 2,
-            "container-item": "pouch_magazine_pistol_molle_ii"
-          }
+          { "item": "water_clean", "container-item": "canteen" }
         ]
       },
 
@@ -855,8 +839,7 @@
           "pants_cargo",
           "jacket_flannel",
           "hat_hunting",
-          "wristwatch",
-          "back_holster"
+          "wristwatch"
         ],
 
         "entries": [
@@ -866,8 +849,7 @@
             "item": "remington_870",
             "ammo-item": "shot_00",
             "charges": 5,
-            "contents-item": "shoulder_strap",
-            "custom-flags": ["no_auto_equip"]
+            "contents-item": "shoulder_strap"
           }
         ]
       },
@@ -1849,5 +1831,159 @@
       "male": ["boxer_shorts"],
       "female": ["bra", "boy_shorts"]
     }
+  },
+  {
+    "id": "convict_assassin",
+    "type": "profession",
+
+    "name": "Undercover Assassin Convict",
+    "description": "You were given a target, a mission, but killing your mark seems to have become much more difficult now.  Your employer cut contact with you and now you have to make do with what you have.",
+
+    "points": 2,
+
+    "skills": [
+      { "level": 3, "name": "melee" },
+      { "level": 2, "name": "stabbing" }
+    ],
+
+    "traits": ["PROF_ASSASSIN_CONVICT"],
+
+    "items": {
+      "both": {
+        "items": ["striped_shirt", "striped_pants", "sneakers", "socks"],
+
+        "//entries": [
+          "this weapon + sheath combo is seriously advanced for the situation, but we do what we have to to run the mod error-free",
+          "ideally, it would be a knife that's much-less-expensive, kept in a strap much-more-improvised"
+        ],
+        "entries": [
+          { "group": "knives_compact_sheathed_on_strap" },
+          { "item": "polaroid_photo", "container-item": "ankle_wallet_pouch" }
+        ]
+      },
+
+      "male": ["briefs"],
+      "female": ["bra", "panties"]
+    },
+
+    "flags": ["SCEN_ONLY"]
+  },
+  {
+    "id": "assassin",
+    "type": "profession",
+
+    "name": "Assassin",
+    "description": "You were the best undercover agent they had, with a mission so vital that you had to take it even with the riots going on.  Your target seems to have turned feral as well as your contact, you are all alone now.",
+
+    "points": 5,
+
+    "skills": [
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "melee" },
+      { "level": 2, "name": "throw" },
+      { "level": 2, "name": "stabbing" }
+    ],
+    "proficiencies": ["prof_spotting", "prof_wp_syn_armored"],
+
+    "items": {
+      "both": {
+        "items": [
+          "fancy_sunglasses",
+          "platinum_watch",
+          "knit_scarf_loose",
+          "gloves_liner",
+          "polaroid_photo"
+        ],
+
+        "//entries": [
+          "the throwing knives should *really* be replaced with a subcompact pistol carried covertly"
+        ],
+        "entries": [
+          { "group": "knives_compact_sheathed_on_strap" },
+          {
+            "item": "leg_sheath6",
+            "contents-group": "leg_sheath6_throwing_knives"
+          }
+        ]
+      },
+
+      "male": [
+        "briefs",
+        "socks",
+        "dress_shoes",
+        "bowhat",
+        "suit",
+        "tie_necktie",
+        "tieclip",
+        "leather_belt",
+        "briefcase",
+        "cufflinks_intricate"
+      ],
+      "female": [
+        "panties",
+        "bra",
+        "stockings",
+        "garter_belt",
+        "heels",
+        "hat_cotton",
+        "dress",
+        "purse",
+        "platinum_ear",
+        "platinum_necklace",
+        "platinum_hairpin"
+      ]
+    },
+    "missions": ["MISSION_ASSASSINATION"]
+  },
+  {
+    "id": "rescuer",
+    "type": "profession",
+
+    "name": { "male": "Rescuer", "female": "Rescuer" },
+    "description": "You were ready.  You went in determined to find and rescue your friends.  Now the atmosphere in these twisting corridors grows heavy, and you don't feel quite so confident anymore.  You might be the one in need of a rescue soon.",
+
+    "points": 3,
+
+    "skills": [
+      { "level": 4, "name": "dodge" },
+      { "level": 3, "name": "fabrication" },
+      { "level": 5, "name": "melee" },
+      { "level": 4, "name": "tailor" },
+      { "level": 3, "name": "rifle" }
+    ],
+
+    "items": {
+      "both": {
+        "items": [
+          "socks",
+          "boots_combat",
+          "pants_cargo",
+          "gloves_tactical",
+          "tshirt",
+          "jacket_light",
+          "wristwatch",
+          "bracelet_friendship",
+          "hat_cotton"
+        ],
+
+        "entries": [
+          { "group": "knives_compact_sheathed_on_strap" },
+          { "group": "profession_rescuer_rig" },
+          {
+            "item": "m4_carbine",
+            "variant": "m4a1",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": "shoulder_strap"
+          },
+          { "group": "full_gasmask" }
+        ]
+      },
+
+      "male": ["boxer_shorts"],
+      "female": ["sports_bra", "panties"]
+    },
+
+    "flags": ["SCEN_ONLY"]
   }
 ]

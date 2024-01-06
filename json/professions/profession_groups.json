@@ -247,7 +247,7 @@
 
     "entries": [
       { "group": "profession_rifle_hunter_bandolier" },
-      { "group": "hunting_knife_in_sheath_on_leather_belt" }
+      { "group": "profession_rifle_hunter_belt" }
     ]
   },
   {
@@ -260,23 +260,38 @@
     "entries": [{ "item": "270win_jsp", "charges": 24 }]
   },
   {
+    "id": "profession_rifle_hunter_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "leather_belt",
+
+    "entries": [
+      {
+        "item": "knife_hunting",
+        "container-item": "sheath_leather_eds"
+      }
+    ]
+  },
+  {
     "id": "profession_shotgun_hunter",
     "type": "item_group",
     "subtype": "collection",
 
+    "container-item": "leather_belt",
+
     "entries": [
-      { "group": "profession_shotgun_hunter_bandolier" },
-      { "group": "hunting_knife_in_sheath_on_leather_belt" }
+      {
+        "container-item": "pouch_shot_eds",
+        "item": "shot_00",
+        "charges": 4,
+        "count": 4
+      },
+      {
+        "item": "knife_hunting",
+        "container-item": "sheath_leather_eds"
+      }
     ]
-  },
-  {
-    "id": "profession_shotgun_hunter_bandolier",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "container-item": "bandolier_shotgun",
-
-    "entries": [{ "item": "shot_00", "charges": 25 }]
   },
   {
     "id": "profession_riot_police_belt",
@@ -307,17 +322,8 @@
     "container-group": "police_belts",
 
     "entries": [
-      {
-        "item": "holster",
-        "contents-group": "police_sidearm"
-      },
-      {
-        "container-item": "pouch_magazine_pistol_haley_strategic",
-        "item": "p320mag_17rd_9x19mm",
-        "ammo-item": "9mm",
-        "charges": 17,
-        "count": [1, 2]
-      }
+      { "group": "police_sidearm_magazine_holstered" },
+      { "group": "police_sidearm_holstered", "count": [1, 2] }
     ]
   },
   {
@@ -344,17 +350,8 @@
     "container-group": "police_belts",
 
     "entries": [
-      {
-        "item": "holster",
-        "contents-group": "police_sidearm"
-      },
-      {
-        "container-item": "pouch_magazine_pistol_haley_strategic",
-        "item": "p320mag_17rd_9x19mm",
-        "ammo-item": "9mm",
-        "charges": 17,
-        "count": [1, 2]
-      },
+      { "group": "police_sidearm_holstered" },
+      { "group": "police_sidearm_magazine_holstered", "count": [1, 2] },
       {
         "group": "flashbang_in_pouch",
         "count": [1, 2]
@@ -369,17 +366,8 @@
     "container-group": "police_belts",
 
     "entries": [
-      {
-        "item": "holster",
-        "contents-group": "police_sidearm"
-      },
-      {
-        "container-item": "pouch_magazine_pistol_haley_strategic",
-        "item": "p320mag_17rd_9x19mm",
-        "ammo-item": "9mm",
-        "charges": 17,
-        "count": 2
-      },
+      { "group": "police_sidearm_holstered" },
+      { "group": "police_sidearm_magazine_holstered", "count": 2 },
       {
         "group": "flashbang_in_pouch",
         "count": 2
@@ -410,19 +398,9 @@
     "container-item": "leather_belt",
 
     "entries": [
-      {
-        "container-item": "holster",
-        "item": "m9",
-        "ammo-item": "9mm",
-        "charges": 17
-      },
-      {
-        "container-item": "pouch_magazine_pistol_haley_strategic",
-        "item": "m9mag",
-        "ammo-item": "9mm",
-        "charges": 17,
-        "count": 2
-      },
+      { "group": "civilian_sidearm_holstered" },
+      { "group": "civilian_sidearm_magazine_holstered", "count": 2 },
+      { "group": "civilian_suppresion_holstered" },
       {
         "item": "flashlight_pouch",
         "contents-group": "charged_flashlight"
@@ -479,8 +457,7 @@
         "item": "grenade",
         "container-item": "tactical_grenade_pouch",
         "count": [1, 2]
-      },
-      { "group": "pristine_esapi_front_plates" }
+      }
     ]
   },
   {
@@ -541,6 +518,18 @@
       { "group": "charged_flashlight", "container-item": "flashlight_pouch" },
       { "group": "charged_two_way_radio", "container-item": "radio_pouch" },
       { "item": "baton", "container-item": "holster_baton_bfg" }
+    ]
+  },
+  {
+    "id": "profession_rescuer_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "chest_rig_onetigris_vulture",
+
+    "entries": [
+      { "group": "us_army_magazine_m4a1", "count": 4 },
+      { "group": "charged_smart_phone" }
     ]
   }
 ]
