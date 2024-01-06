@@ -87,5 +87,87 @@
     "//price": "price for the suede-lined model",
     "price": "135 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "sheath_leather_eds",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://evilduckstudios.com/BUCK-119-Knife-Sheath-Horizontal-Carry-Behind-Back_p_58.html"
+    ],
+
+    "name": {
+      "str": "EDS hunting knife sheath"
+    },
+    "description": "A thick leather sheath for a hunting knife made by Evil Duck Studios.  Worn horizontally on a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
+
+    "//weight": [
+      "estimated as (area of sheath × 3) × leather thickness per sq.ft.",
+      "(sheath length [6.15 in.] × sheath height [2.15 in.] × (1 - 0.05)) × 3 × leather thickness [8 oz / sq.ft.] * 1.075 = 2.251 oz = 63.8 g",
+      "area of holster adjusted by 5%, and overall weight adjusted by 7.5%, as per dimensions calculation"
+    ],
+    "weight": "64 g",
+    "//dimensions": {
+      "length": "6.15 in",
+      "width": "0.81 in",
+      "height": "2.15 in",
+      "raw": "175.51 ml",
+      "trim": [0.05, -0.075],
+      "notes": [
+        "dimensions acquired relative to those of the Buck 119 hunting knife (used as basis for hunting knife in Core audit)",
+        "length is 102.5% of length of blade",
+        "width is 90% of width of guard",
+        "height is height of guard (almost exactly)",
+        "first trim is to account for the difference between bounding box and the item",
+        "second trim is to account for the thin strap under the handle, for hanging the sheath onto a belt"
+      ]
+    },
+    "volume": "179 ml",
+    "//longest_side": "10.55 in. (overall length of hunting knife) × 80% = 8.44 in. = 214.38 mm",
+    "longest_side": "214 mm",
+
+    "material": ["leather"],
+    "material_thickness": 54.6,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "//max_contains_weight": "weight of hunting knife (213 g) rounded to the nearest 5/10 g",
+        "max_contains_weight": "215 g",
+        "//max_contains_volume": [
+          "volume of hunting knife (95 ml), rounded to the nearest 5/10 ml"
+        ],
+        "max_contains_volume": "100 ml",
+        "max_item_length": "268 mm",
+
+        "moves": 90,
+
+        "flag_restriction": ["SHEATH_KNIFE"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "95 USD",
+    "price_postapoc": "1 USD"
   }
 ]
