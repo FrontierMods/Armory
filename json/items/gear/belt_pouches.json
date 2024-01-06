@@ -200,5 +200,79 @@
 
     "price": "10 USD",
     "price_postapoc": "10 cent"
+  },
+  {
+    "id": "pouch_shot_eds",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://evilduckstudios.com/shotgun-shell-holder-4-round"],
+
+    "//notes": [
+      "we presume 8 oz as leather weight (i.e., thickness of leather used)",
+      "the manufacturer lists between 7 and 10 oz as the weight used in the process for a different item",
+      "https://evilduckstudios.com/BUCK-119-Knife-Sheath-Horizontal-Carry-Behind-Back_p_58.html",
+      "we assume the weight range is also used throughout the other items"
+    ],
+
+    "name": {
+      "str": "EDS shot shell holder"
+    },
+    "description": "A small leather panel with slots for four 12-gauge shotgun shells or other ammo of a similar diameter; manufactured by Evil Duck Studios.  Worn on a belt; a leather belt, preferably, to maintain the aesthetic.",
+
+    "//weight": [
+      "estimated as area of panel × leather thickness per sq.ft.",
+      "panel height [2.475 in] × panel width [88.132 mm] × leather thickness [8 oz / sq.ft.] = 0.4771 oz = 13.53 g ≈ 14 g",
+      "area of holster adjusted by 20% as per dimensions calculation"
+    ],
+    "weight": "14 g",
+    "//dimensions": {
+      "length": "88.132 mm",
+      "width": "2.475 in",
+      "height": "21.28 mm",
+      "raw": "117.9 ml",
+      "trim": 0.2,
+      "notes": [
+        "length calculated as (18.53 mm [diameter of a 12-gauge shell] + (0.75 mm [thickness of shot slot leather] × 2)) × 4 [count of shells/slots] + 10% [extra space for the 'ears']",
+        "width is calculated as 2.75 in. [presumed length of shells in the image] × 90%",
+        "height is calculated as 18.53 mm [diameter of a 12-gauge shell] + 0.75 mm [thickness of slot leather] + 2 mm [thickness of panel]"
+      ]
+    },
+    "volume": "94 ml",
+    "longest_side": "88 mm",
+
+    "material": ["leather"],
+    "material_thickness": 2.75,
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "shot": 4,
+          "700nx": 4,
+          "20x66mm": 4,
+          "signal_flare": 4
+        },
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "33 USD",
+    "price_postapoc": "15 cent"
   }
 ]
