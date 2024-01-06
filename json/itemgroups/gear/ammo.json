@@ -1,0 +1,11 @@
+[
+  {
+    "id": "ammo_shot_on_leather_panel",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_shot_eds",
+
+    "entries": [{ "item": "shot_00", "charges": 4 }]
+  }
+]

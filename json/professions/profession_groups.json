@@ -281,12 +281,7 @@
     "container-item": "leather_belt",
 
     "entries": [
-      {
-        "container-item": "pouch_shot_eds",
-        "item": "shot_00",
-        "charges": 4,
-        "count": 4
-      },
+      { "group": "ammo_shot_on_leather_panel", "count": 4 },
       {
         "item": "knife_hunting",
         "container-item": "sheath_leather_eds"
