@@ -169,5 +169,64 @@
 
     "price": "95 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "sheath_kydex_khukuri",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://www.thekhukurihouse.com/kukri-kydex-sheath"],
+
+    "name": {
+      "str": "Khukuri House kukri sheath"
+    },
+    "description": "A thick leather sheath for a hunting knife made by Evil Duck Studios.  Worn horizontally on a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
+
+    "weight": "70 g",
+    "//volume": "calculated as dimensions of kukri blade (audited in Core) × 115%",
+    "volume": "27 ml",
+    "//longest_side": "length of kukri blade (audited in Core) × 115%",
+    "longest_side": "431 mm",
+
+    "//material": "Kydex",
+    "material": ["plastic"],
+    "material_thickness": 0.1,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "volume of hunting knife (95 ml), rounded to the nearest 5/10 ml"
+        ],
+        "max_contains_volume": "183 ml",
+        "max_item_length": "485 mm",
+
+        "moves": 120,
+
+        "id_restriction": ["kukri"]
+      }
+    ],
+
+    "use_action": { "type": "holster" },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR_LARGE",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "75 USD",
+    "price_postapoc": "1 USD"
   }
 ]
