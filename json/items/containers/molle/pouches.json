@@ -408,5 +408,74 @@
     "//price": "for the multicam model",
     "price": "33 USD",
     "price_postapoc": "25 cent"
+  },
+  {
+    "id": "pouch_magazine_smg_psigear",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.psigear.net/pouches/skewer-laser-cut-smg-mag-pouch"
+    ],
+
+    "name": {
+      "str": "PSIGEAR SMG magazine pouch",
+      "str_pl": "PSIGEAR SMG magazine pouches"
+    },
+    "description": "A nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.",
+
+    "weight": "37 g",
+    "//dimensions": {
+      "length": "33 mm",
+      "width": "3.8 cm",
+      "height": "11.9 cm",
+      "raw": "149.23 ml",
+      "trim": 0,
+      "notes": [
+        "length (depth) is width of an MP5 30-round magazine (32 mm) + 0.5 mm × 2 sides of the pouch"
+      ]
+    },
+    "volume": "149 ml",
+    "longest_side": "119 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.5,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ammo_satchel",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "350 ml",
+        "min_item_length": "15 cm",
+        "max_item_length": "25 cm",
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash magazine",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": [
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "MOLLE_ATTACH",
+      "BELT_GEAR",
+      "TARDIS"
+    ],
+
+    "//price": "for the black model",
+    "price": "20 USD",
+    "price_postapoc": "25 cent"
   }
 ]
