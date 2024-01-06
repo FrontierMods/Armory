@@ -190,7 +190,7 @@
 
     "container-item": "tacvest",
 
-    "entries": [{ "group": "us_army_magazines_m4a1_holstered" }]
+    "entries": [{ "group": "us_army_magazine_m1a_holstered", "count": 3 }]
   },
   {
     "id": "profession_mall_cop_belt_contents",

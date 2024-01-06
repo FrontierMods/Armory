@@ -140,6 +140,22 @@
     "entries": [{ "group": "us_army_magazine_m4a1", "count": 6 }]
   },
   {
+    "id": "us_army_magazine_m1a",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "m14mag", "ammo-type": "308", "charges": 20 }]
+  },
+  {
+    "id": "us_army_magazine_m1a_holstered",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_magazine_308_tt",
+
+    "entries": [{ "group": "us_army_magazine_m1a" }]
+  },
+  {
     "id": "us_army_vest_pristine",
     "type": "item_group",
     "subtype": "collection",
