@@ -46,7 +46,7 @@
 
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "1 kg",
+        "max_contains_weight": "1500 g",
         "max_contains_volume": "1 L",
         "//max_item_length": "13 in.",
         "max_item_length": "330 mm",
@@ -58,7 +58,7 @@
 
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "1 kg",
+        "max_contains_weight": "1500 g",
         "max_contains_volume": "1 L",
         "//max_item_length": "13 in.",
         "max_item_length": "330 mm",
@@ -70,7 +70,7 @@
 
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "1 kg",
+        "max_contains_weight": "1500 g",
         "max_contains_volume": "1 L",
         "//max_item_length": "13 in.",
         "max_item_length": "330 mm",
@@ -82,7 +82,7 @@
 
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "1 kg",
+        "max_contains_weight": "1500 g",
         "max_contains_volume": "1 L",
         "//max_item_length": "13 in.",
         "max_item_length": "330 mm",
@@ -94,7 +94,7 @@
 
         "volume_encumber_modifier": 0.5,
 
-        "max_contains_weight": "1 kg",
+        "max_contains_weight": "1500 g",
         "max_contains_volume": "1 L",
         "//max_item_length": "13 in.",
         "max_item_length": "330 mm",
