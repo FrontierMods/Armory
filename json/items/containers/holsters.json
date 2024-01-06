@@ -183,10 +183,10 @@
     "description": "A thick leather sheath for a hunting knife made by Evil Duck Studios.  Worn horizontally on a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
 
     "weight": "70 g",
-    "//volume": "calculated as dimensions of kukri blade (audited in Core) × 115%",
-    "volume": "27 ml",
-    "//longest_side": "length of kukri blade (audited in Core) × 115%",
-    "longest_side": "431 mm",
+    "//volume": "calculated as dimensions of kukri blade (23.48 ml, audited in Core) × 107.5%",
+    "volume": "25 ml",
+    "//longest_side": "length of kukri blade (375 mm, audited in Core) × 107.5%",
+    "longest_side": "403 mm",
 
     "//material": "Kydex",
     "material": ["plastic"],
