@@ -4,16 +4,13 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "//": "might not be the best choice for a person wielding a revolver",
-
     "entries": [
       { "item": "briefs" },
       { "item": "socks" },
       { "item": "flag_shirt" },
       { "item": "jeans" },
-      { "item": "leather_belt" },
+      { "item": "leather_belt", "contents-item": "holster_leather_grommets" },
       { "item": "bandana" },
-      { "group": "thigh_strap_with_holster" },
       { "item": "duster_leather" },
       { "item": "sunglasses" },
       { "item": "cowboy_hat" },
