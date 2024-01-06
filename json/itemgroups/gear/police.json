@@ -16,14 +16,9 @@
         "prob": 7
       },
       {
-        "collection": [
-          {
-            "item": "level_3_vest",
-            "variant": "level_3_vest_black",
-            "contents-group": "swat_vest_group"
-          },
-          { "item": "tacvest" }
-        ],
+        "item": "level_3_vest",
+        "variant": "level_3_vest_black",
+        "contents-group": "swat_vest_group",
         "prob": 2
       },
       {
@@ -52,11 +47,9 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "triple_stacker_pouch",
+    "container-item": "pouch_magazine_smg_psigear",
 
-    "entries": [
-      { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 6 }
-    ]
+    "entries": [{ "item": "mp5mag", "ammo-item": "9mm", "charges": 30 }]
   },
 
   {
@@ -65,6 +58,38 @@
     "subtype": "distribution",
 
     "entries": [{ "item": "m17", "ammo-item": "9mm", "charges": 17 }]
+  },
+  {
+    "id": "police_sidearm_holstered",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [{ "group": "police_sidearm", "container-item": "holster" }]
+  },
+  {
+    "id": "police_sidearm_magazine",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "p320mag_17rd_9x19mm",
+        "ammo-item": "9mm",
+        "charges": 17
+      }
+    ]
+  },
+  {
+    "id": "police_sidearm_magazine_holstered",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "police_sidearm_magazine",
+        "container-item": "pouch_magazine_pistol_haley_strategic"
+      }
+    ]
   },
   {
     "id": "police_belts",
@@ -124,13 +149,6 @@
 
     "entries": [
       {
-        "container-item": "pouch_magazine_pistol_haley_strategic",
-        "item": "p320mag_17rd_9x19mm",
-        "ammo-item": "9mm",
-        "charges": 17,
-        "count": 2
-      },
-      {
         "item": "pouch_handcuffs_511_tactical",
         "//contents-item": "there should be a pair of handcuffs here, but they don't exist in the game"
       },
@@ -138,10 +156,8 @@
         "item": "radio_pouch",
         "contents-group": "charged_two_way_radio"
       },
-      {
-        "item": "holster",
-        "contents-group": "police_sidearm"
-      },
+      { "group": "police_sidearm_holstered" },
+      { "group": "police_sidearm_magazine_holstered" },
       {
         "item": "flashlight_pouch",
         "contents-group": "charged_flashlight"
