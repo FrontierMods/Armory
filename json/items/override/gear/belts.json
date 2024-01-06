@@ -112,10 +112,12 @@
 
         "holster": true,
 
-        "max_contains_volume": "8 L",
         "max_contains_weight": "32 kg",
+        "max_contains_volume": "8 L",
+        "//max_item_length": "20 in",
+        "max_item_length": "508 mm",
 
-        "flag_restriction": ["BELT_GEAR_LARGE"]
+        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
       },
       {
         "pocket_type": "CONTAINER",
@@ -124,10 +126,12 @@
 
         "holster": true,
 
-        "max_contains_volume": "8 L",
         "max_contains_weight": "32 kg",
+        "max_contains_volume": "8 L",
+        "//max_item_length": "20 in",
+        "max_item_length": "508 mm",
 
-        "flag_restriction": ["BELT_GEAR_LARGE"]
+        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
       }
     ],
 
@@ -296,7 +300,8 @@
 
         "max_contains_weight": "8 kg",
         "max_contains_volume": "4 L",
-        "max_item_length": "38 cm",
+        "//max_item_length": "20 in",
+        "max_item_length": "508 mm",
 
         "moves": 90,
 
