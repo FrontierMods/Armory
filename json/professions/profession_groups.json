@@ -526,5 +526,23 @@
       { "group": "us_army_magazine_m4a1", "count": 4 },
       { "group": "charged_smart_phone" }
     ]
+  },
+
+  {
+    "id": "profession_mil_hacker_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "tacvest",
+
+    "entries": [
+      {
+        "item": "hk46mag",
+        "ammo-item": "46mm",
+        "charges": 20,
+        "container-item": "pouch_magazine_smg_psigear",
+        "count": 4
+      }
+    ]
   }
 ]

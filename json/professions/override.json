@@ -296,7 +296,6 @@
           "diving_watch"
         ],
 
-        "//entries": ["this needs SMG mag pouches"],
         "entries": [
           {
             "item": "hk_mp7",
@@ -305,7 +304,7 @@
             "contents-item": ["shoulder_strap", "holo_sight", "suppressor"]
           },
           { "item": "powered_earmuffs", "custom-flags": ["no_auto_equip"] },
-          { "item": "tacvest", "contents-group": "army_mags_mp7" },
+          { "group": "profession_mil_hacker_vest" },
           { "group": "us_army_belt_with_knife_pistol_mags" }
         ]
       },
