@@ -1682,8 +1682,8 @@
           { "item": "cigar", "container-item": "case_cigar", "charges": 2 },
           { "item": "id_military", "container-item": "wallet_leather" },
           {
-            "group": "us_army_sidearm_holstered",
-            "container-item": "leather_belt"
+            "container-item": "leather_belt",
+            "group": "us_army_sidearm_holstered"
           },
           { "item": "militarymap" }
         ]
