@@ -22,8 +22,6 @@
 
     "container-item": "thigh_strap_trex",
 
-    "entries": [
-      { "item": "knife_mkc_stonewall", "container-item": "gartersheath1" }
-    ]
+    "entries": [{ "group": "knives_compact_sheathed" }]
   }
 ]
