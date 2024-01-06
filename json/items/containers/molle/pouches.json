@@ -477,5 +477,112 @@
     "//price": "for the black model",
     "price": "20 USD",
     "price_postapoc": "25 cent"
+  },
+  {
+    "id": "pouch_magazine_308_tt",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://tacticaltailor.com/fight-light-7-62-6-8x51-single-mag-pouch-20rd/"
+    ],
+
+    "name": {
+      "str": "Tactical Tailor .308 magazine pouch",
+      "str_pl": "Tactical Tailor .308 magazine pouches"
+    },
+    "description": "A nylon pouch for storing a single magazine in .308 caliber.  Fits magazines up to 20 rounds in capacity.",
+
+    "weight": "37 g",
+    "//dimensions": {
+      "length": "4 in",
+      "width": "4 in",
+      "height": "1 in",
+      "raw": "262.19 ml",
+      "trim": -0.01
+    },
+    "volume": "265 ml",
+    "longest_side": "102 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.25,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ammo_satchel",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": [
+          "from dimensions of the M1A 20-round magazine (audited in Core)",
+          {
+            "length": "6.1 in",
+            "width": "1.012 in",
+            "height": "3.1 in",
+            "raw": "313.6 ml",
+            "trim": 0.01,
+            "result": "310.464 ml",
+            "notes": [
+              "dimensions are slightly-approximate due to the nature of the measuring device",
+              "trim accounts for the base plate, which is wider and longer than the magazine itself"
+            ]
+          }
+        ],
+        "max_contains_volume": "315 ml",
+        "//min_item_length": "3 in.",
+        "min_item_length": "76 mm",
+        "//max_item_length": "6.25 in., slightly longer than the M1A 20-round magazine",
+        "max_item_length": "159 mm",
+
+        "moves": 90
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "PALS webbing",
+
+        "//holster": "additional balancing against smaller capacity of the webbing",
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "//molle": {
+          "width": 2,
+          "height": 2
+        },
+        "max_contains_volume": "310 ml",
+        "//max_item_length": "4 in., height of pouch",
+        "max_item_length": "102 mm",
+
+        "volume_encumber_modifier": 0.5,
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash magazine",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": [
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "MOLLE_ATTACH",
+      "BELT_GEAR",
+      "TARDIS"
+    ],
+
+    "//price": "for the multicam model",
+    "price": "26 USD",
+    "price_postapoc": "25 cent"
   }
 ]
