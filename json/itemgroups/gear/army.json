@@ -133,7 +133,10 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "//notes": ["Army soldiers usually carry 6 magazines on them"],
+    "//notes": [
+      "Army soldiers usually carry 6 magazines on them",
+      "triple stacker fits 3 × 2 magazines"
+    ],
 
     "container-item": "triple_stacker_pouch",
 
