@@ -56,7 +56,12 @@
         "container-item": "leg_sheath6",
         "prob": 1
       },
-      { "item": "knife_combat", "container-item": "gartersheath1", "prob": 5 },
+      {
+        "item": "gartersheath1",
+        "container-item": "thigh_strap_trex",
+        "contents-item": "knife_combat",
+        "prob": 5
+      },
       ["throwing_axe", 2],
       ["punch_dagger", 12],
       ["bat", 60],

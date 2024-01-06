@@ -1,0 +1,34 @@
+[
+  {
+    "id": "private_resort_staff_male",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "underwear_mens" },
+      { "group": "knives_compact_sheathed", "prob": 1 },
+      { "item": "pants" },
+      { "item": "long_undertop", "prob": 25 },
+      { "item": "dress_shoes", "prob": 80 },
+      { "item": "tie_skinny", "prob": 50 },
+      { "item": "dress_shirt", "prob": 95 }
+    ]
+  },
+  {
+    "id": "private_resort_staff_female",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "underwear_womens" },
+      { "group": "knives_compact_sheathed", "prob": 15 },
+      {
+        "distribution": [
+          { "item": "dress_shoes", "prob": 10 },
+          { "group": "shoes_womens", "prob": 90 }
+        ],
+        "prob": 90
+      },
+      { "group": "private_resort_maid_dress", "prob": 100 },
+      { "item": "maid_hat", "prob": 66 }
+    ]
+  }
+]
