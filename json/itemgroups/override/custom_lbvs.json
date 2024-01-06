@@ -17,26 +17,67 @@
     "type": "item_group",
     "subtype": "distribution",
 
-    "//notes": ["civilian pool"],
+    "//notes": ["civilian pool", "for vests"],
 
     "//removed": [
       "grenade_pouch (40mm grenade pouch)",
       "tool_pouch",
       "deployment_bag",
       "dump_pouch",
-      "gas_mask_pouch"
+      "gas_mask_pouch",
+      "h2o_pouch",
+      "canteen_pouch"
     ],
 
     "entries": [
       { "group": "molle_accessories_magazines_rifle" },
 
       { "item": "radio_pouch", "prob": 30 },
-      { "item": "h2o_pouch", "prob": 25 },
       { "item": "flashlight_pouch", "prob": 20 },
       { "item": "tactical_grenade_pouch", "prob": 15 },
       { "item": "tactical_holster", "prob": 15 },
-      { "item": "gadget_pouch", "prob": 15 },
-      { "item": "canteen_pouch", "prob": 5 }
+      { "item": "gadget_pouch", "prob": 15 }
+    ]
+  },
+  {
+    "id": "custom_light_lbv",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": ["civilian pool"],
+
+    "entries": [
+      { "group": "molle_accessories_magazines_rifle" },
+
+      { "group": "molle_accessories" },
+      { "group": "molle_accessories", "prob": 10 }
+    ]
+  },
+  {
+    "id": "custom_medium_lbv",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "molle_accessories_magazines_rifle" },
+
+      { "group": "molle_accessories" },
+      { "group": "molle_accessories", "prob": 60 },
+      { "group": "molle_accessories", "prob": 20 }
+    ]
+  },
+  {
+    "id": "custom_heavy_lbv",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "molle_accessories_magazines_rifle" },
+
+      { "group": "molle_accessories" },
+      { "group": "molle_accessories" },
+      { "group": "molle_accessories", "prob": 60 },
+      { "group": "molle_accessories", "prob": 20 }
     ]
   },
   {
