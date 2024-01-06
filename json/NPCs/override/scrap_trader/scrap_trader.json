@@ -1,0 +1,30 @@
+[
+  {
+    "id": "SCRAP_MERCHANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "glasses_safety" },
+      { "item": "helmet_liner" },
+      { "item": "hat_hard" },
+      { "item": "turtleneck_shirt" },
+      { "item": "jacket_jean" },
+      { "item": "vest" },
+      { "item": "boxer_briefs" },
+      { "item": "jeans" },
+      { "item": "gloves_work" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gold_ring" },
+      { "item": "tool_belt" },
+      { "item": "spearsling" },
+      {
+        "item": "ar15",
+        "ammo-item": "223",
+        "charges": 30,
+        "contents-item": ["shoulder_strap"]
+      }
+    ]
+  }
+]
