@@ -112,8 +112,8 @@
 
         "max_contains_weight": "17 kg",
         "max_contains_volume": "8500 ml",
-        "//max_item_length": "16.5 in",
-        "max_item_length": "419 mm",
+        "//max_item_length": "20 in",
+        "max_item_length": "508 mm",
 
         "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
       }

@@ -66,6 +66,20 @@
         "max_item_length": "330 mm",
 
         "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "17 kg",
+        "max_contains_volume": "8500 ml",
+        "//max_item_length": "20 in",
+        "max_item_length": "508 mm",
+
+        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
       }
     ]
   }
