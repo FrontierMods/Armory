@@ -189,6 +189,7 @@
 
         "volume_encumber_modifier": 0.85,
 
+        "max_contains_weight": "33 kg",
         "//molle": {
           "width": 25,
           "height": 2,
@@ -200,7 +201,6 @@
           ]
         },
         "max_contains_volume": "8052 ml",
-        "max_contains_weight": "33 kg",
 
         "flag_restriction": [
           "MOLLE_ATTACH",
