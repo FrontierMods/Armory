@@ -1,0 +1,301 @@
+[
+  {
+    "id": "chest_rig_onetigris_vulture",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.onetigris.com/eu/vulture-chest-rig.html",
+      [
+        "https://www.leapers.com/products-utg-rbt-akm30.html",
+        "https://magpul.com/pmag-40-ar-m4-gen-m3.html",
+        "pocket restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "currently modelled as an inseparable rig",
+      "in reality, like many of its kind, this is a panel + harness combo that could be deconstructed",
+      "the panel connects via QASM to other harnesses and plate carriers",
+      "the harness could be used to turn any panel into a rig"
+    ],
+
+    "//TODO": ["2× carabiner rings on the shoulders", "Velcro surfaces"],
+
+    "name": {
+      "str": "OneTigris Vulture chest rig"
+    },
+    "description": "A compact, preset chest rig featuring four rifle magazine pouches and four pistol magazine pouches.  The rifle mag pouches can take STANAG and AK magazines, while the pistol mag pouches would likely only take standard-capacity magazines.  Also features a general pouch for storing minimal combat necessities, like your smartphone, credit cards, maps, small notebooks, and so on.  The general pouch has a 4×2 PALS webbing grid for attaching additional MOLLE pouches.",
+
+    "weight": "519 g",
+    "//dimensions": {
+      "length": "11 in",
+      "width": "6 in",
+      "height": "2 in",
+      "raw": "2163.09 ml",
+      "trim": [0.05, -0.1],
+      "notes": [
+        "first trim is for shape",
+        "second trim is to account for the harness"
+      ]
+    },
+    "volume": "2260 ml",
+    "longest_side": "279 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "//armor": "copied from the MAV 2 chest rig",
+    "armor": [
+      {
+        "encumbrance": [2, 20],
+
+        "//coverage": [
+          "~18% of front upper torso coverage = 7%",
+          "~30% of side upper torso coverage = 6% * 2 = 12%",
+          "harness = 4% (front straps) + 6% (upper back straps) = 10%"
+        ],
+        "coverage": 29,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.5
+      },
+      {
+        "encumbrance": [1, 12],
+
+        "//coverage": [
+          "~40% of front lower torso coverage = 16%",
+          "~50% of side lower torso coverage = 10% * 2 = 20%",
+          "3% for lower back straps"
+        ],
+        "coverage": 39,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.2
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "2.5 in",
+          "width": "1.5 in",
+          "height": "9.7 in",
+          "raw": "596.08 ml",
+          "trim": 0,
+          "notes": [
+            "we use the length and width of a 40-round AR-15/STANAG magazine, but height (depth) of a 30-round AK/AKM magazine",
+            "the pouch is stated to accomodate both types/calibers, though likely not a .308 magazine",
+            "thus, we model the pocket by the largest dimensions of each"
+          ]
+        },
+        "max_contains_volume": "596 ml",
+        "//min_item_length": "5.5 in.",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "596 ml",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "596 ml",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "596 ml",
+        "min_item_length": "140 mm",
+        "max_item_length": "246 mm",
+
+        "moves": 110
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "//max_contains_volume": [
+          "from dimensions of an extended Glock 17 magazine",
+          {
+            "length": "146.05 mm",
+            "width": "28.5 mm",
+            "height": "38 mm",
+            "raw": "158.17 ml",
+            "trim": 0,
+            "notes": [
+              "we use zero trim here in order to enable storing slightly-larger magazines",
+              "normally, trim would be 0.275"
+            ]
+          }
+        ],
+        "max_contains_volume": "158 ml",
+        "max_item_length": "146 mm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "158 ml",
+        "max_item_length": "146 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "158 ml",
+        "max_item_length": "146 mm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "158 ml",
+        "max_item_length": "146 mm"
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "General pouch",
+
+        "max_contains_weight": "3 kg",
+        "//dimensions": {
+          "length": "6 in",
+          "width": "1.5 in",
+          "height": "5 in",
+          "raw": "737.42 ml",
+          "trim": 0.05,
+          "notes": [
+            "length and height are from the PALS webbing",
+            "width (depth) is presumed based on overall depth of the rig"
+          ]
+        },
+        "max_contains_volume": "701 ml",
+        "//max_item_length": "5.75 in., slightly shorter than the length of the pouch",
+        "max_item_length": "146 mm",
+
+        "moves": 180
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "General pouch PALS webbing",
+
+        "max_contains_weight": "3 kg",
+        "//molle": {
+          "width": 4,
+          "height": 2
+        },
+        "max_contains_volume": "619 ml",
+        "//max_item_length": "height of general pouch",
+        "max_item_length": "127 mm",
+
+        "volume_encumber_modifier": 0.75,
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Shoulder strap PALS webbing",
+
+        "max_contains_weight": "1 kg",
+        "//molle": {
+          "width": 1,
+          "height": 3
+        },
+        "max_contains_volume": "232 ml",
+        "//max_item_length": "5 in. (height of webbing) + 1 in. overcapacity",
+        "max_item_length": "152 mm",
+
+        "volume_encumber_modifier": 0.75,
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Shoulder strap PALS webbing",
+
+        "max_contains_weight": "1 kg",
+        "//molle": {
+          "width": 1,
+          "height": 3
+        },
+        "max_contains_volume": "232 ml",
+        "//max_item_length": "5 in. (height of webbing) + 1 in. overcapacity",
+        "max_item_length": "152 mm",
+
+        "volume_encumber_modifier": 0.75,
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
+
+    "price": "50 USD",
+    "price_postapoc": "3 USD"
+  }
+]
