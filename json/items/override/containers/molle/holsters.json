@@ -13,6 +13,7 @@
       ],
       [
         "https://keystonegazette.com/you-can-get-a-1911-at-just-299-dollars-while-supplies-last-sds-1911-review/",
+        "https://man.fas.org/dod-101/sys/land/m9.htm",
         "pocket restrictions"
       ],
       [
@@ -57,6 +58,8 @@
         "holster": true,
         "rigid": true,
 
+        "//max_contains_weight": "weight of a loaded M9 (2.55 lbs = 1156.7 g) + 50 g",
+        "max_contains_weight": "1207 g",
         "//magazine_well": "100 ml",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
@@ -73,8 +76,6 @@
           "red dot sight volume based on Loadout models"
         ],
         "max_contains_volume": "491 ml",
-        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
-        "max_contains_weight": "1156 g",
         "//max_item_length": "overall length of M1911, plus 2.5%",
         "max_item_length": "222 mm",
 
@@ -212,6 +213,13 @@
 
         "holster": true,
 
+        "//max_contains_weight": [
+          "weight of a loaded M1911 (45.9 oz ≈ 1301 g)",
+          "with a ~6.5″ suppressor (13 oz ≈ 369 g)",
+          "and with a set of red dot sights (~50 g)",
+          "https://www.diffen.com/difference/Glock_vs_M1911"
+        ],
+        "max_contains_weight": "1720 g",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
           "volume of a loaded M1911",
@@ -236,13 +244,6 @@
           "red dot sight volume based on Loadout models"
         ],
         "max_contains_volume": "694 ml",
-        "//max_contains_weight": [
-          "weight of a loaded M1911 (45.9 oz ≈ 1301 g)",
-          "with a ~6.5″ suppressor (13 oz ≈ 369 g)",
-          "and with a set of red dot sights (~50 g)",
-          "https://www.diffen.com/difference/Glock_vs_M1911"
-        ],
-        "max_contains_weight": "1720 g",
         "//max_item_length": "overall length of M1911 (8.5 in. ≈ 216 mm) with a ~6.5″ suppressor (≈ 165 mm), plus 2.5%",
         "max_item_length": "391 mm",
 
