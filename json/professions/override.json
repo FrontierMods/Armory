@@ -1773,7 +1773,7 @@
       { "level": 2, "name": "survival" }
     ],
 
-    "vehicle": "pickup",
+    "vehicle": "pickup_park_ranger",
 
     "//items": [
       "instead of their belt, tools should spawn inside the ranger's vehicle",
@@ -1788,11 +1788,9 @@
           "knife_folding",
           "multitool",
           "pants_army",
-          "rollmat",
           "socks",
           "travelpack",
           "vest",
-          "water_clean",
           "whistle_multitool"
         ],
 
@@ -1813,10 +1811,7 @@
         "entries": [
           { "group": "charged_smart_phone" },
           { "group": "profession_park_ranger_belt" },
-          { "group": "full_1st_aid" },
           { "item": "black_pen", "charges": 100 },
-          { "item": "coat_rain", "custom-flags": ["no_auto_equip"] },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
           { "item": "file" },
           { "item": "lighter", "charges": 100 },
           {
@@ -1826,7 +1821,6 @@
           },
           { "item": "permanent_marker", "charges": 500 },
           { "item": "roadmap" },
-          { "item": "sm_extinguisher", "charges": 10 },
           { "item": "trailmap" },
           { "item": "sheriffshirt", "variant": "sheriff" }
         ]
