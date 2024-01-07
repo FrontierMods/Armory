@@ -1056,61 +1056,44 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Belly PALS webbing",
+        "description": "Front PALS webbing",
 
-        "volume_encumber_modifier": 0.95,
-
+        "max_contains_weight": "18 kg",
         "//molle": {
           "width": 9,
-          "height": 3,
-          "cells_extra": 0,
-          "width_extra": 0,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Belly PALS webbing",
-
-        "volume_encumber_modifier": 0.95,
-
-        "//molle": {
-          "width": 9,
-          "height": 3,
-          "cells_extra": 0,
-          "width_extra": 0,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2787 ml",
-        "max_contains_weight": "12 kg",
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Vest PALS webbing",
-
-        "volume_encumber_modifier": 0.9,
-
-        "//molle": {
-          "width": 3,
-          "height": 4,
-          "cells_extra": 2,
-          "width_extra": 1,
-          "height_extra": 0,
+          "height": 8,
+          "height_extra": 2,
           "notes": [
-            "calculations account for uneven webbing distribution between the top and the bottom of the vest"
+            "removed 30% of the calculated space and weight (rounded) to account for the discrepancy between the calculation and the actual layout of the vest"
           ]
         },
-        "max_contains_volume": "1316 ml",
-        "max_contains_weight": "6 kg",
+        "max_contains_volume": "4390 ml",
+        "//max_item_length": "16 in., height of webbing, plus 2 in. to emulate extra height from the MOLLE calculations",
+        "max_item_length": "457 mm",
+
+        "volume_encumber_modifier": 0.66,
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Front PALS webbing",
+
+        "max_contains_weight": "18 kg",
+        "//molle": {
+          "width": 9,
+          "height": 8,
+          "height_extra": 2,
+          "notes": [
+            "removed 30% of the calculated space and weight (rounded) to account for the discrepancy between the calculation and the actual layout of the vest"
+          ]
+        },
+        "max_contains_volume": "4390 ml",
+        "//max_item_length": "16 in., height of webbing, plus 2 in. to emulate extra height from the MOLLE calculations",
+        "max_item_length": "457 mm",
+
+        "volume_encumber_modifier": 0.66,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -1120,6 +1103,7 @@
 
         "description": "Lower back PALS webbing",
 
+        "max_contains_weight": "6 kg",
         "//molle": {
           "width": 6,
           "height": 2,
@@ -1128,7 +1112,8 @@
           "height_extra": 2
         },
         "max_contains_volume": "1394 ml",
-        "max_contains_weight": "6 kg",
+        "//max_item_length": "6 + 2 in.",
+        "max_item_length": "203 mm",
 
         "volume_encumber_modifier": 0.5,
 
@@ -1247,6 +1232,7 @@
 
         "description": "Panel PALS webbing",
 
+        "max_contains_weight": "10 kg",
         "//molle": {
           "width": 6,
           "height": 3,
@@ -1255,7 +1241,8 @@
           "height_extra": 2
         },
         "max_contains_volume": "2477 ml",
-        "max_contains_weight": "10 kg",
+        "//max_item_length": "6 + 2 in.",
+        "max_item_length": "203 mm",
 
         "volume_encumber_modifier": 0.75,
 
