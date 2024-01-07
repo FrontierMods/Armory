@@ -1775,14 +1775,16 @@
 
     "vehicle": "pickup",
 
+    "//items": [
+      "instead of their belt, tools should spawn inside the ranger's vehicle",
+      "this should probably also concern the first aid kit"
+    ],
     "items": {
       "both": {
         "items": [
           "boots_hiking",
           "cowboy_hat",
           "diving_watch",
-          "e_tool",
-          "hammer",
           "knife_folding",
           "multitool",
           "pants_army",
