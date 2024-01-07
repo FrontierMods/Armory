@@ -141,8 +141,6 @@
 
         "description": "Panel PALS webbing",
 
-        "volume_encumber_modifier": 0.95,
-
         "max_contains_weight": "12 kg",
         "//molle": {
           "width": 8,
@@ -152,6 +150,8 @@
         },
         "max_contains_volume": "2787 ml",
         "max_item_length": "305 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -160,8 +160,6 @@
 
         "description": "Panel PALS webbing",
 
-        "volume_encumber_modifier": 0.95,
-
         "max_contains_weight": "12 kg",
         "//molle": {
           "width": 8,
@@ -171,6 +169,8 @@
         },
         "max_contains_volume": "2787 ml",
         "max_item_length": "305 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -290,9 +290,7 @@
         ],
         "coverage": 34,
         "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
-        "volume_encumber_modifier": 0.25
+        "specifically_covers": ["torso_upper"]
       },
       {
         "//encumbrance": "the rig itself is reported to be very comfortable to wear",
@@ -305,9 +303,7 @@
         ],
         "coverage": 15,
         "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
-        "volume_encumber_modifier": 0.25
+        "specifically_covers": ["torso_lower"]
       }
     ],
 
@@ -316,8 +312,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Front main PALS webbing",
-
-        "volume_encumber_modifier": 0.95,
 
         "max_contains_weight": "12 kg",
         "//dimensions": {
@@ -337,6 +331,8 @@
         "max_contains_volume": "2090 ml",
         "max_item_length": "343 mm",
 
+        "volume_encumber_modifier": 0.75,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
@@ -347,8 +343,6 @@
         "//notes": [
           "full encumbrance should be very high for such a small area, to account for the fact that eventually pouches would directly interfere with shoulder straps"
         ],
-
-        "volume_encumber_modifier": 1.5,
 
         "max_contains_weight": "8 kg",
         "//dimensions": {
@@ -363,6 +357,8 @@
         "max_contains_volume": "1394 ml",
         "max_item_length": "229 mm",
 
+        "volume_encumber_modifier": 1.5,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -370,8 +366,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Pouch external PALS webbing",
-
-        "volume_encumber_modifier": 1.5,
 
         "max_contains_weight": "5 kg",
         "//dimensions": {
@@ -389,14 +383,14 @@
         "max_contains_volume": "1250 ml",
         "max_item_length": "241 mm",
 
+        "volume_encumber_modifier": 1.5,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Pouch external PALS webbing",
-
-        "volume_encumber_modifier": 1.5,
 
         "max_contains_weight": "5 kg",
         "//dimensions": {
@@ -413,6 +407,8 @@
         "//max_contains_volume": "rounded up for simplicity",
         "max_contains_volume": "1250 ml",
         "max_item_length": "241 mm",
+
+        "volume_encumber_modifier": 1.5,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -648,8 +644,6 @@
 
         "description": "Front PALS webbing",
 
-        "volume_encumber_modifier": 0.95,
-
         "max_contains_weight": "14 kg",
         "//dimensions": {
           "length": "40 mm",
@@ -668,14 +662,14 @@
         "max_contains_volume": "1860 ml",
         "max_item_length": "305 mm",
 
+        "volume_encumber_modifier": 0.5,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Front PALS webbing",
-
-        "volume_encumber_modifier": 0.95,
 
         "max_contains_weight": "14 kg",
         "//dimensions": {
@@ -694,6 +688,8 @@
         "max_contains_volume": "1858 ml",
         "max_item_length": "305 mm",
 
+        "volume_encumber_modifier": 0.5,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -705,8 +701,6 @@
         "//notes": [
           "unlike other bibs, this one is located conveniently away from shoulder straps, thus making it that much more feasible to cover the entire bib in pouches without risking reduction in mobility"
         ],
-
-        "volume_encumber_modifier": 1.25,
 
         "max_contains_weight": "6 kg",
         "//dimensions": {
@@ -720,6 +714,8 @@
         "max_contains_volume": "774 ml",
         "max_item_length": "152 mm",
 
+        "volume_encumber_modifier": 1.25,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -727,8 +723,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Shoulder strap PALS webbing",
-
-        "//volume_encumber_modifier": 1.25,
 
         "max_contains_weight": "2 kg",
         "//dimensions": {
@@ -741,14 +735,14 @@
         "max_contains_volume": "387 ml",
         "max_item_length": "127 mm",
 
+        "//volume_encumber_modifier": 1.25,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Shoulder strap PALS webbing",
-
-        "//volume_encumber_modifier": 1.25,
 
         "max_contains_weight": "2 kg",
         "//dimensions": {
@@ -760,6 +754,8 @@
         },
         "max_contains_volume": "387 ml",
         "max_item_length": "127 mm",
+
+        "//volume_encumber_modifier": 1.25,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
@@ -774,8 +770,7 @@
           "goes all the way down to the highest buckle"
         ],
 
-        "moves": 150,
-
+        "max_contains_weight": "300 g",
         "//dimensions": {
           "length": "3 mm",
           "width": "7.50 in",
@@ -787,8 +782,9 @@
           ]
         },
         "max_contains_volume": "97 ml",
-        "max_contains_weight": "300 g",
-        "max_item_length": "178 mm"
+        "max_item_length": "178 mm",
+
+        "moves": 150
       },
 
       {
@@ -797,8 +793,6 @@
         "description": "Back PALS webbing",
 
         "holster": true,
-
-        "volume_encumber_modifier": 0.9,
 
         "max_contains_weight": "25 kg",
         "//dimensions": {
@@ -815,6 +809,8 @@
         "max_contains_volume": "2787 ml",
         "max_item_length": "305 mm",
 
+        "volume_encumber_modifier": 0.5,
+
         "flag_restriction": ["MOLLE_ATTACH_BACK"]
       },
 
@@ -825,11 +821,11 @@
 
         "holster": true,
 
-        "moves": 800,
-
+        "max_contains_weight": "4 kg",
         "//max_contains_volume": "temporary value",
         "max_contains_volume": "3250 ml",
-        "max_contains_weight": "4 kg"
+
+        "moves": 800
       },
 
       {
@@ -1022,7 +1018,6 @@
       "trim": 0.3
     },
     "volume": "616 ml",
-    "longest_side": "506 mm",
 
     "symbol": "[",
     "color": "dark_gray",
@@ -1125,8 +1120,6 @@
 
         "description": "Lower back PALS webbing",
 
-        "volume_encumber_modifier": 0.9,
-
         "//molle": {
           "width": 6,
           "height": 2,
@@ -1137,6 +1130,8 @@
         "max_contains_volume": "1394 ml",
         "max_contains_weight": "6 kg",
 
+        "volume_encumber_modifier": 0.5,
+
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       },
 
@@ -1145,6 +1140,7 @@
 
         "description": "Inner pocket",
 
+        "max_contains_weight": "5 kg",
         "//dimensions": {
           "length": "1.25 in",
           "width": "9 in",
@@ -1158,7 +1154,6 @@
           ]
         },
         "max_contains_volume": "1014 ml",
-        "max_contains_weight": "5 kg",
         "//max_item_length": "based on height, rather than the larger length, because otherwise hard long items could be stored in it, which would likely make wearing the FLC very uncomfortable",
         "max_item_length": "140 mm"
       },
@@ -1167,6 +1162,7 @@
 
         "description": "Inner pocket",
 
+        "max_contains_weight": "5 kg",
         "//dimensions": {
           "length": "1.25 in",
           "width": "9 in",
@@ -1180,7 +1176,6 @@
           ]
         },
         "max_contains_volume": "1014 ml",
-        "max_contains_weight": "5 kg",
         "max_item_length": "140 mm"
       }
     ],
@@ -1252,8 +1247,6 @@
 
         "description": "Panel PALS webbing",
 
-        "volume_encumber_modifier": 0.9,
-
         "//molle": {
           "width": 6,
           "height": 3,
@@ -1263,6 +1256,8 @@
         },
         "max_contains_volume": "2477 ml",
         "max_contains_weight": "10 kg",
+
+        "volume_encumber_modifier": 0.75,
 
         "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       }
