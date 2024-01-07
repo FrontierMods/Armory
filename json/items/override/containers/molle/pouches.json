@@ -549,6 +549,7 @@
         "holster": true,
         "rigid": true,
 
+        "max_contains_weight": "365 g",
         "//max_contains_volume": [
           "allows storing 40×46mm and 40×53mm grenades",
           {
@@ -562,7 +563,6 @@
           }
         ],
         "max_contains_volume": "155 ml",
-        "max_contains_weight": "365 g",
         "min_item_length": "96 mm",
         "//max_item_length": "added 10% to maximum length of a 40×53mm grenade to allow slightly-larger items, like smoke grenades, to also be stored here",
         "max_item_length": "123 mm"
