@@ -289,15 +289,13 @@
     ]
   },
   {
-    "id": "profession_riot_police_belt",
+    "id": "profession_riot_police_belt_contents",
     "type": "item_group",
     "subtype": "collection",
 
     "//notes": [
       "having your radio on the belt probably doesn't make sense, but this seems the best of all available options"
     ],
-
-    "container-group": "police_belts",
 
     "entries": [
       { "group": "police_belt_melee" },
@@ -306,19 +304,39 @@
     ]
   },
   {
-    "id": "profession_sniper_police_belt",
+    "id": "profession_riot_police_belt",
     "type": "item_group",
     "subtype": "collection",
 
-    "//notes": [
-      "having your radio on the belt probably doesn't make sense, but this seems the best of all available options"
-    ],
+    "entries": [
+      {
+        "group": "police_belts",
+        "contents-group": "profession_riot_police_belt_contents"
+      }
+    ]
+  },
+  {
+    "id": "profession_sniper_police_belt_contents",
+    "type": "item_group",
+    "subtype": "collection",
 
     "container-group": "police_belts",
 
     "entries": [
       { "group": "police_sidearm_magazine_holstered" },
       { "group": "police_sidearm_holstered", "count": [1, 2] }
+    ]
+  },
+  {
+    "id": "profession_sniper_police_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "police_sidearm_magazine_holstered",
+        "contents-group": "profession_sniper_police_belt_contents"
+      }
     ]
   },
   {
@@ -338,11 +356,9 @@
     ]
   },
   {
-    "id": "profession_swat_belt",
+    "id": "profession_swat_belt_contents",
     "type": "item_group",
     "subtype": "collection",
-
-    "container-group": "police_belts",
 
     "entries": [
       { "group": "police_sidearm_holstered" },
@@ -354,11 +370,22 @@
     ]
   },
   {
-    "id": "profession_swat_heavy_belt",
+    "id": "profession_swat_belt",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "police_belts",
+    "entries": [
+      {
+        "group": "police_belts",
+        "contents-group": "profession_swat_belt_contents"
+      }
+    ]
+  },
+
+  {
+    "id": "profession_swat_heavy_belt_contents",
+    "type": "item_group",
+    "subtype": "collection",
 
     "entries": [
       { "group": "police_sidearm_holstered" },
@@ -366,6 +393,18 @@
       {
         "group": "flashbang_in_pouch",
         "count": 2
+      }
+    ]
+  },
+  {
+    "id": "profession_swat_heavy_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "police_belts",
+        "contents-group": "profession_swat_heavy_belt_contents"
       }
     ]
   },
