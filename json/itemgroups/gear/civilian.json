@@ -1,5 +1,12 @@
 [
   {
+    "id": "civilian_belts",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [{ "item": "leather_belt" }]
+  },
+  {
     "id": "civilian_melee",
     "type": "item_group",
     "subtype": "distribution",

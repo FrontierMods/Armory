@@ -1,5 +1,12 @@
 [
   {
+    "id": "thigh_straps",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "thigh_strap_trex" }]
+  },
+  {
     "id": "leather_gun_belt_with_holster",
     "type": "item_group",
     "subtype": "collection",
@@ -14,9 +21,7 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "thigh_strap_trex",
-
-    "entries": [{ "item": "holster" }]
+    "entries": [{ "group": "thigh_straps", "contents-item": "holster" }]
   },
   {
     "id": "thigh_strap_with_holster_loose",
@@ -45,44 +50,40 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "leather_belt",
-
-    "entries": [{ "item": "sheath" }]
+    "entries": [{ "group": "civilian_belts", "contents-item": "sheath" }]
   },
   {
     "id": "sheath_on_thigh_strap",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "thigh_strap_trex",
-
-    "entries": [{ "item": "sheath" }]
+    "entries": [{ "group": "thigh_straps", "container-item": "sheath" }]
   },
   {
     "id": "combat_knife_in_sheath_on_leather_belt",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "sheath_on_leather_belt",
-
-    "entries": [{ "item": "knife_combat" }]
+    "entries": [
+      { "group": "civilian_belts", "contents-group": "sheath_on_leather_belt" }
+    ]
   },
   {
     "id": "combat_knife_in_sheath_on_thigh_strap",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "sheath_on_thigh_strap",
-
-    "entries": [{ "item": "knife_combat" }]
+    "entries": [
+      { "group": "civilian_belts", "contents-group": "sheath_on_thigh_strap" }
+    ]
   },
   {
     "id": "hunting_knife_in_sheath_on_leather_belt",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-group": "sheath_on_leather_belt",
-
-    "entries": [{ "item": "knife_hunting" }]
+    "entries": [
+      { "group": "sheath_on_leather_belt", "container-item": "knife_hunting" }
+    ]
   }
 ]
