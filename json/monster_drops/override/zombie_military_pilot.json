@@ -10,9 +10,9 @@
     "entries": [
       { "group": "clothing_military_pilot", "damage": [1, 4] },
       {
-        "item": "holster",
         "container-item": "thigh_strap_trex",
-        "contents-group": "military_standard_pistols"
+        "item": "holster",
+        "contents-group": "us_army_sidearm"
       },
       { "item": "two_way_radio", "prob": 30 },
       { "item": "adderall", "prob": 40 },
