@@ -1,8 +1,9 @@
 [
   {
-    "type": "item_group",
     "id": "NC_SOLDIER_holster",
+    "type": "item_group",
     "subtype": "distribution",
+
     "entries": [
       { "item": "null", "prob": 20 },
       { "group": "thigh_strap_with_holster", "prob": 50 }
