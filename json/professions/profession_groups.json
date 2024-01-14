@@ -175,8 +175,8 @@
     "entries": [
       {
         "item": "40x46mm_m433",
-        "count": 4,
-        "container-item": "grenade_pouch"
+        "container-item": "grenade_pouch",
+        "count": 4
       },
       {
         "group": "us_army_magazines_m4a1_holstered"
@@ -518,10 +518,6 @@
 
     "container-item": "belt_army_acu",
 
-    "//entries": [
-      "the U.S. Navy has adopted the M17/M18 as their sidearm of choice",
-      "https://www.military.com/kitup/2017/05/modular-handgun-system-3.html"
-    ],
     "entries": [
       { "group": "us_army_sidearm_holstered" },
       { "group": "us_army_sidearm_magazine_holstered", "count": [0, 2] },
