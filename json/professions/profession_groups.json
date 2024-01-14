@@ -197,8 +197,6 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "leather_belt",
-
     "entries": [
       {
         "group": "charged_tazer",
