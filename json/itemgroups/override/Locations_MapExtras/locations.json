@@ -1,7 +1,8 @@
 [
   {
-    "type": "item_group",
     "id": "shelter",
+    "type": "item_group",
+
     "items": [
       ["daypack", 10],
       ["ski_jacket", 40],
@@ -204,8 +205,10 @@
   {
     "id": "cop_locker",
     "type": "item_group",
-    "magazine": 100,
     "subtype": "collection",
+
+    "magazine": 100,
+
     "entries": [
       { "item": "pants", "prob": 100 },
       { "item": "badge_deputy", "prob": 100 },
@@ -234,10 +237,10 @@
     ]
   },
   {
-    "type": "item_group",
     "id": "contraband",
-    "//": "concealable items only plz",
+    "type": "item_group",
     "subtype": "distribution",
+
     "entries": [
       { "item": "caffeine", "prob": 25, "charges": [1, 10] },
       { "item": "oxycodone", "prob": 4, "charges": [1, 10] },

@@ -47,6 +47,7 @@
         "holster": true,
         "rigid": true,
 
+        "max_contains_weight": "1500 g",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
           "volume of a loaded M1911",
@@ -60,11 +61,9 @@
           }
         ],
         "max_contains_volume": "441 ml",
-        "//max_contains_weight": "weight of a loaded M1911 + 50 g",
-        "max_contains_weight": "1156 g",
         "//max_item_length": [
-          "length of Colt Single Action Army with 5.5 in. barrel",
-          "as in photos from source"
+          "length of Colt Single Action Army with a 5.5-in. barrel",
+          "reference revolver based on photos from source"
         ],
         "max_item_length": "279 mm",
 

@@ -1,7 +1,7 @@
 [
   {
-    "type": "item_group",
     "id": "NC_JUNK_SHOPKEEP_misc",
+    "type": "item_group",
     "subtype": "collection",
 
     "ammo": 75,
