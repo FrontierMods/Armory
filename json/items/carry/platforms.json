@@ -1,0 +1,139 @@
+[
+  {
+    "id": "legpouch_large",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://condoroutdoor.com/products/condor-drop-leg-platform",
+        "dimensions",
+        "price"
+      ],
+      [
+        "https://www.amazon.com/Condor-Drop-Leg-Platform/dp/B0082CWB3C",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "while this kind of leg-attached gear is meant to be worn attached to a belt at the top, we ignore it for the sake of simplifying gear management for the player"
+    ],
+
+    "name": {
+      "str": "Condor drop leg platform"
+    },
+    "description": "A thin piece of fabric with PALS webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.  Activate to adjust fit for smaller legs.",
+
+    "weight": "227 g",
+    "//dimensions": {
+      "length": "10 in",
+      "width": "9 in",
+      "height": "1 mm",
+      "raw": "58.06 ml",
+      "trim": 0.05,
+      "notes": ["height (thickness) is assumed from visuals"]
+    },
+    "volume": "55 ml",
+    "//longest_side": "we assume it folds in half along the vertical axis when being transformed",
+    "longest_side": "254 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 1,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ammo_satchel",
+
+    "sided": true,
+
+    "armor": [
+      {
+        "//description": "Platform and straps",
+
+        "material": [
+          {
+            "type": "nylon",
+
+            "covered_by_mat": 100,
+            "//thickness": ["eyeballed"],
+            "thickness": 2.5
+          },
+          {
+            "//description": "Plastic buckles",
+
+            "type": "plastic",
+
+            "covered_by_mat": 5,
+            "//thickness": ["estimated based on strap thickness"],
+            "thickness": 2.5
+          }
+        ],
+
+        "encumbrance": 1,
+
+        "//coverage": ["28% for platform itself", "6% for straps and buckles"],
+        "coverage": 34,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//molle": {
+          "width": 6,
+          "height": 5,
+          "spaced": true,
+          "width_extra": -1,
+          "height_extra": 1,
+          "notes": ["-1 width to account for top two cells cutting off"]
+        },
+        "max_contains_volume": "2129 ml",
+        "max_contains_weight": "9 kg",
+        "max_item_length": "254 mm",
+
+        "volume_encumber_modifier": 0.5,
+
+        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+      }
+    ],
+
+    "use_action": {
+      "type": "transform",
+
+      "target": "platform_leg_molle_condor_xs",
+      "msg": "You adjust the leg platform.",
+
+      "menu_text": "Adjust"
+    },
+
+    "//flags": [
+      "removed PALS_MEDIUM, since this is an item that's intended to be worn on the leg"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
+
+    "price": "24 USD",
+    "price_postapoc": "25 cent"
+  },
+  {
+    "id": "platform_leg_molle_condor_xs",
+    "copy-from": "legpouch_large",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "Condor drop leg platform (XS)"
+    },
+    "description": "A thin piece of fabric with PALS webbing and straps to attach to the leg with.  Offers a generous amount of space for pouches and tucked-in items, but loading it to the fullest is going to make moving around much less comfortable.  Currently adjusted to fit very small thighs.  Activate to adjust back to normal diameter.",
+
+    "use_action": {
+      "type": "transform",
+
+      "target": "legpouch_large",
+      "msg": "You adjust the leg platform.",
+
+      "menu_text": "Adjust"
+    }
+  }
+]

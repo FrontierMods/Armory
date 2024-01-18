@@ -1,47 +1,37 @@
 [
   {
-    "id": ["ballistic_vest_light_pouches", "ballistic_vest_light_operator"],
+    "id": ["camelbak"],
     "type": "MIGRATION",
-    "replace": "ballistic_vest_light"
+    "replace": "hydration_bladder_molle_ii"
   },
   {
-    "id": ["ballistic_vest_heavy_arms", "ballistic_vest_heavy_legs"],
+    "id": ["steel_ballistic_plate"],
     "type": "MIGRATION",
-    "replace": "ballistic_vest_heavy"
+    "replace": "plate_steel_medium_cag_iiiplus"
   },
   {
-    "id": ["load_bearing_vest_sling"],
+    "id": ["heavy_steel_ballistic_plate"],
     "type": "MIGRATION",
-    "replace": "load_bearing_vest"
+    "replace": "plate_steel_medium_highcom_iiiplus"
   },
   {
-    "id": ["heavy_load_bearing_vest_sling"],
+    "id": ["esapi_plate"],
     "type": "MIGRATION",
-    "replace": "heavy_load_bearing_vest"
+    "replace": "plate_ceramic_medium_ceradyne_esapi"
   },
   {
-    "id": ["stone_pouch", "leather_stone_pouch"],
+    "id": ["destroyed_large_ceramic_plate"],
     "type": "MIGRATION",
-    "replace": "dump_pouch"
+    "replace": "plate_ceramic_medium_ceradyne_esapi_compromised"
   },
   {
-    "id": ["soft_3a_vest"],
+    "id": ["esbi_plate"],
     "type": "MIGRATION",
-    "replace": "stab_vest"
+    "replace": "plate_side_tall_ceramic_ltc_esbi"
   },
   {
-    "id": ["chestpouch_leather", "ammo_satchel_leather"],
+    "id": ["destroyed_medium_ceramic_plate"],
     "type": "MIGRATION",
-    "replace": "chestpouch"
-  },
-  {
-    "id": ["heavy_load_bearing_vest_breacher"],
-    "type": "MIGRATION",
-    "replace": "heavy_load_bearing_vest"
-  },
-  {
-    "id": ["gartersheath2"],
-    "type": "MIGRATION",
-    "replace": "gartersheath1"
+    "replace": "plate_side_tall_ceramic_ltc_esbi_compromised"
   }
 ]
