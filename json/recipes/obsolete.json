@@ -2,21 +2,6 @@
   { "result": "XL_holster", "type": "recipe", "obsolete": true },
   { "result": "suspenders_holster", "type": "recipe", "obsolete": true },
   {
-    "result": "ballistic_vest_light",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "ballistic_vest_heavy",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "ballistic_vest_esapi",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
     "result": "level_3_vest",
     "type": "recipe",
     "obsolete": true
@@ -33,46 +18,6 @@
   },
   {
     "result": "tac_fullhelmet",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "iotv_groin_plate",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "iotv_shoulder_plate",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "esapi_plate",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "esbi_plate",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "steel_ballistic_plate",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "heavy_steel_ballistic_plate",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "stab_vest",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "stab_plate",
     "type": "recipe",
     "obsolete": true
   },
@@ -108,11 +53,6 @@
   },
   {
     "result": "dump_pouch",
-    "type": "recipe",
-    "obsolete": true
-  },
-  {
-    "result": "dump_pouch_unfolded",
     "type": "recipe",
     "obsolete": true
   },
