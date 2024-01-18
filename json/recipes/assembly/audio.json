@@ -2,7 +2,7 @@
   {
     "result": "powered_earmuffs",
     "type": "uncraft",
-    
+
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_HEAD",
 
@@ -16,13 +16,14 @@
 
     "components": [
       [["headband_walkers_razor_slim", 1]],
-      [["headphones_detached_walkers_razor_slim", 1]]
+      [["headphones_detached_walkers_razor_slim", 1]],
+      [["adhesive", 1, "LIST"]]
     ]
   },
   {
     "result": "headset_arc_walkers_razor_slim",
     "type": "recipe",
-    
+
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_HEAD",
 
