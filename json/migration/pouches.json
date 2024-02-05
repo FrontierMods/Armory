@@ -1,0 +1,37 @@
+[
+  {
+    "id": ["canteen_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_canteen_1qt_tt"
+  },
+  {
+    "id": ["dump_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_dump_frogpro"
+  },
+  {
+    "id": ["ifak_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_dump_frogpro"
+  },
+  {
+    "id": ["ammo_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_ammo_condor"
+  },
+  {
+    "id": ["gas_mask_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_gas_mask_molle_ii"
+  },
+  {
+    "id": ["h2o_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_water_bottle_ft"
+  },
+  {
+    "id": ["grenade_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_40mm_haley"
+  }
+]
