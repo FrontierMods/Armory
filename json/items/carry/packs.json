@@ -1,7 +1,6 @@
 [
   {
     "id": "backpack_511_daily_deploy_48",
-    "copy-from": "molle_medium_rucksack",
     "type": "ARMOR",
 
     "//sources": ["https://www.511tactical.com/daily-deploy-48-pack.html"],
@@ -30,6 +29,14 @@
     },
     "volume": "34843 ml",
     "longest_side": "533 mm",
+
+    "material": ["nylon", "plastic"],
+    "material_thickness": 2,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "green",
+    "looks_like": "backpack",
 
     "encumbrance": 4,
     "//max_encumbrance": "discount of 3 points for the effective load-bearing system",
@@ -971,7 +978,7 @@
     "price_postapoc": "35 USD"
   },
   {
-    "id": "molle_medium_rucksack",
+    "id": "backpack_molle_ii_medium",
     "type": "ARMOR",
 
     "//sources": [
@@ -1410,7 +1417,7 @@
     "price_postapoc": "20 USD"
   },
   {
-    "id": "molle_pack",
+    "id": "backpack_molle_ii_assault",
     "type": "ARMOR",
 
     "//sources": [
@@ -1689,7 +1696,7 @@
     "price_postapoc": "13 USD"
   },
   {
-    "id": "molle_large_rucksack",
+    "id": "backpack_molle_ii_large",
     "type": "ARMOR",
 
     "//sources": [
@@ -1948,7 +1955,7 @@
     "price_postapoc": "25 USD"
   },
   {
-    "id": "backpack_tactical_large",
+    "id": "backpack_tt_raid_pack_mk_iii",
     "type": "ARMOR",
 
     "//sources": [
@@ -2466,7 +2473,7 @@
     "price_postapoc": "40 USD"
   },
   {
-    "id": "rucksack",
+    "id": "backpack_511_rush_100",
     "type": "ARMOR",
 
     "//sources": [
@@ -2487,7 +2494,7 @@
     "name": {
       "str": "5.11 Tactical RUSH 100 backpack"
     },
-    "description": "...",
+    "description": "A large, heavy-duty nylon backpack intended for excursions longer than three days.  It features two large vertical compartments, a deep lower compartment, a top admin compartment, as well as a lot of PALS webbing and straps to attach various implements to.  In addition to the rigid aluminum frame close to the wearer's back, the RUSH 100 is also supported by a padded belt that has PALS webbing of its own.  There is a dedicated compartment for a hydration bladder inside the backpack.",
 
     "weight": "2580 g",
     "//dimensions": {

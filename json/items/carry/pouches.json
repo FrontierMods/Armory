@@ -1,6 +1,6 @@
 [
   {
-    "id": "canteen_pouch",
+    "id": "pouch_canteen_1qt_tt",
     "type": "GENERIC",
     "category": "container",
 
@@ -38,9 +38,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "holster": true,
-        "rigid": true,
-
         "//max_contains_volume": [
           "from dimensions of a 1-qt canteen",
           "https://www.dimensions.com/element/canteen-military",
@@ -58,16 +55,14 @@
       }
     ],
 
-    "//flags": ["replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR_LARGE"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
 
     "//price": "80 EUR",
     "price": "85 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "dump_pouch",
+    "id": "pouch_dump_frogpro",
     "type": "GENERIC",
     "category": "container",
 
@@ -94,8 +89,6 @@
     "volume": "518 ml",
     "longest_side": "140 mm",
 
-    "encumbrance": 0,
-
     "symbol": "[",
     "color": "dark_gray",
 
@@ -108,19 +101,17 @@
       "type": "transform",
       "menu_text": "Unfold",
       "msg": "You unfold the dump pouch.",
-      "target": "dump_pouch_unfolded"
+      "target": "pouch_dump_frogpro_folded"
     },
 
-    "//flags": ["replaced PALS_MEDIUM with BELT_GEAR_LARGE"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "BELT_GEAR_LARGE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
 
     "price": "38 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "dump_pouch_unfolded",
-    "copy-from": "dump_pouch",
+    "id": "pouch_dump_frogpro_folded",
+    "copy-from": "pouch_dump_frogpro",
     "type": "GENERIC",
     "category": "container",
 
@@ -140,19 +131,16 @@
     "volume": "3188 ml",
     "longest_side": "250 mm",
 
-    "encumbrance": 1,
-    "max_encumbrance": 6,
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
 
-        "rigid": true,
-
+        "max_contains_weight": "3 kg",
         "//max_contains_volume": "95% of unfolded volume",
         "max_contains_volume": "3029 ml",
-        "max_contains_weight": "3 kg",
-        "max_item_length": "250 mm"
+        "max_item_length": "250 mm",
+
+        "volume_encumber_modifier": 0.5
       }
     ],
 
@@ -160,12 +148,11 @@
       "type": "transform",
       "menu_text": "Fold",
       "msg": "You fold the dump pouch.",
-      "target": "dump_pouch"
+      "target": "pouch_dump_frogpro"
     }
   },
-
   {
-    "id": "ifak_pouch",
+    "id": "pouch_ifak_frogpro_chiron",
     "type": "GENERIC",
     "category": "container",
 
@@ -293,25 +280,20 @@
       }
     ],
 
-    "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
-      "added WATER_FRIENDLY"
-    ],
+    "//flags": ["added WATER_FRIENDLY"],
     "flags": [
       "COLLAPSE_CONTENTS",
       "WATER_FRIENDLY",
       "CANT_WEAR",
-      "MOLLE_ATTACH",
-      "BELT_GEAR"
+      "PALS_MEDIUM"
     ],
 
     "//price": "120 EUR",
     "price": "127 USD",
     "//price_postapoc": "2 USD"
   },
-
   {
-    "id": "ammo_pouch",
+    "id": "pouch_ammo_condor",
     "type": "GENERIC",
     "category": "container",
 
@@ -355,25 +337,14 @@
       }
     ],
 
-    "//flags": [
-      "replaced PALS_LARGE with MOLLE_ATTACH and BELT_GEAR_LARGE",
-      "added WATER_FRIENDLY",
-      "added COLLAPSE_CONTENTS"
-    ],
-    "flags": [
-      "COLLAPSE_CONTENTS",
-      "WATER_FRIENDLY",
-      "CANT_WEAR",
-      "MOLLE_ATTACH",
-      "BELT_GEAR_LARGE"
-    ],
+    "//flags": ["added WATER_FRIENDLY", "added COLLAPSE_CONTENTS"],
+    "flags": ["COLLAPSE_CONTENTS", "WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
 
     "price": "24 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "gas_mask_pouch",
+    "id": "pouch_leg_gas_mask_hsgi",
     "type": "GENERIC",
     "category": "container",
 
@@ -384,10 +355,10 @@
     ],
 
     "name": {
-      "str": "HSGI gas mask pouch",
-      "str_pl": "HSGI gas mask pouches"
+      "str": "HSGI gas mask leg pouch",
+      "str_pl": "HSGI gas mask leg pouches"
     },
-    "description": "A large nylon pouch by High Speed Gear.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.",
+    "description": "A large nylon pouch by High Speed Gear.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.",
 
     "weight": "454 g",
     "//dimensions": {
@@ -406,6 +377,95 @@
     "material": ["nylon", "plastic"],
     "material_thickness": 1,
     "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "sided": true,
+
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 100,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "//max_contains_volume": [
+          "dimensions of CM-7M gas mask",
+          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
+          {
+            "length": "6.85 in",
+            "width": "7.75 in",
+            "height": "10.60 in",
+            "raw": "9222 ml",
+            "trim": 0.45,
+            "notes": ["dimensions acquired from visual reference"]
+          }
+        ],
+        "max_contains_volume": "5072 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "305 mm",
+
+        "volume_encumber_modifier": 0.25
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with BELT_GEAR_LARGE: this pouch has no PALS interface",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "BELT_GEAR_LARGE"],
+
+    "price": "91 USD",
+    "//price_postapoc": "3 USD"
+  },
+  {
+    "id": "pouch_gas_mask_molle_ii",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://armynavyoutdoors.com/eagle-usmc-gas-mask-gp-molle-pouch/",
+      [
+        "https://www.venturesurplus.com/products/eagle-industries-gas-mask-pouch/",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description"
+    ],
+
+    "name": {
+      "str": "MOLLE II gas mask leg pouch",
+      "str_pl": "MOLLE II gas mask leg pouches"
+    },
+    "description": "A large nylon pouch, produced by Eagle Industries as part of the MOLLE II set of soldier's equipment.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing.",
+
+    "weight": "255 g",
+    "//dimensions": {
+      "length": "11 in",
+      "width": "9 in",
+      "height": "1.5 mm",
+      "raw": "95.8 ml",
+      "trim": 0.15,
+      "notes": ["height is presumed thickness of two walls of the pouch"]
+    },
+    "volume": "81 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 0.75,
+    "looks_like": "dump_pouch",
     "repairs_like": "legrig",
 
     "pocket_data": [
@@ -428,23 +488,24 @@
         ],
         "max_contains_volume": "5072 ml",
         "max_contains_weight": "1 kg",
-        "max_item_length": "305 mm"
+        "max_item_length": "305 mm",
+
+        "volume_encumber_modifier": 0.25
       }
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR_LARGE",
-      "removed BELTED and OVERSIZE",
-      "added WATER_FRIENDLY"
+      "replaced PALS_MEDIUM with PALS_LARGE: this pouch has no PALS interface",
+      "added WATER_FRIENDLY",
+      "removed BELTED and OVERSIZE"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
 
     "price": "91 USD",
     "//price_postapoc": "3 USD"
   },
-
   {
-    "id": "h2o_pouch",
+    "id": "pouch_water_bottle_ft",
     "type": "GENERIC",
     "category": "container",
 
@@ -481,28 +542,24 @@
       {
         "pocket_type": "CONTAINER",
 
-        "holster": true,
         "rigid": true,
 
+        "max_contains_weight": "3 kg",
         "//max_contains_volume": "from source",
         "max_contains_volume": "1600 ml",
-        "max_contains_weight": "3 kg",
         "max_item_length": "206 mm"
       }
     ],
 
-    "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR_LARGE",
-      "removed BELTED and OVERSIZE"
-    ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
+    "//flags": ["removed BELTED and OVERSIZE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
   },
 
   {
-    "id": "grenade_pouch",
+    "id": "pouch_40mm_haley",
     "type": "GENERIC",
     "category": "container",
 
@@ -547,7 +604,6 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "max_contains_weight": "365 g",
         "//max_contains_volume": [
@@ -570,10 +626,10 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
+      "replaced PALS_MEDIUM with PALS_SMALL",
       "removed BELTED and OVERSIZE"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
