@@ -1,6 +1,6 @@
 [
   {
-    "id": "ballistic_vest_light",
+    "id": "plate_carrier_perroz",
     "type": "ARMOR",
     "category": "armor",
 
@@ -262,7 +262,7 @@
   },
 
   {
-    "id": "ballistic_vest_heavy",
+    "id": "plate_carrier_iotv_gen_iii",
     "type": "ARMOR",
     "category": "armor",
 
@@ -668,7 +668,7 @@
   },
 
   {
-    "id": "ballistic_vest_esapi",
+    "id": "plate_carrier_spcs",
     "type": "ARMOR",
     "category": "armor",
 
@@ -905,7 +905,7 @@
   },
 
   {
-    "id": "level_3_vest",
+    "id": "plate_carrier_white_horse_exttact",
     "type": "ARMOR",
     "category": "armor",
 
