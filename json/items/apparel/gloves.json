@@ -1,6 +1,6 @@
 [
   {
-    "id": "gloves_tactical",
+    "id": "gloves_tactical_mechanix_specialty",
     "type": "ARMOR",
     "category": "armor",
 
@@ -70,7 +70,7 @@
     "price_postapoc": "1 USD"
   },
   {
-    "id": "winter_gloves_army",
+    "id": "gloves_cwgs_trigger_finger",
     "type": "ARMOR",
 
     "//sources": [
@@ -145,7 +145,7 @@
     "price_postapoc": "250 cent"
   },
   {
-    "id": "gloves_liner",
+    "id": "gloves_cwgs_liner",
     "type": "ARMOR",
 
     "//sources": [

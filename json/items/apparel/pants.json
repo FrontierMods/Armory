@@ -1,6 +1,6 @@
 [
   {
-    "id": "pants_army",
+    "id": "pants_army_acu",
     "type": "ARMOR",
 
     "//sources": [
@@ -259,7 +259,7 @@
     "price_postapoc": "250 cent"
   },
   {
-    "id": "winter_pants_army",
+    "id": "pants_ecwcs_gen_iii_level_v",
     "type": "ARMOR",
 
     "//sources": [

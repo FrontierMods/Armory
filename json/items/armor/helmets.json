@@ -1,6 +1,6 @@
 [
   {
-    "id": "helmet_army",
+    "id": "helmet_ach",
     "type": "ARMOR",
     "category": "armor",
 
@@ -176,7 +176,7 @@
     "price_postapoc": "2 USD"
   },
   {
-    "id": "tac_helmet",
+    "id": "helmet_ops_core_fast",
     "type": "ARMOR",
     "category": "armor",
 
@@ -341,7 +341,7 @@
     "price_postapoc": "3 USD"
   },
   {
-    "id": "tac_fullhelmet",
+    "id": "helmet_devtac_ronin",
     "type": "ARMOR",
     "category": "armor",
 

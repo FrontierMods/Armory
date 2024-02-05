@@ -1,6 +1,6 @@
 [
   {
-    "id": "bandolier_rifle",
+    "id": "bandolier_rifle_bulldog",
     "type": "ARMOR",
 
     "//sources": [
@@ -88,7 +88,7 @@
     "price_postapoc": "50 cent"
   },
   {
-    "id": "torso_bandolier_grenade",
+    "id": "bandolier_40mm_tt",
     "type": "ARMOR",
 
     "//sources": [
@@ -163,7 +163,7 @@
     "price_postapoc": "50 cent"
   },
   {
-    "id": "bandolier_shotgun",
+    "id": "bandolier_shotgun_allen",
     "type": "ARMOR",
 
     "//sources": ["https://byallen.com/shotgun-shell-belt-holder-211"],
@@ -235,7 +235,7 @@
     "price_postapoc": "25 cent"
   },
   {
-    "id": "torso_bandolier_shotgun",
+    "id": "bandolier_shotgun_blackhawk",
     "type": "ARMOR",
 
     "//sources": [
@@ -308,7 +308,7 @@
     "price_postapoc": "1 USD"
   },
   {
-    "id": "bandolier_pistol",
+    "id": "bandolier_pistol_grommets",
     "type": "ARMOR",
 
     "//sources": [
@@ -411,7 +411,7 @@
     "price_postapoc": "1 USD"
   },
   {
-    "id": "cheap_ammo_pouch",
+    "id": "bandolier_556_clips_army",
     "type": "ARMOR",
 
     "//sources": [
@@ -581,8 +581,7 @@
     "price_postapoc": "15 cent"
   },
   {
-    "id": "bandolier_wrist",
-    "copy-from": "bandolier_wrist",
+    "id": "bandolier_pistol_wrist",
     "type": "ARMOR",
 
     "//sources": [
@@ -601,6 +600,12 @@
 
     "material": ["leather"],
     "material_thickness": 4,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "leather_belt",
+
+    "sided": true,
 
     "armor": [
       {
