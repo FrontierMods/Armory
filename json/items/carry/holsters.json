@@ -229,8 +229,7 @@
     "price_postapoc": "1 USD"
   },
   {
-    "id": "holster",
-    "copy-from": "holster",
+    "id": "holster_condor_rds",
     "type": "GENERIC",
     "category": "container",
 
@@ -269,6 +268,12 @@
 
     "material": ["nylon"],
     "material_thickness": 2,
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "sheath",
+
+    "sided": true,
 
     "armor": [
       {
@@ -332,9 +337,8 @@
     "price": "27 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "sheath",
+    "id": "sheath_rothco_molle",
     "type": "GENERIC",
     "category": "container",
 
@@ -404,9 +408,8 @@
     "price": "20 USD",
     "//price_postapoc": "250 cent"
   },
-
   {
-    "id": "tactical_holster",
+    "id": "holster_universal_red_rock",
     "type": "GENERIC",
     "category": "container",
 
