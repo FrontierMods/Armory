@@ -1,18 +1,15 @@
 [
   {
-    "id": "webbing_belt",
+    "id": "belt_webbing_haley_strategic_d3",
     "type": "ARMOR",
 
     "//sources": [
-      "https://haleystrategic.com/belts/d3-belt",
       [
-        "https://offbase.co/products/haley-strategic-d3-belt",
+        "https://haleystrategic.com/belts/d3-belt",
+        "price",
         "weight",
-        "height"
-      ],
-      [
-        "https://offbase.co/products/haley-strategic-d3-inner-belt",
-        "inner belt weight"
+        "height",
+        "webbing area"
       ]
     ],
 
@@ -22,24 +19,12 @@
     ],
 
     "name": {
-      "str": "Haley Strategic D3 two-piece combat belt"
+      "str": "Haley Strategic D3 combat belt"
     },
     "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.",
 
-    "//weight": [
-      "calculated from proportionate volumes based on size XXL (as listed in source)",
-      {
-        "length": "52 in",
-        "width": "2 in",
-        "height": "3 mm",
-        "raw": "201 ml",
-        "trim": 0.05,
-        "result": "191 ml"
-      },
-      "XXL-sized belt weighs 8.8 oz",
-      "from dimensions of medium-sized belt (this item): (140 / 191) × 8.8 = 6.45 oz = 182.85 g ≈ 183 g"
-    ],
-    "weight": "183 g",
+    "//weight": "15.7 oz = 445.09 g",
+    "weight": "445 g",
     "//dimensions": {
       "length": "38 in",
       "width": "2 in",
@@ -48,10 +33,6 @@
       "trim": 0.05
     },
     "volume": "140 ml",
-    "//longest_side": [
-      "assumed to be folded thrice when stored: 38 / 8 = 4.75 in. = 120.65 mm ≈ 121 mm"
-    ],
-    "longest_side": "121 mm",
 
     "symbol": "[",
     "color": "yellow",
@@ -77,61 +58,83 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "PALS webbing",
-
-        "max_contains_weight": "21 kg",
-        "//molle": {
-          "width": 22,
-          "height": 2,
-          "spaced": true,
-          "width_extra": -3,
-          "height_extra": 3,
-          "notes": [
-            "webbing width from source: 34 in. ≈ 22 3/5 cells = 22 + 1 cells",
-            "-4 width to account for possible large belt gear attached"
-          ]
-        },
-        "max_contains_volume": "5148 ml",
-        "//min_item_length": "makes sure that only full hook-and-loop panels could be attached to the rig",
-        "//max_item_length": "10 in. per item",
-        "max_item_length": "254 mm",
-
-        "flag_restriction": [
-          "MOLLE_ATTACH",
-          "BELT_CLIP",
-          "BELT_GEAR",
-          "VELCRO_POUCH",
-          "TUCKED_IN"
-        ]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Belt section for large gear",
+        "description": "Slot for hook-and-loop hanging gear",
 
         "holster": true,
 
-        "max_contains_weight": "32 kg",
-        "max_contains_volume": "8 L",
-        "//max_item_length": "20 in",
-        "max_item_length": "508 mm",
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2 L",
+        "//max_item_length": "12 in",
+        "max_item_length": "305 mm",
 
-        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
+        "flag_restriction": ["VELCRO_ATTACH_HANG_DOWN"]
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Belt section for large gear",
+        "description": "Slot for hook-and-loop hanging gear",
 
         "holster": true,
 
-        "max_contains_weight": "32 kg",
-        "max_contains_volume": "8 L",
-        "//max_item_length": "20 in",
-        "max_item_length": "508 mm",
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2 L",
+        "//max_item_length": "12 in",
+        "max_item_length": "305 mm",
 
-        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
+        "flag_restriction": ["VELCRO_ATTACH_HANG_DOWN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Slot for hook-and-loop hanging gear",
+
+        "holster": true,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2 L",
+        "//max_item_length": "12 in",
+        "max_item_length": "305 mm",
+
+        "flag_restriction": ["VELCRO_ATTACH_HANG_DOWN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Slot for hook-and-loop hanging gear",
+
+        "holster": true,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2 L",
+        "//max_item_length": "12 in",
+        "max_item_length": "305 mm",
+
+        "flag_restriction": ["VELCRO_ATTACH_HANG_DOWN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Slot for hook-and-loop hanging gear",
+
+        "holster": true,
+
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "2 L",
+        "//max_item_length": "12 in",
+        "max_item_length": "305 mm",
+
+        "flag_restriction": ["VELCRO_ATTACH_HANG_DOWN"]
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": ["34 in. webbing length ≈ 22 2/3 cells", "23 × 1 webbing"],
+        "size": 11
+      },
+      {
+        "type": "detach_molle"
       }
     ],
 
@@ -141,7 +144,7 @@
     "price_postapoc": "2 USD"
   },
   {
-    "id": "police_belt",
+    "id": "belt_webbing_blackhawk_foundation",
     "type": "ARMOR",
 
     "//sources": [
@@ -169,10 +172,6 @@
       ]
     },
     "volume": "73 ml",
-    "//longest_side": [
-      "assumed to be folded thrice when stored: 38 / 8 = 4.75 in. = 120.65 mm ≈ 121 mm"
-    ],
-    "longest_side": "121 mm",
 
     "//material": [
       "the buckles are aluminum",
@@ -184,36 +183,6 @@
     "color": "brown",
     "looks_like": "fireman_belt",
     "repairs_like": "tool_belt",
-
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "PALS webbing",
-
-        "volume_encumber_modifier": 0.85,
-
-        "max_contains_weight": "33 kg",
-        "//molle": {
-          "width": 25,
-          "height": 2,
-          "spaced": false,
-          "width_extra": 1,
-          "height_extra": 4,
-          "notes": [
-            "webbing width from belt width: 38 in. ≈ 25 1/3 cells = 25 + 1 cells"
-          ]
-        },
-        "max_contains_volume": "8052 ml",
-
-        "flag_restriction": [
-          "MOLLE_ATTACH",
-          "BELT_CLIP",
-          "BELT_GEAR",
-          "TUCKED_IN"
-        ]
-      }
-    ],
 
     "armor": [
       {
@@ -238,6 +207,17 @@
       }
     ],
 
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": "25 (+ 1/3) × 1 webbing",
+        "size": 13
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
     "//flags": [
       "removed OVERSIZE: while this belt is somewhat-accomodating, it's unlikely to be comfortable for someone significantly larger than even a large regular human"
     ],
@@ -247,7 +227,7 @@
     "price_postapoc": "250 cent"
   },
   {
-    "id": "western_holster",
+    "id": "belt_leather_grommets",
     "type": "ARMOR",
 
     "//sources": [
@@ -266,7 +246,7 @@
 
     "//weight": [
       "estimated as (area of belt × 2) × leather thickness per sq.ft.",
-      "(belt length [38 in.] × belt height [2 in.]) × leather thickness [8 oz / sq.ft.] = 4.22 oz = 119.68 g ≈ 120 g",
+      "(belt length [38 in.] × belt height [2 in.]) × leather thickness [8 oz / sq.ft.] = 4.22 oz = 119.68 g",
       "area of bandolier adjusted by 17% as per dimensions calculation"
     ],
     "weight": "120 g",
@@ -289,6 +269,25 @@
     "symbol": "[",
     "color": "light_gray",
     "looks_like": "leather_belt",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 3.2 },
+          {
+            "type": "mc_steel",
+            "covered_by_mat": 2,
+            "thickness": 0.8
+          }
+        ],
+
+        "encumbrance": [3, 11],
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"]
+      }
+    ],
 
     "pocket_data": [
       {
@@ -347,25 +346,6 @@
     ],
     "flags": ["BELTED", "OVERSIZE"],
 
-    "armor": [
-      {
-        "material": [
-          { "type": "leather", "covered_by_mat": 100, "thickness": 3.2 },
-          {
-            "type": "mc_steel",
-            "covered_by_mat": 2,
-            "thickness": 0.8
-          }
-        ],
-
-        "encumbrance": [3, 11],
-
-        "coverage": 100,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_waist"]
-      }
-    ],
-
     "//price": "price for the suede-lined model",
     "price": "140 USD",
     "price_postapoc": "1 USD"
@@ -410,6 +390,29 @@
     "color": "brown",
     "looks_like": "leather_belt",
     "repairs_like": "tool_belt",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 0.75
+          },
+          {
+            "type": "aluminum",
+            "covered_by_mat": 3,
+            "thickness": 2
+          }
+        ],
+
+        "volume_encumber_modifier": 0.4,
+
+        "coverage": 100,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"]
+      }
+    ],
 
     "pocket_data": [
       {
@@ -487,29 +490,6 @@
         "max_item_length": "508 mm",
 
         "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
-      }
-    ],
-
-    "armor": [
-      {
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 100,
-            "thickness": 0.75
-          },
-          {
-            "type": "aluminum",
-            "covered_by_mat": 3,
-            "thickness": 2
-          }
-        ],
-
-        "volume_encumber_modifier": 0.4,
-
-        "coverage": 100,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_waist"]
       }
     ],
 
