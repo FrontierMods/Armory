@@ -1,6 +1,6 @@
 [
   {
-    "id": "jacket_army_modern",
+    "id": "coat_army_acu",
     "type": "ARMOR",
 
     "//sources": [
@@ -384,7 +384,7 @@
     "price_postapoc": "15 USD"
   },
   {
-    "id": "winter_jacket_army",
+    "id": "jacket_ecwcs_gen_iii_level_v",
     "type": "ARMOR",
 
     "//sources": [
