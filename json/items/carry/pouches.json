@@ -13,7 +13,7 @@
       "str": "Tactical Tailor canteen pouch",
       "str_pl": "Tactical Tailor canteen pouches"
     },
-    "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to US GIs.  In a pinch, it could also serve as an impromptu dump pouch.",
+    "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. infantry.  Can also serve as an impromptu dump pouch.",
 
     "weight": "133 g",
     "//dimensions": {
@@ -38,6 +38,9 @@
       {
         "pocket_type": "CONTAINER",
 
+        "rigid": true,
+
+        "max_contains_weight": "3 kg",
         "//max_contains_volume": [
           "from dimensions of a 1-qt canteen",
           "https://www.dimensions.com/element/canteen-military",
@@ -50,7 +53,6 @@
           }
         ],
         "max_contains_volume": "1609 ml",
-        "max_contains_weight": "3 kg",
         "min_item_length": "76 mm"
       }
     ],
@@ -76,7 +78,7 @@
       "str": "FROG.PRO dump pouch",
       "str_pl": "FROG.PRO dump pouches"
     },
-    "description": "A nylon pouch, intended for collecting random items for sorting later.  It is currently folded, with no container capacity to speak of.  Activate to unfold.",
+    "description": "A nylon pouch, intended for collecting random items for sorting later.  It is currently folded, with no container capacity to speak of, and can only be attached to the webbing when unfolded.  Activate to unfold.",
 
     "weight": "175 g",
     "//dimensions": {
@@ -104,7 +106,8 @@
       "target": "pouch_dump_frogpro_folded"
     },
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
+    "//flags": "only the unfolded version is attacheable",
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR"],
 
     "price": "38 USD",
     "//price_postapoc": "1 USD"
@@ -149,7 +152,9 @@
       "menu_text": "Fold",
       "msg": "You fold the dump pouch.",
       "target": "pouch_dump_frogpro"
-    }
+    },
+
+    "extend": { "flags": ["PALS_MEDIUM"] }
   },
   {
     "id": "pouch_ifak_frogpro_chiron",
@@ -380,7 +385,6 @@
     "repairs_like": "legrig",
 
     "sided": true,
-
     "armor": [
       {
         "encumbrance": 1,
@@ -397,6 +401,7 @@
 
         "rigid": true,
 
+        "max_contains_weight": "1 kg",
         "//max_contains_volume": [
           "dimensions of CM-7M gas mask",
           "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
@@ -410,7 +415,6 @@
           }
         ],
         "max_contains_volume": "5072 ml",
-        "max_contains_weight": "1 kg",
         "max_item_length": "305 mm",
 
         "volume_encumber_modifier": 0.25
@@ -495,7 +499,7 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with PALS_LARGE: this pouch has no PALS interface",
+      "replaced PALS_MEDIUM with PALS_LARGE",
       "added WATER_FRIENDLY",
       "removed BELTED and OVERSIZE"
     ],
@@ -557,7 +561,6 @@
     "price": "25 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
     "id": "pouch_40mm_haley",
     "type": "GENERIC",
@@ -634,10 +637,8 @@
     "price": "25 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "chestpouch",
-    "copy-from": "chestpouch",
+    "id": "pouch_magazine_556_condor",
     "type": "ARMOR",
 
     "//sources": [
@@ -645,20 +646,18 @@
       [
         "https://www.specshop.pl/Open-Top-Single-M4-M16-Mag-Pouch-Condor-MA18-498",
         "weight"
-      ],
-      [
-        "https://thril.com/gear/ar-mag/",
-        "https://en.wikipedia.org/wiki/M16_rifle",
-        "https://www.sellier-bellot.cz/en/products/rifle-ammunition/rifle-ammunition-fmj/detail/180/",
-        "pocket restrictions"
       ]
     ],
 
+    "//notes": [
+      "this pouch is 'tall', and thus able to reliably hold extended-capacity box magazines"
+    ],
+
     "name": {
-      "str": "Condor AR-15 magazine pouch",
-      "str_pl": "Condor AR-15 magazine pouches"
+      "str": "Condor STANAG magazine pouch",
+      "str_pl": "Condor STANAG magazine pouches"
     },
-    "description": "A nylon pouch fit for a single AR-15 magazine.  When stored, standard-length magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.",
+    "description": "A nylon pouch fit for a single STANAG magazine.  When stored, standard-length magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.",
 
     "weight": "87 g",
     "//dimensions": {
@@ -671,6 +670,10 @@
     "volume": "258 ml",
     "longest_side": "152 mm",
 
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ammo_satchel",
+
     "material": ["nylon"],
     "material_thickness": 2,
 
@@ -681,68 +684,38 @@
       {
         "pocket_type": "CONTAINER",
 
+        "//reference": "STANAG magazine capacity (tall)",
+
         "description": "Magazine pouch",
 
         "holster": true,
-        "rigid": true,
 
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "385 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "PALS webbing",
-
-        "//holster": "additional balancing against smaller capacity of the webbing",
-        "holster": true,
-
-        "encumbrance": [0, 2],
-
-        "//molle": {
-          "width": 2,
-          "height": 3,
-          "spaced": true,
-          "width_extra": 0,
-          "height_extra": 0
-        },
-        "max_contains_volume": "465 ml",
-        "max_contains_weight": "2 kg",
-        "max_item_length": "152 mm",
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       }
     ],
 
-    "//flags": [
-      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
-      "replaced BELTED with CANT_WEAR",
-      "added TARDIS: seems to be the only way to manage pockets like these"
-    ],
-    "flags": [
-      "WATER_FRIENDLY",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "CANT_WEAR",
-      "TARDIS"
-    ],
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    },
+
+    "//flags": ["replaced BELTED with CANT_WEAR"],
+    "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
 
     "price": "14 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "ammo_satchel",
+    "id": "pouch_magazine_556_pistol_condor",
     "type": "GENERIC",
     "category": "container",
 
@@ -758,7 +731,7 @@
       "str": "Condor kangaroo pouch",
       "str_pl": "Condor kangaroo pouches"
     },
-    "description": "A nylon pouch fit for a single AR-15 magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.",
+    "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.",
 
     "weight": "120 g",
     "//dimensions": {
@@ -782,43 +755,40 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Rifle magazine pouch",
+        "description": "Magazine pouch",
 
         "holster": true,
-        "rigid": true,
 
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "385 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
-        "moves": 100
+        "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
 
+        "//reference": "medium pistol magazine capacity",
+
         "description": "Pistol magazine pouch",
 
         "holster": true,
-        "rigid": true,
 
-        "//max_contains_volume": [
-          "volume of loaded M1911 mag, rounded up (70 ml)",
-          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
-        ],
-        "max_contains_volume": "70 ml",
         "//max_contains_weight": [
           "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
           "see: technical manual TM 9-1005-211-34",
           "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
           "see: technical manual TM 43-0001-27"
         ],
-        "max_contains_weight": "243 g",
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": [
+          "just larger the 17-round Glock 9×19mm magazine",
+          "might be able to fit in a slightly-larger magazine"
+        ],
+        "max_contains_volume": "85 ml",
         "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
         "min_item_length": "90 mm",
         "//max_item_length": [
@@ -838,24 +808,16 @@
     },
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
-      "replaced BELTED with CANT_WEAR",
-      "added TARDIS: seems to be the only way to manage pockets like these"
+      "replaced PALS_MEDIUM with PALS_SMALL (aligns with other single-rifle-magazine pouches)",
+      "replaced BELTED with CANT_WEAR"
     ],
-    "flags": [
-      "WATER_FRIENDLY",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "CANT_WEAR",
-      "TARDIS"
-    ],
+    "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
 
     "price": "17 USD",
     "price_postapoc": "1 USD"
   },
-
   {
-    "id": "tactical_shotshell_pouch",
+    "id": "pouch_shot_condor",
     "type": "GENERIC",
     "category": "container",
 
@@ -915,6 +877,7 @@
 
         "description": "Hook-and-loop surface",
 
+        "max_contains_weight": "200 g",
         "//dimensions": {
           "length": "5 mm",
           "width": "6.5 in",
@@ -926,29 +889,24 @@
           ]
         },
         "max_contains_volume": "42 ml",
-        "max_contains_weight": "200 g",
 
         "flag_restriction": ["VELCRO_ATTACH"]
       }
     ],
 
-    "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
-      "replaced BELTED and OVERSIZE with CANT_WEAR"
-    ],
-    "flags": ["WATER_FRIENDLY", "MOLLE_ATTACH", "BELT_GEAR", "CANT_WEAR"],
+    "//flags": ["replaced BELTED and OVERSIZE with CANT_WEAR"],
+    "flags": ["WATER_FRIENDLY", "PALS_MEDIUM", "CANT_WEAR"],
 
     "price": "15 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "tactical_grenade_pouch",
+    "id": "pouch_grenade_haley",
     "type": "GENERIC",
     "category": "container",
 
     "//sources": [
-      "https://haleystrategic.com/belts/frag-pouch",
+      "https://haleystrategic.com/frag-pouch",
       [
         "https://platatac.com/blue-force-gear-hw-frag-grenade-pouch.html",
         "weight"
@@ -957,10 +915,10 @@
     ],
 
     "name": {
-      "str": "Haley Strategic hand grenade pouch",
-      "str_pl": "Haley Strategic hand grenade pouches"
+      "str": "Haley Strategic grenade pouch",
+      "str_pl": "Haley Strategic grenade pouches"
     },
-    "description": "A small nylon pouch, intended for storing a single small hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.",
+    "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.",
 
     "//weight": [
       "using weight of a similar product made roughly to the same blueprint",
@@ -970,16 +928,16 @@
     "//dimensions": {
       "length": "3 in",
       "width": "3 in",
-      "height": "4 in",
-      "raw": "590 ml",
+      "height": "3 mm",
+      "raw": "17.42 ml",
       "trim": 0.1,
       "notes": [
         "trim assumes the pouch is measured at farthest edges when filled",
         "i.e., the inner pouch already has apple shape"
       ]
     },
-    "volume": "531 ml",
-    "longest_side": "102 mm",
+    "volume": "16 ml",
+    "longest_side": "76 mm",
 
     "symbol": "[",
     "color": "dark_gray",
@@ -994,7 +952,6 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
         "max_contains_weight": "440 g",
@@ -1008,17 +965,16 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with MOLLE_ATTACH and BELT_GEAR",
+      "replaced PALS_MEDIUM with PALS_SMALL",
       "replaced BELTED and OVERSIZE with CANT_WEAR"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "40 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "radio_pouch",
+    "id": "pouch_radio_tasm",
     "type": "GENERIC",
     "category": "container",
 
@@ -1058,6 +1014,8 @@
 
         "holster": true,
 
+        "//max_contains_weight": "weight of Motorola SRX 2200 radio (10.9 oz) + brown battery (6.5 oz)",
+        "max_contains_weight": "493 g",
         "//min_item_volume": "to prevent storing smaller items that may fall through the open corners of the pouch",
         "min_item_volume": "200 ml",
         "//max_contains_volume": [
@@ -1073,8 +1031,6 @@
           }
         ],
         "max_contains_volume": "389 ml",
-        "//max_contains_weight": "weight of Motorola SRX 2200 radio (10.9 oz) + brown battery (6.5 oz)",
-        "max_contains_weight": "493 g",
         "//max_item_length": "length of Motorola SRX 2200 (without antenna?)",
         "max_item_length": "139 mm",
 
@@ -1088,24 +1044,20 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
-      "added WATER_FRIENDLY",
-      "doesn't appear to be easily-usable while strapped to a regular belt, so no BELT_GEAR"
+      "added WATER_FRIENDLY"
     ],
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
+      "PALS_SMALL",
       "ALLOWS_NATURAL_ATTACKS"
     ],
 
     "price": "18 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "gadget_pouch",
+    "id": "pouch_gadget_condor",
     "type": "GENERIC",
     "category": "container",
 
@@ -1149,10 +1101,9 @@
         "description": "Front pocket",
 
         "holster": true,
-        "rigid": true,
 
-        "//min_item_volume": "to prevent storing smaller items that may fall through the open corners of the pouch",
-        "min_item_volume": "175 ml",
+        "//max_contains_weight": "roughly the weight of an iPhone 13 (6.14 oz) + 50 g, rounded to the nearest 25",
+        "max_contains_weight": "225 g",
         "//max_contains_volume": [
           "from assumed dimensions of the front pocket",
           {
@@ -1164,19 +1115,35 @@
           }
         ],
         "max_contains_volume": "307 ml",
-        "//max_contains_weight": "roughly the weight of an iPhone 13 (6.14 oz) + 50 g, rounded to the nearest 25",
-        "max_contains_weight": "225 g",
         "max_item_length": "95 mm",
 
         "moves": 95
       },
+      {
+        "pocket_type": "CONTAINER",
 
+        "description": "Flap pocket",
+
+        "max_contains_weight": "100 g",
+        "//max_contains_volume": [
+          "from visual dimensions of the flap pocket",
+          {
+            "length": "6 mm",
+            "width": "3 in",
+            "height": "3.5 in",
+            "raw": "40.65 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "41 ml",
+        "max_item_length": "90 mm",
+
+        "moves": 130
+      },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Back pocket",
-
-        "rigid": true,
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
@@ -1201,8 +1168,6 @@
 
         "description": "Back pocket thin pouch",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1224,8 +1189,6 @@
 
         "description": "Back pocket thin pouch",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1250,23 +1213,15 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY"
     ],
-    "flags": [
-      "CANT_WEAR",
-      "WATER_FRIENDLY",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "ALLOWS_NATURAL_ATTACKS"
-    ],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
 
     "price": "19 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "flashlight_pouch",
+    "id": "pouch_flashlight_511",
     "type": "GENERIC",
     "category": "container",
 
@@ -1280,13 +1235,13 @@
 
     "weight": "70 g",
     "//dimensions": {
-      "length": "1.25 in",
+      "length": "3.5 mm",
       "width": "1.5 in",
       "height": "6 in",
-      "raw": "184 ml",
+      "raw": "20.32 ml",
       "trim": 0.075
     },
-    "volume": "170 ml",
+    "volume": "19 ml",
     "longest_side": "152 mm",
 
     "symbol": "[",
@@ -1302,18 +1257,25 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
+        "max_contains_weight": "200 g",
         "//min_item_volume": [
           "to prevent storing smaller items that would be hard to reach",
           "half the volume of the pouch, minus another 5 ml to allow slightly-smaller items"
         ],
         "min_item_volume": "80 ml",
-        "//max_contains_volume": ["95% of total volume"],
-        "max_contains_volume": "162 ml",
-        "max_contains_weight": "200 g",
-        "//max_item_length": "5.75 in",
-        "max_item_length": "165 mm",
+        "//max_contains_volume": [
+          {
+            "length": "1.25 in",
+            "width": "1.5 in",
+            "height": "6 in",
+            "raw": "184.36 ml",
+            "trim": 0.05
+          }
+        ],
+        "max_contains_volume": "175 ml",
+        "//max_item_length": "6 in",
+        "max_item_length": "152 mm",
 
         "moves": 120
       }
@@ -1325,23 +1287,15 @@
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH and BELT_GEAR",
       "added WATER_FRIENDLY"
     ],
-    "flags": [
-      "CANT_WEAR",
-      "WATER_FRIENDLY",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "ALLOWS_NATURAL_ATTACKS"
-    ],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
 
     "price": "22 USD",
     "//price_postapoc": "1 USD"
   },
-
   {
-    "id": "triple_stacker_pouch",
+    "id": "pouch_triple_stacker_condor",
     "type": "GENERIC",
     "category": "container",
 
@@ -1357,7 +1311,7 @@
       "str": "Condor Triple Stacker pouch",
       "str_pl": "Condor Triple Stacker pouches"
     },
-    "description": "A set of sewn-together AR-15 magazine pouches, in two rows of 3.  The front row is noticably shorter while allowing the same size of magazines in, thus being slightly quicker to use.  They each also feature small PALS webbing, though because the pouches are completely attached to one another at the front, the webbings can't be used as one long MOLLE panel.",
+    "description": "A set of sewn-together STANAG magazine pouches, in two rows of 3.  The front row is noticably shorter while allowing the same size of magazines in, thus being slightly quicker to use.  They each also feature small PALS webbing, though because the pouches are completely attached to one another at the front, the webbings can't be used as one long MOLLE panel.",
 
     "weight": "255 g",
     "//dimensions": {
@@ -1385,19 +1339,15 @@
         "description": "Inner magazine pouch",
 
         "holster": true,
-        "rigid": true,
 
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "385 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
-        "moves": 110
+        "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
@@ -1405,19 +1355,15 @@
         "description": "Inner magazine pouch",
 
         "holster": true,
-        "rigid": true,
 
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "385 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
-        "moves": 110
+        "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
@@ -1425,77 +1371,13 @@
         "description": "Inner magazine pouch",
 
         "holster": true,
-        "rigid": true,
 
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "152 mm",
-        "max_item_length": "192 mm",
-
-        "moves": 110
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Outer magazine pouch",
-
-        "holster": true,
-        "rigid": true,
-
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "95 mm",
-        "max_item_length": "192 mm",
-
-        "moves": 100
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Outer magazine pouch",
-
-        "holster": true,
-        "rigid": true,
-
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "95 mm",
-        "max_item_length": "192 mm",
-
-        "moves": 100
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Outer magazine pouch",
-
-        "holster": true,
-        "rigid": true,
-
-        "//max_contains_volume": "AR-15 30-round magazine volume (+1 ml)",
-        "max_contains_volume": "350 ml",
-        "//max_contains_weight": [
-          "based off of current 30-round STANAG magazine loaded with subsonic (heavier) .300 BLK",
-          "+50 g as futureproofing"
-        ],
-        "max_contains_weight": "800 g",
-        "min_item_length": "95 mm",
-        "max_item_length": "192 mm",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "385 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 100
       },
@@ -1503,87 +1385,72 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Outer pouch PALS webbing",
+        "description": "Outer magazine pouch",
 
-        "//volume_encumber_modifier": 1.25,
+        "holster": true,
 
-        "//molle": {
-          "width": 2,
-          "height": 2,
-          "spaced": true,
-          "width_extra": 0,
-          "height_extra": 0
-        },
-        "max_contains_volume": "310 ml",
         "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate",
+        "max_contains_volume": "305 ml",
+        "//min_item_length": "length of STANAG 10-round magazine",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
 
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Outer pouch PALS webbing",
+        "description": "Outer magazine pouch",
 
-        "//volume_encumber_modifier": 1.25,
+        "holster": true,
 
-        "//molle": {
-          "width": 2,
-          "height": 2,
-          "spaced": true,
-          "width_extra": 0,
-          "height_extra": 0
-        },
-        "max_contains_volume": "310 ml",
         "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate",
+        "max_contains_volume": "305 ml",
+        "//min_item_length": "length of STANAG 10-round magazine",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
 
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Outer pouch PALS webbing",
+        "description": "Outer magazine pouch",
 
-        "//volume_encumber_modifier": 1.25,
+        "holster": true,
 
-        "//molle": {
-          "width": 2,
-          "height": 2,
-          "spaced": true,
-          "width_extra": 0,
-          "height_extra": 0
-        },
-        "max_contains_volume": "310 ml",
         "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate",
+        "max_contains_volume": "305 ml",
+        "//min_item_length": "length of STANAG 10-round magazine",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
 
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "moves": 90
       }
     ],
 
     "use_action": {
-      "type": "holster"
+      "type": "holster",
+
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
     },
 
     "//flags": [
       "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with MOLLE_ATTACH",
-      "added WATER_FRIENDLY",
-      "added TARDIS: seems to be the only way to manage pockets like these",
-      "appears too large for a belt, so no BELT_GEAR"
+      "replaced PALS_SMALL with PALS_LARGE: takes up three slots",
+      "added WATER_FRIENDLY"
     ],
-    "flags": [
-      "CANT_WEAR",
-      "WATER_FRIENDLY",
-      "MOLLE_ATTACH",
-      "ALLOWS_NATURAL_ATTACKS",
-      "TARDIS"
-    ],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_LARGE"],
 
     "price": "37 USD",
     "//price_postapoc": "2 USD"
   },
-
   {
-    "id": "deployment_bag",
+    "id": "bag_deployment_condor",
     "type": "GENERIC",
     "category": "container",
 
@@ -1644,8 +1511,6 @@
 
         "description": "Front pocket",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from eyeballed dimensions of the front pocket",
           {
@@ -1667,8 +1532,6 @@
 
         "description": "Front pocket thin pouch",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1690,8 +1553,6 @@
 
         "description": "Front pocket thin pouch",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
           {
@@ -1714,8 +1575,6 @@
 
         "description": "Side pocket",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
           {
@@ -1736,8 +1595,6 @@
         "pocket_type": "CONTAINER",
 
         "description": "Side pocket",
-
-        "rigid": true,
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
@@ -1761,8 +1618,6 @@
 
         "description": "Main pocket",
 
-        "rigid": true,
-
         "//max_contains_volume": [
           "from eyeballed dimensions of the front pocket",
           {
@@ -1782,21 +1637,14 @@
       }
     ],
 
-    "use_action": {
-      "type": "holster"
-    },
-
-    "//flags": [
-      "replaced PALS_LARGE with MOLLE_ATTACH",
-      "appears too large for a belt, so no BELT_GEAR"
-    ],
-    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "MOLLE_ATTACH"],
+    "//flags": ["replaced PALS_LARGE with MOLLE_ATTACH"],
+    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "PALS_LARGE"],
 
     "price": "29 USD",
     "//price_postapoc": "3 USD"
   },
   {
-    "id": "grenadebandolier",
+    "id": "pouch_grenade_double_condor",
     "type": "ARMOR",
 
     "//sources": [
@@ -1812,21 +1660,21 @@
     ],
 
     "name": {
-      "str": "Condor double hand grenade pouch",
-      "str_pl": "Condor double hand grenade pouches"
+      "str": "Condor double grenade pouch",
+      "str_pl": "Condor double grenade pouches"
     },
-    "description": "A pair of small nylon bags sewn together, each designed to hold a single small hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.",
+    "description": "A pair of small nylon bags sewn together, each designed to hold a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.",
 
     "weight": "148 g",
     "//dimensions": {
-      "length": "2.5 in",
+      "length": "4 mm",
       "width": "7 in",
       "height": "4 in",
-      "raw": "1147 ml",
+      "raw": "72.26 ml",
       "trim": 0.075
     },
-    "volume": "1061 ml",
-    "longest_side": "178 mm",
+    "volume": "67 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
     "material_thickness": 1,
@@ -1840,7 +1688,6 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
         "max_contains_weight": "440 g",
@@ -1855,7 +1702,6 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
         "max_contains_weight": "440 g",
@@ -1870,12 +1716,13 @@
 
     "use_action": {
       "type": "holster",
+
       "holster_prompt": "Stash grenades",
       "holster_msg": "You stash your %s."
     },
 
-    "//flags": ["replaced BELTED with CANT_WEAR, MOLLE_ATTACH, and BELT_GEAR"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "//flags": ["replaced BELTED with CANT_WEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
 
     "price": "16 USD",
     "price_postapoc": "25 cent"
@@ -1939,22 +1786,20 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR_LARGE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "14 USD",
     "price_postapoc": "50 cent"
   },
   {
-    "id": "pouch_magazine_pistol_haley_strategic",
+    "id": "pouch_magazine_pistol_haley",
     "type": "GENERIC",
     "category": "container",
 
-    "//sources": [
-      "https://haleystrategic.com/single-pistol-mag-pouch",
-      [
-        "https://www.tyrantcnc.com/glock-17-19x-22-34-45-magazine-extension-pre-assembled.html",
-        "maximum length of the magazine"
-      ]
+    "//sources": ["https://haleystrategic.com/single-pistol-mag-pouch"],
+
+    "//notes": [
+      "the pouch is shown to be able to comfortably hold a 30-round MP5 magazine, but anything longer would likely sway too much to sit comfortably"
     ],
 
     "name": {
@@ -1987,35 +1832,27 @@
       {
         "pocket_type": "CONTAINER",
 
-        "rigid": true,
-
-        "max_contains_weight": "500 g",
-        "//max_contains_volume": [
-          "from dimensions of an extended Glock 17 magazine",
-          {
-            "length": "146.05 mm",
-            "width": "28.5 mm",
-            "height": "38 mm",
-            "raw": "158.17 ml",
-            "trim": 0,
-            "notes": [
-              "we use zero trim here in order to enable storing slightly-larger magazines",
-              "normally, trim would be 0.275"
-            ]
-          }
+        "//reference": [
+          "large pistol magazine capacity",
+          "standard SMG magazine capacity"
         ],
-        "max_contains_volume": "158 ml",
-        "max_item_length": "146 mm"
+
+        "holster": true,
+
+        "//max_contains_weight": "large-enough to accomodate a full SMG magazine",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": ["just larger the 30-round MP5 magazine"],
+        "max_contains_volume": "155 ml",
+        "//min_item_length": "roughly half the length of the pouch",
+        "min_item_length": "57 mm",
+        "//max_item_length": "Glock 33-round magazine",
+        "max_item_length": "211 mm",
+
+        "moves": 130
       }
     ],
 
-    "flags": [
-      "WATER_FRIENDLY",
-      "CANT_WEAR",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "TARDIS"
-    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "35 USD",
     "price_postapoc": "20 cent"
@@ -2062,7 +1899,7 @@
 
         "rigid": true,
 
-        "//max_contains_weight": ["268 g + spare weight"],
+        "//max_contains_weight": "268 g + spare weight",
         "max_contains_weight": "350 g",
         "//max_contains_volume": [
           "from dimensions of a pair of NIJ-compliant handcuffs",
@@ -2070,11 +1907,7 @@
             "length": "6 mm",
             "diameter": "9 in",
             "raw": "246.25 ml",
-            "trim": 0,
-            "notes": [
-              "we use zero trim here in order to enable storing slightly-larger magazines",
-              "normally, trim would be 0.1"
-            ]
+            "trim": 0
           }
         ],
         "max_contains_volume": "250 ml",
@@ -2082,13 +1915,13 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "26 USD",
     "price_postapoc": "15 cent"
   },
   {
-    "id": "pouch_magazine_pistol_molle_ii",
+    "id": "pouch_magazine_pistol_molle_ii_m9",
     "type": "GENERIC",
     "category": "container",
 
@@ -2096,25 +1929,26 @@
       "https://www.armyandoutdoors.com/products/usgi-molle-ii-9mm-mag-pouch"
     ],
 
+    "//notes": [
+      "this pouch is restrictive in volume and length because of the flap"
+    ],
+
     "name": {
-      "str": "MOLLE II pistol mag pouch",
-      "str_pl": "MOLLE II pistol mag pouches"
+      "str": "MOLLE II pistol mag pouch (M9)",
+      "str_pl": "MOLLE II pistol mag pouches (M9)"
     },
-    "description": "A thin nylon pouch with a snap button.  Can store a single pistol magazine, though only intended for the M17 standard-issue magazines.",
+    "description": "An older, faded nylon pouch with a snap button.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.",
 
     "weight": "42 g",
     "//dimensions": {
       "length": "12 cm",
       "width": "4.5 cm",
-      "height": "3 cm",
-      "raw": "162 ml",
-      "trim": 0.1,
-      "notes": [
-        "negative trim is to account for the extra parts (the cord etc.)"
-      ]
+      "height": "4 mm",
+      "raw": "21.6 ml",
+      "trim": 0.15
     },
-    "volume": "146 ml",
-    "longest_side": "12 cm",
+    "volume": "18 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "symbol": "[",
     "color": "brown",
@@ -2126,31 +1960,70 @@
       {
         "pocket_type": "CONTAINER",
 
-        "rigid": true,
-
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": [
-          "from dimensions of a 21-round M17 magazine",
-          {
-            "length": "141 mm",
-            "width": "0.875 in",
-            "height": "1.275 in",
-            "raw": "101.49 ml",
-            "trim": -0.035,
-            "notes": [
-              "other dimensions are slightly-approximate due to the nature of the measuring device",
-              "trim accounts for the base plate, which is wider and longer than the magazine itself"
-            ]
-          }
-        ],
+        "max_contains_weight": "350 g",
+        "//max_contains_volume": "volume of a 21-round M17 magazine",
         "max_contains_volume": "105 ml",
         "max_item_length": "141 mm"
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "6 USD",
+    "price_postapoc": "10 cent"
+  },
+  {
+    "id": "pouch_magazine_pistol_molle_ii_m17",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://www.ebay.com/itm/225488713443"],
+
+    "//notes": [
+      "this pouch is slightly-less-restrictive in volume and length because of the Velcro flap, but is still restricted to medium-capacity pistol magazines"
+    ],
+
+    "name": {
+      "str": "MOLLE II pistol mag pouch",
+      "str_pl": "MOLLE II pistol mag pouches"
+    },
+    "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.",
+
+    "//weight": "1 oz",
+    "weight": "28 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "1.4 in",
+      "height": "2 mm",
+      "raw": "16.26 ml",
+      "trim": 0.01,
+      "notes": [
+        "even though the pouch appears to be rigid, we model it as being able to fold depth-wise, for storage purposes"
+      ]
+    },
+    "volume": "16 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "brown",
+
+    "material": ["nylon"],
+    "material_thickness": 0.3,
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "max_contains_weight": "350 g",
+        "//max_contains_volume": "volume of a 21-round M17 magazine",
+        "max_contains_volume": "105 ml",
+        "max_item_length": "141 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "price": "12 USD",
     "price_postapoc": "10 cent"
   },
   {
@@ -2197,15 +2070,15 @@
 
         "rigid": true,
 
+        "max_contains_weight": "3 kg",
         "//max_contains_volume": "volume × 95%",
         "max_contains_volume": "1087 ml",
-        "max_contains_weight": "3 kg",
         "//max_item_length": "full 7 in.",
         "max_item_length": "178 mm"
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
 
     "//price": "for the multicam model",
     "price": "61 USD",
@@ -2238,12 +2111,12 @@
     "//dimensions": {
       "length": "5.5 in",
       "width": "2.5 in",
-      "height": "2 in",
-      "raw": "450.64 ml",
-      "trim": 0
+      "height": "2.5 mm",
+      "raw": "22.18 ml",
+      "trim": 0.0125
     },
-    "volume": "451 ml",
-    "longest_side": "178 mm",
+    "volume": "22 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
     "material_thickness": 0.3,
@@ -2257,7 +2130,6 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "//max_contains_weight": "weight of M18 smoke grenade (539 g), rounded to the nearest 50/100 g",
         "max_contains_weight": "550 g",
@@ -2280,11 +2152,12 @@
 
     "use_action": {
       "type": "holster",
+
       "holster_prompt": "Stash grenade",
       "holster_msg": "You stash your %s."
     },
 
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "MOLLE_ATTACH", "BELT_GEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "//price": "for the multicam model",
     "price": "33 USD",
@@ -2306,16 +2179,13 @@
 
     "weight": "37 g",
     "//dimensions": {
-      "length": "33 mm",
+      "length": "1 mm",
       "width": "3.8 cm",
       "height": "11.9 cm",
-      "raw": "149.23 ml",
-      "trim": 0,
-      "notes": [
-        "length (depth) is width of an MP5 30-round magazine (32 mm) + 0.5 mm × 2 sides of the pouch"
-      ]
+      "raw": "4.52 ml",
+      "trim": 0.01
     },
-    "volume": "149 ml",
+    "volume": "5 ml",
     "longest_side": "119 mm",
 
     "material": ["nylon"],
@@ -2330,12 +2200,13 @@
         "pocket_type": "CONTAINER",
 
         "holster": true,
-        "rigid": true,
 
         "max_contains_weight": "2 kg",
-        "max_contains_volume": "350 ml",
-        "min_item_length": "15 cm",
-        "max_item_length": "25 cm",
+        "//max_contains_volume": "just above the volume of MP5 40-round magazine",
+        "max_contains_volume": "240 ml",
+        "min_item_length": "75 mm",
+        "//max_item_length": "length of Uzi 50-round magazine",
+        "max_item_length": "302 mm",
 
         "moves": 90
       }
@@ -2343,17 +2214,12 @@
 
     "use_action": {
       "type": "holster",
+
       "holster_prompt": "Stash magazine",
       "holster_msg": "You stash your %s."
     },
 
-    "flags": [
-      "WATER_FRIENDLY",
-      "CANT_WEAR",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "TARDIS"
-    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "//price": "for the black model",
     "price": "20 USD",
@@ -2368,24 +2234,24 @@
     ],
 
     "name": {
-      "str": "Tactical Tailor .308 magazine pouch",
-      "str_pl": "Tactical Tailor .308 magazine pouches"
+      "str": "Tactical Tailor 7.62mm magazine pouch",
+      "str_pl": "Tactical Tailor 7.62mm magazine pouches"
     },
-    "description": "A nylon pouch for storing a single magazine in .308 caliber.  Fits magazines up to 20 rounds in capacity.",
+    "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.",
 
     "weight": "37 g",
     "//dimensions": {
       "length": "4 in",
       "width": "4 in",
-      "height": "1 in",
-      "raw": "262.19 ml",
-      "trim": -0.01
+      "height": "1 mm",
+      "raw": "10.32 ml",
+      "trim": -0.02
     },
-    "volume": "265 ml",
-    "longest_side": "102 mm",
+    "volume": "11 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
-    "material_thickness": 0.25,
+    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
@@ -2395,75 +2261,270 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
-
         "holster": true,
-        "rigid": true,
 
         "max_contains_weight": "2 kg",
-        "//max_contains_volume": [
-          "from dimensions of the M1A 20-round magazine (audited in Core)",
-          {
-            "length": "6.1 in",
-            "width": "1.012 in",
-            "height": "3.1 in",
-            "raw": "313.6 ml",
-            "trim": 0.01,
-            "result": "310.464 ml",
-            "notes": [
-              "dimensions are slightly-approximate due to the nature of the measuring device",
-              "trim accounts for the base plate, which is wider and longer than the magazine itself"
-            ]
-          }
-        ],
-        "max_contains_volume": "315 ml",
+        "//max_contains_volume": ["volume of FAL 30-round magazine"],
+        "max_contains_volume": "420 ml",
         "//min_item_length": "3 in.",
         "min_item_length": "76 mm",
-        "//max_item_length": "6.25 in., slightly longer than the M1A 20-round magazine",
-        "max_item_length": "159 mm",
+        "//max_item_length": "length of FAL 30-round magazine",
+        "max_item_length": "21 cm",
 
         "moves": 90
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "PALS webbing",
-
-        "//holster": "additional balancing against smaller capacity of the webbing",
-        "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "//molle": {
-          "width": 2,
-          "height": 2
-        },
-        "max_contains_volume": "310 ml",
-        "//max_item_length": "4 in., height of pouch",
-        "max_item_length": "102 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
       }
     ],
 
     "use_action": {
       "type": "holster",
+
       "holster_prompt": "Stash magazine",
       "holster_msg": "You stash your %s."
     },
 
-    "flags": [
-      "WATER_FRIENDLY",
-      "CANT_WEAR",
-      "MOLLE_ATTACH",
-      "BELT_GEAR",
-      "TARDIS"
-    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "//price": "for the multicam model",
     "price": "26 USD",
     "price_postapoc": "25 cent"
+  },
+  {
+    "id": "pouch_leg_magazine_556_t3",
+    "type": "ARMOR",
+
+    "//sources": ["https://www.t3gear.com/t3-drop-leg-m4-double-mag-pouch/"],
+
+    "name": {
+      "str": "T3 STANAG magazine leg pouch",
+      "str_pl": "T3 STANAG magazine leg pouches"
+    },
+    "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines.",
+
+    "//weight": "9.44 oz",
+    "weight": "267620 mg",
+    "//dimensions": {
+      "length": "8 in",
+      "width": "6.5 in",
+      "height": "3 mm",
+      "raw": "100.65 ml",
+      "trim": -0.05,
+      "notes": ["negative trim to account for straps and buckles"]
+    },
+    "volume": "106 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
+
+    "material": ["nylon"],
+    "material_thickness": 0.5,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "legrig",
+    "repairs_like": "legrig",
+
+    "encumbrance": 5,
+    "max_encumbrance": 8,
+
+    "sided": true,
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 13,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Double magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate × 2",
+        "max_contains_volume": "610 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Double magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate × 2",
+        "max_contains_volume": "610 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "75 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_leg_drop_tacmed",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://tacmedsolutions.com/products/tacmed-drop-leg-pouch",
+      [
+        "https://www.rescue-essentials.com/tac-med-solutions-drop-leg-pouch-black/",
+        "weight",
+        "price"
+      ]
+    ],
+
+    "//notes": [
+      "currently modelled as a single large pouch, irrespective of the pocket division"
+    ],
+
+    "name": {
+      "str": "TacMed drop leg pouch",
+      "str_pl": "TacMed drop leg pouches"
+    },
+    "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for miscellanea and extra storage.",
+
+    "//weight": "14.3 oz",
+    "weight": "405400 mg",
+    "//dimensions": {
+      "length": "9.5 in",
+      "width": "9 in",
+      "height": "2 in",
+      "raw": "2802.19 ml",
+      "trim": 0.05
+    },
+    "volume": "2662 ml",
+    "longest_side": "241 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.5,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "legrig",
+    "repairs_like": "legrig",
+
+    "encumbrance": 5,
+    "max_encumbrance": 10,
+
+    "sided": true,
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 15,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "max_contains_weight": "5 kg",
+        "//max_contains_volume": "95% of the volume",
+        "max_contains_volume": "2529 ml",
+        "//max_item_length": "9 in.",
+        "max_item_length": "229 mm",
+
+        "moves": 210
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "PALS_MEDIUM"],
+
+    "price": "70 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_leg_drop_fox",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://foxoutdoor.com/products/tactical-drop-leg-dump-pouch"
+    ],
+
+    "//notes": [
+      "description says it can also be worn on the shoulder with a removable strap"
+    ],
+
+    "//TODO": ["Velcro patch surface"],
+
+    "name": {
+      "str": "Fox Outdoor drop leg pouch",
+      "str_pl": "Fox Outdoor drop leg pouches"
+    },
+    "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.",
+
+    "//weight": "1 lb",
+    "weight": "453590 mg",
+    "//dimensions": {
+      "length": "10 in",
+      "width": "8.5 in",
+      "height": "5 in",
+      "raw": "6964.5 ml",
+      "trim": 0.05
+    },
+    "volume": "6616 ml",
+    "longest_side": "241 mm",
+
+    "material": ["nylon"],
+    "material_thickness": 0.5,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "legrig",
+    "repairs_like": "legrig",
+
+    "encumbrance": 8,
+    "max_encumbrance": 20,
+
+    "sided": true,
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 17,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "max_contains_weight": "10 kg",
+        "//max_contains_volume": "95% of the volume",
+        "max_contains_volume": "6285 ml",
+        "//max_item_length": "9.5 in.",
+        "max_item_length": "241 mm",
+
+        "moves": 210
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "48 USD",
+    "price_postapoc": "1 USD"
   }
 ]

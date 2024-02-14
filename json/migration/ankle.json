@@ -1,0 +1,7 @@
+[
+  {
+    "id": ["legpouch"],
+    "type": "MIGRATION",
+    "replace": "ankle_magazine_double_desantis"
+  }
+]

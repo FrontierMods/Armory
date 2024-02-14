@@ -1,0 +1,105 @@
+[
+  {
+    "id": "ankle_magazine_double_desantis",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.desantisholster.com/neoprene-ankle-double-magazine/",
+      [
+        "https://www.amazon.com/Desantis-Double-Ankle-Magazine-Pouch/dp/B0048KMHVS",
+        "weight"
+      ],
+      [
+        "https://www.gunholster.in/product/gunally-concealed-ankle-leg-holster-magazine-pouch-bag-leg-invisible-cloth-cover-tactics-leg-holster/",
+        "dimensions reference"
+      ]
+    ],
+
+    "name": {
+      "str": "DeSantis ankle mag pouch",
+      "str_pl": "DeSantis ankle mag pouches"
+    },
+    "description": "A strip of neoprene with pockets for two medium-sized pistol magazines.  Overall, a compact arrangement for concealed carry of extra magazines, but not entirely comfortable.",
+
+    "//weight": "4.7 oz",
+    "weight": "133 g",
+    "//dimensions": {
+      "length": "15.4 in",
+      "width": "6.15 in",
+      "height": "1 mm",
+      "raw": "61.1 ml",
+      "trim": 0
+    },
+    "volume": "61 ml",
+
+    "material": ["neoprene"],
+    "material_thickness": 1,
+    "warmth": 10,
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ragpouch",
+
+    "sided": true,
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "neoprene",
+            "thickness": 2,
+            "covered_by_mat": 100
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "coverage": 25,
+        "covers": ["foot_l", "foot_r"],
+        "specifically_covers": ["foot_ankle_l", "foot_ankle_r"],
+
+        "layers": ["BELTED"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "600 g",
+        "//max_contains_volume": "volume of M17 17-round magazine",
+        "max_contains_volume": "89 ml",
+        "//max_item_length": "length of M17 17-round magazine",
+        "max_item_length": "141 mm",
+
+        "moves": 240
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "600 g",
+        "//max_contains_volume": "volume of M17 17-round magazine",
+        "max_contains_volume": "89 ml",
+        "//max_item_length": "length of M17 17-round magazine",
+        "max_item_length": "141 mm",
+
+        "moves": 240
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "58 USD",
+    "price_postapoc": "750 cent"
+  }
+]

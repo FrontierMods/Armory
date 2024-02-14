@@ -206,5 +206,55 @@
         "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
       }
     ]
+  },
+  {
+    "id": "stone_pouch",
+    "copy-from": "stone_pouch",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "stone pouch",
+      "str_pl": "stone pouches"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item with no equivalent in real life",
+      "thus, we assume that it shouldn't be MOLLE-compatible",
+      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
+  },
+  {
+    "id": "leather_stone_pouch",
+    "copy-from": "leather_stone_pouch",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "leather stone pouch",
+      "str_pl": "leather stone pouches"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item with no equivalent in real life",
+      "thus, we assume that it shouldn't be MOLLE-compatible",
+      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
+  },
+  {
+    "id": "flintlock_pouch",
+    "copy-from": "flintlock_pouch",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "paper cartridge pouch",
+      "str_pl": "paper cartridge pouches"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item that was never intended to be MOLLE-compatible, if any of the reference images online are anything to go by",
+      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
   }
 ]
