@@ -33,5 +33,80 @@
     "id": ["grenade_pouch"],
     "type": "MIGRATION",
     "replace": "pouch_40mm_haley"
+  },
+  {
+    "id": ["chestpouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_magazine_556_condor"
+  },
+  {
+    "id": ["ammo_satchel"],
+    "type": "MIGRATION",
+    "replace": "pouch_magazine_556_pistol_condor"
+  },
+  {
+    "id": ["tactical_shotshell_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_shot_condor"
+  },
+  {
+    "id": ["tactical_grenade_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_grenade_haley"
+  },
+  {
+    "id": ["radio_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_radio_tasm"
+  },
+  {
+    "id": ["gadget_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_gadget_condor"
+  },
+  {
+    "id": ["flashlight_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_flashlight_511"
+  },
+  {
+    "id": ["triple_stacker_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_triple_stacker_condor"
+  },
+  {
+    "id": ["deployment_bag"],
+    "type": "MIGRATION",
+    "replace": "bag_deployment_condor"
+  },
+  {
+    "id": ["grenadebandolier"],
+    "type": "MIGRATION",
+    "replace": "pouch_grenade_double_condor"
+  },
+  {
+    "id": ["grenadebandolier"],
+    "type": "MIGRATION",
+    "replace": "pouch_grenade_double_condor"
+  },
+  {
+    "id": ["h2o_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_water_bottle_gonex"
+  },
+  {
+    "id": ["h2o_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_water_bottle_gonex"
+  },
+  {
+    "id": ["legpouch_large"],
+    "type": "MIGRATION",
+    "replace": "pouch_leg_magazine_556_t3"
+  },
+  {
+    "id": ["legrig"],
+    "type": "MIGRATION",
+    "replace": "pouch_leg_drop_fox"
   }
 ]
