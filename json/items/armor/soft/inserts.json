@@ -1,0 +1,96 @@
+[
+  {
+    "id": "stab_insert_highcom_spk2",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.highcomarmor.com/product/spk2/"],
+
+    "//notes": [
+      "the original stab plate was presumably based on SPK3 (or a plate with a similar degree of stab protection)",
+      "we base this one on a smaller, cheaper, and possibly more-common model",
+      "specifically, the Torso option sized in 9.5″×12.5″: a SAPI-cut panel that would fit into most plate carrier"
+    ],
+
+    "name": {
+      "str": "HighCom Trooper SPK2 medium stab plate"
+    },
+    "description": "A soft panel shaped like a SAPI-cut ballistic plate, with several layers of Kevlar wrapped in nylon.  This plate is designed to fit into plate carriers, where it stands as protection against stabbing attacks.  While not certified for bullet resistance, it provides some protection against lower-caliber pistol rounds by virtue of being made mostly out of Kevlar.",
+
+    "//weight": "based on areal density of 2.85 kg/m2",
+    "weight": "191 g",
+    "//dimensions": {
+      "length": "12.50 in",
+      "width": "9.50 in",
+      "height": "0.13 in",
+      "raw": "253 ml",
+      "trim": 0.125
+    },
+    "volume": "221 ml",
+    "longest_side": "318 mm",
+
+    "material": ["kevlar", "nylon"],
+    "material_thickness": 3.3,
+
+    "symbol": ",",
+    "color": "dark_gray",
+
+    "//repairs_like": "ballistic_vest_esapi",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "presumed",
+            "thickness": 0.66
+          },
+          {
+            "type": "kevlar",
+            "covered_by_mat": 99,
+            "thickness": 2.64
+          }
+        ],
+
+        "encumbrance": 2,
+
+        "coverage": 42,
+        "cover_melee": 21,
+        "cover_ranged": 42,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "presumed",
+            "thickness": 0.66
+          },
+          {
+            "type": "kevlar",
+            "covered_by_mat": 99,
+            "thickness": 2.64
+          }
+        ],
+
+        "encumbrance": 0,
+
+        "coverage": 10,
+        "cover_melee": 5,
+        "cover_ranged": 10,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_MEDIUM", "CANT_WEAR", "STURDY"],
+
+    "price": "219 USD",
+    "price_postapoc": "1 USD"
+  }
+]
