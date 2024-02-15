@@ -1,7 +1,6 @@
 [
   {
-    "id": "iotv_groin_plate",
-    "copy-from": "iotv_groin_plate",
+    "id": "piece_iotv_groin",
     "type": "ARMOR",
     "category": "armor",
 
@@ -37,6 +36,9 @@
     },
     "volume": "454 ml",
     "longest_side": "324 mm",
+
+    "symbol": ",",
+    "color": "dark_gray",
 
     "material": ["nylon", "kevlar"],
 
@@ -164,8 +166,7 @@
   },
 
   {
-    "id": "iotv_shoulder_plate",
-    "copy-from": "iotv_shoulder_plate",
+    "id": "piece_iotv_shoulder",
     "type": "ARMOR",
     "category": "armor",
 
@@ -202,6 +203,9 @@
     "volume": "102 ml",
     "//longest_side": "height, assuming collapse along the longest side",
     "longest_side": "132 mm",
+
+    "symbol": ",",
+    "color": "dark_gray",
 
     "material": ["nylon", "kevlar"],
 
