@@ -108,5 +108,10 @@
     "id": ["legrig"],
     "type": "MIGRATION",
     "replace": "pouch_leg_drop_fox"
+  },
+  {
+    "id": ["tool_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_tool_wynex"
   }
 ]
