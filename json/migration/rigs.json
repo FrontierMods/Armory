@@ -1,0 +1,48 @@
+[
+  {
+    "id": ["chestrig", "xs_chestrig", "xl_chestrig"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_haley_placard"
+  },
+  {
+    "id": ["light_load_bearing_vest"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_tt_mav_2"
+  },
+  {
+    "id": ["load_bearing_vest"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_tasm_mk_ii"
+  },
+  {
+    "id": ["heavy_load_bearing_vest"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_condor_modular"
+  },
+  {
+    "id": ["load_bearing_vest_sling"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_tasm_mk_ii",
+    "contents": [{ "id": "single_sling", "count": 1 }]
+  },
+  {
+    "id": ["heavy_load_bearing_vest_sling"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_condor_modular",
+    "contents": [{ "id": "single_sling", "count": 1 }]
+  },
+  {
+    "id": ["heavy_load_bearing_vest_breacher"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_condor_modular",
+    "contents": [
+      { "id": "single_sling", "count": 1 },
+      { "id": "pouch_holster_magnet_hot", "count": 1 }
+    ]
+  },
+  {
+    "id": ["tacvest", "xs_tacvest", "xl_tacvest"],
+    "type": "MIGRATION",
+    "replace": "chest_rig_condor_cross_draw"
+  }
+]
