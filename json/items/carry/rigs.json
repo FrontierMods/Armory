@@ -1,6 +1,6 @@
 [
   {
-    "id": "light_load_bearing_vest",
+    "id": "chest_rig_tt_mav_2",
     "type": "ARMOR",
 
     "//sources": [
@@ -22,10 +22,10 @@
     "description": "A compact two-piece PALS webbing rig supported with shoulder straps.  For its size, offers plenty of space for MOLLE pouches, though not as much as a full-sized load-bearing vest.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.",
 
     "//weight": [
-      "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz ≈ 238 g",
+      "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz = 238.14 g",
       "we add 5 g × (4 + 2) = 30 g for the 4 female buckles included with the rig kit (source for weight/dimensions) and the two other QASM (female) ones on the X-harness, as visible on pictures of the rig itself, presuming that their weight is not included"
     ],
-    "weight": "352 g",
+    "weight": "268 g",
     "//dimensions": [
       {
         "description": "Webbing panel",
@@ -139,45 +139,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Panel PALS webbing",
-
-        "max_contains_weight": "12 kg",
-        "//molle": {
-          "width": 8,
-          "height": 3,
-          "width_extra": 1,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2787 ml",
-        "max_item_length": "305 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Panel PALS webbing",
-
-        "max_contains_weight": "12 kg",
-        "//molle": {
-          "width": 8,
-          "height": 3,
-          "width_extra": 1,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2787 ml",
-        "max_item_length": "305 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
         "description": "Side pocket",
 
         "max_contains_weight": "1 kg",
@@ -223,21 +184,28 @@
       }
     ],
 
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": "(8 × 3 webbing) × 2",
+        "size": 12
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
     "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
 
     "//price": "price for the multicam model",
     "price": "128 USD",
-    "//price_postapoc": "10 USD"
+    "price_postapoc": "10 USD"
   },
-
   {
-    "id": "load_bearing_vest",
+    "id": "chest_rig_tasm_mk_ii",
     "type": "ARMOR",
 
-    "//sources": [
-      "https://tasmaniantigerusa.com/product.php?id=25",
-      ["https://thril.com/gear/ar-mag/", "pocket restrictions"]
-    ],
+    "//sources": ["https://tasmaniantigerusa.com/product.php?id=25"],
 
     "//notes": [
       "this item does not allow the bib to be adjusted (tucked in or set up, the latter being the in-game configuration)",
@@ -311,250 +279,130 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front main PALS webbing",
+        "description": "Side pouch",
 
-        "max_contains_weight": "12 kg",
+        "max_contains_weight": "4 kg",
         "//dimensions": {
-          "length": "40 mm",
-          "width": "13.50 in",
-          "height": "6.00 in",
-          "raw": "2090 ml",
-          "trim": 0,
+          "length": "1 in",
+          "width": "6 in",
+          "height": "9.5 in",
+          "raw": "934 ml",
+          "trim": 0.15,
           "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from MOLLE cell count",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
+            "dimensions acquired from MOLLE cell count",
+            "trim is for slanted pouch MOLLE area"
           ]
         },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "2090 ml",
-        "max_item_length": "343 mm",
+        "max_contains_volume": "794 ml",
+        "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
+        "max_item_length": "229 mm",
 
-        "volume_encumber_modifier": 0.75,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "moves": 140
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front bib PALS webbing",
+        "description": "Side pouch",
 
-        "//notes": [
-          "full encumbrance should be very high for such a small area, to account for the fact that eventually pouches would directly interfere with shoulder straps"
+        "max_contains_weight": "4 kg",
+        "//dimensions": {
+          "length": "1 in",
+          "width": "6 in",
+          "height": "9.5 in",
+          "raw": "934 ml",
+          "trim": 0.15,
+          "notes": [
+            "dimensions acquired from MOLLE cell count",
+            "trim is for slanted pouch MOLLE area"
+          ]
+        },
+        "max_contains_volume": "794 ml",
+        "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
+        "max_item_length": "229 mm",
+
+        "moves": 140
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "770 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Slot for a rifle sling",
+
+        "holster": true,
+
+        "max_contains_weight": "8200 g",
+        "max_contains_volume": "8 L",
+        "max_item_length": "1200 mm",
+
+        "moves": 30
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": [
+          ["front webbing", "9 × 3 = 27"],
+          ["bib", "6 × 3 = 18"],
+          ["side pouch", "4 × 2 + 3 = 11"],
+          ["side pouch", "4 × 2 + 3 = 11"],
+          "total: 67 cells"
         ],
-
-        "max_contains_weight": "8 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "9 in",
-          "height": "6 in",
-          "raw": "1394 ml",
-          "trim": 0,
-          "notes": ["dimensions acquired from MOLLE cell count"]
-        },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "1394 ml",
-        "max_item_length": "229 mm",
-
-        "volume_encumber_modifier": 1.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Pouch external PALS webbing",
-
-        "max_contains_weight": "5 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "6 in",
-          "height": "9.5 in",
-          "raw": "1471 ml",
-          "trim": 0.15,
-          "notes": [
-            "dimensions acquired from MOLLE cell count",
-            "trim is for slanted pouch MOLLE area"
-          ]
-        },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "1250 ml",
-        "max_item_length": "241 mm",
-
-        "volume_encumber_modifier": 1.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "size": 33
       },
       {
-        "pocket_type": "CONTAINER",
-
-        "description": "Pouch external PALS webbing",
-
-        "max_contains_weight": "5 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "6 in",
-          "height": "9.5 in",
-          "raw": "1471 ml",
-          "trim": 0.15,
-          "notes": [
-            "dimensions acquired from MOLLE cell count",
-            "trim is for slanted pouch MOLLE area"
-          ]
-        },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "1250 ml",
-        "max_item_length": "241 mm",
-
-        "volume_encumber_modifier": 1.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Side pouch",
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "1 in",
-          "width": "6 in",
-          "height": "9.5 in",
-          "raw": "934 ml",
-          "trim": 0.15,
-          "notes": [
-            "dimensions acquired from MOLLE cell count",
-            "trim is for slanted pouch MOLLE area"
-          ]
-        },
-        "max_contains_volume": "794 ml",
-        "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
-        "max_item_length": "229 mm",
-
-        "moves": 140
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Side pouch",
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "1 in",
-          "width": "6 in",
-          "height": "9.5 in",
-          "raw": "934 ml",
-          "trim": 0.15,
-          "notes": [
-            "dimensions acquired from MOLLE cell count",
-            "trim is for slanted pouch MOLLE area"
-          ]
-        },
-        "max_contains_volume": "794 ml",
-        "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
-        "max_item_length": "229 mm",
-
-        "moves": 140
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "1073 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
-
-        "moves": 110
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "1073 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
-
-        "moves": 110
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "1073 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
-
-        "moves": 110
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine, which this could likely accomodate two of, width- and height (depth)-wise",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "1073 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
-
-        "moves": 110
+        "type": "detach_molle"
       }
     ],
 
@@ -567,9 +415,8 @@
     "price": "199 USD",
     "//price_postapoc": "5 USD"
   },
-
   {
-    "id": "heavy_load_bearing_vest",
+    "id": "chest_rig_condor_modular",
     "type": "ARMOR",
 
     "//sources": [
@@ -586,6 +433,8 @@
     ],
 
     "//notes": ["see magazine pouch items for pocket restriction reference"],
+
+    "//TODO": ["pocket for back PALS devices"],
 
     "name": {
       "str": "Condor modular chest rig"
@@ -642,127 +491,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front PALS webbing",
-
-        "max_contains_weight": "14 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "12.00 in",
-          "height": "6.00 in",
-          "raw": "1858 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from MOLLE cell count",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
-          ]
-        },
-        "//max_contains_volume": "rounded up for simplicity",
-        "max_contains_volume": "1860 ml",
-        "max_item_length": "305 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Front PALS webbing",
-
-        "max_contains_weight": "14 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "12.00 in",
-          "height": "6.00 in",
-          "raw": "1858 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from MOLLE cell count",
-            "theoretically, height could be 20% higher to account for vertical stacking of pouches",
-            "we've decided to keep height as is, both for balance reasons as well as to simulate a more-reasonable distribution of pouches on the webbing"
-          ]
-        },
-        "max_contains_volume": "1858 ml",
-        "max_item_length": "305 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Front bib PALS webbing",
-
-        "//notes": [
-          "unlike other bibs, this one is located conveniently away from shoulder straps, thus making it that much more feasible to cover the entire bib in pouches without risking reduction in mobility"
-        ],
-
-        "max_contains_weight": "6 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "6 in",
-          "height": "5 in",
-          "raw": "774 ml",
-          "trim": 0,
-          "notes": ["dimensions acquired from MOLLE cell count"]
-        },
-        "max_contains_volume": "774 ml",
-        "max_item_length": "152 mm",
-
-        "volume_encumber_modifier": 1.25,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Shoulder strap PALS webbing",
-
-        "max_contains_weight": "2 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "3 in",
-          "height": "5 in",
-          "raw": "387 ml",
-          "trim": 0
-        },
-        "max_contains_volume": "387 ml",
-        "max_item_length": "127 mm",
-
-        "//volume_encumber_modifier": 1.25,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Shoulder strap PALS webbing",
-
-        "max_contains_weight": "2 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "3 in",
-          "height": "5 in",
-          "raw": "387 ml",
-          "trim": 0
-        },
-        "max_contains_volume": "387 ml",
-        "max_item_length": "127 mm",
-
-        "//volume_encumber_modifier": 1.25,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
         "description": "Admin pouch",
 
         "//notes": [
@@ -790,33 +518,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back PALS webbing",
-
-        "holster": true,
-
-        "max_contains_weight": "25 kg",
-        "//dimensions": {
-          "length": "40 mm",
-          "width": "9.00 in",
-          "height": "12.00 in",
-          "raw": "2787 ml",
-          "trim": 0,
-          "notes": [
-            "depth (length) is rounded average of MOLLE pouches",
-            "other dimensions acquired from MOLLE cell count"
-          ]
-        },
-        "max_contains_volume": "2787 ml",
-        "max_item_length": "305 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH_BACK"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
         "description": "Hydration pouch",
 
         "holster": true,
@@ -833,24 +534,12 @@
 
         "description": "Magazine pouch",
 
-        "holster": true,
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "537 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "770 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
       },
@@ -859,24 +548,10 @@
 
         "description": "Magazine pouch",
 
-        "holster": true,
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "537 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
       },
@@ -885,24 +560,10 @@
 
         "description": "Magazine pouch",
 
-        "holster": true,
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "537 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
       },
@@ -911,24 +572,10 @@
 
         "description": "Magazine pouch",
 
-        "holster": true,
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "537 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
       },
@@ -937,24 +584,10 @@
 
         "description": "Magazine pouch",
 
-        "holster": true,
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "537 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
       },
@@ -963,26 +596,30 @@
 
         "description": "Magazine pouch",
 
-        "holster": true,
-
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.25 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "536.47 ml",
-          "trim": 0,
-          "notes": [
-            "dimensions from a 40-round AR-15 magazine",
-            "https://magpul.com/pmag-40-ar-m4-gen-m3.html"
-          ]
-        },
-        "max_contains_volume": "537 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 90
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": [
+          ["front webbing", "8 × 3 = 24"],
+          ["front webbing", "8 × 3 = 24"],
+          ["bib", "4 × 3 = 12"],
+          ["shoulder strap webbing", "3 × 2 = 6"],
+          ["shoulder strap webbing", "3 × 2 = 6"],
+          "72 cells"
+        ],
+        "size": 36
+      },
+      {
+        "type": "detach_molle"
       }
     ],
 
@@ -992,7 +629,7 @@
     "//price_postapoc": "5 USD"
   },
   {
-    "id": "tacvest",
+    "id": "chest_rig_molle_ii_flc",
     "type": "ARMOR",
 
     "//sources": [
@@ -1056,73 +693,6 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front PALS webbing",
-
-        "max_contains_weight": "18 kg",
-        "//molle": {
-          "width": 9,
-          "height": 8,
-          "height_extra": 2,
-          "notes": [
-            "removed 30% of the calculated space and weight (rounded) to account for the discrepancy between the calculation and the actual layout of the vest"
-          ]
-        },
-        "max_contains_volume": "4390 ml",
-        "//max_item_length": "16 in., height of webbing, plus 2 in. to emulate extra height from the MOLLE calculations",
-        "max_item_length": "457 mm",
-
-        "volume_encumber_modifier": 0.66,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Front PALS webbing",
-
-        "max_contains_weight": "18 kg",
-        "//molle": {
-          "width": 9,
-          "height": 8,
-          "height_extra": 2,
-          "notes": [
-            "removed 30% of the calculated space and weight (rounded) to account for the discrepancy between the calculation and the actual layout of the vest"
-          ]
-        },
-        "max_contains_volume": "4390 ml",
-        "//max_item_length": "16 in., height of webbing, plus 2 in. to emulate extra height from the MOLLE calculations",
-        "max_item_length": "457 mm",
-
-        "volume_encumber_modifier": 0.66,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Lower back PALS webbing",
-
-        "max_contains_weight": "6 kg",
-        "//molle": {
-          "width": 6,
-          "height": 2,
-          "cells_extra": 0,
-          "width_extra": 0,
-          "height_extra": 2
-        },
-        "max_contains_volume": "1394 ml",
-        "//max_item_length": "6 + 2 in.",
-        "max_item_length": "203 mm",
-
-        "volume_encumber_modifier": 0.5,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
         "description": "Inner pocket",
 
         "max_contains_weight": "5 kg",
@@ -1165,13 +735,29 @@
       }
     ],
 
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": [
+          ["front webbing", "9 × 8 × (1 − 45%) ≈ 47"],
+          ["front webbing", "9 × 8 × (1 − 45%) ≈ 47"],
+          ["lower back webbing", "6 × 2 = 12"],
+          "106 cells"
+        ],
+        "size": 53
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
     "flags": ["WATER_FRIENDLY", "BELTED"],
 
     "price": "25 USD",
     "price_postapoc": "1 USD"
   },
   {
-    "id": "chestrig",
+    "id": "chest_rig_haley_placard",
     "type": "ARMOR",
 
     "//sources": ["https://haleystrategic.com/molle-placard-chest-rig"],
@@ -1226,31 +812,18 @@
       }
     ],
 
-    "pocket_data": [
+    "use_action": [
       {
-        "pocket_type": "CONTAINER",
-
-        "description": "Panel PALS webbing",
-
-        "max_contains_weight": "10 kg",
-        "//molle": {
-          "width": 6,
-          "height": 3,
-          "cells_extra": 0,
-          "width_extra": 2,
-          "height_extra": 2
-        },
-        "max_contains_volume": "2477 ml",
-        "//max_item_length": "6 + 2 in.",
-        "max_item_length": "203 mm",
-
-        "volume_encumber_modifier": 0.75,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "type": "attach_molle",
+        "//size": "6 × 3 webbing",
+        "size": 9
+      },
+      {
+        "type": "detach_molle"
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "UNDERSIZE", "STURDY"],
 
     "price": "107 USD",
     "price_postapoc": "2 USD"
@@ -1345,23 +918,12 @@
 
         "holster": true,
 
-        "max_contains_weight": "4 kg",
-        "//dimensions": {
-          "length": "2.5 in",
-          "width": "1.5 in",
-          "height": "9.7 in",
-          "raw": "596.08 ml",
-          "trim": 0,
-          "notes": [
-            "we use the length and width of a 40-round AR-15/STANAG magazine, but height (depth) of a 30-round AK/AKM magazine",
-            "the pouch is stated to accomodate both types/calibers, though likely not a .308 magazine",
-            "thus, we model the pocket by the largest dimensions of each"
-          ]
-        },
-        "max_contains_volume": "596 ml",
-        "//min_item_length": "5.5 in.",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "770 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 110
       },
@@ -1372,10 +934,10 @@
 
         "holster": true,
 
-        "max_contains_weight": "4 kg",
-        "max_contains_volume": "596 ml",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 110
       },
@@ -1386,10 +948,10 @@
 
         "holster": true,
 
-        "max_contains_weight": "4 kg",
-        "max_contains_volume": "596 ml",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 110
       },
@@ -1400,10 +962,10 @@
 
         "holster": true,
 
-        "max_contains_weight": "4 kg",
-        "max_contains_volume": "596 ml",
-        "min_item_length": "140 mm",
-        "max_item_length": "246 mm",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
 
         "moves": 110
       },
@@ -1411,61 +973,74 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Pistol magazine pouch",
+        "description": "Pistol magazine pocket",
 
         "holster": true,
 
-        "max_contains_weight": "500 g",
-        "//max_contains_volume": [
-          "from dimensions of an extended Glock 17 magazine",
-          {
-            "length": "146.05 mm",
-            "width": "28.5 mm",
-            "height": "38 mm",
-            "raw": "158.17 ml",
-            "trim": 0,
-            "notes": [
-              "we use zero trim here in order to enable storing slightly-larger magazines",
-              "normally, trim would be 0.275"
-            ]
-          }
+        "//max_contains_weight": [
+          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+          "see: technical manual TM 9-1005-211-34",
+          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
+          "see: technical manual TM 43-0001-27"
         ],
-        "max_contains_volume": "158 ml",
-        "max_item_length": "146 mm"
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": [
+          "just larger the 17-round Glock 9×19mm magazine",
+          "might be able to fit in a slightly-larger magazine"
+        ],
+        "max_contains_volume": "85 ml",
+        "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
+        "min_item_length": "90 mm",
+        "//max_item_length": [
+          "5.1 in., slightly longer than loaded M1911 mag",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_item_length": "130 mm",
+
+        "moves": 130
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Pistol magazine pouch",
+        "description": "Pistol magazine pocket",
 
         "holster": true,
 
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "158 ml",
-        "max_item_length": "146 mm"
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
       },
 
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Pistol magazine pouch",
+        "description": "Pistol magazine pocket",
 
         "holster": true,
 
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "158 ml",
-        "max_item_length": "146 mm"
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
       },
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Pistol magazine pouch",
+        "description": "Pistol magazine pocket",
 
         "holster": true,
 
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "158 ml",
-        "max_item_length": "146 mm"
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
       },
 
       {
@@ -1490,62 +1065,22 @@
         "max_item_length": "146 mm",
 
         "moves": 180
-      },
+      }
+    ],
 
+    "use_action": [
       {
-        "pocket_type": "CONTAINER",
-
-        "description": "General pouch PALS webbing",
-
-        "max_contains_weight": "3 kg",
-        "//molle": {
-          "width": 4,
-          "height": 2
-        },
-        "max_contains_volume": "619 ml",
-        "//max_item_length": "height of general pouch",
-        "max_item_length": "127 mm",
-
-        "volume_encumber_modifier": 0.75,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Shoulder strap PALS webbing",
-
-        "max_contains_weight": "1 kg",
-        "//molle": {
-          "width": 1,
-          "height": 3
-        },
-        "max_contains_volume": "232 ml",
-        "//max_item_length": "5 in. (height of webbing) + 1 in. overcapacity",
-        "max_item_length": "152 mm",
-
-        "volume_encumber_modifier": 0.75,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "type": "attach_molle",
+        "//size": [
+          ["general pouch webbing", "4 × 2 = 8"],
+          ["shoulder strap webbing", "3"],
+          ["shoulder strap webbing", "3"],
+          "14 cells"
+        ],
+        "size": 7
       },
       {
-        "pocket_type": "CONTAINER",
-
-        "description": "Shoulder strap PALS webbing",
-
-        "max_contains_weight": "1 kg",
-        "//molle": {
-          "width": 1,
-          "height": 3
-        },
-        "max_contains_volume": "232 ml",
-        "//max_item_length": "5 in. (height of webbing) + 1 in. overcapacity",
-        "max_item_length": "152 mm",
-
-        "volume_encumber_modifier": 0.75,
-
-        "flag_restriction": ["MOLLE_ATTACH", "TUCKED_IN"]
+        "type": "detach_molle"
       }
     ],
 
@@ -1553,5 +1088,262 @@
 
     "price": "50 USD",
     "price_postapoc": "3 USD"
+  },
+  {
+    "id": "chest_rig_condor_cross_draw",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://condoroutdoor.com/collections/vests/products/condor-cross-draw-vest",
+      [
+        "https://tacticalgear.com.au/products/condor-outdoor-etv-elite-tactical-vest",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      [
+        "the weight for this vest doesn't appear to be available even on Amazon, so we use a similar vest from the same company",
+        "it may be slightly or significantly heavier, since the package weight on this Amazon listing states 3.65 lbs = 1655.6 g",
+        "https://www.amazon.com/Condor-CV-498-Cross-Coyote-Brown/dp/B01N1X2IT3"
+      ],
+      [
+        "on Condor's own website, the vest is advertised with a belt that has two extra pistol-mag pouches attached to it",
+        "it does not appear to come with the vest, since other sites show images of just the vest, with the belt straps empty"
+      ]
+    ],
+
+    "name": {
+      "str": "Condor cross draw vest"
+    },
+    "description": "...",
+
+    "weight": "1134 g",
+    "//upperwear": {
+      "chest": "40.5 in",
+      "height": "15.5 in",
+      "sleeve": 0,
+      "thickness": "2.6 mm",
+      "raw": "526.5 ml",
+      "trim": 0,
+      "notes": [
+        "taken from the dimensions of the PBA concealable vest, since it appears to be similar-enough",
+        "thickness adjusted for the fact that this isn't a ballistic vest"
+      ]
+    },
+    "volume": "527 ml",
+    "//longest_side": "no inherent longest side, because the vest appears to be easily-collapsible",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1.3,
+    "looks_like": "tool_belt",
+
+    "armor": [
+      {
+        "encumbrance": [1, 13],
+
+        "//coverage": [
+          "half of large SAPI plate coverage = 18%",
+          "harness = 4% (front straps) + 4% (back straps) + 1% (side straps) = 9%"
+        ],
+        "coverage": 27,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.5
+      },
+      {
+        "encumbrance": [0, 6],
+
+        "//coverage": "half of large SAPI plate coverage ≈ 6%",
+        "coverage": 6,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.2
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate",
+        "max_contains_volume": "305 ml",
+        "//min_item_length": "length of STANAG 10-round magazine",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
+
+        "moves": 110
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "//max_contains_weight": [
+          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
+          "see: technical manual TM 9-1005-211-34",
+          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
+          "see: technical manual TM 43-0001-27"
+        ],
+        "max_contains_weight": "250 g",
+        "//max_contains_volume": [
+          "just larger the 17-round Glock 9×19mm magazine",
+          "might be able to fit in a slightly-larger magazine"
+        ],
+        "max_contains_volume": "85 ml",
+        "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
+        "min_item_length": "90 mm",
+        "//max_item_length": [
+          "5.1 in., slightly longer than loaded M1911 mag",
+          "https://www.pistolsmith.com/threads/1911-magazine-dimensions.21328/"
+        ],
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Chest pouch",
+
+        "max_contains_weight": "500 g",
+        "//dimensions": {
+          "length": "1.5 in",
+          "width": "3 in",
+          "height": "1 in",
+          "raw": "73.74 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions assumed from visual reference based on the width of the Velcro patch being (presumably) 1 in."
+          ]
+        },
+        "max_contains_volume": "74 ml",
+        "//max_item_length": "3 in.",
+        "max_item_length": "76 mm",
+
+        "moves": 180
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol holster",
+
+        "holster": true,
+
+        "//max_contains_weight": "weight of a loaded M9 (2.55 lbs = 1156.7 g) + 50 g",
+        "max_contains_weight": "1207 g",
+        "//magazine_well": "100 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of a loaded M1911",
+          {
+            "length": "8.56 in",
+            "width": "1.27 in",
+            "height": "5.5 in",
+            "raw": "980 ml",
+            "trim": 0.55,
+            "result": "441 ml"
+          },
+          "added 50 ml to account for red dot sights",
+          "red dot sight volume based on Loadout models"
+        ],
+        "max_contains_volume": "491 ml",
+        "//max_item_length": "overall length of M1911, plus 2.5%",
+        "max_item_length": "222 mm",
+
+        "moves": 90
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "UNDERSIZE", "STURDY"],
+
+    "price": "91 USD",
+    "price_postapoc": "2 USD"
   }
 ]
