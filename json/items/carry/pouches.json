@@ -684,7 +684,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "//reference": "STANAG magazine capacity (tall)",
+        "//reference": [
+          "STANAG magazine capacity (tall)",
+          "AR-15 magazine (40 rounds)"
+        ],
 
         "description": "Magazine pouch",
 
@@ -3001,6 +3004,88 @@
     "flags": ["WATER_FRIENDLY", "PALS_LARGE"],
 
     "price": "19 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_holster_magnet_hot",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://highordertactical.com/products/magnetic-shotgun-retention-system",
+      [
+        "https://highordertactical.com/products/molle-attachment",
+        "dimensions reference"
+      ]
+    ],
+
+    "name": {
+      "str": "High Order MSRS magnetic holster"
+    },
+    "description": "A Kydex body holding four strong magnets inside.  MSRS stands for \"magnetic shotgun retention system\", since it was originally designed to securely hold breaching shotguns.  The \"holster\" can, of course, hold any weapon made of a ferromagnetic material.",
+
+    "//weight": [
+      "very-roughly estimated from assumed weights of constituent parts",
+      [
+        "4 × neodymium magnet",
+        "https://magnet-outlet.eu/en/collections/neodymium-magneten/products/neodymium-blokmagneet-40mm-x-10mm-x-10mm",
+        "4 × 30 g = 120 g"
+      ],
+      "Kydex has the density of only 1.35 g/mL, making it lightweight, and there isn't that much of it, so if we assume ~40 mL of Kydex across the entirety of the holster, it amounts to 54 g"
+    ],
+    "weight": "174 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "2.25 in",
+      "height": "0.65 in",
+      "raw": "143.8 ml",
+      "trim": 0,
+      "notes": [
+        "length and width are assumed from visual reference, based on the Molle-Lok attachment's dimensions",
+        "thickness is presumed",
+        "trim presumes the uneven parts eventually even out with the overall shape"
+      ]
+    },
+    "volume": "144 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "//material": [
+      [
+        "iron is for neodymium, the presumed material for the magnets",
+        "the magnet in DDA is made from cast iron, whereas its actual material is stated to be alnico, an iron alloy"
+      ],
+      "plastic is for Kydex"
+    ],
+    "material": ["iron", "plastic"],
+    "material_thickness": 16.51,
+    "looks_like": "magnet",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "8200 g",
+        "min_item_volume": "500 ml",
+        "max_contains_volume": "4 L",
+        "min_item_length": "20 cm",
+        "max_item_length": "80 cm",
+
+        "moves": 130
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_MEDIUM"],
+
+    "price": "295 USD",
     "price_postapoc": "1 USD"
   }
 ]
