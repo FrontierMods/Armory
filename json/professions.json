@@ -1,0 +1,57 @@
+[
+  {
+    "id": "specops_pouch_mag_smg",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_magazine_smg_psigear",
+
+    "entries": [
+      { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 4 }
+    ]
+  },
+  {
+    "id": "specops",
+    "copy-from": "specops",
+    "type": "profession",
+
+    "name": "Special Operator",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "wetsuit" },
+          { "item": "pants_army" },
+          { "item": "wetsuit_hood" },
+          { "item": "tac_helmet" },
+          { "item": "wetsuit_gloves" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "dive_bag" },
+          { "item": "diving_watch" },
+          { "item": "single_sling" },
+          { "group": "charged_two_way_radio" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
+          { "item": "kukri", "container-item": "sheath" },
+          {
+            "item": "chest_rig_haley_placard",
+            "contents-group": "specops_pouch_mag_smg"
+          },
+          {
+            "item": "hk_mp5sd",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": ["sights_mount", "holo_sight"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
+    }
+  }
+]
