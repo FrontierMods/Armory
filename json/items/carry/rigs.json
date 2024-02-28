@@ -1271,20 +1271,6 @@
 
         "moves": 130
       },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Pistol magazine pocket",
-
-        "holster": true,
-
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
-        "min_item_length": "90 mm",
-        "max_item_length": "130 mm",
-
-        "moves": 130
-      },
 
       {
         "pocket_type": "CONTAINER",
@@ -1338,6 +1324,20 @@
         "max_item_length": "222 mm",
 
         "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Holster pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
       }
     ],
 
