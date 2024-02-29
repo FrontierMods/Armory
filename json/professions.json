@@ -1,5 +1,14 @@
 [
   {
+    "id": "ar15_mag_x4",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 4 }
+    ]
+  },
+  {
     "id": "specops_pouch_mag_smg",
     "type": "item_group",
     "subtype": "collection",
@@ -52,6 +61,56 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
+    }
+  },
+  {
+    "id": "militia_car",
+    "copy-from": "militia_car",
+    "type": "profession",
+
+    "name": "Militia",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "pants_army" },
+          { "item": "combat_shirt" },
+          { "item": "socks" },
+          { "item": "sweatshirt" },
+          { "item": "boots" },
+          { "item": "cig" },
+          { "item": "elbow_pads" },
+          { "item": "slingpack" },
+          { "item": "kevlar" },
+          { "item": "balclava" },
+          { "item": "knee_pads" },
+          { "item": "beret" },
+          { "item": "wristwatch" },
+          { "item": "water_clean" },
+          { "group": "charged_cell_phone" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "knife_KABAR", "container-item": "sheath" },
+          {
+            "item": "m9",
+            "ammo-item": "9mm",
+            "charges": 15,
+            "container-item": "holster"
+          },
+          {
+            "item": "chest_rig_onetigris_vulture",
+            "contents-group": "ar15_mag_x4"
+          },
+          { "item": "lighter", "charges": 100 },
+          {
+            "group": "modular_ar15",
+            "ammo-item": "223",
+            "charges": 30,
+            "contents-item": ["shoulder_strap"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
     }
   }
 ]
