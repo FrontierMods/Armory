@@ -9,6 +9,19 @@
     ]
   },
   {
+    "id": "ar15_mag_50beowulf",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "50beowulf_ar15mag",
+        "ammo-item": "50beowulf_xtp",
+        "charges": 10
+      }
+    ]
+  },
+  {
     "id": "specops_pouch_mag_smg",
     "type": "item_group",
     "subtype": "collection",
@@ -17,6 +30,21 @@
 
     "entries": [
       { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 4 }
+    ]
+  },
+  {
+    "id": "conversion_hunter_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "chest_rig_haley_placard",
+
+    "entries": [
+      {
+        "item": "pouch_magazine_556_condor",
+        "contents-group": "ar15_mag_50beowulf",
+        "count": 3
+      }
     ]
   },
   {
@@ -111,6 +139,44 @@
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "conversion_hunter",
+    "copy-from": "conversion_hunter",
+    "type": "profession",
+
+    "name": "Big-Bore Hunter",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "army_top" },
+          { "item": "knit_scarf" },
+          { "item": "socks" },
+          { "item": "boots_steel" },
+          { "item": "pants_cargo" },
+          { "item": "jacket_flannel" },
+          { "item": "hat_hunting" },
+          { "item": "wristwatch" },
+          { "item": "back_holster" },
+          { "group": "charged_smart_phone" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "group": "ar15_50",
+            "ammo-item": "50beowulf_xtp",
+            "charges": 10,
+            "contents-item": "shoulder_strap_simple",
+            "custom-flags": ["no_auto_equip"]
+          },
+          { "group": "conversion_hunter_rig" },
+          { "item": "sheath", "contents-item": "knife_hunting" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+      }
     }
   }
 ]
