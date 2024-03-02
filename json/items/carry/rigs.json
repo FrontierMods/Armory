@@ -560,17 +560,68 @@
       [
         "https://offgridwarehouse.com/spec-operator-condor-tactical-pro-chest-set-w-six-built-in-ar-m4-mag-pouches/",
         "coverage reference"
+      ],
+      [
+        "https://www.rockstartactical.com/condor-modular-chest-set/",
+        "https://condoroutdoor.com/products/condor-modular-chest-set-scorpion-ocp",
+        "variant reference"
       ]
     ],
 
-    "//notes": ["see magazine pouch items for pocket restriction reference"],
+    "//notes": [
+      [
+        "this model doesn't come with the hydration bladder pouch by default, hence the 'modular' in the name",
+        "this item currently models the 'set', i.e. the rig + the hydration pouch",
+        "when the deconstruction upgrade comes through, this item should have a different ID, with the 'empty' rig retaining this item's current ID"
+      ],
+      "the bib can house a ballistic plate in the front"
+    ],
 
     "//TODO": ["pocket for back PALS devices"],
 
     "name": {
-      "str": "Condor modular chest rig"
+      "str": "modular chest set"
     },
-    "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for AR-15 magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.",
+    "description": "A slick chest rig with a lot of capacity of MOLLE capacity.  It features six pockets for STANAG magazines, an admin pouch, and a pouch for a hydration bladder.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "set_multicam",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  This one is fashioned in multicam.",
+        "weight": 2
+      },
+      {
+        "id": "set_coyote",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  This one is colored coyote brown.",
+        "weight": 4
+      },
+      {
+        "id": "set_olive",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  This one is colored olive drab.",
+        "weight": 2
+      },
+      {
+        "id": "set_black",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  This one is all black.",
+        "weight": 2
+      },
+      {
+        "id": "set_ocp",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  This one is patterned after OCP, the camouflage employed by the U.S. Armed Forces.",
+        "weight": 1
+      }
+    ],
 
     "weight": "812 g",
     "//dimensions": {
@@ -756,7 +807,11 @@
 
     "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
 
-    "price": "60 USD",
+    "//price": [
+      "sources that sell this rig in multicam make it more-expensive",
+      "we disregard this for sanity's sake"
+    ],
+    "price": "64 USD",
     "//price_postapoc": "5 USD"
   },
   {
