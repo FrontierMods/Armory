@@ -7,7 +7,7 @@
   {
     "id": ["light_load_bearing_vest"],
     "type": "MIGRATION",
-    "replace": "chest_rig_tt_mav_2"
+    "replace": "chest_rig_tt_mav_2_piece"
   },
   {
     "id": ["load_bearing_vest"],

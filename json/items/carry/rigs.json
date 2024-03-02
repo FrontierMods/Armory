@@ -1,6 +1,6 @@
 [
   {
-    "id": "chest_rig_tt_mav_2",
+    "id": "chest_rig_tt_mav_2_piece",
     "type": "ARMOR",
 
     "//sources": [
@@ -17,9 +17,34 @@
     ],
 
     "name": {
-      "str": "Tactical Tailor Fight Light MAV 2 chest rig"
+      "str": "two-piece rig"
     },
-    "description": "A compact two-piece PALS webbing rig supported with shoulder straps.  For its size, offers plenty of space for MOLLE pouches, though not as much as a full-sized load-bearing vest.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.",
+    "description": "A compact two-piece chest rig with plenty of webbing to strap MOLLE pouches onto.  Can be worn over plate carriers.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "mav_2_piece_multicam",
+
+        "name": { "str": "Tactical Tailor MAV 2 Piece chest rig" },
+        "description": "A compact rig with two large webbing panels, locking with buckles in the middle.  For its size, it offers plenty of space for MOLLE pouches, though not as much as full-sized load-bearing vests.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.  This one is fashioned in multicam.",
+        "weight": 2
+      },
+      {
+        "id": "mav_2_piece_coyote",
+
+        "name": { "str": "Tactical Tailor MAV 2 Piece chest rig" },
+        "description": "A compact rig with two large webbing panels, locking with buckles in the middle.  For its size, it offers plenty of space for MOLLE pouches, though not as much as full-sized load-bearing vests.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.  This one is colored coyote brown.",
+        "weight": 1
+      },
+      {
+        "id": "mav_2_piece_olive",
+
+        "name": { "str": "Tactical Tailor MAV 2 Piece chest rig" },
+        "description": "A compact rig with two large webbing panels, locking with buckles in the middle.  For its size, it offers plenty of space for MOLLE pouches, though not as much as full-sized load-bearing vests.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.  This one is colored olive drab.",
+        "weight": 1
+      }
+    ],
 
     "//weight": [
       "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz = 238.14 g",
