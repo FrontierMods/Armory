@@ -230,19 +230,77 @@
     "id": "chest_rig_tasm_mk_ii",
     "type": "ARMOR",
 
-    "//sources": ["https://tasmaniantigerusa.com/product.php?id=25"],
+    "//sources": [
+      "https://tasmaniantigerusa.com/product.php?id=25",
+      [
+        "https://www.tasmaniantiger.info/en/product/tt-chest-rig-mkii/",
+        "https://www.tacwrk.com/en/p/tasmanian-tiger-tt-chest-rig-mkii-irr-stone-grey-olive-48673",
+        "https://www.tacwrk.com/en/p/tasmanian-tiger-tt-chest-rig-mkii-multicam-64",
+        "variant reference"
+      ]
+    ],
 
     "//notes": [
       "this item does not allow the bib to be adjusted (tucked in or set up, the latter being the in-game configuration)",
       "bib adjustment shouldn't matter too much anyway because the encumbrance effect would be almost non-existent by the game's current standards",
       "it also doesn't presently allow for a ballistic plate to be inserted, partly for balance reasons (to be reviewed)",
-      "we are modelling the front pouches as if they are irremovable, which seems to be the case, with reviewers not saying a word about it"
+      "we are modelling the front pouches as if they are irremovable, which seems to be the case, with reviewers not saying a word about it",
+      [
+        "reference chart is explicit about this model having double-magazine pouches",
+        "https://tasmaniantigerusa.com/admin/uploads/pdfs/GEAR-REFERENCE%202021.pdf"
+      ]
     ],
 
     "name": {
-      "str": "Tasmanian Tiger Mk II chest rig"
+      "str": "assault chest rig"
     },
-    "description": "A comfortable chest rig with plenty of space and additional PALS webbing to add more.  Comes with two spacious side pouches and four large magazine pouches by default.  This version also comes with an expanded bib for a little bit extra available webbing, though beware putting too many pouches on it: eventually, the accessories are going to start interfering with the shoulder straps, making wearing the rig a lot more uncomfortable.",
+    "description": "A large, comfortable chest rig with plenty of PALS webbing.  It has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as with two spacious side pouches and a bib that offers some extra webbing.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "mk_ii_multicam",
+
+        "name": { "str": "Tasmanian Tiger Mk II chest rig" },
+        "description": "A large chest rig with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one is fashioned in multicam.",
+        "weight": 2
+      },
+      {
+        "id": "mk_ii_coyote",
+
+        "name": { "str": "Tasmanian Tiger Mk II chest rig" },
+        "description": "A large chest rig with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one is colored coyote brown.",
+        "weight": 4
+      },
+      {
+        "id": "mk_ii_olive",
+
+        "name": { "str": "Tasmanian Tiger Mk II chest rig" },
+        "description": "A large chest rig with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one is colored olive drab.",
+        "weight": 2
+      },
+      {
+        "id": "mk_ii_black",
+
+        "name": { "str": "Tasmanian Tiger Mk II chest rig" },
+        "description": "A large chest rig with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one is all black.",
+        "weight": 1
+      },
+      {
+        "id": "mk_ii_khaki",
+
+        "name": { "str": "Tasmanian Tiger Mk II chest rig" },
+        "description": "A large chest rig with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one comes in the color of sand.",
+        "weight": 2
+      },
+      {
+        "id": "mk_ii_grey",
+
+        "name": { "str": "Tasmanian Tiger Mk II chest rig" },
+        "description": "A large chest rig with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one is colored stone grey, with slight greenish tint.",
+        "weight": 1
+      }
+    ],
 
     "weight": "1106 g",
     "//dimensions": {
@@ -357,6 +415,54 @@
         "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
         "max_contains_volume": "770 ml",
         "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
