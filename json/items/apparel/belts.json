@@ -19,9 +19,69 @@
     ],
 
     "name": {
-      "str": "Haley Strategic D3 combat belt"
+      "str": "webbing belt"
     },
-    "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.",
+    "description": "An aftermarket nylon waist belt with webbing for MOLLE pouches throughout its length.  It is tough and will withstand harsh combat conditions well.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "d3_multicam",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "d3_multicam_black",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "d3_multicam_arid",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_multicam_arid>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "d3_black",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "d3_coyote",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "d3_ranger",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "d3_grey",
+
+        "name": { "str": "Haley Strategic D3 combat belt" },
+        "description": "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": "15.7 oz = 445.09 g",
     "weight": "445 g",
@@ -156,9 +216,21 @@
     ],
 
     "name": {
-      "str": "Blackhawk Foundation duty belt"
+      "str": "police duty belt"
     },
-    "description": "A low-profile, sturdy black belt with PALS webbing.  A \"duty belt\" in the sense of being worn by police officers while on duty, it features plenty of space for pouches to hold items such a duty would imply.  It's surprisingly comfortable even with a large amount of pouches attached.",
+    "description": "A low-profile belt with webbing for MOLLE pouches, commonly worn by police officers while on duty.  Quite comfortable to wear even when fully-loaded.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "foundation_black",
+
+        "name": { "str": "Blackhawk Foundation duty belt" },
+        "description": "A low-profile, sturdy black belt with PALS webbing.  A \"duty belt\" in the sense of being worn by police officers while on duty, it features plenty of space for pouches to hold items such a duty would imply.  It's surprisingly comfortable even with a large amount of pouches attached.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "318 g",
     "//dimensions": {
@@ -225,277 +297,5 @@
 
     "price": "125 USD",
     "price_postapoc": "250 cent"
-  },
-  {
-    "id": "belt_leather_grommets",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://grommetsleathercraft.com/product/cartridge-gun-belt/"
-    ],
-
-    "//notes": [
-      "we're modelling this item as a separate belt to allow for more modularity with leather gear",
-      "specifically, we're modelling it as only having cartridge loops on one side, despite the original clearly having them on both, to allow for a holster to be added to the belt, much like one would add it to an actual belt"
-    ],
-
-    "name": {
-      "str": "Grommet's Leathercraft gun belt"
-    },
-    "description": "A thick leather belt with cartridge loops on the left side.  The embroidery gives you that cowboy feel.  Can hold up to 12 pistol-caliber rounds.  A holster can be attached to the right side to complete the Western-themed set.",
-
-    "//weight": [
-      "estimated as (area of belt × 2) × leather thickness per sq.ft.",
-      "(belt length [38 in.] × belt height [2 in.]) × leather thickness [8 oz / sq.ft.] = 4.22 oz = 119.68 g",
-      "area of bandolier adjusted by 17% as per dimensions calculation"
-    ],
-    "weight": "120 g",
-    "//dimensions": {
-      "length": "38 in",
-      "width": "2 in",
-      "height": "3.2 mm",
-      "raw": "156.9 ml",
-      "trim": -0.05,
-      "notes": [
-        "we assume 38 in. as the standard belt length, for the sake of consistency between different belts",
-        "trim accounts for the cartridge loops and the buckle"
-      ]
-    },
-    "volume": "165 ml",
-
-    "material": ["leather", "mc_steel"],
-    "material_thickness": 3.2,
-
-    "symbol": "[",
-    "color": "light_gray",
-    "looks_like": "leather_belt",
-
-    "armor": [
-      {
-        "material": [
-          { "type": "leather", "covered_by_mat": 100, "thickness": 3.2 },
-          {
-            "type": "mc_steel",
-            "covered_by_mat": 2,
-            "thickness": 0.8
-          }
-        ],
-
-        "encumbrance": [3, 11],
-
-        "coverage": 100,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_waist"]
-      }
-    ],
-
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Gear space",
-
-        "holster": true,
-
-        "max_contains_weight": "8 kg",
-        "max_contains_volume": "4 L",
-        "//max_item_length": "20 in",
-        "max_item_length": "508 mm",
-
-        "moves": 90,
-
-        "flag_restriction": ["BELT_GEAR", "BELT_GEAR_LARGE"]
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "//ammo_restriction": [
-          "removed the following calibers from capacity: the casings appears to be too thin or much too thick to fit snug into the slots",
-          [
-            ".32 ACP",
-            ".500 S&W Magnum",
-            ".460 Rowland",
-            ".454 Casull",
-            "5.7mm",
-            "4.6×30mm"
-          ]
-        ],
-        "ammo_restriction": {
-          "38": 12,
-          "40": 12,
-          "44": 12,
-          "45": 12,
-          "380": 12,
-          "762x25": 12,
-          "357mag": 12,
-          "357sig": 12,
-          "38super": 12,
-          "10mm": 12,
-          "45colt": 12,
-          "9x18": 12,
-          "9mm": 12
-        },
-
-        "moves": 90
-      }
-    ],
-
-    "//flags": [
-      "removed PALS_MEDIUM: even the original item was never intended to be MOLLE-compatible"
-    ],
-    "flags": ["BELTED", "OVERSIZE"],
-
-    "//price": "price for the suede-lined model",
-    "price": "140 USD",
-    "price_postapoc": "1 USD"
-  },
-  {
-    "id": "belt_army_acu",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://rainetacticalgear.com/collections/belts/products/military-riggers-belt",
-      [
-        "https://www.venturesurplus.com/products/army-riggers-belt-sand-tan/",
-        "weight"
-      ]
-    ],
-
-    "//notes": [
-      "while it's not clear that Raine is the manufacturer of the belt used by the US Army, military-surplus stores online sell it"
-    ],
-
-    "name": { "str": "ACU rigger's belt" },
-    "description": "A low-profile tan-colored nylon belt; manufactured by Raine Tactical Gear.  Used by U.S. soldiers all over the world, this simple belt usually serves as a platform for small pouches and holsters.",
-
-    "weight": "318 g",
-    "//dimensions": {
-      "length": "38 in",
-      "width": "1.75 in",
-      "height": "0.75 mm",
-      "raw": "32.18 ml",
-      "trim": -0.02,
-      "notes": [
-        "we assume 38 in. as the standard belt length, for the sake of consistency between different belts",
-        "trim is to account for the buckle"
-      ]
-    },
-    "volume": "33 ml",
-
-    "//material": ["we assume the buckles are aluminum"],
-    "material": ["nylon", "aluminum"],
-
-    "symbol": "[",
-    "color": "brown",
-    "looks_like": "leather_belt",
-    "repairs_like": "tool_belt",
-
-    "armor": [
-      {
-        "material": [
-          {
-            "type": "nylon",
-            "covered_by_mat": 100,
-            "thickness": 0.75
-          },
-          {
-            "type": "aluminum",
-            "covered_by_mat": 3,
-            "thickness": 2
-          }
-        ],
-
-        "volume_encumber_modifier": 0.4,
-
-        "coverage": 100,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_waist"]
-      }
-    ],
-
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-
-        "volume_encumber_modifier": 0.5,
-
-        "max_contains_weight": "1500 g",
-        "max_contains_volume": "1 L",
-        "//max_item_length": "13 in.",
-        "max_item_length": "330 mm",
-
-        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "volume_encumber_modifier": 0.5,
-
-        "max_contains_weight": "1500 g",
-        "max_contains_volume": "1 L",
-        "//max_item_length": "13 in.",
-        "max_item_length": "330 mm",
-
-        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "volume_encumber_modifier": 0.5,
-
-        "max_contains_weight": "1500 g",
-        "max_contains_volume": "1 L",
-        "//max_item_length": "13 in.",
-        "max_item_length": "330 mm",
-
-        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "volume_encumber_modifier": 0.5,
-
-        "max_contains_weight": "1500 g",
-        "max_contains_volume": "1 L",
-        "//max_item_length": "13 in.",
-        "max_item_length": "330 mm",
-
-        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "volume_encumber_modifier": 0.5,
-
-        "max_contains_weight": "1500 g",
-        "max_contains_volume": "1 L",
-        "//max_item_length": "13 in.",
-        "max_item_length": "330 mm",
-
-        "flag_restriction": ["BELT_GEAR", "BELT_CLIP"]
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Space for large belt gear",
-
-        "holster": true,
-
-        "volume_encumber_modifier": 0.5,
-
-        "max_contains_weight": "17 kg",
-        "max_contains_volume": "8500 ml",
-        "//max_item_length": "20 in",
-        "max_item_length": "508 mm",
-
-        "flag_restriction": ["BELT_GEAR_LARGE", "BELT_GEAR", "BELT_CLIP"]
-      }
-    ],
-
-    "flags": ["WATER_FRIENDLY", "BELTED"],
-
-    "price": "13 USD",
-    "price_postapoc": "20 cent"
   }
 ]
