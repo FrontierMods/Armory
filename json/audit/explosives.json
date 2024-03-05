@@ -1,0 +1,186 @@
+[
+  {
+    "id": "flashbang",
+    "copy-from": "flashbang",
+    "type": "TOOL",
+
+    "//sources": ["https://en.wikipedia.org/wiki/M84_stun_grenade"],
+
+    "name": {
+      "str": "flashbang"
+    },
+
+    "weight": "370 g",
+    "//dimensions": {
+      "length": "5.25 in",
+      "diameter": "1.85 in",
+      "raw": "231 ml",
+      "trim": 0.15,
+      "notes": [
+        "diameter (of the larger rings on the body) acquired from visual reference"
+      ]
+    },
+    "volume": "196 ml",
+    "longest_side": "133 mm"
+  },
+  {
+    "id": "flashbang_act",
+    "copy-from": "flashbang_act",
+    "type": "TOOL",
+
+    "name": {
+      "str": "active flashbang"
+    },
+
+    "//weight": "slightly less weight due to the pulled safety pin",
+    "weight": "367 g",
+    "//dimensions": {
+      "length": "5.25 in",
+      "diameter": "1.85 in",
+      "raw": "231 ml",
+      "trim": 0.15,
+      "notes": [
+        "diameter (of the larger rings on the body) acquired from visual reference"
+      ]
+    },
+    "volume": "196 ml",
+    "longest_side": "133 mm"
+  },
+
+  {
+    "id": "grenade",
+    "copy-from": "grenade",
+    "type": "TOOL",
+
+    "//sources": ["https://en.wikipedia.org/wiki/M67_grenade"],
+
+    "name": {
+      "str": "grenade"
+    },
+
+    "weight": "400 g",
+    "//dimensions": {
+      "length": "3.53 in",
+      "diameter": "2.5 in",
+      "raw": "284 ml",
+      "trim": 0.25
+    },
+    "volume": "213 ml",
+    "longest_side": "90 mm"
+  },
+  {
+    "id": "grenade_act",
+    "copy-from": "grenade_act",
+    "type": "TOOL",
+
+    "name": {
+      "str": "active grenade"
+    },
+
+    "//weight": "slightly less weight due to the pulled safety pin",
+    "weight": "398 g",
+    "//dimensions": {
+      "length": "3.53 in",
+      "diameter": "2.5 in",
+      "raw": "284 ml",
+      "trim": 0.25
+    },
+    "volume": "213 ml",
+    "longest_side": "90 mm"
+  },
+
+  {
+    "id": "gasbomb",
+    "copy-from": "gasbomb",
+    "type": "GENERIC",
+
+    "//sources": [
+      ["https://ordnance.info/?product=m7a3-riot-cs", "dimensions"],
+      [
+        "https://www.globalsecurity.org/military/systems/munitions/m7a.htm",
+        "weight"
+      ]
+    ],
+
+    "//notes": ["we assume this to be M7A3"],
+
+    "name": {
+      "str": "tear gas grenade"
+    },
+
+    "//weight": "15.5 oz",
+    "weight": "439 g",
+    "//dimensions": {
+      "length": "145 mm",
+      "diameter": "60 mm",
+      "raw": "409.98 ml",
+      "trim": 0.075
+    },
+    "volume": "379 ml",
+    "longest_side": "145 mm"
+  },
+  {
+    "id": "gasbomb_act",
+    "copy-from": "gasbomb_act",
+    "type": "GENERIC",
+
+    "name": {
+      "str": "armed tear gas grenade"
+    },
+
+    "//weight": "slightly less weight due to the pulled safety pin",
+    "weight": "436 g",
+    "//dimensions": {
+      "length": "145 mm",
+      "diameter": "60 mm",
+      "raw": "409.98 ml",
+      "trim": 0.075
+    },
+    "volume": "379 ml",
+    "longest_side": "145 mm"
+  },
+
+  {
+    "id": "smokebomb",
+    "copy-from": "smokebomb",
+    "type": "GENERIC",
+
+    "//sources": [
+      "https://home.army.mil/bliss/application/files/4615/4776/0094/Grenades.pdf"
+    ],
+
+    "name": {
+      "str": "smoke bomb"
+    },
+
+    "weight": "539 g",
+    "//dimensions": {
+      "length": "146 mm",
+      "diameter": "64 mm",
+      "raw": "469.68 ml",
+      "trim": 0.075
+    },
+    "volume": "435 ml",
+    "longest_side": "146 mm"
+  },
+  {
+    "id": "smokebomb_act",
+    "copy-from": "smokebomb_act",
+    "type": "GENERIC",
+
+    "name": {
+      "str": "armed smoke bomb"
+    },
+
+    "//weight": "slightly less weight due to the pulled safety pin",
+    "weight": "537 g",
+    "//dimensions": {
+      "length": "146 mm",
+      "diameter": "64 mm",
+      "raw": "469.68 ml",
+      "trim": 0.075
+    },
+    "volume": "435 ml",
+    "longest_side": "146 mm"
+  }
+]
