@@ -152,22 +152,6 @@
 
     "//delete": [
       "appears to be a handmade, custom item with no equivalent in real life",
-      "thus, we assume that it shouldn't be MOLLE-compatible"
-    ],
-    "delete": { "flags": ["PALS_LARGE"] }
-  },
-  {
-    "id": "leather_stone_pouch",
-    "copy-from": "leather_stone_pouch",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "leather stone pouch",
-      "str_pl": "leather stone pouches"
-    },
-
-    "//delete": [
-      "appears to be a handmade, custom item with no equivalent in real life",
       "thus, we assume that it shouldn't be MOLLE-compatible",
       "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
     ],
