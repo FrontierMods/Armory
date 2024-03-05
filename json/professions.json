@@ -11,14 +11,17 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "police_belt",
-
     "entries": [
-      { "contents-item": "baton", "item": "pouch_baton_bfg" },
-      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      { "item": "baton", "container-item": "pouch_baton_bfg" },
       {
-        "contents-group": "police_magazine_pistol",
-        "item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch_radio_tasm"
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley",
+        "item": "usp45mag",
+        "ammo-item": "45_acp",
+        "charges": 12,
         "count": 2
       },
       {
@@ -34,21 +37,24 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "police_belt",
-
     "entries": [
-      { "contents-item": "PR24-retracted", "item": "holster_tonfa_gng" },
+      { "item": "PR24-extended", "container-item": "holster_tonfa_gng" },
       {
-        "contents-group": "charged_tazer",
-        "item": "holster_stun_gun_streetwise"
+        "group": "charged_tazer",
+        "container-item": "holster_stun_gun_streetwise"
       },
-      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
       {
-        "contents-group": "police_magazine_pistol",
-        "item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch_radio_tasm"
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley",
+        "item": "usp45mag",
+        "ammo-item": "45_acp",
+        "charges": 12,
         "count": 2
       },
-      { "item": "pouch_flashbang_tt", "contents-item": "gasbomb" },
+      { "container-item": "pouch_flashbang_tt", "item": "gasbomb" },
       {
         "item": "usp_45",
         "ammo-item": "45_acp",
@@ -62,14 +68,17 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "police_belt",
-
     "entries": [
-      { "contents-item": "baton", "item": "pouch_baton_bfg" },
-      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      { "item": "baton", "container-item": "pouch_baton_bfg" },
       {
-        "contents-group": "police_magazine_pistol",
-        "item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch_radio_tasm"
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley",
+        "item": "usp45mag",
+        "ammo-item": "45_acp",
+        "charges": 12,
         "count": 2
       },
       {
@@ -92,16 +101,23 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "police_belt",
-
     "entries": [
-      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
       {
-        "contents-group": "swat_magazine_pistol",
-        "item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch_radio_tasm"
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley",
+        "item": "usp9mag",
+        "ammo-item": "9mmfmj",
+        "charges": 15,
         "count": 2
       },
-      { "item": "pouch_flashbang_tt", "contents-item": "flashbang", "count": 2 }
+      {
+        "container-item": "pouch_flashbang_tt",
+        "item": "flashbang",
+        "count": 2
+      }
     ]
   },
   {
@@ -109,17 +125,24 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "police_belt",
-
     "entries": [
-      { "contents-item": "baton", "item": "pouch_baton_bfg" },
-      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      { "item": "baton", "container-item": "pouch_baton_bfg" },
       {
-        "contents-group": "swat_magazine_pistol",
-        "item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch_radio_tasm"
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley",
+        "item": "usp9mag",
+        "ammo-item": "9mmfmj",
+        "charges": 15,
         "count": 2
       },
-      { "item": "pouch_flashbang_tt", "contents-item": "flashbang", "count": 2 }
+      {
+        "container-item": "pouch_flashbang_tt",
+        "item": "flashbang",
+        "count": 2
+      }
     ]
   },
   {
@@ -143,19 +166,6 @@
     ]
   },
   {
-    "id": "ar15_mag_50beowulf",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "entries": [
-      {
-        "item": "50beowulf_ar15mag",
-        "ammo-item": "50beowulf_xtp",
-        "charges": 10
-      }
-    ]
-  },
-  {
     "id": "specops_pouch_mag_smg",
     "type": "item_group",
     "subtype": "collection",
@@ -171,16 +181,29 @@
     ]
   },
   {
+    "id": "ar15_mag_50beowulf",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "50beowulf_ar15mag",
+        "ammo-item": "50beowulf_xtp",
+        "charges": 10
+      }
+    ]
+  },
+  {
     "id": "conversion_hunter_rig",
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "chest_rig_haley_placard",
-
     "entries": [
       {
-        "item": "pouch_magazine_556_condor",
-        "contents-group": "ar15_mag_50beowulf",
+        "container-item": "pouch_magazine_556_condor",
+        "item": "50beowulf_ar15mag",
+        "ammo-item": "50beowulf_xtp",
+        "charges": 10,
         "count": 3
       }
     ]
@@ -227,8 +250,8 @@
           { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
           { "item": "kukri", "container-item": "sheath" },
           {
-            "item": "chest_rig_haley_placard",
-            "contents-group": "specops_pouch_mag_smg"
+            "container-item": "chest_rig_haley_placard",
+            "group": "specops_pouch_mag_smg"
           },
           {
             "item": "hk_mp5sd",
@@ -322,7 +345,10 @@
             "contents-item": "shoulder_strap_simple",
             "custom-flags": ["no_auto_equip"]
           },
-          { "group": "conversion_hunter_rig" },
+          {
+            "item": "chest_rig_haley_placard",
+            "contents-group": "conversion_hunter_rig"
+          },
           { "item": "sheath", "contents-item": "knife_hunting" }
         ]
       },
@@ -706,7 +732,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "police_belt" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt"
+          },
 
           { "item": "pants_army" },
           { "item": "socks" },
@@ -733,9 +762,13 @@
     "items": {
       "both": {
         "entries": [
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt"
+          },
+
           { "item": "socks" },
           { "item": "pants_army" },
-          { "group": "police_belt" },
           { "item": "sweatshirt" },
           { "item": "sneakers" },
           { "item": "gloves_tactical" },
@@ -817,8 +850,12 @@
     "items": {
       "both": {
         "entries": [
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "swat_belt"
+          },
+
           { "item": "socks" },
-          { "group": "swat_belt" },
           { "item": "tac_helmet" },
           { "item": "boots_combat" },
           { "item": "gloves_tactical" },
@@ -862,7 +899,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "swat_belt_cqc" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "swat_belt_cqc"
+          },
 
           { "item": "socks" },
           { "item": "tac_fullhelmet" },
@@ -914,7 +954,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "police_belt_riot_control" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt_riot_control"
+          },
 
           { "item": "socks" },
           { "item": "pants_tactical" },
@@ -942,7 +985,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "police_belt_motorized" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt_motorized"
+          },
 
           { "item": "socks" },
           { "item": "police_breeches" },
@@ -980,7 +1026,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "police_belt" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt"
+          },
 
           { "item": "pants_army" },
           { "item": "socks" },
@@ -1006,7 +1055,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "police_belt" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt"
+          },
 
           { "item": "pants_army" },
           { "item": "socks" },
@@ -1034,7 +1086,10 @@
     "items": {
       "both": {
         "entries": [
-          { "group": "police_belt" },
+          {
+            "entry-wrapper": "belt_webbing_blackhawk_foundation",
+            "group": "police_belt"
+          },
 
           { "item": "pants_army" },
           { "item": "socks" },
