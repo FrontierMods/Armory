@@ -8,10 +8,5 @@
     "id": ["police_belt"],
     "type": "MIGRATION",
     "replace": "belt_webbing_blackhawk_foundation"
-  },
-  {
-    "id": ["western_holster"],
-    "type": "MIGRATION",
-    "replace": "belt_leather_grommets"
   }
 ]
