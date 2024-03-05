@@ -10,10 +10,46 @@
     ],
 
     "name": {
-      "str": "Tactical Tailor canteen pouch",
-      "str_pl": "Tactical Tailor canteen pouches"
+      "str": "one-quart canteen pouch"
     },
-    "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. infantry.  Can also serve as an impromptu dump pouch.",
+    "description": "A large nylon pouch that can hold a 1-quart canteen, like those issued to the U.S. soldiers.  Can serve as an impromptu dump pouch.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Tactical Tailor canteen pouch",
+          "str_pl": "Tactical Tailor canteen pouches"
+        },
+        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Tactical Tailor canteen pouch",
+          "str_pl": "Tactical Tailor canteen pouches"
+        },
+        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Tactical Tailor canteen pouch",
+          "str_pl": "Tactical Tailor canteen pouches"
+        },
+        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "133 g",
     "//dimensions": {
@@ -30,7 +66,6 @@
     "color": "dark_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 2,
     "repairs_like": "legrig",
     "looks_like": "holster",
 
@@ -75,10 +110,69 @@
     "//notes": ["the unfolded version"],
 
     "name": {
-      "str": "FROG.PRO dump pouch",
-      "str_pl": "FROG.PRO dump pouches"
+      "str": "compact dump pouch",
+      "str_pl": "compact dump pouches"
     },
-    "description": "A nylon pouch, intended for collecting random items for sorting later.  It is currently folded, with no container capacity to speak of, and can only be attached to the webbing when unfolded.  Activate to unfold.",
+    "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "FROG.PRO dump pouch",
+          "str_pl": "FROG.PRO dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "FROG.PRO dump pouch",
+          "str_pl": "FROG.PRO dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "FROG.PRO dump pouch",
+          "str_pl": "FROG.PRO dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "FROG.PRO dump pouch",
+          "str_pl": "FROG.PRO dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "FROG.PRO dump pouch",
+          "str_pl": "FROG.PRO dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
 
     "weight": "175 g",
     "//dimensions": {
@@ -95,19 +189,18 @@
     "color": "dark_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 2,
     "repairs_like": "legrig",
     "looks_like": "holster",
 
     "use_action": {
       "type": "transform",
-      "menu_text": "Unfold",
-      "msg": "You unfold the dump pouch.",
-      "target": "pouch_dump_frogpro_folded"
+      "target": "pouch_dump_frogpro_folded",
+
+      "menu_text": "Fold",
+      "msg": "You fold the dump pouch."
     },
 
-    "//flags": "only the unfolded version is attacheable",
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR"],
+    "flags": ["PALS_MEDIUM", "WATER_FRIENDLY", "CANT_WEAR"],
 
     "price": "38 USD",
     "//price_postapoc": "1 USD"
@@ -119,10 +212,69 @@
     "category": "container",
 
     "name": {
-      "str": "FROG.PRO dump pouch (unfolded)",
-      "str_pl": "FROG.PRO dump pouches (unfolded)"
+      "str": "compact dump pouch (folded)",
+      "str_pl": "compact dump pouches (folded)"
     },
-    "description": "A nylon pouch, intended for collecting random items for sorting later.  It is currently unfolded, ready to collect, and is taking up a fair bit of space.  Activate to fold back.",
+    "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
 
     "//dimensions": {
       "length": "25.00 cm",
@@ -149,12 +301,11 @@
 
     "use_action": {
       "type": "transform",
-      "menu_text": "Fold",
-      "msg": "You fold the dump pouch.",
-      "target": "pouch_dump_frogpro"
-    },
+      "target": "pouch_dump_frogpro",
 
-    "extend": { "flags": ["PALS_MEDIUM"] }
+      "menu_text": "Unfold",
+      "msg": "You unfold the dump pouch."
+    }
   },
   {
     "id": "pouch_ifak_frogpro_chiron",
@@ -177,10 +328,69 @@
     ],
 
     "name": {
-      "str": "FROG.PRO Chiron IFAK pouch",
-      "str_pl": "FROG.PRO Chiron IFAK pouches"
+      "str": "mini IFAK pouch",
+      "str_pl": "mini IFAK pouches"
     },
-    "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.",
+    "description": "A compact nylon pouch for first aid items.  There is a separate bottom pocket for a tourniquet.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
 
     "weight": "220 g",
     "//dimensions": {
@@ -199,7 +409,6 @@
     "looks_like": "holster",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 2,
 
     "pocket_data": [
       {
@@ -304,14 +513,66 @@
 
     "//sources": [
       "https://condoroutdoor.com/products/condor-ammo-pouch",
-      ["https://www.amazon.com/Condor-Ammo-Pouch/dp/B00865O0HA", "weight"]
+      ["https://www.amazon.com/Condor-Ammo-Pouch/dp/B00865O0HA", "weight"],
+      [
+        "https://www.gearzonetactical.com/Condor-Ammo-Pouch--Multicam_p_3542.html",
+        "variant reference"
+      ]
     ],
 
     "name": {
-      "str": "Condor loose ammo pouch",
-      "str_pl": "Condor loose ammo pouches"
+      "str": "loose ammo pouch",
+      "str_pl": "loose ammo pouches"
     },
-    "description": "A rectangular nylon pouch with a flap that opens to an internal container.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.",
+    "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor loose ammo pouch",
+          "str_pl": "Condor loose ammo pouches"
+        },
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor loose ammo pouch",
+          "str_pl": "Condor loose ammo pouches"
+        },
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor loose ammo pouch",
+          "str_pl": "Condor loose ammo pouches"
+        },
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Condor loose ammo pouch",
+          "str_pl": "Condor loose ammo pouches"
+        },
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "254 g",
     "//dimensions": {
@@ -328,7 +589,6 @@
     "color": "brown",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1,
 
     "pocket_data": [
       {
@@ -350,7 +610,7 @@
   },
   {
     "id": "pouch_leg_gas_mask_hsgi",
-    "type": "GENERIC",
+    "type": "ARMOR",
     "category": "container",
 
     "//sources": ["https://www.highspeedgear.com/12gm01"],
@@ -360,10 +620,69 @@
     ],
 
     "name": {
-      "str": "HSGI gas mask leg pouch",
-      "str_pl": "HSGI gas mask leg pouches"
+      "str": "gas mask leg pouch",
+      "str_pl": "gas mask leg pouches"
     },
-    "description": "A large nylon pouch by High Speed Gear.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.",
+    "description": "A large nylon pouch worn on either leg.  It's intended to store one's gas mask, but could serve as a dump pouch.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "454 g",
     "//dimensions": {
@@ -380,7 +699,6 @@
     "color": "dark_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -422,17 +740,17 @@
     ],
 
     "//flags": [
-      "replaced PALS_MEDIUM with BELT_GEAR_LARGE: this pouch has no PALS interface",
+      "removed PALS_MEDIUM: this pouch has no PALS interface",
       "added WATER_FRIENDLY"
     ],
-    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "BELT_GEAR_LARGE"],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
 
     "price": "91 USD",
     "//price_postapoc": "3 USD"
   },
   {
     "id": "pouch_gas_mask_molle_ii",
-    "type": "GENERIC",
+    "type": "ARMOR",
     "category": "container",
 
     "//sources": [
@@ -440,18 +758,46 @@
       [
         "https://www.venturesurplus.com/products/eagle-industries-gas-mask-pouch/",
         "weight"
-      ]
+      ],
+      ["https://www.ebay.com/itm/203777900749", "variant reference"]
     ],
 
     "//notes": [
-      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description"
+      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description",
+      "manufacturer is Eagle Industries"
     ],
 
     "name": {
-      "str": "MOLLE II gas mask leg pouch",
-      "str_pl": "MOLLE II gas mask leg pouches"
+      "str": "gas mask MOLLE pouch",
+      "str_pl": "gas mask MOLLE pouches"
     },
-    "description": "A large nylon pouch, produced by Eagle Industries as part of the MOLLE II set of soldier's equipment.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing.",
+    "description": "A large nylon pouch for carrying one's gas mask.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to webbing or be worn at the leg.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "USMC gas mask pouch",
+          "str_pl": "USMC gas mask pouches"
+        },
+        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "USMC gas mask pouch",
+          "str_pl": "USMC gas mask pouches"
+        },
+        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "255 g",
     "//dimensions": {
@@ -468,7 +814,6 @@
     "color": "dark_gray",
 
     "material": ["nylon"],
-    "material_thickness": 0.75,
     "looks_like": "dump_pouch",
     "repairs_like": "legrig",
 
@@ -518,10 +863,47 @@
     ],
 
     "name": {
-      "str": "First Tactical water bottle pouch",
-      "str_pl": "First Tactical water bottle pouches"
+      "str": "water bottle pouch",
+      "str_pl": "water bottle pouches"
     },
     "description": "A tall nylon pouch for storing water bottles.  Takes in tall bottles up to 1.5L in capacity.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "First Tactical water bottle pouch",
+          "str_pl": "First Tactical water bottle pouches"
+        },
+        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "First Tactical water bottle pouch",
+          "str_pl": "First Tactical water bottle pouches"
+        },
+        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "First Tactical water bottle pouch",
+          "str_pl": "First Tactical water bottle pouches"
+        },
+        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "136 g",
     "//dimensions": {
@@ -538,7 +920,6 @@
     "color": "dark_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -577,10 +958,58 @@
     ],
 
     "name": {
-      "str": "Haley Strategic 40mm grenade pouch",
-      "str_pl": "Haley Strategic 40mm grenade pouches"
+      "str": "open-top 40mm grenade pouch",
+      "str_pl": "open-top 40mm grenade pouches"
     },
-    "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other ammunition, like 37mm grenades, flashbangs, smoke grenades, and so on.",
+    "description": "A nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": "using weight of a similar product made roughly to the same blueprint",
     "weight": "20 g",
@@ -598,7 +1027,6 @@
     "color": "dark_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1,
     "looks_like": "ammo_satchel",
     "repairs_like": "legrig",
 
@@ -654,10 +1082,58 @@
     ],
 
     "name": {
-      "str": "Condor STANAG magazine pouch",
-      "str_pl": "Condor STANAG magazine pouches"
+      "str": "open-top rifle magazine pouch",
+      "str_pl": "open-top rifle magazine pouches"
     },
-    "description": "A nylon pouch fit for a single STANAG magazine.  When stored, standard-length magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.",
+    "description": "A nylon pouch for a single rifle magazine.  Will fit many, though not all, rifle magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor STANAG magazine pouch",
+          "str_pl": "Condor STANAG magazine pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor STANAG magazine pouch",
+          "str_pl": "Condor STANAG magazine pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor STANAG magazine pouch",
+          "str_pl": "Condor STANAG magazine pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Condor STANAG magazine pouch",
+          "str_pl": "Condor STANAG magazine pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "87 g",
     "//dimensions": {
@@ -675,10 +1151,6 @@
     "looks_like": "ammo_satchel",
 
     "material": ["nylon"],
-    "material_thickness": 2,
-
-    "encumbrance": 0,
-    "max_encumbrance": 2,
 
     "pocket_data": [
       {
@@ -731,10 +1203,58 @@
     ],
 
     "name": {
-      "str": "Condor kangaroo pouch",
-      "str_pl": "Condor kangaroo pouches"
+      "str": "kangaroo magazine pouch",
+      "str_pl": "kangaroo magazine pouches"
     },
-    "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.",
+    "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  Not as quick to use as two separate pouches, but takes up fewer slots on the webbing.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor kangaroo pouch",
+          "str_pl": "Condor kangaroo pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor kangaroo pouch",
+          "str_pl": "Condor kangaroo pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor kangaroo pouch",
+          "str_pl": "Condor kangaroo pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Condor kangaroo pouch",
+          "str_pl": "Condor kangaroo pouches"
+        },
+        "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "120 g",
     "//dimensions": {
@@ -752,7 +1272,6 @@
     "looks_like": "ragpouch",
 
     "material": ["nylon"],
-    "material_thickness": 2,
 
     "pocket_data": [
       {
@@ -839,10 +1358,58 @@
     ],
 
     "name": {
-      "str": "Condor shotgun ammo pouch",
-      "str_pl": "Condor shotgun ammo pouches"
+      "str": "shot shell pouch",
+      "str_pl": "shot shell pouches"
     },
-    "description": "A long nylon pouch, intended to hold up to 12 12-gauge shotgun shells, or ammunition of similar size.",
+    "description": "A long nylon pouch, intended to hold up to 12 shotgun shells.  The flap keeps the shells shielded from the elements.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor shotgun ammo pouch",
+          "str_pl": "Condor shotgun ammo pouches"
+        },
+        "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor shotgun ammo pouch",
+          "str_pl": "Condor shotgun ammo pouches"
+        },
+        "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor shotgun ammo pouch",
+          "str_pl": "Condor shotgun ammo pouches"
+        },
+        "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Condor shotgun ammo pouch",
+          "str_pl": "Condor shotgun ammo pouches"
+        },
+        "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "136 g",
     "//dimensions": {
@@ -859,7 +1426,6 @@
     "color": "dark_gray",
 
     "material": ["nylon"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -918,10 +1484,80 @@
     ],
 
     "name": {
-      "str": "Haley Strategic grenade pouch",
-      "str_pl": "Haley Strategic grenade pouches"
+      "str": "grenade pouch",
+      "str_pl": "grenade pouches"
     },
-    "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.",
+    "description": "A small nylon pouch for storing a single hand grenade.  This model is quick to operate because it uses a hook-and-loop flap instead of a plastic buckle.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": [
       "using weight of a similar product made roughly to the same blueprint",
@@ -946,7 +1582,6 @@
     "color": "dark_gray",
 
     "material": ["nylon"],
-    "material_thickness": 1,
     "looks_like": "ammo_satchel",
     "repairs_like": "legrig",
 
@@ -984,10 +1619,47 @@
     "//sources": ["https://tasmaniantigerusa.com/product.php?id=33"],
 
     "name": {
-      "str": "Tasmanian Tiger radio pouch",
-      "str_pl": "Tasmanian Tiger radio pouches"
+      "str": "skinny radio pouch",
+      "str_pl": "skinny radio pouches"
     },
-    "description": "A skinny, skeletonized nylon pouch -- or, specifically, two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.",
+    "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Tasmanian Tiger radio pouch",
+          "str_pl": "Tasmanian Tiger radio pouches"
+        },
+        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Tasmanian Tiger radio pouch",
+          "str_pl": "Tasmanian Tiger radio pouches"
+        },
+        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Tasmanian Tiger radio pouch",
+          "str_pl": "Tasmanian Tiger radio pouches"
+        },
+        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "99 g",
     "//dimensions": {
@@ -1007,7 +1679,6 @@
     "color": "light_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -1076,7 +1747,65 @@
       "str": "Condor gadget pouch",
       "str_pl": "Condor gadget pouches"
     },
-    "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank; it also has two thin pouches for things like plastic cards.",
+    "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.",
+
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor gadget pouch",
+          "str_pl": "Condor gadget pouches"
+        },
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor gadget pouch",
+          "str_pl": "Condor gadget pouches"
+        },
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor gadget pouch",
+          "str_pl": "Condor gadget pouches"
+        },
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Condor gadget pouch",
+          "str_pl": "Condor gadget pouches"
+        },
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_navy",
+
+        "name": {
+          "str": "Condor gadget pouch",
+          "str_pl": "Condor gadget pouches"
+        },
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_navy>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "190 g",
     "//dimensions": {
@@ -1093,7 +1822,6 @@
     "color": "light_gray",
 
     "material": ["nylon"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -1231,10 +1959,58 @@
     "//sources": ["https://www.511tactical.com/flex-flashlight-pouch.html"],
 
     "name": {
-      "str": "5.11 Tactical flashlight pouch",
-      "str_pl": "5.11 Tactical flashlight pouches"
+      "str": "flashlight pouch",
+      "str_pl": "flashlight pouches"
     },
     "description": "A small nylon pouch, intended to hold a compact field flashlight.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "5.11 Tactical flashlight pouch",
+          "str_pl": "5.11 Tactical flashlight pouches"
+        },
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "5.11 Tactical flashlight pouch",
+          "str_pl": "5.11 Tactical flashlight pouches"
+        },
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "5.11 Tactical flashlight pouch",
+          "str_pl": "5.11 Tactical flashlight pouches"
+        },
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_navy",
+
+        "name": {
+          "str": "5.11 Tactical flashlight pouch",
+          "str_pl": "5.11 Tactical flashlight pouches"
+        },
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_navy>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "70 g",
     "//dimensions": {
@@ -1251,7 +2027,6 @@
     "color": "light_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -1307,14 +2082,66 @@
       [
         "https://www.military1st.ca/ma44-001-condor-triple-stacker-m4-m16-mag-pouch-olive-drab.html",
         "weight"
+      ],
+      [
+        "https://condoroutdoor.com/products/condor-triple-m4-mag-pouch-stacker",
+        "variant reference"
       ]
     ],
 
     "name": {
-      "str": "Condor Triple Stacker pouch",
-      "str_pl": "Condor Triple Stacker pouches"
+      "str": "triple stacker pouch",
+      "str_pl": "triple stacker pouches"
     },
-    "description": "A set of sewn-together STANAG magazine pouches, in two rows of 3.  The front row is noticably shorter while allowing the same size of magazines in, thus being slightly quicker to use.  They each also feature small PALS webbing, though because the pouches are completely attached to one another at the front, the webbings can't be used as one long MOLLE panel.",
+    "description": "A set of six rifle magazine pouches in a single pouch.  Named so because it has two rows of pouches stacked over one another.  The front row is quicker to use, but doesn't hold larger magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor Triple Stacker pouch",
+          "str_pl": "Condor Triple Stacker pouches"
+        },
+        "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor Triple Stacker pouch",
+          "str_pl": "Condor Triple Stacker pouches"
+        },
+        "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor Triple Stacker pouch",
+          "str_pl": "Condor Triple Stacker pouches"
+        },
+        "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Condor Triple Stacker pouch",
+          "str_pl": "Condor Triple Stacker pouches"
+        },
+        "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "255 g",
     "//dimensions": {
@@ -1331,7 +2158,6 @@
     "color": "light_gray",
 
     "material": ["nylon"],
-    "material_thickness": 1,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -1454,7 +2280,7 @@
   },
   {
     "id": "bag_deployment_condor",
-    "type": "GENERIC",
+    "type": "ARMOR",
     "category": "container",
 
     "//sources": [
@@ -1472,10 +2298,53 @@
     ],
 
     "name": {
-      "str": "Condor deployment bag",
-      "str_pl": "Condor deployment bag"
+      "str": "deployment bag"
     },
-    "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder, or it can be attached to a vest or a chest rig.  Best used on an expedition where you may not need a lot of ammo but would need food, drink, medication, or other short-term supplies.",
+    "description": "A small nylon bag.  Can be worn over the shoulder or strapped to webbing.  Has plenty of pockets.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor deployment bag"
+        },
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor deployment bag"
+        },
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor deployment bag"
+        },
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_red",
+
+        "name": {
+          "str": "Condor deployment bag"
+        },
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  This one is red with black accents.",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "550 g",
     "//dimensions": {
@@ -1492,7 +2361,6 @@
     "color": "green",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 1.5,
     "looks_like": "fanny",
     "repairs_like": "backpack",
 
@@ -1640,7 +2508,6 @@
       }
     ],
 
-    "//flags": ["replaced PALS_LARGE with MOLLE_ATTACH"],
     "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "PALS_LARGE"],
 
     "price": "29 USD",
@@ -1663,10 +2530,58 @@
     ],
 
     "name": {
-      "str": "Condor double grenade pouch",
-      "str_pl": "Condor double grenade pouches"
+      "str": "double grenade pouch",
+      "str_pl": "double grenade pouches"
     },
-    "description": "A pair of small nylon bags sewn together, each designed to hold a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.",
+    "description": "A pair of nylon grenade pouches sewn together.  Slightly slower to operate than the alternatives.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "148 g",
     "//dimensions": {
@@ -1680,7 +2595,6 @@
     "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
-    "material_thickness": 1,
 
     "symbol": "[",
     "looks_like": "leather_belt",
@@ -1740,6 +2654,10 @@
       [
         "https://www.amazon.com/Gonex-Upgraded-Tactical-Drawstring-Hydration/dp/B01J7SZII4",
         "weight"
+      ],
+      [
+        "https://www.gonexsport.com/products/gonex-drawstring-military-molle-water-bottle-pouch",
+        "variant reference"
       ]
     ],
 
@@ -1748,10 +2666,36 @@
     ],
 
     "name": {
-      "str": "Gonex water bottle pouch",
-      "str_pl": "Gonex water bottle pouches"
+      "str": "small water bottle pouch",
+      "str_pl": "small water bottle pouches"
     },
     "description": "A nylon pouch for storing water bottles.  Takes in bottles up to 0.75L in capacity.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Gonex water bottle pouch",
+          "str_pl": "Gonex water bottle pouches"
+        },
+        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Gonex water bottle pouch",
+          "str_pl": "Gonex water bottle pouches"
+        },
+        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": [
       "the source for weight gives conflicting information about the item's weight, listing both 84 g and 0.19 lbs ≈ 86 g",
@@ -1772,7 +2716,6 @@
 
     "//material": "has a tiny plastic cord lock at the top that's not worth considering as a separate material",
     "material": ["nylon"],
-    "material_thickness": 1.5,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -1806,10 +2749,80 @@
     ],
 
     "name": {
-      "str": "Haley Strategic pistol mag pouch",
-      "str_pl": "Haley Strategic pistol mag pouches"
+      "str": "pistol magazine pouch",
+      "str_pl": "pistol magazine pouches"
     },
-    "description": "A thin nylon pouch with a flexible retention cord.  Can store a single pistol magazine, including some of the extended ones.",
+    "description": "A thin nylon pouch for holding a single pistol magazine.  Being of open-top design, it's quicker to operate than those with flaps.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "45 g",
     "//dimensions": {
@@ -1829,7 +2842,6 @@
     "color": "brown",
 
     "material": ["nylon"],
-    "material_thickness": 0.3,
 
     "pocket_data": [
       {
@@ -1874,10 +2886,47 @@
     ],
 
     "name": {
-      "str": "5.11 Tactical Flex handcuffs pouch",
-      "str_pl": "5.11 Tactical Flex handcuffs pouches"
+      "str": "handcuff pouch",
+      "str_pl": "handcuff pouches"
     },
-    "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.",
+    "description": "A nylon pouch for storing handcuffs.  Can also store a bit of cordage.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "5.11 Tactical Flex handcuffs pouch",
+          "str_pl": "5.11 Tactical Flex handcuffs pouches"
+        },
+        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "5.11 Tactical Flex handcuffs pouch",
+          "str_pl": "5.11 Tactical Flex handcuffs pouches"
+        },
+        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "5.11 Tactical Flex handcuffs pouch",
+          "str_pl": "5.11 Tactical Flex handcuffs pouches"
+        },
+        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "90 g",
     "//dimensions": {
@@ -1894,7 +2943,6 @@
     "color": "brown",
 
     "material": ["nylon"],
-    "material_thickness": 0.2,
 
     "pocket_data": [
       {
@@ -1937,10 +2985,25 @@
     ],
 
     "name": {
-      "str": "MOLLE II pistol mag pouch (M9)",
-      "str_pl": "MOLLE II pistol mag pouches (M9)"
+      "str": "flap military pistol mag pouch",
+      "str_pl": "flap military pistol mag pouches"
     },
-    "description": "An older, faded nylon pouch with a snap button.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.",
+    "description": "A nylon pouch fit for a pistol magazine.  The flap keeps the magazine soundly in place, but operating it is slower than the open-top alternatives.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "flc_acu",
+
+        "name": {
+          "str": "MOLLE II older pistol mag pouch",
+          "str_pl": "MOLLE II older pistol mag pouches"
+        },
+        "description": "An older, faded nylon pouch.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.  The snap button on the flap makes the pouch slower to operate than the newer hook-and-loop flap on the M17 magazine pouch.  <variant_acu>.",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "42 g",
     "//dimensions": {
@@ -1957,7 +3020,6 @@
     "color": "brown",
 
     "material": ["nylon"],
-    "material_thickness": 0.3,
 
     "pocket_data": [
       {
@@ -1990,7 +3052,22 @@
       "str": "MOLLE II pistol mag pouch",
       "str_pl": "MOLLE II pistol mag pouches"
     },
-    "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.",
+    "description": "A nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  A newer design for the newer standard-issue army pistol magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "flc_multicam",
+
+        "name": {
+          "str": "MOLLE II pistol mag pouch",
+          "str_pl": "MOLLE II pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.  The flap is quicker to operate than the previous snap-button design, but not as quick as the open-top alternatives. <variant_multicam>.",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": "1 oz",
     "weight": "28 g",
@@ -2011,7 +3088,6 @@
     "color": "brown",
 
     "material": ["nylon"],
-    "material_thickness": 0.3,
 
     "pocket_data": [
       {
@@ -2039,14 +3115,77 @@
       [
         "https://highgroundshooter.com/testimonial/tactical-tailor-fight-light-battle-belt-system-light-comfortable-and-efficient/",
         "weight"
+      ],
+      [
+        "https://skdtac.com/tactical-tailor-fight-light-multi-purpose-pouch/",
+        "variant reference"
       ]
     ],
 
     "name": {
-      "str": "Tactical Tailor multi-purpose pouch",
-      "str_pl": "Tactical Tailor multi-purpose pouches"
+      "str": "multi-purpose pouch",
+      "str_pl": "multi-purpose pouches"
     },
-    "description": "A nylon pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, matches, and anything else you might need in the field.",
+    "description": "A nylon box pouch.  Can be used to hold a small quantity of anything useful in the field.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
 
     "weight": "128 g",
     "//dimensions": {
@@ -2063,7 +3202,6 @@
     "color": "dark_gray",
 
     "material": ["nylon", "plastic"],
-    "material_thickness": 0.3,
     "looks_like": "holster",
     "repairs_like": "legrig",
 
@@ -2105,10 +3243,69 @@
     ],
 
     "name": {
-      "str": "Tactical Tailor flashbang pouch",
-      "str_pl": "Tactical Tailor flashbang pouches"
+      "str": "flashbang pouch",
+      "str_pl": "flashbang pouches"
     },
-    "description": "A nylon pouch for storing a single flashbang grenade.  It is also large enough to fit a smoke grenade.",
+    "description": "A nylon pouch for storing a flashbang grenade.  It can also accomodate a smoke grenade.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
 
     "weight": "60 g",
     "//dimensions": {
@@ -2122,7 +3319,6 @@
     "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
-    "material_thickness": 0.3,
 
     "symbol": "[",
     "color": "dark_gray",
@@ -2175,10 +3371,36 @@
     ],
 
     "name": {
-      "str": "PSIGEAR SMG magazine pouch",
-      "str_pl": "PSIGEAR SMG magazine pouches"
+      "str": "SMG magazine pouch",
+      "str_pl": "SMG magazine pouches"
     },
-    "description": "A nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.",
+    "description": "A nylon pouch for storing an SMG magazine.  Also fits extended SMG magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "PSIGEAR SMG magazine pouch",
+          "str_pl": "PSIGEAR SMG magazine pouches"
+        },
+        "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "PSIGEAR SMG magazine pouch",
+          "str_pl": "PSIGEAR SMG magazine pouches"
+        },
+        "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
 
     "weight": "37 g",
     "//dimensions": {
@@ -2192,7 +3414,6 @@
     "longest_side": "119 mm",
 
     "material": ["nylon"],
-    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
@@ -2237,10 +3458,58 @@
     ],
 
     "name": {
-      "str": "Tactical Tailor 7.62mm magazine pouch",
-      "str_pl": "Tactical Tailor 7.62mm magazine pouches"
+      "str": "large rifle magazine pouch",
+      "str_pl": "large rifle magazine pouches"
     },
-    "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.",
+    "description": "A nylon pouch for storing a single large magazine.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Tactical Tailor 7.62mm magazine pouch",
+          "str_pl": "Tactical Tailor 7.62mm magazine pouches"
+        },
+        "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Tactical Tailor 7.62mm magazine pouch",
+          "str_pl": "Tactical Tailor 7.62mm magazine pouches"
+        },
+        "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Tactical Tailor 7.62mm magazine pouch",
+          "str_pl": "Tactical Tailor 7.62mm magazine pouches"
+        },
+        "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Tactical Tailor 7.62mm magazine pouch",
+          "str_pl": "Tactical Tailor 7.62mm magazine pouches"
+        },
+        "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "weight": "37 g",
     "//dimensions": {
@@ -2254,7 +3523,6 @@
     "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
-    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
@@ -2298,10 +3566,25 @@
     "//sources": ["https://www.t3gear.com/t3-drop-leg-m4-double-mag-pouch/"],
 
     "name": {
-      "str": "T3 STANAG magazine leg pouch",
-      "str_pl": "T3 STANAG magazine leg pouches"
+      "str": "leg rifle magazine pouch",
+      "str_pl": "leg rifle magazine pouches"
     },
-    "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines.",
+    "description": "A pair of nylon pouches with straps to attach to the leg with.  Each holds up to two rifle magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "T3 rifle magazine leg pouch",
+          "str_pl": "T3 rifle magazine leg pouches"
+        },
+        "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": "9.44 oz",
     "weight": "267620 mg",
@@ -2317,15 +3600,11 @@
     "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
 
     "material": ["nylon"],
-    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
     "looks_like": "legrig",
     "repairs_like": "legrig",
-
-    "encumbrance": 5,
-    "max_encumbrance": 8,
 
     "sided": true,
     "armor": [
@@ -2399,10 +3678,58 @@
     ],
 
     "name": {
-      "str": "TacMed drop leg pouch",
-      "str_pl": "TacMed drop leg pouches"
+      "str": "drop leg pouch",
+      "str_pl": "drop leg pouches"
     },
-    "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for miscellanea and extra storage.",
+    "description": "A nylon pouch with straps to hold onto either leg.  Can also be strapped to webbing. Provides extra storage.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "TacMed drop leg pouch",
+          "str_pl": "TacMed drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "TacMed drop leg pouch",
+          "str_pl": "TacMed drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "TacMed drop leg pouch",
+          "str_pl": "TacMed drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "TacMed drop leg pouch",
+          "str_pl": "TacMed drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": "14.3 oz",
     "weight": "405400 mg",
@@ -2417,15 +3744,11 @@
     "longest_side": "241 mm",
 
     "material": ["nylon"],
-    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
     "looks_like": "legrig",
     "repairs_like": "legrig",
-
-    "encumbrance": 5,
-    "max_encumbrance": 10,
 
     "sided": true,
     "armor": [
@@ -2472,10 +3795,58 @@
     "//TODO": ["Velcro patch surface"],
 
     "name": {
-      "str": "Fox Outdoor drop leg pouch",
-      "str_pl": "Fox Outdoor drop leg pouches"
+      "str": "large drop leg pouch",
+      "str_pl": "large drop leg pouches"
     },
-    "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.",
+    "description": "A large nylon pouch, with strap to hold onto either leg.  Provides a lot of extra storage in exchange for encumbrance.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Fox Outdoor drop leg pouch",
+          "str_pl": "Fox Outdoor drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Fox Outdoor drop leg pouch",
+          "str_pl": "Fox Outdoor drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Fox Outdoor drop leg pouch",
+          "str_pl": "Fox Outdoor drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Fox Outdoor drop leg pouch",
+          "str_pl": "Fox Outdoor drop leg pouches"
+        },
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": "1 lb",
     "weight": "453590 mg",
@@ -2490,15 +3861,11 @@
     "longest_side": "241 mm",
 
     "material": ["nylon"],
-    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
     "looks_like": "legrig",
     "repairs_like": "legrig",
-
-    "encumbrance": 8,
-    "max_encumbrance": 20,
 
     "sided": true,
     "armor": [
@@ -2545,10 +3912,58 @@
     ],
 
     "name": {
-      "str": "WYNEX tactical tool pouch",
-      "str_pl": "WYNEX tactical tool pouches"
+      "str": "tactical tool pouch",
+      "str_pl": "tactical tool pouches"
     },
-    "description": "A compact, low-profile pouch for storing small tools and other miscellanea.  Can be attached to PALS webbing.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.",
+    "description": "A compact pouch for storing small tools.  Can be attached to webbing and carried on your backpack or load-bearing vest.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "WYNEX tactical tool pouch",
+          "str_pl": "WYNEX tactical tool pouches"
+        },
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "WYNEX tactical tool pouch",
+          "str_pl": "WYNEX tactical tool pouches"
+        },
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "WYNEX tactical tool pouch",
+          "str_pl": "WYNEX tactical tool pouches"
+        },
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "WYNEX tactical tool pouch",
+          "str_pl": "WYNEX tactical tool pouches"
+        },
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": [
       "the item's listing offers several different statements on its weight",
@@ -2568,7 +3983,6 @@
     "longest_side": "224 mm",
 
     "material": ["nylon"],
-    "material_thickness": 0.5,
 
     "symbol": "[",
     "color": "dark_gray",
@@ -3060,7 +4474,6 @@
       "plastic is for Kydex"
     ],
     "material": ["iron", "plastic"],
-    "material_thickness": 16.51,
     "looks_like": "magnet",
 
     "pocket_data": [
@@ -3086,6 +4499,419 @@
     "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_MEDIUM"],
 
     "price": "295 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_baton_bfg",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.blueforcegear.com/molle-baton-pouch",
+      [
+        "https://www.blueforcegear.com/SpecSheets/HW-TSP-BATON-01-MC.pdf",
+        "weight",
+        "dimensions",
+        "material",
+        "variant reference"
+      ]
+    ],
+
+    "name": {
+      "str": "MOLLE baton pouch",
+      "str_pl": "MOLLE baton pouches"
+    },
+    "description": "A nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market. Typically worn by police officers who use webbing duty belts.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "24 g",
+    "//dimensions": {
+      "length": "0.125 in",
+      "width": "2 in",
+      "height": "4 in",
+      "raw": "16.39 ml",
+      "trim": 0.05
+    },
+    "volume": "16 ml",
+    "//longest_side": "width, since we assume that the pouch would fold length-wise",
+    "longest_side": "51 mm",
+
+    "//material": ["source lists Ten-Speed® Elastic"],
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "50% over the weight of audited `baton` in order to accomodate heavier batons",
+        "max_contains_weight": "750 g",
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "150 ml",
+        "max_item_length": "250 mm",
+
+        "moves": 85
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["CANT_WEAR", "TARDIS", "WATER_FRIENDLY", "PALS_SMALL"],
+
+    "price": "27 USD",
+    "price_postapoc": "20 cent"
+  },
+  {
+    "id": "holster_tonfa_gng",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      [
+        "https://www.amazon.ca/Gould-Goodrich-GGB2070-Holder-Standard/dp/B005HO0A7M",
+        "model",
+        "weight"
+      ],
+      [
+        "https://www.amazon.com/ROCOTACTICAL-Police-Holder-Flashlight-Slide/dp/B07GSN6XKL",
+        "dimensions",
+        "price",
+        "ring material"
+      ]
+    ],
+
+    "//notes": [
+      "while the source of dimensions is not close to the model, we use it because finding dimensions of the model item online has proven to be difficult",
+      "could this be a good location for carabiner-held gear?"
+    ],
+
+    "name": {
+      "str": "baton ring"
+    },
+    "description": "A metal ring on a strap which attaches to the belt.  Can hold a PR-24 baton or a standard-size flashlight.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "ring_black",
+
+        "name": { "str": "Gould & Goodrich baton ring" },
+        "description": "A metal ring with a tongue, held by a thin nylon strap.  Usually worn on the belt by an on-duty police officer, and holds the Monadnock PR-24 side-handle baton.  Can also hold standard-sized flashlight, though not smaller or larger ones.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "23 g",
+    "//dimensions": {
+      "length": "6.1 in",
+      "width": "2.45 in",
+      "height": "1 mm",
+      "raw": "9.64 ml",
+      "trim": 0.45,
+      "notes": ["width acquired from visual reference"]
+    },
+    "volume": "5 ml",
+    "//longest_side": "width, since we assume that while the strap could fold any way, the ring cannot",
+    "longest_side": "62 mm",
+
+    "//material": "the ring is plastic",
+    "material": ["nylon", "plastic"],
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "axe_ring",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "750 g",
+        "min_item_volume": "200 ml",
+        "max_contains_volume": "650 ml",
+        "min_item_length": "330 mm",
+        "max_item_length": "650 mm",
+
+        "moves": 85
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": "we add PALS_SMALL because it seems perfectly possible for this ring to strap to PALS webbing",
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "PALS_SMALL",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "10 USD",
+    "price_postapoc": "10 cent"
+  },
+  {
+    "id": "holster_stun_gun_streetwise",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.streetsmartprotection.com/stun-guns/streetwise-touchdown-stun-gun"
+    ],
+
+    "name": {
+      "str": "stun gun pouch"
+    },
+    "description": "A nylon pouch for stun guns.  Can fit a variety of models.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "holster_grey",
+
+        "name": { "str": "Streetwise stun gun pouch" },
+        "description": "A nylon pouch for stun guns.  Fit for a specific model, but can fit similar models.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "guess based on similar pouches",
+    "weight": "25 g",
+    "//volume": "appears to be ~5% larger than the bounding box (raw volume) of the stun gun, so that's what we use",
+    "volume": "280 ml",
+    "//longest_side": "longest side of stun gun (165 mm) + 5%",
+    "longest_side": "173 mm",
+
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "200 g",
+        "min_item_volume": "200 ml",
+        "max_contains_volume": "245 ml",
+        "max_item_length": "165 mm",
+
+        "moves": 105
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "//price": "sold alongside the stun gun, so no way to estimate a real price",
+    "price": "0 cent",
+    "price_postapoc": "5 cent"
+  },
+  {
+    "id": "pouch_holster_breaching_raptor",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://raptortactical.com/breacher-tool-holder/"],
+
+    "name": {
+      "str": "breacher tool holder"
+    },
+    "description": "An arrangement of nylon straps locked together with a plastic buckle.  Can hold a medium- or large-sized breaching tool.  Straps to webbing, so could be carried on a plate carrier or a belt.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam_alpine",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_multicam_alpine>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_woodland",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_woodland>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "very-roughly estimated from assumed weights of constituent parts",
+      [
+        "4 × neodymium magnet",
+        "https://magnet-outlet.eu/en/collections/neodymium-magneten/products/neodymium-blokmagneet-40mm-x-10mm-x-10mm",
+        "4 × 30 g = 120 g"
+      ],
+      "Kydex has the density of only 1.35 g/mL, making it lightweight, and there isn't that much of it, so if we assume ~40 mL of Kydex across the entirety of the holster, it amounts to 54 g"
+    ],
+    "weight": "174 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "2.25 in",
+      "height": "0.65 in",
+      "raw": "143.8 ml",
+      "trim": 0,
+      "notes": [
+        "length and width are assumed from visual reference, based on the Molle-Lok attachment's dimensions",
+        "thickness is presumed",
+        "trim presumes the uneven parts eventually even out with the overall shape"
+      ]
+    },
+    "volume": "144 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "material": ["nylon", "plastic"],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "6 kg",
+        "min_item_volume": "500 ml",
+        "max_contains_volume": "2 L",
+        "min_item_length": "20 cm",
+        "max_item_length": "80 cm",
+
+        "moves": 180
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
+
+    "price": "89 USD",
     "price_postapoc": "1 USD"
   }
 ]
