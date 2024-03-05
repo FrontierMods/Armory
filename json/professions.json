@@ -160,10 +160,14 @@
     "type": "item_group",
     "subtype": "collection",
 
-    "container-item": "pouch_magazine_smg_psigear",
-
     "entries": [
-      { "item": "mp5mag", "ammo-item": "9mm", "charges": 30, "count": 4 }
+      {
+        "container-item": "pouch_magazine_smg_psigear",
+        "item": "mp5mag",
+        "ammo-item": "9mm",
+        "charges": 30,
+        "count": 4
+      }
     ]
   },
   {
