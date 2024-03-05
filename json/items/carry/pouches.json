@@ -4432,9 +4432,33 @@
     ],
 
     "name": {
-      "str": "High Order MSRS magnetic holster"
+      "str": "magnetic holster"
     },
-    "description": "A Kydex body holding four strong magnets inside.  MSRS stands for \"magnetic shotgun retention system\", since it was originally designed to securely hold breaching shotguns.  The \"holster\" can, of course, hold any weapon made of a ferromagnetic material.",
+    "description": "A bunch of strong magnets encased in plastic.  Can be worn on webbing.  Intended for breachers to stash their shotguns away on a mission.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "High Order MSRS magnetic holster"
+        },
+        "description": "A Kydex body holding four strong magnets inside.  MSRS stands for \"magnetic shotgun retention system\", as it was originally designed to securely hold breaching shotguns.  The \"holster\" can, of course, hold any weapon made of a ferromagnetic material.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "High Order MSRS magnetic holster"
+        },
+        "description": "A Kydex body holding four strong magnets inside.  MSRS stands for \"magnetic shotgun retention system\", as it was originally designed to securely hold breaching shotguns.  The \"holster\" can, of course, hold any weapon made of a ferromagnetic material.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
 
     "//weight": [
       "very-roughly estimated from assumed weights of constituent parts",
@@ -4494,7 +4518,7 @@
       "type": "holster"
     },
 
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_MEDIUM"],
+    "flags": ["CANT_WEAR", "TARDIS", "WATER_FRIENDLY", "PALS_MEDIUM"],
 
     "price": "295 USD",
     "price_postapoc": "1 USD"
