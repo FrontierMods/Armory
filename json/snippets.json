@@ -1,0 +1,87 @@
+[
+  {
+    "type": "snippet",
+    "category": "<variant_multicam>",
+    "text": [
+      "This one is fashioned in multicam, previously used by the U.S. Army."
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_black>",
+    "text": ["This one is all black."]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_coyote>",
+    "text": ["This one is colored coyote brown."]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_ranger>",
+    "text": ["This one is colored ranger green."]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_olive>",
+    "text": ["This one is colored olive drab."]
+  },
+
+  {
+    "type": "snippet",
+    "category": "<variant_woodland>",
+    "text": ["This one is covered with the woodland pattern."]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_grey>",
+    "text": ["This one is colored grey."]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_khaki>",
+    "text": ["This one comes in the color of sand."]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_navy>",
+    "text": ["This one is colored navy blue."]
+  },
+
+  {
+    "type": "snippet",
+    "category": "<variant_multicam_black>",
+    "text": [
+      "This one is decorated with the black multicam pattern, for that stealth feeling."
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_multicam_arid>",
+    "text": [
+      "This one is decorated with the desert multicam pattern, for when you suddenly find yourself in Nevada."
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_multicam_alpine>",
+    "text": [
+      "This one is decorated with the white multicam pattern, for when your target is the top of Everest."
+    ]
+  },
+
+  {
+    "type": "snippet",
+    "category": "<variant_ocp>",
+    "text": [
+      "This one is decorated with the OCP pattern, the camouflage previously employed by the U.S. Army."
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "<variant_acu>",
+    "text": [
+      "This one is decorated with the ACU pattern, previously used by the U.S. Army."
+    ]
+  }
+]
