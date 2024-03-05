@@ -186,6 +186,57 @@
         "flag_restriction": ["VELCRO_ATTACH_HANG_DOWN"]
       }
     ],
+    "pocket_data": [
+      {
+        "holster": true,
+        "transparent": true,
+
+        "max_contains_weight": "2500 g",
+        "max_contains_volume": "2000 ml",
+        "max_item_length": "70 cm",
+
+        "flag_restriction": ["BELT_CLIP"],
+
+        "moves": 90
+      },
+      {
+        "holster": true,
+        "transparent": true,
+
+        "max_contains_weight": "2500 g",
+        "max_contains_volume": "2000 ml",
+        "max_item_length": "70 cm",
+
+        "flag_restriction": ["BELT_CLIP"],
+
+        "moves": 90
+      },
+
+      {
+        "holster": true,
+        "transparent": true,
+
+        "max_contains_weight": "2500 g",
+        "max_contains_volume": "2000 ml",
+        "max_item_length": "70 cm",
+
+        "flag_restriction": ["BELT_CLIP"],
+
+        "moves": 160
+      },
+      {
+        "holster": true,
+        "transparent": true,
+
+        "max_contains_weight": "2500 g",
+        "max_contains_volume": "2000 ml",
+        "max_item_length": "70 cm",
+
+        "flag_restriction": ["BELT_CLIP"],
+
+        "moves": 160
+      }
+    ],
 
     "use_action": [
       {
