@@ -1065,7 +1065,8 @@
   },
   {
     "id": "pouch_magazine_556_condor",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://condoroutdoor.com/collections/magazine-pouches/products/condor-open-top-m4-m16-mag-pouch",
@@ -2513,7 +2514,8 @@
   },
   {
     "id": "pouch_grenade_double_condor",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://condoroutdoor.com/products/condor-double-frag-grenade-pouch",
@@ -3225,7 +3227,8 @@
   },
   {
     "id": "pouch_flashbang_tt",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://tacticaltailor.com/fight-light-flashbang-smoke-pouch/",
@@ -3362,7 +3365,8 @@
   },
   {
     "id": "pouch_magazine_smg_psigear",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://www.psigear.net/pouches/skewer-laser-cut-smg-mag-pouch"
@@ -3449,7 +3453,8 @@
   },
   {
     "id": "pouch_magazine_308_tt",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://tacticaltailor.com/fight-light-7-62-6-8x51-single-mag-pouch-20rd/"
@@ -3897,7 +3902,8 @@
   },
   {
     "id": "pouch_tool_wynex",
-    "type": "ARMOR",
+    "type": "GENERIC",
+    "category": "container",
 
     "//sources": [
       "https://www.amazon.com/WYNEX-Tactical-Laser-Cut-Organizer-Attachment/dp/B097M7XH5M"
