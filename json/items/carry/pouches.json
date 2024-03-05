@@ -1156,11 +1156,9 @@
         "pocket_type": "CONTAINER",
 
         "//reference": [
-          "STANAG magazine capacity (tall)",
-          "AR-15 magazine (40 rounds)"
+          "AR-15 / STANAG magazine capacity (tall)",
+          "AR-15 / STANAG magazine (40 rounds)"
         ],
-
-        "description": "Magazine pouch",
 
         "holster": true,
 
@@ -1276,7 +1274,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "holster": true,
 
@@ -1324,6 +1322,7 @@
 
     "use_action": {
       "type": "holster",
+
       "holster_prompt": "Stash ammo",
       "holster_msg": "You stash your %s."
     },
@@ -4670,7 +4669,7 @@
     "name": {
       "str": "baton ring"
     },
-    "description": "A metal ring on a strap which attaches to the belt.  Can hold a PR-24 baton or a standard-size flashlight.",
+    "description": "A metal ring on a strap which attaches to the belt.  Can hold a PR-24 baton or a regular-sized flashlight.",
 
     "variant_type": "gun",
     "variants": [
@@ -4782,7 +4781,7 @@
 
         "holster": true,
 
-        "max_contains_weight": "200 g",
+        "max_contains_weight": "350 g",
         "min_item_volume": "200 ml",
         "max_contains_volume": "245 ml",
         "max_item_length": "165 mm",
