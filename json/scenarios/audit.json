@@ -1,0 +1,13 @@
+[
+  {
+    "id": "aircraft_carrier_start",
+    "copy-from": "aircraft_carrier_start",
+    "type": "scenario",
+
+    "name": "Challenge - Aircraft Carrier",
+
+    "extend": {
+      "professions": ["seal_sniper"]
+    }
+  }
+]
