@@ -1,34 +1,5 @@
 [
   {
-    "id": "mil_breacher_ballistic_vest",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "//notes": [
-      "replacing light ballistic vest with ESAPI one because this is a military breacher (and because the military vest has more webbing for all these pouches)",
-      "replacing Mossberg 500 with Remington 870 Breacher because of the size limitations of the magnetic holster"
-    ],
-
-    "container-item": "ballistic_vest_esapi",
-
-    "entries": [
-      { "group": "pristine_esapi_front_plates" },
-      {
-        "item": "remington_870_breacher",
-        "ammo-item": "shot_00",
-        "charges": 4,
-        "contents-item": ["shoulder_strap"],
-        "container-item": "pouch_holster_magnet_hot"
-      },
-      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
-      {
-        "item": "hammer_sledge_short",
-        "container-item": "pouch_holster_breaching_raptor"
-      },
-      { "item": "pouch_flashbang_tt", "contents-item": "flashbang", "count": 2 }
-    ]
-  },
-  {
     "id": "police_magazine_pistol",
     "type": "item_group",
     "subtype": "collection",
@@ -1134,57 +1105,6 @@
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    }
-  },
-
-  {
-    "id": "mil_breacher",
-    "copy-from": "mil_breacher",
-    "type": "profession",
-
-    "name": "Military Breacher",
-
-    "items": {
-      "both": {
-        "entries": [
-          { "group": "mil_breacher_ballistic_vest" },
-          {
-            "item": "m17",
-            "ammo-item": "9mm",
-            "charges": 17,
-            "container-item": "nylon_holster"
-          },
-
-          { "item": "pants_army" },
-          { "item": "undershirt" },
-          { "item": "combat_shirt" },
-          { "item": "tac_fullhelmet" },
-          { "item": "armguard_hard" },
-          { "item": "legguard_hard" },
-          { "item": "mask_ski" },
-          { "item": "gloves_liner" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "wristwatch" },
-          { "item": "molle_pack" },
-          { "item": "water_clean", "container-item": "canteen" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          {
-            "item": "bandolier_shotgun",
-            "contents-group": "bandolier_swat_cqc1"
-          },
-          {
-            "item": "knife_combat_army",
-            "variant": "m9bayonet",
-            "container-item": "sheath"
-          }
-        ]
-      },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
-      }
     }
   }
 ]
