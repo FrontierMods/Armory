@@ -152,24 +152,173 @@
 
     "//delete": [
       "appears to be a handmade, custom item with no equivalent in real life",
+      "thus, we assume that it shouldn't be MOLLE-compatible"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
+  },
+  {
+    "id": "leather_stone_pouch",
+    "copy-from": "leather_stone_pouch",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "leather stone pouch",
+      "str_pl": "leather stone pouches"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item with no equivalent in real life",
       "thus, we assume that it shouldn't be MOLLE-compatible",
       "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   },
   {
-    "id": "flintlock_pouch",
-    "copy-from": "flintlock_pouch",
+    "id": "legpouch",
+    "copy-from": "legpouch",
     "type": "ARMOR",
 
     "name": {
-      "str": "paper cartridge pouch",
-      "str_pl": "paper cartridge pouches"
+      "str": "ankle ammo pouch",
+      "str_pl": "ankle ammo pouches"
     },
 
     "//delete": [
-      "appears to be a handmade, custom item that was never intended to be MOLLE-compatible, if any of the reference images online are anything to go by",
-      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
+      "appears to be an unrelated (non-MOLLE) item and was likely never intended to be MOLLE-compatible"
+    ],
+    "delete": { "flags": ["PALS_SMALL"] }
+  },
+  {
+    "id": "bandolier_pistol",
+    "copy-from": "bandolier_pistol",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "pistol bandolier"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item that was never intended to be MOLLE-compatible, if any of the reference images online are anything to go by"
+    ],
+    "delete": { "flags": ["PALS_SMALL"] }
+  },
+  {
+    "id": "bandolier_wrist",
+    "copy-from": "bandolier_wrist",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "wrist bandolier"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item that was never intended to be MOLLE-compatible, if any of the reference images online are anything to go by"
+    ],
+    "delete": { "flags": ["PALS_SMALL"] }
+  },
+  {
+    "id": "bandolier_rifle",
+    "copy-from": "bandolier_rifle",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "rifle bandolier"
+    },
+
+    "//delete": [
+      "appears to be a handmade, custom item that was never intended to be MOLLE-compatible, if any of the reference images online are anything to go by"
+    ],
+    "delete": { "flags": ["PALS_MEDIUM"] }
+  },
+  {
+    "id": "sheath",
+    "copy-from": "sheath",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "sheath"
+    },
+
+    "//delete": [
+      "belt leather straps may or may not be compatible with PALS webbing",
+      "we remove it to err of the side of caution, in this respect"
+    ],
+    "delete": { "flags": ["PALS_SMALL"] }
+  },
+  {
+    "id": "sholster",
+    "copy-from": "sholster",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "fast draw holster"
+    },
+
+    "//delete": [
+      "belt leather straps may or may not be compatible with PALS webbing",
+      "we remove it to err of the side of caution, in this respect"
+    ],
+    "delete": { "flags": ["PALS_MEDIUM"] }
+  },
+  {
+    "id": "FB_double_holster",
+    "copy-from": "FB_double_holster",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "front-to-back double holster"
+    },
+
+    "//delete": [
+      "belt leather straps may or may not be compatible with PALS webbing",
+      "we remove it to err of the side of caution, in this respect"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
+  },
+  {
+    "id": "side_double_holster",
+    "copy-from": "side_double_holster",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "side-by-side double holster"
+    },
+
+    "//delete": [
+      "belt leather straps may or may not be compatible with PALS webbing",
+      "we remove it to err of the side of caution, in this respect"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
+  },
+  {
+    "id": "XL_holster",
+    "copy-from": "XL_holster",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "large holster"
+    },
+
+    "//delete": [
+      "belt leather straps may or may not be compatible with PALS webbing",
+      "we remove it to err of the side of caution, in this respect"
+    ],
+    "delete": { "flags": ["PALS_LARGE"] }
+  },
+  {
+    "id": "nylon_quiver",
+    "copy-from": "nylon_quiver",
+    "type": "ARMOR",
+
+    "name": {
+      "str": "nylon quiver"
+    },
+
+    "//delete": [
+      "the only nylon MOLLE quivers currently or previously on market had PALS webbing *on them*, rather than being able to attach to other PALS webbing",
+      "the initial release of this item was not based on any particular quiver, and was simply a way to add a MOLLE-compatible quiver",
+      "https://github.com/CleverRaven/Cataclysm-DDA/pull/67155",
+      "that said, it may be worth investigating having MOLLE quivers mount on the back webbing, when that becomes modelled"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   }
