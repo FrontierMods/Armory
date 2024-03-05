@@ -3,7 +3,8 @@
     "type": "ITEM_BLACKLIST",
     "whitelist": false,
 
-    "items": ["dragonskin", "flintlock_pouch", "XL_holster"],
+    "//items": ["dragonskin", "flintlock_pouch", "XL_holster"],
+    "items": ["flintlock_pouch"],
 
     "//notes": {
       "dragonskin": [
