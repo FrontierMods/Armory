@@ -54,7 +54,7 @@
         "item": "usp_45",
         "ammo-item": "45_acp",
         "charges": 12,
-        "container-item": "holster"
+        "container-item": "nylon_holster"
       }
     ]
   },
@@ -82,7 +82,7 @@
         "item": "usp_45",
         "ammo-item": "45_acp",
         "charges": 12,
-        "container-item": "holster"
+        "container-item": "nylon_holster"
       }
     ]
   },
@@ -105,7 +105,7 @@
         "item": "usp_45",
         "ammo-item": "45_acp",
         "charges": 12,
-        "container-item": "holster"
+        "container-item": "nylon_holster"
       }
     ]
   },
@@ -300,7 +300,7 @@
             "item": "m9",
             "ammo-item": "9mm",
             "charges": 15,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           },
           {
             "item": "chest_rig_onetigris_vulture",
@@ -433,7 +433,7 @@
           {
             "item": "m17",
             "ammo-item": "9mm",
-            "container-item": "holster",
+            "container-item": "nylon_holster",
             "charges": 17
           },
           { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 },
@@ -578,7 +578,7 @@
           {
             "item": "p226_9mm",
             "ammo-item": "9mm",
-            "container-item": "holster",
+            "container-item": "nylon_holster",
             "charges": 15
           },
           {
@@ -641,7 +641,7 @@
           {
             "item": "p226_9mm",
             "ammo-item": "9mm",
-            "container-item": "holster",
+            "container-item": "nylon_holster",
             "charges": 15
           },
           {
@@ -698,7 +698,7 @@
           {
             "item": "m18",
             "ammo-item": "9mm",
-            "container-item": "holster",
+            "container-item": "nylon_holster",
             "charges": 17
           },
           {
@@ -774,7 +774,7 @@
             "item": "usp_45",
             "ammo-item": "45_acp",
             "charges": 12,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           },
           {
             "item": "M24",
@@ -821,7 +821,7 @@
             "item": "sw_619",
             "ammo-item": "357mag_fmj",
             "charges": 7,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           }
         ]
       },
@@ -861,7 +861,7 @@
             "item": "usp_9mm",
             "ammo-item": "9mm",
             "charges": 15,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           },
           {
             "item": "hk_mp5",
@@ -913,7 +913,7 @@
             "item": "usp_9mm",
             "ammo-item": "9mmfmj",
             "charges": 15,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           },
           {
             "item": "ksg",
@@ -1118,7 +1118,7 @@
             "item": "p320_357sig",
             "ammo-item": "357sig_fmj",
             "charges": 13,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           },
           {
             "item": "paper",
@@ -1152,7 +1152,7 @@
             "item": "m17",
             "ammo-item": "9mm",
             "charges": 17,
-            "container-item": "holster"
+            "container-item": "nylon_holster"
           },
 
           { "item": "pants_army" },
