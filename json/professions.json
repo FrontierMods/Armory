@@ -1,11 +1,174 @@
 [
   {
+    "id": "mil_breacher_ballistic_vest",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "replacing light ballistic vest with ESAPI one because this is a military breacher (and because the military vest has more webbing for all these pouches)",
+      "replacing Mossberg 500 with Remington 870 Breacher because of the size limitations of the magnetic holster"
+    ],
+
+    "container-item": "ballistic_vest_esapi",
+
+    "entries": [
+      { "group": "pristine_esapi_front_plates" },
+      {
+        "item": "remington_870_breacher",
+        "ammo-item": "shot_00",
+        "charges": 4,
+        "contents-item": ["shoulder_strap"],
+        "container-item": "pouch_holster_magnet_hot"
+      },
+      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      {
+        "item": "hammer_sledge_short",
+        "container-item": "pouch_holster_breaching_raptor"
+      },
+      { "item": "pouch_flashbang_tt", "contents-item": "flashbang", "count": 2 }
+    ]
+  },
+  {
+    "id": "police_magazine_pistol",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "usp45mag", "ammo-item": "45_acp", "charges": 12 }]
+  },
+  {
+    "id": "police_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "police_belt",
+
+    "entries": [
+      { "contents-item": "baton", "item": "pouch_baton_bfg" },
+      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      {
+        "contents-group": "police_magazine_pistol",
+        "item": "pouch_magazine_pistol_haley",
+        "count": 2
+      },
+      {
+        "item": "usp_45",
+        "ammo-item": "45_acp",
+        "charges": 12,
+        "container-item": "holster"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_riot_control",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "police_belt",
+
+    "entries": [
+      { "contents-item": "PR24-retracted", "item": "holster_tonfa_gng" },
+      {
+        "contents-group": "charged_tazer",
+        "item": "holster_stun_gun_streetwise"
+      },
+      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      {
+        "contents-group": "police_magazine_pistol",
+        "item": "pouch_magazine_pistol_haley",
+        "count": 2
+      },
+      { "item": "pouch_flashbang_tt", "contents-item": "gasbomb" },
+      {
+        "item": "usp_45",
+        "ammo-item": "45_acp",
+        "charges": 12,
+        "container-item": "holster"
+      }
+    ]
+  },
+  {
+    "id": "police_belt_motorized",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "police_belt",
+
+    "entries": [
+      { "contents-item": "baton", "item": "pouch_baton_bfg" },
+      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      {
+        "contents-group": "police_magazine_pistol",
+        "item": "pouch_magazine_pistol_haley",
+        "count": 2
+      },
+      {
+        "item": "usp_45",
+        "ammo-item": "45_acp",
+        "charges": 12,
+        "container-item": "holster"
+      }
+    ]
+  },
+  {
+    "id": "swat_magazine_pistol",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "usp9mag", "ammo-item": "9mmfmj", "charges": 15 }]
+  },
+  {
+    "id": "swat_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "police_belt",
+
+    "entries": [
+      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      {
+        "contents-group": "swat_magazine_pistol",
+        "item": "pouch_magazine_pistol_haley",
+        "count": 2
+      },
+      { "item": "pouch_flashbang_tt", "contents-item": "flashbang", "count": 2 }
+    ]
+  },
+  {
+    "id": "swat_belt_cqc",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "police_belt",
+
+    "entries": [
+      { "contents-item": "baton", "item": "pouch_baton_bfg" },
+      { "contents-group": "charged_two_way_radio", "item": "pouch_radio_tasm" },
+      {
+        "contents-group": "swat_magazine_pistol",
+        "item": "pouch_magazine_pistol_haley",
+        "count": 2
+      },
+      { "item": "pouch_flashbang_tt", "contents-item": "flashbang", "count": 2 }
+    ]
+  },
+  {
     "id": "ar15_mag_x4",
     "type": "item_group",
     "subtype": "collection",
 
     "entries": [
       { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 4 }
+    ]
+  },
+  {
+    "id": "triple_stacker_mags_ar15_full",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "triple_stacker_pouch",
+
+    "entries": [
+      { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 6 }
     ]
   },
   {
@@ -44,6 +207,21 @@
         "item": "pouch_magazine_556_condor",
         "contents-group": "ar15_mag_50beowulf",
         "count": 3
+      }
+    ]
+  },
+  {
+    "id": "old_vet_rig_magazines_pouched",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "container-item": "pouch_magazine_308_tt",
+        "item": "m14mag",
+        "ammo-item": "762_51",
+        "charges": 20,
+        "count": 2
       }
     ]
   },
@@ -176,6 +354,836 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "winter_army",
+    "copy-from": "winter_army",
+    "type": "profession",
+
+    "name": "Military Holdout",
+
+    "items": {
+      "both": {
+        "ammo": 100,
+        "entries": [
+          { "item": "socks" },
+          { "item": "winter_pants_army" },
+          { "item": "winter_jacket_army" },
+          { "item": "balclava" },
+          { "item": "boots_combat" },
+          { "item": "winter_gloves_army" },
+          { "item": "tac_helmet" },
+          { "item": "canteen" },
+          { "item": "wristwatch" },
+          { "item": "quikclot" },
+          { "item": "mess_kit" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "knife_combat_army",
+            "variant": "m9bayonet",
+            "container-item": "sheath"
+          },
+          {
+            "item": "modular_m4_carbine",
+            "variant": "modular_m4a1",
+            "ammo-item": "556",
+            "contents-item": "shoulder_strap"
+          },
+          { "group": "charged_two_way_radio" },
+          {
+            "item": "chest_rig_molle_ii_flc",
+            "contents-group": "triple_stacker_mags_ar15_full"
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "sports_bra" }, { "item": "panties" }] }
+    }
+  },
+  {
+    "id": "mili_pilot",
+    "copy-from": "mili_pilot",
+    "type": "profession",
+
+    "name": "Military Pilot",
+
+    "//items": ["pilots aren't issued with chest rigs or any external webbing"],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "nomex_socks" },
+          { "item": "boots_combat" },
+          { "item": "wristwatch" },
+          { "item": "gloves_tactical" },
+          {
+            "item": "flight_helmet",
+            "ammo-item": "light_plus_battery_cell",
+            "charges": 150
+          },
+          { "item": "mil_flight_suit" },
+          { "item": "legpouch_large" },
+          { "group": "charged_matches" },
+          { "group": "charged_flashlight" },
+          { "item": "handflare", "count": 2, "charges": 200 },
+          { "item": "whistle" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "container-item": "holster",
+            "charges": 17
+          },
+          { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 },
+          { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "prepped_patriot",
+    "copy-from": "prepped_patriot",
+    "type": "profession",
+
+    "name": "Prepped Patriot",
+
+    "//items": [
+      "TODO: add American-flag nylon patch to the rig when decoration becomes available",
+      "cross draw vest ought to have a small patch of Velcro over the general pouch"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "american_flag" },
+          { "item": "slippers" },
+          { "group": "charged_smart_phone" },
+          { "item": "mask_dust", "variant": "flag_mask_dust" },
+          {
+            "item": "chest_rig_condor_cross_draw",
+            "variant": "cross_draw_flag",
+            "contents-group": "mags_ruger_arr"
+          },
+          { "item": "cowboy_hat", "variant": "flag_cowboy_hat" },
+          { "item": "leg_bag", "variant": "flag_leg_bag" },
+          {
+            "item": "ruger_arr",
+            "ammo-item": "450_ftx",
+            "charges": 3,
+            "contents-item": "shoulder_strap"
+          }
+        ]
+      },
+      "male": {
+        "entries": [{ "item": "boxer_shorts", "variant": "flag_boxer_shorts" }]
+      },
+      "female": {
+        "entries": [{ "item": "boy_shorts", "variant": "flag_boy_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "old_vet",
+    "copy-from": "old_vet",
+    "type": "profession",
+
+    "name": "Old Veteran",
+
+    "//items": [
+      "this loadout should probably use something USGI-issued, rather than a modern aftermarket option"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "wristwatch" },
+          { "item": "jacket_army" },
+          { "item": "service_medal" },
+          { "item": "boots_combat" },
+          { "item": "socks" },
+          { "item": "officer_uniform" },
+          { "item": "pipe_tobacco" },
+          { "item": "tobacco" },
+          { "item": "beret" },
+          { "item": "pants", "variant": "pants_british_khaki" },
+          { "item": "cane", "custom-flags": ["auto_wield"] },
+          { "group": "charged_ref_lighter" },
+          {
+            "item": "chest_rig_molle_ii_flc",
+            "contents-group": "old_vet_rig_magazines_pouched"
+          },
+          { "item": "knife_combat", "container-item": "sheath" },
+          {
+            "item": "m1a",
+            "ammo-item": "762_51",
+            "charges": 20,
+            "contents-item": ["shoulder_strap_simple"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "briefs" }] },
+      "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] }
+    }
+  },
+  {
+    "id": "seal",
+    "copy-from": "seal",
+    "type": "profession",
+
+    "name": "Navy SEAL",
+
+    "//items": [
+      [
+        "image sources suggest that SEALs would most often carry their MOLLE on plate carriers, rather than rigs",
+        "we leave the LBV intact until the plate carrier update",
+        "of note is the fact that SEALs used LBT 6094 during the Osama bin Laden raid",
+        "https://lbtinc.com/products/6094"
+      ],
+      [
+        "even though it does nothing for this loadout, we leave the webbing belt in",
+        "to be audited when Navy gear comes through"
+      ]
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "combat_shirt" },
+          { "item": "tac_fullhelmet" },
+          { "item": "mask_ski" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "diving_watch" },
+          { "item": "load_bearing_vest" },
+          { "item": "boots_combat" },
+          { "item": "webbing_belt" },
+          { "group": "charged_two_way_radio" },
+          { "group": "charged_powered_earmuffs" },
+          { "item": "tank_top", "variant": "tank_top_camo" },
+          { "item": "pants_army", "variant": "mil_pants_navy" },
+          { "item": "grenade" },
+          {
+            "item": "light_battery_cell",
+            "ammo-item": "battery",
+            "charges": 100,
+            "container-item": "goggles_nv"
+          },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "legpouch_large", "contents-group": "army_mags_m4" },
+          { "item": "knife_rm42", "container-item": "sheath" },
+          {
+            "item": "p226_9mm",
+            "ammo-item": "9mm",
+            "container-item": "holster",
+            "charges": 15
+          },
+          {
+            "item": "p226mag_15rd_9x19mm",
+            "ammo-item": "9mm",
+            "charges": 15,
+            "count": 2
+          },
+          {
+            "group": "m4_cqbr",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "seal_sniper",
+    "copy-from": "seal_sniper",
+    "type": "profession",
+
+    "//name": [
+      "SEAL squads don't have a role of a designated marksman",
+      "additionally, a .338 rifle is above DMR-grade infantry fire"
+    ],
+    "name": "Navy SEAL Sniper",
+
+    "//items": [
+      "even though it does nothing for this loadout, we leave the webbing belt in",
+      "to be audited when Navy gear comes through"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "army_top" },
+          { "item": "combat_shirt" },
+          { "item": "tac_fullhelmet" },
+          { "item": "mask_ski" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "diving_watch" },
+          {
+            "item": "chest_rig_onetigris_vulture",
+            "contents-group": "army_mags_tac338"
+          },
+          { "item": "boots_combat" },
+          { "item": "webbing_belt" },
+          { "group": "charged_two_way_radio" },
+          { "group": "charged_powered_earmuffs" },
+          { "item": "pants_army", "variant": "mil_pants_navy" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "knife_rm42", "container-item": "sheath" },
+          {
+            "item": "p226_9mm",
+            "ammo-item": "9mm",
+            "container-item": "holster",
+            "charges": 15
+          },
+          {
+            "item": "p226mag_15rd_9x19mm",
+            "ammo-item": "9mm",
+            "charges": 15,
+            "count": 2
+          },
+          {
+            "item": "tac338",
+            "ammo-item": "338lapua_fmjbt",
+            "charges": 5,
+            "contents-item": ["shoulder_strap"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "marine",
+    "copy-from": "marine",
+    "type": "profession",
+
+    "name": "Marine Infantry",
+
+    "//items": [
+      "even though it does nothing for this loadout, we leave the webbing belt in",
+      "to be audited when Navy gear comes through"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "combat_shirt" },
+          { "item": "jacket_army_modern" },
+          { "item": "hat_navy" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "diving_watch" },
+          { "item": "webbing_belt" },
+          { "group": "charged_two_way_radio" },
+          { "group": "military_ballistic_vest_pristine" },
+          { "item": "tank_top", "variant": "tank_top_camo" },
+          { "item": "pants_army", "variant": "apants_MARPAT" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "legpouch_large", "contents-group": "army_mags_m4" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "knife_combat_marine", "container-item": "sheath" },
+          {
+            "item": "m18",
+            "ammo-item": "9mm",
+            "container-item": "holster",
+            "charges": 17
+          },
+          {
+            "item": "p320mag_17rd_9x19mm",
+            "ammo-item": "9mm",
+            "charges": 17,
+            "count": 2
+          },
+          {
+            "group": "m4_cqbr",
+            "ammo-item": "556",
+            "charges": 30,
+            "contents-item": ["shoulder_strap", "holo_sight"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "cop",
+    "copy-from": "cop",
+    "type": "profession",
+
+    "name": "Police Officer",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "police_belt" },
+
+          { "item": "pants_army" },
+          { "item": "socks" },
+          { "item": "badge_deputy" },
+          { "item": "boots" },
+          { "item": "whistle" },
+          { "item": "wristwatch" },
+          { "group": "charged_smart_phone" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "sniper_police",
+    "copy-from": "sniper_police",
+    "type": "profession",
+
+    "name": "Police Sniper",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "socks" },
+          { "item": "pants_army" },
+          { "group": "police_belt" },
+          { "item": "sweatshirt" },
+          { "item": "sneakers" },
+          { "item": "gloves_tactical" },
+          { "item": "hat_ball" },
+          { "item": "badge_deputy" },
+          { "item": "wristwatch" },
+          { "container-item": "tacvest", "item": "762_51", "charges": 20 },
+          { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
+          { "group": "charged_powered_earmuffs" },
+          {
+            "item": "usp_45",
+            "ammo-item": "45_acp",
+            "charges": 12,
+            "container-item": "holster"
+          },
+          {
+            "item": "M24",
+            "ammo-item": "762_51",
+            "charges": 5,
+            "contents-item": "shoulder_strap"
+          },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "detective",
+    "copy-from": "detective",
+    "type": "profession",
+
+    "name": "Police Detective",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "dress_shirt" },
+          { "item": "tie_skinny" },
+          { "item": "waistcoat" },
+          { "item": "trenchcoat" },
+          { "item": "leather_belt" },
+          { "item": "badge_detective" },
+          { "item": "gloves_leather" },
+          { "item": "knit_scarf" },
+          { "item": "fedora" },
+          { "item": "wristwatch" },
+          { "item": "socks" },
+          { "item": "dress_shoes" },
+          { "item": "cig" },
+          { "group": "charged_smart_phone" },
+          { "group": "charged_two_way_radio" },
+          { "group": "charged_ref_lighter" },
+          { "item": "pants", "variant": "pants_stone" },
+          { "group": "speedloaders_s&w619_magnum" },
+          {
+            "item": "sw_619",
+            "ammo-item": "357mag_fmj",
+            "charges": 7,
+            "container-item": "holster"
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "briefs" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "panties" }] }
+    }
+  },
+  {
+    "id": "swat",
+    "copy-from": "swat",
+    "type": "profession",
+
+    "name": "SWAT Officer",
+
+    "//items": [
+      "might be a good idea to transfer the gloves to a belt carabiner eventually"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "socks" },
+          { "group": "swat_belt" },
+          { "item": "tac_helmet" },
+          { "item": "boots_combat" },
+          { "item": "gloves_tactical" },
+          { "item": "badge_swat" },
+          { "item": "wristwatch" },
+          { "item": "pants_tactical" },
+          { "item": "elbow_pads" },
+          { "item": "knee_pads" },
+          { "item": "single_sling" },
+          { "group": "swat_ballistic_vest_pristine" },
+          { "item": "sheriffshirt", "variant": "swat_shirt" },
+          { "group": "army_mags_mp5" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "usp_9mm",
+            "ammo-item": "9mm",
+            "charges": 15,
+            "container-item": "holster"
+          },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": ["rail_laser_sight"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "swat_heavy",
+    "copy-from": "swat_heavy",
+    "type": "profession",
+
+    "name": "SWAT CQC Specialist",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "swat_belt_cqc" },
+
+          { "item": "socks" },
+          { "item": "tac_fullhelmet" },
+          { "item": "boots_combat" },
+          { "item": "gloves_tactical" },
+          { "item": "badge_swat" },
+          { "item": "wristwatch" },
+          { "item": "pants_tactical" },
+          { "item": "elbow_pads" },
+          { "item": "knee_pads" },
+          { "group": "swat_ballistic_vest_pristine" },
+          { "item": "sheriffshirt", "variant": "swat_shirt" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "bandolier_shotgun",
+            "contents-group": "bandolier_swat_cqc1"
+          },
+          {
+            "item": "bandolier_shotgun",
+            "contents-group": "bandolier_swat_cqc2"
+          },
+          {
+            "item": "usp_9mm",
+            "ammo-item": "9mmfmj",
+            "charges": 15,
+            "container-item": "holster"
+          },
+          {
+            "item": "ksg",
+            "ammo-item": "shot_00",
+            "charges": 7,
+            "contents-item": ["shoulder_strap"]
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "riot_police",
+    "copy-from": "riot_police",
+    "type": "profession",
+
+    "name": "Riot Control Officer",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "police_belt_riot_control" },
+
+          { "item": "socks" },
+          { "item": "pants_tactical" },
+          { "item": "longshirt" },
+          { "item": "boots_combat" },
+          { "item": "gloves_tactical" },
+          { "item": "armor_riot" },
+          { "item": "helmet_riot" },
+          { "item": "badge_deputy" },
+          { "item": "wristwatch" },
+          { "group": "full_gasmask" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "cop_motor",
+    "copy-from": "cop_motor",
+    "type": "profession",
+
+    "name": "Motorized Police Officer",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "police_belt_motorized" },
+
+          { "item": "socks" },
+          { "item": "police_breeches" },
+          { "item": "badge_deputy" },
+          { "item": "undershirt" },
+          { "item": "motor_police_boots" },
+          { "item": "whistle" },
+          { "item": "wristwatch" },
+          {
+            "item": "leather_police_jacket",
+            "variant": "leather_police_jacket"
+          },
+          { "group": "charged_smart_phone" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "gloves_leather", "custom-flags": ["no_auto_equip"] },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "horse_cop",
+    "copy-from": "horse_cop",
+    "type": "profession",
+
+    "name": "Mounted Police Officer",
+
+    "//items": [
+      "no evidence of mounted police using suppressed sidearms seems to be available",
+      "as such, we replace the suppressed pistol with an unsuppressed version",
+      "if evidence surfaces, we revert"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "police_belt" },
+
+          { "item": "pants_army" },
+          { "item": "socks" },
+          { "item": "badge_deputy" },
+          { "item": "boots" },
+          { "item": "wristwatch" },
+          { "item": "helmet_bike" },
+          { "item": "knee_pads" },
+          { "item": "elbow_pads" },
+          { "group": "charged_smart_phone" },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      }
+    }
+  },
+  {
+    "id": "cop_car",
+    "copy-from": "cop_car",
+    "type": "profession",
+
+    "name": "Police Interceptor",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "police_belt" },
+
+          { "item": "pants_army" },
+          { "item": "socks" },
+          { "item": "badge_deputy" },
+          { "item": "boots" },
+          { "item": "whistle" },
+          { "item": "kevlar" },
+          { "item": "wristwatch" },
+          { "group": "charged_smart_phone" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "k9_cop",
+    "copy-from": "k9_cop",
+    "type": "profession",
+
+    "name": "K9 Officer",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "police_belt" },
+
+          { "item": "pants_army" },
+          { "item": "socks" },
+          { "item": "badge_deputy" },
+          { "item": "boots" },
+          { "item": "dog_whistle" },
+          { "item": "wristwatch" },
+          { "item": "dogfood_dry" },
+          { "group": "charged_smart_phone" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "kevlar_harness", "container-item": "runner_bag" },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+  {
+    "id": "park_ranger",
+    "copy-from": "park_ranger",
+    "type": "profession",
+
+    "name": "Park Ranger",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "leather_belt" },
+
+          { "item": "boots_hiking" },
+          { "item": "cowboy_hat" },
+          { "item": "diving_watch" },
+          { "item": "e_tool" },
+          { "item": "hammer" },
+          { "item": "knife_folding" },
+          { "item": "multitool" },
+          { "item": "pants_army" },
+          { "item": "rollmat" },
+          { "item": "socks" },
+          { "item": "travelpack" },
+          { "item": "vest" },
+          { "item": "water_clean" },
+          { "item": "whistle_multitool" },
+          { "group": "charged_smart_phone" },
+          { "group": "charged_flashlight" },
+          { "group": "charged_two_way_radio" },
+          { "group": "full_1st_aid" },
+          { "item": "black_pen", "charges": 100 },
+          { "item": "coat_rain", "custom-flags": ["no_auto_equip"] },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          { "item": "file" },
+          { "item": "legpouch_large", "contents-group": "ranger_mags" },
+          { "item": "lighter", "charges": 100 },
+          {
+            "item": "p320_357sig",
+            "ammo-item": "357sig_fmj",
+            "charges": 13,
+            "container-item": "holster"
+          },
+          {
+            "item": "paper",
+            "charges": 20,
+            "container-item": "leather_journal"
+          },
+          { "item": "permanent_marker", "charges": 500 },
+          { "item": "roadmap" },
+          { "item": "sm_extinguisher", "charges": 10 },
+          { "item": "trailmap" },
+          { "item": "sheriffshirt", "variant": "sheriff" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
+
+  {
+    "id": "mil_breacher",
+    "copy-from": "mil_breacher",
+    "type": "profession",
+
+    "name": "Military Breacher",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "mil_breacher_ballistic_vest" },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "charges": 17,
+            "container-item": "holster"
+          },
+
+          { "item": "pants_army" },
+          { "item": "undershirt" },
+          { "item": "combat_shirt" },
+          { "item": "tac_fullhelmet" },
+          { "item": "armguard_hard" },
+          { "item": "legguard_hard" },
+          { "item": "mask_ski" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "wristwatch" },
+          { "item": "molle_pack" },
+          { "item": "water_clean", "container-item": "canteen" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "bandolier_shotgun",
+            "contents-group": "bandolier_swat_cqc1"
+          },
+          {
+            "item": "knife_combat_army",
+            "variant": "m9bayonet",
+            "container-item": "sheath"
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
     }
   }
