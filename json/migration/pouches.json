@@ -22,7 +22,7 @@
   {
     "id": ["gas_mask_pouch"],
     "type": "MIGRATION",
-    "replace": "pouch_gas_mask_molle_ii"
+    "replace": "pouch_gas_mask_usmc"
   },
   {
     "id": ["h2o_pouch"],
