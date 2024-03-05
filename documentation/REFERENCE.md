@@ -55,7 +55,7 @@ Coverage is roughly divided between front/back and side plates. Front/back plate
 
 #### Cut
 
-**Full cut**: an (almost) rectangular cut with rounded or slightly-clipped corners. Usually reserved for back and side plates. Provides the most coverage. Most plate carriers do not allow putting a full-cut plate in the front due to their design.
+**Full cut**: a(n almost) rectangular cut with rounded or slightly-clipped corners. Usually reserved for back and side plates. Provides the most coverage. Most plate carriers do not allow putting a full-cut plate in the front due to their design.
 
 **SAPI cut**: standard way to cut ballistic plates. Used by military plates. Top corners are clipped at a 45° angle.
 
