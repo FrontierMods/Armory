@@ -1,0 +1,49 @@
+[
+  {
+    "id": "tazer",
+    "copy-from": "tazer",
+    "type": "TOOL",
+    "category": "weapons",
+
+    "//sources": [
+      "https://www.thehomesecuritysuperstore.com/collections/streetwise-stun-guns/products/streetwise-touchdown-rechargeable-led-stun-gun-75m"
+    ],
+
+    "//notes": [
+      "this model works off of an internal battery, which is how we model it"
+    ],
+
+    "name": {
+      "str": "stun gun"
+    },
+
+    "weight": "181 g",
+    "//dimensions": {
+      "length": "6.5 in",
+      "width": "2 in",
+      "height": "1.25 in",
+      "raw": "266.29 ml",
+      "trim": 0.125,
+      "notes": ["diameter acquired from visual reference"]
+    },
+    "volume": "233 ml",
+    "longest_side": "165 mm",
+
+    "//pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+
+        "rigid": true,
+
+        "ammo_restriction": {
+          "battery": 120
+        }
+      }
+    ],
+
+    "//flags": ["USE_UPS"],
+
+    "price": "23 USD",
+    "price_postapoc": "2 USD"
+  }
+]
