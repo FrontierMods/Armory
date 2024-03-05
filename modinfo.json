@@ -10,6 +10,13 @@
 
     "category": "items",
 
-    "dependencies": ["dda", "frontier_core"]
+    "dependencies": [
+      "dda",
+      "frontier_core",
+      "frontier_materials",
+      "frontier_audits"
+    ],
+
+    "path": "json"
   }
 ]
