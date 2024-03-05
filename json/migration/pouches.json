@@ -85,16 +85,6 @@
     "replace": "pouch_grenade_double_condor"
   },
   {
-    "id": ["grenadebandolier"],
-    "type": "MIGRATION",
-    "replace": "pouch_grenade_double_condor"
-  },
-  {
-    "id": ["h2o_pouch"],
-    "type": "MIGRATION",
-    "replace": "pouch_water_bottle_gonex"
-  },
-  {
     "id": ["h2o_pouch"],
     "type": "MIGRATION",
     "replace": "pouch_water_bottle_gonex"
