@@ -1,0 +1,35 @@
+[
+  {
+    "id": "two_way_radio",
+    "copy-from": "two_way_radio",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.motorolasolutions.com/en_us/products/two-way-radios/project-25-radios/portable-radios/srx2200.html"
+    ],
+
+    "name": {
+      "str": "two-way radio"
+    },
+
+    "//weight": "10.9 oz, without the battery",
+    "weight": "309 g",
+    "//dimensions": {
+      "length": "5.47 in",
+      "width": "2.89 in",
+      "height": "1.58 in",
+      "raw": "409.3 ml",
+      "trim": 0.05,
+      "result": "388.84 ml"
+    },
+    "volume": "389 ml",
+    "longest_side": "139 mm",
+
+    "//price": [
+      "leaving the price unchanged until a better (more-common, more-affordable) source could be found",
+      "this model and its civilian counterpart have been cited to cost at least $500"
+    ],
+    "price": 2000,
+    "price_postapoc": 750
+  }
+]

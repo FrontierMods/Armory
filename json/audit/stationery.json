@@ -1,0 +1,49 @@
+[
+  {
+    "id": "pen",
+    "copy-from": "pen",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.amazon.com/AmazonBasics-Retractable-Ballpoint-Pen-12-Pack/dp/B07BDWD8B7/136-7078052-5616057"
+    ],
+
+    "name": {
+      "str": "pen"
+    },
+
+    "weight": "8 g",
+    "//dimensions": {
+      "length": "5.71 in",
+      "diameter": "0.39 in",
+      "raw": "11 ml",
+      "trim": 0,
+      "notes": ["zero trim to account for the pocket clip on the side"]
+    },
+    "volume": "11 ml",
+    "longest_side": "145 mm"
+  },
+  {
+    "id": "permanent_marker",
+    "copy-from": "permanent_marker",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.jetpens.com/Sharpie-Permanent-Marker-Fine-Point-Black/pd/14563"
+    ],
+
+    "name": {
+      "str": "permanent marker"
+    },
+
+    "weight": "9 g",
+    "//dimensions": {
+      "length": "13.7 cm",
+      "diameter": "10.6 mm",
+      "raw": "12.09 ml",
+      "trim": 0.05
+    },
+    "volume": "12 ml",
+    "longest_side": "137 mm"
+  }
+]

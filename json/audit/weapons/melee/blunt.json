@@ -1,0 +1,190 @@
+[
+  {
+    "id": "baton",
+    "copy-from": "baton",
+    "type": "GENERIC",
+    "category": "weapons",
+
+    "//sources": [
+      "https://batonwarehouse.com/products/smith-wesson-heat-treated-collapsable-baton-24"
+    ],
+
+    "name": {
+      "str": "expandable baton"
+    },
+
+    "weight": "539 g",
+    "//dimensions": {
+      "length": "9.375 in",
+      "diameter": "1.05 in",
+      "raw": "133.03 ml",
+      "trim": 0.02,
+      "notes": ["diameter acquired from visual reference"]
+    },
+    "volume": "130 ml",
+    "longest_side": "238 mm",
+
+    "material": [
+      {
+        "//type": "4130 alloy steel",
+        "type": "steel",
+        "portion": 9
+      },
+      {
+        "type": "rubber",
+        "portion": 1
+      }
+    ],
+
+    "flags": ["DURABLE_MELEE"],
+
+    "price": "45 USD",
+    "price_postapoc": "2 USD"
+  },
+  {
+    "id": "baton-extended",
+    "copy-from": "baton-extended",
+    "type": "GENERIC",
+    "category": "weapons",
+
+    "//sources": [
+      "https://batonwarehouse.com/products/smith-wesson-heat-treated-collapsable-baton-24"
+    ],
+
+    "name": {
+      "str": "expandable baton (extended)",
+      "str_pl": "expandable batons (extended)"
+    },
+
+    "weight": "539 g",
+    "//dimensions": {
+      "length": "24 in",
+      "diameter": "1.05 in",
+      "raw": "340.55 ml",
+      "trim": 0.45,
+      "notes": ["diameter acquired from visual reference"]
+    },
+    "volume": "221 ml",
+    "longest_side": "610 mm",
+
+    "material": [
+      {
+        "//type": "4130 alloy steel",
+        "type": "steel",
+        "portion": 9
+      },
+      {
+        "type": "rubber",
+        "portion": 1
+      }
+    ],
+
+    "flags": ["DURABLE_MELEE"],
+
+    "price": "45 USD",
+    "price_postapoc": "2 USD"
+  },
+
+  {
+    "id": "PR24-retracted",
+    "copy-from": "PR24-retracted",
+    "type": "GENERIC",
+    "category": "weapons",
+
+    "//sources": [
+      [
+        "https://www.defense-technology.com/product/pr-24-expandable-side-handle-black-anodized-baton/",
+        "dimensions (in sell sheet)",
+        "weight (in sell sheet)"
+      ],
+      [
+        "https://www.southernpoliceequipment.com/shop/default.asp?h=b&b=27&id=683",
+        "price"
+      ]
+    ],
+
+    "//notes": ["we assume this item to be model 1101, aka PR-24XTS"],
+
+    "name": {
+      "str": "PR-24 baton (retracted)",
+      "str_pl": "PR-24 batons (retracted)"
+    },
+
+    "//weight": "is already correct",
+    "//dimensions": [
+      {
+        "description": "Baton",
+
+        "length": "13.25 in",
+        "diameter": "1.5 in",
+        "raw": "383.7 ml",
+        "trim": 0.025,
+        "result": "374.11 ml"
+      },
+      {
+        "description": "Grip",
+
+        "length": "5.25 in",
+        "diameter": "1.25 in",
+        "raw": "105.58 ml",
+        "trim": 0,
+        "result": "105.58 ml",
+        "notes": [
+          "trim assumes the stop at the end covers the grip's volume discrepancies"
+        ]
+      }
+    ],
+    "volume": "480 ml",
+    "longest_side": "337 mm",
+
+    "flags": ["DURABLE_MELEE"],
+
+    "//price": "retail (higher) price",
+    "price": "134 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "PR24-extended",
+    "copy-from": "PR24-extended",
+    "type": "GENERIC",
+    "category": "weapons",
+
+    "name": {
+      "str": "PR-24 baton (extended)",
+      "str_pl": "PR-24 batons (extended)"
+    },
+
+    "//weight": "is already correct",
+    "//dimensions": [
+      {
+        "description": "Baton",
+
+        "length": "24 in",
+        "diameter": "1.5 in",
+        "raw": "695 ml",
+        "trim": 0.3,
+        "result": "486.5 ml"
+      },
+      {
+        "description": "Grip",
+
+        "length": "5.25 in",
+        "diameter": "1.25 in",
+        "raw": "105.58 ml",
+        "trim": 0,
+        "result": "105.58 ml",
+        "notes": [
+          "trim assumes the stop at the end covers the grip's volume discrepancies"
+        ]
+      }
+    ],
+    "volume": "592 ml",
+    "longest_side": "610 mm",
+
+    "flags": ["DURABLE_MELEE"],
+
+    "//price": "retail (higher) price",
+    "price": "134 USD",
+    "price_postapoc": "1 USD"
+  }
+]

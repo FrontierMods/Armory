@@ -1,0 +1,70 @@
+[
+  {
+    "id": "flashlight",
+    "copy-from": "flashlight",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.pelican.com/us/en/product/flashlights/tactical-flashlight/2370",
+      [
+        "https://brightguy.com/product/pelican-2370-multi-color-led-flashlight/",
+        "diameter",
+        "price"
+      ]
+    ],
+
+    "//notes": ["actually runs off 2× AA batteries"],
+
+    "name": {
+      "str": "flashlight (off)",
+      "str_pl": "flashlights (off)"
+    },
+
+    "weight": "139 g",
+    "//dimensions": {
+      "length": "6.43 in",
+      "diameter": "0.9 in",
+      "raw": "67.03 ml",
+      "trim": -0.35,
+      "notes": ["trim accounts for the noticably-wider head"]
+    },
+    "volume": "91 ml",
+    "longest_side": "163 mm",
+
+    "price": "7050 cent",
+    "price_postapoc": "150 cent"
+  },
+  {
+    "id": "flashlight_on",
+    "copy-from": "flashlight_on",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.pelican.com/us/en/product/flashlights/tactical-flashlight/2370",
+      [
+        "https://brightguy.com/product/pelican-2370-multi-color-led-flashlight/",
+        "diameter",
+        "price"
+      ]
+    ],
+
+    "name": {
+      "str": "flashlight (on)",
+      "str_pl": "flashlights (on)"
+    },
+
+    "weight": "139 g",
+    "//dimensions": {
+      "length": "6.43 in",
+      "diameter": "0.9 in",
+      "raw": "67.03 ml",
+      "trim": -0.35,
+      "notes": ["trim accounts for the noticably-wider head"]
+    },
+    "volume": "91 ml",
+    "longest_side": "163 mm",
+
+    "price": "7050 cent",
+    "price_postapoc": "150 cent"
+  }
+]
