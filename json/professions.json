@@ -206,6 +206,11 @@
     "items": {
       "both": {
         "entries": [
+          {
+            "item": "chest_rig_haley_placard",
+            "contents-group": "specops_pouch_mag_smg"
+          },
+
           { "item": "wetsuit" },
           { "item": "pants_army" },
           { "item": "wetsuit_hood" },
@@ -222,10 +227,6 @@
           { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
           { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
           { "item": "kukri", "container-item": "sheath" },
-          {
-            "container-item": "chest_rig_haley_placard",
-            "group": "specops_pouch_mag_smg"
-          },
           {
             "item": "hk_mp5sd",
             "ammo-item": "9mm",
@@ -706,8 +707,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt"
           },
 
           { "item": "pants_army" },
@@ -736,8 +737,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt"
           },
 
           { "item": "socks" },
@@ -824,8 +825,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "swat_belt"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "swat_belt"
           },
 
           { "item": "socks" },
@@ -873,8 +874,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "swat_belt_cqc"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "swat_belt_cqc"
           },
 
           { "item": "socks" },
@@ -928,8 +929,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt_riot_control"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt_riot_control"
           },
 
           { "item": "socks" },
@@ -959,8 +960,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt_motorized"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt_motorized"
           },
 
           { "item": "socks" },
@@ -1000,8 +1001,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt"
           },
 
           { "item": "pants_army" },
@@ -1029,8 +1030,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt"
           },
 
           { "item": "pants_army" },
@@ -1060,8 +1061,8 @@
       "both": {
         "entries": [
           {
-            "entry-wrapper": "belt_webbing_blackhawk_foundation",
-            "group": "police_belt"
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "police_belt"
           },
 
           { "item": "pants_army" },
