@@ -2,7 +2,7 @@
   {
     "id": ["chestrig", "xs_chestrig", "xl_chestrig"],
     "type": "MIGRATION",
-    "replace": "chest_rig_haley_placard"
+    "replace": "chest_rig_direct_action_tempest"
   },
   {
     "id": ["light_load_bearing_vest"],
