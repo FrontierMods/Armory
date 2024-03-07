@@ -1712,5 +1712,261 @@
 
     "price": "91 USD",
     "price_postapoc": "2 USD"
+  },
+  {
+    "id": "chest_rig_direct_action_tempest",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://eu.directactiongear.com/en/tempest-chest-rig.html",
+      ["https://us.directactiongear.com/tempest-chest-rig", "price"]
+    ],
+
+    "//notes": [
+      "the webbing underneath the magazines (advertised in the store description) is accounted for"
+    ],
+
+    "name": {
+      "str": "convenient chest rig"
+    },
+    "description": "A capable chest rig with pouches for rifle magazines and plenty of webbing.  Each side also features a flat pocket for things like maps.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "rig_multicam",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.   <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "rig_coyote",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "rig_ranger",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "rig_black",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "rig_grey_dark",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  This one is colored dark grey.",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "rig_green_adaptive",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  This one is colored dulled green.",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "rig_wildwood",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  This one features a proprietary Pencott WildWood camouflage: a digital mix of vegetation green and a set of light and dark browns.",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "flag_chestrig",
+
+        "//": "this is only here and named such to appease the game's item spawn checks",
+
+        "name": { "str": "Direct Action Tempest chest rig" },
+        "description": "A compact yet capable chest rig, split into two by a zipper.  Four rifle magazine pockets can fit up even large magazines.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The rig also features plenty of PALS webbing.  This one features a custom paint job, turning the rig into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "1.17 lbs = 530.7 g",
+    "weight": "531 g",
+    "//dimensions": {
+      "length": "18 in",
+      "width": "6 in",
+      "height": "3 mm",
+      "raw": "209.03 ml",
+      "trim": 0,
+      "notes": ["no trim to account for the harnesss"]
+    },
+    "volume": "209 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "//armor": "copied from MAV 2 Piece rig",
+    "armor": [
+      {
+        "encumbrance": [2, 20],
+
+        "//coverage": [
+          "~18% of front upper torso coverage = 7%",
+          "~30% of side upper torso coverage = 6% * 2 = 12%",
+          "harness = 4% (front straps) + 6% (upper back straps) = 10%"
+        ],
+        "coverage": 29,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.5
+      },
+      {
+        "encumbrance": [1, 12],
+
+        "//coverage": [
+          "~40% of front lower torso coverage = 16%",
+          "~50% of side lower torso coverage = 10% * 2 = 20%",
+          "3% for lower back straps"
+        ],
+        "coverage": 39,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.2
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "//notes": ["side pockets are copied from the MAV 2 Piece rig"],
+
+        "max_contains_weight": "1 kg",
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "12 in",
+          "height": "6 in",
+          "raw": "232.26 ml",
+          "trim": 0.05,
+          "notes": ["said to span the entire size of the panel"]
+        },
+        "max_contains_volume": "221 ml",
+        "//max_item_length": [
+          "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
+          "9 in. = 228.6 mm ≈ 229 mm"
+        ],
+        "max_item_length": "229 mm",
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "221 ml",
+        "max_item_length": "229 mm",
+
+        "moves": 250
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "770 ml",
+        "//min_item_length": [
+          "length of STANAG 10-round magazine",
+          "this is also necessary to allow `ruger_arr_mag` (100 mm) to spawn",
+          "without this possibility, the game throws errors when trying to spawn ghost(?) magazines on load"
+        ],
+        "min_item_length": "91 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "91 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "91 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "770 ml",
+        "min_item_length": "91 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": [
+          ["front webbing", "6 × 3 = 18"],
+          ["front webbing", "6 × 3 = 18"],
+          ["shoulder strap webbing", "5"],
+          ["shoulder strap webbing", "5"],
+          "46 cells"
+        ],
+        "size": 23
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY", "FIT"],
+
+    "price": "219 USD",
+    "//price_postapoc": "5 USD"
   }
 ]
