@@ -1,5 +1,49 @@
 [
   {
+    "id": "grenadier_vest_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "container-item": "pouch_40mm_haley",
+        "item": "40x46mm_m433",
+        "count": 4
+      },
+      {
+        "group": "charged_two_way_radio",
+        "container-item": "pouch_radio_tasm"
+      }
+    ]
+  },
+  {
+    "id": "us_ballistic_vest_grenadier",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "ballistic_vest_esapi",
+        "variant": "us_ballistic_vest",
+        "contents-group": ["some_esapi_plates", "grenadier_vest_contents"]
+      }
+    ]
+  },
+  {
+    "id": "charged_tazer",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "light_battery_cell",
+        "ammo-item": "battery",
+        "charges": 100,
+        "container-item": "tazer"
+      }
+    ]
+  },
+  {
     "id": "police_belt",
     "type": "item_group",
     "subtype": "collection",
@@ -163,6 +207,18 @@
         "ammo-item": "9mm",
         "charges": 30,
         "count": 4
+      }
+    ]
+  },
+  {
+    "id": "sniper_police_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "762_51",
+        "charges": 20
       }
     ]
   },
@@ -440,8 +496,8 @@
           { "group": "charged_smart_phone" },
           { "item": "mask_dust", "variant": "flag_mask_dust" },
           {
-            "item": "chest_rig_condor_cross_draw",
-            "variant": "cross_draw_flag",
+            "item": "chest_rig_direct_action_tempest",
+            "variant": "flag_chestrig",
             "contents-group": "mags_ruger_arr"
           },
           { "item": "cowboy_hat", "variant": "flag_cowboy_hat" },
@@ -750,7 +806,10 @@
           { "item": "hat_ball" },
           { "item": "badge_deputy" },
           { "item": "wristwatch" },
-          { "container-item": "tacvest", "item": "762_51", "charges": 20 },
+          {
+            "item": "chest_rig_onetigris_vulture",
+            "contents-group": "sniper_police_rig"
+          },
           { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
           { "group": "charged_powered_earmuffs" },
           {
@@ -1092,6 +1151,21 @@
 
     "items": {
       "both": {
+        "//entries": [
+          [
+            "park rangers in Massachusetts do not appear to be permitted to carry firearm unless their job is in Boston(?), in which case they're required to complete Special Officer training, which permits they to carry a sidearm",
+            "https://www.parkrangeredu.org/massachusetts/",
+            "in general, only the Law Enforcement Ranger position permits carrying a sidearm, since it requires the capacity to enforce the law",
+            "https://www.parkrangeredu.org/careers/",
+            "however, evidence is unclear, given that different sources say different things about whether or not park rangers are law enforcement",
+            "https://www.gamewarden.org/career/park-ranger"
+          ],
+          [
+            "the Rangers appear to generally be armed with batons and pepper sprays, similarly to the police",
+            "https://www.bostonherald.com/2014/10/16/gelzinis-giving-park-rangers-guns-not-the-answer/",
+            "pouches for the leather belt (which replaces an out-of-place police belt) will be added once belts become audited"
+          ]
+        ],
         "entries": [
           { "item": "leather_belt" },
 
@@ -1117,14 +1191,7 @@
           { "item": "coat_rain", "custom-flags": ["no_auto_equip"] },
           { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
           { "item": "file" },
-          { "item": "legpouch_large", "contents-group": "ranger_mags" },
           { "item": "lighter", "charges": 100 },
-          {
-            "item": "p320_357sig",
-            "ammo-item": "357sig_fmj",
-            "charges": 13,
-            "container-item": "nylon_holster"
-          },
           {
             "item": "paper",
             "charges": 20,
@@ -1170,6 +1237,143 @@
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": { "entries": [{ "item": "chestwrap" }, { "item": "panties" }] }
+    }
+  },
+  {
+    "id": "mil_undercover",
+    "copy-from": "mil_undercover",
+    "type": "profession",
+
+    "name": "Undercover Operative",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "pouch_leg_drop_fox", "contents-group": "army_mags_57" },
+
+          { "item": "scarf" },
+          { "item": "dress_shirt" },
+          { "item": "jeans" },
+          { "item": "longshirt" },
+          { "item": "kevlar" },
+          { "item": "mbag" },
+          { "item": "fancy_sunglasses" },
+          { "item": "socks" },
+          { "item": "lowtops" },
+          { "item": "pockknife" },
+          { "item": "diving_watch" },
+          { "group": "charged_smart_phone" },
+          { "item": "nylon_holster", "contents-group": "holster_supp_57" },
+          { "item": "suppressor" },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "boy_shorts" }, { "item": "sports_bra" }]
+      }
+    }
+  },
+  {
+    "id": "mil_grenadier",
+    "copy-from": "mil_grenadier",
+    "type": "profession",
+
+    "name": "Military Grenadier",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "us_ballistic_vest_grenadier" },
+
+          { "item": "pants_army" },
+          { "item": "undershirt" },
+          { "item": "combat_shirt" },
+          { "item": "helmet_army" },
+          { "item": "mask_ski" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "pockknife" },
+          { "item": "wristwatch" },
+          { "item": "molle_pack" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m320",
+            "ammo-item": "40x46mm_m433",
+            "charges": 1,
+            "contents-item": ["shoulder_strap_simple", "holo_sight"]
+          },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "charges": 17,
+            "container-item": "nylon_holster"
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "mil_sniper",
+    "copy-from": "mil_sniper",
+    "type": "profession",
+
+    "name": "Military Sniper",
+
+    "//items": [
+      "we spawn M17 magazines without the leg pouch, because the leg pouch is currently specialized and cannot accept magazines which are too short"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "pants_army" },
+          { "item": "undershirt" },
+          { "item": "combat_shirt" },
+          { "item": "helmet_army" },
+          { "item": "mask_ski" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "wristwatch" },
+          { "item": "molle_pack" },
+          { "item": "cloak" },
+          { "group": "charged_two_way_radio" },
+          { "group": "us_ballistic_vest_pristine" },
+          { "group": "army_mags_m2010" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "m2010",
+            "ammo-item": "300_winmag",
+            "charges": 5,
+            "contents-item": ["shoulder_strap", "rifle_scope"]
+          },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "knife_combat_army",
+            "variant": "m9bayonet",
+            "container-item": "sheath"
+          },
+          {
+            "item": "m17",
+            "ammo-item": "9mmfmj",
+            "container-item": "nylon_holster",
+            "charges": 17
+          },
+          { "group": "army_mags_m17" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
     }
   }
 ]
