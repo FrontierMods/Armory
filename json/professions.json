@@ -176,6 +176,19 @@
     ]
   },
   {
+    "id": "mil_breacher_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "container-item": "pouch_flashbang_tt",
+        "item": "flashbang",
+        "count": 2
+      }
+    ]
+  },
+  {
     "id": "ar15_mag_x4",
     "type": "item_group",
     "subtype": "collection",
@@ -1368,6 +1381,68 @@
             "charges": 17
           },
           { "group": "army_mags_m17" }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+      }
+    }
+  },
+  {
+    "id": "mil_breacher",
+    "copy-from": "mil_breacher",
+    "type": "profession",
+
+    "name": "Military Breacher",
+
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "belt_webbing_blackhawk_foundation",
+            "contents-group": "mil_breacher_belt"
+          },
+
+          { "item": "pants_army" },
+          { "item": "undershirt" },
+          { "item": "combat_shirt" },
+          { "item": "tac_fullhelmet" },
+          { "item": "armguard_hard" },
+          { "item": "legguard_hard" },
+          { "item": "mask_ski" },
+          { "item": "gloves_liner" },
+          { "item": "gloves_tactical" },
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "wristwatch" },
+          { "item": "molle_pack" },
+          { "item": "hammer_sledge" },
+          { "group": "charged_two_way_radio" },
+          { "group": "us_ballistic_vest_pristine" },
+          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "mossberg_500",
+            "ammo-item": "shot_00",
+            "charges": 6,
+            "contents-item": ["shoulder_strap"]
+          },
+          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "bandolier_shotgun",
+            "contents-group": "bandolier_swat_cqc1"
+          },
+          {
+            "item": "knife_combat_army",
+            "variant": "m9bayonet",
+            "container-item": "sheath"
+          },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "charges": 17,
+            "container-item": "nylon_holster"
+          }
         ]
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
