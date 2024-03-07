@@ -3,7 +3,7 @@
     "type": "snippet",
     "category": "<variant_multicam>",
     "text": [
-      "This one is fashioned in multicam, previously used by the U.S. Army."
+      "This one is fashioned in multicam, a commercial camouflage similar to what was used by the U.S. Army."
     ]
   },
   {
@@ -66,7 +66,7 @@
     "type": "snippet",
     "category": "<variant_multicam_alpine>",
     "text": [
-      "This one is decorated with the white multicam pattern, for when your target is the top of Everest."
+      "This one is decorated with the white multicam pattern, for when your target is the at top of Everest."
     ]
   },
 
@@ -81,7 +81,7 @@
     "type": "snippet",
     "category": "<variant_acu>",
     "text": [
-      "This one is decorated with the ACU pattern, previously used by the U.S. Army."
+      "This one is decorated with the ACU pattern, the camouflage previously used by the U.S. Army."
     ]
   }
 ]
