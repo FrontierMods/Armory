@@ -475,6 +475,11 @@
     "items": {
       "both": {
         "entries": [
+          {
+            "item": "chest_rig_molle_ii_flc",
+            "contents-group": "old_vet_rig_magazines_pouched"
+          },
+
           { "item": "wristwatch" },
           { "item": "jacket_army" },
           { "item": "service_medal" },
@@ -487,10 +492,6 @@
           { "item": "pants", "variant": "pants_british_khaki" },
           { "item": "cane", "custom-flags": ["auto_wield"] },
           { "group": "charged_ref_lighter" },
-          {
-            "item": "chest_rig_molle_ii_flc",
-            "contents-group": "old_vet_rig_magazines_pouched"
-          },
           { "item": "knife_combat", "container-item": "sheath" },
           {
             "item": "m1a",
