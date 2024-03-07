@@ -4794,11 +4794,15 @@
       "type": "holster"
     },
 
+    "//flags": [
+      "while it's not immediately clear whether the pouch can be used with PALS webbing, we assume that it can be for the sake of our sanity"
+    ],
     "flags": [
       "CANT_WEAR",
       "TARDIS",
       "WATER_FRIENDLY",
       "BELT_GEAR",
+      "PALS_SMALL",
       "ALLOWS_NATURAL_ATTACKS"
     ],
 
