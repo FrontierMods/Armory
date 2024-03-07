@@ -3,8 +3,20 @@
     "type": "ITEM_BLACKLIST",
     "whitelist": false,
 
-    "//items": ["dragonskin", "flintlock_pouch", "XL_holster"],
-    "items": ["flintlock_pouch"],
+    "//items": [
+      "dragonskin",
+      "flintlock_pouch",
+      "XL_holster",
+      "grenadebandolier",
+      "legpouch_large",
+      "grenade_pouch"
+    ],
+    "items": [
+      "flintlock_pouch",
+      "grenadebandolier",
+      "legpouch_large",
+      "grenade_pouch"
+    ],
 
     "//notes": {
       "dragonskin": [
@@ -20,6 +32,10 @@
         "this holster is meant to hold SMGs and such, judging by the in-game description",
         "while options exist for carrying something this large on one's leg, most (if not all) of them are airsoft-based, which doesn't suit the character of this mod",
         "until a suitable replacement (if any is necessary) for the large holster is found, this item shall remain obsoleted"
+      ],
+      "grenadebandolier": [
+        "having it in the game causes loadtime errors which make it seem like this mod is breaking the game",
+        "those errors are caused by the game processing profession items before professions proper, making it spawn no-longer-existing item combinations"
       ]
     }
   }
