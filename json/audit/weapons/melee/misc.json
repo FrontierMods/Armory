@@ -10,7 +10,9 @@
     ],
 
     "//notes": [
-      "this model works off of an internal battery, which is how we model it"
+      "this model is meant to work off of an internal battery",
+      "we may or may not model it this way eventually",
+      "for now, we model it using a much-smaller light battery"
     ],
 
     "name": {
@@ -38,6 +40,16 @@
         "ammo_restriction": {
           "battery": 120
         }
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+
+        "rigid": true,
+
+        "flag_restriction": ["BATTERY_LIGHT"],
+        "default_magazine": "light_battery_cell"
       }
     ],
 
