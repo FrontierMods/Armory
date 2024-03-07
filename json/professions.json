@@ -1140,5 +1140,36 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
     }
+  },
+  {
+    "id": "ninja",
+    "copy-from": "ninja",
+    "type": "profession",
+
+    "name": { "male": "Ninja", "female": "Kunoichi" },
+
+    "//items": [
+      "replace grenade pouch (no longer valid with Armory) with a leg bag"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "hood_ninja" },
+          { "item": "jacket_ninja" },
+          { "item": "trousers_ninja" },
+          { "item": "tabi_dress" },
+          { "item": "geta" },
+          { "item": "gloves_wraps" },
+          { "item": "bellywrap" },
+          { "item": "katana", "container-item": "scabbard" },
+          {
+            "item": "leg_bag",
+            "contents-group": "ninja_grenade_pouch"
+          }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "chestwrap" }, { "item": "panties" }] }
+    }
   }
 ]
