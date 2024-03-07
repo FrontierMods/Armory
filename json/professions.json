@@ -1,12 +1,5 @@
 [
   {
-    "id": "police_magazine_pistol",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "entries": [{ "item": "usp45mag", "ammo-item": "45_acp", "charges": 12 }]
-  },
-  {
     "id": "police_belt",
     "type": "item_group",
     "subtype": "collection",
@@ -90,13 +83,6 @@
     ]
   },
   {
-    "id": "swat_magazine_pistol",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "entries": [{ "item": "usp9mag", "ammo-item": "9mmfmj", "charges": 15 }]
-  },
-  {
     "id": "swat_belt",
     "type": "item_group",
     "subtype": "collection",
@@ -177,19 +163,6 @@
         "ammo-item": "9mm",
         "charges": 30,
         "count": 4
-      }
-    ]
-  },
-  {
-    "id": "ar15_mag_50beowulf",
-    "type": "item_group",
-    "subtype": "collection",
-
-    "entries": [
-      {
-        "item": "50beowulf_ar15mag",
-        "ammo-item": "50beowulf_xtp",
-        "charges": 10
       }
     ]
   },
