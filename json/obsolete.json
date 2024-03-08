@@ -8,15 +8,9 @@
       "flintlock_pouch",
       "XL_holster",
       "grenadebandolier",
-      "legpouch_large",
-      "grenade_pouch"
+      "legpouch_large"
     ],
-    "items": [
-      "flintlock_pouch",
-      "grenadebandolier",
-      "legpouch_large",
-      "grenade_pouch"
-    ],
+    "items": ["flintlock_pouch", "grenadebandolier", "legpouch_large"],
 
     "//notes": {
       "dragonskin": [
@@ -36,6 +30,11 @@
       "grenadebandolier": [
         "having it in the game causes loadtime errors which make it seem like this mod is breaking the game",
         "those errors are caused by the game processing profession items before professions proper, making it spawn no-longer-existing item combinations"
+      ],
+      "legpouch_large": [
+        "having it in the game causes loadtime errors which make it seem like this mod is breaking the game",
+        "those errors are caused by the game processing profession items before professions proper, making it spawn no-longer-existing item combinations",
+        "specifically, spawning pistol magazines inside what is intended to be rifle-magazine pouch (with its minimum item length being restricted, to emulate being able to reach in for a mag) causes these errors"
       ]
     }
   }
