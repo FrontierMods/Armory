@@ -88,5 +88,10 @@
     "id": ["tool_pouch"],
     "type": "MIGRATION",
     "replace": "pouch_tool_wynex"
+  },
+  {
+    "id": ["grenade_pouch"],
+    "type": "MIGRATION",
+    "replace": "pouch_40mm_x6_blackhawk"
   }
 ]
