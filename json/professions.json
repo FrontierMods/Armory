@@ -1,6 +1,33 @@
 [
   {
-    "id": "grenadier_vest_contents",
+    "id": "seal_sniper_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "container-item": "pouch_magazine_338_warrior",
+        "item": "ai_338mag",
+        "ammo-item": "338lapua_fmjbt",
+        "charges": 5,
+        "count": 3
+      }
+    ]
+  },
+  {
+    "id": "breacher_hammer_pouched",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "container-item": "pouch_holster_breaching_raptor",
+        "item": "hammer_sledge_short"
+      }
+    ]
+  },
+  {
+    "id": "40x46mm_m433_pouched",
     "type": "item_group",
     "subtype": "collection",
 
@@ -9,22 +36,16 @@
         "container-item": "pouch_40mm_haley",
         "item": "40x46mm_m433",
         "charges": 1
-      },
-      {
-        "container-item": "pouch_40mm_haley",
-        "item": "40x46mm_m433",
-        "charges": 1
-      },
-      {
-        "container-item": "pouch_40mm_haley",
-        "item": "40x46mm_m433",
-        "charges": 1
-      },
-      {
-        "container-item": "pouch_40mm_haley",
-        "item": "40x46mm_m433",
-        "charges": 1
-      },
+      }
+    ]
+  },
+  {
+    "id": "grenadier_vest_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "group": "40x46mm_m433_pouched", "count": 4 },
       {
         "group": "charged_two_way_radio",
         "container-item": "pouch_radio_tasm"
@@ -483,7 +504,6 @@
             "charges": 150
           },
           { "item": "mil_flight_suit" },
-          { "item": "legpouch_large" },
           { "group": "charged_matches" },
           { "group": "charged_flashlight" },
           { "item": "handflare", "count": 2, "charges": 200 },
@@ -633,7 +653,10 @@
             "container-item": "goggles_nv"
           },
           { "item": "water_clean", "container-item": "canteen" },
-          { "item": "legpouch_large", "contents-group": "army_mags_m4" },
+          {
+            "item": "pouch_leg_magazine_556_t3",
+            "contents-group": "army_mags_m4"
+          },
           { "item": "knife_rm42", "container-item": "sheath" },
           {
             "item": "p226_9mm",
@@ -688,8 +711,8 @@
           { "item": "socks" },
           { "item": "diving_watch" },
           {
-            "item": "chest_rig_onetigris_vulture",
-            "contents-group": "army_mags_tac338"
+            "item": "chest_rig_haley_placard",
+            "contents-group": "seal_sniper_rig"
           },
           { "item": "boots_combat" },
           { "item": "webbing_belt" },
@@ -752,7 +775,10 @@
           { "item": "tank_top", "variant": "tank_top_camo" },
           { "item": "pants_army", "variant": "apants_MARPAT" },
           { "item": "water_clean", "container-item": "canteen" },
-          { "item": "legpouch_large", "contents-group": "army_mags_m4" },
+          {
+            "item": "pouch_leg_magazine_556_t3",
+            "contents-group": "army_mags_m4"
+          },
           { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
           { "item": "knife_combat_marine", "container-item": "sheath" },
           {
@@ -1432,9 +1458,11 @@
           { "item": "boots_combat" },
           { "item": "wristwatch" },
           { "item": "molle_pack" },
-          { "item": "hammer_sledge" },
           { "group": "charged_two_way_radio" },
-          { "group": "us_ballistic_vest_pristine" },
+          {
+            "group": "us_ballistic_vest_pristine",
+            "contents-group": "breacher_hammer_pouched"
+          },
           { "item": "water_clean", "container-item": "canteen" },
           {
             "item": "mossberg_500",
