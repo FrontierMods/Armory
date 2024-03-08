@@ -4944,5 +4944,218 @@
 
     "price": "89 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_magazine_338_warrior",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.armamat.com/en/p/.338-and-7.62mm-mag-pouch-10606175100/",
+      [
+        "https://www.warriorassaultsystems.com/product/338-single-mag-multicam/",
+        "variant reference"
+      ],
+      [
+        "https://www.gearzonetactical.com/Warrior-Assault-Systems-338-Single-Mag_p_7731.html",
+        "price"
+      ]
+    ],
+
+    "//notes": [
+      "the description says it can hold a standard (20-round) 7.62mm NATO magazine, which appears to be impossible without some strong imbalance",
+      "with that said, the description also advertises an internal grip surface"
+    ],
+
+    "name": {
+      "str": "sniper magazine pouch",
+      "str_pl": "sniper magazine pouches"
+    },
+    "description": "A nylon pouch for a single .338 sniper rifle magazine.  Can also hold some .308 and 7.62mm magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "WAS .338 magazine pouch",
+          "str_pl": "WAS .338 magazine pouches"
+        },
+        "description": "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "WAS .338 magazine pouch",
+          "str_pl": "WAS .338 magazine pouches"
+        },
+        "description": "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_atacs_fg",
+
+        "name": {
+          "str": "WAS .338 magazine pouch",
+          "str_pl": "WAS .338 magazine pouches"
+        },
+        "description": "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.  <variant_atacs_fg>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "102 g",
+    "//dimensions": {
+      "length": "16.5 cm",
+      "width": "15 cm",
+      "height": "5 mm",
+      "raw": "123.75 ml",
+      "trim": 0.6,
+      "notes": [
+        "relatively-large height accounts for to the buckle",
+        "large trim accounts for the space outside of the buckle on the same plane"
+      ]
+    },
+    "volume": "50 ml",
+    "//longest_side": "1 in., the presumed width/height of the buckle, which cannot collapse even if the rest of the pouch can",
+    "longest_side": "25 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "ammo_satchel",
+
+    "material": ["nylon"],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//reference": [".338 sniper rifle magazine capacity"],
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "SCAR-H 20-round magazine (+ 1 ml)",
+        "max_contains_volume": "355 ml",
+        "//max_item_length": "SCAR-H 20-round magazine",
+        "max_item_length": "165 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
+
+    "price": "3355 cent",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_40mm_x6_blackhawk",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.blackhawk.com/tactical-nylon/pouches/6-round-40mm-grenade-pouch---molle/1000583.html",
+      [
+        "https://www.recon-company.com/en/blackhawk-6-round-40mm-grenade-pouch/22832",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "six-slot 40mm grenade pouch",
+      "str_pl": "six-slot 40mm grenade pouches"
+    },
+    "description": "A nylon pouch for storing up to 6 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Blackhawk 6-round 40mm grenade pouch",
+          "str_pl": "Blackhawk 6-round 40mm grenade pouches"
+        },
+        "description": "A large nylon pouch with a hook-and-loop flap, intended to hold up to 6 40mm grenades.  Could also be used to store other similar types of grenades.  Like many other pouches, this one flattens out when not filled.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Blackhawk 6-round 40mm grenade pouch",
+          "str_pl": "Blackhawk 6-round 40mm grenade pouches"
+        },
+        "description": "A large nylon pouch with a hook-and-loop flap, intended to hold up to 6 40mm grenades.  Could also be used to store other similar types of grenades.  Like many other pouches, this one flattens out when not filled.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Blackhawk 6-round 40mm grenade pouch",
+          "str_pl": "Blackhawk 6-round 40mm grenade pouches"
+        },
+        "description": "A large nylon pouch with a hook-and-loop flap, intended to hold up to 6 40mm grenades.  Could also be used to store other similar types of grenades.  Like many other pouches, this one flattens out when not filled.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "210 g",
+    "//dimensions": {
+      "length": "6.5 in",
+      "width": "6 in",
+      "height": "3 mm",
+      "raw": "75.48 ml",
+      "trim": 0
+    },
+    "volume": "76 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "grenade_pouch",
+    "repairs_like": "grenade_pouch",
+
+    "//pocket_data": [
+      "ideally, this would be modelled with 6× separate holster slots",
+      "this would enable storing any item with appropriate dimensions in it, thus giving even more utility to the pouch",
+      "however, slots cause game to throw loadtime error because it fails to load 4× grenades into the pouch (citing weight, but that part appears to be faulty reporting)",
+      "ammo restriction has been tested not to cause the same kind of errors"
+    ],
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "40x46mm": 6,
+          "40x53mm": 6
+        },
+
+        "volume_encumber_modifier": 0.3,
+        "moves": 20
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
+
+    "price": "3645 cent",
+    "price_postapoc": "1 USD"
   }
 ]
