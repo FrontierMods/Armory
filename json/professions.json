@@ -1,5 +1,30 @@
 [
   {
+    "id": "full_ifak",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_ifak_rescue",
+
+    "entries": [
+      { "item": "medical_tape", "charges": 20 },
+      { "group": "quikclot_bag_plastic_5" },
+      { "item": "bandages", "count": 9 },
+      { "item": "medical_gauze", "count": 3 },
+      { "item": "adhesive_bandages", "count": 3 },
+      { "item": "gloves_medical" },
+      { "item": "scissors_medical" },
+      { "item": "tourniquet_upper" }
+    ]
+  },
+  {
+    "id": "canteen_with_clean_water",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "water_clean", "container-item": "canteen" }]
+  },
+  {
     "id": "seal_rig",
     "type": "item_group",
     "subtype": "collection",
