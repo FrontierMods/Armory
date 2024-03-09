@@ -217,19 +217,48 @@
         { "item": "holster_tonfa_gng", "prob": 7 },
         { "item": "holster_stun_gun_streetwise", "prob": 10 },
         { "item": "pouch_holster_breaching_raptor", "prob": 3 },
-        { "item": "pouch_leg_gas_mask_hsgi", "prob": 5 },
-        { "item": "pouch_leg_magazine_556_t3", "prob": 10 },
         { "item": "pouch_magazine_556_pistol_condor", "prob": 15 },
         { "item": "pouch_magazine_pistol_haley", "prob": 25 },
-        { "item": "pouch_magazine_pistol_molle_ii_m9", "prob": 3 },
-        { "item": "pouch_magazine_pistol_molle_ii_m17", "prob": 7 },
+        { "item": "pouch_magazine_pistol_molle_ii_m9", "prob": 5 },
+        { "item": "pouch_magazine_pistol_molle_ii_m17", "prob": 10 },
         { "item": "pouch_magazine_smg_psigear", "prob": 15 },
         { "item": "pouch_magazine_308_tt", "prob": 12 },
         { "item": "pouch_magazine_338_warrior", "prob": 5 },
         { "item": "pouch_water_bottle_ft", "prob": 5 },
-        { "item": "pouch_handcuffs_511_tactical", "prob": 5 },
+        { "item": "pouch_handcuffs_511_tactical", "prob": 3 },
         { "item": "pouch_multipurpose_tt", "prob": 10 },
         { "item": "pouch_leg_drop_tacmed", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "id": "clothing_tactical_leg",
+    "copy-from": "clothing_tactical_leg",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "extend": {
+      "entries": [
+        { "item": "pouch_leg_gas_mask_hsgi", "prob": 100 },
+        { "item": "pouch_leg_magazine_556_t3", "prob": 100 },
+        { "item": "pouch_leg_drop_tacmed", "prob": 100 }
+      ]
+    }
+  },
+  {
+    "id": "clothing_tactical_torso",
+    "copy-from": "clothing_tactical_torso",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "extend": {
+      "entries": [
+        { "item": "chest_rig_condor_modular", "prob": 120 },
+        { "item": "chest_rig_molle_ii_flc", "prob": 100 },
+        { "item": "chest_rig_haley_placard", "prob": 100 },
+        { "item": "chest_rig_onetigris_vulture", "prob": 100 },
+        { "item": "chest_rig_condor_cross_draw", "prob": 120 },
+        { "item": "chest_rig_direct_action_tempest", "prob": 160 }
       ]
     }
   }
