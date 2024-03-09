@@ -58,7 +58,10 @@
         "charges": 15,
         "count": 2
       },
-      { "item": "water_clean", "container-item": "canteen" }
+      {
+        "group": "canteen_with_clean_water",
+        "container-item": "pouch_canteen_1qt_tt"
+      }
     ]
   },
   {
