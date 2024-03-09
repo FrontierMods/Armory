@@ -1,0 +1,201 @@
+[
+  {
+    "id": "pouch_ifak_frogpro_chiron",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.frogpro.eu/en/pouches/183-1101-chiron-mini-ifak.html",
+      [
+        "https://www.frogpro.eu/en/accessories/188-1163-multi-purpose-organizer-chiron-horizontal-8052461550411.html",
+        "pocket restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "this pouch is highly-modular, with hook-and-loop inserts",
+      "the tourniquet pouch is supposed to be a separate item as well",
+      "for now, we pretend all pockets are directly attached and not removable",
+      "pockets are modelled after an image in source showing the pouch unfolded"
+    ],
+
+    "name": {
+      "str": "mini IFAK pouch",
+      "str_pl": "mini IFAK pouches"
+    },
+    "description": "A compact nylon pouch for first aid items.  There is a separate bottom pocket for a tourniquet.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "FROG.PRO Chiron IFAK pouch",
+          "str_pl": "FROG.PRO Chiron IFAK pouches"
+        },
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
+
+    "weight": "220 g",
+    "//dimensions": {
+      "length": "16.00 cm",
+      "width": "12.50 cm",
+      "height": "5 mm",
+      "raw": "100 ml",
+      "trim": 0.05
+    },
+    "volume": "95 ml",
+    "longest_side": "160 mm",
+
+    "symbol": ")",
+    "color": "red",
+    "repairs_like": "legrig",
+    "looks_like": "holster",
+
+    "material": ["nylon", "plastic"],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Interior cord pouch",
+
+        "//max_contains_volume": [
+          "dimensions of an organizer insert",
+          {
+            "length": "16.00 cm",
+            "width": "12.00 cm",
+            "height": "2.00 cm",
+            "raw": "384 ml",
+            "trim": 0,
+            "notes": [
+              "height is assumed to be half of what the pouch is capable of, judging by the photos",
+              "there are supposed to be two of these inserts in the pouch"
+            ]
+          }
+        ],
+        "max_contains_volume": "384 ml",
+        "max_contains_weight": "1 kg",
+        "//max_item_length": "allows items to slightly exceed size of insert",
+        "max_item_length": "170 mm",
+
+        "moves": 170
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Interior cord pouch",
+
+        "//max_contains_volume": [
+          "dimensions of an organizer insert",
+          {
+            "length": "16.00 cm",
+            "width": "12.00 cm",
+            "height": "2.00 cm",
+            "raw": "384 ml",
+            "trim": 0
+          }
+        ],
+        "max_contains_volume": "384 ml",
+        "max_contains_weight": "1 kg",
+        "//max_item_length": "allows items to slightly exceed size of insert",
+        "max_item_length": "170 mm",
+
+        "moves": 170
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tourniquet pouch",
+
+        "holster": true,
+
+        "//max_contains_volume": [
+          "dimensions of a CAT",
+          "https://www.narescue.com/combat-application-tourniquet-c-a-t.html",
+          {
+            "length": "6.50 in",
+            "width": "2.40 in",
+            "height": "1.5 in",
+            "raw": "384 ml",
+            "trim": 0.2,
+            "notes": [
+              "height is assumed to be half the height of pouch",
+              "there are supposed to be two of these inserts in the pouch",
+              "negative trim is to allow items to slightly exceed the boundries of the insert itself, like in source"
+            ]
+          }
+        ],
+        "max_contains_volume": "307 ml",
+        "//max_contains_weight": "actual CAT weighs ~86 g",
+        "max_contains_weight": "100 g",
+        "//min_item_length": "arbitrary value to disable items that are too short from being inserted into the pocket",
+        "min_item_length": "120 mm",
+        "//max_item_length": "allows items to slightly exceed size of insert",
+        "max_item_length": "165 mm",
+
+        "moves": 110
+      }
+    ],
+
+    "//flags": ["added WATER_FRIENDLY"],
+    "flags": [
+      "COLLAPSE_CONTENTS",
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "PALS_MEDIUM"
+    ],
+
+    "//price": "120 EUR",
+    "price": "127 USD",
+    "//price_postapoc": "2 USD"
+  }
+]
