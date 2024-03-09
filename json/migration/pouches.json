@@ -12,7 +12,7 @@
   {
     "id": ["ifak_pouch"],
     "type": "MIGRATION",
-    "replace": "pouch_dump_frogpro"
+    "replace": "pouch_ifak_rescue"
   },
   {
     "id": ["ammo_pouch"],
