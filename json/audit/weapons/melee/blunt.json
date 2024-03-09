@@ -36,7 +36,7 @@
       }
     ],
 
-    "flags": ["DURABLE_MELEE"],
+    "flags": ["DURABLE_MELEE", "TUCKED_IN"],
 
     "price": "45 USD",
     "price_postapoc": "2 USD"
@@ -79,7 +79,7 @@
       }
     ],
 
-    "flags": ["DURABLE_MELEE"],
+    "flags": ["DURABLE_MELEE", "TUCKED_IN"],
 
     "price": "45 USD",
     "price_postapoc": "2 USD"
@@ -137,7 +137,7 @@
     "volume": "480 ml",
     "longest_side": "337 mm",
 
-    "flags": ["DURABLE_MELEE"],
+    "flags": ["DURABLE_MELEE", "TUCKED_IN"],
 
     "//price": "retail (higher) price",
     "price": "134 USD",
@@ -181,10 +181,62 @@
     "volume": "592 ml",
     "longest_side": "610 mm",
 
-    "flags": ["DURABLE_MELEE"],
+    "flags": ["DURABLE_MELEE", "TUCKED_IN"],
 
     "//price": "retail (higher) price",
     "price": "134 USD",
     "price_postapoc": "1 USD"
+  },
+
+  {
+    "id": "tonfa",
+    "copy-from": "tonfa",
+    "type": "GENERIC",
+
+    "//sources": [
+      "https://www.thehomesecuritysuperstore.com/products/rothco-fiberglass-police-tonfa-baton-w-rubber-grip-24",
+      [
+        "https://www.rothco.com/product/rothco-nylon-baton-w-side-handle",
+        "price"
+      ]
+    ],
+
+    "name": {
+      "str": "tonfa"
+    },
+
+    "//weight": "1.4 lbs",
+    "weight": "635 g",
+    "//dimensions": [
+      {
+        "description": "Baton",
+
+        "length": "24 in",
+        "diameter": "1.25 in",
+        "raw": "482.64 ml",
+        "trim": 0.01,
+        "result": "477.81 ml"
+      },
+      {
+        "description": "Grip",
+
+        "length": "5.25 in",
+        "diameter": "1.25 in",
+        "raw": "105.58 ml",
+        "trim": 0,
+        "result": "105.58 ml",
+        "notes": [
+          "trim assumes the stop at the end covers the grip's volume discrepancies"
+        ]
+      }
+    ],
+    "volume": "583 ml",
+    "longest_side": "610 mm",
+
+    "//material": "actually fiberglass",
+
+    "flags": ["DURABLE_MELEE", "TUCKED_IN"],
+
+    "price": "29 USD"
   }
 ]
