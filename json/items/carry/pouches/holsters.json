@@ -1,0 +1,524 @@
+[
+  {
+    "id": "pouch_holster_magnet_hot",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://highordertactical.com/products/magnetic-shotgun-retention-system",
+      [
+        "https://highordertactical.com/products/molle-attachment",
+        "dimensions reference"
+      ]
+    ],
+
+    "name": {
+      "str": "magnetic holster"
+    },
+    "description": "A bunch of strong magnets encased in plastic.  Can be worn on webbing.  Intended for breachers to stash their shotguns away on a mission.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "High Order MSRS magnetic holster"
+        },
+        "description": "A Kydex body holding four strong magnets inside.  MSRS stands for \"magnetic shotgun retention system\", as it was originally designed to securely hold breaching shotguns.  The \"holster\" can, of course, hold any weapon made of a ferromagnetic material.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "High Order MSRS magnetic holster"
+        },
+        "description": "A Kydex body holding four strong magnets inside.  MSRS stands for \"magnetic shotgun retention system\", as it was originally designed to securely hold breaching shotguns.  The \"holster\" can, of course, hold any weapon made of a ferromagnetic material.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "very-roughly estimated from assumed weights of constituent parts",
+      [
+        "4 × neodymium magnet",
+        "https://magnet-outlet.eu/en/collections/neodymium-magneten/products/neodymium-blokmagneet-40mm-x-10mm-x-10mm",
+        "4 × 30 g = 120 g"
+      ],
+      "Kydex has the density of only 1.35 g/mL, making it lightweight, and there isn't that much of it, so if we assume ~40 mL of Kydex across the entirety of the holster, it amounts to 54 g"
+    ],
+    "weight": "174 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "2.25 in",
+      "height": "0.65 in",
+      "raw": "143.8 ml",
+      "trim": 0,
+      "notes": [
+        "length and width are assumed from visual reference, based on the Molle-Lok attachment's dimensions",
+        "thickness is presumed",
+        "trim presumes the uneven parts eventually even out with the overall shape"
+      ]
+    },
+    "volume": "144 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "//material": [
+      [
+        "iron is for neodymium, the presumed material for the magnets",
+        "the magnet in DDA is made from cast iron, whereas its actual material is stated to be alnico, an iron alloy"
+      ],
+      "plastic is for Kydex"
+    ],
+    "material": ["iron", "plastic"],
+    "looks_like": "magnet",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "8200 g",
+        "min_item_volume": "500 ml",
+        "max_contains_volume": "4 L",
+        "min_item_length": "20 cm",
+        "max_item_length": "80 cm",
+
+        "moves": 130
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["CANT_WEAR", "TARDIS", "WATER_FRIENDLY", "PALS_MEDIUM"],
+
+    "price": "295 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_baton_bfg",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.blueforcegear.com/molle-baton-pouch",
+      [
+        "https://www.blueforcegear.com/SpecSheets/HW-TSP-BATON-01-MC.pdf",
+        "weight",
+        "dimensions",
+        "material",
+        "variant reference"
+      ]
+    ],
+
+    "name": {
+      "str": "MOLLE baton pouch",
+      "str_pl": "MOLLE baton pouches"
+    },
+    "description": "A nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market. Typically worn by police officers who use webbing duty belts.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Blue Force Gear MOLLE baton pouch",
+          "str_pl": "Blue Force Gear MOLLE baton pouches"
+        },
+        "description": "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "24 g",
+    "//dimensions": {
+      "length": "0.125 in",
+      "width": "2 in",
+      "height": "4 in",
+      "raw": "16.39 ml",
+      "trim": 0.05
+    },
+    "volume": "16 ml",
+    "//longest_side": "width, since we assume that the pouch would fold length-wise",
+    "longest_side": "51 mm",
+
+    "//material": ["source lists Ten-Speed® Elastic"],
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "50% over the weight of audited `baton` in order to accomodate heavier batons",
+        "max_contains_weight": "750 g",
+        "min_item_volume": "100 ml",
+        "max_contains_volume": "150 ml",
+        "max_item_length": "250 mm",
+
+        "moves": 85
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["CANT_WEAR", "TARDIS", "WATER_FRIENDLY", "PALS_SMALL"],
+
+    "price": "27 USD",
+    "price_postapoc": "20 cent"
+  },
+  {
+    "id": "holster_tonfa_gng",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      [
+        "https://www.amazon.ca/Gould-Goodrich-GGB2070-Holder-Standard/dp/B005HO0A7M",
+        "model",
+        "weight"
+      ],
+      [
+        "https://www.amazon.com/ROCOTACTICAL-Police-Holder-Flashlight-Slide/dp/B07GSN6XKL",
+        "dimensions",
+        "price",
+        "ring material"
+      ]
+    ],
+
+    "//notes": [
+      "while the source of dimensions is not close to the model, we use it because finding dimensions of the model item online has proven to be difficult",
+      "could this be a good location for carabiner-held gear?"
+    ],
+
+    "name": {
+      "str": "baton ring"
+    },
+    "description": "A metal ring on a strap which attaches to the belt.  Can hold a PR-24 baton or a regular-sized flashlight.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "ring_black",
+
+        "name": { "str": "Gould & Goodrich baton ring" },
+        "description": "A metal ring with a tongue, held by a thin nylon strap.  Usually worn on the belt by an on-duty police officer, and holds the Monadnock PR-24 side-handle baton.  Can also hold standard-sized flashlight, though not smaller or larger ones.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "23 g",
+    "//dimensions": {
+      "length": "6.1 in",
+      "width": "2.45 in",
+      "height": "1 mm",
+      "raw": "9.64 ml",
+      "trim": 0.45,
+      "notes": ["width acquired from visual reference"]
+    },
+    "volume": "5 ml",
+    "//longest_side": "width, since we assume that while the strap could fold any way, the ring cannot",
+    "longest_side": "62 mm",
+
+    "//material": "the ring is plastic",
+    "material": ["nylon", "plastic"],
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "axe_ring",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "750 g",
+        "min_item_volume": "200 ml",
+        "max_contains_volume": "650 ml",
+        "min_item_length": "330 mm",
+        "max_item_length": "650 mm",
+
+        "moves": 85
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": "we add PALS_SMALL because it seems perfectly possible for this ring to strap to PALS webbing",
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "PALS_SMALL",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "price": "10 USD",
+    "price_postapoc": "10 cent"
+  },
+  {
+    "id": "holster_stun_gun_streetwise",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.streetsmartprotection.com/stun-guns/streetwise-touchdown-stun-gun"
+    ],
+
+    "name": {
+      "str": "stun gun pouch"
+    },
+    "description": "A nylon pouch for stun guns.  Can fit a variety of models.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "holster_grey",
+
+        "name": { "str": "Streetwise stun gun pouch" },
+        "description": "A nylon pouch for stun guns.  Fit for a specific model, but can fit similar models.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "guess based on similar pouches",
+    "weight": "25 g",
+    "//volume": "appears to be ~5% larger than the bounding box (raw volume) of the stun gun, so that's what we use",
+    "volume": "280 ml",
+    "//longest_side": "longest side of stun gun (165 mm) + 5%",
+    "longest_side": "173 mm",
+
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "color": "light_gray",
+    "looks_like": "holster",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "350 g",
+        "min_item_volume": "200 ml",
+        "max_contains_volume": "245 ml",
+        "max_item_length": "165 mm",
+
+        "moves": 105
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "//flags": [
+      "while it's not immediately clear whether the pouch can be used with PALS webbing, we assume that it can be for the sake of our sanity"
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "TARDIS",
+      "WATER_FRIENDLY",
+      "BELT_GEAR",
+      "PALS_SMALL",
+      "ALLOWS_NATURAL_ATTACKS"
+    ],
+
+    "//price": "sold alongside the stun gun, so no way to estimate a real price",
+    "price": "0 cent",
+    "price_postapoc": "5 cent"
+  },
+  {
+    "id": "pouch_holster_breaching_raptor",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://raptortactical.com/breacher-tool-holder/"],
+
+    "name": {
+      "str": "breacher tool holder"
+    },
+    "description": "An arrangement of nylon straps locked together with a plastic buckle.  Can hold a medium- or large-sized breaching tool.  Straps to webbing, so could be carried on a plate carrier or a belt.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam_alpine",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_multicam_alpine>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_woodland",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_woodland>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": { "str": "Raptor breacher tool holder" },
+        "description": "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "very-roughly estimated from assumed weights of constituent parts",
+      [
+        "4 × neodymium magnet",
+        "https://magnet-outlet.eu/en/collections/neodymium-magneten/products/neodymium-blokmagneet-40mm-x-10mm-x-10mm",
+        "4 × 30 g = 120 g"
+      ],
+      "Kydex has the density of only 1.35 g/mL, making it lightweight, and there isn't that much of it, so if we assume ~40 mL of Kydex across the entirety of the holster, it amounts to 54 g"
+    ],
+    "weight": "174 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "2.25 in",
+      "height": "0.65 in",
+      "raw": "143.8 ml",
+      "trim": 0,
+      "notes": [
+        "length and width are assumed from visual reference, based on the Molle-Lok attachment's dimensions",
+        "thickness is presumed",
+        "trim presumes the uneven parts eventually even out with the overall shape"
+      ]
+    },
+    "volume": "144 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "light_gray",
+
+    "material": ["nylon", "plastic"],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "6 kg",
+        "min_item_volume": "500 ml",
+        "max_contains_volume": "2 L",
+        "min_item_length": "20 cm",
+        "max_item_length": "80 cm",
+
+        "moves": 180
+      }
+    ],
+
+    "use_action": {
+      "type": "holster"
+    },
+
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
+
+    "price": "89 USD",
+    "price_postapoc": "1 USD"
+  }
+]

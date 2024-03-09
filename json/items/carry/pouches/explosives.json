@@ -1,0 +1,726 @@
+[
+  {
+    "id": "pouch_40mm_haley",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://haleystrategic.com/single-40mm-pouch",
+      ["https://platatac.com/platatac-hw-single-40-nico-pouch.html", "weight"],
+      [
+        "https://www.aalan.hr/grenade-for-grenade-launcher-40x46mm",
+        "https://www.arsenal-bg.com/c/40x53-mm-rounds-high-velocity-for-automatic-grenade-launchers-gdsaco-mk19-hk-gmg-sb-lag40-etc-180/40x53-mm-rhv-hedp-368",
+        "pocket restrictions"
+      ]
+    ],
+
+    "name": {
+      "str": "open-top 40mm grenade pouch",
+      "str_pl": "open-top 40mm grenade pouches"
+    },
+    "description": "A nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Haley Strategic 40mm grenade pouch",
+          "str_pl": "Haley Strategic 40mm grenade pouches"
+        },
+        "description": "An open-top nylon pouch for storing 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.  Like many other pouches, this one flattens out when not filled.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "using weight of a similar product made roughly to the same blueprint",
+    "weight": "20 g",
+    "//dimensions": {
+      "length": "3.5 in",
+      "width": "1.75 in",
+      "height": "1.75 in",
+      "raw": "176 ml",
+      "trim": 0
+    },
+    "volume": "176 ml",
+    "longest_side": "89 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "365 g",
+        "//max_contains_volume": [
+          "allows storing 40×46mm and 40×53mm grenades",
+          {
+            "length": "112 mm",
+            "diameter": "40 mm",
+            "raw": "141 ml",
+            "trim": -0.1,
+            "notes": [
+              "negative trim added to account for slightly-larger items, like smoke grenades, which also fit in the same space"
+            ]
+          }
+        ],
+        "max_contains_volume": "155 ml",
+        "min_item_length": "96 mm",
+        "//max_item_length": "added 10% to maximum length of a 40×53mm grenade to allow slightly-larger items, like smoke grenades, to also be stored here",
+        "max_item_length": "123 mm"
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with PALS_SMALL",
+      "removed BELTED and OVERSIZE"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "price": "25 USD",
+    "//price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_grenade_haley",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://haleystrategic.com/frag-pouch",
+      [
+        "https://platatac.com/blue-force-gear-hw-frag-grenade-pouch.html",
+        "weight"
+      ],
+      ["https://en.wikipedia.org/wiki/M67_grenade", "pocket restrictions"]
+    ],
+
+    "name": {
+      "str": "grenade pouch",
+      "str_pl": "grenade pouches"
+    },
+    "description": "A small nylon pouch for storing a single hand grenade.  This model is quick to operate because it uses a hook-and-loop flap instead of a plastic buckle.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": {
+          "str": "Haley Strategic grenade pouch",
+          "str_pl": "Haley Strategic grenade pouches"
+        },
+        "description": "A small nylon pouch, intended for storing a single standard-issue hand grenade.  Can also fit a single grenade of slightly-larger volume.  Unlike most models on the market, this one is relatively quick to operate, because it uses a hook-and-loop strap, rather than a plastic buckle.  There's a thin thread outline of an M67 grenade on the flap, and a print that says \"FRAG OUT!\" on the opposite side of it.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "using weight of a similar product made roughly to the same blueprint",
+      "subtracting 5 g for the plastic buckle"
+    ],
+    "weight": "30 g",
+    "//dimensions": {
+      "length": "3 in",
+      "width": "3 in",
+      "height": "3 mm",
+      "raw": "17.42 ml",
+      "trim": 0.1,
+      "notes": [
+        "trim assumes the pouch is measured at farthest edges when filled",
+        "i.e., the inner pouch already has apple shape"
+      ]
+    },
+    "volume": "16 ml",
+    "longest_side": "76 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
+        "max_contains_weight": "440 g",
+        "//max_contains_volume": "volume of M67 fragmentation grenade (213 ml) + 10% extra",
+        "max_contains_volume": "234 ml",
+        "//max_item_length": "longest side of M67 fragmentation grenade",
+        "max_item_length": "90 mm",
+
+        "moves": 90
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with PALS_SMALL",
+      "replaced BELTED and OVERSIZE with CANT_WEAR"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "price": "40 USD",
+    "//price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_grenade_double_condor",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://condoroutdoor.com/products/condor-double-frag-grenade-pouch",
+      [
+        "https://www.amazon.com/Condor-Outdoor-Double-Grenade-Pouch/dp/B00865NYUE",
+        "weight"
+      ]
+    ],
+
+    "//notes": [
+      "there appears to be no 4-grenade pouches on the market or in US military equipment sets, so we're modelling it as a commercial-market double-grenade pouch"
+    ],
+
+    "name": {
+      "str": "double grenade pouch",
+      "str_pl": "double grenade pouches"
+    },
+    "description": "A pair of nylon grenade pouches sewn together.  Slightly slower to operate than the alternatives.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Condor double grenade pouch",
+          "str_pl": "Condor double grenade pouches"
+        },
+        "description": "A pair of small nylon bags sewn together, each holding a single standard-issue hand grenade.  Because each pouch uses a plastic buckle for holding itself closed, they're relatively slow to operate.  The pair is slightly more compact than using two separate pouches.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "148 g",
+    "//dimensions": {
+      "length": "4 mm",
+      "width": "7 in",
+      "height": "4 in",
+      "raw": "72.26 ml",
+      "trim": 0.075
+    },
+    "volume": "67 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
+
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "looks_like": "leather_belt",
+    "color": "dark_gray",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
+        "max_contains_weight": "440 g",
+        "//max_contains_volume": "volume of M67 fragmentation grenade (213 ml) + 10% extra",
+        "max_contains_volume": "234 ml",
+        "//max_item_length": "longest side of M67 fragmentation grenade",
+        "max_item_length": "90 mm",
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
+        "max_contains_weight": "440 g",
+        "//max_contains_volume": "volume of M67 fragmentation grenade (213 ml) + 10% extra",
+        "max_contains_volume": "234 ml",
+        "//max_item_length": "longest side of M67 fragmentation grenade",
+        "max_item_length": "90 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash grenades",
+      "holster_msg": "You stash your %s."
+    },
+
+    "//flags": ["replaced BELTED with CANT_WEAR"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
+
+    "price": "16 USD",
+    "price_postapoc": "25 cent"
+  },
+  {
+    "id": "pouch_water_bottle_gonex",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.gonexsport.com/products/gonex-tactical-military-molle-water-bottle-pouch-drawstring-open-top-mesh-bottom-travel-water-bottle-bag-tactical-hydration-carrier-black",
+      [
+        "https://www.amazon.com/Gonex-Upgraded-Tactical-Drawstring-Hydration/dp/B01J7SZII4",
+        "weight"
+      ],
+      [
+        "https://www.gonexsport.com/products/gonex-drawstring-military-molle-water-bottle-pouch",
+        "variant reference"
+      ]
+    ],
+
+    "//notes": [
+      "while the pouch is open-top and is advertised as accepting 40-oz water bottles, we model it as though it only takes smaller bottles, as a way to differentiate it from larger counterparts"
+    ],
+
+    "name": {
+      "str": "small water bottle pouch",
+      "str_pl": "small water bottle pouches"
+    },
+    "description": "A nylon pouch for storing water bottles.  Takes in bottles up to 0.75L in capacity.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Gonex water bottle pouch",
+          "str_pl": "Gonex water bottle pouches"
+        },
+        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Gonex water bottle pouch",
+          "str_pl": "Gonex water bottle pouches"
+        },
+        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "the source for weight gives conflicting information about the item's weight, listing both 84 g and 0.19 lbs ≈ 86 g",
+      "we err on the side of the heavier weight simply because it has a corresponding stated weight in US customary units"
+    ],
+    "weight": "86 g",
+    "//dimensions": {
+      "length": "19 cm",
+      "diameter": "9 cm",
+      "raw": "1208.72 ml",
+      "trim": 0
+    },
+    "volume": "1209 ml",
+    "longest_side": "190 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "//material": "has a tiny plastic cord lock at the top that's not worth considering as a separate material",
+    "material": ["nylon"],
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "188 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "price": "14 USD",
+    "price_postapoc": "50 cent"
+  },
+  {
+    "id": "pouch_flashbang_tt",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://tacticaltailor.com/fight-light-flashbang-smoke-pouch/",
+      ["https://www.ebay.com/itm/313548946332", "weight"],
+      [
+        "https://home.army.mil/bliss/download_file/view/738/366",
+        "pocket restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "we model pocket dimensions after the M18 smoke grenade, since it's stated to fit inside the pouch and is much larger than the M84 stun grenade aka flashbang"
+    ],
+
+    "name": {
+      "str": "flashbang pouch",
+      "str_pl": "flashbang pouches"
+    },
+    "description": "A nylon pouch for storing a flashbang grenade.  It can also accomodate a smoke grenade.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Tactical Tailor flashbang pouch",
+          "str_pl": "Tactical Tailor flashbang pouches"
+        },
+        "description": "A nylon pouch for storing a single flashbang grenade.  It is large enough to fit a smoke grenade as well.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
+
+    "weight": "60 g",
+    "//dimensions": {
+      "length": "5.5 in",
+      "width": "2.5 in",
+      "height": "2.5 mm",
+      "raw": "22.18 ml",
+      "trim": 0.0125
+    },
+    "volume": "22 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
+
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "tactical_grenade_pouch",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "//max_contains_weight": "weight of M18 smoke grenade (539 g), rounded to the nearest 50/100 g",
+        "max_contains_weight": "550 g",
+        "//max_contains_volume": [
+          "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
+          {
+            "length": "146 mm",
+            "diameter": "64 mm",
+            "raw": "469.68 ml",
+            "trim": 0.075
+          }
+        ],
+        "max_contains_volume": "450 ml",
+        "//max_item_length": "longest side of M18 smoke grenade",
+        "max_item_length": "146 mm",
+
+        "moves": 120
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash grenade",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "//price": "for the multicam model",
+    "price": "33 USD",
+    "price_postapoc": "25 cent"
+  },
+  {
+    "id": "pouch_40mm_x6_blackhawk",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.blackhawk.com/tactical-nylon/pouches/6-round-40mm-grenade-pouch---molle/1000583.html",
+      [
+        "https://www.recon-company.com/en/blackhawk-6-round-40mm-grenade-pouch/22832",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "six-slot 40mm grenade pouch",
+      "str_pl": "six-slot 40mm grenade pouches"
+    },
+    "description": "A nylon pouch for storing up to 6 40mm grenades.  Could also be used to store other types of grenades, like 37mm, flashbangs, smoke, and so on.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Blackhawk 6-round 40mm grenade pouch",
+          "str_pl": "Blackhawk 6-round 40mm grenade pouches"
+        },
+        "description": "A large nylon pouch with a hook-and-loop flap, intended to hold up to 6 40mm grenades.  Could also be used to store other similar types of grenades.  Like many other pouches, this one flattens out when not filled.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Blackhawk 6-round 40mm grenade pouch",
+          "str_pl": "Blackhawk 6-round 40mm grenade pouches"
+        },
+        "description": "A large nylon pouch with a hook-and-loop flap, intended to hold up to 6 40mm grenades.  Could also be used to store other similar types of grenades.  Like many other pouches, this one flattens out when not filled.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Blackhawk 6-round 40mm grenade pouch",
+          "str_pl": "Blackhawk 6-round 40mm grenade pouches"
+        },
+        "description": "A large nylon pouch with a hook-and-loop flap, intended to hold up to 6 40mm grenades.  Could also be used to store other similar types of grenades.  Like many other pouches, this one flattens out when not filled.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "210 g",
+    "//dimensions": {
+      "length": "6.5 in",
+      "width": "6 in",
+      "height": "3 mm",
+      "raw": "75.48 ml",
+      "trim": 0
+    },
+    "volume": "76 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "grenade_pouch",
+    "repairs_like": "grenade_pouch",
+
+    "//pocket_data": [
+      "ideally, this would be modelled with 6× separate holster slots",
+      "this would enable storing any item with appropriate dimensions in it, thus giving even more utility to the pouch",
+      "however, slots cause game to throw loadtime error because it fails to load 4× grenades into the pouch (citing weight, but that part appears to be faulty reporting)",
+      "ammo restriction has been tested not to cause the same kind of errors"
+    ],
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "40x46mm": 6,
+          "40x53mm": 6
+        },
+
+        "volume_encumber_modifier": 0.3,
+        "moves": 20
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
+
+    "price": "3645 cent",
+    "price_postapoc": "1 USD"
+  }
+]

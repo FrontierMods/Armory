@@ -1,0 +1,346 @@
+[
+  {
+    "id": "pouch_leg_gas_mask_hsgi",
+    "type": "ARMOR",
+    "category": "container",
+
+    "//sources": ["https://www.highspeedgear.com/12gm01"],
+
+    "//notes": [
+      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description"
+    ],
+
+    "name": {
+      "str": "gas mask leg pouch",
+      "str_pl": "gas mask leg pouches"
+    },
+    "description": "A large nylon pouch worn on either leg.  It's intended to store one's gas mask, but could serve as a dump pouch.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "HSGI gas mask leg pouch",
+          "str_pl": "HSGI gas mask leg pouches"
+        },
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "454 g",
+    "//dimensions": {
+      "length": "10 in",
+      "width": "4 in",
+      "height": "12 in",
+      "raw": "7866 ml",
+      "trim": 0.3
+    },
+    "volume": "5506 ml",
+    "longest_side": "305 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "looks_like": "holster",
+    "repairs_like": "legrig",
+
+    "sided": true,
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 100,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "dimensions of CM-7M gas mask",
+          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
+          {
+            "length": "6.85 in",
+            "width": "7.75 in",
+            "height": "10.60 in",
+            "raw": "9222 ml",
+            "trim": 0.45,
+            "notes": ["dimensions acquired from visual reference"]
+          }
+        ],
+        "max_contains_volume": "5072 ml",
+        "max_item_length": "305 mm",
+
+        "volume_encumber_modifier": 0.25
+      }
+    ],
+
+    "//flags": [
+      "removed PALS_MEDIUM: this pouch has no PALS interface",
+      "added WATER_FRIENDLY"
+    ],
+    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE"],
+
+    "price": "91 USD",
+    "//price_postapoc": "3 USD"
+  },
+  {
+    "id": "pouch_gas_mask_usmc",
+    "type": "ARMOR",
+    "category": "container",
+
+    "//sources": [
+      "https://armynavyoutdoors.com/eagle-usmc-gas-mask-gp-molle-pouch/",
+      [
+        "https://www.venturesurplus.com/products/eagle-industries-gas-mask-pouch/",
+        "weight"
+      ],
+      ["https://www.ebay.com/itm/203777900749", "variant reference"]
+    ],
+
+    "//notes": [
+      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description",
+      "manufacturer is Eagle Industries"
+    ],
+
+    "name": {
+      "str": "gas mask MOLLE pouch",
+      "str_pl": "gas mask MOLLE pouches"
+    },
+    "description": "A large nylon pouch for carrying one's gas mask.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to webbing or be worn at the leg.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "USMC gas mask pouch",
+          "str_pl": "USMC gas mask pouches"
+        },
+        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "USMC gas mask pouch",
+          "str_pl": "USMC gas mask pouches"
+        },
+        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "255 g",
+    "//dimensions": {
+      "length": "11 in",
+      "width": "9 in",
+      "height": "1.5 mm",
+      "raw": "95.8 ml",
+      "trim": 0.15,
+      "notes": ["height is presumed thickness of two walls of the pouch"]
+    },
+    "volume": "81 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "dump_pouch",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//max_contains_volume": [
+          "dimensions of CM-7M gas mask",
+          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
+          {
+            "length": "6.85 in",
+            "width": "7.75 in",
+            "height": "10.60 in",
+            "raw": "9222 ml",
+            "trim": 0.45,
+            "notes": ["dimensions acquired from visual reference"]
+          }
+        ],
+        "max_contains_volume": "5072 ml",
+        "max_contains_weight": "1 kg",
+        "max_item_length": "305 mm",
+
+        "volume_encumber_modifier": 0.25
+      }
+    ],
+
+    "//flags": [
+      "replaced PALS_MEDIUM with PALS_LARGE",
+      "added WATER_FRIENDLY",
+      "removed BELTED and OVERSIZE"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
+
+    "price": "91 USD",
+    "//price_postapoc": "3 USD"
+  },
+  {
+    "id": "pouch_leg_magazine_556_t3",
+    "type": "ARMOR",
+
+    "//sources": ["https://www.t3gear.com/t3-drop-leg-m4-double-mag-pouch/"],
+
+    "name": {
+      "str": "leg rifle magazine pouch",
+      "str_pl": "leg rifle magazine pouches"
+    },
+    "description": "A pair of nylon pouches with straps to attach to the leg with.  Each holds up to two rifle magazines.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "T3 rifle magazine leg pouch",
+          "str_pl": "T3 rifle magazine leg pouches"
+        },
+        "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "9.44 oz",
+    "weight": "267620 mg",
+    "//dimensions": {
+      "length": "8 in",
+      "width": "6.5 in",
+      "height": "3 mm",
+      "raw": "100.65 ml",
+      "trim": -0.05,
+      "notes": ["negative trim to account for straps and buckles"]
+    },
+    "volume": "106 ml",
+    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
+
+    "material": ["nylon"],
+
+    "symbol": "[",
+    "color": "dark_gray",
+    "looks_like": "legrig",
+    "repairs_like": "legrig",
+
+    "sided": true,
+    "armor": [
+      {
+        "encumbrance": 1,
+
+        "coverage": 13,
+        "covers": ["leg_l", "leg_r"],
+        "specifically_covers": ["leg_upper_l", "leg_upper_r"]
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Double magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate × 2",
+        "max_contains_volume": "610 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Double magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate × 2",
+        "max_contains_volume": "610 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": {
+      "type": "holster",
+
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    },
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "75 USD",
+    "price_postapoc": "1 USD"
+  }
+]
