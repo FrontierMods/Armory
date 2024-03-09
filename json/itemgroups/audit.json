@@ -261,5 +261,23 @@
         { "item": "chest_rig_direct_action_tempest", "prob": 160 }
       ]
     }
+  },
+  {
+    "id": "used_ifak",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "container-item": "pouch_ifak_rescue",
+
+    "items": [
+      { "item": "medical_tape", "charges": [0, 20] },
+      { "group": "quikclot_bag_plastic_0_5" },
+      { "item": "bandages", "count": [0, 9] },
+      { "item": "medical_gauze", "count": [0, 3] },
+      { "item": "adhesive_bandages", "count": [0, 3] },
+      { "item": "gloves_medical", "prob": 50 },
+      { "item": "scissors_medical", "prob": 30 },
+      { "item": "tourniquet_upper", "prob": 20 }
+    ]
   }
 ]

@@ -158,6 +158,8 @@
 
         "holster": true,
 
+        "//max_contains_weight": "actual CAT weighs ~86 g",
+        "max_contains_weight": "300 g",
         "//max_contains_volume": [
           "dimensions of a CAT",
           "https://www.narescue.com/combat-application-tourniquet-c-a-t.html",
@@ -175,10 +177,6 @@
           }
         ],
         "max_contains_volume": "307 ml",
-        "//max_contains_weight": "actual CAT weighs ~86 g",
-        "max_contains_weight": "100 g",
-        "//min_item_length": "arbitrary value to disable items that are too short from being inserted into the pocket",
-        "min_item_length": "120 mm",
         "//max_item_length": "allows items to slightly exceed size of insert",
         "max_item_length": "165 mm",
 
@@ -197,5 +195,92 @@
     "//price": "120 EUR",
     "price": "127 USD",
     "//price_postapoc": "2 USD"
+  },
+  {
+    "id": "pouch_ifak_rescue",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://www.rescue-essentials.com/rescue-essentials-trauma-ifak-pouch/",
+      [
+        "https://www.frogpro.eu/en/accessories/188-1163-multi-purpose-organizer-chiron-horizontal-8052461550411.html",
+        "pocket restrictions"
+      ]
+    ],
+
+    "//notes": [
+      "we currently don't model the straps as separate pocket, as it isn't apparent that this level of sorting would be of benefit to the player"
+    ],
+
+    "//TODO": ["Velcro surface"],
+
+    "name": {
+      "str": "IFAK pouch",
+      "str_pl": "IFAK pouches"
+    },
+    "description": "A nylon pouch for first aid items.  The straps inside the pouch allow for better sorting of different types of aid.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Rescue Essentials IFAK pouch",
+          "str_pl": "Rescue Essentials IFAK pouches"
+        },
+        "description": "A large nylon pouch for first aid items, such as bandages and tourniquets.  Stretchy nylon straps inside can hold a variety of different items, including pill bottles, secured in place.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "12 oz",
+    "weight": "340 g",
+    "//dimensions": {
+      "length": "7.5 in",
+      "width": "6 in",
+      "height": "3.5 in",
+      "raw": "2580.96 ml",
+      "trim": 0.05
+    },
+    "volume": "2452 ml",
+    "longest_side": "191 mm",
+
+    "symbol": ")",
+    "color": "red",
+    "repairs_like": "legrig",
+    "looks_like": "holster",
+
+    "material": ["nylon"],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "max_contains_weight": "4 kg",
+        "//magazine_well": "20% of available volume inside the pouch (2329 ml)",
+        "magazine_well": "466 ml",
+        "//max_contains_volume": "95% of trimmed volume",
+        "max_contains_volume": "2329 ml",
+        "max_item_length": "178 mm",
+
+        "moves": 210,
+
+        "volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "//flags": ["added WATER_FRIENDLY"],
+    "flags": [
+      "CANT_WEAR",
+      "PALS_MEDIUM",
+      "COLLAPSE_CONTENTS",
+      "WATER_FRIENDLY"
+    ],
+
+    "price": "27 USD",
+    "price_postapoc": "2 USD"
   }
 ]
