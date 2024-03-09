@@ -330,6 +330,49 @@
       }
     ],
 
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked under the belt",
+
+        "holster": true,
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "8 kg",
+        "max_contains_volume": "8500 ml",
+        "//max_item_length": "26 in.",
+        "max_item_length": "660 mm",
+
+        "moves": 130,
+        "extra_encumbrance": 6,
+        "ripoff": 3,
+
+        "flag_restriction": ["TUCKED_IN"]
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Tucked under the belt",
+
+        "holster": true,
+
+        "volume_encumber_modifier": 0.5,
+
+        "max_contains_weight": "8 kg",
+        "max_contains_volume": "8500 ml",
+        "//max_item_length": "26 in.",
+        "max_item_length": "660 mm",
+
+        "moves": 130,
+        "extra_encumbrance": 6,
+        "ripoff": 3,
+
+        "flag_restriction": ["TUCKED_IN"]
+      }
+    ],
+
     "use_action": [
       {
         "type": "attach_molle",
