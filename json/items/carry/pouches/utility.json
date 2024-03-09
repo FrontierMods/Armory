@@ -84,19 +84,22 @@
             "width": "2.8 in",
             "height": "8.5 in",
             "raw": "1950 ml",
-            "trim": 0.175
+            "trim": 0,
+            "notes": [
+              "because the pouch is not form-fitting and can accept items that are boxy, we use no trim"
+            ]
           }
         ],
-        "max_contains_volume": "1609 ml",
-        "min_item_length": "76 mm"
+        "max_contains_volume": "1950 ml",
+        "min_item_length": "76 mm",
+        "max_item_length": "216 mm"
       }
     ],
 
     "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
 
-    "//price": "80 EUR",
-    "price": "85 USD",
-    "//price_postapoc": "1 USD"
+    "price": "33 USD",
+    "price_postapoc": "1 USD"
   },
   {
     "id": "pouch_dump_frogpro",

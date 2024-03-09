@@ -1,0 +1,65 @@
+[
+  {
+    "id": "canteen",
+    "copy-from": "canteen",
+    "type": "GENERIC",
+    "category": "clothing",
+
+    "//sources": ["https://www.dimensions.com/element/canteen-military"],
+
+    "name": {
+      "str": "plastic canteen"
+    },
+
+    "weight": "155 g",
+    "//dimensions": {
+      "length": "5 in",
+      "width": "2.8 in",
+      "height": "8.5 in",
+      "raw": "1950 ml",
+      "trim": 0.175
+    },
+    "volume": "1609 ml",
+    "longest_side": "216 mm",
+
+    "armor_data": {
+      "sided": true,
+
+      "armor": [
+        {
+          "encumbrance": 2,
+          "coverage": 5,
+          "covers": ["leg_l", "leg_r"],
+          "specifically_covers": ["leg_hip_r", "leg_hip_l"],
+          "material": [
+            {
+              "type": "plastic",
+              "covered_by_mat": 100,
+              "thickness": 2
+            }
+          ]
+        }
+      ]
+    },
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+        "watertight": true,
+
+        "max_contains_weight": "3 kg",
+        "//max_contains_volume": "even though this is a 1 qt = 946 ml canteen, we pretend it can fit a whole 1 L because each 'item' of `water` is 250 mL",
+        "max_contains_volume": "1 L",
+        "max_item_volume": "32 ml"
+      }
+    ],
+
+    "//flags": [
+      "we pretend the canteen can in fact be strapped by a belt",
+      "to be updated in the future"
+    ],
+    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "COLLAPSE_CONTENTS"]
+  }
+]
