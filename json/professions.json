@@ -1,5 +1,42 @@
 [
   {
+    "id": "seal_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "container-item": "pouch_grenade_haley",
+        "item": "grenade",
+        "count": 2
+      },
+      { "container-item": "pouch_radio_tasm", "group": "charged_two_way_radio" }
+    ]
+  },
+  {
+    "id": "seal_belt",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "knife_rm42", "container-item": "sheath" },
+      {
+        "item": "p226_9mm",
+        "ammo-item": "9mm",
+        "container-item": "nylon_holster",
+        "charges": 15
+      },
+      {
+        "container-item": "pouch_magazine_pistol_haley",
+        "item": "p226mag_15rd_9x19mm",
+        "ammo-item": "9mm",
+        "charges": 15,
+        "count": 2
+      },
+      { "item": "water_clean", "container-item": "canteen" }
+    ]
+  },
+  {
     "id": "seal_sniper_rig",
     "type": "item_group",
     "subtype": "collection",
@@ -11,7 +48,8 @@
         "ammo-item": "338lapua_fmjbt",
         "charges": 5,
         "count": 3
-      }
+      },
+      { "container-item": "pouch_radio_tasm", "group": "charged_two_way_radio" }
     ]
   },
   {
@@ -631,21 +669,22 @@
     "items": {
       "both": {
         "entries": [
+          {
+            "item": "chest_rig_direct_action_tempest",
+            "contents-group": "seal_rig"
+          },
+          { "item": "webbing_belt", "contents-group": "seal_belt" },
+
           { "item": "combat_shirt" },
           { "item": "tac_fullhelmet" },
           { "item": "mask_ski" },
-          { "item": "gloves_liner" },
           { "item": "gloves_tactical" },
           { "item": "socks" },
           { "item": "diving_watch" },
-          { "item": "load_bearing_vest" },
           { "item": "boots_combat" },
-          { "item": "webbing_belt" },
-          { "group": "charged_two_way_radio" },
           { "group": "charged_powered_earmuffs" },
           { "item": "tank_top", "variant": "tank_top_camo" },
           { "item": "pants_army", "variant": "mil_pants_navy" },
-          { "item": "grenade" },
           {
             "item": "light_battery_cell",
             "ammo-item": "battery",
@@ -656,19 +695,6 @@
           {
             "item": "pouch_leg_magazine_556_t3",
             "contents-group": "army_mags_m4"
-          },
-          { "item": "knife_rm42", "container-item": "sheath" },
-          {
-            "item": "p226_9mm",
-            "ammo-item": "9mm",
-            "container-item": "nylon_holster",
-            "charges": 15
-          },
-          {
-            "item": "p226mag_15rd_9x19mm",
-            "ammo-item": "9mm",
-            "charges": 15,
-            "count": 2
           },
           {
             "group": "m4_cqbr",
@@ -702,6 +728,12 @@
     "items": {
       "both": {
         "entries": [
+          {
+            "item": "chest_rig_haley_placard",
+            "contents-group": "seal_sniper_rig"
+          },
+          { "item": "webbing_belt", "contents-group": "seal_belt" },
+
           { "item": "army_top" },
           { "item": "combat_shirt" },
           { "item": "tac_fullhelmet" },
@@ -710,29 +742,9 @@
           { "item": "gloves_tactical" },
           { "item": "socks" },
           { "item": "diving_watch" },
-          {
-            "item": "chest_rig_haley_placard",
-            "contents-group": "seal_sniper_rig"
-          },
           { "item": "boots_combat" },
-          { "item": "webbing_belt" },
-          { "group": "charged_two_way_radio" },
           { "group": "charged_powered_earmuffs" },
           { "item": "pants_army", "variant": "mil_pants_navy" },
-          { "item": "water_clean", "container-item": "canteen" },
-          { "item": "knife_rm42", "container-item": "sheath" },
-          {
-            "item": "p226_9mm",
-            "ammo-item": "9mm",
-            "container-item": "nylon_holster",
-            "charges": 15
-          },
-          {
-            "item": "p226mag_15rd_9x19mm",
-            "ammo-item": "9mm",
-            "charges": 15,
-            "count": 2
-          },
           {
             "item": "tac338",
             "ammo-item": "338lapua_fmjbt",
