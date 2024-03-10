@@ -2114,6 +2114,8 @@
 
         "description": "Magazine pouch",
 
+        "holster": true,
+
         "max_contains_weight": "2 kg",
         "//magazine_well": {
           "length": "0.75 in",
@@ -2136,6 +2138,8 @@
 
         "description": "Magazine pouch",
 
+        "holster": true,
+
         "max_contains_weight": "2 kg",
         "magazine_well": "221 ml",
         "max_contains_volume": "385 ml",
@@ -2148,6 +2152,8 @@
         "pocket_type": "CONTAINER",
 
         "description": "Magazine pouch",
+
+        "holster": true,
 
         "max_contains_weight": "2 kg",
         "magazine_well": "221 ml",
