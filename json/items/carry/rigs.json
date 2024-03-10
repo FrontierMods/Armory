@@ -2185,5 +2185,299 @@
 
     "price": "51 USD",
     "price_postapoc": "5 USD"
+  },
+  {
+    "id": "chest_rig_unobtanium_dr_lv",
+    "type": "ARMOR",
+
+    "//sources": ["https://unobtainiumgear.com/products/dr-lv-chest-rig"],
+
+    "//notes": [
+      [
+        "looks like this rig could be combined with another for a larger pouch set",
+        "https://nowellstrategic.shop-pro.jp/?pid=164446846"
+      ]
+    ],
+
+    "name": {
+      "str": "low-vis chest rig"
+    },
+    "description": "A tiny chest rig with four rifle magazine pouches, four pistol magazine pouches, and two elastic cords for holding utility items.  Exceptionally-convenient, if not the most comfortable.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "rig_multicam",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "rig_coyote",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "rig_ranger",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "rig_black",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "rig_multicam_black",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "rig_grey",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
+
+    "weight": "354 g",
+    "//dimensions": {
+      "length": "11 in",
+      "width": "6 in",
+      "height": "2 in",
+      "raw": "2163.09 ml",
+      "trim": -0.025
+    },
+    "//volume": [
+      "we use the dimensions of `pouch_magazine_556_condor` as the basis for this item's volume calculations",
+      "we modify the length by 2 in. to account for the shorter pouches on the rig",
+      "we also use fabric thickness, not pouch overall depth, for height",
+      {
+        "length": "4 in",
+        "width": "3.5 in",
+        "height": "1.3 mm",
+        "raw": "6.71 ml",
+        "trim": 0
+      },
+      "we then multiply this by 8 to get the approximate overall volume of the rig"
+    ],
+    "volume": "54 ml",
+    "//longest_side": "4 in.",
+    "longest_side": "102 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "armor": [
+      {
+        "encumbrance": [2, 14],
+
+        "//coverage": [
+          "~16% of front upper torso coverage = 6.4%",
+          "harness = 1.5% (front straps) + 1.5% (upper back straps) = 3%"
+        ],
+        "coverage": 9,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.35
+      },
+      {
+        "encumbrance": [1, 7],
+
+        "//coverage": [
+          "~10% of front lower torso coverage = 4%",
+          "1% for lower back straps"
+        ],
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.125
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//notes": [
+          "while this pocket is intended for rifle magazines, it's been shown to hold other, larger items, such as smoke grenades",
+          "thus, we model these pockets as though they're able to hold those"
+        ],
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
+        "max_contains_volume": "450 ml",
+        "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
+        "min_item_length": "50 mm",
+        "//max_item_length": "longest side of M18 smoke grenade",
+        "max_item_length": "146 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "450 ml",
+        "min_item_length": "50 mm",
+        "max_item_length": "146 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "450 ml",
+        "min_item_length": "50 mm",
+        "max_item_length": "146 mm",
+
+        "moves": 110
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "450 ml",
+        "min_item_length": "50 mm",
+        "max_item_length": "146 mm",
+
+        "moves": 110
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "medium pistol magazine capacity",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "moves": 130
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Cord retention",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
+        "max_contains_volume": "450 ml",
+        "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
+        "min_item_length": "50 mm",
+        "//max_item_length": "longest side of M18 smoke grenade",
+        "max_item_length": "146 mm",
+
+        "moves": 180
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Cord retention",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
+        "max_contains_volume": "450 ml",
+        "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
+        "min_item_length": "50 mm",
+        "//max_item_length": "longest side of M18 smoke grenade",
+        "max_item_length": "146 mm",
+
+        "moves": 180
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY", "FIT"],
+
+    "price": "95 USD",
+    "price_postapoc": "5 USD"
   }
 ]

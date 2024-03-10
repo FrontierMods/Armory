@@ -21,3 +21,7 @@
     <dt>QASM</dt>
     <dd>An interface for attaching panels or placards to a larger piece (such as a plate carrier) or a harness (for wearing without the extra protection). QASM stands for Quick Attach Surface Mount. The mounting is fascilitated with plastic buckles, which make the process quick.</dd>
 </dl>
+
+### Ballistic protection levels
+
+#### NIJ
