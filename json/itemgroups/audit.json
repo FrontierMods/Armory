@@ -260,7 +260,9 @@
         { "item": "chest_rig_haley_placard", "prob": 100 },
         { "item": "chest_rig_onetigris_vulture", "prob": 100 },
         { "item": "chest_rig_condor_cross_draw", "prob": 120 },
-        { "item": "chest_rig_direct_action_tempest", "prob": 160 }
+        { "item": "chest_rig_direct_action_tempest", "prob": 160 },
+        { "item": "chest_rig_unobtanium_dr_lv", "prob": 60 },
+        { "item": "chest_rig_condor_stowaway", "prob": 80 }
       ]
     }
   },
