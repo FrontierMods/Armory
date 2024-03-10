@@ -167,9 +167,10 @@
     ]
   },
   {
-    "type": "item_group",
     "id": "NC_SCAVENGER_MERC_worn",
+    "type": "item_group",
     "subtype": "collection",
+
     "items": [
       { "group": "military_ballistic_vest_pristine" },
       { "item": "pouch_leg_magazine_556_t3", "contents-group": "army_mags_m4" },
@@ -184,9 +185,10 @@
     ]
   },
   {
-    "type": "item_group",
     "id": "NC_ANCILLA_GRUNT_worn",
+    "type": "item_group",
     "subtype": "collection",
+
     "items": [
       { "group": "military_ballistic_vest_pristine" },
       { "item": "pouch_leg_magazine_556_t3", "contents-group": "army_mags_m4" },
