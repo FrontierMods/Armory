@@ -2128,7 +2128,7 @@
         "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
         "max_contains_volume": "385 ml",
         "//min_item_length": "length of STANAG 20-round magazine",
-        "min_item_length": "13 mm",
+        "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
         "moves": 90
@@ -2143,7 +2143,7 @@
         "max_contains_weight": "2 kg",
         "magazine_well": "221 ml",
         "max_contains_volume": "385 ml",
-        "min_item_length": "13 mm",
+        "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
         "moves": 90
@@ -2158,7 +2158,7 @@
         "max_contains_weight": "2 kg",
         "magazine_well": "221 ml",
         "max_contains_volume": "385 ml",
-        "min_item_length": "13 mm",
+        "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
         "moves": 90
