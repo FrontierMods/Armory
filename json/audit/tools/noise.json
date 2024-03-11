@@ -1,0 +1,30 @@
+[
+  {
+    "id": "airhorn",
+    "copy-from": "airhorn",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.amazon.com/SeaSense-Large-Air-Horn-8oz/dp/B0019M5EZ4",
+      ["https://www.gmesupply.com/sea-sense-8-oz-air-horn", "price"]
+    ],
+
+    "name": {
+      "str": "compressed air horn"
+    },
+
+    "//weight": "0.9 lbs",
+    "weight": "408 g",
+    "//dimensions": {
+      "length": "5.7 in",
+      "width": "3 in",
+      "height": "9.65 in",
+      "raw": "2704.11 ml",
+      "trim": 0.55
+    },
+    "volume": "1217 ml",
+    "longest_side": "245 mm",
+
+    "price": "20 USD"
+  }
+]

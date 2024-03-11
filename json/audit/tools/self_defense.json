@@ -1,0 +1,53 @@
+[
+  {
+    "id": "teargas_sprayer",
+    "copy-from": "teargas_sprayer",
+    "type": "TOOL",
+
+    "//sources": [
+      [
+        "https://www.mace.com/collections/tear-gas-enhanced-sprays/products/triple-action-police-pepper-spray-1",
+        "spray capacity"
+      ],
+      "https://www.departmentofselfdefense.com/products/mace-triple-action-personal-model",
+      ["https://www.ebay.com/p/20041617839", "weight"]
+    ],
+
+    "//notes": ["the model in source has a belt clip"],
+
+    "name": {
+      "str": "tear gas sprayer"
+    },
+
+    "//weight": [
+      "most sources list 'net weight' of 18 g",
+      "we believe 'net weight' refers to the amount of spray, by weight, inside the canister, not the canister itself or both"
+    ],
+    "weight": "104 g",
+    "//dimensions": {
+      "length": "1.25 in",
+      "width": "1 in",
+      "height": "4.25 in",
+      "raw": "87.06 ml",
+      "trim": 0.125
+    },
+    "volume": "76 ml",
+    "longest_side": "108 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+
+        "airtight": true,
+        "watertight": true,
+        "rigid": true,
+
+        "ammo_restriction": {
+          "teargas_spray": 20
+        }
+      }
+    ],
+
+    "price": "20 USD"
+  }
+]
