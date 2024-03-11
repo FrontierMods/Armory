@@ -229,7 +229,9 @@
         { "item": "pouch_water_bottle_ft", "prob": 5 },
         { "item": "pouch_handcuffs_511_tactical", "prob": 3 },
         { "item": "pouch_multipurpose_tt", "prob": 10 },
-        { "item": "pouch_leg_drop_tacmed", "prob": 5 }
+        { "item": "pouch_leg_drop_tacmed", "prob": 5 },
+        { "item": "pouch_spray_angel", "prob": 5 },
+        { "item": "pouch_airhorn_defense", "prob": 2 }
       ]
     }
   },
