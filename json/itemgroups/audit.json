@@ -283,5 +283,60 @@
       { "item": "scissors_medical", "prob": 30 },
       { "item": "tourniquet_upper", "prob": 20 }
     ]
+  },
+  {
+    "id": "cop_gear",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "//notes": [
+      "we override this group entirely because",
+      "(1) `copy-from` causes odd errors about the `items`/`entries` property",
+      "(2) we need to override items to spawn in pouches anyway"
+    ],
+
+    "items": [
+      {
+        "item": "belt_webbing_blackhawk_foundation",
+        "contents-group": "cop_gear_contents"
+      }
+    ]
+  },
+  {
+    "id": "cop_gear_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "items": [
+      {
+        "container-item": "belt_loop_large",
+        "item": "heavy_flashlight",
+        "prob": 90,
+        "charges": [0, 300]
+      },
+      {
+        "container-item": "pouch_radio_tasm",
+        "item": "two_way_radio",
+        "prob": 90,
+        "charges": [0, 300]
+      },
+      {
+        "container-item": "holster_stun_gun_streetwise",
+        "item": "tazer",
+        "prob": 50
+      },
+      {
+        "container-item": "pouch_airhorn_defense",
+        "item": "airhorn",
+        "prob": 5
+      },
+      { "group": "cop_melee", "prob": 60 },
+      {
+        "container-item": "pouch_spray_angel",
+        "item": "teargas_sprayer",
+        "prob": 50,
+        "charges": [1, 10]
+      }
+    ]
   }
 ]
