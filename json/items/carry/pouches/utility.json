@@ -2269,5 +2269,305 @@
 
     "price": "14 USD",
     "price_postapoc": "50 cent"
+  },
+  {
+    "id": "pouch_airhorn_defense",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://defensemechanisms.com/air-horn-pouch",
+      [
+        "https://www.amazon.com/Xxerciz-Adjustable-Drawstring-Protective-Carabiner/dp/B0CC8YD9WQ",
+        "weight reference"
+      ]
+    ],
+
+    "name": {
+      "str": "air horn pouch",
+      "str_pl": "air horn pouches"
+    },
+    "description": "A nylon pouch for holding air horn canisters.  This one is fitted for 8 oz canisters and will not accept smaller ones.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_coyote",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_coyote>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_woodland",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_woodland>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam_black",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam_tropic",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam_tropic>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam_arid",
+
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam_arid>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "no weight is available for the source pouch, so we use a similar-purpose one that's likely slightly heavier",
+    "weight": "57 g",
+    "//dimensions": {
+      "length": "2 mm",
+      "width": "3 in",
+      "height": "4.25 in",
+      "raw": "16.45 ml",
+      "trim": 0.05
+    },
+    "volume": "16 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "radio_pouch",
+    "repairs_like": "radio_pouch",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "min_item_volume": "1200 ml",
+        "max_contains_volume": "1250 ml",
+        "max_item_length": "245 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "price": "30 USD",
+    "price_postapoc": "50 cent"
+  },
+  {
+    "id": "pouch_spray_angel",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": ["https://angelarmor.com/product/oc-spray-pouch/"],
+
+    "name": {
+      "str": "pepper spray pouch",
+      "str_pl": "pepper spray pouches"
+    },
+    "description": "A nylon pouch for holding pepper spray canisters.  Accepts most common compact sprayers.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "pouch_tan",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_tan>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_ranger",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_olive",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_olive>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_grey",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_grey>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_multicam",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_navy",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_navy>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pouch_spruce_green",
+
+        "name": {
+          "str": "Angel Armor pepper spray pouch",
+          "str_pl": "Angel Armor pepper spray pouches"
+        },
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  This one is colored spruce green.",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "36 g",
+    "//dimensions": {
+      "length": "1.5 mm",
+      "width": "1.62 in",
+      "height": "3.5 in",
+      "raw": "5.49 ml",
+      "trim": 0.05
+    },
+    "volume": "5 ml",
+    "//longest_side": "width",
+    "longest_side": "41 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "radio_pouch",
+    "repairs_like": "radio_pouch",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "min_item_volume": "70 ml",
+        "max_contains_volume": "90 ml",
+        "max_item_length": "110 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
+
+    "price": "35 USD",
+    "price_postapoc": "50 cent"
   }
 ]

@@ -64,6 +64,13 @@
   },
   {
     "type": "snippet",
+    "category": "<variant_multicam_tropic>",
+    "text": [
+      "This one is decorated with the tropic multicam pattern, perfect for that steamy, sweaty jungle warfare."
+    ]
+  },
+  {
+    "type": "snippet",
     "category": "<variant_multicam_alpine>",
     "text": [
       "This one is decorated with the white multicam pattern, for when your target is the at top of Everest."
