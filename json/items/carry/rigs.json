@@ -133,7 +133,7 @@
 
     "armor": [
       {
-        "encumbrance": [2, 20],
+        "encumbrance": [0, 8],
 
         "//coverage": [
           "~18% of front upper torso coverage = 7%",
@@ -339,7 +339,7 @@
     "armor": [
       {
         "//encumbrance": "the rig itself is reported to be very comfortable to wear",
-        "encumbrance": [2, 26],
+        "encumbrance": [2, 13],
 
         "//coverage": [
           "22% from front panel",
@@ -353,7 +353,7 @@
       },
       {
         "//encumbrance": "the rig itself is reported to be very comfortable to wear",
-        "encumbrance": [1, 14],
+        "encumbrance": [1, 7],
 
         "//coverage": [
           "4% from the front rig panel",
@@ -657,7 +657,7 @@
 
     "armor": [
       {
-        "encumbrance": [4, 30],
+        "encumbrance": [2, 15],
 
         "//coverage": [
           "(30% / 2 =) 15% from bib",
@@ -672,7 +672,7 @@
         "volume_encumber_modifier": 0.75
       },
       {
-        "encumbrance": [3, 20],
+        "encumbrance": [2, 10],
 
         "coverage": 95,
         "covers": ["torso"],
@@ -896,7 +896,7 @@
 
     "armor": [
       {
-        "encumbrance": [2, 28],
+        "encumbrance": [1, 15],
 
         "//coverage": [
           "35% front coverage",
@@ -910,7 +910,7 @@
         "volume_encumber_modifier": 0.75
       },
       {
-        "encumbrance": [1, 16],
+        "encumbrance": [1, 8],
 
         "coverage": 5,
         "covers": ["torso"],
@@ -1071,7 +1071,7 @@
 
     "armor": [
       {
-        "encumbrance": [1, 13],
+        "encumbrance": [1, 10],
 
         "//coverage": [
           "half of large SAPI plate coverage = 18%",
@@ -1084,7 +1084,7 @@
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [0, 6],
+        "encumbrance": [0, 4],
 
         "//coverage": "half of large SAPI plate coverage ≈ 6%",
         "coverage": 6,
@@ -1205,10 +1205,10 @@
     "looks_like": "vest",
     "repairs_like": "tacvest",
 
-    "//armor": "copied from the MAV 2 chest rig",
+    "//armor": "coverage copied from the MAV 2 chest rig",
     "armor": [
       {
-        "encumbrance": [2, 20],
+        "encumbrance": [2, 12],
 
         "//coverage": [
           "~18% of front upper torso coverage = 7%",
@@ -1222,7 +1222,7 @@
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 12],
+        "encumbrance": [0, 7],
 
         "//coverage": [
           "~40% of front lower torso coverage = 16%",
@@ -1821,10 +1821,10 @@
     "looks_like": "vest",
     "repairs_like": "tacvest",
 
-    "//armor": "copied from MAV 2 Piece rig",
+    "//armor": "coverage copied from MAV 2 Piece rig",
     "armor": [
       {
-        "encumbrance": [2, 20],
+        "encumbrance": [1, 12],
 
         "//coverage": [
           "~18% of front upper torso coverage = 7%",
@@ -1838,7 +1838,7 @@
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 12],
+        "encumbrance": [1, 9],
 
         "//coverage": [
           "~40% of front lower torso coverage = 16%",
@@ -2058,7 +2058,7 @@
 
     "armor": [
       {
-        "encumbrance": [2, 14],
+        "encumbrance": [2, 8],
 
         "//coverage": [
           "~20% of front upper torso coverage = 8%",
@@ -2071,7 +2071,7 @@
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 7],
+        "encumbrance": [0, 5],
 
         "//coverage": [
           "~40% of front lower torso coverage = 16%",
@@ -2291,7 +2291,8 @@
 
     "armor": [
       {
-        "encumbrance": [2, 14],
+        "//encumbrance": "low encumbrance values to account for the fact that this rig has a FIT flag already",
+        "encumbrance": [1, 7],
 
         "//coverage": [
           "~16% of front upper torso coverage = 6.4%",
@@ -2301,10 +2302,10 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.35
+        "volume_encumber_modifier": 0.25
       },
       {
-        "encumbrance": [1, 7],
+        "encumbrance": [0, 4],
 
         "//coverage": [
           "~10% of front lower torso coverage = 4%",
@@ -2336,8 +2337,10 @@
         "max_contains_volume": "450 ml",
         "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
         "min_item_length": "50 mm",
-        "//max_item_length": "longest side of M18 smoke grenade",
-        "max_item_length": "146 mm",
+        "//max_item_length": "length of STANAG 30-round mag w/ ranger plate",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "moves": 110
       },
@@ -2351,7 +2354,9 @@
         "max_contains_weight": "1 kg",
         "max_contains_volume": "450 ml",
         "min_item_length": "50 mm",
-        "max_item_length": "146 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "moves": 110
       },
@@ -2365,7 +2370,9 @@
         "max_contains_weight": "1 kg",
         "max_contains_volume": "450 ml",
         "min_item_length": "50 mm",
-        "max_item_length": "146 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 0.25,
 
         "moves": 110
       },
@@ -2379,7 +2386,9 @@
         "max_contains_weight": "1 kg",
         "max_contains_volume": "450 ml",
         "min_item_length": "50 mm",
-        "max_item_length": "146 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 0.25,
 
         "moves": 110
       },
@@ -2398,19 +2407,7 @@
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
-        "moves": 130
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Pistol magazine pouch",
-
-        "holster": true,
-
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
-        "min_item_length": "90 mm",
-        "max_item_length": "130 mm",
+        "volume_encumber_modifier": 0.25,
 
         "moves": 130
       },
@@ -2426,6 +2423,8 @@
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
+        "volume_encumber_modifier": 0.25,
+
         "moves": 130
       },
       {
@@ -2439,6 +2438,24 @@
         "max_contains_volume": "85 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
+
+        "volume_encumber_modifier": 0.25,
+
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "85 ml",
+        "min_item_length": "90 mm",
+        "max_item_length": "130 mm",
+
+        "volume_encumber_modifier": 0.25,
 
         "moves": 130
       },
@@ -2448,13 +2465,14 @@
 
         "description": "Cord retention",
 
-        "max_contains_weight": "1 kg",
-        "//max_contains_volume": "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
-        "max_contains_volume": "450 ml",
+        "max_contains_weight": "1500 g",
+        "max_contains_volume": "750 ml",
         "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
         "min_item_length": "50 mm",
-        "//max_item_length": "longest side of M18 smoke grenade",
-        "max_item_length": "146 mm",
+        "//max_item_length": "arbitrary, for larger items",
+        "max_item_length": "229 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "moves": 180
       },
@@ -2463,13 +2481,12 @@
 
         "description": "Cord retention",
 
-        "max_contains_weight": "1 kg",
-        "//max_contains_volume": "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
-        "max_contains_volume": "450 ml",
-        "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
+        "max_contains_weight": "1500 g",
+        "max_contains_volume": "750 ml",
         "min_item_length": "50 mm",
-        "//max_item_length": "longest side of M18 smoke grenade",
-        "max_item_length": "146 mm",
+        "max_item_length": "229 mm",
+
+        "volume_encumber_modifier": 0.5,
 
         "moves": 180
       }
