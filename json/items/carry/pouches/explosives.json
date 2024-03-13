@@ -91,6 +91,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "40mm grenade pouch",
+
         "holster": true,
 
         "max_contains_weight": "365 g",
@@ -109,7 +111,9 @@
         "max_contains_volume": "155 ml",
         "min_item_length": "96 mm",
         "//max_item_length": "added 10% to maximum length of a 40×53mm grenade to allow slightly-larger items, like smoke grenades, to also be stored here",
-        "max_item_length": "123 mm"
+        "max_item_length": "123 mm",
+
+        "moves": 90
       }
     ],
 
@@ -241,6 +245,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Offensive grenade pouch",
 
         "holster": true,
 
@@ -500,6 +506,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Utility grenade pouch",
+
         "holster": true,
 
         "//max_contains_weight": "weight of M18 smoke grenade (539 g), rounded to the nearest 50/100 g",
@@ -615,13 +623,15 @@
     ],
     "pocket_data": [
       {
+        "description": "40mm grenade slots",
+
         "ammo_restriction": {
           "40x46mm": 6,
           "40x53mm": 6
         },
 
         "volume_encumber_modifier": 0.3,
-        "moves": 20
+        "moves": 80
       }
     ],
 

@@ -83,6 +83,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Magnetic holster",
+
         "holster": true,
 
         "max_contains_weight": "8200 g",
@@ -90,6 +92,23 @@
         "max_contains_volume": "4 L",
         "min_item_length": "20 cm",
         "max_item_length": "80 cm",
+
+        "material_restriction": [
+          "iron",
+          "budget_steel",
+          "lc_steel",
+          "mc_steel",
+          "hc_steel",
+          "ch_steel",
+          "qt_steel",
+          "budget_steel_chain",
+          "lc_steel_chain",
+          "mc_steel_chain",
+          "hc_steel_chain",
+          "ch_steel_chain",
+          "qt_steel_chain",
+          "steel"
+        ],
 
         "moves": 130
       }
@@ -197,6 +216,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Collapsible baton holster",
+
         "holster": true,
 
         "//max_contains_weight": "50% over the weight of audited `baton` in order to accomodate heavier batons",
@@ -283,6 +304,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Tonfa holster",
+
         "holster": true,
 
         "max_contains_weight": "750 g",
@@ -354,6 +377,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Stun gun holster",
 
         "holster": true,
 

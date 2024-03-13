@@ -259,6 +259,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "IFAK pouch",
+
         "max_contains_weight": "4 kg",
         "//magazine_well": "20% of available volume inside the pouch (2329 ml)",
         "magazine_well": "466 ml",

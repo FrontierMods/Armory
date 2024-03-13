@@ -108,6 +108,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Gas mask pouch",
+
         "rigid": true,
 
         "max_contains_weight": "1 kg",
@@ -212,6 +214,9 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Gas mask pouch",
+
+        "max_contains_weight": "1 kg",
         "//max_contains_volume": [
           "dimensions of CM-7M gas mask",
           "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
@@ -225,7 +230,6 @@
           }
         ],
         "max_contains_volume": "5072 ml",
-        "max_contains_weight": "1 kg",
         "max_item_length": "305 mm",
 
         "volume_encumber_modifier": 0.25
@@ -304,10 +308,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Double magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
-        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate × 2",
+        "//max_contains_volume": "2 × STANAG 30-round magazine w/ ranger plate",
         "max_contains_volume": "610 ml",
         "//min_item_length": "length of STANAG 20-round magazine",
         "min_item_length": "130 mm",
@@ -318,12 +322,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Double magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
-        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate × 2",
         "max_contains_volume": "610 ml",
-        "//min_item_length": "length of STANAG 20-round magazine",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
@@ -448,6 +450,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Drop leg pouch",
+
         "max_contains_weight": "5 kg",
         "//max_contains_volume": "95% of the volume",
         "max_contains_volume": "2529 ml",
@@ -564,6 +568,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Drop leg pouch",
 
         "max_contains_weight": "10 kg",
         "//max_contains_volume": "95% of the volume",

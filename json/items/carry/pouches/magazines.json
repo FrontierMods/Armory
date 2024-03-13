@@ -96,6 +96,8 @@
           "AR-15 / STANAG magazine (40 rounds)"
         ],
 
+        "description": "Rifle magazine pouch",
+
         "holster": true,
 
         "max_contains_weight": "1 kg",
@@ -365,6 +367,8 @@
 
     "pocket_data": [
       {
+        "description": "Shot shell pouch",
+
         "ammo_restriction": {
           "410shot": 12,
           "shot": 12,
@@ -496,7 +500,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner magazine pouch",
+        "description": "Inner rifle magazine pouch",
 
         "holster": true,
 
@@ -512,7 +516,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner magazine pouch",
+        "description": "Inner rifle magazine pouch",
 
         "holster": true,
 
@@ -528,7 +532,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner magazine pouch",
+        "description": "Inner rifle magazine pouch",
 
         "holster": true,
 
@@ -545,7 +549,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Outer magazine pouch",
+        "description": "Outer rifle magazine pouch",
 
         "holster": true,
 
@@ -561,7 +565,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Outer magazine pouch",
+        "description": "Outer rifle magazine pouch",
 
         "holster": true,
 
@@ -577,7 +581,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Outer magazine pouch",
+        "description": "Outer rifle magazine pouch",
 
         "holster": true,
 
@@ -724,6 +728,8 @@
           "standard SMG magazine capacity"
         ],
 
+        "description": "Pistol magazine pouch",
+
         "holster": true,
 
         "//max_contains_weight": "large-enough to accomodate a full SMG magazine",
@@ -798,6 +804,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Pistol magazine pouch",
+
         "max_contains_weight": "350 g",
         "//max_contains_volume": "volume of a 21-round M17 magazine",
         "max_contains_volume": "105 ml",
@@ -865,6 +873,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
 
         "max_contains_weight": "350 g",
         "//max_contains_volume": "volume of a 21-round M17 magazine",
@@ -939,6 +949,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "SMG magazine pouch",
 
         "holster": true,
 
@@ -1049,6 +1061,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Large rifle magazine pouch",
 
         "holster": true,
 
@@ -1169,6 +1183,8 @@
         "pocket_type": "CONTAINER",
 
         "//reference": [".338 sniper rifle magazine capacity"],
+
+        "description": "Sniper rifle magazine pouch",
 
         "holster": true,
 
