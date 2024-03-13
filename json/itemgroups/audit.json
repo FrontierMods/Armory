@@ -340,5 +340,98 @@
         "charges": [1, 10]
       }
     ]
+  },
+  {
+    "id": "cop_locker",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "magazine": 100,
+
+    "entries": [
+      { "item": "pants", "prob": 100 },
+      { "item": "badge_deputy", "prob": 100 },
+      { "item": "cowboy_hat", "prob": 10 },
+      {
+        "item": "leather_police_jacket",
+        "variant": "leather_police_jacket",
+        "prob": 25
+      },
+      { "item": "sheriffshirt", "prob": 100 },
+      { "item": "police_belt", "prob": 100 },
+      { "group": "cop_shoes", "prob": 100 },
+      { "item": "whistle", "prob": 75 },
+      { "item": "ear_plugs", "prob": 66 },
+      {
+        "distribution": [
+          { "group": "charged_two_way_radio", "prob": 25 },
+          { "item": "pouch_radio_tasm", "prob": 25 },
+          {
+            "container-item": "pouch_radio_tasm",
+            "group": "charged_two_way_radio",
+            "prob": 50
+          }
+        ],
+        "prob": 50
+      },
+      { "item": "kevlar_harness", "prob": 20 },
+      { "item": "file", "prob": 25 },
+      {
+        "distribution": [
+          { "item": "baton", "prob": 25 },
+          { "item": "pouch_baton_bfg", "prob": 25 },
+          {
+            "container-item": "pouch_baton_bfg",
+            "item": "baton",
+            "prob": 50
+          }
+        ],
+        "prob": 20
+      },
+      { "item": "kevlar", "prob": 15 },
+      {
+        "item": "usp_45",
+        "ammo-item": "45_acp",
+        "charges": 12,
+        "container-item": "holster",
+        "prob": 4
+      },
+      {
+        "item": "usp_45",
+        "ammo-item": "45_acp",
+        "charges": 12,
+        "container-item": "nylon_holster",
+        "prob": 6
+      },
+      { "item": "survnote", "prob": 10 },
+      { "item": "family_photo", "prob": 10 },
+      {
+        "distribution": [
+          { "item": "tazer", "prob": 25 },
+          { "item": "holster_stun_gun_streetwise", "prob": 25 },
+          {
+            "container-item": "holster_stun_gun_streetwise",
+            "item": "tazer",
+            "prob": 50
+          }
+        ],
+        "prob": 5
+      }
+    ]
+  },
+  {
+    "id": "tools_hunting",
+    "copy-from": "tools_hunting",
+    "type": "item_group",
+
+    "extend": {
+      "items": [
+        { "item": "pouch_spray_angel", "prob": 2 },
+        { "item": "pouch_water_bottle_gonex", "prob": 10 },
+        { "item": "pouch_tool_wynex", "prob": 5 },
+        { "item": "pouch_gadget_condor", "prob": 10 },
+        { "item": "pouch_water_bottle_ft", "prob": 15 }
+      ]
+    }
   }
 ]
