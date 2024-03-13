@@ -208,7 +208,7 @@
     "id": "molle_accessories",
     "copy-from": "molle_accessories",
     "type": "item_group",
-    "subtype": "collection",
+    "subtype": "distribution",
 
     "extend": {
       "entries": [
