@@ -73,6 +73,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Canteen pouch",
+
         "rigid": true,
 
         "max_contains_weight": "3 kg",
@@ -195,6 +197,21 @@
     "repairs_like": "legrig",
     "looks_like": "holster",
 
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Dump pouch",
+
+        "max_contains_weight": "3 kg",
+        "//max_contains_volume": "95% of unfolded volume",
+        "max_contains_volume": "3029 ml",
+        "max_item_length": "250 mm",
+
+        "volume_encumber_modifier": 0.5
+      }
+    ],
+
     "use_action": {
       "type": "transform",
       "target": "pouch_dump_frogpro_folded",
@@ -288,19 +305,6 @@
     },
     "volume": "3188 ml",
     "longest_side": "250 mm",
-
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-
-        "max_contains_weight": "3 kg",
-        "//max_contains_volume": "95% of unfolded volume",
-        "max_contains_volume": "3029 ml",
-        "max_item_length": "250 mm",
-
-        "volume_encumber_modifier": 0.5
-      }
-    ],
 
     "use_action": {
       "type": "transform",
@@ -398,6 +402,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Loose ammo pouch",
+
         "rigid": true,
 
         "//max_contains_volume": "95% of total volume",
@@ -485,6 +491,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Water bottle pouch",
 
         "rigid": true,
 
@@ -575,6 +583,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Tactical radio pouch",
 
         "holster": true,
 
@@ -923,6 +933,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Flashlight pouch",
 
         "holster": true,
 
@@ -1273,6 +1285,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Handcuff pouch",
+
         "rigid": true,
 
         "//max_contains_weight": "268 g + spare weight",
@@ -1399,6 +1413,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Multipurpose pouch",
 
         "rigid": true,
 
@@ -2019,6 +2035,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Water bottle pouch",
+
         "holster": true,
         "rigid": true,
 
@@ -2177,6 +2195,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Air horn pouch",
+
         "holster": true,
 
         "max_contains_weight": "1 kg",
@@ -2318,6 +2338,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Pepper spray pouch",
 
         "holster": true,
 
