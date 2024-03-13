@@ -417,7 +417,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
@@ -431,7 +431,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "770 ml",
@@ -443,7 +443,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "770 ml",
@@ -455,55 +455,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "moves": 100
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "moves": 100
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "moves": 100
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "moves": 100
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "770 ml",
@@ -727,11 +679,11 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
-        "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
-        "max_contains_volume": "770 ml",
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_volume": "385 ml",
         "//min_item_length": "length of STANAG 20-round magazine",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
@@ -741,10 +693,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
@@ -753,10 +705,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
@@ -765,10 +717,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
@@ -777,10 +729,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
@@ -789,10 +741,10 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "770 ml",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
@@ -1894,7 +1846,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "//max_contains_volume": "2 × STANAG 40-round magazine w/ ranger plate",
@@ -1912,7 +1864,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "770 ml",
@@ -1924,7 +1876,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "770 ml",
@@ -1936,7 +1888,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "770 ml",
@@ -2112,11 +2064,11 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "holster": true,
 
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "1 kg",
         "//magazine_well": {
           "length": "0.75 in",
           "width": "3 in",
@@ -2136,11 +2088,11 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "holster": true,
 
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "1 kg",
         "magazine_well": "221 ml",
         "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
@@ -2151,11 +2103,11 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Magazine pouch",
+        "description": "Rifle magazine pouch",
 
         "holster": true,
 
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "1 kg",
         "magazine_well": "221 ml",
         "max_contains_volume": "385 ml",
         "min_item_length": "130 mm",
