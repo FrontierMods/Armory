@@ -93,7 +93,7 @@
         "min_item_length": "20 cm",
         "max_item_length": "80 cm",
 
-        "material_restriction": [
+        "//material_restriction": [
           "iron",
           "budget_steel",
           "lc_steel",
