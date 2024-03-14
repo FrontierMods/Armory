@@ -13,7 +13,8 @@
       [
         "https://www.youtube.com/watch?v=UWmKP7a4T-4",
         "side pocket size reference"
-      ]
+      ],
+      ["http://www.hydedefinition.com/latest/?paged=9", "coverage reference"]
     ],
 
     "name": {
@@ -136,29 +137,28 @@
         "encumbrance": [0, 8],
 
         "//coverage": [
-          "~18% of front upper torso coverage = 7%",
-          "~30% of side upper torso coverage = 6% * 2 = 12%",
           "harness = 4% (front straps) + 6% (upper back straps) = 10%"
         ],
-        "coverage": 29,
+        "coverage": 10,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.5
+        "volume_encumber_modifier": 0.05
       },
       {
         "encumbrance": [1, 12],
 
         "//coverage": [
-          "~40% of front lower torso coverage = 16%",
-          "~50% of side lower torso coverage = 10% * 2 = 20%",
+          "~65% of front lower torso coverage = 20.8% ≈ 21%",
+          "~20% of back lower torso coverage = 6.4% ≈ 6%",
+          "~65% of side lower torso coverage = 6.5% * 2 = 13%",
           "3% for lower back straps"
         ],
-        "coverage": 39,
+        "coverage": 40,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.2
+        "volume_encumber_modifier": 0.8
       }
     ],
 
@@ -1157,35 +1157,32 @@
     "looks_like": "vest",
     "repairs_like": "tacvest",
 
-    "//armor": "coverage copied from the MAV 2 chest rig",
     "armor": [
       {
         "encumbrance": [2, 12],
 
         "//coverage": [
-          "~18% of front upper torso coverage = 7%",
-          "~30% of side upper torso coverage = 6% * 2 = 12%",
-          "harness = 4% (front straps) + 6% (upper back straps) = 10%"
+          "~6% of front upper torso coverage = 2.4%",
+          "harness = 2% (front straps) + 2% (upper back straps) + 1% (side straps) = 5%"
         ],
-        "coverage": 29,
+        "coverage": 7,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.5
+        "volume_encumber_modifier": 0.2
       },
       {
         "encumbrance": [0, 7],
 
         "//coverage": [
           "~40% of front lower torso coverage = 16%",
-          "~50% of side lower torso coverage = 10% * 2 = 20%",
-          "3% for lower back straps"
+          "2% for lower back straps"
         ],
-        "coverage": 39,
+        "coverage": 18,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.2
+        "volume_encumber_modifier": 0.7
       }
     ],
 
@@ -1671,7 +1668,11 @@
 
     "//sources": [
       "https://eu.directactiongear.com/en/tempest-chest-rig.html",
-      ["https://us.directactiongear.com/tempest-chest-rig", "price"]
+      ["https://us.directactiongear.com/tempest-chest-rig", "price"],
+      [
+        "https://www.spartanat.com/2019/01/review-direct-action-hurricane-chest-rig-plattform/",
+        "coverage reference"
+      ]
     ],
 
     "//notes": [
@@ -1773,17 +1774,16 @@
     "looks_like": "vest",
     "repairs_like": "tacvest",
 
-    "//armor": "coverage copied from MAV 2 Piece rig",
     "armor": [
       {
         "encumbrance": [1, 12],
 
         "//coverage": [
-          "~18% of front upper torso coverage = 7%",
-          "~30% of side upper torso coverage = 6% * 2 = 12%",
-          "harness = 4% (front straps) + 6% (upper back straps) = 10%"
+          "~30% of front upper torso coverage = 14.4% ≈ 14%",
+          "~15% of side upper torso coverage = 1.5% * 2 = 3%",
+          "harness = 5.5% (front straps) + 2.5% (upper back straps) = 8%"
         ],
-        "coverage": 29,
+        "coverage": 25,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
@@ -1793,15 +1793,15 @@
         "encumbrance": [1, 9],
 
         "//coverage": [
-          "~40% of front lower torso coverage = 16%",
-          "~50% of side lower torso coverage = 10% * 2 = 20%",
-          "3% for lower back straps"
+          "~30% of front lower torso coverage = 9.6% ≈ 10%",
+          "~25% of side lower torso coverage = 2.5% * 2 = 4%",
+          "1% for lower back straps"
         ],
-        "coverage": 39,
+        "coverage": 15,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.2
+        "volume_encumber_modifier": 0.5
       }
     ],
 
@@ -2020,7 +2020,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.5
+        "volume_encumber_modifier": 0.2
       },
       {
         "encumbrance": [0, 5],
@@ -2033,7 +2033,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.2
+        "volume_encumber_modifier": 0.7
       }
     ],
 
