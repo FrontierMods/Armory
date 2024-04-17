@@ -296,15 +296,7 @@
       }
     ],
 
-    "//dimensions": {
-      "length": "25.00 cm",
-      "width": "15.00 cm",
-      "height": "10.00 cm",
-      "raw": "3750 ml",
-      "trim": 0.15
-    },
-    "volume": "3188 ml",
-    "longest_side": "250 mm",
+    "longest_side": "0 mm",
 
     "use_action": {
       "type": "transform",
