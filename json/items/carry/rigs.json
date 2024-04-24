@@ -1254,17 +1254,12 @@
         "holster": true,
 
         "//max_contains_weight": [
-          "weight of an M1911 magazine: 0.156 lbs = 70.76 g ≈ 71 g",
-          "see: technical manual TM 9-1005-211-34",
-          "plus weight of 8 rounds of ball .45 ACP: 331 gr (= 21.448 g = 22 g) × 8 = 171.59 g ≈ 172 g",
-          "see: technical manual TM 43-0001-27"
+          "heavier than a loaded M17 9×19mm magazine",
+          "should allow for heavier ammo"
         ],
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": [
-          "just larger the 17-round Glock 9×19mm magazine",
-          "might be able to fit in a slightly-larger magazine"
-        ],
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "//max_contains_volume": "volume of a 21-round M17 magazine",
+        "max_contains_volume": "105 ml",
         "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
         "min_item_length": "90 mm",
         "//max_item_length": [
@@ -1282,8 +1277,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
@@ -1297,8 +1292,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
@@ -1311,8 +1306,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
@@ -2354,8 +2349,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
@@ -2370,8 +2365,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
@@ -2386,8 +2381,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
@@ -2402,8 +2397,8 @@
 
         "holster": true,
 
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "85 ml",
+        "max_contains_weight": "350 g",
+        "max_contains_volume": "105 ml",
         "min_item_length": "90 mm",
         "max_item_length": "130 mm",
 
