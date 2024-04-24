@@ -1332,8 +1332,8 @@
           ]
         },
         "max_contains_volume": "701 ml",
-        "//max_item_length": "5.75 in., slightly shorter than the length of the pouch",
-        "max_item_length": "146 mm",
+        "//max_item_length": "6 in., the length of the pouch",
+        "max_item_length": "152 mm",
 
         "moves": 180
       }
