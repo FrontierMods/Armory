@@ -820,8 +820,8 @@
     ],
 
     "name": {
-      "str": "MOLLE II pistol mag pouch",
-      "str_pl": "MOLLE II pistol mag pouches"
+      "str": "modern military pistol mag pouch",
+      "str_pl": "modern military pistol mag pouches"
     },
     "description": "A nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  A newer design for the newer standard-issue army pistol magazines.",
 
@@ -834,7 +834,7 @@
           "str": "MOLLE II pistol mag pouch",
           "str_pl": "MOLLE II pistol mag pouches"
         },
-        "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.  The flap is quicker to operate than the previous snap-button design, but not as quick as the open-top alternatives. <variant_multicam>.",
+        "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.  The flap is quicker to operate than the previous snap-button design, but not as quick as the open-top alternatives. <variant_multicam>",
         "expand_snippets": true,
         "weight": 1
       }
