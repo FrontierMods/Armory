@@ -946,8 +946,8 @@
           }
         ],
         "max_contains_volume": "175 ml",
-        "//max_item_length": "6 in",
-        "max_item_length": "152 mm",
+        "//max_item_length": "7.5 in.: full length of the pouch, plus 1.5 in. of permissive Velcro flap",
+        "max_item_length": "191 mm",
 
         "moves": 120
       }
