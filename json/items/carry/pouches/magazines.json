@@ -239,10 +239,8 @@
           "should allow for heavier ammo"
         ],
         "max_contains_weight": "350 g",
-        "//max_contains_volume": [
-          "just larger than the 17-round M17 9×19mm magazine"
-        ],
-        "max_contains_volume": "90 ml",
+        "//max_contains_volume": "just larger than the 20-round FN Five-seveN 5.7mm NATO magazine",
+        "max_contains_volume": "120 ml",
         "//min_item_length": "slightly shorter than length of pouch (3.65 in. ≈ 92 mm)",
         "min_item_length": "90 mm",
         "//max_item_length": [
@@ -798,7 +796,7 @@
         "description": "Pistol magazine pouch",
 
         "max_contains_weight": "350 g",
-        "max_contains_volume": "105 ml",
+        "max_contains_volume": "120 ml",
         "max_item_length": "141 mm"
       }
     ],
@@ -869,7 +867,7 @@
         "description": "Pistol magazine pouch",
 
         "max_contains_weight": "350 g",
-        "max_contains_volume": "105 ml",
+        "max_contains_volume": "120 ml",
         "max_item_length": "141 mm"
       }
     ],
