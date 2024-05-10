@@ -325,7 +325,6 @@
     "//flags": "we add PALS_SMALL because it seems perfectly possible for this ring to strap to PALS webbing",
     "flags": [
       "CANT_WEAR",
-      "TARDIS",
       "WATER_FRIENDLY",
       "BELT_GEAR",
       "PALS_SMALL",

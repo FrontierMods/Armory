@@ -157,7 +157,8 @@
 
     "//notes": [
       "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description",
-      "manufacturer is Eagle Industries"
+      "manufacturer is Eagle Industries",
+      "likely only takes up two full slots of PALS"
     ],
 
     "name": {
@@ -236,12 +237,8 @@
       }
     ],
 
-    "//flags": [
-      "replaced PALS_MEDIUM with PALS_LARGE",
-      "added WATER_FRIENDLY",
-      "removed BELTED and OVERSIZE"
-    ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
+    "//flags": ["added WATER_FRIENDLY", "removed BELTED and OVERSIZE"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
 
     "price": "91 USD",
     "//price_postapoc": "3 USD"

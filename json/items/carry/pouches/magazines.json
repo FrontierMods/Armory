@@ -261,7 +261,7 @@
     },
 
     "//flags": [
-      "replaced PALS_MEDIUM with PALS_SMALL (aligns with other single-rifle-magazine pouches)",
+      "replaced PALS_MEDIUM with PALS_SMALL: aligns with other single-rifle-magazine pouches",
       "replaced BELTED with CANT_WEAR"
     ],
     "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
