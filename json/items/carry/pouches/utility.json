@@ -93,6 +93,7 @@
           }
         ],
         "max_contains_volume": "1950 ml",
+        "min_item_volume": "300 ml",
         "min_item_length": "76 mm",
         "max_item_length": "216 mm"
       }
@@ -404,8 +405,17 @@
       }
     ],
 
-    "//flags": ["added WATER_FRIENDLY", "added COLLAPSE_CONTENTS"],
-    "flags": ["COLLAPSE_CONTENTS", "WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
+    "//flags": [
+      "replaced PALS_LARGE with PALS_MEDIUM: appears to only take up two full slots",
+      "added WATER_FRIENDLY",
+      "added COLLAPSE_CONTENTS"
+    ],
+    "flags": [
+      "COLLAPSE_CONTENTS",
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "PALS_MEDIUM"
+    ],
 
     "price": "24 USD",
     "//price_postapoc": "1 USD"
@@ -417,6 +427,10 @@
 
     "//sources": [
       "https://www.firsttactical.com/products/tactix-series-bottle-pouch-1-0-liter"
+    ],
+
+    "//notes": [
+      "while this pouch clearly can store more than a single item, for the sake of sanity and reasonable inventory management, we reduce it to a holster with minimum item-size requirements"
     ],
 
     "name": {
@@ -486,17 +500,23 @@
 
         "description": "Water bottle pouch",
 
+        "holster": true,
         "rigid": true,
 
         "max_contains_weight": "3 kg",
         "//max_contains_volume": "from source",
         "max_contains_volume": "1600 ml",
+        "min_item_volume": "300 ml",
+        "min_item_length": "100 mm",
         "max_item_length": "206 mm"
       }
     ],
 
-    "//flags": ["removed BELTED and OVERSIZE"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_LARGE"],
+    "//flags": [
+      "replaced PALS_LARGE with PALS_SMALL: only takes up one full slot",
+      "removed BELTED and OVERSIZE"
+    ],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "25 USD",
     "//price_postapoc": "1 USD"
@@ -2034,6 +2054,7 @@
 
         "max_contains_weight": "2 kg",
         "max_contains_volume": "1 L",
+        "min_item_volume": "220 ml",
         "max_item_length": "188 mm"
       }
     ],
