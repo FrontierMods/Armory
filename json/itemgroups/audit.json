@@ -231,7 +231,8 @@
         { "item": "pouch_multipurpose_tt", "prob": 10 },
         { "item": "pouch_leg_drop_tacmed", "prob": 5 },
         { "item": "pouch_spray_angel", "prob": 5 },
-        { "item": "pouch_airhorn_defense", "prob": 2 }
+        { "item": "pouch_airhorn_defense", "prob": 2 },
+        { "item": "pouch_bino_condor", "prob": 7 }
       ]
     }
   },
