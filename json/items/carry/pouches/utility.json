@@ -2367,5 +2367,123 @@
 
     "price": "35 USD",
     "price_postapoc": "50 cent"
+  },
+  {
+    "id": "pouch_bino_condor",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://condoroutdoor.com/products/condor-binocular-pouch",
+      [
+        "https://www.amazon.co.uk/Condor-Binocular-Pouch/dp/B00XJ6CTXS",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str": "binocular pouch"
+    },
+    "description": "A large, rigid pouch meant to hold a single pair of binoculars.  Has a pair of small loops for tools or batteries inside..",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "pouch_black",
+
+        "name": {
+          "str": "Condor binocular pouch",
+          "str_pl": "Condor binocular pouches"
+        },
+        "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant_black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "pouch_od",
+
+        "name": {
+          "str": "Condor binocular pouch",
+          "str_pl": "Condor binocular pouches"
+        },
+        "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant_od>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "177 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "6 in",
+      "height": "3 in",
+      "raw": "1769.8 ml",
+      "trim": -0.025,
+      "notes": ["trim is to account for the outer clip"]
+    },
+    "volume": "1814 ml",
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon", "plastic"],
+    "repairs_like": "legrig",
+    "looks_like": "dump_pouch",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Binoculars pouch",
+
+        "rigid": true,
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "from raw pouch volume",
+          [
+            "https://www.rei.com/product/215314/nikon-prostaff-p7-8-x-42-binoculars",
+            "possible reference",
+            "just over 1 L in raw volume"
+          ]
+        ],
+        "max_contains_volume": "1500 ml",
+        "max_item_length": "140 mm",
+
+        "moves": 200
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Binoculars pouch loop",
+
+        "holster": true,
+        "//rigid": "not rigid per se, but the volume of its potential contents are accounted for",
+        "rigid": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "75 ml",
+        "max_item_length": "132 mm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Binoculars pouch loop",
+
+        "holster": true,
+        "rigid": true,
+
+        "max_contains_weight": "250 g",
+        "max_contains_volume": "75 ml",
+        "max_item_length": "132 mm"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
+
+    "price": "25 USD",
+    "price_postapoc": "1 USD"
   }
 ]
