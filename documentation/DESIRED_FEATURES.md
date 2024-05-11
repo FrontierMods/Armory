@@ -58,6 +58,12 @@ Overcapacity could, among other things, enable certain pistol holsters to take i
 
 [proper outline TBD]
 
+## Slot-based pocket restrictions
+
+**TL;DR**: allow pockets to be grids of [non-specific] slots, and calculate restrictions based on items' `slots` property.
+
+[proper outline TBD]
+
 ## Whitelisted gunmods
 
 **TL;DR**: some holsters should allow guns with certain (classes of) gunmods to be put inside by discounting their volume and length (but not weight) for volume/length restriction calculations.
