@@ -38,8 +38,10 @@
 
 ### v0.1.2
 
-- [ ] **rebalance new rigs**
+- [x] **rebalance new rigs**
   - some of them were much too bulky, others too lightweight
+  - most of them provided way too much PALS webbing
+- [x] **audit MOLLE pouch slots**
 
 ## Released
 
