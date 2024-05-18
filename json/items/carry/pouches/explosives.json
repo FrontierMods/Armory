@@ -362,6 +362,8 @@
       {
         "pocket_type": "CONTAINER",
 
+        "description": "Offensive grenade pouch",
+
         "holster": true,
 
         "//max_contains_weight": "weight of M67 fragmentation grenade (400 g) + 10% extra",
@@ -375,6 +377,8 @@
       },
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Offensive grenade pouch",
 
         "holster": true,
 
@@ -397,7 +401,7 @@
     },
 
     "//flags": ["replaced BELTED with CANT_WEAR"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
 
     "price": "16 USD",
     "price_postapoc": "25 cent"

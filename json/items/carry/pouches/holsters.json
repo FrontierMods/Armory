@@ -118,7 +118,7 @@
       "type": "holster"
     },
 
-    "flags": ["CANT_WEAR", "TARDIS", "WATER_FRIENDLY", "PALS_MEDIUM"],
+    "flags": ["CANT_WEAR", "TARDIS", "WATER_FRIENDLY", "PALS_SMALL"],
 
     "price": "295 USD",
     "price_postapoc": "1 USD"
@@ -523,6 +523,8 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
+
+        "description": "Breaching tool holster",
 
         "holster": true,
 
