@@ -106,7 +106,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Interior cord pouch",
+        "description": "Interior cord medical pouch",
 
         "//max_contains_volume": [
           "dimensions of an organizer insert",
@@ -132,7 +132,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Interior cord pouch",
+        "description": "Interior cord medical pouch",
 
         "//max_contains_volume": [
           "dimensions of an organizer insert",

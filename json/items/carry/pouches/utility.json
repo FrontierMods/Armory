@@ -209,7 +209,7 @@
         "max_contains_volume": "3029 ml",
         "max_item_length": "250 mm",
 
-        "volume_encumber_modifier": 0.5
+        "volume_encumber_modifier": 0.75
       }
     ],
 
@@ -661,6 +661,7 @@
     },
     "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.",
 
+    "variant_type": "gun",
     "variants": [
       {
         "id": "pouch_multicam",
@@ -741,7 +742,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pocket",
+        "description": "Gadget pouch front pocket",
 
         "holster": true,
 
@@ -765,7 +766,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Flap pocket",
+        "description": "Gadget pouch flap pocket",
 
         "max_contains_weight": "100 g",
         "//max_contains_volume": [
@@ -786,7 +787,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back pocket",
+        "description": "Gadget pouch back pocket",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
@@ -809,7 +810,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back pocket thin pouch",
+        "description": "Gadget pouch back pocket thin pouch",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
@@ -830,7 +831,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Back pocket thin pouch",
+        "description": "Gadget pouch back pocket thin pouch",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
@@ -1088,7 +1089,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pocket",
+        "description": "Deployment bag front pocket",
 
         "//max_contains_volume": [
           "from eyeballed dimensions of the front pocket",
@@ -1109,7 +1110,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pocket thin pouch",
+        "description": "Deployment bag front pocket thin pouch",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
@@ -1130,7 +1131,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pocket thin pouch",
+        "description": "Deployment bag front pocket thin pouch",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket's thin pouches",
@@ -1152,7 +1153,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Side pocket",
+        "description": "Deployment bag side pocket",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
@@ -1173,7 +1174,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Side pocket",
+        "description": "Deployment bag side pocket",
 
         "//max_contains_volume": [
           "from assumed dimensions of the back pocket",
@@ -1195,7 +1196,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Main pocket",
+        "description": "Deployment bag main pocket",
 
         "//max_contains_volume": [
           "from eyeballed dimensions of the front pocket",
@@ -1541,7 +1542,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Flap pocket",
+        "description": "Tool pouch flap pocket",
 
         "rigid": true,
 
@@ -1557,7 +1558,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pocket",
+        "description": "Tool pouch front pocket",
 
         "max_contains_weight": "250 g",
         "//max_contains_volume": [
@@ -1579,7 +1580,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Front pocket",
+        "description": "Tool pouch front pocket",
 
         "max_contains_weight": "250 g",
         "//max_contains_volume": [
@@ -1602,7 +1603,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Full-width inner pocket",
+        "description": "Tool pouch inner pocket",
 
         "max_contains_weight": "350 g",
         "//max_contains_volume": [
@@ -1622,7 +1623,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Zippered inner pocket",
+        "description": "Tool pouch zippered inner pocket",
 
         "max_contains_weight": "250 g",
         "//max_contains_volume": [
@@ -1642,7 +1643,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – back, small",
+        "description": "Tool pouch inner strap – back, small",
 
         "//max_contains_weight": "speculative",
         "max_contains_weight": "350 g",
@@ -1671,7 +1672,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – back, small",
+        "description": "Tool pouch inner strap – back, small",
 
         "max_contains_weight": "350 g",
         "max_contains_volume": "74 ml",
@@ -1684,7 +1685,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – back, medium",
+        "description": "Tool pouch inner strap – back, medium",
 
         "//max_contains_weight": "speculative",
         "max_contains_weight": "400 g",
@@ -1711,7 +1712,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – back, medium",
+        "description": "Tool pouch inner strap – back, medium",
 
         "max_contains_weight": "400 g",
         "max_contains_volume": "119 ml",
@@ -1724,7 +1725,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – back, large",
+        "description": "Tool pouch inner strap – back, large",
 
         "//max_contains_weight": "speculative",
         "max_contains_weight": "500 g",
@@ -1754,7 +1755,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – back, large",
+        "description": "Tool pouch inner strap – back, large",
 
         "max_contains_weight": "500 g",
         "max_contains_volume": "166 ml",
@@ -1767,7 +1768,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "//max_contains_volume": [
@@ -1795,7 +1796,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1807,7 +1808,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1819,7 +1820,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1831,7 +1832,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1843,7 +1844,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1855,7 +1856,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1867,7 +1868,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1879,7 +1880,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1891,7 +1892,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, small",
+        "description": "Tool pouch inner strap – front, small",
 
         "max_contains_weight": "150 g",
         "max_contains_volume": "52 ml",
@@ -1904,7 +1905,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, large",
+        "description": "Tool pouch inner strap – front, large",
 
         "max_contains_weight": "200 g",
         "//max_contains_volume": [
@@ -1928,7 +1929,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, large",
+        "description": "Tool pouch inner strap – front, large",
 
         "max_contains_weight": "200 g",
         "max_contains_volume": "56 ml",
@@ -1940,7 +1941,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, large",
+        "description": "Tool pouch inner strap – front, large",
 
         "max_contains_weight": "200 g",
         "max_contains_volume": "56 ml",
@@ -1952,7 +1953,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Inner strap – front, large",
+        "description": "Tool pouch inner strap – front, large",
 
         "max_contains_weight": "200 g",
         "max_contains_volume": "56 ml",
@@ -2047,7 +2048,7 @@
       {
         "pocket_type": "CONTAINER",
 
-        "description": "Water bottle pouch",
+        "description": "Small water bottle pouch",
 
         "holster": true,
         "rigid": true,
@@ -2384,7 +2385,7 @@
     "name": {
       "str": "binocular pouch"
     },
-    "description": "A large, rigid pouch meant to hold a single pair of binoculars.  Has a pair of small loops for tools or batteries inside..",
+    "description": "A large, rigid pouch meant to hold a single pair of binoculars.  Has a pair of small loops for tools or batteries inside.",
 
     "variant_type": "gun",
     "variants": [
