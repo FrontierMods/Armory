@@ -9,6 +9,7 @@
   - `chest`: chest circumference; halved to get torso width
   - `height`: total length (or height) of the torso part, measured at the back
   - `sleeve`: length of sleeve
+  - `thickness`: material thickness
   - `chest` is divided by `6 (= 2 × 3)` to get `1/3` of torso width (assumed to be sleeve width)
   - initial (unsimplified) formula: `(chest / 2 × height + chest / 6 × sleeve × 2) × thickness`
   - if `sleeve` is not provided, assume `sleeve` to be `1/1.75 × chest`
