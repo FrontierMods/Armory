@@ -1,0 +1,264 @@
+[
+  {
+    "id": "cummerbund_perroz",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://perrozdesigns.com/products/laser-cut-cummerbunds",
+      [
+        "https://eu.directactiongear.com/en/skeletonized-cummerbund-slim.html",
+        "weight reference"
+      ]
+    ],
+
+    "name": {
+      "str_sp": "laser-cut MOLLE cummerbunds"
+    },
+    "description": "A pair of lightweight cummerbunds, which wrap around the stomach end of a plate carrier in order to keep the carrier firmly against the body.  This model features a sheer PALS grid, with large sections of the grid cut out in order to reduce weight, without having any negative effect on the MOLLE mounting capability.  Without a pair of cummerbunds, wearing any plate carrier will be uncomfortable.  Attach these to reduce baseline plate carrier encumbrance.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "multicam",
+
+        "name": {
+          "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
+        },
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam:plural>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "black",
+
+        "name": {
+          "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
+        },
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": {
+          "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
+        },
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "multicam_black",
+
+        "name": {
+          "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
+        },
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam_black:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "woodland",
+
+        "name": {
+          "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
+        },
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:woodland:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "we presume that, for the reference model listing, the weight in grams is more accurate, because it's sold on the European market and is manufactured in Poland",
+    "weight": "210 g",
+    "//dimensions": {
+      "length": "21.5 in",
+      "width": "4 in",
+      "height": "0.75 mm",
+      "raw": "41.61 ml",
+      "trim": 0.025,
+      "notes": [
+        "dimensions for a single cummerbund",
+        "height (thickness) presumed",
+        "doubling the result due to this item being a pair"
+      ]
+    },
+    "volume": "83 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "single_sling",
+    "repairs_like": "single_sling",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 0.75
+          }
+        ],
+
+        "encumbrance": -5,
+
+        "coverage": 8,
+        "cover_melee": 4,
+        "cover_ranged": 8,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "//volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": "4.5 slots × 2, but we subtract 1 in order to prevent mounting three large MOLLE pouches where they couldn't fit",
+        "size": 8
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "CUMMERBUND", "CUMMERBUND_VELCRO"],
+
+    "//price": ["80 CAD", "sold as a set"],
+    "price": "58 USD 40 cent",
+    "price_postapoc": "2 USD"
+  },
+  {
+    "id": "cummerbund_iotv",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.pnasurplus.com/product/iotv-side-plate-carrier-gen-3-coyote/",
+      [
+        "https://www.uec-electronics.com/swipes-iotv-retro-cummerbund-kit-gen-ii/l",
+        "weight reference"
+      ],
+      ["https://www.ebay.com/itm/335008544660", "price reference"]
+    ],
+
+    "name": {
+      "str_sp": "Army MOLLE cummerbunds"
+    },
+    "description": "A pair of sturdy, full-size cummerbunds, which wrap around the stomach end of a plate carrier in order to keep the carrier firmly against the body.  This model features an external PALS grid for strapping pouches onto, and an inner grid for attaching side plate pouches.  Without a pair of cummerbunds, wearing any plate carrier will be uncomfortable.  Attach these to reduce baseline plate carrier encumbrance.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "ocp",
+
+        "name": {
+          "str_sp": "IOTV Gen III cummerbunds"
+        },
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:ocp:plural>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "ucp",
+
+        "name": {
+          "str_sp": "IOTV Gen III cummerbunds"
+        },
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:ucp:plural>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "coyote",
+
+        "name": {
+          "str_sp": "IOTV Gen III cummerbunds"
+        },
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "black",
+
+        "//": [
+          "a special, XEDRA-affiliated color scheme",
+          "should not spawn in the wild"
+        ],
+
+        "name": {
+          "str_sp": "IOTV Gen III cummerbunds"
+        },
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black:plural>",
+        "expand_snippets": true,
+        "weight": 0
+      }
+    ],
+
+    "//weight": "we presume the weight in reference source to be per pair",
+    "weight": "510 g",
+    "//dimensions": {
+      "length": "20 in",
+      "width": "6.7 in",
+      "height": "1 mm",
+      "raw": "86.45 ml",
+      "trim": 0.05,
+      "notes": [
+        "dimensions for a single cummerbund",
+        "height (thickness) presumed",
+        "doubling the result due to this item being a pair"
+      ]
+    },
+    "volume": "164 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "single_sling",
+    "repairs_like": "single_sling",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 1
+          }
+        ],
+
+        "encumbrance": -7,
+
+        "coverage": 9,
+        "cover_melee": 5,
+        "cover_ranged": 9,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "//volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "size": 12
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "CUMMERBUND", "CUMMERBUND_NMQRS"],
+
+    "price": "68 USD",
+    "price_postapoc": "50 cent"
+  }
+]
