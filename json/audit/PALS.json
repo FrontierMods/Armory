@@ -12,7 +12,8 @@
     "//delete": [
       "appears to be a handmade, custom item with no equivalent in real life",
       "thus, we assume that it shouldn't be MOLLE-compatible",
-      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
+      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073",
+      "it could later be modified to be belt-compatible, instead"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   },
@@ -29,7 +30,8 @@
     "//delete": [
       "appears to be a handmade, custom item with no equivalent in real life",
       "thus, we assume that it shouldn't be MOLLE-compatible",
-      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073"
+      "in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073",
+      "it could later be modified to be belt-compatible, instead"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   },
@@ -91,36 +93,6 @@
     "delete": { "flags": ["PALS_MEDIUM"] }
   },
   {
-    "id": "sheath",
-    "copy-from": "sheath",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "sheath"
-    },
-
-    "//delete": [
-      "belt leather straps may or may not be compatible with PALS webbing",
-      "we remove it to err of the side of caution, in this respect"
-    ],
-    "delete": { "flags": ["PALS_SMALL"] }
-  },
-  {
-    "id": "sholster",
-    "copy-from": "sholster",
-    "type": "ARMOR",
-
-    "name": {
-      "str": "fast draw holster"
-    },
-
-    "//delete": [
-      "belt leather straps may or may not be compatible with PALS webbing",
-      "we remove it to err of the side of caution, in this respect"
-    ],
-    "delete": { "flags": ["PALS_MEDIUM"] }
-  },
-  {
     "id": "FB_double_holster",
     "copy-from": "FB_double_holster",
     "type": "ARMOR",
@@ -130,8 +102,7 @@
     },
 
     "//delete": [
-      "belt leather straps may or may not be compatible with PALS webbing",
-      "we remove it to err of the side of caution, in this respect"
+      "these sorts of extended holsters may or may not use a belt-specific interface which PALS cannot accomodate without a highly-specialized adapter"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   },
@@ -145,8 +116,7 @@
     },
 
     "//delete": [
-      "belt leather straps may or may not be compatible with PALS webbing",
-      "we remove it to err of the side of caution, in this respect"
+      "these sorts of extended holsters may or may not use a belt-specific interface which PALS cannot accomodate without a highly-specialized adapter"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   },
@@ -160,8 +130,8 @@
     },
 
     "//delete": [
-      "belt leather straps may or may not be compatible with PALS webbing",
-      "we remove it to err of the side of caution, in this respect"
+      "depending on the model of the holster, this may or may not fit with PALS webbing via belt straps",
+      "belt straps have been shown to be compatible with PALS"
     ],
     "delete": { "flags": ["PALS_LARGE"] }
   },
