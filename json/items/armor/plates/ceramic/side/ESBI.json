@@ -1,0 +1,117 @@
+[
+  {
+    "id": "plate_side_tall_ceramic_ltc_esbi",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": [
+      "https://ciehub.info/equipment/protective/IBA/SAPI/ESBI.html",
+      [
+        "https://www.ar15.com/forums/Armory/Ultimate-Guide-to-MILSPEC-Armor-a-work-in-progress-/10-502266/",
+        "thickness"
+      ],
+      ["TM 10-8470-210-10", "weight"],
+      [
+        "https://abrams.com.ua/en/keramichna-broneplastyna-bokova-esbi-esapi-medium-6h8-klass-6-ssha-stand-alone-762-apm2-11575/",
+        "inscription"
+      ]
+    ],
+
+    "//notes": [
+      "we assume that ESBI has the same thickness as ESAPI: 0.9 in.",
+      "we model this item as a 6″×8″ tall ESBI plate, which is one possible issued design"
+    ],
+
+    "name": {
+      "str": "ESBI side plate"
+    },
+    "description": "A small polygonal ballistic plate wrapped in a thin layer of nylon.  It combines a ceramic strike face with a polyethylene backer in order to achieve protection against even armor-piercing rifle rounds.  The ceramic breaks on impact, absorbing much of the damage, so while this plate is tough, it will wear out after a few hits.  Must be inserted into a plate carrier to be used.  As a side plate, it can only go into side-plate pockets, thus offering additional coverage for the torso.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "esbi",
+
+        "name": {
+          "str": "ESBI side plate"
+        },
+        "description": "The standard ballistic plate issued by the U.S. Army, ESBI -- Enhanced Side Ballistic Insert -- is a small full-cut ballistic plate with a single-curve profile, composed of a boron carbide strike face, a UHMWPE backer, and a nylon cover.  This plate has been certified ESBI, which is comparable with the civilian NIJ IV rating.  Plates like this one are intended to be inserted into a plate carrier, where it will absorb the energy of multiple rifle rounds before requiring replacement.  On the front, it says <color_yellow>\nSTRIKE FACE\nHANDLE WITH CARE</color>\nOn the back, it says <color_yellow>\nESBI GEN II</color>, as well as the name of the manufacturer -- Leading Technology Composites, Inc. -- and its NSN.",
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "Abrams store says one plate weighs between 990 and 995 g",
+      "we rely on the Army source, because it's more likely to be accurate"
+    ],
+    "weight": "1157 g",
+    "//dimensions": {
+      "length": "6 in",
+      "width": "8 in",
+      "height": "0.9 in",
+      "raw": "708 ml",
+      "trim": 0.05
+    },
+    "volume": "673 ml",
+    "longest_side": "203 mm",
+
+    "material": ["boron_carbide", "nylon"],
+    "material_thickness": 22.86,
+
+    "symbol": ",",
+    "color": "dark_gray",
+
+    "//non_functional": "plate_side_tall_ceramic_ltc_esbi_compromised",
+    "//damage_verb": "makes a crunch, something has shifted",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "boron_carbide",
+            "covered_by_mat": 100,
+            "thickness": 9.1
+          },
+          {
+            "type": "uhmwpe",
+            "covered_by_mat": 100,
+            "thickness": 13.66
+          },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.1 }
+        ],
+
+        "encumbrance": 2,
+
+        "coverage": 2,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+      {
+        "material": [
+          {
+            "type": "boron_carbide",
+            "covered_by_mat": 100,
+            "thickness": 9.1
+          },
+          {
+            "type": "uhmwpe",
+            "covered_by_mat": 100,
+            "thickness": 13.66
+          },
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.1 }
+        ],
+
+        "encumbrance": 1,
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_SIDE_TALL", "CANT_WEAR"],
+
+    "price": "169 USD",
+    "price_postapoc": "1 USD"
+  }
+]
