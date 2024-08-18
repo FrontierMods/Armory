@@ -69,3 +69,53 @@ Coverage is roughly divided between front/back and side plates. Front/back plate
 **Single-curve**: standard curvature of a ballistic plate. Relatively-cheap to produce.
 
 **Multi-curve**: advanced curvature. Fits better with the body, removing hot spots and reducing discomfort.
+
+## Pouches
+
+### Magazine pouches
+
+#### Stats scaling
+
+[reference](https://www.everydaymarksman.co/equipment/magazine-pouch-primer/)
+
+##### Types
+
+- open-top pouches (Type I)
+  - medium encumbrance modifier (`volume_encumber_modifier`: 1.5)
+  - highest chance of falling out (`ripoff`: 6)
+  - lowest retrieval cost (`moves`: 60 + 10 per magazine)
+- flap pouches (Type II)
+  - highest encumbrance modifier (`volume_encumber_modifier`: 2)
+  - very low chance of falling out (`ripoff`: 20)
+  - high retrieval cost (`moves`: 110 + 20 per magazine)
+- buckle pouches (Type III)
+  - lowest encumbrance modifier (`volume_encumber_modifier`: 1)
+  - no chance of falling out (no `ripoff` value, no matter the modifiers)
+  - highest retrieval cost (`moves`: 140 + 30 per magazine)
+
+##### Modifiers
+
+- short
+  - can only hold lower-capacity magazines (up to standard capacity)
+  - higher encumbrance modifier (`volume_encumber_modifier`: +0.1)
+  - higher chance of falling out (`ripoff`: -1)
+  - lower retrieval cost (discount first magazine's move cost)
+- tall
+  - can hold higher-capacity magazines
+  - lower encumbrance modifier (`volume_encumber_modifier`: -0.1)
+  - lower chance of falling out (`ripoff`: +2)
+  - higher retrieval cost (add extra magazine's move cost)
+- button retainer
+  - **type II only**
+  - significantly lower chance of falling out (`ripoff`: +5)
+  - higher retrieval cost (`moves`: +10)
+- soft retainer
+  - _e.g. top strap-and-tab, cord wrapping around the pouch_
+  - slightly lower encumbrance modifier (`volume_encumber_modifier`: -0.05)
+  - slightly lower chance of falling out (`ripoff`: +1)
+  - higher retrieval cost (`moves`: +10)
+- hard retainer
+  - _e.g. Kydex insert, HSGI Taco-esque strap-and-frame_
+  - much lower encumbrance modifier (`volume_encumber_modifier`: -0.25)
+  - much lower chance of falling out (`ripoff`: +3)
+  - lower retrieval cost (`moves`: -20)
