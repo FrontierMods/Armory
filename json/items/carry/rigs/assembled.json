@@ -1,0 +1,268 @@
+[
+  {
+    "id": "chest_rig_condor_modular",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://condoroutdoor.com/collections/chest-rigs/products/condor-modular-chest-set",
+      [
+        "https://www.amazon.co.uk/Condor-Modular-Chest-Set/dp/B0037MGLVK",
+        "dimensions",
+        "weight"
+      ],
+      [
+        "https://offgridwarehouse.com/spec-operator-condor-tactical-pro-chest-set-w-six-built-in-ar-m4-mag-pouches/",
+        "coverage reference"
+      ],
+      [
+        "https://www.rockstartactical.com/condor-modular-chest-set/",
+        "https://condoroutdoor.com/products/condor-modular-chest-set-scorpion-ocp",
+        "variant reference"
+      ]
+    ],
+
+    "//notes": [
+      [
+        "this model doesn't come with the hydration bladder pouch by default, hence the 'modular' in the name",
+        "this item currently models the 'set', i.e. the rig + the hydration pouch",
+        "when the deconstruction upgrade comes through, this item should have a different ID, with the 'empty' rig retaining this item's current ID"
+      ],
+      "the bib can house a ballistic plate in the front"
+    ],
+
+    "//TODO": ["pocket for back PALS devices"],
+
+    "name": {
+      "str": "modular chest set"
+    },
+    "description": "A slick chest rig with a lot of capacity of MOLLE capacity.  It features six pockets for STANAG magazines, an admin pouch, and a pouch for a hydration bladder.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "multicam",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  <variant:multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "coyote",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "olive",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  <variant:olive>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "black",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "ocp",
+
+        "name": { "str": "Condor modular chest set" },
+        "description": "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.  <variant:ocp>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "812 g",
+    "//dimensions": {
+      "length": "508.00 mm",
+      "width": "271.80 mm",
+      "height": "48.30 mm",
+      "raw": "5344 ml",
+      "trim": 0.6
+    },
+    "volume": "2138 ml",
+    "longest_side": "508 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "armor": [
+      {
+        "encumbrance": [2, 15],
+
+        "//coverage": [
+          "(30% / 2 =) 15% from bib",
+          "36% from back panel sizing",
+          "2% × 2 from shoulders straps",
+          "1% × 2 from back straps"
+        ],
+        "coverage": 57,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.75
+      },
+      {
+        "encumbrance": [2, 10],
+
+        "coverage": 95,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.9
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Admin pouch",
+
+        "//notes": [
+          "hidden inside the bib",
+          "goes all the way down to the highest buckle"
+        ],
+
+        "max_contains_weight": "300 g",
+        "//dimensions": {
+          "length": "3 mm",
+          "width": "7.50 in",
+          "height": "7.00 in",
+          "raw": "102 ml",
+          "trim": 0.05,
+          "notes": [
+            "estimated from visuals to be roughly 7 MOLLE rows tall and 5 MOLLE columns wide"
+          ]
+        },
+        "max_contains_volume": "97 ml",
+        "max_item_length": "178 mm",
+
+        "moves": 150
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hydration pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "4 kg",
+        "//max_contains_volume": "temporary value",
+        "max_contains_volume": "3250 ml",
+
+        "moves": 800
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "40-round STANAG magazine capacity",
+
+        "description": "Rifle magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "385 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "385 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "385 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "385 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "385 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "385 ml",
+        "min_item_length": "130 mm",
+        "max_item_length": "261 mm",
+
+        "moves": 90
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": "72 cells",
+        "size": 10
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
+
+    "//price": [
+      "sources that sell this rig in multicam make it more-expensive",
+      "we disregard this for sanity's sake"
+    ],
+    "price": "64 USD",
+    "//price_postapoc": "5 USD"
+  }
+]
