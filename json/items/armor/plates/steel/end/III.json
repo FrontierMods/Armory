@@ -1,0 +1,81 @@
+[
+  {
+    "id": "plate_steel_medium_ar_iii",
+    "type": "ARMOR",
+    "category": "armor",
+
+    "//sources": ["https://www.ar500armor.com/heritage-plate.html"],
+
+    "//notes": [
+      "modelled after size SAPI M, with base coat",
+      "the thickness of the base coat itself doesn't appear to be available online, so we presume 40 mil"
+    ],
+
+    "name": {
+      "str": "AR steel medium plate, NIJ III",
+      "str_pl": "AR steel medium plates, NIJ III"
+    },
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Armored Republic.  On the outward-facing side the manufacturer's logo is proudly displayed.  This plate is rated for NIJ III, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+
+    "//weight": "8.5 lbs = 3855.5 g",
+    "weight": "3856 g",
+    "//dimensions": {
+      "length": "12.5 in",
+      "width": "9.5 in",
+      "height": "0.34 in",
+      "raw": "661.62 ml",
+      "trim": 0.125
+    },
+    "volume": "579 ml",
+    "longest_side": "318 mm",
+
+    "//material": "rubber stands in for anti-spalling cover, which is a polyurea",
+    "material": ["mc_steel", "rubber"],
+    "material_thickness": 8.636,
+
+    "symbol": ",",
+    "color": "dark_gray",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.616 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "//thickness": "40 mil = 0.04 in. = 1.016 mm",
+            "thickness": 1.016
+          }
+        ],
+
+        "encumbrance": 6,
+
+        "coverage": 34,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"]
+      },
+
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 7.616 },
+          {
+            "type": "rubber",
+            "covered_by_mat": 100,
+            "thickness": 1.016
+          }
+        ],
+
+        "encumbrance": 4,
+
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"]
+      }
+    ],
+
+    "flags": ["ABLATIVE_MEDIUM", "CANT_WEAR"],
+
+    "price": "99 USD",
+    "price_postapoc": "1 USD"
+  }
+]
