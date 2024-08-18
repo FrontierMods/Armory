@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Armory_EOC_IS_WEARING_PLATE_CARRIER",
+    "type": "effect_on_condition",
+
+    "condition": { "u_has_worn_with_flag": "PLATE_CARRIER" },
+    "effect": {
+      "math": [
+        "u_proficiency('prof_plate_carrier', 'format': 'time_spent')",
+        "++"
+      ]
+    }
+  },
+  {
+    "id": "Armory_EOC_IS_WEARING_CUMMERBUNDS",
+    "type": "effect_on_condition",
+
+    "condition": { "u_has_worn_with_flag": "CUMMERBUND" },
+    "effect": { "u_add_trait": "WEARING_CUMMERBUNDS" },
+    "false_effect": { "u_lose_trait": "WEARING_CUMMERBUNDS" }
+  },
+  {
+    "id": "Armory_EOC_IS_WEARING_SHOULDER_PADS",
+    "type": "effect_on_condition",
+
+    "condition": { "u_has_worn_with_flag": "SHOULDER_PADS" },
+    "effect": { "u_add_trait": "WEARING_SHOULDER_PADS" },
+    "false_effect": { "u_lose_trait": "WEARING_SHOULDER_PADS" }
+  }
+]

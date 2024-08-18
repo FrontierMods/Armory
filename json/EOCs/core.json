@@ -1,0 +1,18 @@
+[
+  {
+    "id": "Armory_EOC_CHECK_PLATE_CARRIER_ON_MOVE",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "avatar_moves",
+
+    "effect": [
+      {
+        "run_eocs": [
+          "Armory_EOC_IS_WEARING_PLATE_CARRIER",
+          "Armory_EOC_IS_WEARING_CUMMERBUNDS",
+          "Armory_EOC_IS_WEARING_SHOULDER_PADS"
+        ]
+      }
+    ]
+  }
+]

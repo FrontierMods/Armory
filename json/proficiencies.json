@@ -1,0 +1,14 @@
+[
+  {
+    "id": "prof_plate_carrier",
+    "type": "proficiency",
+    "category": "proficiency_gear_wearing",
+
+    "name": { "str": "Ballistic Armor Fitting" },
+    "description": "You've learned how to fit different types of ballistic armor to your body, which reduces its encumbrance and improves its protection when worn.",
+
+    "can_learn": true,
+
+    "time_to_learn": "64 h"
+  }
+]
