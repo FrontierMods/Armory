@@ -1,0 +1,1060 @@
+[
+  {
+    "id": "chest_rig_tt_mav_2_piece",
+    "type": "ARMOR",
+
+    "//sources": [
+      [
+        "https://tacticaltailor.com/fight-light-mav-2-piece/",
+        "original source",
+        "no longer available online"
+      ],
+      [
+        "https://www.amazon.ca/Tactical-Tailor-Fight-Light-2Piece/dp/B072MSVKCD",
+        "dimensions",
+        "weight"
+      ],
+      [
+        "https://www.youtube.com/watch?v=UWmKP7a4T-4",
+        "side pocket size reference"
+      ],
+      ["http://www.hydedefinition.com/latest/?paged=9", "coverage reference"]
+    ],
+
+    "name": {
+      "str": "two-piece chest rig"
+    },
+    "description": "A compact two-piece chest rig with plenty of webbing to strap MOLLE pouches onto.  Can be worn over plate carriers.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "multicam",
+
+        "name": { "str": "Tactical Tailor MAV 2 Piece chest rig" },
+        "description": "A compact rig with two large webbing panels, locking with buckles in the middle.  For its size, it offers plenty of space for MOLLE pouches, though not as much as full-sized load-bearing vests.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.  <variant:multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "coyote",
+
+        "name": { "str": "Tactical Tailor MAV 2 Piece chest rig" },
+        "description": "A compact rig with two large webbing panels, locking with buckles in the middle.  For its size, it offers plenty of space for MOLLE pouches, though not as much as full-sized load-bearing vests.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "olive",
+
+        "name": { "str": "Tactical Tailor MAV 2 Piece chest rig" },
+        "description": "A compact rig with two large webbing panels, locking with buckles in the middle.  For its size, it offers plenty of space for MOLLE pouches, though not as much as full-sized load-bearing vests.  It could, however, be comfortably worn with slick plate carriers that don't offer any webbing of their own; the rig could then be swiftly doffed without removing ballistic protection.  <variant:olive>",
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "manufacturer states weight of the rig itself (straps + panel) to be 8.4 oz = 238.14 g",
+      "we add 5 g × (4 + 2) = 30 g for the 4 female buckles included with the rig kit (source for weight/dimensions) and the two other QASM (female) ones on the X-harness, as visible on pictures of the rig itself, presuming that their weight is not included"
+    ],
+    "weight": "268 g",
+    "//dimensions": [
+      {
+        "description": "Webbing panel",
+        "uses": "molle",
+
+        "columns": "8",
+        "rows": "3",
+        "depth": "1 mm",
+        "raw": "48.72 ml",
+        "trim": 0.5,
+        "result": "24.36 ml",
+        "notes": [
+          "depth accounts for both the backing fabric and the PALS loops",
+          "trim, therefore, accounts for not the whole panel being filled with PALS loops"
+        ]
+      },
+      {
+        "description": "Webbing panel",
+        "uses": "molle",
+
+        "columns": "8",
+        "rows": "3",
+        "depth": "1 mm",
+        "raw": "48.72 ml",
+        "trim": 0.5,
+        "result": "24.36 ml",
+        "notes": [
+          "depth accounts for both the backing fabric and the PALS loops",
+          "trim, therefore, accounts for not the whole panel being filled with PALS loops"
+        ]
+      },
+
+      {
+        "description": "Plastic buckle",
+
+        "length": "2.75 in",
+        "width": "1.2 in",
+        "height": "1.5 mm",
+        "raw": "3.19 ml",
+        "trim": 0.15,
+        "result": "2.71 ml",
+        "notes": [
+          "dimensions acquired from visual reference",
+          "the buckle dimensions also account for the fabric strap holding the buckle attached to the panels"
+        ]
+      },
+      {
+        "description": "Plastic buckle",
+
+        "length": "2.75 in",
+        "width": "1.2 in",
+        "height": "1.5 mm",
+        "raw": "3.19 ml",
+        "trim": 0.15,
+        "result": "2.71 ml",
+        "notes": [
+          "dimensions acquired from visual reference",
+          "the buckle dimensions also account for the fabric strap holding the buckle attached to the panels"
+        ]
+      },
+
+      "result: 54.14 ml",
+      "multiplied by 135% to account for the the rest of the straps that are difficult to measure"
+    ],
+    "volume": "73 ml",
+    "//longest_side": [
+      "assumes the length of a single PALS panel (8 columns × 1.5 in. = 12 in.), folded in half: 12 / 2 = 6 in. = 152.4 mm ≈ 152 mm"
+    ],
+    "longest_side": "152 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 0.5,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "armor": [
+      {
+        "encumbrance": [0, 4],
+
+        "//coverage": [
+          "harness = 4% (front straps) + 6% (upper back straps) = 10%"
+        ],
+        "coverage": 10,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.05
+      },
+      {
+        "encumbrance": [1, 10],
+
+        "//coverage": [
+          "~65% of front lower torso coverage = 20.8% ≈ 21%",
+          "~20% of back lower torso coverage = 6.4% ≈ 6%",
+          "~65% of side lower torso coverage = 6.5% * 2 = 13%",
+          "3% for lower back straps"
+        ],
+        "coverage": 40,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.8
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "max_contains_weight": "1 kg",
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "12 in",
+          "height": "6 in",
+          "raw": "232.26 ml",
+          "trim": 0.05,
+          "notes": ["said to span the entire size of the panel"]
+        },
+        "max_contains_volume": "221 ml",
+        "//max_item_volume": [
+          "based on the calculation of volume for a map of New York City subway",
+          {
+            "length": "21 in",
+            "width": "28 in",
+            "height": "0.1 mm",
+            "raw": "41.54 ml"
+          },
+          "rounded up for convenience"
+        ],
+        "max_item_volume": "45 ml",
+        "//max_item_length": [
+          "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
+          "9 in. = 228.6 mm ≈ 229 mm"
+        ],
+        "max_item_length": "229 mm",
+
+        "moves": 250
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Side pocket",
+
+        "max_contains_weight": "1 kg",
+        "//dimensions": {
+          "length": "5 mm",
+          "width": "12 in",
+          "height": "6 in",
+          "raw": "232.26 ml",
+          "trim": 0.05,
+          "notes": ["said to span the entire size of the panel"]
+        },
+        "max_contains_volume": "221 ml",
+        "//max_item_volume": [
+          "based on the calculation of volume for a map of New York City subway",
+          {
+            "length": "21 in",
+            "width": "28 in",
+            "height": "0.1 mm",
+            "raw": "41.54 ml"
+          },
+          "rounded up for convenience"
+        ],
+        "max_item_volume": "45 ml",
+        "//max_item_length": [
+          "while the pocket itself spans the entire length of the panel, the opening is roughly 3 in. shorter",
+          "9 in. = 228.6 mm ≈ 229 mm"
+        ],
+        "max_item_length": "229 mm",
+
+        "moves": 250
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": "(8 × 3 webbing) × 2",
+        "size": 8
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
+
+    "//price": "price for the multicam model",
+    "price": "128 USD",
+    "price_postapoc": "10 USD"
+  },
+  {
+    "id": "chest_rig_molle_ii_flc",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://www.varusteleka.com/en/product/us-molle-ii-flc-combat-vest-surplus/20787",
+      [
+        "https://smithssurplusandsupply.com/product/molle-ii-fighting-load-carrier-vest-flc-acu/",
+        "weight",
+        "price"
+      ],
+      [
+        "https://www.mcguirearmynavy.com/products/flc-load-bearing-vest",
+        "variant reference"
+      ]
+    ],
+
+    "name": {
+      "str": "military load-bearing vest"
+    },
+    "description": "A thin nylon mesh vest with lots of webbing to strap MOLLE pouches to.  This model was issued to the U.S. army prior to the end of the world.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "ocp",
+
+        "name": { "str": "MOLLE II FLC vest" },
+        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:ocp>.",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "ucp",
+
+        "name": { "str": "MOLLE II FLC vest" },
+        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:ucp>.",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "woodland",
+
+        "name": { "str": "MOLLE II FLC vest" },
+        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:woodland>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": { "str": "MOLLE II FLC vest" },
+        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "765 g",
+    "//dimensions": {
+      "length": "19.9 in",
+      "width": "13.7 in",
+      "height": "5 mm",
+      "raw": "880 ml",
+      "trim": 0.3
+    },
+    "volume": "616 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 2,
+    "looks_like": "vest",
+
+    "armor": [
+      {
+        "encumbrance": [1, 15],
+
+        "//coverage": [
+          "35% front coverage",
+          "5% × 2 side coverage",
+          "12% back coverage"
+        ],
+        "coverage": 57,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.75
+      },
+      {
+        "encumbrance": [1, 8],
+
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.9
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Inner pocket",
+
+        "max_contains_weight": "5 kg",
+        "//dimensions": {
+          "length": "1.25 in",
+          "width": "9 in",
+          "height": "5.5 in",
+          "raw": "1014 ml",
+          "trim": 0,
+          "notes": [
+            "calculated based on size of PALS webbing in front of the pocket",
+            "added 0.5 in. to height based on extra fabric under the webbing",
+            "length (depth) presumed"
+          ]
+        },
+        "max_contains_volume": "1014 ml",
+        "//max_item_length": "based on height, rather than the larger length, because otherwise hard long items could be stored in it, which would likely make wearing the FLC very uncomfortable",
+        "max_item_length": "140 mm"
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Inner pocket",
+
+        "max_contains_weight": "5 kg",
+        "//dimensions": {
+          "length": "1.25 in",
+          "width": "9 in",
+          "height": "5.5 in",
+          "raw": "1014 ml",
+          "trim": 0,
+          "notes": [
+            "calculated based on size of PALS webbing in front of the pocket",
+            "added 0.5 in. to height based on extra fabric under the webbing",
+            "length (depth) presumed"
+          ]
+        },
+        "max_contains_volume": "1014 ml",
+        "max_item_length": "140 mm"
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "//size": [
+          ["front webbing", "9 × 8 × (1 − 45%) ≈ 47"],
+          ["front webbing", "9 × 8 × (1 − 45%) ≈ 47"],
+          "94 cells"
+        ],
+        "size": 16
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED"],
+
+    "price": "25 USD",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "chest_rig_condor_cross_draw",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://condoroutdoor.com/collections/vests/products/condor-cross-draw-vest",
+      [
+        "https://tacticalgear.com.au/products/condor-outdoor-etv-elite-tactical-vest",
+        "weight"
+      ],
+      [
+        "https://e-militaria.eu/972-tactical-vest-condor-crossdraw-olive.html",
+        "variant reference"
+      ]
+    ],
+
+    "//notes": [
+      [
+        "the weight for this vest doesn't appear to be available even on Amazon, so we use a similar vest from the same company",
+        "it may be slightly or significantly heavier, since the package weight on this Amazon listing states 3.65 lbs = 1655.6 g",
+        "https://www.amazon.com/Condor-CV-498-Cross-Coyote-Brown/dp/B01N1X2IT3"
+      ],
+      [
+        "on Condor's own website, the vest is advertised with a belt that has two extra pistol-mag pouches attached to it",
+        "it does not appear to come with the vest, since other sites show images of just the vest, with the belt straps empty"
+      ]
+    ],
+
+    "name": {
+      "str": "cross draw vest"
+    },
+    "description": "A nylon vest with a lot of pockets.  It has three rifle magazile pouches, three pistol magazine pouches, a small general pouch, and a pistol holster, which has a magazine pouch of its own.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "black",
+
+        "name": { "str": "Condor cross draw vest" },
+        "description": "A sturdy tactical vest, mostly mesh in the back and mostly solid nylon in the front.  It features three pockets for a rifle magazine, three pockets for a pistol magazine (or a tool of similar size), and an extra small pocket on the chest.  It comes with a pistol holster in the cross draw position: at an angle, on the side opposite the dominant hand, to be drawn with it; the holster has a separate pocket for a magazine.  Hook-and-loop shoulder pads combined with generous side strap belts allow for a large degree of adjustment, making the vest fit for any size.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 8
+      },
+      {
+        "id": "coyote",
+
+        "name": { "str": "Condor cross draw vest" },
+        "description": "A sturdy tactical vest, mostly mesh in the back and mostly solid nylon in the front.  It features three pockets for a rifle magazine, three pockets for a pistol magazine (or a tool of similar size), and an extra small pocket on the chest.  It comes with a pistol holster in the cross draw position: at an angle, on the side opposite the dominant hand, to be drawn with it; the holster has a separate pocket for a magazine.  Hook-and-loop shoulder pads combined with generous side strap belts allow for a large degree of adjustment, making the vest fit for any size.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 8
+      },
+      {
+        "id": "olive",
+
+        "name": { "str": "Condor cross draw vest" },
+        "description": "A sturdy tactical vest, mostly mesh in the back and mostly solid nylon in the front.  It features three pockets for a rifle magazine, three pockets for a pistol magazine (or a tool of similar size), and an extra small pocket on the chest.  It comes with a pistol holster in the cross draw position: at an angle, on the side opposite the dominant hand, to be drawn with it; the holster has a separate pocket for a magazine.  Hook-and-loop shoulder pads combined with generous side strap belts allow for a large degree of adjustment, making the vest fit for any size.  <variant:olive>",
+        "expand_snippets": true,
+        "weight": 4
+      },
+      {
+        "id": "flag",
+
+        "//": [
+          "special variant for the Prepped Patriot profession",
+          "this cannot spawn in the wild"
+        ],
+
+        "name": { "str": "Condor cross draw vest" },
+        "description": "A sturdy tactical vest, mostly mesh in the back and mostly solid nylon in the front.  It features three pockets for a rifle magazine, three pockets for a pistol magazine (or a tool of similar size), and an extra small pocket on the chest.  It comes with a pistol holster in the cross draw position: at an angle, on the side opposite the dominant hand, to be drawn with it; the holster has a separate pocket for a magazine.  Hook-and-loop shoulder pads combined with generous side strap belts allow for a large degree of adjustment, making the vest fit for any size.  This one has been custom-painted after the American flag.",
+        "expand_snippets": true,
+        "weight": 0
+      }
+    ],
+
+    "weight": "1134 g",
+    "//upperwear": {
+      "chest": "40.5 in",
+      "height": "15.5 in",
+      "sleeve": 0,
+      "thickness": "2.6 mm",
+      "raw": "526.5 ml",
+      "trim": 0,
+      "notes": [
+        "taken from the dimensions of the PBA concealable vest, since it appears to be similar-enough",
+        "thickness adjusted for the fact that this isn't a ballistic vest"
+      ]
+    },
+    "volume": "527 ml",
+    "//longest_side": "no inherent longest side, because the vest appears to be easily-collapsible",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1.3,
+    "looks_like": "tool_belt",
+
+    "armor": [
+      {
+        "encumbrance": [1, 13],
+
+        "//coverage": [
+          "half of large SAPI plate coverage = 18%",
+          "harness = 4% (front straps) + 4% (back straps) + 1% (side straps) = 9%"
+        ],
+        "coverage": 27,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.5
+      },
+      {
+        "encumbrance": [0, 6],
+
+        "//coverage": "half of large SAPI plate coverage ≈ 6%",
+        "coverage": 6,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.2
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "30-round STANAG magazine capacity",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
+
+        "//magazine_pouch": {
+          "type": "II"
+        },
+
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "107 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 130
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "medium pistol magazine capacity",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "//magazine_pouch": {
+          "type": "II",
+          "modifiers": ["short"]
+        },
+
+        "volume_encumber_modifier": 2.1,
+        "ripoff": 19,
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "volume_encumber_modifier": 2.1,
+        "ripoff": 19,
+        "moves": 120
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "volume_encumber_modifier": 2.1,
+        "ripoff": 19,
+        "moves": 120
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Chest pouch",
+
+        "max_contains_weight": "500 g",
+        "//dimensions": {
+          "length": "1.5 in",
+          "width": "3 in",
+          "height": "1 in",
+          "raw": "73.74 ml",
+          "trim": 0,
+          "notes": [
+            "dimensions assumed from visual reference based on the width of the Velcro patch being (presumably) 1 in."
+          ]
+        },
+        "max_contains_volume": "74 ml",
+        "//max_item_length": "3 in.",
+        "max_item_length": "76 mm",
+
+        "moves": 180
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol holster",
+
+        "holster": true,
+
+        "//max_contains_weight": "weight of a loaded M9 (2.55 lbs = 1156.7 g) + 50 g",
+        "max_contains_weight": "1207 g",
+        "//magazine_well": "100 ml",
+        "min_item_volume": "200 ml",
+        "//max_contains_volume": [
+          "volume of a loaded M1911",
+          {
+            "length": "8.56 in",
+            "width": "1.27 in",
+            "height": "5.5 in",
+            "raw": "980 ml",
+            "trim": 0.55,
+            "result": "441 ml"
+          },
+          "added 50 ml to account for red dot sights",
+          "red dot sight volume based on Loadout models"
+        ],
+        "max_contains_volume": "491 ml",
+        "//max_item_length": "overall length of M1911, plus 2.5%",
+        "max_item_length": "222 mm",
+
+        "moves": 90
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "medium pistol magazine capacity",
+
+        "description": "Holster pistol magazine pocket",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "volume_encumber_modifier": 2.1,
+        "ripoff": 19,
+        "moves": 120
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "FIT", "STURDY"],
+
+    "price": "91 USD",
+    "price_postapoc": "2 USD"
+  },
+  {
+    "id": "chest_rig_unobtanium_dr_lv",
+    "type": "ARMOR",
+
+    "//sources": ["https://unobtainiumgear.com/products/dr-lv-chest-rig"],
+
+    "//notes": [
+      [
+        "looks like this rig could be combined with another for a larger pouch set",
+        "https://nowellstrategic.shop-pro.jp/?pid=164446846"
+      ]
+    ],
+
+    "name": {
+      "str": "low-vis chest rig"
+    },
+    "description": "A tiny chest rig with four rifle magazine pouches, four pistol magazine pouches, and two elastic cords for holding utility items.  Exceptionally-convenient, if not the most comfortable.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "multicam",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant:multicam>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "ranger",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant:ranger>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "black",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "multicam_black",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant:multicam_black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "grey",
+
+        "name": { "str": "Unobtanium Gear DR-LV chest rig" },
+        "description": "An ultra-minimal, ultra-compact rig, intended to be worn concealed under an item of casual outerwear.  It features four rifle magazine pockets, four pistol magazine pockets, and two retention cords for larger, utility items.  The rifle pockets are stretchy enough to accomodate larger items, such as smoke grenades.  <variant:grey>",
+        "expand_snippets": true,
+        "weight": 2
+      }
+    ],
+
+    "weight": "354 g",
+    "//dimensions": {
+      "length": "11 in",
+      "width": "6 in",
+      "height": "2 in",
+      "raw": "2163.09 ml",
+      "trim": -0.025
+    },
+    "//volume": [
+      "we use the dimensions of `pouch_magazine_556_condor` as the basis for this item's volume calculations",
+      "we modify the length by 2 in. to account for the shorter pouches on the rig",
+      "we also use fabric thickness, not pouch overall depth, for height",
+      {
+        "length": "4 in",
+        "width": "3.5 in",
+        "height": "1.3 mm",
+        "raw": "6.71 ml",
+        "trim": 0
+      },
+      "we then multiply this by 8 to get the approximate overall volume of the rig"
+    ],
+    "volume": "54 ml",
+    "//longest_side": "4 in.",
+    "longest_side": "102 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "material_thickness": 1,
+    "looks_like": "vest",
+    "repairs_like": "tacvest",
+
+    "armor": [
+      {
+        "//encumbrance": "low encumbrance values to account for the fact that this rig has a FIT flag already",
+        "encumbrance": [1, 4],
+
+        "//coverage": [
+          "~16% of front upper torso coverage = 6.4%",
+          "harness = 1.5% (front straps) + 1.5% (upper back straps) = 3%"
+        ],
+        "coverage": 9,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.25
+      },
+      {
+        "encumbrance": [0, 3],
+
+        "//coverage": [
+          "~10% of front lower torso coverage = 4%",
+          "1% for lower back straps"
+        ],
+        "coverage": 5,
+        "covers": ["torso"],
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.125
+      }
+    ],
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "30-round STANAG magazine capacity",
+
+        "//notes": [
+          "while this pocket is intended for rifle magazines, it's been shown to hold other, larger items, such as smoke grenades",
+          "thus, we model these pockets as though they're able to hold those"
+        ],
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "volume of M18 smoke grenade, rounded to the nearest 50/100 ml",
+        "max_contains_volume": "450 ml",
+        "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
+        "min_item_length": "50 mm",
+        "max_item_length": "207 mm",
+
+        "//magazine_pouch": {
+          "type": "I"
+        },
+
+        "//volume_encumber_modifier": "-0.4 for being close to the body",
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "450 ml",
+        "min_item_length": "50 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "450 ml",
+        "min_item_length": "50 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Rifle magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "450 ml",
+        "min_item_length": "50 mm",
+        "max_item_length": "207 mm",
+
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "//uses": "medium pistol magazine capacity",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "//magazine_pouch": {
+          "type": "I"
+        },
+
+        "//volume_encumber_modifier": "-0.4 for being close to the body",
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Pistol magazine pouch",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "120 ml",
+        "min_item_length": "80 mm",
+        "max_item_length": "142 mm",
+
+        "volume_encumber_modifier": 1.1,
+        "ripoff": 6,
+        "moves": 70
+      },
+
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Cord retention",
+
+        "max_contains_weight": "1500 g",
+        "max_contains_volume": "750 ml",
+        "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
+        "min_item_length": "100 mm",
+        "//max_item_length": "arbitrary, for larger items",
+        "max_item_length": "229 mm",
+
+        "volume_encumber_modifier": 1.5,
+
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Cord retention",
+
+        "max_contains_weight": "1500 g",
+        "max_contains_volume": "750 ml",
+        "min_item_length": "100 mm",
+        "max_item_length": "229 mm",
+
+        "volume_encumber_modifier": 1.5,
+
+        "moves": 120
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY", "FIT"],
+
+    "price": "95 USD",
+    "price_postapoc": "5 USD"
+  }
+]
