@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ballistic_armor_training",
+    "type": "profession",
+    "subtype": "hobby",
+
+    "name": "Ballistic Armor Training",
+    "description": "Through extensive training, you've mastered the fit of plate carriers and other ballistic armors.  You know how to wear ballistic protection snugly, but not tightly, thereby reducing its encumbrance and slightly improving its ability to disperse damage from bullets and blunt attacks.",
+
+    "points": 2,
+
+    "proficiencies": ["prof_plate_carrier"]
+  }
+]

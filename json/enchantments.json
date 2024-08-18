@@ -25,5 +25,33 @@
     "condition": "ALWAYS",
 
     "values": [{ "value": "RECOIL_MODIFIER", "multiply": -0.075 }]
+  },
+  {
+    "id": "PLATE_CARRIER_PROFICIENCY_EXTRA_PROTECTION",
+    "type": "enchantment",
+
+    "has": "WORN",
+    "condition": "ALWAYS",
+
+    "//": "this effect will only be active when avatar has the proficiency AND they're wearing a plate carrier",
+
+    "values": [
+      {
+        "value": "ITEM_ARMOR_BULLET",
+        "add": {
+          "math": [
+            "u_has_proficiency('prof_plate_carrier') * u_is_wearing_plate_carrier * 2"
+          ]
+        }
+      },
+      {
+        "value": "ITEM_ARMOR_BASH",
+        "add": {
+          "math": [
+            "u_has_proficiency('prof_plate_carrier') * u_is_wearing_plate_carrier * 2"
+          ]
+        }
+      }
+    ]
   }
 ]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "proficiency_gear_wearing",
+    "type": "proficiency_category",
+
+    "name": "Equipment Proficiencies",
+    "description": "Proficiencies related to properly wearing tactical equipment."
+  }
+]
