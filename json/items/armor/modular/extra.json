@@ -1,0 +1,86 @@
+[
+  {
+    "id": "pouch_extra_ferro_knifenook",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://ferroconcepts.com/collections/dope-front-flap/products/knifenook",
+      ["https://varuste.net/en/p118794/ferro-concepts-knifenook", "weight"]
+    ],
+
+    "name": {
+      "str": "hook-and-loop sheath mount"
+    },
+    "description": "A thin plastic plate with a set of screw holes and a hook-and-loop exterior.  Can hold a Kydex knife sheath, in order to carry a knife on your plate carrier or ballistic vest.  Can attach to vests with hook-and-loop mounts.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath mount"
+        },
+        "description": "A thin plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath mount"
+        },
+        "description": "A thin plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "30 g",
+    "//dimensions": {
+      "length": "5.4 in",
+      "width": "5 in",
+      "height": "1.5 mm",
+      "raw": "26.13 ml",
+      "trim": 0.075,
+      "notes": [
+        "length and width acquired from visual reference",
+        "height assumed"
+      ]
+    },
+    "volume": "24 ml",
+    "longest_side": "137 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["thermo_resin"],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hook-and-loop sheath mount",
+
+        "holster": true,
+
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "500 ml",
+        "//max_item_length": "9 in.",
+        "max_item_length": "229 mm",
+
+        "flag_restriction": ["SCREW_MOUNTABLE_SHEATH"],
+        "moves": 10
+      }
+    ],
+
+    "flags": ["CANT_WEAR", "EXTRA_POUCH_VELCRO"],
+
+    "price": "25 USD",
+    "price_postapoc": "1 USD"
+  }
+]

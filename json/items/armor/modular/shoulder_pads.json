@@ -1,0 +1,131 @@
+[
+  {
+    "id": "shoulder_pads_perroz",
+    "type": "ARMOR",
+
+    "//sources": [
+      "https://perrozdesigns.com/products/slim-shoulder-pads",
+      [
+        "https://www.zentauron.de/en/plate-carrier-accessories/415-plate-carrier-universal-shoulder-pad.html",
+        "dimensions",
+        "weight"
+      ]
+    ],
+
+    "name": {
+      "str_sp": "comfortable shoulder pads"
+    },
+    "description": "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its encumbrance.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "multicam",
+
+        "name": {
+          "str_sp": "Perroz Designs shoulder pads"
+        },
+        "description": "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam:plural>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "black",
+
+        "name": {
+          "str_sp": "Perroz Designs shoulder pads"
+        },
+        "description": "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": {
+          "str_sp": "Perroz Designs shoulder pads"
+        },
+        "description": "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "multicam_black",
+
+        "name": {
+          "str_sp": "Perroz Designs shoulder pads"
+        },
+        "description": "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam_black:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "grey",
+
+        "name": {
+          "str_sp": "Perroz Designs shoulder pads"
+        },
+        "description": "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:grey:plural>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "60 g × 2 pads",
+    "weight": "120 g",
+    "//dimensions": {
+      "length": "19 cm",
+      "width": "7 cm",
+      "height": "1.5 cm",
+      "raw": "199.5 ml",
+      "trim": 0,
+      "notes": [
+        "dimensions for a single shoulder pad",
+        "doubling the result due to this item being a pair"
+      ]
+    },
+    "volume": "399 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "single_sling",
+    "repairs_like": "single_sling",
+
+    "armor": [
+      {
+        "material": [
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "//thickness": "0.25 mm × 2",
+            "thickness": 0.5
+          },
+          {
+            "type": "plastic_pad",
+            "covered_by_mat": 95,
+            "thickness": 14
+          }
+        ],
+
+        "encumbrance": -2,
+
+        "coverage": 1,
+        "cover_melee": 1,
+        "cover_ranged": 1,
+
+        "covers": ["torso"],
+        "specifically_covers": ["torso_upper"],
+
+        "//volume_encumber_modifier": 0.3
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "SHOULDER_PADS"],
+
+    "//price": "60 CAD",
+    "price": "43 USD 85 cent",
+    "price_postapoc": "1 USD"
+  }
+]
