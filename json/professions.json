@@ -24,8 +24,35 @@
 
     "entries": [{ "item": "water_clean", "container-item": "canteen" }]
   },
+
   {
-    "id": "seal_rig",
+    "id": "prepped_patriot_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "harness_h_direct_action",
+        "variant": "flag_chestrig",
+        "contents-group": "prepped_patriot_rig_contents"
+      }
+    ]
+  },
+  {
+    "id": "prepped_patriot_rig_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "placard_direct_action_tempest",
+        "variant": "flag_chestrig",
+        "contents-group": "mags_ruger_arr"
+      }
+    ]
+  },
+  {
+    "id": "seal_plate_carrier_contents",
     "type": "item_group",
     "subtype": "collection",
 
@@ -71,13 +98,51 @@
 
     "entries": [
       {
-        "container-item": "pouch_magazine_338_warrior",
-        "item": "ai_338mag",
-        "ammo-item": "338lapua_fmjbt",
-        "charges": 5,
+        "group": "placard/haley/molle:multicam",
+        "contents-group": "seal_sniper_rig_contents"
+      }
+    ]
+  },
+  {
+    "id": "seal_sniper_rig_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "seal_sniper_rig_magazine_pouch",
+        "contents-group": "seal_sniper_rig_magazine",
         "count": 3
       },
-      { "container-item": "pouch_radio_tasm", "group": "charged_two_way_radio" }
+      {
+        "item": "pouch_side_perroz",
+        "contents-group": "charged_two_way_radio"
+      }
+    ]
+  },
+  {
+    "id": "seal_sniper_rig_magazine_pouch",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "pouch_magazine_338_warrior",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "id": "seal_sniper_rig_magazine",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "ai_338mag",
+        "ammo-item": "338lapua_fmjbt",
+        "charges": 5
+      }
     ]
   },
   {
@@ -125,9 +190,12 @@
 
     "entries": [
       {
-        "item": "ballistic_vest_esapi",
-        "variant": "us_ballistic_vest",
-        "contents-group": ["some_esapi_plates", "grenadier_vest_contents"]
+        "item": "plate_carrier_msv",
+        "variant": "ocp",
+        "contents-group": [
+          "pristine_esapi_front_plates",
+          "grenadier_vest_contents"
+        ]
       }
     ]
   },
@@ -291,13 +359,11 @@
     ]
   },
   {
-    "id": "ar15_mag_x4",
+    "id": "ar15_mag",
     "type": "item_group",
     "subtype": "collection",
 
-    "entries": [
-      { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 4 }
-    ]
+    "entries": [{ "item": "stanag30", "ammo-item": "556", "charges": 30 }]
   },
   {
     "id": "triple_stacker_mags_ar15_full",
@@ -306,27 +372,71 @@
 
     "container-item": "triple_stacker_pouch",
 
-    "entries": [
-      { "item": "stanag30", "ammo-item": "556", "charges": 30, "count": 6 }
-    ]
+    "entries": [{ "group": "ar15_mag", "count": 6 }]
   },
   {
-    "id": "specops_pouch_mag_smg",
+    "id": "militia_car_rig",
     "type": "item_group",
     "subtype": "collection",
 
     "entries": [
       {
-        "container-item": "pouch_magazine_smg_psigear",
+        "group": "placard/haley/magazine:multicam",
+        "contents-group": ["ar15_mag", "ar15_mag", "ar15_mag"]
+      }
+    ]
+  },
+  {
+    "id": "specops_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "placard/haley/magazine:multicam_black",
+        "contents-group": "specops_rig_contents"
+      }
+    ]
+  },
+  {
+    "id": "specops_rig_contents",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "specops_mag_smg",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "id": "specops_mag_smg",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
         "item": "mp5mag",
         "ammo-item": "9mm",
-        "charges": 30,
-        "count": 4
+        "charges": 30
       }
     ]
   },
   {
     "id": "sniper_police_rig",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "group": "placard/onetigris/vulture:black",
+        "contents-group": "sniper_police_rig_contents"
+      }
+    ]
+  },
+  {
+    "id": "sniper_police_rig_contents",
     "type": "item_group",
     "subtype": "collection",
 
@@ -367,6 +477,7 @@
       }
     ]
   },
+
   {
     "id": "specops",
     "copy-from": "specops",
@@ -378,10 +489,10 @@
       "both": {
         "entries": [
           {
-            "item": "chest_rig_haley_placard",
-            "contents-group": "specops_pouch_mag_smg"
+            "item": "harness_x_haley",
+            "variant": "multicam_black",
+            "contents-group": "specops_rig"
           },
-
           { "item": "wetsuit" },
           { "item": "pants_army" },
           { "item": "wetsuit_hood" },
@@ -394,7 +505,7 @@
           { "item": "diving_watch" },
           { "item": "single_sling" },
           { "group": "charged_two_way_radio" },
-          { "item": "water_clean", "container-item": "canteen" },
+          { "group": "canteen_with_clean_water" },
           { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
           { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
           { "item": "kukri", "container-item": "sheath" },
@@ -446,8 +557,9 @@
             "container-item": "nylon_holster"
           },
           {
-            "item": "chest_rig_onetigris_vulture",
-            "contents-group": "ar15_mag_x4"
+            "item": "harness_x_haley",
+            "variant": "multicam",
+            "contents-group": "militia_car_rig"
           },
           { "item": "lighter", "charges": 100 },
           {
@@ -459,7 +571,9 @@
         ]
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] },
+
+      "proficiencies": ["prof_plate_carrier"]
     }
   },
   {
@@ -491,7 +605,7 @@
             "custom-flags": ["no_auto_equip"]
           },
           {
-            "item": "chest_rig_haley_placard",
+            "group": "loadout/haley/molle:coordinated",
             "contents-group": "conversion_hunter_rig"
           },
           { "item": "sheath", "contents-item": "knife_hunting" }
@@ -546,7 +660,11 @@
         ]
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "sports_bra" }, { "item": "panties" }] }
+      "female": {
+        "entries": [{ "item": "sports_bra" }, { "item": "panties" }]
+      },
+
+      "proficiencies": ["prof_plate_carrier"]
     }
   },
   {
@@ -588,7 +706,13 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
-      }
+      },
+
+      "//proficiencies": [
+        "in the US armed forces (either Air Force or Army), pilots are required to complete basic training regardless of their eventual specialization",
+        "said basic training includes learning to operate in a full set of issued gear, which includes body armor"
+      ],
+      "proficiencies": ["prof_plate_carrier"]
     }
   },
   {
@@ -609,11 +733,7 @@
           { "item": "slippers" },
           { "group": "charged_smart_phone" },
           { "item": "mask_dust", "variant": "flag_mask_dust" },
-          {
-            "item": "chest_rig_direct_action_tempest",
-            "variant": "flag_chestrig",
-            "contents-group": "mags_ruger_arr"
-          },
+          { "group": "prepped_patriot_rig" },
           { "item": "cowboy_hat", "variant": "flag_cowboy_hat" },
           { "item": "leg_bag", "variant": "flag_leg_bag" },
           {
@@ -630,7 +750,10 @@
       "female": {
         "entries": [{ "item": "boy_shorts", "variant": "flag_boy_shorts" }]
       }
-    }
+    },
+
+    "//proficiencies": "we assume that this is someone who's already had informal training with military-style gear, which would likely include wearing a kitted plate carrier with plates",
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "old_vet",
@@ -639,9 +762,6 @@
 
     "name": "Old Veteran",
 
-    "//items": [
-      "this loadout should probably use something USGI-issued, rather than a modern aftermarket option"
-    ],
     "items": {
       "both": {
         "entries": [
@@ -672,7 +792,9 @@
         ]
       },
       "male": { "entries": [{ "item": "briefs" }] },
-      "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] }
+      "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] },
+
+      "proficiencies": ["prof_plate_carrier"]
     }
   },
   {
@@ -684,10 +806,9 @@
 
     "//items": [
       [
-        "image sources suggest that SEALs would most often carry their MOLLE on plate carriers, rather than rigs",
-        "we leave the LBV intact until the plate carrier update",
         "of note is the fact that SEALs used LBT 6094 during the Osama bin Laden raid",
-        "https://lbtinc.com/products/6094"
+        "https://lbtinc.com/products/6094",
+        "we use the MSV as the SEAL plate carrier until a better option (ideally the 6094) is modelled with Armory"
       ],
       [
         "even though it does nothing for this loadout, we leave the webbing belt in",
@@ -698,11 +819,10 @@
       "both": {
         "entries": [
           {
-            "item": "chest_rig_direct_action_tempest",
-            "contents-group": "seal_rig"
+            "group": "loadout/msv/baseline:ocp",
+            "contents-group": "seal_plate_carrier_contents"
           },
           { "item": "webbing_belt", "contents-group": "seal_belt" },
-
           { "item": "combat_shirt" },
           { "item": "tac_fullhelmet" },
           { "item": "mask_ski" },
@@ -721,7 +841,7 @@
           },
           { "item": "water_clean", "container-item": "canteen" },
           {
-            "item": "pouch_leg_magazine_556_t3",
+            "item": "leg_rig_magazine_556_condor",
             "contents-group": "army_mags_m4"
           },
           {
@@ -735,7 +855,9 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
-      }
+      },
+
+      "proficiencies": ["prof_plate_carrier"]
     }
   },
   {
@@ -757,7 +879,8 @@
       "both": {
         "entries": [
           {
-            "item": "chest_rig_haley_placard",
+            "item": "harness_x_haley",
+            "variant": "multicam",
             "contents-group": "seal_sniper_rig"
           },
           { "item": "webbing_belt", "contents-group": "seal_belt" },
@@ -785,7 +908,9 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "marine",
@@ -795,8 +920,11 @@
     "name": "Marine Infantry",
 
     "//items": [
-      "even though it does nothing for this loadout, we leave the webbing belt in",
-      "to be audited when Navy gear comes through"
+      [
+        "even though it does nothing for this loadout, we leave the webbing belt in",
+        "to be audited when Navy gear comes through"
+      ],
+      ["TODO: use a Marine plate carrier (MTV? Marines PC Gen III?)"]
     ],
     "items": {
       "both": {
@@ -816,7 +944,7 @@
           { "item": "pants_army", "variant": "apants_MARPAT" },
           { "item": "water_clean", "container-item": "canteen" },
           {
-            "item": "pouch_leg_magazine_556_t3",
+            "item": "leg_rig_magazine_556_condor",
             "contents-group": "army_mags_m4"
           },
           { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
@@ -845,7 +973,9 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "cop",
@@ -875,7 +1005,9 @@
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "sniper_police",
@@ -901,7 +1033,7 @@
           { "item": "badge_deputy" },
           { "item": "wristwatch" },
           {
-            "item": "chest_rig_onetigris_vulture",
+            "item": "harness_x_haley",
             "contents-group": "sniper_police_rig"
           },
           { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
@@ -923,7 +1055,9 @@
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "detective",
@@ -1015,7 +1149,9 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "swat_heavy",
@@ -1247,7 +1383,7 @@
       "both": {
         "//entries": [
           [
-            "park rangers in Massachusetts do not appear to be permitted to carry firearm unless their job is in Boston(?), in which case they're required to complete Special Officer training, which permits they to carry a sidearm",
+            "park rangers in Massachusetts do not appear to be permitted to carry firearm unless their job is in Boston(?), in which case they're required to complete Special Officer training, which permits them to carry a sidearm",
             "https://www.parkrangeredu.org/massachusetts/",
             "in general, only the Law Enforcement Ranger position permits carrying a sidearm, since it requires the capacity to enforce the law",
             "https://www.parkrangeredu.org/careers/",
@@ -1340,11 +1476,15 @@
 
     "name": "Undercover Operative",
 
+    "//": [
+      "this loadout makes no sense for an undercover operative",
+      "it could use IWB magazine pouches once those become available"
+    ],
+
     "items": {
       "both": {
         "entries": [
-          { "item": "pouch_leg_drop_fox", "contents-group": "army_mags_57" },
-
+          { "item": "leg_rig_fox", "contents-group": "army_mags_57" },
           { "item": "scarf" },
           { "item": "dress_shirt" },
           { "item": "jeans" },
@@ -1412,7 +1552,9 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "mil_sniper",
@@ -1468,7 +1610,9 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "mil_breacher",
@@ -1532,6 +1676,8 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": ["prof_plate_carrier"]
   }
 ]
