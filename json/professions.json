@@ -571,10 +571,10 @@
         ]
       },
       "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    },
 
-      "proficiencies": ["prof_plate_carrier"]
-    }
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "conversion_hunter",
@@ -662,10 +662,10 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "panties" }]
-      },
+      }
+    },
 
-      "proficiencies": ["prof_plate_carrier"]
-    }
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "mili_pilot",
@@ -706,14 +706,14 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
-      },
+      }
+    },
 
-      "//proficiencies": [
-        "in the US armed forces (either Air Force or Army), pilots are required to complete basic training regardless of their eventual specialization",
-        "said basic training includes learning to operate in a full set of issued gear, which includes body armor"
-      ],
-      "proficiencies": ["prof_plate_carrier"]
-    }
+    "//proficiencies": [
+      "in the US armed forces (either Air Force or Army), pilots are required to complete basic training regardless of their eventual specialization",
+      "said basic training includes learning to operate in a full set of issued gear, which includes body armor"
+    ],
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "prepped_patriot",
@@ -792,10 +792,10 @@
         ]
       },
       "male": { "entries": [{ "item": "briefs" }] },
-      "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] },
+      "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] }
+    },
 
-      "proficiencies": ["prof_plate_carrier"]
-    }
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "seal",
@@ -855,10 +855,10 @@
       "male": { "entries": [{ "item": "boxer_shorts" }] },
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
-      },
+      }
+    },
 
-      "proficiencies": ["prof_plate_carrier"]
-    }
+    "proficiencies": ["prof_plate_carrier"]
   },
   {
     "id": "seal_sniper",
