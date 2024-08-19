@@ -807,13 +807,13 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "flc_acu",
+        "id": "ucp",
 
         "name": {
           "str": "MOLLE II older pistol mag pouch",
           "str_pl": "MOLLE II older pistol mag pouches"
         },
-        "description": "An older, faded nylon pouch.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.  The snap button on the flap makes the pouch slower to operate than the newer hook-and-loop flap on the M17 magazine pouch.  <variant:acu>.",
+        "description": "An older, faded nylon pouch.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.  The snap button on the flap makes the pouch slower to operate than the newer hook-and-loop flap on the M17 magazine pouch.  <variant:ucp>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -884,7 +884,7 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "flc_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "MOLLE II pistol mag pouch",
