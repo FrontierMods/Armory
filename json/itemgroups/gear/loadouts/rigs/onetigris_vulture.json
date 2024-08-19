@@ -1,0 +1,115 @@
+[
+  {
+    "id": "loadout/onetigris/vulture:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "loadout/onetigris/vulture/baseline:coordinated" },
+      { "group": "loadout/onetigris/vulture/baseline:any" }
+    ]
+  },
+  {
+    "id": "loadout/onetigris/vulture:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [{ "group": "loadout/onetigris/vulture/baseline:coordinated" }]
+  },
+
+  {
+    "id": "loadout/onetigris/vulture/baseline:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "harness_x_haley",
+        "variant": "multicam",
+        "contents-group": "placard/onetigris/vulture:multicam",
+        "prob": 10
+      },
+      {
+        "item": "harness_x_haley",
+        "variant": "multicam_black",
+        "contents-group": "placard/onetigris/vulture:multicam_black",
+        "prob": 10
+      },
+      {
+        "item": "harness_x_haley",
+        "variant": "black",
+        "contents-group": "placard/onetigris/vulture:black",
+        "prob": 10
+      },
+      {
+        "item": "harness_x_haley",
+        "variant": "coyote",
+        "contents-group": "placard/onetigris/vulture:coyote",
+        "prob": 10
+      },
+      {
+        "item": "harness_x_haley",
+        "variant": "ranger",
+        "contents-group": "placard/onetigris/vulture:ranger",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "id": "loadout/onetigris/vulture/baseline:any",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "harness_x_haley",
+        "contents-group": "placard/onetigris/vulture:any"
+      }
+    ]
+  },
+
+  {
+    "id": "placard/onetigris/vulture:any",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "placard_onetigris_vulture" }]
+  },
+  {
+    "id": "placard/onetigris/vulture:multicam",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "placard_onetigris_vulture", "variant": "multicam" }]
+  },
+  {
+    "id": "placard/onetigris/vulture:multicam_black",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      { "item": "placard_onetigris_vulture", "variant": "multicam_black" }
+    ]
+  },
+  {
+    "id": "placard/onetigris/vulture:black",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "placard_onetigris_vulture", "variant": "black" }]
+  },
+  {
+    "id": "placard/onetigris/vulture:coyote",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "placard_onetigris_vulture", "variant": "coyote" }]
+  },
+  {
+    "id": "placard/onetigris/vulture:ranger",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [{ "item": "placard_onetigris_vulture", "variant": "ranger" }]
+  }
+]

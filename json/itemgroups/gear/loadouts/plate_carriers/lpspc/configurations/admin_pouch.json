@@ -1,0 +1,74 @@
+[
+  {
+    "id": "loadout/lpspc/admin_pouch:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "contents-group": ["cummerbund/perroz:any", "pouch/admin/ferro:any"]
+      }
+    ]
+  },
+
+  {
+    "id": "loadout/lpspc/admin_pouch:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam",
+        "contents-group": [
+          "cummerbund/perroz:multicam",
+          "pouch/admin/ferro:multicam"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam_black",
+        "contents-group": [
+          "cummerbund/perroz:multicam_black",
+          "pouch/admin/ferro:multicam_black"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "black",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "pouch/admin/ferro:black"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "coyote",
+        "contents-group": [
+          "cummerbund/perroz:coyote",
+          "pouch/admin/ferro:coyote"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "grey",
+        "contents-group": ["cummerbund/perroz:black", "pouch/admin/ferro:grey"],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "woodland",
+        "contents-group": [
+          "cummerbund/perroz:woodland",
+          "pouch/admin/ferro:ranger"
+        ],
+        "prob": 10
+      }
+    ]
+  }
+]
