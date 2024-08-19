@@ -2,27 +2,29 @@
   {
     "id": ["chestrig", "xs_chestrig", "xl_chestrig"],
     "type": "MIGRATION",
-    "replace": "chest_rig_direct_action_tempest"
+    "replace": "placard_direct_action_tempest"
   },
   {
     "id": ["light_load_bearing_vest"],
     "type": "MIGRATION",
-    "replace": "chest_rig_tt_mav_2_piece"
+    "replace": "placard_haley_molle",
+    "contents": [{ "id": "placard_haley_molle", "count": 1 }]
   },
   {
     "id": ["load_bearing_vest"],
     "type": "MIGRATION",
-    "replace": "chest_rig_tasm_mk_ii"
+    "replace": "placard_onetigris_vulture"
   },
   {
     "id": ["heavy_load_bearing_vest"],
     "type": "MIGRATION",
-    "replace": "chest_rig_condor_modular"
+    "replace": "placard_tasm_mk_ii",
+    "contents": [{ "id": "placard_tasm_mk_ii", "count": 1 }]
   },
   {
     "id": ["load_bearing_vest_sling"],
     "type": "MIGRATION",
-    "replace": "chest_rig_tasm_mk_ii",
+    "replace": "placard_onetigris_vulture",
     "contents": [{ "id": "single_sling", "count": 1 }]
   },
   {

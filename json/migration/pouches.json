@@ -82,7 +82,7 @@
   {
     "id": ["legrig"],
     "type": "MIGRATION",
-    "replace": "pouch_leg_drop_fox"
+    "replace": "leg_rig_fox"
   },
   {
     "id": ["tool_pouch"],
@@ -93,5 +93,10 @@
     "id": ["grenade_pouch"],
     "type": "MIGRATION",
     "replace": "pouch_40mm_x6_blackhawk"
+  },
+  {
+    "id": ["legpouch_large"],
+    "type": "MIGRATION",
+    "replace": "leg_rig_magazine_556_condor"
   }
 ]

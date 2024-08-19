@@ -1,0 +1,29 @@
+[
+  {
+    "id": [
+      "ballistic_vest_light",
+      "ballistic_vest_light_pouches",
+      "ballistic_vest_light_operator"
+    ],
+    "type": "MIGRATION",
+    "replace": "plate_carrier_perroz",
+    "contents": [{ "id": "cummerbund_perroz", "count": 1 }]
+  },
+  {
+    "id": ["ballistic_vest_esapi"],
+    "type": "MIGRATION",
+    "replace": "plate_carrier_msv",
+    "contents": [{ "id": "cummerbund_iotv", "count": 1 }]
+  },
+  {
+    "id": ["ballistic_vest_heavy"],
+    "type": "MIGRATION",
+    "replace": "plate_carrier_iotv",
+    "contents": [{ "id": "cummerbund_iotv", "count": 1 }]
+  },
+  {
+    "id": ["level_3_vest"],
+    "type": "MIGRATION",
+    "replace": "plate_carrier_point_blank_endeavor"
+  }
+]

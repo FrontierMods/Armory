@@ -1,0 +1,22 @@
+[
+  {
+    "id": ["esapi_plate"],
+    "type": "MIGRATION",
+    "replace": "plate_ceramic_medium_ceradyne_esapi"
+  },
+  {
+    "id": ["esbi_plate"],
+    "type": "MIGRATION",
+    "replace": "plate_side_tall_ceramic_ltc_esbi"
+  },
+  {
+    "id": ["steel_ballistic_plate"],
+    "type": "MIGRATION",
+    "replace": "plate_steel_medium_ar_iii"
+  },
+  {
+    "id": ["heavy_steel_ballistic_plate"],
+    "type": "MIGRATION",
+    "replace": "plate_steel_medium_tacticon_iiiplus"
+  }
+]
