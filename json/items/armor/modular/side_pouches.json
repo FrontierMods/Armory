@@ -1,0 +1,240 @@
+[
+  {
+    "id": "pouch_side_perroz",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://perrozdesigns.com/products/side-pouch-set-short",
+      [
+        "https://www.amazon.co.jp/-/en/Ferro-Wingman-BKMC-Type-Pouch/dp/B0C23GKQGZ",
+        "weight reference"
+      ]
+    ],
+
+    "//notes": [
+      "these pouches come in left- and right-hand configurations, and are generally sold in complementary pairs throughout different manufacturer stores",
+      "we model them as orientation-agnostic, for ease of inventory management"
+    ],
+
+    "name": {
+      "str": "vest side pouch",
+      "str_pl": "vest side pouches"
+    },
+    "description": "A side pouch for a plate carrier or a ballistic vest.  Allows storing a bit extra stuff, up to and including a rifle magazine.  Can attach to vests with hook-and-loop mounts.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "multicam",
+
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:multicam>",
+        "expand_snippets": true,
+        "weight": 2
+      },
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "ranger",
+
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:ranger>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "white",
+
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:white>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "grey",
+
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:grey>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": [
+      "the weight for this specific model doesn't appear to be available, so we reference it off of a similar item from a different manufacturer",
+      "2.5 oz = 70.874 g"
+    ],
+    "weight": "71 g",
+    "//dimensions": [
+      {
+        "description": "pouch",
+
+        "length": "5.5 in",
+        "width": "4 in",
+        "height": "3.75 mm",
+        "raw": "53.23 ml",
+        "trim": 0.0125,
+        "result": "52.56 ml"
+      },
+      {
+        "description": "velcro panel",
+
+        "length": "4.15 in",
+        "width": "2.8 in",
+        "height": "1 mm",
+        "raw": "7.5 ml",
+        "trim": 0,
+        "result": "7.5 ml"
+      }
+    ],
+    "volume": "60 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hook-and-loop side pouch",
+
+        "max_contains_weight": "2 kg",
+        "//max_contains_volume": "2 × STANAG 30-round magazine w/ ranger plate",
+        "max_contains_volume": "610 ml",
+        "//min_item_length": "length of STANAG 20-round magazine",
+        "min_item_length": "130 mm",
+        "//max_item_length": "length of STANAG 40-round magazine w/ ranger plate",
+        "max_item_length": "261 mm",
+
+        "moves": 100
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "SIDE_POUCH_VELCRO"],
+
+    "//price": "60 CAD",
+    "price": "43 USD 60 cent",
+    "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_side_ferro_wingthing",
+    "type": "GENERIC",
+    "category": "container",
+
+    "//sources": [
+      "https://ferroconcepts.com/collections/pockets/products/wingthing",
+      ["https://varuste.net/en/p110779/ferro-concepts-wingthing", "weight"]
+    ],
+
+    "name": {
+      "str": "hook-and-loop sheath side mount"
+    },
+    "description": "A thin plastic plate with a set of screw holes and a hook-and-loop exterior.  Can hold a Kydex knife sheath or a single-slot MOLLE pouch, in order to carry a knife on the side of a plate carrier or ballistic vest.  Can attach to vests with hook-and-loop mounts.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath side mount"
+        },
+        "description": "A thin elongated plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath or a single-slot MOLLE pouch, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "coyote",
+
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath side mount"
+        },
+        "description": "A thin elongated plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath or a single-slot MOLLE pouch, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Worn as a side pouch.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "30 g",
+    "//dimensions": {
+      "length": "5.4 in",
+      "width": "5 in",
+      "height": "1.5 mm",
+      "raw": "26.13 ml",
+      "trim": 0.075,
+      "notes": [
+        "length and width acquired from visual reference",
+        "height assumed"
+      ]
+    },
+    "volume": "24 ml",
+    "longest_side": "137 mm",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["thermo_resin"],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Hook-and-loop sheath mount",
+
+        "holster": true,
+
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "650 ml",
+        "//max_item_length": "9 in.",
+        "max_item_length": "229 mm",
+
+        "flag_restriction": ["SCREW_MOUNTABLE_SHEATH", "PALS_SMALL"],
+        "moves": 10
+      }
+    ],
+
+    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "SIDE_POUCH_VELCRO"],
+
+    "price": "34 USD",
+    "price_postapoc": "1 USD"
+  }
+]
