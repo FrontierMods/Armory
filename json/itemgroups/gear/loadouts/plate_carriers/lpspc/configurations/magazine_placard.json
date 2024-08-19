@@ -1,0 +1,116 @@
+[
+  {
+    "id": "loadout/lpspc/magazine_placard:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "contents-group": [
+          "cummerbund/perroz:any",
+          "placard/haley/magazine:any"
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "loadout/lpspc/magazine_placard:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam",
+        "contents-group": [
+          "cummerbund/perroz:multicam",
+          "placard/haley/magazine:multicam"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam_black",
+        "contents-group": [
+          "cummerbund/perroz:multicam_black",
+          "placard/haley/magazine:black"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "black",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "placard/haley/magazine:black"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "coyote",
+        "contents-group": [
+          "cummerbund/perroz:coyote",
+          "placard/haley/magazine:coyote"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "grey",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "placard/haley/magazine:grey"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "woodland",
+        "contents-group": [
+          "cummerbund/perroz:woodland",
+          "placard/haley/magazine:ranger"
+        ],
+        "prob": 10
+      }
+    ]
+  },
+
+  {
+    "id": "loadout/lpspc/magazine_placard:military",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam",
+        "contents-group": [
+          "cummerbund/perroz:multicam",
+          "placard/haley/magazine:multicam"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "coyote",
+        "contents-group": [
+          "cummerbund/perroz:coyote",
+          "placard/haley/magazine:coyote"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "olive",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "placard/haley/magazine:ranger"
+        ],
+        "prob": 10
+      }
+    ]
+  }
+]

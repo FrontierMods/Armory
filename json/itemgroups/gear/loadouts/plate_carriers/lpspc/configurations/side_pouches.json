@@ -1,0 +1,87 @@
+[
+  {
+    "id": "loadout/lpspc/side_pouches:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "contents-group": [
+          "cummerbund/perroz:any",
+          "pouch/side/perroz:any",
+          "pouch/side/perroz:any"
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "loadout/lpspc/side_pouches:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam",
+        "contents-group": [
+          "cummerbund/perroz:multicam",
+          "pouch/side/perroz:multicam",
+          "pouch/side/perroz:multicam"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "multicam_black",
+        "contents-group": [
+          "cummerbund/perroz:multicam_black",
+          "pouch/side/perroz:black",
+          "pouch/side/perroz:black"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "black",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "pouch/side/perroz:black",
+          "pouch/side/perroz:black"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "coyote",
+        "contents-group": [
+          "cummerbund/perroz:coyote",
+          "pouch/side/perroz:coyote",
+          "pouch/side/perroz:coyote"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "grey",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "pouch/side/perroz:grey",
+          "pouch/side/perroz:grey"
+        ],
+        "prob": 10
+      },
+      {
+        "item": "plate_carrier_perroz",
+        "variant": "woodland",
+        "contents-group": [
+          "cummerbund/perroz:woodland",
+          "pouch/side/perroz:ranger",
+          "pouch/side/perroz:ranger"
+        ],
+        "prob": 10
+      }
+    ]
+  }
+]

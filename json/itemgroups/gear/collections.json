@@ -1,0 +1,30 @@
+[
+  {
+    "id": "collection/rigs/baseline:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "items": [
+      { "group": "loadout/condor/stowaway/baseline:any" },
+      { "group": "loadout/direct_action/tempest/baseline:any" },
+      { "group": "loadout/haley/magazine/baseline:any" },
+      { "group": "loadout/haley/molle/baseline:any" },
+      { "group": "loadout/onetigris/vulture/baseline:any" },
+      { "group": "loadout/tasm/mk_ii/baseline:any" }
+    ]
+  },
+  {
+    "id": "collection/rigs/baseline:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "items": [
+      { "group": "loadout/condor/stowaway/baseline:coordinated" },
+      { "group": "loadout/direct_action/tempest/baseline:coordinated" },
+      { "group": "loadout/haley/magazine/baseline:coordinated" },
+      { "group": "loadout/haley/molle/baseline:coordinated" },
+      { "group": "loadout/onetigris/vulture/baseline:coordinated" },
+      { "group": "loadout/tasm/mk_ii/baseline:coordinated" }
+    ]
+  }
+]

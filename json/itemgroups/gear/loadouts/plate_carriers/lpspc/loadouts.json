@@ -1,0 +1,37 @@
+[
+  {
+    "id": "loadout/lpspc:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "loadout/lpspc/baseline:any" },
+      { "group": "loadout/lpspc/baseline:coordinated" },
+      { "group": "loadout/lpspc/magazine_placard:any" },
+      { "group": "loadout/lpspc/magazine_placard:coordinated" },
+      { "group": "loadout/lpspc/side_pouches:any" },
+      { "group": "loadout/lpspc/side_pouches:coordinated" }
+    ]
+  },
+  {
+    "id": "loadout/lpspc:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "loadout/lpspc/baseline:coordinated" },
+      { "group": "loadout/lpspc/magazine_placard:coordinated" },
+      { "group": "loadout/lpspc/side_pouches:coordinated" }
+    ]
+  },
+  {
+    "id": "loadout/lpspc:military",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "loadout/lpspc/baseline:military" },
+      { "group": "loadout/lpspc/magazine_placard:military" }
+    ]
+  }
+]

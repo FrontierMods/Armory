@@ -1,0 +1,51 @@
+[
+  {
+    "id": "loadout/msv:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "loadout/msv/baseline:any" },
+      { "group": "loadout/msv/baseline:coordinated" }
+    ]
+  },
+
+  {
+    "id": "loadout/msv/baseline:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "item": "plate_carrier_msv",
+        "contents-group": "cummerbund/iotv:any"
+      }
+    ]
+  },
+  {
+    "id": "loadout/msv/baseline:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "loadout/msv/baseline:ocp",
+        "prob": 50
+      }
+    ]
+  },
+
+  {
+    "id": "loadout/msv/baseline:ocp",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "entries": [
+      {
+        "item": "plate_carrier_msv",
+        "variant": "ocp",
+        "contents-group": "cummerbund/iotv:ocp"
+      }
+    ]
+  }
+]
