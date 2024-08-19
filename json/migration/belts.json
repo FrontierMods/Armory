@@ -2,7 +2,7 @@
   {
     "id": ["webbing_belt"],
     "type": "MIGRATION",
-    "replace": "belt_webbing_haley_strategic_d3"
+    "replace": "belt_webbing_haley_d3"
   },
   {
     "id": ["police_belt"],
