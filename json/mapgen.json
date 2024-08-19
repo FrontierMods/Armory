@@ -1,0 +1,1146 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      ["mil_base_1e", "mil_base_2e", "mil_base_3e", "mil_base_4e"],
+      ["mil_base_1f", "mil_base_2f", "mil_base_3f", "mil_base_4f"],
+      ["mil_base_1g", "mil_base_2g", "mil_base_3g", "mil_base_4g"]
+    ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "x ,, b,,,,              ,|T+.+T|K[KlKlK[KlKlKlKlKlccoc|,  ,,,            sss________________sss ",
+        "x ,, b ,,               ,|--.--|K.K.K.K.K.K.K.K.K.....|,  ,,             sss_______yy_______sss ",
+        "x,,, b,,,              ,,|T+.+T|..................uu..w,   ,,            sss_______yy_______sss ",
+        "x,,,,b ,,,             ,-|--.--|..................uu..|,  ,,             sss_______yy_______sss ",
+        "x,,, b ,,              ,7|T+...+..lllll.llll.llll.h...|,  ,,,            sss________________sss ",
+        "x ,, b ,,              ,6|---.-|t.-----.----.----.....w,  ,,            ,sss_______yy_______sss ",
+        "x ,, b ,,,             ,-|LLL.S|..lllll.llll.llll....h|,  ,,,           ,sss_______yy_______sss ",
+        "x ,, b,,,,             ,,|L...S|..................t|+-|, ,,,,,  ,      ,,sss_______yy_______sss ",
+        "x,,,,b,,,               ,|L.&.S|...................|..w,,,,,,,,,,,,,, ,,,sss________________sss ",
+        "x ,, b ,,               ,|L...S|K.K.K.K.K.K.K.K.K.K|..+,,,,,,,,,,,,,,,,,,sss_______yy_______sss ",
+        "x ,, b ,,               ,|LLL.S|K[KlKlK.KlKlK[KlKlK|.Y|,,  ,  ,    ,,,,,,sss_______yy_______sss ",
+        "x ,, b,,,               ,--------w-----w-----w---------,               ,,sss_______yy_______sss ",
+        "x,,,,b ,,,              ,,,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,                ,sss________________sss ",
+        "x,,, b ,,,                                                               sss_______yy_______sss ",
+        "x ,, b ,,                                                                sss_______yy_______sss ",
+        "x ,, b,,,                                                                sss_______yy_______sss ",
+        "x ,,,b ,,,                                                               sss________________sss ",
+        "x ,,,b ,,                                                                sss_______yy_______sss ",
+        "x ,, b ,,                                             sssssssssssssss    sss_______yy_______sss ",
+        "x ,, b,,,,                                            sssssssssssssss    sss_______yy_______sss ",
+        "x ,, b ,,                                             ss-----------sssssssss________________sss ",
+        "x,,, b,,,                                             ss|T|T|T|T|T|sssssssss_______yy_______sss ",
+        "x ,, b ,,,                                            ss|+|+|+|+|+|-w--sssss_______yy_______sss ",
+        "x ,,,b,,,,                     sssssssssssssssssssssssss|.........+...|sssss_______yy_______sss ",
+        "x ,,,b ,,                    ssssssssssssssssssssssssss~|tScStScSt|...wsssss________________sss ",
+        "x,,, b ,,                    ssss------w--w--w--w--w--w------------...+sssss_______yy_______ssss",
+        "x ,, b,,,                    ss---u.S|u.c.........................+...+sssss_______yy_______ssss",
+        "x ,,,b ,,                    ss|Td...|u.c...hhhhh..hhhh....h.hh...+...wsssss_______yy_______ssss",
+        "x ,,,b,,,,                   ss|----d|u.c...[[[[[..[[[[[..[[[[[..t|-+---|sss____________________",
+        "x,,,,b,,,                    ss|u.|..|u.c...[[[[[..[[[[[..[[[[[..t|Y.tOO|sss_______yy___________",
+        "x,,, b ,,                    ss|u.|..+..c...hh.hh..hhhhh..hh.h...c|.....wsss_______yy___________",
+        "x ,, b,,,                   sss|u.d..+...........................c|h[[h.|sss_______yy___________",
+        "x,,,,b,,,                   ss~|u.|..|u......hh.h..h.hh....hh.h..c|h[[h.|sss____________________",
+        "x ,, b ,,                   ss-----dd-------[[[[[..[[[[[..[[[[[...|.....wsss_______yy___________",
+        "x,,,,b ,,,                  ss|uSct..tccccu|[[[[[..[[[[[..[[[[[...|h[[h.|sss_______yy___________",
+        "x,,, b ,,                   sswc..........u|hhhhh...h.hh..hhh.h...|h[[h.|sss_______yy________yyy",
+        "x ,, b,,,                   ss|u......oo..u-------|...............|.....wsss_________________yyy",
+        "x ,, b ,,,                  ss--z-|c..oo..u|uuuuuu|hhh.h...hhh....|h[[h.|sss_______yy___________",
+        "x,,,,b,,,,                  sssss{|c..cc..u|......|[[[[[..[[[[[..O|h[[h.|sss_______yy___________",
+        "x,,,,b,,,                   sssss{|u..cc...d.uuuuu|[[[[[..[[[[[..O|.....wsss_______yy___________",
+        "x ,,,b,,,                     ssss|u.......|......|..hhh..hh.hh..O|h[[h.|sss____________________",
+        "x ,, b,,,                    ,ssss|u.uuu..Y|uuuuuu|..............O|h[[h.|sss_______yy___________",
+        "x,,, b ,,,                 ,,,ssss--w---wz----------w--w--w--w--w--------sss_______yy___________",
+        "x,,,,b ,,               ,,,,,,ssssssssssssssssssssssssssssssssssssssssssssss_______yy___________",
+        "x ,, b ,,              ,NNN,,,ssssssssssssssssssssssssssssssssssssssssssssss________________ssss",
+        "x ,,,b ,,,            ,NNnN,,sssssssssssssssssssssssssssssssssssssssssssssss_______yy_______ssss",
+        "x,,, b,,,,      ,  ,,,,Nn,,,Nsssssss{{ssssssssssssssssssssssssssssssssssssss_______yy_______ssss",
+        "x ,,,b ,,,,,  ,,,,,,,,,NNn,,Nss//D///////////////////////////////////////sss_______yy_______sssI",
+        "x ,,,b ,,,,,,,,,,,,,,,,,NNnNNss/e...???????????..???????....<..(>/$$.`OO/sss________________ssss",
+        "x ,, b ,,,,,,,,,,,  ,   ,NNN,ss/...............................///....ht/sss_______yy_______ssss",
+        "x ,, b,,,,,,,, ,         ,,, ss/.................................d.i.###gsss_______yy_______sss-",
+        "x ,,,b,,,,,,                 ss/..............................i../...###/sss_______yy_______sss|",
+        "x ,, b,,,,,                  ss/...........................::..../$.i.ht/sss________________sss|",
+        "x ,,,b ,,,                   ss/....???????????..???????...::..../$.....gsss_______yy_______sss|",
+        "x,,, b,,,,                   ss/....???????????..???????........./$.Y.$$/sss_______yy_______sss|",
+        "x ,, b ,,,                   ss/...........................::....//g/D5//sss_______yy_______sss|",
+        "x ,,,b ,,,                   ss/...........................::..../ssssssssss________________sss|",
+        "x,,,,b,,,,                   ss/................................./ssssssssss_______yy_______sss|",
+        "x,,, b ,,,,                  ss/................................e/ssssssssss_______yy_______sssw",
+        "x,,, b,,,,,,,                ss/....???????????..???????.........Dssssssssss_______yy_______sssw",
+        "x ,,,b ,,,,,,                ss/....???????????..???????.........Dssssssssss________________sss|",
+        "x,,,,b,,,,,,,,               ss/.................................Dssssssssss_______yy_______sss|",
+        "x ,, bbbb},,,                ss/.................................Dssssssssss_______yy_______sss|",
+        "G ,,,b..}},,,,               ss/................................./ssssssssss_______yy_______sss|",
+        "G ,, b..}}},,                ss/................................./ssssssssss________________sssw",
+        "x ,,,b.}}}},,,               ss/....???????????..???????......i../ssssssssss_______yy_______sss|",
+        "x ,, bb}}},,,,               ss/....???????????..???????.........Dssssssssss_______yy_______sss-",
+        "x,,, b}},,,,,,               ss/.................................Dssssssssss_______yy_______sss~",
+        "x ,,,b,,,,,,,                ss/.................................Dssssssssss________________ssss",
+        "x,,,,b ,,,,                  ss/.................................Dssssssssss_______yy_______ssss",
+        "x ,, b,,,,                   ss/................................e/ssssssssss_______yy_______ssss",
+        "x ,,,b ,,,                   ss/....???????????..???????????...../ssssssssss_______yy_______ssss"
+      ],
+      "palettes": ["mil_base_palette"],
+      "items": {
+        "K": [{ "item": "army_bed", "chance": 30, "repeat": [1, 2] }],
+        "l": [
+          { "item": "army_personal_locker", "chance": 75, "repeat": [5, 10] },
+          { "item": "mil_base_coats", "chance": 10 }
+        ],
+        "o": [{ "item": "SUS_oven", "chance": 50 }],
+        "n": [
+          { "item": "mil_base_casing_hmg", "chance": 50, "repeat": [50, 100] }
+        ],
+        "t": [{ "item": "trash_cart", "chance": 75, "repeat": [1, 10] }],
+        "{": [{ "item": "trash_cart", "chance": 75, "repeat": [10, 20] }],
+        "#": [{ "item": "SUS_office_desk", "chance": 10, "repeat": [1, 2] }],
+        "$": [
+          {
+            "item": "SUS_office_filing_cabinet",
+            "chance": 50,
+            "repeat": [1, 5]
+          }
+        ],
+        "O": [{ "item": "mil_base_books", "chance": 30, "repeat": [1, 5] }],
+        "[": [{ "item": "mil_base_mess_hall", "chance": 20 }],
+        "Y": [{ "item": "mil_base_coats", "chance": 25, "repeat": [1, 2] }]
+      },
+      "monster": { "i": { "monster": "mon_zombie_soldier", "chance": 30 } },
+      "place_loot": [
+        {
+          "group": "mil_base_hmg",
+          "x": 25,
+          "y": 46,
+          "chance": 10,
+          "magazine": 100
+        },
+        {
+          "group": "mil_base_mess_hall",
+          "x": 38,
+          "y": [26, 29],
+          "chance": 90,
+          "repeat": [50, 200]
+        },
+        {
+          "group": "mil_base_mess_hall",
+          "x": 32,
+          "y": [29, 32],
+          "chance": 90,
+          "repeat": [250, 500]
+        },
+        {
+          "group": "SUS_janitors_closet",
+          "x": 34,
+          "y": 26,
+          "chance": 90,
+          "repeat": [0, 1]
+        },
+        {
+          "group": "SUS_kitchen_sink",
+          "x": 31,
+          "y": 34,
+          "chance": 90,
+          "repeat": [1, 2]
+        },
+        {
+          "group": "SUS_kitchen_sink",
+          "x": 31,
+          "y": 36,
+          "chance": 90,
+          "repeat": [1, 2]
+        },
+        {
+          "group": "SUS_spice_collection",
+          "x": 41,
+          "y": 34,
+          "chance": 90,
+          "repeat": [1, 3]
+        },
+        {
+          "group": "SUS_utensils",
+          "x": 42,
+          "y": 34,
+          "chance": 90,
+          "repeat": [1, 3]
+        },
+        {
+          "group": "SUS_junk_drawer",
+          "x": 42,
+          "y": 35,
+          "chance": 90,
+          "repeat": [0, 1]
+        },
+        {
+          "group": "SUS_knife_drawer",
+          "x": 42,
+          "y": 36,
+          "chance": 90,
+          "repeat": [1, 2]
+        },
+        {
+          "group": "SUS_dishes",
+          "x": 42,
+          "y": 37,
+          "chance": 90,
+          "repeat": [5, 20]
+        },
+        {
+          "group": "SUS_cookware",
+          "x": 42,
+          "y": 38,
+          "chance": 90,
+          "repeat": [1, 5]
+        },
+        {
+          "group": "SUS_knife_drawer",
+          "x": 35,
+          "y": 39,
+          "chance": 90,
+          "repeat": [1, 2]
+        },
+        {
+          "group": "SUS_appliances_cupboard",
+          "x": 35,
+          "y": 40,
+          "chance": 90,
+          "repeat": [1, 3]
+        },
+        {
+          "group": "SUS_cookware",
+          "x": 35,
+          "y": 41,
+          "chance": 90,
+          "repeat": [1, 5]
+        },
+        {
+          "group": "SUS_pantry",
+          "x": [44, 47],
+          "y": 37,
+          "chance": 90,
+          "repeat": [4, 12]
+        },
+        {
+          "group": "SUS_fridge",
+          "x": [48, 49],
+          "y": 37,
+          "chance": 90,
+          "repeat": [2, 6]
+        },
+        {
+          "group": "SUS_fridge",
+          "x": [45, 47],
+          "y": 39,
+          "chance": 90,
+          "repeat": [3, 9]
+        },
+        {
+          "group": "SUS_fridge",
+          "x": [48, 49],
+          "y": 39,
+          "chance": 90,
+          "repeat": [2, 6]
+        },
+        {
+          "group": "SUS_fridge",
+          "x": [44, 47],
+          "y": 41,
+          "chance": 90,
+          "repeat": [4, 12]
+        },
+        {
+          "group": "SUS_fridge",
+          "x": [48, 49],
+          "y": 41,
+          "chance": 90,
+          "repeat": [2, 6]
+        },
+        {
+          "item": "tshirt",
+          "x": 59,
+          "y": 71,
+          "chance": 75,
+          "repeat": [250, 300]
+        },
+        {
+          "item": "long_undertop",
+          "x": 58,
+          "y": 71,
+          "chance": 75,
+          "repeat": [250, 300]
+        },
+        {
+          "item": "long_underpants",
+          "x": 57,
+          "y": 71,
+          "chance": 75,
+          "repeat": [250, 300]
+        },
+        {
+          "item": "socks",
+          "x": 56,
+          "y": 71,
+          "chance": 75,
+          "repeat": [100, 200]
+        },
+        {
+          "item": "socks_wool",
+          "x": [54, 55],
+          "y": 71,
+          "chance": 75,
+          "repeat": [250, 500]
+        },
+        {
+          "item": "sports_bra",
+          "x": 53,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "boy_shorts",
+          "x": 52,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "briefs",
+          "x": 51,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "boxer_briefs",
+          "x": 50,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "boxer_shorts",
+          "x": 49,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "jacket_army_modern",
+          "x": 46,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "winter_jacket_army",
+          "x": 45,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "pants_army",
+          "x": 44,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "winter_pants_army",
+          "x": 43,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "coat_rain",
+          "x": 42,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "hood_rain",
+          "x": 41,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "folding_poncho",
+          "x": 40,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "webbing_belt",
+          "x": 39,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "boots_combat",
+          "x": 38,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "helmet_liner",
+          "x": 37,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "balclava",
+          "x": 36,
+          "y": 71,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "gloves_liner",
+          "x": 46,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "winter_gloves_army",
+          "x": 45,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "emer_blanket",
+          "x": 44,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "towel",
+          "x": 43,
+          "y": 66,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "item": "blanket",
+          "x": 42,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 200]
+        },
+        {
+          "item": "sheet",
+          "x": 41,
+          "y": 66,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "item": "ear_plugs",
+          "x": 40,
+          "y": 66,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "item": "legpouch",
+          "x": 39,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "legpouch_large",
+          "x": 38,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "legrig",
+          "x": 37,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "ammo_satchel",
+          "x": 36,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "chestpouch",
+          "x": 55,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "grenadebandolier",
+          "x": 54,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "grenade_pouch",
+          "x": 53,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "tactical_grenade_pouch",
+          "x": 53,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "dump_pouch",
+          "x": 52,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "tacvest",
+          "x": 51,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "backpack",
+          "x": 50,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "camelbak",
+          "x": 49,
+          "y": 66,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "backpack_tactical_large",
+          "x": 55,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "molle_pack",
+          "x": 54,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "rucksack",
+          "x": 53,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "bigback",
+          "x": [51, 52],
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "duffelbag",
+          "x": [49, 50],
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "glasses_bal",
+          "x": 46,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "mask_bal",
+          "x": 45,
+          "y": 65,
+          "chance": 75,
+          "repeat": [25, 50]
+        },
+        {
+          "item": "helmet_army",
+          "x": [43, 44],
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "tac_helmet",
+          "x": 42,
+          "y": 65,
+          "chance": 75,
+          "repeat": [25, 50]
+        },
+        {
+          "item": "gloves_tactical",
+          "x": 41,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "kevlar",
+          "x": 40,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "plate_carrier_msv",
+          "variant": "ocp",
+          "x": [38, 39],
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "elbow_pads",
+          "x": 37,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "knee_pads",
+          "x": 36,
+          "y": 65,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "light_disposable_cell",
+          "x": 46,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "light_battery_cell",
+          "x": 45,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "light_plus_battery_cell",
+          "x": 44,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "hand_crank_charger",
+          "x": 43,
+          "y": 60,
+          "chance": 75,
+          "repeat": [25, 50]
+        },
+        {
+          "item": "flashlight",
+          "x": 42,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 200]
+        },
+        {
+          "item": "heavy_flashlight",
+          "x": 41,
+          "y": 60,
+          "chance": 75,
+          "repeat": [25, 50]
+        },
+        {
+          "item": "electric_lantern",
+          "x": 40,
+          "y": 60,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "item": "flaregun",
+          "x": 39,
+          "y": 60,
+          "chance": 75,
+          "repeat": [25, 50]
+        },
+        {
+          "item": "signal_flare",
+          "x": 38,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "glowstick",
+          "x": 37,
+          "y": 60,
+          "chance": 75,
+          "repeat": [150, 300],
+          "ammo": 100
+        },
+        {
+          "item": "handflare",
+          "x": 36,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 100],
+          "ammo": 100
+        },
+        {
+          "item": "manual_swimming",
+          "x": 55,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "manual_melee",
+          "x": 54,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "manual_stabbing",
+          "x": 53,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "manual_gun",
+          "x": 52,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "manual_traps_mil",
+          "x": 51,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "manual_traps_mil_basic",
+          "x": 50,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "manual_rifle",
+          "x": 49,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "mag_fieldrepair",
+          "x": 48,
+          "y": 60,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "boltcutters",
+          "x": 55,
+          "y": 59,
+          "chance": 75,
+          "repeat": [10, 25]
+        },
+        {
+          "item": "halligan",
+          "x": 54,
+          "y": 59,
+          "chance": 75,
+          "repeat": [10, 25]
+        },
+        {
+          "item": "crowbar",
+          "x": 53,
+          "y": 59,
+          "chance": 75,
+          "repeat": [10, 25]
+        },
+        {
+          "item": "e_tool",
+          "x": 52,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "mask_gas",
+          "x": 51,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "gasfilter_med",
+          "x": 50,
+          "y": 59,
+          "chance": 75,
+          "repeat": [10, 30]
+        },
+        {
+          "item": "binoculars",
+          "x": 49,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "multitool",
+          "x": 46,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "heatpack",
+          "x": 45,
+          "y": 59,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "item": "pockknife",
+          "x": 44,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "ref_lighter",
+          "x": 44,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "two_way_radio",
+          "x": 43,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "rope_30",
+          "x": 42,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "sleeping_bag_roll",
+          "x": 41,
+          "y": 59,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "item": "rollmat",
+          "x": 40,
+          "y": 59,
+          "chance": 75,
+          "repeat": [150, 300]
+        },
+        {
+          "group": "full_ifak",
+          "x": 39,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "thermos",
+          "x": 38,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "mess_kit",
+          "x": 37,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "item": "water_purifier",
+          "x": 36,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "group": "pur_tablets_bottle_plastic_small_15",
+          "x": 36,
+          "y": 59,
+          "chance": 75,
+          "repeat": [50, 100]
+        },
+        {
+          "group": "MRE",
+          "x": [49, 55],
+          "y": [53, 54],
+          "chance": 75,
+          "repeat": 1500
+        },
+        { "group": "MRE", "x": [49, 55], "y": 48, "chance": 75, "repeat": 750 },
+        {
+          "group": "groce_pasta",
+          "x": [44, 46],
+          "y": 54,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "dry_beans_bag_plastic_6",
+          "x": [41, 43],
+          "y": 54,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "big_canned_food",
+          "x": [36, 40],
+          "y": 54,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "oatmeal_box_small_4",
+          "x": [45, 46],
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "flour_bag_paper_powder_70",
+          "x": [43, 44],
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "cornmeal_box_small_10",
+          "x": [41, 42],
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "coffee_raw_bag_plastic_20",
+          "x": 40,
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "tea_raw_bag_plastic_33",
+          "x": 39,
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "sugar_box_small_71",
+          "x": 38,
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "salt_bag_plastic_100",
+          "x": 37,
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "cooking_oil",
+          "x": 36,
+          "y": 53,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "meat_salted",
+          "x": [45, 46],
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "salted_fish",
+          "x": [43, 44],
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "milk_powder_bag_plastic_4",
+          "x": [41, 42],
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "powder_eggs_bottle_plastic_small_16",
+          "x": [39, 40],
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "milk_UHT",
+          "x": 37,
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "item": "water_clean",
+          "x": 38,
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        {
+          "group": "crackers_box_small_8",
+          "x": 36,
+          "y": 48,
+          "chance": 75,
+          "repeat": [50, 150]
+        },
+        { "item": "utility_exoskeleton_off", "x": 6, "y": 14, "chance": 10 },
+        { "item": "ice_utility_exoskeleton_off", "x": 6, "y": 14, "chance": 5 }
+      ],
+      "place_monsters": [
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [4, 23],
+          "y": [0, 23],
+          "repeat": [0, 1],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [24, 47],
+          "y": [0, 23],
+          "repeat": [0, 1],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [48, 71],
+          "y": [0, 19],
+          "repeat": [0, 1],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [72, 95],
+          "y": [0, 23],
+          "repeat": [4, 5],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [4, 23],
+          "y": [24, 45],
+          "repeat": [0, 1],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [72, 95],
+          "y": [24, 45],
+          "repeat": [6, 8],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [4, 23],
+          "y": [48, 71],
+          "repeat": [0, 1],
+          "density": 0.1
+        },
+        {
+          "monster": "GROUP_MIL_BASE",
+          "x": [74, 95],
+          "y": [48, 71],
+          "repeat": [4, 5],
+          "density": 0.1
+        }
+      ],
+      "place_vehicles": [
+        {
+          "vehicle": "military_vehicles",
+          "x": 79,
+          "y": 42,
+          "chance": 25,
+          "status": 1,
+          "rotation": 90
+        },
+        {
+          "vehicle": "military_vehicles",
+          "x": 86,
+          "y": 13,
+          "chance": 25,
+          "status": 1,
+          "rotation": 270
+        },
+        {
+          "vehicle": "military_vehicles",
+          "x": 79,
+          "y": 54,
+          "chance": 25,
+          "status": 1,
+          "rotation": 270
+        },
+        {
+          "vehicle": "forklift_vehicles",
+          "x": 62,
+          "y": 62,
+          "chance": 80,
+          "status": 0,
+          "rotation": 90
+        }
+      ]
+    }
+  }
+]
