@@ -133,3 +133,30 @@ A slot-based system could also serve as a reasonable approximation for equipment
 **TL;DR**: some holsters should allow guns with certain (classes of) gunmods to be put inside by discounting their volume and length (but not weight) for volume/length restriction calculations.
 
 [proper outline TBD]
+## Worn equipment parts
+
+**TL;DR**: one should be able to designate certain pockets as points for attaching wearable parts. These pockets should treat any direct contents (i.e. only items immediately inside the pockets, but not contents of those items, unless the contents are also in a "wearable" pocket) as being worn on one's body.
+
+Modularity of equipment is an important concept in the modern soldier equipment doctrine. This would become doubly true for survivors, to whom being able to outfit themselves to meet the demands of survival is crucial.
+
+The military aspect of modularity is further augmented by the aftermarket, with replaceable and additional belts, straps, covers, and supporting attachments being plenty and easy to get. This, in turn, would imply that there should be similar options for the survivor, especially when it comes to expanding the functionality of one's worn gear.
+
+This could be achieved by designating some pockets on tactical and civilian gear as wearable slots. When placed inside those slots, items (restricted by ID or flag) become "worn" for the purpose of coverage, warmth, encumbrance, armor, and any other effect a worn item may have on the wearer. These items should be able to store other items in them, as well as have their own potential wearable slots. Examples of how this could be beneficial include:
+
+- replaceable plate carrier cummerbunds, which can offer more PALS webbing, or be lighter and less warm, or offer extra pockets of their own
+- padded shoulder straps aimed at reducing the encumbrance effect of worn tactical equipment (such as plate carriers and chest rigs)
+- extra attachable pockets, such as carabiners, Velcro pouches, and rings for carrying items with round bodies
+
+Crucially, this designation needn't be through separate flags or properties: it could be achieved by allowing pockets to define their own `armor_data`. This serves multiple purposes:
+
+- to make defining and processing these pockets easier
+- to allow these pockets the same benefits as worn items (including being put on a different layer)
+- to inherently and automatically enable items inside those pockets be hit and damaged
+
+### Automatic ablative pockets
+
+That last point could be an effective way of replacing the designated `ablative` property of a pocket, as well as bringing more realism to the gameplay. Should all pockets have `armor_data` to them, items in those pockets could suffer the same blows as the character; this could mean the items could be damaged or destroyed, but also protect the owner by softening the blow before it reaches the body.
+
+(The damage reduction value could easily be achieved if we know the item's material type and thickness. The alternative to thickness would be using volume and weight to calculate the item's density, which, coupled with the known materials, could then be used to approximate the damage reduction. The damage reduced by the item is transferred to the item itself, potentially destroying it.)
+
+(As an aside, inside-the-pocket coverage per item could be calculated from its dimensions.)
