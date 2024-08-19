@@ -17,35 +17,35 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Tactical Tailor canteen pouch",
           "str_pl": "Tactical Tailor canteen pouches"
         },
-        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant_multicam>",
+        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Tactical Tailor canteen pouch",
           "str_pl": "Tactical Tailor canteen pouches"
         },
-        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant_coyote>",
+        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Tactical Tailor canteen pouch",
           "str_pl": "Tactical Tailor canteen pouches"
         },
-        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant_ranger>",
+        "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -124,57 +124,57 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "FROG.PRO dump pouch",
           "str_pl": "FROG.PRO dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_multicam>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_multicam_black",
+        "id": "multicam_black",
 
         "name": {
           "str": "FROG.PRO dump pouch",
           "str_pl": "FROG.PRO dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_multicam_black>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "FROG.PRO dump pouch",
           "str_pl": "FROG.PRO dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_black>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "FROG.PRO dump pouch",
           "str_pl": "FROG.PRO dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_coyote>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "FROG.PRO dump pouch",
           "str_pl": "FROG.PRO dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant_ranger>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
       }
@@ -241,57 +241,57 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_multicam>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_multicam_black",
+        "id": "multicam_black",
 
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_multicam_black>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_black>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_coyote>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant_ranger>",
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
       }
@@ -330,46 +330,46 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
-        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_multicam>",
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
-        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_black>",
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
-        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_coyote>",
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
-        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant_ranger>",
+        "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -442,35 +442,35 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "First Tactical water bottle pouch",
           "str_pl": "First Tactical water bottle pouches"
         },
-        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant_black>",
+        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "First Tactical water bottle pouch",
           "str_pl": "First Tactical water bottle pouches"
         },
-        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant_coyote>",
+        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_olive",
+        "id": "olive",
 
         "name": {
           "str": "First Tactical water bottle pouch",
           "str_pl": "First Tactical water bottle pouches"
         },
-        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant_olive>",
+        "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant:olive>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -537,35 +537,35 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Tasmanian Tiger radio pouch",
           "str_pl": "Tasmanian Tiger radio pouches"
         },
-        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant_black>",
+        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Tasmanian Tiger radio pouch",
           "str_pl": "Tasmanian Tiger radio pouches"
         },
-        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant_coyote>",
+        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_olive",
+        "id": "olive",
 
         "name": {
           "str": "Tasmanian Tiger radio pouch",
           "str_pl": "Tasmanian Tiger radio pouches"
         },
-        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant_olive>",
+        "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant:olive>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -656,65 +656,65 @@
     ],
 
     "name": {
-      "str": "Condor gadget pouch",
-      "str_pl": "Condor gadget pouches"
+      "str": "gadget pouch",
+      "str_pl": "gadget pouches"
     },
     "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.",
 
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
-        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_multicam>",
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
-        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_black>",
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
-        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_coyote>",
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
-        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_ranger>",
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_navy",
+        "id": "navy",
 
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
-        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant_navy>",
+        "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:navy>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -880,46 +880,46 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
-        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_black>",
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
-        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_coyote>",
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
-        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_ranger>",
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_navy",
+        "id": "navy",
 
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
-        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant_navy>",
+        "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:navy>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -1014,37 +1014,37 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Condor deployment bag"
         },
-        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant_multicam>",
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Condor deployment bag"
         },
-        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant_black>",
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Condor deployment bag"
         },
-        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant_coyote>",
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_red",
+        "id": "red",
 
         "name": {
           "str": "Condor deployment bag"
@@ -1244,35 +1244,35 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "5.11 Tactical Flex handcuffs pouch",
           "str_pl": "5.11 Tactical Flex handcuffs pouches"
         },
-        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant_black>",
+        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "5.11 Tactical Flex handcuffs pouch",
           "str_pl": "5.11 Tactical Flex handcuffs pouches"
         },
-        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant_coyote>",
+        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "5.11 Tactical Flex handcuffs pouch",
           "str_pl": "5.11 Tactical Flex handcuffs pouches"
         },
-        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant_ranger>",
+        "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -1349,57 +1349,57 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_multicam>",
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_multicam_black",
+        "id": "multicam_black",
 
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_multicam_black>",
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_black>",
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_coyote>",
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant_ranger>",
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
       }
@@ -1469,46 +1469,46 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
-        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_multicam>",
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
-        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_coyote>",
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
-        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_black>",
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
-        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant_ranger>",
+        "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -1999,24 +1999,24 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Gonex water bottle pouch",
           "str_pl": "Gonex water bottle pouches"
         },
-        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant_black>",
+        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Gonex water bottle pouch",
           "str_pl": "Gonex water bottle pouches"
         },
-        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant_coyote>",
+        "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -2087,101 +2087,101 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_black>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:black>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_coyote>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_ranger>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_woodland",
+        "id": "woodland",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_woodland>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:woodland>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_grey",
+        "id": "grey",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_grey>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:grey>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_multicam_black",
+        "id": "multicam_black",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam_black>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_multicam_tropic",
+        "id": "multicam_tropic",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam_tropic>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam_tropic>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_multicam_arid",
+        "id": "multicam_arid",
 
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant_multicam_arid>",
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam_arid>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -2241,84 +2241,84 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_black>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:black>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_tan",
+        "id": "tan",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_tan>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:tan>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_ranger>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_olive",
+        "id": "olive",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_olive>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:olive>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_grey",
+        "id": "grey",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_grey>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:grey>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_multicam>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_navy",
+        "id": "navy",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant_navy>",
+        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:navy>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_spruce_green",
+        "id": "spruce_green",
 
         "name": {
           "str": "Angel Armor pepper spray pouch",
@@ -2390,24 +2390,24 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Condor binocular pouch",
           "str_pl": "Condor binocular pouches"
         },
-        "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant_black>",
+        "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_od",
+        "id": "od",
 
         "name": {
           "str": "Condor binocular pouch",
           "str_pl": "Condor binocular pouches"
         },
-        "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant_od>",
+        "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant:od>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -2486,5 +2486,101 @@
 
     "price": "25 USD",
     "price_postapoc": "1 USD"
+  },
+  {
+    "id": "pouch_gas_mask_usmc",
+    "type": "ARMOR",
+    "category": "container",
+
+    "//sources": [
+      "https://armynavyoutdoors.com/eagle-usmc-gas-mask-gp-molle-pouch/",
+      [
+        "https://www.venturesurplus.com/products/eagle-industries-gas-mask-pouch/",
+        "weight"
+      ],
+      ["https://www.ebay.com/itm/203777900749", "variant reference"]
+    ],
+
+    "name": {
+      "str": "gas mask MOLLE pouch",
+      "str_pl": "gas mask MOLLE pouches"
+    },
+    "description": "A large nylon pouch for carrying one's gas mask.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to webbing or be worn at the leg.",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "coyote",
+
+        "name": {
+          "str": "USMC gas mask pouch",
+          "str_pl": "USMC gas mask pouches"
+        },
+        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "olive",
+
+        "name": {
+          "str": "USMC gas mask pouch",
+          "str_pl": "USMC gas mask pouches"
+        },
+        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant:olive>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "255 g",
+    "//dimensions": {
+      "length": "11 in",
+      "width": "9 in",
+      "height": "1.5 mm",
+      "raw": "95.8 ml",
+      "trim": 0.15,
+      "notes": ["height is presumed thickness of two walls of the pouch"]
+    },
+    "volume": "81 ml",
+
+    "symbol": "[",
+    "color": "dark_gray",
+
+    "material": ["nylon"],
+    "looks_like": "dump_pouch",
+    "repairs_like": "legrig",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "description": "Gas mask pouch",
+
+        "max_contains_weight": "1 kg",
+        "//max_contains_volume": [
+          "dimensions of CM-7M gas mask",
+          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
+          {
+            "length": "6.85 in",
+            "width": "7.75 in",
+            "height": "10.60 in",
+            "raw": "9222 ml",
+            "trim": 0.45,
+            "notes": ["dimensions acquired from visual reference"]
+          }
+        ],
+        "max_contains_volume": "5072 ml",
+        "max_item_length": "305 mm",
+
+        "moves": 170
+      }
+    ],
+
+    "//flags": ["removed BELTED and OVERSIZE"],
+    "flags": ["CANT_WEAR", "PALS_MEDIUM"],
+
+    "price": "91 USD",
+    "//price_postapoc": "3 USD"
   }
 ]

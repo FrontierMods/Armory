@@ -28,57 +28,57 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "FROG.PRO Chiron IFAK pouch",
           "str_pl": "FROG.PRO Chiron IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_multicam>",
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
       },
       {
-        "id": "pouch_multicam_black",
+        "id": "multicam_black",
 
         "name": {
           "str": "FROG.PRO Chiron IFAK pouch",
           "str_pl": "FROG.PRO Chiron IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_multicam_black>",
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "FROG.PRO Chiron IFAK pouch",
           "str_pl": "FROG.PRO Chiron IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_black>",
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "FROG.PRO Chiron IFAK pouch",
           "str_pl": "FROG.PRO Chiron IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_coyote>",
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "FROG.PRO Chiron IFAK pouch",
           "str_pl": "FROG.PRO Chiron IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant_ranger>",
+        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
       }
@@ -224,13 +224,13 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Rescue Essentials IFAK pouch",
           "str_pl": "Rescue Essentials IFAK pouches"
         },
-        "description": "A large nylon pouch for first aid items, such as bandages and tourniquets.  Stretchy nylon straps inside can hold a variety of different items, including pill bottles, secured in place.  <variant_black>",
+        "description": "A large nylon pouch for first aid items, such as bandages and tourniquets.  Stretchy nylon straps inside can hold a variety of different items, including pill bottles, secured in place.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       }

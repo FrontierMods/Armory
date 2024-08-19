@@ -1,10 +1,16 @@
 [
   {
-    "id": "pouch_leg_gas_mask_hsgi",
+    "id": "leg_rig_gas_mask_hsgi",
     "type": "ARMOR",
     "category": "container",
 
-    "//sources": ["https://www.highspeedgear.com/12gm01"],
+    "//sources": [
+      "https://www.highspeedgear.com/12gm01",
+      [
+        "https://kusemonotactical.sakura.ne.jp/hq/sample-page/review/equipments/hsgi-gas-mask-pouch-v2/",
+        "coverage reference"
+      ]
+    ],
 
     "//notes": [
       "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description"
@@ -19,57 +25,57 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "HSGI gas mask leg pouch",
           "str_pl": "HSGI gas mask leg pouches"
         },
-        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_multicam>",
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_multicam_black",
+        "id": "multicam_black",
 
         "name": {
           "str": "HSGI gas mask leg pouch",
           "str_pl": "HSGI gas mask leg pouches"
         },
-        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_multicam_black>",
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "HSGI gas mask leg pouch",
           "str_pl": "HSGI gas mask leg pouches"
         },
-        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_black>",
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "HSGI gas mask leg pouch",
           "str_pl": "HSGI gas mask leg pouches"
         },
-        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_coyote>",
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_olive",
+        "id": "olive",
 
         "name": {
           "str": "HSGI gas mask leg pouch",
           "str_pl": "HSGI gas mask leg pouches"
         },
-        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant_olive>",
+        "description": "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.  <variant:olive>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -96,9 +102,10 @@
     "sided": true,
     "armor": [
       {
-        "encumbrance": 1,
+        "encumbrance": 2,
 
-        "coverage": 100,
+        "//coverage": "60% of the narrow side of the leg → 60% * 40% (narrow side coverage share) = 24%",
+        "coverage": 24,
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_upper_l", "leg_upper_r"]
       }
@@ -128,7 +135,7 @@
         "max_contains_volume": "5072 ml",
         "max_item_length": "305 mm",
 
-        "volume_encumber_modifier": 0.33
+        "moves": 170
       }
     ],
 
@@ -142,146 +149,67 @@
     "//price_postapoc": "3 USD"
   },
   {
-    "id": "pouch_gas_mask_usmc",
+    "id": "leg_rig_magazine_556_condor",
     "type": "ARMOR",
-    "category": "container",
 
     "//sources": [
-      "https://armynavyoutdoors.com/eagle-usmc-gas-mask-gp-molle-pouch/",
+      "https://condoroutdoor.com/products/drop-leg-m4-mag-pouch",
       [
-        "https://www.venturesurplus.com/products/eagle-industries-gas-mask-pouch/",
+        "https://www.amazon.com/Condor-Drop-Leg-Mag-Pouch/dp/B01NH0PO3U",
+        "dimensions",
         "weight"
-      ],
-      ["https://www.ebay.com/itm/203777900749", "variant reference"]
-    ],
-
-    "//notes": [
-      "seems to work primarily as a leg strap or a shoulder strap, as per photos and manufacturer description",
-      "manufacturer is Eagle Industries",
-      "likely only takes up two full slots of PALS"
+      ]
     ],
 
     "name": {
-      "str": "gas mask MOLLE pouch",
-      "str_pl": "gas mask MOLLE pouches"
-    },
-    "description": "A large nylon pouch for carrying one's gas mask.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to webbing or be worn at the leg.",
-
-    "variant_type": "gun",
-    "variants": [
-      {
-        "id": "pouch_coyote",
-
-        "name": {
-          "str": "USMC gas mask pouch",
-          "str_pl": "USMC gas mask pouches"
-        },
-        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant_coyote>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "pouch_olive",
-
-        "name": {
-          "str": "USMC gas mask pouch",
-          "str_pl": "USMC gas mask pouches"
-        },
-        "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant_olive>",
-        "expand_snippets": true,
-        "weight": 1
-      }
-    ],
-
-    "weight": "255 g",
-    "//dimensions": {
-      "length": "11 in",
-      "width": "9 in",
-      "height": "1.5 mm",
-      "raw": "95.8 ml",
-      "trim": 0.15,
-      "notes": ["height is presumed thickness of two walls of the pouch"]
-    },
-    "volume": "81 ml",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon"],
-    "looks_like": "dump_pouch",
-    "repairs_like": "legrig",
-
-    "pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Gas mask pouch",
-
-        "max_contains_weight": "1 kg",
-        "//max_contains_volume": [
-          "dimensions of CM-7M gas mask",
-          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
-          {
-            "length": "6.85 in",
-            "width": "7.75 in",
-            "height": "10.60 in",
-            "raw": "9222 ml",
-            "trim": 0.45,
-            "notes": ["dimensions acquired from visual reference"]
-          }
-        ],
-        "max_contains_volume": "5072 ml",
-        "max_item_length": "305 mm",
-
-        "volume_encumber_modifier": 0.33
-      }
-    ],
-
-    "//flags": ["added WATER_FRIENDLY", "removed BELTED and OVERSIZE"],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
-
-    "price": "91 USD",
-    "//price_postapoc": "3 USD"
-  },
-  {
-    "id": "pouch_leg_magazine_556_t3",
-    "type": "ARMOR",
-
-    "//sources": ["https://www.t3gear.com/t3-drop-leg-m4-double-mag-pouch/"],
-
-    "name": {
-      "str": "leg rifle magazine pouch",
-      "str_pl": "leg rifle magazine pouches"
+      "str": "drop leg magazine rig"
     },
     "description": "A pair of nylon pouches with straps to attach to the leg with.  Each holds up to two rifle magazines.",
 
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
-          "str": "T3 rifle magazine leg pouch",
-          "str_pl": "T3 rifle magazine leg pouches"
+          "str": "Condor drop leg magazine rig"
         },
-        "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.  <variant_coyote>",
+        "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.  <variant:coyote>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Condor drop leg magazine rig"
+        },
+        "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "olive",
+
+        "name": {
+          "str": "Condor drop leg magazine rig"
+        },
+        "description": "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.  <variant:olive>",
         "expand_snippets": true,
         "weight": 1
       }
     ],
 
-    "//weight": "9.44 oz",
-    "weight": "267620 mg",
+    "//weight": "16 oz = 453.59 g",
+    "weight": "453 g 590 mg",
     "//dimensions": {
-      "length": "8 in",
-      "width": "6.5 in",
-      "height": "3 mm",
-      "raw": "100.65 ml",
-      "trim": -0.05,
-      "notes": ["negative trim to account for straps and buckles"]
+      "length": "12 in",
+      "width": "8 in",
+      "height": "6 mm",
+      "raw": "371.61 ml",
+      "trim": 0
     },
-    "volume": "106 ml",
-    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
+    "volume": "372 ml",
 
     "material": ["nylon"],
 
@@ -295,7 +223,7 @@
       {
         "encumbrance": 1,
 
-        "coverage": 13,
+        "coverage": 18,
         "covers": ["leg_l", "leg_r"],
         "specifically_covers": ["leg_upper_l", "leg_upper_r"]
       }
@@ -305,28 +233,35 @@
       {
         "pocket_type": "CONTAINER",
 
+        "//reference": "double 30-round STANAG magazine capacity",
+
         "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "4 kg",
         "//max_contains_volume": "2 × STANAG 30-round magazine w/ ranger plate",
         "max_contains_volume": "610 ml",
         "//min_item_length": "length of STANAG 20-round magazine",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
-        "moves": 90
+        "//magazine_pouch": {
+          "type": "III",
+          "capacity": 2
+        },
+
+        "moves": 200
       },
       {
         "pocket_type": "CONTAINER",
 
         "description": "Rifle magazine pouch",
 
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "4 kg",
         "max_contains_volume": "610 ml",
         "min_item_length": "130 mm",
         "max_item_length": "261 mm",
 
-        "moves": 90
+        "moves": 200
       }
     ],
 
@@ -339,11 +274,11 @@
 
     "flags": ["WATER_FRIENDLY", "BELTED"],
 
-    "price": "75 USD",
+    "price": "34 USD 95 cent",
     "price_postapoc": "1 USD"
   },
   {
-    "id": "pouch_leg_drop_tacmed",
+    "id": "leg_rig_tacmed",
     "type": "ARMOR",
 
     "//sources": [
@@ -368,53 +303,53 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "TacMed drop leg pouch",
           "str_pl": "TacMed drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_multicam>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "TacMed drop leg pouch",
           "str_pl": "TacMed drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_coyote>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "TacMed drop leg pouch",
           "str_pl": "TacMed drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_black>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "TacMed drop leg pouch",
           "str_pl": "TacMed drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant_ranger>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       }
     ],
 
     "//weight": "14.3 oz",
-    "weight": "405400 mg",
+    "weight": "405 g 400 mg",
     "//dimensions": {
       "length": "9.5 in",
       "width": "9 in",
@@ -459,13 +394,23 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "BELTED", "PALS_MEDIUM"],
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "size": 2
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+
+    "flags": ["BELTED", "PALS_MEDIUM"],
 
     "price": "70 USD",
     "price_postapoc": "1 USD"
   },
   {
-    "id": "pouch_leg_drop_fox",
+    "id": "leg_rig_fox",
     "type": "ARMOR",
 
     "//sources": [
@@ -487,46 +432,46 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "pouch_multicam",
+        "id": "multicam",
 
         "name": {
           "str": "Fox Outdoor drop leg pouch",
           "str_pl": "Fox Outdoor drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_multicam>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_coyote",
+        "id": "coyote",
 
         "name": {
           "str": "Fox Outdoor drop leg pouch",
           "str_pl": "Fox Outdoor drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_coyote>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
       },
       {
-        "id": "pouch_black",
+        "id": "black",
 
         "name": {
           "str": "Fox Outdoor drop leg pouch",
           "str_pl": "Fox Outdoor drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_black>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant:black>",
         "expand_snippets": true,
         "weight": 1
       },
       {
-        "id": "pouch_ranger",
+        "id": "ranger",
 
         "name": {
           "str": "Fox Outdoor drop leg pouch",
           "str_pl": "Fox Outdoor drop leg pouches"
         },
-        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant_ranger>",
+        "description": "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -578,7 +523,7 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "BELTED"],
+    "flags": ["BELTED"],
 
     "price": "48 USD",
     "price_postapoc": "1 USD"
