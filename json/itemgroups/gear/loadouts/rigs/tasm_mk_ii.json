@@ -69,13 +69,13 @@
     "entries": [
       {
         "item": "harness_h_direct_action",
-        "contents-group": "placard_tasm_mk_ii:any"
+        "contents-group": "placard/tasm/mk_ii:any"
       }
     ]
   },
 
   {
-    "id": "placard_tasm_mk_ii:any",
+    "id": "placard/tasm/mk_ii:any",
     "type": "item_group",
     "subtype": "collection",
 
