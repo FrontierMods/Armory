@@ -249,7 +249,7 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "BELTED", "OVERSIZE", "STURDY", "ONLY_ONE"],
+    "flags": ["BELTED", "STURDY", "ONLY_ONE"],
 
     "price": "190 USD",
     "price_postapoc": "2 USD"
@@ -322,7 +322,9 @@
           }
         ],
 
-        "volume_encumber_modifier": 0.4,
+        "encumbrance": 1,
+
+        "volume_encumber_modifier": 0.75,
 
         "coverage": 100,
         "covers": ["torso"],
@@ -385,9 +387,9 @@
     ],
 
     "//flags": [
-      "removed OVERSIZE: while this belt is somewhat-accomodating, it's unlikely to be comfortable for someone significantly larger than even a large regular human"
+      "no OVERSIZE: while this belt is somewhat-accomodating, it's unlikely to be comfortable for someone significantly larger than even a large regular human"
     ],
-    "flags": ["WATER_FRIENDLY", "BELTED"],
+    "flags": ["BELTED", "ONLY_ONE"],
 
     "price": "125 USD",
     "price_postapoc": "250 cent"
