@@ -350,5 +350,15 @@
     "result": "chestrig",
     "type": "recipe",
     "obsolete": true
+  },
+  {
+    "result": "ballistic_vest_heavy_arms",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "ballistic_vest_heavy_legs",
+    "type": "recipe",
+    "obsolete": true
   }
 ]
