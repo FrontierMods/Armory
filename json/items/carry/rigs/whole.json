@@ -138,7 +138,7 @@
 
     "armor": [
       {
-        "encumbrance": [0, 4],
+        "encumbrance": [0, 3],
 
         "//coverage": [
           "harness = 4% (front straps) + 6% (upper back straps) = 10%"
@@ -150,7 +150,7 @@
         "volume_encumber_modifier": 0.05
       },
       {
-        "encumbrance": [1, 10],
+        "encumbrance": [1, 7],
 
         "//coverage": [
           "~65% of front lower torso coverage = 20.8% ≈ 21%",
@@ -282,7 +282,7 @@
         "id": "ocp",
 
         "name": { "str": "MOLLE II FLC vest" },
-        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:ocp>.",
+        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:ocp>",
         "expand_snippets": true,
         "weight": 4
       },
@@ -290,7 +290,7 @@
         "id": "ucp",
 
         "name": { "str": "MOLLE II FLC vest" },
-        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:ucp>.",
+        "description": "Fighting Load Carrier vest, part of the MOLLE II modular system of soldier equipment.  Designed to be worn over the armor, it can be equipped with multiple MOLLE pouches and disposed of quickly, without the need to doff ballistic armor.  <variant:ucp>",
         "expand_snippets": true,
         "weight": 2
       },
@@ -331,7 +331,7 @@
 
     "armor": [
       {
-        "encumbrance": [1, 15],
+        "encumbrance": [1, 10],
 
         "//coverage": [
           "35% front coverage",
@@ -345,7 +345,7 @@
         "volume_encumber_modifier": 0.75
       },
       {
-        "encumbrance": [1, 8],
+        "encumbrance": [1, 5],
 
         "coverage": 5,
         "covers": ["torso"],
@@ -520,7 +520,7 @@
 
     "armor": [
       {
-        "encumbrance": [1, 13],
+        "encumbrance": [1, 9],
 
         "//coverage": [
           "half of large SAPI plate coverage = 18%",
@@ -530,10 +530,10 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.5
+        "volume_encumber_modifier": 0.6
       },
       {
-        "encumbrance": [0, 6],
+        "encumbrance": [0, 4],
 
         "//coverage": "half of large SAPI plate coverage ≈ 6%",
         "coverage": 6,
@@ -840,31 +840,17 @@
 
     "armor": [
       {
-        "//encumbrance": "low encumbrance values to account for the fact that this rig has a FIT flag already",
         "encumbrance": [1, 4],
 
         "//coverage": [
           "~16% of front upper torso coverage = 6.4%",
-          "harness = 1.5% (front straps) + 1.5% (upper back straps) = 3%"
+          "harness = 1.5% (front straps) + 2.5% (back straps) = 4%"
         ],
-        "coverage": 9,
+        "coverage": 10,
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
         "volume_encumber_modifier": 0.25
-      },
-      {
-        "encumbrance": [0, 3],
-
-        "//coverage": [
-          "~10% of front lower torso coverage = 4%",
-          "1% for lower back straps"
-        ],
-        "coverage": 5,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
-        "volume_encumber_modifier": 0.125
       }
     ],
 
@@ -891,11 +877,11 @@
         "max_item_length": "207 mm",
 
         "//magazine_pouch": {
-          "type": "I"
+          "type": "I",
+          "modifiers": ["embedded_pocket"]
         },
 
-        "//volume_encumber_modifier": "-0.4 for being close to the body",
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -911,7 +897,7 @@
         "min_item_length": "50 mm",
         "max_item_length": "207 mm",
 
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -927,7 +913,7 @@
         "min_item_length": "50 mm",
         "max_item_length": "207 mm",
 
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -943,7 +929,7 @@
         "min_item_length": "50 mm",
         "max_item_length": "207 mm",
 
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -963,11 +949,11 @@
         "max_item_length": "142 mm",
 
         "//magazine_pouch": {
-          "type": "I"
+          "type": "I",
+          "modifiers": ["embedded_pocket"]
         },
 
-        "//volume_encumber_modifier": "-0.4 for being close to the body",
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -983,7 +969,7 @@
         "min_item_length": "80 mm",
         "max_item_length": "142 mm",
 
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -999,7 +985,7 @@
         "min_item_length": "80 mm",
         "max_item_length": "142 mm",
 
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -1015,7 +1001,7 @@
         "min_item_length": "80 mm",
         "max_item_length": "142 mm",
 
-        "volume_encumber_modifier": 1.1,
+        "volume_encumber_modifier": 0.9,
         "ripoff": 6,
         "moves": 70
       },
@@ -1027,6 +1013,7 @@
 
         "max_contains_weight": "1500 g",
         "max_contains_volume": "750 ml",
+        "min_item_volume": "100 ml",
         "//min_item_length": "arbitrary, to prevent smaller items from being stuck inside",
         "min_item_length": "100 mm",
         "//max_item_length": "arbitrary, for larger items",
@@ -1043,6 +1030,7 @@
 
         "max_contains_weight": "1500 g",
         "max_contains_volume": "750 ml",
+        "min_item_volume": "100 ml",
         "min_item_length": "100 mm",
         "max_item_length": "229 mm",
 
@@ -1052,7 +1040,7 @@
       }
     ],
 
-    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY", "FIT"],
+    "flags": ["WATER_FRIENDLY", "BELTED", "STURDY"],
 
     "price": "95 USD",
     "price_postapoc": "5 USD"
