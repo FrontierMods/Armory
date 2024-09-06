@@ -209,7 +209,7 @@
         "max_contains_volume": "3029 ml",
         "max_item_length": "250 mm",
 
-        "volume_encumber_modifier": 0.75
+        "volume_encumber_modifier": 0.5
       }
     ],
 
