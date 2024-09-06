@@ -48,7 +48,7 @@
           }
         ],
 
-        "encumbrance": 6,
+        "encumbrance": 4,
 
         "coverage": 34,
         "covers": ["torso"],
@@ -65,7 +65,7 @@
           }
         ],
 
-        "encumbrance": 4,
+        "encumbrance": 2,
 
         "coverage": 10,
         "covers": ["torso"],
