@@ -8,32 +8,19 @@
       {
         "distribution": [
           {
-            "item": "plate_carrier_msv",
-            "variant": "ocp",
+            "group": "loadout/msv/baseline:coordinated",
             "contents-group": ["some_esapi_front_plates", "custom_medium_lbv"],
             "prob": 100
           },
           {
             "collection": [
               {
-                "item": "plate_carrier_iotv",
-                "variant": "ocp",
+                "group": "loadout/iotv/baseline:coordinated",
                 "contents-group": "some_esapi_front_plates"
               },
               { "group": "loaded_lbv" }
             ],
             "prob": 20
-          },
-          {
-            "collection": [
-              {
-                "item": "plate_carrier_iotv",
-                "variant": "ucp",
-                "contents-group": "some_esapi_front_plates"
-              },
-              { "group": "loaded_lbv" }
-            ],
-            "prob": 10
           }
         ],
         "prob": 50
@@ -51,8 +38,7 @@
       {
         "distribution": [
           {
-            "item": "plate_carrier_msv",
-            "variant": "ocp",
+            "group": "loadout/msv/baseline:coordinated",
             "contents-group": [
               "pristine_esapi_front_plates",
               "custom_medium_lbv"
@@ -62,24 +48,12 @@
           {
             "collection": [
               {
-                "item": "plate_carrier_iotv",
-                "variant": "ocp",
+                "group": "loadout/iotv/baseline:coordinated",
                 "contents-group": "pristine_esapi_front_plates"
               },
               { "group": "loaded_lbv" }
             ],
             "prob": 20
-          },
-          {
-            "collection": [
-              {
-                "item": "plate_carrier_iotv",
-                "variant": "ucp",
-                "contents-group": "pristine_esapi_front_plates"
-              },
-              { "group": "loaded_lbv" }
-            ],
-            "prob": 10
           }
         ],
         "prob": 50
