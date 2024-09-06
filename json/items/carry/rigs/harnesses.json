@@ -150,8 +150,7 @@
 
     "armor": [
       {
-        "//encumbrance": "the rig itself is reported to be very comfortable to wear",
-        "encumbrance": [1, 9],
+        "encumbrance": [1, 4],
 
         "//coverage": [
           "2% × 2 from shoulders straps",
@@ -162,8 +161,7 @@
         "specifically_covers": ["torso_upper"]
       },
       {
-        "//encumbrance": "the rig itself is reported to be very comfortable to wear",
-        "encumbrance": [1, 12],
+        "encumbrance": [1, 2],
 
         "//coverage": ["1% from back belt"],
         "coverage": 1,
@@ -178,13 +176,18 @@
 
         "description": "QASM interface",
 
-        "volume_encumber_modifier": 0.75,
+        "//ablative": [
+          "making this pocket ablative allows the chassis to be damaged",
+          "more importantly, it shows the chassis clearly among the worn items, thus making inventory management more obvious when the player is dealing with the rig"
+        ],
+        "ablative": true,
 
-        "max_contains_weight": "8 kg",
+        "max_contains_weight": "16 kg",
         "max_contains_volume": "8 L",
 
         "flag_restriction": ["QASM_ATTACH"],
 
+        "volume_encumber_modifier": 0,
         "//moves": "not to upset the balance of chassis pocket moves",
         "moves": 10
       }
@@ -203,6 +206,8 @@
         "type": "detach_molle"
       }
     ],
+
+    "flags": ["BELTED"],
 
     "price": "72 USD",
     "price_postapoc": "50 cent"
@@ -389,7 +394,7 @@
 
     "armor": [
       {
-        "encumbrance": [1, 8],
+        "encumbrance": [1, 3],
 
         "//coverage": [
           "3% × 2 from shoulders straps",
@@ -397,15 +402,19 @@
         ],
         "coverage": 8,
         "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 11],
+        "encumbrance": [1, 2],
 
         "//coverage": ["1% from back belt"],
         "coverage": 1,
         "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.5
       }
     ],
 
@@ -415,12 +424,18 @@
 
         "description": "QASM interface",
 
-        "max_contains_weight": "8 kg",
+        "//ablative": [
+          "making this pocket ablative allows the chassis to be damaged",
+          "more importantly, it shows the chassis clearly among the worn items, thus making inventory management more obvious when the player is dealing with the rig"
+        ],
+        "ablative": true,
+
+        "max_contains_weight": "16 kg",
         "max_contains_volume": "8 L",
 
         "flag_restriction": ["QASM_ATTACH"],
 
-        "volume_encumber_modifier": 0.66,
+        "volume_encumber_modifier": 0,
         "//moves": "not to upset the balance of chassis pocket moves",
         "moves": 10
       },
@@ -438,7 +453,7 @@
 
         "flag_restriction": ["GUN_SLING"],
 
-        "volume_encumber_modifier": 0.87,
+        "volume_encumber_modifier": 0.25,
         "moves": 30
       }
     ],
@@ -453,6 +468,8 @@
         "type": "detach_molle"
       }
     ],
+
+    "flags": ["BELTED"],
 
     "price": "48 USD",
     "price_postapoc": "50 cent"
