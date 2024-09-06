@@ -179,7 +179,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.2
+        "volume_encumber_modifier": 0.27
       },
       {
         "material": [
@@ -211,7 +211,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.2
+        "volume_encumber_modifier": 0.27
       }
     ],
 
@@ -540,7 +540,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.35
       },
       {
         "//description": "Base vest, lower torso",
@@ -575,7 +575,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.35
       }
     ],
 
@@ -844,7 +844,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"],
 
-        "//volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.32
       },
 
       {
@@ -882,7 +882,7 @@
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"],
 
-        "//volume_encumber_modifier": 0.3
+        "volume_encumber_modifier": 0.32
       }
     ],
 
@@ -1012,7 +1012,7 @@
     ],
 
     "name": {
-      "str": "minimal plate carrier"
+      "str": "federal plate carrier"
     },
     "description": "TODO",
 
@@ -1142,14 +1142,16 @@
           }
         ],
 
-        "encumbrance": 7,
+        "encumbrance": 4,
 
         "coverage": 90,
         "cover_melee": 75,
         "cover_ranged": 90,
 
         "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
+        "specifically_covers": ["torso_upper"],
+
+        "volume_encumber_modifier": 0.35
       },
 
       {
@@ -1177,7 +1179,9 @@
         "cover_ranged": 46,
 
         "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
+        "specifically_covers": ["torso_lower"],
+
+        "volume_encumber_modifier": 0.35
       }
     ],
 
@@ -1200,6 +1204,7 @@
           "ABLATIVE_XL"
         ],
 
+        "volume_encumber_modifier": 0,
         "moves": 800
       },
       {
@@ -1220,6 +1225,7 @@
           "ABLATIVE_XL"
         ],
 
+        "volume_encumber_modifier": 0,
         "moves": 800
       }
     ],
