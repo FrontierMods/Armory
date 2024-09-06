@@ -80,7 +80,7 @@
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.1 }
         ],
 
-        "encumbrance": 2,
+        "encumbrance": 1,
 
         "coverage": 2,
         "covers": ["torso"],
