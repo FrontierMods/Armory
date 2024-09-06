@@ -4,7 +4,7 @@
 
 ### v1.X
 
-- [ ] **new types of holsters/sheaths**
+- [ ] **new types of holsters and sheaths**
   - [ ] `BOOT_HOLSTER`: for use with large boots and subcompact pistols
   - [ ] `BOOT_CLIP`: for use with large-ish boots and knives/tools
   - [ ] `WAISTBAND_TUCK`: concealable holsters
