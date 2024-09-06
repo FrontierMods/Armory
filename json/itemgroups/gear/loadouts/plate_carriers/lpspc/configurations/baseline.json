@@ -7,7 +7,7 @@
     "entries": [
       {
         "item": "plate_carrier_perroz",
-        "contents-group": ["cummerbund/perroz:any"]
+        "contents-group": "cummerbund/perroz:any"
       }
     ]
   },
