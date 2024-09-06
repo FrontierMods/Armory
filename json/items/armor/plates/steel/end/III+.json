@@ -14,7 +14,8 @@
       "str": "Tacticon steel medium plate, NIJ III+",
       "str_pl": "Tacticon steel medium plates, NIJ III+"
     },
-    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Tacticon Armament.  On the outward-facing side the manufacturer's logo is proudly displayed.  This plate is rated for NIJ III, which means it's been tested to survive at least 3 rounds of high-energy rifle rounds.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+    "description": "A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Tacticon Armament.  The outward-facing is bland safe for the rough texture of the anti-spalling cover.  <nij:iii+>.  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized \"medium\" and can only fit in carriers that allow medium-sized plates.",
+    "expand_snippets": true,
 
     "//weight": "8 lbs = 3628.7 g",
     "weight": "3629 g",
