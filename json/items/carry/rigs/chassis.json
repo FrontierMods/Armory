@@ -82,6 +82,7 @@
     "material": ["nylon"],
     "looks_like": "tacvest",
     "repairs_like": "tacvest",
+    "warmth": 4,
 
     "armor": [
       {
@@ -244,6 +245,7 @@
     "material": ["nylon", "plastic"],
     "looks_like": "tacvest",
     "repairs_like": "tacvest",
+    "warmth": 7,
 
     "armor": [
       {
@@ -584,6 +586,7 @@
     "material": ["nylon", "plastic"],
     "looks_like": "tacvest",
     "repairs_like": "tacvest",
+    "warmth": 5,
 
     "pocket_data": [
       {
@@ -778,6 +781,7 @@
     "material_thickness": 1,
     "looks_like": "vest",
     "repairs_like": "tacvest",
+    "warmth": 6,
 
     "armor": [
       {
@@ -1037,6 +1041,7 @@
     "material_thickness": 0.1,
     "looks_like": "purse",
     "repairs_like": "tacvest",
+    "warmth": 4,
 
     "armor": [
       {
@@ -1221,7 +1226,6 @@
       }
     ],
 
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "QASM_ATTACH"],
 
     "//price": [
       "50 USD 85 cent (full rig) - 15 USD (harness)",
@@ -1375,6 +1379,7 @@
     "material_thickness": 1.5,
     "looks_like": "vest",
     "repairs_like": "tacvest",
+    "warmth": 8,
 
     "armor": [
       {
