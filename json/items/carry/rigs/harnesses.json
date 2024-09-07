@@ -143,9 +143,9 @@
 
     "symbol": "[",
     "color": "dark_gray",
+    "looks_like": "seatbelt",
 
     "material": ["nylon"],
-    "looks_like": "seatbelt",
     "repairs_like": "tacvest",
     "warmth": 1,
 
@@ -388,9 +388,9 @@
 
     "symbol": "[",
     "color": "dark_gray",
+    "looks_like": "seatbelt",
 
     "material": ["nylon", "plastic"],
-    "looks_like": "seatbelt",
     "repairs_like": "tacvest",
     "warmth": 2,
 
