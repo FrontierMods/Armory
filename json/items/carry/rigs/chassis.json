@@ -942,7 +942,7 @@
       }
     ],
 
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "STURDY", "QASM_ATTACH"],
+    "flags": ["CANT_WEAR", "STURDY", "QASM_ATTACH"],
 
     "price": "201 USD",
     "price_postapoc": "1 USD"
@@ -1226,6 +1226,7 @@
       }
     ],
 
+    "flags": ["CANT_WEAR", "QASM_ATTACH"],
 
     "//price": [
       "50 USD 85 cent (full rig) - 15 USD (harness)",
@@ -1519,7 +1520,7 @@
       }
     ],
 
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "STURDY", "QASM_ATTACH"],
+    "flags": ["CANT_WEAR", "STURDY", "QASM_ATTACH"],
 
     "//price": "219 USD (price of the complete rig) - 48 USD (price of the H-harness)",
     "price": "171 USD",
