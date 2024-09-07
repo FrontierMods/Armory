@@ -147,6 +147,7 @@
     "material": ["nylon"],
     "looks_like": "seatbelt",
     "repairs_like": "tacvest",
+    "warmth": 1,
 
     "armor": [
       {
@@ -391,6 +392,7 @@
     "material": ["nylon", "plastic"],
     "looks_like": "seatbelt",
     "repairs_like": "tacvest",
+    "warmth": 2,
 
     "armor": [
       {

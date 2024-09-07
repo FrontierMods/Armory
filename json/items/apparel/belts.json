@@ -301,6 +301,7 @@
       "https://austrialpin.net/product-information/cobra-quick-releases/"
     ],
     "material": ["nylon", "aluminum"],
+    "warmth": 2,
 
     "symbol": "[",
     "color": "brown",
