@@ -18,7 +18,7 @@
                 "group": "loadout/iotv/baseline:coordinated",
                 "contents-group": "some_esapi_front_plates"
               },
-              { "group": "loaded_lbv" }
+              { "group": "loaded_lbv/military" }
             ],
             "prob": 20
           }
@@ -51,7 +51,7 @@
                 "group": "loadout/iotv/baseline:coordinated",
                 "contents-group": "pristine_esapi_front_plates"
               },
-              { "group": "loaded_lbv" }
+              { "group": "loaded_lbv/military" }
             ],
             "prob": 20
           }
