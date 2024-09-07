@@ -12,7 +12,7 @@
     ],
 
     "name": {
-      "str": "X-harness chest rig kit"
+      "str": "X-harness"
     },
     "description": "A set of straps and a soft pad, intended to hold a placard or a panel in order to form a chest rig.  This one is in the X pattern: shoulder straps cross each other at the back.",
 
@@ -21,7 +21,7 @@
       {
         "id": "multicam",
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
@@ -29,7 +29,7 @@
       {
         "id": "multicam_black",
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam_black>",
         "expand_snippets": true,
         "weight": 1
@@ -37,7 +37,7 @@
       {
         "id": "black",
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness " },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
@@ -45,7 +45,7 @@
       {
         "id": "coyote",
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
@@ -53,7 +53,7 @@
       {
         "id": "ranger",
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
@@ -61,7 +61,7 @@
       {
         "id": "grey",
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:grey>",
         "expand_snippets": true,
         "weight": 1
@@ -74,7 +74,7 @@
           "this cannot spawn in the wild"
         ],
 
-        "name": { "str": "Haley Strategic X-harness chest rig kit" },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  This one features a custom paint job, turning the harness into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
         "weight": 0
       }
@@ -233,7 +233,7 @@
     ],
 
     "name": {
-      "str": "H-harness chest rig kit"
+      "str": "H-harness"
     },
     "description": "A set of straps and a soft pad, intended to hold a placard or a panel in order to form a chest rig.  This one is in the H pattern: shoulder straps are connected by a textile bridge at the back.  An embedded set of retainers allow holding a gun sling, or a gun attached to one.",
 
@@ -242,7 +242,7 @@
       {
         "id": "multicam",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam>",
         "expand_snippets": true,
         "weight": 4
@@ -250,7 +250,7 @@
       {
         "id": "black",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
@@ -258,7 +258,7 @@
       {
         "id": "coyote",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 2
@@ -266,7 +266,7 @@
       {
         "id": "ranger",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 2
@@ -274,7 +274,7 @@
       {
         "id": "fde",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:fde>",
         "expand_snippets": true,
         "weight": 1
@@ -282,7 +282,7 @@
       {
         "id": "wildwood",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:wildwood>",
         "expand_snippets": true,
         "weight": 1
@@ -290,7 +290,7 @@
       {
         "id": "woodland",
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:woodland>",
         "expand_snippets": true,
         "weight": 1
@@ -303,7 +303,7 @@
           "this cannot spawn in the wild"
         ],
 
-        "name": { "str": "Direct Action H-harness chest rig kit" },
+        "name": { "str": "Direct Action H-harness" },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  This one features a custom paint job, turning the harness into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
         "expand_snippets": true,
         "weight": 0
