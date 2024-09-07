@@ -1,0 +1,85 @@
+[
+  {
+    "id": "loaded_lbv",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "container-group": "rigs/harnesses/all:any",
+        "group": "rigs/chassis/all:any"
+      }
+    ]
+  },
+  {
+    "id": "loaded_lbv/military",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "container-group": "rigs/harnesses/all:any",
+        "group": "rigs/chassis/military:any"
+      }
+    ]
+  },
+
+  {
+    "id": "rigs/harnesses/all:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "harness_x_haley" },
+      { "item": "harness_h_direct_action" }
+    ]
+  },
+
+  {
+    "id": "rigs/chassis/all:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "rigs/chassis/civilian:any" },
+      { "group": "rigs/chassis/military:any" }
+    ]
+  },
+  {
+    "id": "rigs/chassis/civilian:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "placard/condor/stowaway:any"
+      },
+      {
+        "group": "placard/onetigris/vulture:any"
+      }
+    ]
+  },
+  {
+    "id": "rigs/chassis/military:any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      {
+        "group": "placard/haley/magazine:any"
+      },
+      {
+        "group": "placard/haley/molle:any",
+        "contents-group": "custom_light_lbv"
+      },
+      {
+        "group": "placard/direct_action/tempest:any",
+        "contents-group": "custom_medium_lbv"
+      },
+      {
+        "group": "placard/tasm/mk_ii:any",
+        "contents-group": "custom_medium_lbv"
+      }
+    ]
+  }
+]
