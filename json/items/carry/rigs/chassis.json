@@ -78,9 +78,9 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "tacvest",
 
     "material": ["nylon"],
-    "looks_like": "tacvest",
     "repairs_like": "tacvest",
     "warmth": 4,
 
@@ -241,9 +241,9 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "tacvest",
 
     "material": ["nylon", "plastic"],
-    "looks_like": "tacvest",
     "repairs_like": "tacvest",
     "warmth": 7,
 
@@ -581,10 +581,10 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "tacvest",
 
     "//material": ["plastic is from the hard inserts"],
     "material": ["nylon", "plastic"],
-    "looks_like": "tacvest",
     "repairs_like": "tacvest",
     "warmth": 5,
 
@@ -776,10 +776,10 @@
 
     "symbol": "[",
     "color": "dark_gray",
+    "looks_like": "vest",
 
     "material": ["nylon"],
     "material_thickness": 1,
-    "looks_like": "vest",
     "repairs_like": "tacvest",
     "warmth": 6,
 
@@ -1036,10 +1036,10 @@
 
     "symbol": "[",
     "color": "dark_gray",
+    "looks_like": "purse",
 
     "material": ["nylon"],
     "material_thickness": 0.1,
-    "looks_like": "purse",
     "repairs_like": "tacvest",
     "warmth": 4,
 
@@ -1375,10 +1375,10 @@
 
     "symbol": "[",
     "color": "dark_gray",
+    "looks_like": "vest",
 
     "material": ["nylon"],
     "material_thickness": 1.5,
-    "looks_like": "vest",
     "repairs_like": "tacvest",
     "warmth": 8,
 
