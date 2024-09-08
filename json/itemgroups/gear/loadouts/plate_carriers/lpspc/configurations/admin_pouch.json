@@ -6,8 +6,8 @@
 
     "entries": [
       {
-        "item": "plate_carrier_perroz",
-        "contents-group": ["cummerbund/perroz:any", "pouch/admin/ferro:any"]
+        "group": "plate_carrier/lpspc/perroz:any",
+        "contents-group": "pouch/admin/ferro:any"
       }
     ]
   },
@@ -19,54 +19,33 @@
 
     "entries": [
       {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam",
-        "contents-group": [
-          "cummerbund/perroz:multicam",
-          "pouch/admin/ferro:multicam"
-        ],
+        "group": "plate_carrier/lpspc/perroz:multicam",
+        "contents-group": "pouch/admin/ferro:multicam",
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam_black",
-        "contents-group": [
-          "cummerbund/perroz:multicam_black",
-          "pouch/admin/ferro:multicam_black"
-        ],
+        "group": "plate_carrier/lpspc/perroz:multicam_black",
+        "contents-group": "pouch/admin/ferro:multicam_black",
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "black",
-        "contents-group": [
-          "cummerbund/perroz:black",
-          "pouch/admin/ferro:black"
-        ],
+        "group": "plate_carrier/lpspc/perroz:black",
+        "contents-group": "pouch/admin/ferro:black",
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "coyote",
-        "contents-group": [
-          "cummerbund/perroz:coyote",
-          "pouch/admin/ferro:coyote"
-        ],
+        "group": "plate_carrier/lpspc/perroz:coyote",
+        "contents-group": "pouch/admin/ferro:coyote",
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "grey",
-        "contents-group": ["cummerbund/perroz:black", "pouch/admin/ferro:grey"],
+        "group": "plate_carrier/lpspc/perroz:grey",
+        "contents-group": "pouch/admin/ferro:grey",
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "woodland",
-        "contents-group": [
-          "cummerbund/perroz:woodland",
-          "pouch/admin/ferro:ranger"
-        ],
+        "group": "plate_carrier/lpspc/perroz:woodland",
+        "contents-group": "pouch/admin/ferro:ranger",
         "prob": 10
       }
     ]

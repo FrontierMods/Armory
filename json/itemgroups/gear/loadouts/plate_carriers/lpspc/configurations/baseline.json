@@ -4,12 +4,7 @@
     "type": "item_group",
     "subtype": "distribution",
 
-    "entries": [
-      {
-        "item": "plate_carrier_perroz",
-        "contents-group": "cummerbund/perroz:any"
-      }
-    ]
+    "entries": [{ "group": "plate_carrier/lpspc/perroz:any" }]
   },
 
   {
@@ -18,42 +13,12 @@
     "subtype": "distribution",
 
     "entries": [
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam",
-        "contents-group": "cummerbund/perroz:multicam",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam_black",
-        "contents-group": "cummerbund/perroz:multicam_black",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "black",
-        "contents-group": "cummerbund/perroz:black",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "coyote",
-        "contents-group": "cummerbund/perroz:coyote",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "grey",
-        "contents-group": "cummerbund/perroz:black",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "woodland",
-        "contents-group": "cummerbund/perroz:woodland",
-        "prob": 10
-      }
+      { "group": "plate_carrier/lpspc/perroz:multicam", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:multicam_black", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:black", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:coyote", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:grey", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:woodland", "prob": 10 }
     ]
   },
 
@@ -63,24 +28,9 @@
     "subtype": "distribution",
 
     "entries": [
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam",
-        "contents-group": "cummerbund/perroz:multicam",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "coyote",
-        "contents-group": "cummerbund/perroz:coyote",
-        "prob": 10
-      },
-      {
-        "item": "plate_carrier_perroz",
-        "variant": "olive",
-        "contents-group": "cummerbund/perroz:black",
-        "prob": 10
-      }
+      { "group": "plate_carrier/lpspc/perroz:multicam", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:coyote", "prob": 10 },
+      { "group": "plate_carrier/lpspc/perroz:olive", "prob": 10 }
     ]
   }
 ]
