@@ -527,12 +527,12 @@
 
         "max_contains_weight": "6 kg",
         "min_item_volume": "500 ml",
-        "max_contains_volume": "2 L",
+        "max_contains_volume": "1 L 500 ml",
         "min_item_length": "20 cm",
         "max_item_length": "80 cm",
 
-        "volume_encumber_modifier": 1.25,
-        "moves": 180
+        "volume_encumber_modifier": 2,
+        "moves": 240
       }
     ],
 
@@ -540,7 +540,7 @@
       "type": "holster"
     },
 
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
+    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_LARGE"],
 
     "price": "89 USD",
     "price_postapoc": "1 USD"
