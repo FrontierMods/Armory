@@ -6,12 +6,8 @@
 
     "entries": [
       {
-        "item": "plate_carrier_perroz",
-        "contents-group": [
-          "cummerbund/perroz:any",
-          "pouch/side/perroz:any",
-          "pouch/side/perroz:any"
-        ]
+        "group": "plate_carrier/lpspc/perroz:any",
+        "contents-group": ["pouch/side/perroz:any", "pouch/side/perroz:any"]
       }
     ]
   },
@@ -23,60 +19,45 @@
 
     "entries": [
       {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam",
+        "group": "plate_carrier/lpspc/perroz:multicam",
         "contents-group": [
-          "cummerbund/perroz:multicam",
           "pouch/side/perroz:multicam",
           "pouch/side/perroz:multicam"
         ],
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "multicam_black",
+        "group": "plate_carrier/lpspc/perroz:multicam_black",
         "contents-group": [
-          "cummerbund/perroz:multicam_black",
           "pouch/side/perroz:black",
           "pouch/side/perroz:black"
         ],
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "black",
+        "group": "plate_carrier/lpspc/perroz:black",
         "contents-group": [
-          "cummerbund/perroz:black",
           "pouch/side/perroz:black",
           "pouch/side/perroz:black"
         ],
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "coyote",
+        "group": "plate_carrier/lpspc/perroz:coyote",
         "contents-group": [
-          "cummerbund/perroz:coyote",
           "pouch/side/perroz:coyote",
           "pouch/side/perroz:coyote"
         ],
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "grey",
-        "contents-group": [
-          "cummerbund/perroz:black",
-          "pouch/side/perroz:grey",
-          "pouch/side/perroz:grey"
-        ],
+        "group": "plate_carrier/lpspc/perroz:grey",
+        "contents-group": ["pouch/side/perroz:grey", "pouch/side/perroz:grey"],
         "prob": 10
       },
       {
-        "item": "plate_carrier_perroz",
-        "variant": "woodland",
+        "group": "plate_carrier/lpspc/perroz:woodland",
         "contents-group": [
-          "cummerbund/perroz:woodland",
           "pouch/side/perroz:ranger",
           "pouch/side/perroz:ranger"
         ],
