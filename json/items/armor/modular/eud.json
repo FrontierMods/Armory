@@ -157,7 +157,7 @@
       }
     ],
 
-    "flags": ["CANT_WEAR", "EUD_BRIDGE", "PALS_SMALL"],
+    "flags": ["CANT_WEAR", "EUD_BRIDGE"],
 
     "price": "61 USD",
     "price_postapoc": "1 USD"
