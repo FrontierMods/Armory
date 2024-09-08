@@ -10,7 +10,9 @@
       { "group": "loadout/lpspc/magazine_placard:any" },
       { "group": "loadout/lpspc/magazine_placard:coordinated" },
       { "group": "loadout/lpspc/side_pouches:any" },
-      { "group": "loadout/lpspc/side_pouches:coordinated" }
+      { "group": "loadout/lpspc/side_pouches:coordinated" },
+      { "group": "loadout/lpspc/admin_pouch:any" },
+      { "group": "loadout/lpspc/admin_pouch:coordinated" }
     ]
   },
   {
@@ -21,7 +23,8 @@
     "entries": [
       { "group": "loadout/lpspc/baseline:coordinated" },
       { "group": "loadout/lpspc/magazine_placard:coordinated" },
-      { "group": "loadout/lpspc/side_pouches:coordinated" }
+      { "group": "loadout/lpspc/side_pouches:coordinated" },
+      { "group": "loadout/lpspc/admin_pouch:coordinated" }
     ]
   },
   {
