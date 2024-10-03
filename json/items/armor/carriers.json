@@ -135,11 +135,11 @@
     "longest_side": "324 mm",
 
     "//material": ["nylon", "plastic_pad"],
+    "repairs_like": "survivor_suit",
     "warmth": 10,
 
     "symbol": "[",
     "color": "light_gray",
-    "repairs_like": "survivor_suit",
 
     "//armor": [
       "it does not appear as though this plate carrier provides any sort of ballistic protection on its own",
