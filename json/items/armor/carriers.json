@@ -165,7 +165,7 @@
           }
         ],
 
-        "encumbrance": 20,
+        "encumbrance": 14,
 
         "//coverage": [
           "medium SAPI plate upper torso coverage: 34%",
@@ -197,7 +197,7 @@
         ],
 
         "//encumbrance": [1, 9],
-        "encumbrance": 10,
+        "encumbrance": 7,
 
         "//coverage": [
           "medium SAPI plate lower torso coverage: 10%",
@@ -529,7 +529,7 @@
           }
         ],
 
-        "encumbrance": 22,
+        "encumbrance": 15,
 
         "//coverage": [
           "approximated from large ballistic plate coverage (38% per front/back)",
@@ -568,7 +568,7 @@
           }
         ],
 
-        "encumbrance": 12,
+        "encumbrance": 8,
 
         "//coverage": "roughly approximated from visual reference",
         "coverage": 50,
@@ -838,7 +838,7 @@
         ],
 
         "//encumbrance": [5, 24],
-        "encumbrance": 18,
+        "encumbrance": 13,
 
         "//coverage": "extrapolated from IOTV coverage based on visual reference",
         "coverage": 68,
@@ -876,7 +876,7 @@
           }
         ],
 
-        "encumbrance": 8,
+        "encumbrance": 6,
 
         "//coverage": "extrapolated from IOTV coverage based on visual reference",
         "coverage": 46,
@@ -1123,7 +1123,7 @@
     "longest_side": "394 mm",
 
     "material": ["nylon", "kevlar"],
-    "warmth": 15,
+    "warmth": 10,
 
     "symbol": "[",
     "color": "light_gray",
