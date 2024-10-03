@@ -274,7 +274,7 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "foundation_black",
+        "id": "black",
 
         "name": { "str": "Blackhawk Foundation duty belt" },
         "description": "A low-profile, sturdy black belt with PALS webbing.  A \"duty belt\" in the sense of being worn by police officers while on duty, it features plenty of space for pouches to hold items such a duty would imply.  It's surprisingly comfortable even with a large amount of pouches attached.  <variant:black>",
