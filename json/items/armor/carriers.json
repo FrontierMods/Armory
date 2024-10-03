@@ -140,6 +140,7 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "ballistic_vest_light",
 
     "//armor": [
       "it does not appear as though this plate carrier provides any sort of ballistic protection on its own",
@@ -505,6 +506,7 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "ballistic_vest_heavy",
 
     "armor": [
       {
@@ -810,6 +812,7 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "ballistic_vest_esapi",
 
     "armor": [
       {
@@ -1127,6 +1130,7 @@
 
     "symbol": "[",
     "color": "light_gray",
+    "looks_like": "level_3_vest",
 
     "armor": [
       {
