@@ -103,7 +103,7 @@
           }
         ],
 
-        "encumbrance": -5,
+        "encumbrance": -12,
 
         "coverage": 8,
         "cover_melee": 4,
@@ -233,7 +233,7 @@
           }
         ],
 
-        "encumbrance": -7,
+        "encumbrance": -12,
 
         "coverage": 9,
         "cover_melee": 5,

@@ -1,34 +1,5 @@
 [
   {
-    "id": "WEARING_CUMMERBUNDS",
-    "type": "mutation",
-
-    "name": "Wearing cummerbunds",
-    "description": "Your plate carrier has a pair of cummerbunds attached to it.",
-
-    "points": 1,
-    "valid": false,
-    "purifiable": false,
-    "player_display": false,
-
-    "encumbrance_always": [["torso", -15]]
-  },
-  {
-    "id": "WEARING_SHOULDER_PADS",
-    "type": "mutation",
-
-    "name": "Wearing shoulder pads",
-    "description": "Your plate carrier has a pair of shoulder pads attached to it.",
-
-    "points": 1,
-    "valid": false,
-    "purifiable": false,
-    "player_display": false,
-
-    "//encumbrance_always": "-2 for the pads themselves, and -1 to offset the volume-based encumbrance they add",
-    "encumbrance_always": [["torso", -3]]
-  },
-  {
     "id": "PLATE_CARRIER_PROFICIENCY_EFFECT",
     "type": "mutation",
 
