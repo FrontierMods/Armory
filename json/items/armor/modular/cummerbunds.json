@@ -24,7 +24,7 @@
         "name": {
           "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
         },
-        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam:plural>",
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam/plural>",
         "expand_snippets": true,
         "weight": 2
       },
@@ -34,7 +34,7 @@
         "name": {
           "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
         },
-        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black:plural>",
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black/plural>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -44,7 +44,7 @@
         "name": {
           "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
         },
-        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote:plural>",
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote/plural>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -54,7 +54,7 @@
         "name": {
           "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
         },
-        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam_black:plural>",
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:multicam_black/plural>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -64,7 +64,7 @@
         "name": {
           "str_sp": "Perroz Designs laser-cut MOLLE cummerbunds"
         },
-        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:woodland:plural>",
+        "description": "A pair of lightweight hook-and-loop cummerbunds with a sheer laser-cut PALS grid.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:woodland/plural>",
         "expand_snippets": true,
         "weight": 1
       }
@@ -159,7 +159,7 @@
         "name": {
           "str_sp": "IOTV Gen III cummerbunds"
         },
-        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:ocp:plural>",
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:ocp/plural>",
         "expand_snippets": true,
         "weight": 4
       },
@@ -169,7 +169,7 @@
         "name": {
           "str_sp": "IOTV Gen III cummerbunds"
         },
-        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:ucp:plural>",
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:ucp/plural>",
         "expand_snippets": true,
         "weight": 2
       },
@@ -179,7 +179,7 @@
         "name": {
           "str_sp": "IOTV Gen III cummerbunds"
         },
-        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote:plural>",
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:coyote/plural>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -194,7 +194,7 @@
         "name": {
           "str_sp": "IOTV Gen III cummerbunds"
         },
-        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black:plural>",
+        "description": "A pair of sturdy, full-size cummerbunds with a PALS grid, using an uncommon Quick Release interface used in modern Army plate carriers.  You should attach these to a plate carrier in order to reduce its baseline encumbrance.  <variant:black/plural>",
         "expand_snippets": true,
         "weight": 0
       }
