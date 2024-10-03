@@ -278,6 +278,7 @@
         "description": "Cummerbund hook-and-loop attachment point",
 
         "holster": true,
+        "ablative": true,
 
         "max_contains_weight": "60 kg",
         "max_contains_volume": "15 L",
@@ -352,6 +353,7 @@
         "description": "Shoulder straps",
 
         "holster": true,
+        "ablative": true,
 
         "max_contains_weight": "250 g",
         "max_contains_volume": "1 L",
@@ -359,6 +361,7 @@
         "flag_restriction": ["SHOULDER_PADS"],
         "inherits_flags": true,
 
+        "volume_encumber_modifier": 0,
         "moves": 10
       },
 
@@ -703,6 +706,7 @@
         "description": "Cummerbund Quad Release system attachment point",
 
         "holster": true,
+        "ablative": true,
 
         "max_contains_volume": "15 L",
         "max_contains_weight": "60 kg",
@@ -934,6 +938,7 @@
         "description": "Cummerbund Quad Release system attachment point",
 
         "holster": true,
+        "ablative": true,
 
         "max_contains_volume": "15 L",
         "max_contains_weight": "60 kg",
