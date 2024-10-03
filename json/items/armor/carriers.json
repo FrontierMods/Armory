@@ -1012,17 +1012,12 @@
       "carrier has one round Velcro surface and one tiny panel Velcro surface"
     ],
 
-    "//TODO": [
-      "description",
-      "variant descriptions",
-      "gun sling slot",
-      "Velcro panel pockets"
-    ],
+    "//TODO": ["gun sling slot?", "Velcro panel pockets"],
 
     "name": {
       "str": "federal plate carrier"
     },
-    "description": "TODO",
+    "description": "A plain ballistic vest with a variety of hook-and-loop surfaces for identification badges and panels.  Favored by law enforcement and federal agencies due to its simplicity and ergonomics.  Embedded soft armor protects against pistol-caliber rounds",
 
     "variant_type": "gun",
     "variants": [
@@ -1032,7 +1027,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:black>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:black>",
         "expand_snippets": true,
         "weight": 12
       },
@@ -1042,7 +1037,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:navy>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:navy>",
         "expand_snippets": true,
         "weight": 8
       },
@@ -1059,7 +1054,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:ocp>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:ocp>",
         "expand_snippets": true,
         "weight": 4
       },
@@ -1069,7 +1064,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:olive>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:olive>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -1079,7 +1074,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:ranger>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:ranger>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -1089,7 +1084,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:grey>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:grey>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -1099,7 +1094,7 @@
         "name": {
           "str": "Point Blank Endeavor plate carrier"
         },
-        "description": "TODO  <variant:coyote>",
+        "description": "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.  <variant:coyote>",
         "expand_snippets": true,
         "weight": 1
       }
