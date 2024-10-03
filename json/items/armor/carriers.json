@@ -1255,7 +1255,7 @@
       ]
     },
 
-    "flags": ["STURDY", "MUNDANE", "OUTER", "PLATE_CARRIER"],
+    "flags": ["STURDY", "MUNDANE", "NORMAL", "PLATE_CARRIER"],
 
     "price": "2500 USD",
     "price_postapoc": "10 USD"
