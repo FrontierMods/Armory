@@ -66,7 +66,12 @@
       }
     ],
 
-    "weight": "77 g",
+    "//weight": [
+      "2.7 oz = 76.544 g",
+      "+ 1.68 oz = 47.627 g for the belly pad",
+      "= 124.167 g"
+    ],
+    "weight": "124 g",
     "//dimensions": {
       "length": "10.25 in",
       "width": "6.75 in",
@@ -226,9 +231,9 @@
     "//weight": [
       "we assume the harness that ships with the chassis is the Haley Strategic X-harness (or a very similar alternative), for the purposes of calculating weight",
       "we presume, based on weights of other rigs and LBVs, that 18.3 oz/520 g is the weight of the entire assembly, including the harness",
-      "18.3 oz - 8.4 oz (weight of the harness) = 9.9 oz = 280.66 g"
+      "18.3 oz - 6.72 oz (weight of the harness) = 11.58 oz = 328.29 g"
     ],
-    "weight": "281 g",
+    "weight": "328 g",
     "//dimensions": {
       "length": "11 in",
       "width": "6 in",
@@ -568,7 +573,11 @@
       }
     ],
 
-    "//weight": "14.08 oz = 399.16 g",
+    "//weight": [
+      "14.08 oz = 399.16 g",
+      "it appears this placard already comes with a belly pad, thus we assume its weight is counted into the overall weight",
+      "https://www.pewtac.com/products_details/47.html"
+    ],
     "weight": "399 g",
     "//dimensions": {
       "length": "7.5 in",
@@ -760,8 +769,8 @@
       }
     ],
 
-    "//weight": "1.17 lbs (weight of the rig as a whole) - 200 g (weight of the H-harness we use for this chassis) = 330.7 g",
-    "weight": "331 g",
+    "//weight": "1.17 lbs = 530.7 g (weight of the rig as a whole) - 152.373 g (weight of the H-harness we use for this chassis) = 378.327 g",
+    "weight": "378 g",
     "//dimensions": {
       "length": "18 in",
       "width": "6 in",
@@ -1018,12 +1027,12 @@
 
     "//weight": [
       "525 g (complete rig)",
-      "- 238 g (X-harness)",
+      "- 0.42 lbs = 190.51 g (X-harness)",
       "+ 1 oz = 28.35 g × 2 = 56.7 g (2 × rifle mag insert)",
       "+ 0.5 oz = 14.175 g (pistol mag/utility insert)",
-      "= 357.875 g"
+      "= 405.365 g"
     ],
-    "weight": "358 g",
+    "weight": "405 g",
     "//dimensions": {
       "length": "11 in",
       "width": "6 in",
@@ -1320,8 +1329,8 @@
       }
     ],
 
-    "//weight": "39 oz = 1105.6 g (weight of the complete rig) - 200 g (weight of the H-harness)",
-    "weight": "906 g",
+    "//weight": "39 oz = 1105.6 g (weight of the complete rig) - 152.373 g (weight of the H-harness) = 953.227 g",
+    "weight": "953 g",
     "//dimensions": [
       {
         "description": "panel",
