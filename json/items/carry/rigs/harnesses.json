@@ -6,6 +6,10 @@
     "//sources": [
       "https://haleystrategic.com/x-harness-chest-rig-kit",
       [
+        "https://www.amazon.com/Evike-Strategic-Partners-Replacement-Harness/dp/B07FG9KQZF",
+        "weight"
+      ],
+      [
         "https://haleystrategic.com/x-harness-replacement",
         "additional dimensions reference"
       ]
@@ -37,7 +41,7 @@
       {
         "id": "black",
 
-        "name": { "str": "Haley Strategic X-harness " },
+        "name": { "str": "Haley Strategic X-harness" },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:black>",
         "expand_snippets": true,
         "weight": 2
@@ -80,7 +84,12 @@
       }
     ],
 
-    "weight": "238 g",
+    "//weight": [
+      "original weight: 8.4 oz (with belly pad)",
+      "belly pad weight: 1.68 oz = 47.627 g",
+      "0.42 lbs = 6.72 oz = 190.51 g"
+    ],
+    "weight": "191 g",
     "//dimensions": [
       {
         "description": "strap",
@@ -310,7 +319,12 @@
       }
     ],
 
-    "weight": "200 g",
+    "//weight": [
+      "we subtract 1.68 oz = 47.627 g for the belly pad",
+      "see X-harness' weight calculations for more info",
+      "200 g - 47.627 g = 152.373 g"
+    ],
+    "weight": "152 g",
     "//dimensions": [
       {
         "description": "upper strap",
