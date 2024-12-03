@@ -85,7 +85,6 @@
           { "item": "daypack", "prob": 25 },
           { "item": "backpack_leather", "prob": 40 },
           { "item": "backpack", "prob": 85 },
-          { "item": "backpack_denim", "prob": 5 },
           { "item": "backpack_hiking", "prob": 25 },
           { "item": "duffelbag", "prob": 80 },
           { "item": "travelpack", "prob": 25 },
