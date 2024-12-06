@@ -521,7 +521,19 @@
       "female": {
         "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
       }
-    }
+    },
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_traps",
+      "prof_disarming",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "militia_car",
@@ -574,7 +586,13 @@
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_driver",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "conversion_hunter",
@@ -665,7 +683,15 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "mili_pilot",
@@ -713,7 +739,14 @@
       "in the US armed forces (either Air Force or Army), pilots are required to complete basic training regardless of their eventual specialization",
       "said basic training includes learning to operate in a full set of issued gear, which includes body armor"
     ],
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_helicopter_pilot",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "prepped_patriot",
@@ -795,7 +828,19 @@
       "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "//proficiencies": [
+      "as of 2025, being the youngest Old Vet puts the character at being born in 1975, and being of age for military service in 1993",
+      "between 1993 and 2025, there have been a few military conflicts in which US troops had been involved extensively",
+      "as such, we presume that this person has had the ballistic armor training"
+    ],
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_auto_rifles_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "seal",
@@ -858,7 +903,17 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_wound_care",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "seal_sniper",
@@ -910,7 +965,17 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_wound_care",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "marine",
@@ -975,7 +1040,15 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "cop",
@@ -1007,7 +1080,14 @@
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_batons_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "sniper_police",
@@ -1057,7 +1137,15 @@
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "detective",
@@ -1151,7 +1239,15 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_auto_pistols_familiar",
+      "prof_batons_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "swat_heavy",
@@ -1506,7 +1602,17 @@
       "female": {
         "entries": [{ "item": "boy_shorts" }, { "item": "sports_bra" }]
       }
-    }
+    },
+
+    "//proficiencies": "there is no clear indicator what sort of military this profession belongs to, but we have to presume that someone of this skill level must've had at least basic training in armor",
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "mil_grenadier",
@@ -1554,7 +1660,15 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "mil_sniper",
@@ -1612,7 +1726,15 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
   },
   {
     "id": "mil_breacher",
@@ -1678,6 +1800,153 @@
       }
     },
 
-    "proficiencies": ["prof_plate_carrier"]
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
+  },
+
+  {
+    "id": "national_guard",
+    "copy-from": "national_guard",
+    "type": "profession",
+
+    "name": "National Guardsman",
+
+    "proficiencies": [
+      "prof_wound_care",
+      "prof_gun_cleaning",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "mil_marksman",
+    "copy-from": "mil_marksman",
+    "type": "profession",
+
+    "name": "Military Marksman",
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "mil_auto_rifleman",
+    "copy-from": "mil_auto_rifleman",
+    "type": "profession",
+
+    "name": "Military Automatic Rifleman",
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "mili_medic",
+    "copy-from": "mili_medic",
+    "type": "profession",
+
+    "name": "Combat Medic",
+
+    "proficiencies": [
+      "prof_spotting",
+      "prof_wound_care",
+      "prof_wound_care_expert",
+      "prof_intro_biology",
+      "prof_physiology",
+      "prof_burn_care",
+      "prof_dissect_humans",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "major-general",
+    "copy-from": "major-general",
+    "type": "profession",
+
+    "name": "Major General",
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "nco",
+    "copy-from": "nco",
+    "type": "profession",
+
+    "name": "Non-Commissioned Officer",
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "combat-mechanic",
+    "copy-from": "combat-mechanic",
+    "type": "profession",
+
+    "name": "Combat Mechanic",
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_metalworking",
+      "prof_welding_basic",
+      "prof_welding",
+      "prof_gun_cleaning",
+
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "combat-engineer",
+    "copy-from": "combat-engineer",
+    "type": "profession",
+
+    "name": "Combat Engineer",
+
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_traps",
+      "prof_trapsetting",
+      "prof_disarming",
+      "prof_spotting",
+      "prof_gun_cleaning",
+
+      "prof_plate_carrier"
+    ]
   }
 ]
