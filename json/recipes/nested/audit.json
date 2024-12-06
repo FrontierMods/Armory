@@ -86,8 +86,7 @@
         "tactical_shotshell_pouch",
         "tool_pouch",
         "triple_stacker_pouch",
-        "ammo_pouch",
-        "ragpouch"
+        "ammo_pouch"
       ]
     },
 
@@ -107,7 +106,8 @@
       "leather_stone_pouch",
       "stone_pouch",
       "ankle_wallet_pouch",
-      "leather_pouch"
+      "leather_pouch",
+      "ragpouch"
     ]
   }
 ]
