@@ -192,6 +192,16 @@
     "obsolete": true
   },
   {
+    "result": "nylon_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "XL_nylon_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
     "result": "molle_medium_rucksack",
     "type": "recipe",
     "obsolete": true
@@ -348,6 +358,11 @@
   },
   {
     "result": "chestrig",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "single_sling",
     "type": "recipe",
     "obsolete": true
   },
