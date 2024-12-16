@@ -25,5 +25,10 @@
     "id": ["level_3_vest"],
     "type": "MIGRATION",
     "replace": "plate_carrier_point_blank_endeavor"
+  },
+  {
+    "id": ["soft_3a_vest"],
+    "type": "MIGRATION",
+    "replace": "vest_stabproof_safeguard"
   }
 ]
