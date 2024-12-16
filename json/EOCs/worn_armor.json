@@ -1,9 +1,14 @@
 [
   {
-    "id": "Armory_EOC_IS_WEARING_PLATE_CARRIER",
+    "id": "Armory_EOC_IS_WEARING_BALLISTIC_ARMOR",
     "type": "effect_on_condition",
 
-    "condition": { "u_has_worn_with_flag": "PLATE_CARRIER" },
+    "condition": {
+      "or": [
+        { "u_has_worn_with_flag": "PLATE_CARRIER" },
+        { "u_has_worn_with_flag": "BALLISTIC_VEST" }
+      ]
+    },
     "effect": {
       "math": [
         "u_proficiency('prof_plate_carrier', 'format': 'time_spent')",
