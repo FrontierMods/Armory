@@ -995,7 +995,7 @@
         "HighCom Trooper sa3100 soft armor insert"
       ],
       [
-        "https://www.oherron.com/point-blank-uniform-odc-vest-carrier.html",
+        "https://s3-us-west-2.amazonaws.com/naspovaluepoint/1607704941_Point%20Blank%20Product%20and%20Price%20List%2012%202%202020.pdf",
         "price"
       ],
       [
@@ -1252,7 +1252,7 @@
 
     "flags": ["STURDY", "MUNDANE", "NORMAL", "PLATE_CARRIER"],
 
-    "price": "2500 USD",
+    "price": "287 USD",
     "price_postapoc": "10 USD"
   }
 ]
