@@ -13,6 +13,10 @@
       [
         "https://www.uk.safeguardclothing.com/products/covert-overt-ballistic-level-2-stab-level-1-spike-level-1-vest-black",
         "weight"
+      ],
+      [
+        "https://www.safeguardclothing.com/collections/stab-vest/products/coolmax-ballistic-level-iiia-stab-level-2-spike-level-2-covert-vest-white",
+        "variants reference"
       ]
     ],
 
@@ -36,6 +40,16 @@
           "str": "SafeGuard covert stab vest"
         },
         "description": "A plain-looking vest with adjustable cummerbunds.  Meant to be worn under everyday clothes.  The cooling mesh lining is meant to help with the comfort.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.  <variant:black>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "white",
+
+        "name": {
+          "str": "SafeGuard covert stab vest"
+        },
+        "description": "A plain-looking vest with adjustable cummerbunds.  Meant to be worn under everyday clothes.  The cooling mesh lining is meant to help with the comfort.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.  <variant:white>",
         "expand_snippets": true,
         "weight": 1
       }
