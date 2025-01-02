@@ -1810,6 +1810,42 @@
       "prof_plate_carrier"
     ]
   },
+  {
+    "id": "security",
+    "copy-from": "security",
+    "type": "profession",
+
+    "name": "Security Guard",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "socks" },
+          { "item": "boots_combat" },
+          { "item": "longshirt" },
+          { "item": "knife_folding" },
+          { "item": "hat_ball" },
+          { "item": "wristwatch" },
+          { "item": "leather_belt" },
+          { "group": "charged_smart_phone" },
+          { "group": "charged_flashlight" },
+          { "item": "pants", "variant": "pants_black" },
+          { "item": "vest_stabproof_safeguard" },
+          { "item": "baton", "custom-flags": ["auto_wield"] },
+          {
+            "item": "m9",
+            "ammo-item": "9mm",
+            "charges": 15,
+            "container-item": "holster"
+          },
+          { "item": "m9mag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "m9mag", "ammo-item": "9mm", "charges": 15 }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
 
   {
     "id": "national_guard",
