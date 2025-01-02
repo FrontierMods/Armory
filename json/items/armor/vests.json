@@ -52,6 +52,16 @@
         "description": "A plain-looking vest with adjustable cummerbunds.  Meant to be worn under everyday clothes.  The cooling mesh lining is meant to help with the comfort.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.  <variant:white>",
         "expand_snippets": true,
         "weight": 1
+      },
+      {
+        "//": "fake variant to appease the game's entity checker",
+        "id": "security_armor_vest",
+
+        "name": {
+          "str": "SafeGuard covert stab vest"
+        },
+        "description": "This is a fake variant of the item.  It shouldn't spawn in the world naturally.  If you see this, it is a bug; please report it to the mod author.",
+        "weight": 0
       }
     ],
 
