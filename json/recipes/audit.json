@@ -4,7 +4,7 @@
       [
         "removed `light_load_bearing_vest` and `load_bearing_vest` from components for torso pockets",
         "these are now chassis/panels, not full rigs",
-        "replacedi with `chest_rig_condor_modular`, which is currently an inseparable rig"
+        "replaced with `chest_rig_condor_modular`, which is currently an inseparable rig"
       ]
     ],
 
