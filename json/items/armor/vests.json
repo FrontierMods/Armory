@@ -54,8 +54,9 @@
         "weight": 1
       },
       {
-        "//": "fake variant to appease the game's entity checker",
         "id": "security_armor_vest",
+
+        "//": "fake variant to appease the game's entity checker",
 
         "name": {
           "str": "SafeGuard covert stab vest"
