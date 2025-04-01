@@ -40,13 +40,6 @@
   - harnesses could be cut for nylon or reassembled into a separate chest rig with another panel
   - QASM panels can fit to some of the slicker plate carriers, thus adding extra PALS webbing and/or preset pouches
 
-### v0.1.2
-
-- [x] **rebalance new rigs**
-  - some of them were much too bulky, others too lightweight
-  - most of them provided way too much PALS webbing
-- [x] **audit MOLLE pouch slots**
-
 ## v0.1
 
 - [x] **remodel chest rigs**
@@ -58,6 +51,13 @@
   - [x] **air horn pouch**
   - [x] **handcuff pouch**
   - [x] **MOLLE baton holder**
+
+### v0.1.2
+
+- [x] **rebalance new rigs**
+  - some of them were much too bulky, others too lightweight
+  - most of them provided way too much PALS webbing
+- [x] **audit MOLLE pouch slots**
 
 ## To Be Determined
 
