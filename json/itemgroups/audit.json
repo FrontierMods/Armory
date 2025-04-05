@@ -6,11 +6,13 @@
 
     "//replaced": [
       [
-        "`chestrig` with `flag_chestrig` variant → `chest_rig_condor_cross_draw` with `flag` variant",
+        "chestrig:flag_chestrig",
+        "chest_rig_condor_cross_draw:flag",
         "this aligns with the Prepped Patriot profession spawn"
       ],
       [
-        "`chestrig` → `chest_rig_condor_cross_draw`",
+        "chestrig",
+        "chest_rig_condor_cross_draw",
         "aligns with the previous change"
       ]
     ],
