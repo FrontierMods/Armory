@@ -63,6 +63,17 @@
         },
         "description": "This is a fake variant of the item.  It shouldn't spawn in the world naturally.  If you see this, it is a bug; please report it to the mod author.",
         "weight": 0
+      },
+      {
+        "id": "security_stab_vest",
+
+        "//": "fake variant to appease the game's entity checker",
+
+        "name": {
+          "str": "SafeGuard covert stab vest"
+        },
+        "description": "This is a fake variant of the item.  It shouldn't spawn in the world naturally.  If you see this, it is a bug; please report it to the mod author.",
+        "weight": 0
       }
     ],
 
