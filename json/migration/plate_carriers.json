@@ -27,7 +27,7 @@
     "replace": "plate_carrier_point_blank_endeavor"
   },
   {
-    "id": ["soft_3a_vest"],
+    "id": ["soft_3a_vest", "stab_vest"],
     "type": "MIGRATION",
     "replace": "vest_stabproof_safeguard"
   }

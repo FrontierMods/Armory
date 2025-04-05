@@ -1846,6 +1846,35 @@
       "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
     }
   },
+  {
+    "id": "mall_cop",
+    "copy-from": "mall_cop",
+    "type": "profession",
+
+    "name": "Mall Security",
+
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "socks" },
+          { "item": "boots" },
+          { "item": "longshirt" },
+          { "item": "holster" },
+          { "item": "pockknife" },
+          { "item": "wristwatch" },
+          { "item": "leather_belt" },
+          { "group": "charged_smart_phone" },
+          { "group": "charged_flashlight" },
+          { "group": "charged_tazer" },
+          { "item": "pants", "variant": "pants_urban" },
+          { "item": "vest_stabproof_safeguard" },
+          { "item": "baton", "custom-flags": ["auto_wield"] }
+        ]
+      },
+      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+    }
+  },
 
   {
     "id": "national_guard",
