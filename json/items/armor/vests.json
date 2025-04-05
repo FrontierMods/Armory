@@ -116,20 +116,17 @@
           },
           {
             "type": "kevlar",
-            "covered_by_mat": 98,
+            "covered_by_mat": 95,
             "thickness": 6.604
           }
         ],
 
         "encumbrance": 3,
 
-        "//coverage": [
-          "approximated from large ballistic plate coverage (38% per front/back), as with plate carriers",
-          "augmented from visual reference"
-        ],
-        "coverage": 78,
-        "cover_melee": 39,
-        "cover_ranged": 78,
+        "//coverage": ["approximated from visual reference"],
+        "coverage": 90,
+        "cover_melee": 45,
+        "cover_ranged": 90,
 
         "covers": ["torso"],
         "specifically_covers": ["torso_upper"]
@@ -144,7 +141,7 @@
           },
           {
             "type": "kevlar",
-            "covered_by_mat": 98,
+            "covered_by_mat": 95,
             "thickness": 6.604
           }
         ],
@@ -152,7 +149,7 @@
         "encumbrance": 1,
 
         "//coverage": "eyeballed",
-        "coverage": 20,
+        "coverage": 50,
         "covers": ["torso"],
         "specifically_covers": ["torso_lower"]
       }
