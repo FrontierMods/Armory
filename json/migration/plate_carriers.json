@@ -30,5 +30,10 @@
     "id": ["soft_3a_vest", "stab_vest"],
     "type": "MIGRATION",
     "replace": "vest_stabproof_safeguard"
+  },
+  {
+    "id": ["kevlar"],
+    "type": "MIGRATION",
+    "replace": "vest_ballistic_point_blank"
   }
 ]
