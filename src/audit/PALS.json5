@@ -1,0 +1,134 @@
+[
+  /*
+    the following appear to be handmade, custom items with no equivalent on the market
+    thus, we assume they should not be MOLLE-compatible
+    in the base game, MOLLE compatibility came seemingly out of nowhere in https://github.com/CleverRaven/Cataclysm-DDA/pull/55073
+    these could later be modified to be belt-compatible, instead
+   */
+  {
+    id: "stone_pouch",
+    "copy-from": "stone_pouch",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "stone pouch", str_pl: "stone pouches" },
+
+    delete: { flags: ["PALS_LARGE"] },
+  },
+  {
+    id: "leather_stone_pouch",
+    "copy-from": "leather_stone_pouch",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "leather stone pouch", str_pl: "leather stone pouches" },
+
+    delete: { flags: ["PALS_LARGE"] },
+  },
+
+  /*
+    the follow items appear to be an unrelated (non-MOLLE) item and were likely never intended to be MOLLE-compatible
+   */
+  {
+    id: "legpouch",
+    "copy-from": "legpouch",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "ankle ammo pouch", str_pl: "ankle ammo pouches" },
+
+    delete: { flags: ["PALS_SMALL"] },
+  },
+
+  /*
+    the follow items appear to be a handmade, custom items that were never intended to be MOLLE-compatible, if the reference images online are anything to go by
+   */
+  {
+    id: "bandolier_pistol",
+    "copy-from": "bandolier_pistol",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "pistol bandolier" },
+
+    delete: { flags: ["PALS_SMALL"] },
+  },
+  {
+    id: "bandolier_wrist",
+    "copy-from": "bandolier_wrist",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "wrist bandolier" },
+
+    delete: { flags: ["PALS_SMALL"] },
+  },
+  {
+    id: "bandolier_rifle",
+    "copy-from": "bandolier_rifle",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "rifle bandolier" },
+
+    delete: { flags: ["PALS_MEDIUM"] },
+  },
+
+  /*
+    these sorts of extended holsters may or may not use a belt-specific interface which PALS cannot accomodate without a highly-specialized adapter
+   */
+  {
+    id: "FB_double_holster",
+    "copy-from": "FB_double_holster",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "front-to-back double holster" },
+
+    delete: { flags: ["PALS_LARGE"] },
+  },
+  {
+    id: "side_double_holster",
+    "copy-from": "side_double_holster",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "side-by-side double holster" },
+
+    delete: { flags: ["PALS_LARGE"] },
+  },
+
+  /*
+    uncategorized/one-off items
+   */
+  {
+    id: "XL_holster",
+    "copy-from": "XL_holster",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "large holster" },
+
+    // * depending on the model of the holster, this may or may not fit with PALS webbing via belt straps
+    // * belt straps have been shown to be compatible with PALS
+    // TODO: to assess
+    delete: { flags: ["PALS_LARGE"] },
+  },
+  {
+    id: "nylon_quiver",
+    "copy-from": "nylon_quiver",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: { str: "nylon quiver" },
+
+    /*
+      DELETE
+        the only nylon MOLLE quivers currently or previously on market had PALS webbing *on them*, rather than being able to attach to other PALS webbing
+        the initial release of this item was not based on any particular quiver, and was simply a way to add a MOLLE-compatible quiver
+        > https://github.com/CleverRaven/Cataclysm-DDA/pull/67155
+        that said, it may be worth investigating having MOLLE quivers mount on the back webbing, when that becomes modelled
+    */
+    delete: { flags: ["PALS_LARGE"] },
+  },
+]

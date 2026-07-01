@@ -1,0 +1,51 @@
+[
+  { id: "chest_rig/belly_pad", type: "PARTIAL", weight: "1.68 oz" },
+  {
+    id: "pouch/insert/magazine/mp2/triple",
+    type: "PARTIAL",
+
+    /* 
+			SOURCE
+				https://haleystrategic.com/556-triple-mag-insert
+	 	 */
+
+    /*
+			NOTES
+				- for when we remodel hard inserts in some rigs to be configurable/detachable
+		 */
+
+    weight: "1.3 oz",
+  },
+  {
+    id: "pouch/insert/magazine/mp2/double",
+    type: "PARTIAL",
+
+    /* 
+			SOURCE
+				https://haleystrategic.com/556-double-mag-insert
+	 	 */
+
+    /*
+			NOTES
+				- for when we remodel hard inserts in some rigs to be configurable/detachable
+		 */
+
+    weight: "1 oz",
+  },
+  {
+    id: "pouch/insert/utility",
+    type: "PARTIAL",
+
+    /* 
+			SOURCE
+				https://haleystrategic.com/single-multi-utility-pouch
+	 	 */
+
+    /*
+			NOTES
+				- for when we remodel hard inserts in some rigs to be configurable/detachable
+		 */
+
+    weight: "0.6 oz",
+  },
+]

@@ -3,21 +3,22 @@
     "id": "loadout/iotv:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
-      { "group": "loadout/iotv/baseline:any" },
-      { "group": "loadout/iotv/baseline:coordinated" }
+      {
+        "group": "loadout/iotv/baseline:any"
+      },
+      {
+        "group": "loadout/iotv/baseline:coordinated"
+      }
     ]
   },
-
   {
     "id": "loadout/iotv/baseline:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
-        "item": "plate_carrier_iotv",
+        "item": "plate_carrier/iotv/gen_iii",
         "contents-group": "cummerbund/iotv:any"
       }
     ]
@@ -26,7 +27,6 @@
     "id": "loadout/iotv/baseline:coordinated",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "loadout/iotv/baseline:ocp",
@@ -42,15 +42,13 @@
       }
     ]
   },
-
   {
     "id": "loadout/iotv/baseline:ocp",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "plate_carrier_iotv",
+        "item": "plate_carrier/iotv/gen_iii",
         "variant": "ocp",
         "contents-group": "cummerbund/iotv:ocp"
       }
@@ -60,10 +58,9 @@
     "id": "loadout/iotv/baseline:ucp",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "plate_carrier_iotv",
+        "item": "plate_carrier/iotv/gen_iii",
         "variant": "ucp",
         "contents-group": "cummerbund/iotv:ucp"
       }
@@ -73,10 +70,9 @@
     "id": "loadout/iotv/baseline:coyote",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "plate_carrier_iotv",
+        "item": "plate_carrier/iotv/gen_iii",
         "variant": "coyote",
         "contents-group": "cummerbund/iotv:coyote"
       }

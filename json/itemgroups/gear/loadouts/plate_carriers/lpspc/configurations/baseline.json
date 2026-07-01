@@ -3,34 +3,60 @@
     "id": "loadout/lpspc/baseline:any",
     "type": "item_group",
     "subtype": "distribution",
-
-    "entries": [{ "group": "plate_carrier/lpspc/perroz:any" }]
+    "entries": [
+      {
+        "group": "plate_carrier/lpspc/perroz:any"
+      }
+    ]
   },
-
   {
     "id": "loadout/lpspc/baseline:coordinated",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
-      { "group": "plate_carrier/lpspc/perroz:multicam", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:multicam_black", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:black", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:coyote", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:grey", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:woodland", "prob": 10 }
+      {
+        "group": "plate_carrier/lpspc/perroz:multicam",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:multicam_black",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:black",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:coyote",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:grey",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:woodland",
+        "prob": 10
+      }
     ]
   },
-
   {
     "id": "loadout/lpspc/baseline:military",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
-      { "group": "plate_carrier/lpspc/perroz:multicam", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:coyote", "prob": 10 },
-      { "group": "plate_carrier/lpspc/perroz:olive", "prob": 10 }
+      {
+        "group": "plate_carrier/lpspc/perroz:multicam",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:coyote",
+        "prob": 10
+      },
+      {
+        "group": "plate_carrier/lpspc/perroz:olive",
+        "prob": 10
+      }
     ]
   }
 ]

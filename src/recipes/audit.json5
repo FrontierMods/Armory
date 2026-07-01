@@ -1,0 +1,103 @@
+[
+  {
+    result: "nomad_rig",
+    "copy-from": "nomad_rig",
+    type: "recipe",
+
+    components: {
+      ref: "nomad_rig",
+      type: "recipe",
+      scope: "dda",
+      key: "components",
+
+      patch: [
+        // * removed because these are now chassis, which make no sense as a complete rig
+        { op: "remove", path: "/5/3" }, // `load_bearing_vest`
+        { op: "remove", path: "/5/2" }, // `light_load_bearing_vest`
+        // * added as a replacement for modular rig components
+        { op: "push", path: "/5", value: ["chest_rig/condor/modular", 1] },
+      ],
+    },
+  },
+  {
+    result: "xl_ballistic_vest",
+    "copy-from": "xl_ballistic_vest",
+    type: "recipe",
+
+    components: {
+      ref: "xl_ballistic_vest",
+      type: "recipe",
+      scope: "dda",
+      key: "components",
+
+      patch: [
+        // * removed because these are now chassis, which make no sense as a complete rig
+        { op: "remove", path: "/0/1" }, // `load_bearing_vest`
+        { op: "remove", path: "/0/0" }, // `heavy_load_bearing_vest`
+        // * added as a replacement for modular rig components
+        { op: "push", path: "/0", value: ["chest_rig/condor/modular", 1] },
+
+        // * removed because this is now chassis, which makes no sense as a complete rig
+        { op: "remove", path: "/1/0" }, // `light_load_bearing_vest`
+      ],
+    },
+  },
+  {
+    // * this recipe already makes no sense because at best, it would be creating a Nomex/Kevlar item out of pure Kevlar
+
+    result: "entry_suit",
+    "copy-from": "entry_suit",
+    type: "recipe",
+
+    components: {
+      ref: "entry_suit",
+      type: "recipe",
+      scope: "dda",
+      key: "components",
+
+      // * remove vests: they cannot provide Kevlar anyway
+      patch: [
+        { op: "remove", path: "/1/2" }, // `ballistic_vest_esapi`
+        { op: "remove", path: "/1/1" }, // `ballistic_vest_light`
+      ],
+    },
+  },
+  {
+    // * see `entry_suit` recipe audit for changes
+
+    result: "entry_suit_xs",
+    "copy-from": "entry_suit_xs",
+    type: "recipe",
+
+    components: {
+      ref: "entry_suit_xs",
+      type: "recipe",
+      scope: "dda",
+      key: "components",
+
+      patch: [
+        { op: "remove", path: "/1/2" }, // `ballistic_vest_esapi`
+        { op: "remove", path: "/1/1" }, // `ballistic_vest_light`
+      ],
+    },
+  },
+  {
+    // * see `entry_suit` recipe audit for changes
+
+    result: "xl_entry_suit",
+    "copy-from": "xl_entry_suit",
+    type: "recipe",
+
+    components: {
+      ref: "xl_entry_suit",
+      type: "recipe",
+      scope: "dda",
+      key: "components",
+
+      patch: [
+        { op: "remove", path: "/1/2" }, // `ballistic_vest_esapi`
+        { op: "remove", path: "/1/1" }, // `ballistic_vest_light`
+      ],
+    },
+  },
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:any",
+    "entries": [
+      {
+        "item": "pouch/side/perroz"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:multicam",
+    "entries": [
+      {
+        "item": "pouch/side/perroz",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:black",
+    "entries": [
+      {
+        "item": "pouch/side/perroz",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:coyote",
+    "entries": [
+      {
+        "item": "pouch/side/perroz",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:grey",
+    "entries": [
+      {
+        "item": "pouch/side/perroz",
+        "variant": "grey"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:ranger",
+    "entries": [
+      {
+        "item": "pouch/side/perroz",
+        "variant": "ranger"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/side/perroz:white",
+    "entries": [
+      {
+        "item": "pouch/side/perroz",
+        "variant": "white"
+      }
+    ]
+  }
+]

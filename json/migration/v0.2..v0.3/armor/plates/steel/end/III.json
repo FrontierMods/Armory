@@ -1,0 +1,12 @@
+[
+  {
+    "id": "plate_steel_medium_ar_iii",
+    "type": "MIGRATION",
+    "replace": "plate/steel/ar/iii/medium"
+  },
+  {
+    "id": "plate_steel_medium_tacticon_iiiplus",
+    "type": "MIGRATION",
+    "replace": "plate/steel/ar/iii/medium"
+  }
+]

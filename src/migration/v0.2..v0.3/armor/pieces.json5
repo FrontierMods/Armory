@@ -1,0 +1,12 @@
+[
+  {
+    id: ["piece_iotv_groin"],
+    type: "MIGRATION",
+    replace: "piece/iotv/groin",
+  },
+  {
+    id: ["piece_iotv_shoulder"],
+    type: "MIGRATION",
+    replace: "piece/iotv/shoulder",
+  },
+]

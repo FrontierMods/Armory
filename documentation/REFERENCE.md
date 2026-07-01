@@ -5,7 +5,6 @@
 ### Volume
 
 - **upperwear** (t-shirts, coats, jackets etc.): `chest * (1/2 * height + 1/3 * sleeve) * thickness`, where
-
   - `chest`: chest circumference; halved to get torso width
   - `height`: total length (or height) of the torso part, measured at the back
   - `sleeve`: length of sleeve
@@ -15,7 +14,6 @@
   - if `sleeve` is not provided, assume `sleeve` to be `1/1.75 × chest`
 
 - **lowerwear** (pants, shorts etc.): `(2 * inseam + rise) * waist * thickness`, where
-
   - `inseam`: inseam length (i.e., length of pant leg between hem and crotch)
   - `rise`: rise length (i.e., length between crotch and top of waistband); if not available, assume:
     - low rise: `<9 in.` (usually `7—9 in.`) — very casual

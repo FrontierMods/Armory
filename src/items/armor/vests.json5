@@ -1,0 +1,288 @@
+[
+  {
+    id: "vest/stabproof/safeguard",
+    inherit: ["@ballistic_vest"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.safeguardclothing.com/collections/stab-vest/products/coolmax-ballistic-level-3a-stab-level-2-spike-level-2-covert-vest-black
+
+        https://www.uk.safeguardclothing.com/products/covert-overt-ballistic-level-2-stab-level-1-spike-level-1-vest-black
+          - weight
+
+        https://www.bulletproofsupply.com/kevlar-bullet-resistant-panel-10-x-15-12-ply-nij-iiia/
+          - material thickness
+
+        https://www.safeguardclothing.com/collections/stab-vest/products/coolmax-ballistic-level-iiia-stab-level-2-spike-level-2-covert-vest-white
+          - variants reference
+     */
+
+    /* 
+      NOTES
+        - modelled as size M
+        - does not seem to be taking interchangeable panels
+        - should be either repaired in-place or be only replaceable
+     */
+
+    name: {
+      str: "stab vest",
+    },
+    description: "A simple vest meant to protect from cuts, stabs, and pistol-caliber bullets.  Worn under other clothes by protection details, police officers, and businesspeople afraid of being shot.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black", "white"],
+
+        name: {
+          str: "SafeGuard covert stab vest",
+        },
+        description: "A plain-looking vest with adjustable cummerbunds.  Meant to be worn under everyday clothes.  The cooling mesh lining is meant to help with the comfort.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.",
+      },
+      {
+        // * fake variant to appease the game's entity checker
+        id: "security_armor_vest",
+
+        name: {
+          str: "SafeGuard covert stab vest",
+        },
+        description: "A plain-looking vest with adjustable cummerbunds.  Meant to be worn under everyday clothes.  The cooling mesh lining is meant to help with the comfort.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.",
+        weight: 0,
+      },
+      {
+        // * fake variant to appease the game's entity checker
+        id: "security_stab_vest",
+
+        name: {
+          str: "SafeGuard covert stab vest",
+        },
+        description: "A plain-looking vest with adjustable cummerbunds.  Meant to be worn under everyday clothes.  The cooling mesh lining is meant to help with the comfort.  It is rated for NIJ IIIA ballistic protection, which means protection against pistol-caliber bullets; as well as NIJ II stab and NIJ II spike protection, meaning it should resist most everyday blades.",
+        weight: 0,
+      },
+    ],
+
+    /*
+      WEIGHT
+        a similar, lighter-protection vest from SafeGuard is stated to weigh 1.76 kg (panels only)
+        we add 25% for weight of added material to bring it up to NIJ IIIA protection, plus the vest itself (what carries the panels)
+    */
+    weight: "2200 g",
+    dimensions: {
+      type: "upperwear",
+
+      chest: "40 in",
+      height: "13.5 in",
+      // * 0.27 in. × 2 = 0.54 in.
+      thickness: "0.54 in",
+    },
+    // for the sake of simplicity, we assume it doesn't fold easily
+    longest_side: "13.5 in",
+
+    material: ["nylon", "kevlar"],
+    warmth: 5,
+
+    // repairs_like: "ballistic_vest_esapi",
+
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.254,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 95,
+            thickness: 6.604,
+          },
+        ],
+
+        encumbrance: 3,
+
+        // approximated from visual reference
+        coverage: 90,
+        cover_melee: 45,
+        cover_ranged: 90,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+      },
+
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.254,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 95,
+            thickness: 6.604,
+          },
+        ],
+
+        encumbrance: 1,
+
+        // eyeballed
+        coverage: 50,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+      },
+    ],
+
+    flags: [
+      "STURDY",
+      "SKINTIGHT" /* intended to be worn under everyday clothes */,
+      "WATER_FRIENDLY",
+    ],
+
+    price: "720 USD",
+    price_postapoc: "5 USD",
+  },
+  {
+    id: "vest/ballistic/point_blank",
+    inherit: ["@ballistic_vest"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.pointblankenterprises.com/point-blank-body-armor/standard-male.html
+     
+        https://issuu.com/legearaustralia/docs/point-blank-body-armor-2018
+          - thickness of panel
+          - material blend
+     
+        https://s3-us-west-2.amazonaws.com/naspovaluepoint/1607704941_Point%20Blank%20Product%20and%20Price%20List%2012%202%202020.pdf
+          - price
+     
+        https://www.bladerunner.tv/covert-vests-lightweight-bullet-stab-proof-vest-threat-level-ii.html
+          - weight reference
+     */
+
+    /*
+      NOTES
+        - modelled as size M
+        - we currently model this item as not taking interchangeable panels
+        - should be either repaired in-place or be only replaceable
+        - modelled as containing insert BII
+     */
+
+    name: {
+      str: "level II vest",
+    },
+    description: "A plain-looking ballistic vest with an embedded soft ballistic insert.  The insert is intended to stop the most common pistol rounds on the market, such as 9mm.  Often worn by police officers and security personnel while on duty.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black", "navy", "coyote", "white"],
+
+        name: {
+          str: "Point Blank standard vest",
+        },
+        description: "A plain nylon outer shell of a vest with a soft armor insert.  The insert is rated for NIJ II protection against bullets, and will hold its own against some of the most common rounds, such as the 9×19mm.",
+      },
+    ],
+
+    weight: {
+      math: [
+        "1290 g" /* vest; "less than 1.3 KG", per source */,
+        { op: "add", value: "0.87 lbs" /* panel */ },
+      ],
+    },
+    dimensions: [
+      {
+        // * VEST
+        type: "upperwear",
+
+        chest: "40 in",
+        height: "13.5 in",
+        // * thickness (2 mm, approximate) is doubled to account for two sides
+        thickness: "4 mm",
+      },
+      {
+        // * PANEL
+        type: "area",
+
+        area: "227.89 in2",
+        length: "0.23 in",
+      },
+    ],
+    longest_side: "13.5 in",
+
+    material: [
+      // * vest
+      { type: "nylon", portion: 65 },
+      { type: "cotton", portion: 35 },
+      // * panel
+      // * we roughly calculate the presence of (for now, embedded) Kevlar by the ratio of the volume of the insert to the vest
+      { type: "kevlar", portion: 102 },
+    ],
+
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            // 2 mm (vest)
+            // + 0.01 in = 0.254 mm (armor insert)
+            thickness: 2.254,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // 0.22 in
+            // we leave off 0.01 in = 0.254 mm as armor insert shell/outer cover
+            thickness: 5.588,
+          },
+        ],
+
+        encumbrance: 3,
+
+        // approximated from large ballistic plate coverage (38% per front/back), as with plate carriers
+        // augmented from visual reference
+        coverage: 78,
+        cover_melee: 39,
+        cover_ranged: 78,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+      },
+
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            // 2 mm (vest)
+            // + 0.01 in = 0.254 mm (armor insert)
+            thickness: 2.254,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // 0.22 in
+            // we leave off 0.01 in = 0.254 mm as armor insert shell/outer cover
+            thickness: 5.588,
+          },
+        ],
+
+        encumbrance: 1,
+
+        // eyeballed
+        coverage: 20,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+      },
+    ],
+
+    flags: ["STURDY", "NORMAL", "WATER_FRIENDLY"],
+
+    price: "152 USD",
+    price_postapoc: "5 USD",
+  },
+]

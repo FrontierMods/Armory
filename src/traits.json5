@@ -1,0 +1,16 @@
+[
+  {
+    id: "PLATE_CARRIER_PROFICIENCY_EFFECT",
+    type: "mutation",
+
+    name: "Plate carrier proficiency effect",
+    description: "You've learned how to wear ballistic armor well, and now you enjoy the benefits of that knowledge.  Applies only when valid armor is worn.",
+
+    points: 1,
+    valid: false,
+    purifiable: false,
+    player_display: false,
+
+    encumbrance_always: [["torso", -2]],
+  },
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "pouch/side/perroz",
+    "type": "ITEM",
+    "category": "container",
+    "name": {
+      "str": "vest side pouch",
+      "str_pl": "vest side pouches"
+    },
+    "description": "A side pouch for a plate carrier or a ballistic vest.  Allows storing a bit extra stuff, up to and including a rifle magazine.  Can attach to vests with hook-and-loop mounts.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:multicam>",
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:ranger>",
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:white>",
+        "id": "white",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Perroz Designs side pouch",
+          "str_pl": "Perroz Designs side pouches"
+        },
+        "description": "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.  <variant:grey>",
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "70 g 874 mg",
+    "symbol": "[",
+    "color": "dark_gray",
+    "material": [
+      "nylon"
+    ],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Hook-and-loop side pouch",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "566 ml",
+        "min_item_length": "8 cm",
+        "max_item_length": "26 cm 1 mm",
+        "moves": 100
+      }
+    ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "SIDE_POUCH_VELCRO"
+    ],
+    "price": "43 USD 60 cents",
+    "price_postapoc": "1 USD",
+    "volume": "60 ml"
+  },
+  {
+    "id": "pouch/side/ferro/wingthing",
+    "type": "ITEM",
+    "category": "container",
+    "name": {
+      "str": "hook-and-loop sheath side mount"
+    },
+    "description": "A thin plastic plate with a set of screw holes and a hook-and-loop exterior.  Can hold a Kydex knife sheath or a single-slot MOLLE pouch, in order to carry a knife on the side of a plate carrier or ballistic vest.  Can attach to vests with hook-and-loop mounts.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath side mount"
+        },
+        "description": "A thin elongated plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath or a single-slot MOLLE pouch, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath side mount"
+        },
+        "description": "A thin elongated plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath or a single-slot MOLLE pouch, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "20 g",
+    "longest_side": "21 cm 1 mm",
+    "symbol": "[",
+    "color": "dark_gray",
+    "material": [
+      "thermo_resin"
+    ],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Hook-and-loop sheath mount",
+        "holster": true,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "650 ml",
+        "max_item_length": "22 cm 9 mm",
+        "flag_restriction": [
+          "SCREW_MOUNTABLE_SHEATH",
+          "PALS_SMALL"
+        ],
+        "moves": 10
+      }
+    ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "CANT_WEAR",
+      "SIDE_POUCH_VELCRO"
+    ],
+    "use_action": [
+      {
+        "type": "attach_molle",
+        "size": 1
+      },
+      {
+        "type": "detach_molle"
+      }
+    ],
+    "price": "35 USD",
+    "price_postapoc": "1 USD",
+    "volume": "16 ml"
+  }
+]

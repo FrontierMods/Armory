@@ -1,0 +1,78 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:any",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:multicam",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:multicam_black",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin",
+        "variant": "multicam_black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:black",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:coyote",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:grey",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin",
+        "variant": "grey"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pouch/eud/ferro/admin:ranger",
+    "entries": [
+      {
+        "item": "pouch/eud/ferro/admin",
+        "variant": "ranger"
+      }
+    ]
+  }
+]

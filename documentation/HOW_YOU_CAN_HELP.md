@@ -1,6 +1,6 @@
 # How You Can Help
 
-While this mod's development is self-sufficient enough – in that it doesn't require a group of people to support it – there are ways you can help make the process easier. None of this is required, requested, or asked of you; do this only if you find it to be worth your time.
+While this mod's development is self-sufficient – it doesn't require a group of people to support it – there are ways you can help make the process easier. None of this is required, requested, or asked of you; do this only if you find it worth your time.
 
 ## Implement Desired Features
 
@@ -10,9 +10,9 @@ See [`DESIRED_FEATURES.md`](./DESIRED_FEATURES.md) for the list of features, the
 
 ## Provide Graphics Support
 
-This mod doesn't feature any graphics for its contents, due to a lack of expertise with tilesets. Graphics provide immersiveness; that's more so important for mods that aim to ground the game further in reality.
+This mod doesn't feature any graphics for its contents, due to a lack of expertise with tilesets. Graphics immerses the player into the world and provides valuable visual context; that's more so important for mods that aim to ground the game further in reality.
 
-If you're an artist, you can help by adding tileset support for the mod. Reference images can usually be found in sources listed in the JSON of each item. Should you need assistance with finding a better reference image, it could be provided if you create a discussion with a `Request` tag.
+If you're an artist, you can help by adding tileset support for the mod. Reference images can be found in sources listed in the JSON5 sources for each item. Should you need assistance with finding a better reference image, it could be provided if you create a discussion with a `Request` tag.
 
 ## Donate
 

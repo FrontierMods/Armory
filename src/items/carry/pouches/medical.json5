@@ -1,0 +1,303 @@
+[
+  {
+    id: "pouch/medical/rescue/mini",
+    inherit: ["@pouch/small", "@pouch/medical"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://rescue-essentials.com/rescue-essentials-mini-rip-away-ifak-pouch/
+
+        https://www.amazon.com/Rescue-Essentials-Mini-Rip-Away-Pouch/dp/B0CC6FJDP1
+        - weight
+
+        https://rescue-essentials.com/rescue-essentials-mini-rip-away-ifak/
+        - pocket capacity reference
+    */
+
+    name: {
+      str: "mini IFAK pouch",
+      str_pl: "mini IFAK pouches",
+    },
+    description: "A compact nylon pouch for first aid items.  The straps inside the pouch allow for better sorting of different types of aid.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["olive", 2],
+          ["ranger", 2],
+          ["coyote", 2],
+        ],
+
+        name: {
+          str: "Rescue Essentials mini IFAK pouch",
+          str_pl: "Rescue Essentials mini IFAK pouches",
+        },
+        description: "A compact nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.",
+      },
+    ],
+
+    weight: "180 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "6 in",
+      width: "3 in",
+      height: "3 mm",
+      trim: 0.05,
+      soft: true,
+    },
+
+    repairs_like: "legrig",
+    looks_like: "holster",
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Tall medical elastic band",
+
+        max_contains_weight: "1.5 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "width"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "2 in",
+            },
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+
+        moves: 170,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Short medical elastic band",
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            { op: "divide", value: 2 },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "width"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "2 in",
+            },
+            // * the small straps are not as accomodating
+            { op: "multiply", value: 0.9 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "width"] , raw: true},
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+
+        moves: 170,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Short medical elastic band",
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            { op: "divide", value: 2 },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "width"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "2 in",
+            },
+            // * the small straps are not as accomodating
+            { op: "multiply", value: 0.9 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "width"] , raw: true},
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+
+        moves: 170,
+      },
+    ],
+
+    price: "19 USD 95 cents",
+  },
+  {
+    id: "pouch/medical/rescue",
+    inherit: ["@pouch/medium", "@pouch/medical"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://rescue-essentials.com/rescue-essentials-ifak-rip-away-pouch-gen-2/
+    */
+
+    /*
+      TODO
+        - Velcro surface
+    */
+
+    name: {
+      str: "IFAK pouch",
+      str_pl: "IFAK pouches",
+    },
+    description: "A spacious nylon pouch for first aid items.  The straps inside the pouch allow for better sorting of different types of aid.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black", "red", "olive", "coyote"],
+
+        name: {
+          str: "Rescue Essentials Gen II IFAK pouch",
+          str_pl: "Rescue Essentials Gen II IFAK pouches",
+        },
+        description: "A spacious nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.",
+      },
+    ],
+
+    weight: "14 oz",
+    dimensions: {
+      type: "rectangle",
+
+      length: "7 in",
+      width: "5 in",
+      height: "5 mm",
+      trim: 0.05,
+      soft: true,
+    },
+
+    repairs_like: "legrig",
+    looks_like: "holster",
+
+    material: ["nylon"],
+
+    // TODO: inherit from mini?
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Tall medical elastic band",
+
+        max_contains_weight: "2 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "width"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "3.5 in",
+            },
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+
+        moves: 210,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Short medical elastic band",
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            { op: "divide", value: 2 },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "width"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "3.5 in",
+            },
+            // * the small straps are not as accomodating
+            { op: "multiply", value: 0.9 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "width"] , raw: true},
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+
+        moves: 210,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Short medical elastic band",
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"] , raw: true},
+            { op: "divide", value: 2 },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "width"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "3.5 in",
+            },
+            // * the small straps are not as accomodating
+            { op: "multiply", value: 0.9 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "width"] , raw: true},
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+
+        moves: 210,
+      },
+    ],
+
+    price: "25 USD",
+  },
+]

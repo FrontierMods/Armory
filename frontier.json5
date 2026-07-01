@@ -1,0 +1,9 @@
+[
+  {
+    autodoc: {
+      transformers: [
+        { package: "@frmds/transformers", export: "ALL_TRANSFORMERS" },
+      ],
+    },
+  },
+]

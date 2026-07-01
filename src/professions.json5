@@ -1,0 +1,1676 @@
+[
+  {
+    id: "full_ifak",
+    type: "item_group",
+    subtype: "collection",
+
+    "container-item": "pouch/medical/rescue",
+
+    entries: [
+      { item: "medical_tape", charges: 20 },
+      { group: "quikclot_bag_plastic_5" },
+      { item: "bandages", count: 9 },
+      { item: "medical_gauze", count: 3 },
+      { item: "adhesive_bandages", count: 3 },
+      { item: "gloves_medical" },
+      { item: "scissors_medical" },
+      { item: "tourniquet_upper" },
+    ],
+  },
+  {
+    id: "canteen_with_clean_water",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [{ item: "water_clean", "container-item": "canteen" }],
+  },
+
+  {
+    id: "prepped_patriot_rig",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "flag_chestrig",
+        "contents-group": "prepped_patriot_rig_contents",
+      },
+    ],
+  },
+  {
+    id: "prepped_patriot_rig_contents",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/direct_action/tempest",
+        variant: "flag_chestrig",
+        "contents-group": "mags_ruger_arr",
+      },
+    ],
+  },
+  {
+    id: "seal_plate_carrier_contents",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        "container-item": "pouch/grenade/haley",
+        item: "grenade",
+        count: 2,
+      },
+      { "container-item": "pouch/radio/tasm", group: "charged_two_way_radio" },
+    ],
+  },
+  {
+    id: "seal_belt",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      { item: "knife_rm42", "container-item": "sheath" },
+      {
+        item: "p226_9mm",
+        "ammo-item": "9mm",
+        "container-item": "nylon_holster",
+        charges: 15,
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
+        item: "p226mag_15rd_9x19mm",
+        "ammo-item": "9mm",
+        charges: 15,
+        count: 2,
+      },
+      {
+        group: "canteen_with_clean_water",
+        "container-item": "pouch/canteen/tt/1qt",
+      },
+    ],
+  },
+  {
+    id: "seal_sniper_rig",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "placard/haley/molle:multicam",
+        "contents-group": "seal_sniper_rig_contents",
+      },
+    ],
+  },
+  {
+    id: "seal_sniper_rig_contents",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "seal_sniper_rig_magazine_pouch",
+        "contents-group": "seal_sniper_rig_magazine",
+        count: 3,
+      },
+      {
+        item: "pouch/side/perroz",
+        "contents-group": "charged_two_way_radio",
+      },
+    ],
+  },
+  {
+    id: "seal_sniper_rig_magazine_pouch",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "pouch/magazine/warrior/338",
+        variant: "multicam",
+      },
+    ],
+  },
+  {
+    id: "seal_sniper_rig_magazine",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "ai_338mag",
+        "ammo-item": "338lapua_fmjbt",
+        charges: 5,
+      },
+    ],
+  },
+  {
+    id: "breacher_hammer_pouched",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        "container-item": "pouch/holster/raptor/breaching",
+        item: "hammer_sledge_short",
+      },
+    ],
+  },
+  {
+    id: "40x46mm_m433_pouched",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        "container-item": "pouch/40mm/haley",
+        item: "40x46mm_m433",
+        charges: 1,
+      },
+    ],
+  },
+  {
+    id: "grenadier_vest_contents",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      { group: "40x46mm_m433_pouched", count: 4 },
+      {
+        group: "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm",
+      },
+    ],
+  },
+  {
+    id: "us_ballistic_vest_grenadier",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "plate_carrier/msv/gen_ii",
+        variant: "ocp",
+        "contents-group": [
+          "pristine_esapi_front_plates",
+          "grenadier_vest_contents",
+        ],
+      },
+    ],
+  },
+  {
+    id: "charged_tazer",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "medium_battery_cell",
+        "ammo-item": "battery",
+        charges: 500,
+        "container-item": "tazer",
+      },
+    ],
+  },
+  {
+    id: "police_belt",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      { item: "baton", "container-item": "pouch/baton/bfg" },
+      {
+        group: "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm",
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
+        item: "usp45mag",
+        "ammo-item": "45_acp",
+        charges: 12,
+        count: 2,
+      },
+      {
+        item: "usp_45",
+        "ammo-item": "45_acp",
+        charges: 12,
+        "container-item": "nylon_holster",
+      },
+    ],
+  },
+  {
+    id: "police_belt_riot_control",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      { item: "PR24-extended", "container-item": "pouch/tonfa/gng" },
+      {
+        group: "charged_tazer",
+        "container-item": "pouch/stun_gun/streetwise",
+      },
+      {
+        group: "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm",
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
+        item: "usp45mag",
+        "ammo-item": "45_acp",
+        charges: 12,
+        count: 2,
+      },
+      { "container-item": "pouch/flashbang/tt", item: "gasbomb" },
+      {
+        item: "usp_45",
+        "ammo-item": "45_acp",
+        charges: 12,
+        "container-item": "nylon_holster",
+      },
+    ],
+  },
+  {
+    id: "police_belt_motorized",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      { item: "baton", "container-item": "pouch/baton/bfg" },
+      {
+        group: "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm",
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
+        item: "usp45mag",
+        "ammo-item": "45_acp",
+        charges: 12,
+        count: 2,
+      },
+      {
+        item: "usp_45",
+        "ammo-item": "45_acp",
+        charges: 12,
+        "container-item": "nylon_holster",
+      },
+    ],
+  },
+  {
+    id: "swat_belt",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm",
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
+        item: "usp9mag",
+        "ammo-item": "9mmfmj",
+        charges: 15,
+        count: 2,
+      },
+      {
+        "container-item": "pouch/flashbang/tt",
+        item: "flashbang",
+        count: 2,
+      },
+    ],
+  },
+  {
+    id: "swat_belt_cqc",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      { item: "baton", "container-item": "pouch/baton/bfg" },
+      {
+        group: "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm",
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
+        item: "usp9mag",
+        "ammo-item": "9mmfmj",
+        charges: 15,
+        count: 2,
+      },
+      {
+        "container-item": "pouch/flashbang/tt",
+        item: "flashbang",
+        count: 2,
+      },
+    ],
+  },
+  {
+    id: "mil_breacher_belt",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        "container-item": "pouch/flashbang/tt",
+        item: "flashbang",
+        count: 2,
+      },
+    ],
+  },
+  {
+    id: "ar15_mag",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [{ item: "stanag30", "ammo-item": "556", charges: 30 }],
+  },
+  {
+    id: "triple_stacker_mags_ar15_full",
+    type: "item_group",
+    subtype: "collection",
+
+    "container-item": "triple_stacker_pouch",
+
+    entries: [{ group: "ar15_mag", count: 6 }],
+  },
+  {
+    id: "militia_car_rig",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "placard/haley/magazine/triple:multicam",
+        "contents-group": ["ar15_mag", "ar15_mag", "ar15_mag"],
+      },
+    ],
+  },
+  {
+    id: "specops_rig",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "placard/haley/magazine/triple:multicam_black",
+        "contents-group": "specops_rig_contents",
+      },
+    ],
+  },
+  {
+    id: "specops_rig_contents",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "specops_mag_smg",
+        count: 3,
+      },
+    ],
+  },
+  {
+    id: "specops_mag_smg",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "mp5mag",
+        "ammo-item": "9mm",
+        charges: 30,
+      },
+    ],
+  },
+  {
+    id: "sniper_police_rig",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "placard/onetigris/vulture:black",
+        "contents-group": "sniper_police_rig_contents",
+      },
+    ],
+  },
+  {
+    id: "sniper_police_rig_contents",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "762_51",
+        charges: 20,
+      },
+    ],
+  },
+  {
+    id: "conversion_hunter_rig",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        group: "placard/haley/molle:multicam",
+        "contents-group": "conversion_hunter_rig_molle",
+      },
+    ],
+  },
+  {
+    id: "conversion_hunter_rig_molle",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        "container-item": "pouch/magazine/condor/556",
+        item: "50beowulf_ar15mag",
+        "ammo-item": "50beowulf_xtp",
+        charges: 10,
+        count: 3,
+      },
+    ],
+  },
+  {
+    id: "old_vet_rig_magazines_pouched",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        "container-item": "pouch/magazine/tt/308",
+        item: "m14mag",
+        "ammo-item": "762_51",
+        charges: 20,
+        count: 2,
+      },
+    ],
+  },
+
+  {
+    id: "specops",
+    inherit: "specops",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+        value: {
+          item: "chest_rig/harness/x/haley",
+          variant: "multicam_black",
+          "contents-group": "specops_rig",
+        },
+      },
+    ],
+  },
+  {
+    id: "militia_car",
+    inherit: "militia_car",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "kevlar" }],
+        value: {
+          item: "vest/ballistic/point_blank",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "m9" }],
+        value: {
+          item: "m9",
+          "ammo-item": "9mm",
+          charges: 15,
+          "container-item": "nylon_holster",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+        value: {
+          item: "chest_rig/harness/x/haley",
+          variant: "multicam",
+          "contents-group": "militia_car_rig",
+        },
+      },
+    ],
+  },
+  {
+    id: "conversion_hunter",
+    inherit: "conversion_hunter",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+        value: {
+          item: "chest_rig/harness/x/haley",
+          variant: "multicam",
+          "contents-group": "conversion_hunter_rig",
+        },
+      },
+    ],
+  },
+  {
+    id: "winter_army",
+    inherit: "winter_army",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "canteen" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+        value: {
+          item: "chest_rig/molle_ii/flc",
+          "contents-group": "triple_stacker_mags_ar15_full",
+        },
+      },
+    ],
+  },
+  {
+    id: "mili_pilot",
+    inherit: "mili_pilot",
+    type: "profession",
+
+    patch: [
+      // in the US armed forces (either Air Force or Army), pilots are required to complete basic training regardless of their eventual specialization
+      // said basic training includes learning to operate in a full set of issued gear, which includes body armor
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      // pilots aren't issued with chest rigs or any external webbing
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "loaded_webbing_belt" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "m17",
+          "ammo-item": "9mm",
+          "container-item": "nylon_holster",
+          charges: 17,
+        },
+      },
+    ],
+  },
+  {
+    id: "prepped_patriot",
+    inherit: "prepped_patriot",
+    type: "profession",
+
+    patch: [
+      // we assume that this is someone who's already had informal training with military-style gear, which would likely include wearing a kitted plate carrier with plates
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+        value: {
+          // TODO: add American-flag nylon patch to the rig when decoration becomes available
+          group: "prepped_patriot_rig",
+        },
+      },
+    ],
+  },
+  {
+    id: "old_vet",
+    inherit: "old_vet",
+    type: "profession",
+
+    patch: [
+      // as of 2026, being the youngest Old Vet puts the character at being born in 1976, and being of age for military service in 1994
+      // between 1994 and 2026, there have been a few military conflicts in which US troops had been involved extensively
+      // as such, we presume that this person has had conventional ballistic armor training
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "pipe_smoke" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "chestrig" }],
+        value: {
+          item: "chest_rig/molle_ii/flc",
+          "contents-group": "old_vet_rig_magazines_pouched",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "pipe_tobacco",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "tobacco",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "pants",
+          variant: "pants_british_khaki",
+        },
+      },
+    ],
+  },
+  {
+    id: "seal",
+    inherit: "seal",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "load_bearing_vest" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "loaded_webbing_belt" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "grenade" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "knife_rm42" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "p226_9mm" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "p226mag_15rd_9x19mm" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          // of note is the fact that SEALs used LBT 6094 during the Osama bin Laden raid
+          // https://lbtinc.com/products/6094
+          // we use the MSV as the SEAL plate carrier until a better option (ideally the 6094) is modelled with Armory
+          group: "loadout/msv/baseline:ocp",
+          "contents-group": "seal_plate_carrier_contents",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          // TODO: audit when Navy gear comes through
+          item: "belt/webbing/haley/d3",
+          "contents-group": "seal_belt",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "pouch/leg/magazine/condor/556",
+          "contents-group": "army_mags_m4",
+        },
+      },
+    ],
+  },
+  {
+    id: "seal_sniper",
+    inherit: "seal_sniper",
+    type: "profession",
+
+    // SEAL squads don't have a role of a designated marksman
+    // additionally, a .338 rifle is above DMR-grade infantry fire
+    name: "Navy SEAL Sniper",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "load_bearing_vest" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "loaded_webbing_belt" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "water_clean" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "knife_rm42" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "p226_9mm" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "p226mag_15rd_9x19mm" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "chest_rig/harness/x/haley",
+          variant: "multicam",
+          "contents-group": "seal_sniper_rig",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          // TODO: audit when Navy gear comes through
+          item: "belt/webbing/haley/d3",
+          "contents-group": "seal_belt",
+        },
+      },
+    ],
+  },
+  {
+    id: "marine",
+    inherit: "marine",
+    type: "profession",
+
+    // TODO: use a Marine plate carrier (MTV? Marines PC Gen III?)
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ group: "loaded_webbing_belt" }],
+        value: {
+          // TODO: audit when Navy gear comes through
+          item: "belt/webbing/haley/d3",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+        value: {
+          item: "pouch/leg/magazine/condor/556",
+          "contents-group": "army_mags_m4",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "m18" }],
+        value: {
+          item: "m18",
+          "ammo-item": "9mm",
+          "container-item": "nylon_holster",
+          charges: 17,
+        },
+      },
+    ],
+  },
+  {
+    id: "cop",
+    inherit: "cop",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "police_belt",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "baton" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_45" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+    ],
+  },
+  {
+    id: "sniper_police",
+    inherit: "sniper_police",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "police_belt",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "tacvest" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_45" }],
+        value: {
+          item: "usp_45",
+          "ammo-item": "45_acp",
+          charges: 12,
+          "container-item": "nylon_holster",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "762_51" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "chest_rig/harness/x/haley",
+          "contents-group": "sniper_police_rig",
+        },
+      },
+    ],
+  },
+  {
+    id: "detective",
+    inherit: "detective",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "leather_belt",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "pants" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "sw_619" }],
+        value: {
+          item: "sw_619",
+          "ammo-item": "357mag_fmj",
+          charges: 7,
+          "container-item": "nylon_holster",
+        },
+      },
+    ],
+  },
+  {
+    id: "swat",
+    inherit: "swat",
+    type: "profession",
+
+    // might be a good idea to transfer the gloves to a belt carabiner eventually
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "swat_belt",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "pants_tactical" }],
+        value: {
+          item: "pants_tactical",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "army_mags_usp9" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "grenadebandolier" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_9mm" }],
+        value: {
+          item: "usp_9mm",
+          "ammo-item": "9mm",
+          charges: 15,
+          "container-item": "nylon_holster",
+        },
+      },
+    ],
+  },
+  {
+    id: "swat_heavy",
+    inherit: "swat_heavy",
+    type: "profession",
+
+    patch: [
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_9mm" }],
+        value: {
+          item: "usp_9mm",
+          "ammo-item": "9mmfmj",
+          charges: 15,
+          "container-item": "nylon_holster",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "baton-extended" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "swat_belt_cqc",
+        },
+      },
+    ],
+  },
+  {
+    id: "riot_police",
+    inherit: "riot_police",
+    type: "profession",
+
+    patch: [
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "gasbomb" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_45" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "tonfa" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_tazer" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "police_belt_riot_control",
+        },
+      },
+    ],
+  },
+  {
+    id: "cop_motor",
+    inherit: "cop_motor",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "police_belt_motorized",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "baton" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_45" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+    ],
+  },
+  {
+    id: "horse_cop",
+    inherit: "horse_cop",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          // no evidence of mounted police using suppressed sidearms seems to be available
+          // as such, we replace the suppressed pistol with an unsuppressed version
+          // if evidence surfaces, we revert
+          "contents-group": "police_belt",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "baton" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "holster_supp_usp9" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+    ],
+  },
+  {
+    id: "cop_car",
+    inherit: "cop_car",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "police_belt",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "kevlar" }],
+        value: {
+          item: "vest/ballistic/point_blank",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "baton" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_45" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+    ],
+  },
+  {
+    id: "k9_cop",
+    inherit: "k9_cop",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "police_belt",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "baton" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "usp_45" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+    ],
+  },
+  {
+    id: "park_ranger",
+    inherit: "park_ranger",
+    type: "profession",
+
+    patch: [
+      // the Rangers appear to generally be armed with batons and pepper sprays, similarly to the police
+      // > https://www.bostonherald.com/2014/10/16/gelzinis-giving-park-rangers-guns-not-the-answer/
+      // pouches for the leather belt (which replaces an out-of-place police belt) will be added once belts become audited
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "police_belt" }],
+        value: {
+          item: "leather_belt",
+        },
+      },
+
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+
+      // park rangers in Massachusetts do not appear to be permitted to carry firearm unless their job is in Boston(?), in which case they're required to complete Special Officer training, which permits them to carry a sidearm
+      // > https://www.parkrangeredu.org/massachusetts/
+      // in general, only the Law Enforcement Ranger position permits carrying a sidearm, since it requires the capacity to enforce the law
+      // > https://www.parkrangeredu.org/careers/
+      // however, evidence is unclear, given that different sources say different things about whether or not park rangers are law enforcement
+      // > https://www.gamewarden.org/career/park-ranger
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "p320_357sig" }],
+      },
+    ],
+  },
+  {
+    id: "ninja",
+    inherit: "ninja",
+    type: "profession",
+
+    patch: [
+      // replace grenade pouch (no longer valid with Armory) with a leg bag
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "grenadebandolier" }],
+        value: {
+          item: "leg_bag",
+          "contents-group": "ninja_grenade_pouch",
+        },
+      },
+    ],
+  },
+  {
+    id: "mil_undercover",
+    inherit: "mil_undercover",
+    type: "profession",
+
+    // this loadout makes no sense for an undercover operative
+    // it could use IWB magazine pouches once those become available
+    patch: [
+      // there is no clear indicator what branch or MOS of the military this profession belongs to, but we have to presume that someone of this skill level must've had at least basic training in armor
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "kevlar" }],
+        value: {
+          item: "vest/ballistic/point_blank",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "holster" }],
+        value: {
+          item: "nylon_holster",
+          "contents-group": "holster_supp_57",
+        },
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+        value: {
+          item: "pouch/leg/fox",
+          "contents-group": "army_mags_57",
+        },
+      },
+    ],
+  },
+  {
+    id: "mil_grenadier",
+    inherit: "mil_grenadier",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ group: "charged_two_way_radio" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ group: "us_ballistic_vest_pristine" }],
+        value: {
+          group: "us_ballistic_vest_grenadier",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "grenade_pouch" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "m17",
+          "ammo-item": "9mm",
+          charges: 17,
+          "container-item": "nylon_holster",
+        },
+      },
+    ],
+  },
+  {
+    id: "mil_sniper",
+    inherit: "mil_sniper",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "m17" }],
+        value: {
+          item: "m17",
+          "ammo-item": "9mmfmj",
+          "container-item": "nylon_holster",
+          charges: 17,
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "legpouch_large" }],
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          group: "army_mags_m17",
+        },
+      },
+    ],
+  },
+  {
+    id: "mil_breacher",
+    inherit: "mil_breacher",
+    type: "profession",
+
+    patch: [
+      {
+        op: "append",
+        key: "proficiencies",
+        value: "prof_plate_carrier",
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "hammer_sledge" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ group: "us_ballistic_vest_pristine" }],
+        value: {
+          group: "us_ballistic_vest_pristine",
+          "contents-group": "breacher_hammer_pouched",
+        },
+      },
+      {
+        op: "drop",
+        path: "/items/both/entries",
+        filter: [{ item: "grenadebandolier" }],
+      },
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "m17" }],
+        value: {
+          item: "m17",
+          "ammo-item": "9mm",
+          charges: 17,
+          "container-item": "nylon_holster",
+        },
+      },
+      {
+        op: "append",
+        path: "/items/both/entries",
+        value: {
+          item: "belt/webbing/blackhawk/foundation",
+          "contents-group": "mil_breacher_belt",
+        },
+      },
+    ],
+  },
+  {
+    id: "security",
+    inherit: "security",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "soft_3a_vest" }],
+        value: {
+          item: "vest/stabproof/safeguard",
+        },
+      },
+    ],
+  },
+  {
+    id: "mall_cop",
+    inherit: "mall_cop",
+    type: "profession",
+
+    patch: [
+      {
+        op: "replace",
+        path: "/items/both/entries",
+        filter: [{ item: "stab_vest" }],
+        value: {
+          item: "vest/stabproof/safeguard",
+        },
+      },
+    ],
+  },
+
+  {
+    id: "national_guard",
+    "copy-from": "national_guard",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "mil_marksman",
+    "copy-from": "mil_marksman",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "mil_auto_rifleman",
+    "copy-from": "mil_auto_rifleman",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "mili_medic",
+    "copy-from": "mili_medic",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "major-general",
+    "copy-from": "major-general",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "nco",
+    "copy-from": "nco",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "combat-mechanic",
+    "copy-from": "combat-mechanic",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+  {
+    id: "combat-engineer",
+    "copy-from": "combat-engineer",
+    type: "profession",
+
+    extend: { proficiencies: ["prof_plate_carrier"] },
+  },
+]

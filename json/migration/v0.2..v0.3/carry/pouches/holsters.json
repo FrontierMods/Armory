@@ -1,0 +1,27 @@
+[
+  {
+    "id": "pouch_holster_magnet_hot",
+    "type": "MIGRATION",
+    "replace": "pouch/holster/high_order"
+  },
+  {
+    "id": "pouch_baton_bfg",
+    "type": "MIGRATION",
+    "replace": "pouch/baton/bfg"
+  },
+  {
+    "id": "holster_tonfa_gng",
+    "type": "MIGRATION",
+    "replace": "pouch/tonfa/gng"
+  },
+  {
+    "id": "holster_stun_gun_streetwise",
+    "type": "MIGRATION",
+    "replace": "pouch/stun_gun/streetwise"
+  },
+  {
+    "id": "pouch_holster_breaching_raptor",
+    "type": "MIGRATION",
+    "replace": "pouch/holster/raptor/breaching"
+  }
+]

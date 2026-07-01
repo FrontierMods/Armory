@@ -1,0 +1,22 @@
+[
+  {
+    id: ["chest_rig_tt_mav_2_piece"],
+    type: "MIGRATION",
+    replace: "chest_rig/tt/mav/2_piece",
+  },
+  {
+    id: ["chest_rig_molle_ii_flc"],
+    type: "MIGRATION",
+    replace: "chest_rig/molle_ii/flc",
+  },
+  {
+    id: ["chest_rig_condor_cross_draw"],
+    type: "MIGRATION",
+    replace: "chest_rig/condor/cross_draw",
+  },
+  {
+    id: ["chest_rig_unobtanium_dr_lv"],
+    type: "MIGRATION",
+    replace: "chest_rig/unobtanium/dr_lv",
+  },
+]

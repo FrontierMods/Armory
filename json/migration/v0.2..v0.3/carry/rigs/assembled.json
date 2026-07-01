@@ -1,0 +1,7 @@
+[
+  {
+    "id": "chest_rig_condor_modular",
+    "type": "MIGRATION",
+    "replace": "chest_rig/condor/modular"
+  }
+]

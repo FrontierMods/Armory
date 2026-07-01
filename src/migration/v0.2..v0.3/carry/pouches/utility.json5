@@ -1,0 +1,87 @@
+[
+  {
+    id: ["pouch_canteen_1qt_tt"],
+    type: "MIGRATION",
+    replace: "pouch/canteen/tt/1qt",
+  },
+  {
+    id: ["pouch_dump_frogpro"],
+    type: "MIGRATION",
+    replace: "pouch/dump/bfg",
+  },
+  {
+    id: ["pouch_dump_frogpro_folded"],
+    type: "MIGRATION",
+    replace: "pouch/dump/bfg:folded",
+  },
+  {
+    id: ["pouch_ammo_condor"],
+    type: "MIGRATION",
+    replace: "pouch/ammo/condor",
+  },
+  {
+    id: ["pouch_water_bottle_ft"],
+    type: "MIGRATION",
+    replace: "pouch/water_bottle/ft",
+  },
+  {
+    id: ["pouch_radio_tasm"],
+    type: "MIGRATION",
+    replace: "pouch/radio/tasm",
+  },
+  {
+    id: ["pouch_gadget_condor"],
+    type: "MIGRATION",
+    replace: "pouch/gadget/condor",
+  },
+  {
+    id: ["pouch_flashlight_511"],
+    type: "MIGRATION",
+    replace: "pouch/flashlight/511",
+  },
+  {
+    id: ["bag_deployment_condor"],
+    type: "MIGRATION",
+    replace: "pouch/deployment/condor",
+  },
+  {
+    id: ["pouch_handcuffs_511_tactical"],
+    type: "MIGRATION",
+    replace: "pouch/handcuffs/511",
+  },
+  {
+    id: ["pouch_multipurpose_tt"],
+    type: "MIGRATION",
+    replace: "pouch/utility/tt",
+  },
+  {
+    id: ["pouch_tool_wynex"],
+    type: "MIGRATION",
+    replace: "pouch/tool/wynex",
+  },
+  {
+    id: ["pouch_water_bottle_gonex"],
+    type: "MIGRATION",
+    replace: "pouch/water_bottle/gonex",
+  },
+  {
+    id: ["pouch_airhorn_defense"],
+    type: "MIGRATION",
+    replace: "pouch/airhorn/defense",
+  },
+  {
+    id: ["pouch_spray_angel"],
+    type: "MIGRATION",
+    replace: "pouch/spray/angel",
+  },
+  {
+    id: ["pouch_bino_condor"],
+    type: "MIGRATION",
+    replace: "pouch/binoculars/condor",
+  },
+  {
+    id: ["pouch_gas_mask_usmc"],
+    type: "MIGRATION",
+    replace: "pouch/gas_mask/usmc",
+  },
+]

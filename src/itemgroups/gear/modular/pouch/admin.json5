@@ -1,0 +1,21 @@
+[
+  {
+    id: "pouch/eud/ferro/admin",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "pouch/eud/ferro/admin",
+        from: [
+          "multicam",
+          "multicam_black",
+          "black",
+          "coyote",
+          "grey",
+          "ranger",
+        ],
+      },
+    ],
+  },
+]

@@ -1,0 +1,286 @@
+[
+  {
+    id: "gloves/tactical/mechanix/specialty",
+    inherit: ["@gloves/tactical"],
+    type: "ITEM",
+
+    // * workaround for not being able to properly merge arrays on inheritance
+    patch: [{ op: "append", key: "subtypes", value: "ARMOR" }],
+
+    /*
+      SOURCES
+        https://www.amazon.com/Mechanix-Wear-Specialty-Dexterity-Tactical/dp/B075P4CDD3
+        - dimensions
+     
+        https://battletested.sk/en/tactical-gear/3267-mechanix-specialty-05.html
+        - weight
+        - thickness
+     */
+
+    name: {
+      str: "tactical gloves",
+      str_pl: "pairs of tactical gloves",
+    },
+    description: "A pair of tactical gloves, the kind used by the military and law enforcement.  Designed for protection of the hands while maintaining their dexterity and a solid grip on the gun, they are comfortable to wear over longer periods of time.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black"],
+
+        name: {
+          str: "Mechanix Wear Specialty tactical gloves",
+          str_pl: "pairs of Mechanix Wear Specialty tactical gloves",
+        },
+        description: "A pair of tactical gloves.  Relatively-thin and with numerous changes made to ensure maximum hand and trigger finger dexterity, the Specialty gloves are designed primarily for military and law-enforcement use.  The outer side of the glove is made of a breathable material, ensuring comfort during prolonged wear.  The inner side is made of faux leather, with the goal of improving firearm handling.",
+      },
+    ],
+
+    // * sources cite the weight as anywhere between 35 g to "approx. 55 g" to 90 g to 0.5 lbs = 226.8 g
+    // * even though the weight source says it is for a Gen II glove model, which may have a slightly different weight to (presumably) the Gen I that we'd modelled this off of, we use that number (58 g) because it's more specific
+    weight: "58 g",
+
+    material: [
+      "leather" /* stands in for AX Suede, a faux leather */,
+      "nomex" /* stands in for TrekDry */,
+    ],
+
+    armor: [
+      {
+        encumbrance: 5,
+
+        coverage: 100,
+        covers: ["hand_l", "hand_r"],
+      },
+    ],
+
+    price: "37 USD 99 cents",
+    price_postapoc: "1 USD",
+  },
+  {
+    id: "gloves/tactical/ferro/delta",
+    inherit: ["@gloves/tactical"],
+    type: "ITEM",
+    // subtypes: ["ARMOR"],
+
+    patch: [{ op: "append", key: "subtypes", value: "ARMOR" }],
+
+    /* 
+      SOURCES
+        https://ferroconcepts.com/collections/new/products/pig-delta-fr-glove
+
+        https://www.instagram.com/ferroconcepts/p/DCr0rqKJygM/
+        - weight 
+    */
+
+    name: {
+      str: "spec ops tactical gloves",
+      str_pl: "pairs of spec ops tactical gloves",
+    },
+    description: "A pair of tactical gloves, the kind used by the military and law enforcement.  Designed for protection of the hands while maintaining their dexterity and a solid grip on the gun, they are comfortable to wear over longer periods of time.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black", "olive", "fde"],
+
+        name: {
+          str: "Ferro×Pig Delta FR tactical gloves",
+          str_pl: "pairs of Ferro×Pig Delta FR tactical gloves",
+        },
+
+        description: "A pair of tactical gloves.  TODO",
+      },
+    ],
+
+    weight: "6.11 oz",
+
+    material: ["nomex"],
+
+    armor: [
+      {
+        encumbrance: 2,
+
+        coverage: 100,
+        covers: ["hand_l", "hand_r"],
+      },
+    ],
+
+    price: "57 USD 95 cents",
+    price_postapoc: "1 USD",
+  },
+  {
+    id: "gloves/tactical/cwgs/mitts",
+    inherit: ["@gloves/tactical"],
+    type: "ITEM",
+
+    // * workaround for not being able to properly merge arrays on inheritance
+    patch: [{ op: "append", key: "subtypes", value: "ARMOR" }],
+
+    /*
+      SOURCES
+        https://www.outdoorresearch.com/products/firebrand-tf-mitts-usa-286114/
+     
+        https://gunfightershootingsolutions.com/products/firebrand-tf-mitts
+          * adequate available reference for the values listed below for users outside of the US
+          - weight
+          - price
+     */
+
+    /*
+      NOTES
+        modelled after men's size M
+     
+        Outdoor Research is the U.S. Army supplier
+          > https://fragoutmag.com/outdoor-research-awarded-us-army-cold-weather-glove-system-cwgs-contract/
+     */
+
+    name: {
+      str: "pair of CWGS trigger-finger mitts",
+      str_pl: "pairs of CWGS trigger-finger mitts",
+    },
+    description: "A pair of thick, insulated mitts with a separate trigger finger.  Part of CWGS (Cold Weather Glove System), this pair of mitts was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the trigger finger enables the use of touch screens without taking the mitt off.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["coyote"],
+
+        name: {
+          str: "CWGS trigger-finger mitts",
+          str_pl: "pairs of CWGS trigger-finger mitts",
+        },
+
+        description: "A pair of thick, insulated mitts with a separate trigger finger; manufactured by Outdoor Research, and sold commercially as Firebrand TF Mitts.  Part of CWGS (Cold Weather Glove System), this pair of mitts was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the trigger finger enables the use of touch screens without taking the mitt off.",
+      },
+    ],
+
+    weight: "7.2 oz",
+    dimensions: {
+      type: "area",
+
+      area: {
+        math: [
+          "388.98 cm2" /* see `@gloves` for source of the value */,
+          {
+            op: "multiply",
+            value: 1.8 /* we assume, based on the visual reference, that this is how much further the mitt stretches out outside the hand proper */,
+          },
+        ],
+      },
+      /*
+        according to REI Co-op:
+          "A properly fitting glove or mitten will have about ¼ inch of material at the end of your outstretched fingers"
+        see: https://www.rei.com/learn/expert-advice/snow-gloves-and-mittens--how-to-choose.html
+        while this is talking about a good fit, we assume this is a decent approximation of the overall thickness for a mitt
+       */
+      length: "0.25 in",
+
+      soft: true,
+    },
+
+    color: "white",
+    looks_like: "fire_gauntlets",
+
+    material: [
+      "plastic" /* Gore-Tex */,
+      "leather" /* goat leather or touchscreen leather */,
+      "wool" /* PrimaLoft insulation */,
+    ],
+    material_thickness: 51 /* 0.25 in = 50.8 mm */,
+    warmth: 50,
+
+    armor: [
+      {
+        // * separate trigger finger gives it a slight advantage in terms of encumbrance
+        encumbrance: 18,
+
+        coverage: 100,
+        covers: ["hand_l", "hand_r"],
+        layers: ["OUTER"],
+      },
+      {
+        encumbrance: 1,
+
+        // * as appears on body graph
+        coverage: 14,
+        covers: ["arm_l", "arm_r"],
+        specifically_covers: ["arm_lower_l", "arm_lower_r"],
+        layers: ["OUTER"],
+      },
+    ],
+
+    flags: ["SOFT", "WATERPROOF"],
+
+    price: "350 USD",
+    price_postapoc: "2 USD 50 cents",
+  },
+  {
+    id: "gloves/tactical/cwgs/liner",
+    inherit: ["@gloves/tactical"],
+    type: "ITEM",
+
+    // * workaround for not being able to properly merge arrays on inheritance
+    patch: [{ op: "append", key: "subtypes", value: "ARMOR" }],
+
+    /* 
+      SOURCES
+        https://www.outdoorresearch.com/products/cwgs-fr-liner-gloves-usa-276091
+    */
+
+    name: {
+      str: "pair of CWGS glove liners",
+      str_pl: "pairs of CWGS glove liners",
+    },
+    description: "A pair of thin, warm gloves.  Intended to be used as an underlayer for a heavier, thicker pair of gloves, these can also be used on their own.  Part of CWGS (Cold Weather Glove System), this pair of lines was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the index finger and the thumb enables the use of touch screens without taking the liner off.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["coyote"],
+
+        name: {
+          str: "CWGS glove liners",
+          str_pl: "pairs of CWGS glove liners",
+        },
+        description: "A pair of thin, warm gloves; manufactured by Outdoor Research.  Intended to be used as an underlayer for a heavier, thicker pair of gloves, these can also be used on their own.  Part of CWGS (Cold Weather Glove System), this pair of lines was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the index finger and the thumb enables the use of touch screens without taking the liner off.",
+      },
+    ],
+
+    weight: "1.4 oz",
+
+    material: [
+      // Tweave Durastretch (520E): 91% rugged nylon, 9% spandex
+      // > https://backpackinglight.com/forums/topic/85454/
+      { type: "nylon", portion: 90 },
+      { type: "lycra", portion: 9 },
+      // conductive goat leather on the tips of the index and thumb fingers
+      { type: "leather", portion: 1 },
+    ],
+    material_thickness: 0.25,
+    warmth: 15,
+
+    looks_like: "gloves_light",
+
+    armor: [
+      {
+        encumbrance: 2,
+
+        coverage: 100,
+        covers: ["hand_l", "hand_r"],
+      },
+      {
+        encumbrance: 0,
+
+        coverage: 7,
+        covers: ["arm_l", "arm_r"],
+        specifically_covers: ["arm_lower_l", "arm_lower_r"],
+      },
+    ],
+
+    flags: ["WATERPROOF", "SKINTIGHT"],
+
+    price: "90 USD",
+    price_postapoc: "1 USD",
+  },
+]

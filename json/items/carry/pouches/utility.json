@@ -1,2586 +1,1732 @@
 [
   {
-    "id": "pouch_canteen_1qt_tt",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://tacticaltailor.com/canteen-utility-pouch/",
-      ["https://www.entrygear.com/product.asp?id=TT-10049", "weight"]
-    ],
-
+    "id": "pouch/canteen/tt/1qt",
+    "type": "ITEM",
     "name": {
       "str": "one-quart canteen pouch"
     },
     "description": "A large nylon pouch that can hold a 1-quart canteen, like those issued to the U.S. soldiers.  Can serve as an impromptu dump pouch.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Tactical Tailor canteen pouch",
           "str_pl": "Tactical Tailor canteen pouches"
         },
         "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Tactical Tailor canteen pouch",
           "str_pl": "Tactical Tailor canteen pouches"
         },
         "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "Tactical Tailor canteen pouch",
           "str_pl": "Tactical Tailor canteen pouches"
         },
         "description": "A large nylon pouch, intended to hold a single 1-quart canteen, like those issued to the U.S. G.I.'s.  Can serve as an impromptu dump pouch.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "133 g",
-    "//dimensions": {
-      "length": "5 in",
-      "width": "3 in",
-      "height": "8.5 in",
-      "raw": "2089 ml",
-      "trim": 0.05
-    },
-    "volume": "1985 ml",
-    "longest_side": "216 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "repairs_like": "legrig",
     "looks_like": "holster",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Canteen pouch",
-
-        "rigid": true,
-
         "max_contains_weight": "3 kg",
-        "//max_contains_volume": [
-          "from dimensions of a 1-qt canteen",
-          "https://www.dimensions.com/element/canteen-military",
-          {
-            "length": "5 in",
-            "width": "2.8 in",
-            "height": "8.5 in",
-            "raw": "1950 ml",
-            "trim": 0,
-            "notes": [
-              "because the pouch is not form-fitting and can accept items that are boxy, we use no trim"
-            ]
-          }
-        ],
-        "max_contains_volume": "1950 ml",
-        "min_item_volume": "300 ml",
-        "min_item_length": "76 mm",
-        "max_item_length": "216 mm"
+        "max_contains_volume": "1 L 985 ml",
+        "max_item_length": "20 cm 5 mm",
+        "volume_encumber_modifier": 0.5
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
-
-    "price": "33 USD",
-    "price_postapoc": "1 USD"
+    "price": "35 USD",
+    "volume": "78 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_dump_frogpro",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.frogpro.eu/en/pouches/166-1083-ctb-dump-pouch-qr.html"
-    ],
-
-    "//notes": ["the unfolded version"],
-
+    "id": "pouch/dump/bfg",
+    "type": "ITEM",
     "name": {
       "str": "compact dump pouch",
       "str_pl": "compact dump pouches"
     },
-    "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.",
-
+    "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space when full.  Activate to fold back.",
     "variant_type": "gun",
     "variants": [
       {
+        "name": {
+          "str": "Blue Force Gear dump pouch",
+          "str_pl": "Blue Force Gear dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space when full.  Activate to fold back.  <variant:multicam>",
         "id": "multicam",
-
-        "name": {
-          "str": "FROG.PRO dump pouch",
-          "str_pl": "FROG.PRO dump pouches"
-        },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
         "name": {
-          "str": "FROG.PRO dump pouch",
-          "str_pl": "FROG.PRO dump pouches"
+          "str": "Blue Force Gear dump pouch",
+          "str_pl": "Blue Force Gear dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": {
-          "str": "FROG.PRO dump pouch",
-          "str_pl": "FROG.PRO dump pouches"
-        },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "coyote",
-
-        "name": {
-          "str": "FROG.PRO dump pouch",
-          "str_pl": "FROG.PRO dump pouches"
-        },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space when full.  Activate to fold back.  <variant:ranger>",
         "id": "ranger",
-
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
         "name": {
-          "str": "FROG.PRO dump pouch",
-          "str_pl": "FROG.PRO dump pouches"
+          "str": "Blue Force Gear dump pouch",
+          "str_pl": "Blue Force Gear dump pouches"
         },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space.  Activate to fold back.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space when full.  Activate to fold back.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Blue Force Gear dump pouch",
+          "str_pl": "Blue Force Gear dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space when full.  Activate to fold back.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Blue Force Gear dump pouch",
+          "str_pl": "Blue Force Gear dump pouches"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently unfolded and is ready to collect, taking up a fair bit of space when full.  Activate to fold back.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "175 g",
-    "//dimensions": {
-      "length": "14.00 cm",
-      "width": "8.00 cm",
-      "height": "5.00 cm",
-      "raw": "560 ml",
-      "trim": 0.075
-    },
-    "volume": "518 ml",
-    "longest_side": "140 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon", "plastic"],
+    "weight": "61 g",
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "repairs_like": "legrig",
     "looks_like": "holster",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Dump pouch",
-
-        "max_contains_weight": "3 kg",
-        "//max_contains_volume": "95% of unfolded volume",
-        "max_contains_volume": "3029 ml",
-        "max_item_length": "250 mm",
-
-        "volume_encumber_modifier": 0.5
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "3 L 500 ml",
+        "max_item_length": "25 cm",
+        "volume_encumber_modifier": 2.5
       }
     ],
-
     "use_action": {
       "type": "transform",
-      "target": "pouch_dump_frogpro_folded",
-
+      "target": "pouch/dump/bfg:folded",
       "menu_text": "Fold",
       "msg": "You fold the dump pouch."
     },
-
-    "flags": ["PALS_MEDIUM", "WATER_FRIENDLY", "CANT_WEAR"],
-
-    "price": "38 USD",
-    "//price_postapoc": "1 USD"
+    "price": "59 USD 95 cents",
+    "volume": "129 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_dump_frogpro_folded",
-    "copy-from": "pouch_dump_frogpro",
-    "type": "GENERIC",
-    "category": "container",
-
+    "id": "pouch/dump/bfg:folded",
+    "type": "ITEM",
     "name": {
       "str": "compact dump pouch (folded)",
       "str_pl": "compact dump pouches (folded)"
     },
     "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
         "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": {
-          "str": "FROG.PRO dump pouch (folded)",
-          "str_pl": "FROG.PRO dump pouches (folded)"
-        },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": {
-          "str": "FROG.PRO dump pouch (folded)",
-          "str_pl": "FROG.PRO dump pouches (folded)"
-        },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "coyote",
-
-        "name": {
-          "str": "FROG.PRO dump pouch (folded)",
-          "str_pl": "FROG.PRO dump pouches (folded)"
-        },
-        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
-        "id": "ranger",
-
         "name": {
           "str": "FROG.PRO dump pouch (folded)",
           "str_pl": "FROG.PRO dump pouches (folded)"
         },
         "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "ranger",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "FROG.PRO dump pouch (folded)",
+          "str_pl": "FROG.PRO dump pouches (folded)"
+        },
+        "description": "A nylon pouch for collecting items, primarily empty magazines, for sorting later.  It is currently folded for storing and provides no container capacity, and must be unfolded to be useful.  Activate to unfold.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "longest_side": "0 mm",
-
     "use_action": {
       "type": "transform",
-      "target": "pouch_dump_frogpro",
-
+      "target": "pouch/dump/bfg",
       "menu_text": "Unfold",
       "msg": "You unfold the dump pouch."
-    }
+    },
+    "weight": "61 g",
+    "material": [
+      "nylon",
+      "plastic"
+    ],
+    "repairs_like": "legrig",
+    "looks_like": "holster",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Dump pouch",
+        "max_contains_weight": "5 kg",
+        "max_contains_volume": "3 L 500 ml",
+        "max_item_length": "25 cm",
+        "volume_encumber_modifier": 2.5
+      }
+    ],
+    "price": "59 USD 95 cents",
+    "volume": "129 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "longest_side": "5 cm"
   },
   {
-    "id": "pouch_ammo_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/products/condor-ammo-pouch",
-      ["https://www.amazon.com/Condor-Ammo-Pouch/dp/B00865O0HA", "weight"],
-      [
-        "https://www.gearzonetactical.com/Condor-Ammo-Pouch--Multicam_p_3542.html",
-        "variant reference"
-      ]
-    ],
-
+    "id": "pouch/ammo/condor",
+    "type": "ITEM",
     "name": {
       "str": "loose ammo pouch",
       "str_pl": "loose ammo pouches"
     },
     "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
         "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
         "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
         "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "Condor loose ammo pouch",
           "str_pl": "Condor loose ammo pouches"
         },
         "description": "A nylon box pouch with a flap.  While intended to carry loose ammunition, it can be used as an impromptu dump pouch of a more general variety.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "254 g",
-    "//dimensions": {
-      "length": "3 in",
-      "width": "6.5 in",
-      "height": "7 in",
-      "raw": "2237 ml",
-      "trim": 0
-    },
-    "volume": "2237 ml",
-    "longest_side": "178 mm",
-
-    "symbol": "[",
-    "color": "brown",
-
-    "material": ["nylon", "plastic"],
-
+    "weight": "140 g 614 mg",
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Loose ammo pouch",
-
-        "rigid": true,
-
-        "//max_contains_volume": "95% of total volume",
-        "max_contains_volume": "2125 ml",
-        "max_contains_weight": "5 kg"
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "2 L 125 ml"
       }
     ],
-
-    "//flags": [
-      "replaced PALS_LARGE with PALS_MEDIUM: appears to only take up two full slots",
-      "added WATER_FRIENDLY",
-      "added COLLAPSE_CONTENTS"
-    ],
+    "price": "28 USD 95 cents",
+    "volume": "117 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
     "flags": [
-      "COLLAPSE_CONTENTS",
-      "WATER_FRIENDLY",
-      "CANT_WEAR",
-      "PALS_MEDIUM"
+      "COLLAPSE_CONTENTS"
     ],
-
-    "price": "24 USD",
-    "//price_postapoc": "1 USD"
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_water_bottle_ft",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.firsttactical.com/products/tactix-series-bottle-pouch-1-0-liter"
-    ],
-
-    "//notes": [
-      "while this pouch clearly can store more than a single item, for the sake of sanity and reasonable inventory management, we reduce it to a holster with minimum item-size requirements"
-    ],
-
+    "id": "pouch/water_bottle/ft",
+    "type": "ITEM",
     "name": {
       "str": "water bottle pouch",
       "str_pl": "water bottle pouches"
     },
     "description": "A tall nylon pouch for storing water bottles.  Takes in tall bottles up to 1.5L in capacity.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "First Tactical water bottle pouch",
           "str_pl": "First Tactical water bottle pouches"
         },
         "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "First Tactical water bottle pouch",
           "str_pl": "First Tactical water bottle pouches"
         },
         "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "First Tactical water bottle pouch",
           "str_pl": "First Tactical water bottle pouches"
         },
         "description": "A tall nylon pouch for storing water bottles.  The flap can be securely held closed by a robust plastic buckle.  Takes in tall bottles up to 1.5L in capacity.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "136 g",
-    "//dimensions": {
-      "length": "4.25 in",
-      "width": "3.75 in",
-      "height": "8.5 in",
-      "raw": "2220 ml",
-      "trim": 0.125
-    },
-    "volume": "1943 ml",
-    "longest_side": "216 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon", "plastic"],
+    "weight": "136 g 78 mg",
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Water bottle pouch",
-
         "holster": true,
-        "rigid": true,
-
         "max_contains_weight": "3 kg",
-        "//max_contains_volume": "from source",
-        "max_contains_volume": "1600 ml",
-        "min_item_volume": "300 ml",
-        "min_item_length": "100 mm",
-        "max_item_length": "206 mm"
+        "max_contains_volume": "1 L 600 ml",
+        "min_item_volume": "600 ml",
+        "min_item_length": "11 cm 9 mm",
+        "max_item_length": "20 cm 5 mm",
+        "volume_encumber_modifier": 0.5,
+        "moves": 150
       }
     ],
-
-    "//flags": [
-      "replaced PALS_LARGE with PALS_SMALL: only takes up one full slot",
-      "removed BELTED and OVERSIZE"
+    "price": "29 USD 99 cents",
+    "volume": "291 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
     ],
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
-    "price": "25 USD",
-    "//price_postapoc": "1 USD"
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_radio_tasm",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": ["https://tasmaniantigerusa.com/product.php?id=33"],
-
+    "id": "pouch/radio/tasm",
+    "type": "ITEM",
     "name": {
       "str": "skinny radio pouch",
       "str_pl": "skinny radio pouches"
     },
     "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "Tasmanian Tiger radio pouch",
           "str_pl": "Tasmanian Tiger radio pouches"
         },
         "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Tasmanian Tiger radio pouch",
           "str_pl": "Tasmanian Tiger radio pouches"
         },
         "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "Tasmanian Tiger radio pouch",
           "str_pl": "Tasmanian Tiger radio pouches"
         },
         "description": "A skeletonized nylon pouch made with two orthogonal straps supported by elastic bands and a generous amount of threading.  Intended to hold a full-sized two-way radio for military communications, it can hold a single smaller item in its stead.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "99 g",
-    "//dimensions": {
-      "length": "6 in",
-      "width": "3.75 in",
-      "height": "3.75 in",
-      "raw": "1383 ml",
-      "trim": 0.95,
-      "notes": [
-        "large trim to account for the fact that this item is two pieces of thin cloth sewn together, with a lot of space in-between"
-      ]
-    },
-    "volume": "69 ml",
-    "longest_side": "152 mm",
-
-    "symbol": "[",
-    "color": "light_gray",
-
-    "material": ["nylon", "plastic"],
+    "weight": "99 g 223 mg",
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tactical radio pouch",
-
         "holster": true,
-
-        "//max_contains_weight": "weight of Motorola SRX 2200 radio (10.9 oz) + brown battery (6.5 oz)",
-        "max_contains_weight": "493 g",
-        "//min_item_volume": "to prevent storing smaller items that may fall through the open corners of the pouch",
+        "max_contains_weight": "669 g",
         "min_item_volume": "200 ml",
-        "//max_contains_volume": [
-          "volume of Motorola SRX 2200 radio",
-          "https://www.motorolasolutions.com/en_us/products/two-way-radios/project-25-radios/portable-radios/srx2200.html",
-          {
-            "length": "5.47 in",
-            "width": "2.89 in",
-            "height": "1.58 in",
-            "raw": "409.3 ml",
-            "trim": 0.05,
-            "result": "388.84 ml"
-          }
-        ],
-        "max_contains_volume": "389 ml",
-        "//max_item_length": "length of Motorola SRX 2200 (without antenna?)",
-        "max_item_length": "139 mm",
-
+        "max_contains_volume": "500 ml",
+        "max_item_length": "8 cm",
         "moves": 120
       }
     ],
-
-    "use_action": {
-      "type": "holster"
-    },
-
-    "//flags": [
-      "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "added WATER_FRIENDLY"
-    ],
+    "price": "22 USD 95 cents",
+    "volume": "48 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
     "flags": [
       "CANT_WEAR",
       "WATER_FRIENDLY",
-      "PALS_SMALL",
-      "ALLOWS_NATURAL_ATTACKS"
+      "PALS_SMALL"
     ],
-
-    "price": "18 USD",
-    "//price_postapoc": "1 USD"
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash radio",
+      "holster_msg": "You stash your %s."
+    }
   },
   {
-    "id": "pouch_gadget_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/collections/utility-pouches/products/condor-gadget-pouch",
-      [
-        "https://www.specshop.pl/product-eng-35122-Condor-Gadget-Pouch-Navy-Blue-MA26-006.html",
-        "weight"
-      ]
-    ],
-
+    "id": "pouch/gadget/condor",
+    "type": "ITEM",
     "name": {
       "str": "gadget pouch",
       "str_pl": "gadget pouches"
     },
     "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
         "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
         "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
         "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
         "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "navy",
-
         "name": {
           "str": "Condor gadget pouch",
           "str_pl": "Condor gadget pouches"
         },
         "description": "A nylon pouch with two compartments.  The smaller front compartment is designed to hold smaller smartphones or other digital devices.  The larger back compartment can hold something larger, like a small power bank.  The latter also has two thin pouches for things like plastic cards.  <variant:navy>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "navy",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "190 g",
-    "//dimensions": {
-      "length": "2.5 in",
-      "width": "4 in",
-      "height": "5.5 in",
-      "raw": "901 ml",
-      "trim": 0.05
-    },
-    "volume": "856 ml",
-    "longest_side": "140 mm",
-
-    "symbol": "[",
-    "color": "light_gray",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Gadget pouch front pocket",
-
         "holster": true,
-
-        "//max_contains_weight": "roughly the weight of an iPhone 13 (6.14 oz) + 50 g, rounded to the nearest 25",
-        "max_contains_weight": "225 g",
-        "//max_contains_volume": [
-          "from assumed dimensions of the front pocket",
-          {
-            "length": "1 in",
-            "width": "3.75 in",
-            "height": "5 in",
-            "raw": "307 ml",
-            "trim": 0
-          }
-        ],
+        "max_contains_weight": "224 g 66 mg",
         "max_contains_volume": "307 ml",
-        "max_item_length": "95 mm",
-
+        "max_item_length": "9 cm 7 mm",
         "moves": 95
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Gadget pouch flap pocket",
-
         "max_contains_weight": "100 g",
-        "//max_contains_volume": [
-          "from visual dimensions of the flap pocket",
-          {
-            "length": "6 mm",
-            "width": "3 in",
-            "height": "3.5 in",
-            "raw": "40.65 ml",
-            "trim": 0
-          }
-        ],
         "max_contains_volume": "41 ml",
-        "max_item_length": "90 mm",
-
+        "max_item_length": "9 cm 7 mm",
         "moves": 130
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Gadget pouch back pocket",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket",
-          {
-            "length": "1.25 in",
-            "width": "3.75 in",
-            "height": "5.25 in",
-            "raw": "403 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "403 ml",
-        "//max_contains_weight": "rough estimate based on available dimensions",
         "max_contains_weight": "350 g",
-        "max_item_length": "133 mm",
-
+        "max_contains_volume": "403 ml",
+        "max_item_length": "13 cm 3 mm",
         "moves": 120
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Gadget pouch back pocket thin pouch",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket's thin pouches",
-          {
-            "length": "0.125 in",
-            "width": "3.5 in",
-            "height": "3.5 in",
-            "raw": "27 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "27 ml",
         "max_contains_weight": "50 g",
-        "max_item_length": "89 mm",
-
+        "max_contains_volume": "25 ml",
+        "max_item_length": "9 cm 1 mm",
         "moves": 150
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Gadget pouch back pocket thin pouch",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket's thin pouches",
-          {
-            "length": "0.125 in",
-            "width": "3.5 in",
-            "height": "3.5 in",
-            "raw": "27 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "27 ml",
         "max_contains_weight": "50 g",
-        "max_item_length": "89 mm",
-
+        "max_contains_volume": "25 ml",
+        "max_item_length": "9 cm 1 mm",
         "moves": 150
       }
     ],
-
+    "price": "19 USD",
+    "volume": "472 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster"
-    },
-
-    "//flags": [
-      "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "added WATER_FRIENDLY"
-    ],
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
-
-    "price": "19 USD",
-    "//price_postapoc": "1 USD"
+    }
   },
   {
-    "id": "pouch_flashlight_511",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": ["https://www.511tactical.com/flex-flashlight-pouch.html"],
-
+    "id": "pouch/flashlight/511",
+    "type": "ITEM",
     "name": {
       "str": "flashlight pouch",
       "str_pl": "flashlight pouches"
     },
     "description": "A small nylon pouch, intended to hold a compact field flashlight.",
-
     "variant_type": "gun",
     "variants": [
       {
         "id": "black",
-
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
         "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "weight": 2,
+        "expand_snippets": true
       },
       {
         "id": "coyote",
-
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
         "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "weight": 2,
+        "expand_snippets": true
       },
       {
         "id": "ranger",
-
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
         "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "weight": 1,
+        "expand_snippets": true
       },
       {
         "id": "navy",
-
         "name": {
           "str": "5.11 Tactical flashlight pouch",
           "str_pl": "5.11 Tactical flashlight pouches"
         },
         "description": "A small nylon pouch with a flap, intended to hold a compact field flashlight.  <variant:navy>",
-        "expand_snippets": true,
-        "weight": 1
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "70 g",
-    "//dimensions": {
-      "length": "3.5 mm",
-      "width": "1.5 in",
-      "height": "6 in",
-      "raw": "20.32 ml",
-      "trim": 0.075
-    },
-    "volume": "19 ml",
-    "longest_side": "152 mm",
-
-    "symbol": "[",
-    "color": "light_gray",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Flashlight pouch",
-
         "holster": true,
-
-        "max_contains_weight": "200 g",
-        "//min_item_volume": [
-          "to prevent storing smaller items that would be hard to reach",
-          "half the volume of the pouch, minus another 5 ml to allow slightly-smaller items"
-        ],
-        "min_item_volume": "80 ml",
-        "//max_contains_volume": [
-          {
-            "length": "1.25 in",
-            "width": "1.5 in",
-            "height": "6 in",
-            "raw": "184.36 ml",
-            "trim": 0.05
-          }
-        ],
+        "max_contains_weight": "232 g 500 mg",
+        "min_item_volume": "120 ml",
         "max_contains_volume": "175 ml",
-        "//max_item_length": "7.5 in.: full length of the pouch, plus 1.5 in. of permissive Velcro flap",
-        "max_item_length": "191 mm",
-
+        "max_item_length": "4 cm",
         "moves": 120
       }
     ],
-
+    "price": "30 USD",
+    "volume": "11 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster"
-    },
-
-    "//flags": [
-      "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "added WATER_FRIENDLY"
-    ],
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_SMALL"],
-
-    "price": "22 USD",
-    "//price_postapoc": "1 USD"
+    }
   },
   {
-    "id": "bag_deployment_condor",
-    "type": "ARMOR",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/products/condor-deployment-bag",
-      [
-        "https://www.military1st.com/127-001-condor-modular-style-deployment-bag-olive-drab.html",
-        "weight"
-      ]
+    "id": "pouch/deployment/condor",
+    "type": "ITEM",
+    "subtypes": [
+      "ARMOR"
     ],
-
-    "//notes": [
-      "small straps on the side of pouches are not currently modelled",
-      "has an interior separator inside the main pocket, which it didn't seem wise to model, since there's no way to separate volume of main pocket from volume of separator 'pocket' without breaking something about pocket management for the player",
-      "unlike many other pouches, this one can be worn directly over the shoulder"
-    ],
-
     "name": {
       "str": "deployment bag"
     },
     "description": "A small nylon bag.  Can be worn over the shoulder or strapped to webbing.  Has plenty of pockets.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor deployment bag"
         },
         "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor deployment bag"
         },
         "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor deployment bag"
         },
         "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "red",
-
         "name": {
           "str": "Condor deployment bag"
         },
-        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  This one is red with black accents.",
-        "expand_snippets": true,
-        "weight": 1
+        "description": "A small nylon bag that has both MOLLE straps and a shoulder strap.  It can be worn over the shoulder or attached to a PALS webbing.  Best used on an expedition where you may not need a lot of ammo, but would require food, drink, medication, or other short-term supplies.  <variant:red>",
+        "id": "red",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "550 g",
-    "//dimensions": {
-      "length": "5.5 in",
-      "width": "12 in",
-      "height": "6 in",
-      "raw": "6489 ml",
-      "trim": 0.05
-    },
-    "volume": "6165 ml",
-    "longest_side": "305 mm",
-
-    "symbol": "[",
-    "color": "green",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "looks_like": "fanny",
     "repairs_like": "backpack",
-
     "armor": [
       {
-        "encumbrance": [1, 4],
-
+        "encumbrance": [
+          1,
+          4
+        ],
         "volume_encumber_modifier": 0.3,
-
         "coverage": 38,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ]
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Deployment bag front pocket",
-
-        "//max_contains_volume": [
-          "from eyeballed dimensions of the front pocket",
-          {
-            "length": "1 in",
-            "width": "9 in",
-            "height": "5 in",
-            "raw": "737 ml",
-            "trim": 0.05
-          }
-        ],
-        "max_contains_volume": "700 ml",
-        "max_contains_weight": "1250 g",
-        "max_item_length": "216 mm",
-
+        "max_contains_weight": "1 kg 500 g",
+        "max_contains_volume": "701 ml",
+        "max_item_length": "29 cm",
         "moves": 110
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Deployment bag front pocket thin pouch",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket's thin pouches",
-          {
-            "length": "0.125 in",
-            "width": "4.5 in",
-            "height": "3.75 in",
-            "raw": "35 ml",
-            "trim": 0
-          }
-        ],
+        "max_contains_weight": "100 g",
         "max_contains_volume": "35 ml",
-        "max_contains_weight": "50 g",
-        "max_item_length": "114 mm",
-
+        "max_item_length": "10 cm 9 mm",
         "moves": 160
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Deployment bag front pocket thin pouch",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket's thin pouches",
-          {
-            "length": "0.125 in",
-            "width": "4.5 in",
-            "height": "3.75 in",
-            "raw": "35 ml",
-            "trim": 0
-          }
-        ],
+        "max_contains_weight": "100 g",
         "max_contains_volume": "35 ml",
-        "max_contains_weight": "50 g",
-        "max_item_length": "114 mm",
-
+        "max_item_length": "10 cm 9 mm",
         "moves": 160
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Deployment bag side pocket",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket",
-          {
-            "length": "1.5 in",
-            "width": "3 in",
-            "height": "4 in",
-            "raw": "295 ml",
-            "trim": 0.05
-          }
-        ],
+        "max_contains_weight": "2 kg 500 g",
         "max_contains_volume": "280 ml",
-        "max_contains_weight": "2500 g",
-        "max_item_length": "95 mm",
-
+        "max_item_length": "9 cm 7 mm",
         "moves": 120
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Deployment bag side pocket",
-
-        "//max_contains_volume": [
-          "from assumed dimensions of the back pocket",
-          {
-            "length": "1.5 in",
-            "width": "3 in",
-            "height": "4 in",
-            "raw": "295 ml",
-            "trim": 0.05
-          }
-        ],
+        "max_contains_weight": "2 kg 500 g",
         "max_contains_volume": "280 ml",
-        "max_contains_weight": "2500 g",
-        "max_item_length": "95 mm",
-
+        "max_item_length": "9 cm 7 mm",
         "moves": 120
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Deployment bag main pocket",
-
-        "//max_contains_volume": [
-          "from eyeballed dimensions of the front pocket",
-          {
-            "length": "5 in",
-            "width": "9 in",
-            "height": "5.5 in",
-            "raw": "4056 ml",
-            "trim": 0.05
-          }
-        ],
-        "max_contains_volume": "3853 ml",
-        "max_contains_weight": "5 kg",
-        "//max_item_length": "8.5 in.",
-        "max_item_length": "216 mm",
-
+        "max_contains_weight": "6 kg",
+        "max_contains_volume": "3 L 853 ml",
+        "max_item_length": "21 cm 7 mm",
         "moves": 110
       }
     ],
-
-    "flags": ["BELTED", "OVERSIZE", "WATER_FRIENDLY", "PALS_LARGE"],
-
-    "price": "29 USD",
-    "//price_postapoc": "3 USD"
+    "price": "35 USD 95 cents",
+    "volume": "1 L 168 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "BELTED",
+      "WATER_FRIENDLY"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_handcuffs_511_tactical",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.511tactical.com/flex-cuff-pouch.html",
-      [
-        "https://www.kantas.com.tw/product/nij-approved-handcuffs-9-45-oz-chain-standard-size/",
-        "dimensions of a pair of handcuffs"
-      ]
-    ],
-
+    "id": "pouch/handcuffs/511",
+    "type": "ITEM",
     "name": {
       "str": "handcuff pouch",
       "str_pl": "handcuff pouches"
     },
     "description": "A nylon pouch for storing handcuffs.  Can also store a bit of cordage.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "5.11 Tactical Flex handcuffs pouch",
           "str_pl": "5.11 Tactical Flex handcuffs pouches"
         },
         "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "5.11 Tactical Flex handcuffs pouch",
           "str_pl": "5.11 Tactical Flex handcuffs pouches"
         },
         "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "5.11 Tactical Flex handcuffs pouch",
           "str_pl": "5.11 Tactical Flex handcuffs pouches"
         },
         "description": "A square nylon pouch with a flap.  Intended for holding chain handcuffs, to be worn by a sworn officer of the law.  Should also be able to store a bit of cordage.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "90 g",
-    "//dimensions": {
-      "length": "1.625 in",
-      "width": "3.5 in",
-      "height": "4 in",
-      "raw": "372.81 ml",
-      "trim": 0.075
-    },
-    "volume": "345 ml",
-    "longest_side": "102 mm",
-
-    "symbol": "[",
-    "color": "brown",
-
-    "material": ["nylon"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Handcuff pouch",
-
-        "rigid": true,
-
-        "//max_contains_weight": "268 g + spare weight",
-        "max_contains_weight": "350 g",
-        "//max_contains_volume": [
-          "from dimensions of a pair of NIJ-compliant handcuffs",
-          {
-            "length": "6 mm",
-            "diameter": "9 in",
-            "raw": "246.25 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "250 ml",
-        "max_item_length": "229 mm"
+        "max_contains_weight": "535 g 806 mg",
+        "max_contains_volume": "493 ml",
+        "max_item_length": "22 cm 9 mm"
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
     "price": "26 USD",
-    "price_postapoc": "15 cent"
+    "volume": "33 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster"
+    }
   },
   {
-    "id": "pouch_multipurpose_tt",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://tacticaltailor.com/fight-light-multi-purpose-pouch/",
-      [
-        "https://highgroundshooter.com/testimonial/tactical-tailor-fight-light-battle-belt-system-light-comfortable-and-efficient/",
-        "weight"
-      ],
-      [
-        "https://skdtac.com/tactical-tailor-fight-light-multi-purpose-pouch/",
-        "variant reference"
-      ]
-    ],
-
+    "id": "pouch/utility/tt",
+    "type": "ITEM",
     "name": {
       "str": "multi-purpose pouch",
       "str_pl": "multi-purpose pouches"
     },
     "description": "A nylon box pouch.  Can be used to hold a small quantity of anything useful in the field.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
         "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": {
-          "str": "Tactical Tailor multi-purpose pouch",
-          "str_pl": "Tactical Tailor multi-purpose pouches"
-        },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": {
-          "str": "Tactical Tailor multi-purpose pouch",
-          "str_pl": "Tactical Tailor multi-purpose pouches"
-        },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
-        "id": "coyote",
-
-        "name": {
-          "str": "Tactical Tailor multi-purpose pouch",
-          "str_pl": "Tactical Tailor multi-purpose pouches"
-        },
-        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
-        "id": "ranger",
-
         "name": {
           "str": "Tactical Tailor multi-purpose pouch",
           "str_pl": "Tactical Tailor multi-purpose pouches"
         },
         "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "ranger",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:black>",
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Tactical Tailor multi-purpose pouch",
+          "str_pl": "Tactical Tailor multi-purpose pouches"
+        },
+        "description": "A nylon box pouch, essentially a miniature dump pouch.  Can be used to store a small quantity of anything, including loose ammunition, batteries, and matches.  Sized perfectly to fit a single Barrett M82 10-round magazine.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "128 g",
-    "//dimensions": {
-      "length": "7 in",
-      "width": "7 in",
-      "height": "1.5 in",
-      "raw": "1204.45 ml",
-      "trim": 0.05
-    },
-    "volume": "1144 ml",
-    "longest_side": "178 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Multipurpose pouch",
-
-        "rigid": true,
-
         "max_contains_weight": "3 kg",
-        "//max_contains_volume": "volume × 95%",
-        "max_contains_volume": "1087 ml",
-        "//max_item_length": "full 7 in.",
-        "max_item_length": "178 mm"
+        "max_contains_volume": "1 L 144 ml",
+        "max_item_length": "17 cm 8 mm"
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
-
-    "//price": "for the multicam model",
-    "price": "61 USD",
-    "price_postapoc": "50 cent"
+    "price": "60 USD",
+    "volume": "150 ml",
+    "longest_side": "17 cm 8 mm",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_tool_wynex",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.amazon.com/WYNEX-Tactical-Laser-Cut-Organizer-Attachment/dp/B097M7XH5M"
-    ],
-
-    "//notes": [
-      "it's apparent that the inner strap pockets on each side are mirrored, or at least intended to be",
-      "https://www.ebay.com/itm/314954726581",
-      "that's how we model them, without adjusting for any specific pocket's capacity"
-    ],
-
+    "id": "pouch/tool/wynex",
+    "type": "ITEM",
     "name": {
       "str": "tactical tool pouch",
       "str_pl": "tactical tool pouches"
     },
     "description": "A compact pouch for storing small tools.  Can be attached to webbing and carried on your backpack or load-bearing vest.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
         "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
         "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
         "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "WYNEX tactical tool pouch",
           "str_pl": "WYNEX tactical tool pouches"
         },
         "description": "A compact, low-profile MOLLE pouch for storing small tools and miscellanea.  Features half-a-dozen different pockets, including one on the outside that's the perfect fit for a smartphone, and even more straps on the inside.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": [
-      "the item's listing offers several different statements on its weight",
-      "from the presentation: 280 g",
-      "from the stats: 9.8 oz = 277.83 g",
-      "we err on the side of US-centric measurements, since those hadn't been (aggressively) adjusted to look nice"
+    "weight": "277 g 825 mg",
+    "material": [
+      "nylon"
     ],
-    "weight": "278 g",
-    "//dimensions": {
-      "length": "1.2 in",
-      "width": "8.8 in",
-      "height": "6.8 in",
-      "raw": "1176.72 ml",
-      "trim": 0.05
-    },
-    "volume": "1118 ml",
-    "longest_side": "224 mm",
-
-    "material": ["nylon"],
-
-    "symbol": "[",
-    "color": "dark_gray",
     "looks_like": "legrig",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch flap pocket",
-
-        "rigid": true,
-
-        "max_contains_weight": "250 g",
-        "//max_contains_volume": "volume of an iPhone 11 Pro (as mentioned in the listing), +10% since the smartphone didn't occupy the entire pocket",
+        "max_contains_weight": "500 g",
         "max_contains_volume": "92 ml",
-        "//max_item_length": "length of pouch - 5% (8.36 in)",
-        "max_item_length": "212 mm",
-
+        "max_item_length": "21 cm 2 mm",
         "moves": 210
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch front pocket",
-
         "max_contains_weight": "250 g",
-        "//max_contains_volume": [
-          "dimensions calculated as",
-          "90% of height = 6.12 in.",
-          "50% × (95% of width = 8.36 in.) = 4.18 in.",
-          [
-            "0.7 in., taken from Leatherman Wave+",
-            "https://www.leatherman.com/wave-10.html"
-          ],
-          "trim is 50%, to account for the pocket not being able to stretch to 0.7 in. across the entire pocket"
-        ],
         "max_contains_volume": "147 ml",
-        "//max_item_length": "6 in.",
-        "max_item_length": "152 mm",
-
+        "max_item_length": "15 cm 5 mm",
         "moves": 260
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch front pocket",
-
         "max_contains_weight": "250 g",
-        "//max_contains_volume": [
-          "dimensions calculated as",
-          "90% of height = 6.12 in.",
-          "50% × (95% of width = 8.36 in.) = 4.18 in.",
-          [
-            "0.7 in., taken from Leatherman Wave+",
-            "https://www.leatherman.com/wave-10.html"
-          ],
-          "trim is 50%, to account for the pocket not being able to stretch to 0.7 in. across the entire pocket"
-        ],
         "max_contains_volume": "147 ml",
-        "//max_item_length": "6 in.",
-        "max_item_length": "152 mm",
-
+        "max_item_length": "15 cm 5 mm",
         "moves": 260
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner pocket",
-
         "max_contains_weight": "350 g",
-        "//max_contains_volume": [
-          "dimensions calculated as",
-          "95% of height = 6.46 in.",
-          "95% of width = 8.36 in.",
-          "0.3 in., the thickness of an iPad",
-          "trim is 12.5%, to account for the pocket not being able to stretch to 0.7 in. across the entire pocket"
-        ],
         "max_contains_volume": "232 ml",
-        "//max_item_length": "8.3 in.",
-        "max_item_length": "211 mm",
-
+        "max_item_length": "21 cm 2 mm",
         "moves": 280
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch zippered inner pocket",
-
         "max_contains_weight": "250 g",
-        "//max_contains_volume": [
-          "dimensions calculated as",
-          "87.5% of height = 5.95 in.",
-          "95% of width = 8.36 in.",
-          "0.2 in., slightly smaller than the full-width pocket",
-          "trim is 12.5%, to account for the pocket not being able to stretch to 0.7 in. across the entire pocket"
-        ],
         "max_contains_volume": "143 ml",
-        "//max_item_length": "7.8 in.",
-        "max_item_length": "198 mm",
-
+        "max_item_length": "20 cm 1 mm",
         "moves": 280
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – back, small",
-
-        "//max_contains_weight": "speculative",
         "max_contains_weight": "350 g",
-        "//max_contains_volume": [
-          [
-            "by width and thickness, it appears to fit exactly the Leatherman Skeletool CX",
-            "https://www.leatherman.com/skeletool-cx-19.html"
-          ],
-          "we use 80% of the pouch's height (= 7.04 in.) for length, in order to emulate enabling easy access to the pouches behind the straps",
-          {
-            "length": "7.04 in",
-            "width": "1.24 in",
-            "height": "0.52 in",
-            "raw": "74.39 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "74 ml",
-        "//min_item_length": "half of height of the pocket = 3.52 in.",
-        "min_item_length": "89 mm",
-        "//max_item_length": "7.04 in.",
-        "max_item_length": "179 mm",
-
+        "max_contains_volume": "57 ml",
+        "min_item_length": "8 cm 6 mm",
+        "max_item_length": "13 cm 8 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – back, small",
-
         "max_contains_weight": "350 g",
-        "max_contains_volume": "74 ml",
-        "min_item_length": "89 mm",
-        "max_item_length": "179 mm",
-
+        "max_contains_volume": "57 ml",
+        "min_item_length": "8 cm 6 mm",
+        "max_item_length": "13 cm 8 mm",
         "moves": 280
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – back, medium",
-
-        "//max_contains_weight": "speculative",
         "max_contains_weight": "400 g",
-        "//max_contains_volume": [
-          "we take the average of width between the small and the large back straps: (2.72 + 1.24) / 2 = 1.98 in.",
-          "we use 0.52 in. as the thickness, to keep to parity with the other types of back straps",
-          "we use 80% of the pouch's height (= 7.04 in.) for length, in order to emulate enabling easy access to the pouches behind the straps",
-          {
-            "length": "7.04 in",
-            "width": "1.98 in",
-            "height": "0.52 in",
-            "raw": "118.78 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "119 ml",
-        "//min_item_length": "half of height of the pocket = 3.52 in.",
-        "min_item_length": "89 mm",
-        "//max_item_length": "7.04 in.",
-        "max_item_length": "179 mm",
-
+        "max_contains_volume": "93 ml",
+        "min_item_length": "8 cm 6 mm",
+        "max_item_length": "13 cm 8 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – back, medium",
-
         "max_contains_weight": "400 g",
-        "max_contains_volume": "119 ml",
-        "min_item_length": "89 mm",
-        "max_item_length": "179 mm",
-
+        "max_contains_volume": "93 ml",
+        "min_item_length": "8 cm 6 mm",
+        "max_item_length": "13 cm 8 mm",
         "moves": 280
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – back, large",
-
-        "//max_contains_weight": "speculative",
         "max_contains_weight": "500 g",
-        "//max_contains_volume": [
-          [
-            "by width and thickness, it appears to fit the Otterbox power bank well",
-            "https://www.otterbox.co.uk/en-gb/portable-power-bank%C2%A0-usb-a-and-usb-c-grey/78-80641.html",
-            "we add 0.1 in to the thickness in order to bring it to parity with the small back strap"
-          ],
-          "we use 80% of the pouch's height (= 7.04 in.) for length, in order to emulate enabling easy access to the pouches behind the straps",
-          {
-            "length": "7.04 in",
-            "width": "2.72 in",
-            "height": "0.53 in",
-            "raw": "166.31 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "166 ml",
-        "//min_item_length": "half of height of the pocket = 3.52 in.",
-        "min_item_length": "89 mm",
-        "//max_item_length": "7.04 in.",
-        "max_item_length": "179 mm",
-
+        "max_contains_volume": "126 ml",
+        "min_item_length": "8 cm 6 mm",
+        "max_item_length": "13 cm 8 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – back, large",
-
         "max_contains_weight": "500 g",
-        "max_contains_volume": "166 ml",
-        "min_item_length": "89 mm",
-        "max_item_length": "179 mm",
-
+        "max_contains_volume": "126 ml",
+        "min_item_length": "8 cm 6 mm",
+        "max_item_length": "13 cm 8 mm",
         "moves": 280
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "//max_contains_volume": [
-          [
-            "by width and thickness, it appears to fit the Benchmade 42 balisong well",
-            "https://www.balisong.cz/sbirka/eng/myknife9.php"
-          ],
-          "we use 60% of the pouch's height (= 5.28 in.) for length, because this is a smaller-capacity pocket",
-          {
-            "length": "5.28 in",
-            "width": "1.1 in",
-            "height": "0.55 in",
-            "raw": "52.05 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "52 ml",
-        "//min_item_length": "half of height of the pocket = 2.64 in.",
-        "min_item_length": "67 mm",
-        "//max_item_length": "5.28 in.",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, small",
-
         "max_contains_weight": "150 g",
-        "max_contains_volume": "52 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "40 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, large",
-
         "max_contains_weight": "200 g",
-        "//max_contains_volume": [
-          "we model this pocket type's capacity after the small back strap, but limit its length to the typical front strap (60% of total height of the pouch = 5.28 in.)",
-          {
-            "length": "5.28 in",
-            "width": "1.24 in",
-            "height": "0.52 in",
-            "raw": "55.47 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "56 ml",
-        "//min_item_length": "half of height of the pocket = 2.64 in.",
-        "min_item_length": "67 mm",
-        "//max_item_length": "5.28 in.",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "43 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, large",
-
         "max_contains_weight": "200 g",
-        "max_contains_volume": "56 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "43 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, large",
-
         "max_contains_weight": "200 g",
-        "max_contains_volume": "56 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "43 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Tool pouch inner strap – front, large",
-
         "max_contains_weight": "200 g",
-        "max_contains_volume": "56 ml",
-        "min_item_length": "67 mm",
-        "max_item_length": "134 mm",
-
+        "max_contains_volume": "43 ml",
+        "min_item_length": "5 cm 2 mm",
+        "max_item_length": "10 cm 4 mm",
         "moves": 280
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "PALS_LARGE"],
-
     "price": "19 USD",
-    "price_postapoc": "1 USD"
+    "volume": "1 L 118 ml",
+    "longest_side": "22 cm 4 mm",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_LARGE"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_water_bottle_gonex",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.gonexsport.com/products/gonex-tactical-military-molle-water-bottle-pouch-drawstring-open-top-mesh-bottom-travel-water-bottle-bag-tactical-hydration-carrier-black",
-      [
-        "https://www.amazon.com/Gonex-Upgraded-Tactical-Drawstring-Hydration/dp/B01J7SZII4",
-        "weight"
-      ],
-      [
-        "https://www.gonexsport.com/products/gonex-drawstring-military-molle-water-bottle-pouch",
-        "variant reference"
-      ]
-    ],
-
-    "//notes": [
-      "while the pouch is open-top and is advertised as accepting 40-oz water bottles, we model it as though it only takes smaller bottles, as a way to differentiate it from larger counterparts"
-    ],
-
+    "id": "pouch/water_bottle/gonex",
+    "type": "ITEM",
     "name": {
       "str": "small water bottle pouch",
       "str_pl": "small water bottle pouches"
     },
     "description": "A nylon pouch for storing water bottles.  Takes in bottles up to 0.75L in capacity.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "Gonex water bottle pouch",
           "str_pl": "Gonex water bottle pouches"
         },
         "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Gonex water bottle pouch",
           "str_pl": "Gonex water bottle pouches"
         },
         "description": "A nylon pouch for storing water bottles.  The top can be constrained by a drawstring.  Takes in bottles up to 0.75L in capacity.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": [
-      "the source for weight gives conflicting information about the item's weight, listing both 84 g and 0.19 lbs ≈ 86 g",
-      "we err on the side of the heavier weight simply because it has a corresponding stated weight in US customary units"
+    "weight": "86 g 183 mg",
+    "material": [
+      "nylon"
     ],
-    "weight": "86 g",
-    "//dimensions": {
-      "length": "19 cm",
-      "diameter": "9 cm",
-      "raw": "1208.72 ml",
-      "trim": 0
-    },
-    "volume": "1209 ml",
-    "longest_side": "190 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "//material": "has a tiny plastic cord lock at the top that's not worth considering as a separate material",
-    "material": ["nylon"],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Small water bottle pouch",
-
         "holster": true,
-        "rigid": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "1 L",
-        "min_item_volume": "220 ml",
-        "max_item_length": "188 mm"
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "2 L 472 ml",
+        "min_item_volume": "842 ml",
+        "max_item_length": "32 cm 3 mm"
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
-    "price": "14 USD",
-    "price_postapoc": "50 cent"
+    "price": "13 USD 99 cents",
+    "volume": "140 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster"
+    }
   },
   {
-    "id": "pouch_airhorn_defense",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://defensemechanisms.com/air-horn-pouch",
-      [
-        "https://www.amazon.com/Xxerciz-Adjustable-Drawstring-Protective-Carabiner/dp/B0CC8YD9WQ",
-        "weight reference"
-      ]
-    ],
-
+    "id": "pouch/airhorn/defense",
+    "type": "ITEM",
     "name": {
       "str": "air horn pouch",
       "str_pl": "air horn pouches"
     },
     "description": "A nylon pouch for holding air horn canisters.  This one is fitted for 8 oz canisters and will not accept smaller ones.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": {
-          "str": "Defense Mechanisms air horn pouch",
-          "str_pl": "Defense Mechanisms air horn pouches"
-        },
-        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
-        "id": "ranger",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "ranger",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "woodland",
-
+        "name": {
+          "str": "Defense Mechanisms air horn pouch",
+          "str_pl": "Defense Mechanisms air horn pouches"
+        },
+        "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:woodland>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "woodland",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "grey",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:grey>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "multicam",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_tropic",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam_tropic>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam_tropic",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_arid",
-
         "name": {
           "str": "Defense Mechanisms air horn pouch",
           "str_pl": "Defense Mechanisms air horn pouches"
         },
         "description": "A nylon pouch for storing air horn canisters.  Typically used by police for crowd control, as well as by maritime security.  Since the canister is being held by the embrace of the pouch itself, and this pouch is fitted for 8 oz air horns, smaller canisters will not fit.  <variant:multicam_arid>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam_arid",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": "no weight is available for the source pouch, so we use a similar-purpose one that's likely slightly heavier",
     "weight": "57 g",
-    "//dimensions": {
-      "length": "2 mm",
-      "width": "3 in",
-      "height": "4.25 in",
-      "raw": "16.45 ml",
-      "trim": 0.05
-    },
-    "volume": "16 ml",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "looks_like": "radio_pouch",
     "repairs_like": "radio_pouch",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Air horn pouch",
-
         "holster": true,
-
-        "max_contains_weight": "1 kg",
-        "min_item_volume": "1200 ml",
-        "max_contains_volume": "1250 ml",
-        "max_item_length": "245 mm"
+        "max_contains_weight": "2 kg",
+        "min_item_volume": "197 ml",
+        "max_contains_volume": "738 ml",
+        "max_item_length": "24 cm 5 mm"
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
     "price": "30 USD",
-    "price_postapoc": "50 cent"
+    "volume": "16 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster"
+    }
   },
   {
-    "id": "pouch_spray_angel",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": ["https://angelarmor.com/product/oc-spray-pouch/"],
-
+    "id": "pouch/spray/angel",
+    "type": "ITEM",
     "name": {
       "str": "pepper spray pouch",
       "str_pl": "pepper spray pouches"
     },
     "description": "A nylon pouch for holding pepper spray canisters.  Accepts most common compact sprayers.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "black",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "tan",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:tan>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "tan",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "ranger",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "grey",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:grey>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "multicam",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "navy",
-
         "name": {
           "str": "Angel Armor pepper spray pouch",
           "str_pl": "Angel Armor pepper spray pouches"
         },
         "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  <variant:navy>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "spruce_green",
-
-        "name": {
-          "str": "Angel Armor pepper spray pouch",
-          "str_pl": "Angel Armor pepper spray pouches"
-        },
-        "description": "A slim nylon pouch for holding pepper spray canisters.  Typically used by police for crowd control, as well as for self-defense by civilians.  A retention cord keeps the canister soundly inside the pouch.  This one is colored spruce green.",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "navy",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "36 g",
-    "//dimensions": {
-      "length": "1.5 mm",
-      "width": "1.62 in",
-      "height": "3.5 in",
-      "raw": "5.49 ml",
-      "trim": 0.05
-    },
-    "volume": "5 ml",
-    "//longest_side": "width",
-    "longest_side": "41 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon"],
+    "weight": "36 g 287 mg",
+    "material": [
+      "nylon"
+    ],
     "looks_like": "radio_pouch",
     "repairs_like": "radio_pouch",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Pepper spray pouch",
-
         "holster": true,
-
-        "max_contains_weight": "250 g",
-        "min_item_volume": "70 ml",
-        "max_contains_volume": "90 ml",
-        "max_item_length": "110 mm"
+        "max_contains_weight": "500 g",
+        "min_item_volume": "71 ml",
+        "max_contains_volume": "236 ml",
+        "max_item_length": "17 cm 8 mm"
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
-    "price": "35 USD",
-    "price_postapoc": "50 cent"
+    "price": "34 USD 99 cents",
+    "volume": "5 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster"
+    }
   },
   {
-    "id": "pouch_bino_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/products/condor-binocular-pouch",
-      [
-        "https://www.amazon.co.uk/Condor-Binocular-Pouch/dp/B00XJ6CTXS",
-        "weight"
-      ]
-    ],
-
+    "id": "pouch/binoculars/condor",
+    "type": "ITEM",
     "name": {
       "str": "binocular pouch"
     },
-    "description": "A large, rigid pouch meant to hold a single pair of binoculars.  Has a pair of small loops for tools or batteries inside.",
-
+    "description": "A large, rigid pouch meant to hold a pair of binoculars.  Has a couple of elastic loops for tools or batteries inside.",
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
           "str": "Condor binocular pouch",
           "str_pl": "Condor binocular pouches"
         },
         "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "od",
-
         "name": {
           "str": "Condor binocular pouch",
           "str_pl": "Condor binocular pouches"
         },
         "description": "A large, rigid pouch, intended to hold a pair of binoculars.  Interior padding cushions the binoculars stored.  The loops on the inside of the cover can store a pair of tools or spare batteries.  <variant:od>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "od",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "177 g",
-    "//dimensions": {
-      "length": "6 in",
-      "width": "6 in",
-      "height": "3 in",
-      "raw": "1769.8 ml",
-      "trim": -0.025,
-      "notes": ["trim is to account for the outer clip"]
-    },
-    "volume": "1814 ml",
-    "longest_side": "152 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "repairs_like": "legrig",
     "looks_like": "dump_pouch",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Binoculars pouch",
-
         "rigid": true,
-
-        "max_contains_weight": "1 kg",
-        "//max_contains_volume": [
-          "from raw pouch volume",
-          [
-            "https://www.rei.com/product/215314/nikon-prostaff-p7-8-x-42-binoculars",
-            "possible reference",
-            "just over 1 L in raw volume"
-          ]
-        ],
-        "max_contains_volume": "1500 ml",
-        "max_item_length": "140 mm",
-
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "1 L 549 ml",
+        "max_item_length": "14 cm 5 mm",
         "moves": 200
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Binoculars pouch loop",
-
         "holster": true,
-        "//rigid": "not rigid per se, but the volume of its potential contents are accounted for",
         "rigid": true,
-
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "75 ml",
-        "max_item_length": "132 mm"
+        "max_contains_weight": "100 g",
+        "min_item_volume": "8 ml",
+        "max_contains_volume": "50 ml",
+        "max_item_length": "14 cm 5 mm"
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Binoculars pouch loop",
-
         "holster": true,
         "rigid": true,
-
-        "max_contains_weight": "250 g",
-        "max_contains_volume": "75 ml",
-        "max_item_length": "132 mm"
+        "max_contains_weight": "100 g",
+        "min_item_volume": "8 ml",
+        "max_contains_volume": "50 ml",
+        "max_item_length": "14 cm 5 mm"
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_MEDIUM"],
-
-    "price": "25 USD",
-    "price_postapoc": "1 USD"
+    "price": "26 USD 95 cents",
+    "volume": "1 L 723 ml",
+    "longest_side": "15 cm 2 mm",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_gas_mask_usmc",
-    "type": "ARMOR",
-    "category": "container",
-
-    "//sources": [
-      "https://armynavyoutdoors.com/eagle-usmc-gas-mask-gp-molle-pouch/",
-      [
-        "https://www.venturesurplus.com/products/eagle-industries-gas-mask-pouch/",
-        "weight"
-      ],
-      ["https://www.ebay.com/itm/203777900749", "variant reference"]
-    ],
-
+    "id": "pouch/gas_mask/usmc",
+    "type": "ITEM",
     "name": {
       "str": "gas mask MOLLE pouch",
       "str_pl": "gas mask MOLLE pouches"
     },
     "description": "A large nylon pouch for carrying one's gas mask.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to webbing or be worn at the leg.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "coyote",
-
         "name": {
           "str": "USMC gas mask pouch",
           "str_pl": "USMC gas mask pouches"
         },
         "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "USMC gas mask pouch",
           "str_pl": "USMC gas mask pouches"
         },
         "description": "A large nylon pouch for carrying one's gas mask, as issued to U.S. Marine Corps.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model can attach to PALS webbing or be worn at the leg.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "255 g",
-    "//dimensions": {
-      "length": "11 in",
-      "width": "9 in",
-      "height": "1.5 mm",
-      "raw": "95.8 ml",
-      "trim": 0.15,
-      "notes": ["height is presumed thickness of two walls of the pouch"]
-    },
-    "volume": "81 ml",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon"],
+    "weight": "255 g 146 mg",
+    "material": [
+      "nylon"
+    ],
     "looks_like": "dump_pouch",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Gas mask pouch",
-
-        "max_contains_weight": "1 kg",
-        "//max_contains_volume": [
-          "dimensions of CM-7M gas mask",
-          "https://www.mirasafety.com/products/cm-7m-military-gas-mask",
-          {
-            "length": "6.85 in",
-            "width": "7.75 in",
-            "height": "10.60 in",
-            "raw": "9222 ml",
-            "trim": 0.45,
-            "notes": ["dimensions acquired from visual reference"]
-          }
-        ],
-        "max_contains_volume": "5072 ml",
-        "max_item_length": "305 mm",
-
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "7 L 473 ml",
+        "max_item_length": "30 cm 5 mm",
         "moves": 170
       }
     ],
-
-    "//flags": ["removed BELTED and OVERSIZE"],
-    "flags": ["CANT_WEAR", "PALS_MEDIUM"],
-
-    "price": "91 USD",
-    "//price_postapoc": "3 USD"
+    "price": "15 USD 95 cents",
+    "volume": "81 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   }
 ]

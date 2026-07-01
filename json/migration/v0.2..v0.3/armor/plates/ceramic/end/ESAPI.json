@@ -1,0 +1,7 @@
+[
+  {
+    "id": "plate_ceramic_medium_ceradyne_esapi",
+    "type": "MIGRATION",
+    "replace": "plate/ceramic/esapi/medium"
+  }
+]

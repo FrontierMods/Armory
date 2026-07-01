@@ -2,11 +2,14 @@
   {
     "id": "Armory_EOC_IS_WEARING_BALLISTIC_ARMOR",
     "type": "effect_on_condition",
-
     "condition": {
       "or": [
-        { "u_has_worn_with_flag": "PLATE_CARRIER" },
-        { "u_has_worn_with_flag": "BALLISTIC_VEST" }
+        {
+          "u_has_worn_with_flag": "PLATE_CARRIER"
+        },
+        {
+          "u_has_worn_with_flag": "BALLISTIC_VEST"
+        }
       ]
     },
     "effect": {

@@ -1,0 +1,14 @@
+[
+  {
+    id: "shoulder_pads/perroz",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "shoulder_pads/perroz",
+        from: ["multicam", "multicam_black", "black", "coyote", "grey"],
+      },
+    ],
+  },
+]

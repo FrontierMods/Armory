@@ -1,0 +1,10 @@
+[
+  {
+    id: "Armory_EOC_ON_MOVE",
+    type: "effect_on_condition",
+    eoc_type: "EVENT",
+    required_event: "avatar_moves",
+
+    effect: { run_eocs: ["Armory_EOC_IS_WEARING_BALLISTIC_ARMOR"] },
+  },
+]

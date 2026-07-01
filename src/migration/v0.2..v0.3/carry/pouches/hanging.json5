@@ -1,0 +1,17 @@
+[
+  {
+    id: ["pouch_hanging_ferro_mini"],
+    type: "MIGRATION",
+    replace: "pouch/hanging/ferro/mini",
+  },
+  {
+    id: ["pouch_hanging_ferro"],
+    type: "MIGRATION",
+    replace: "pouch/hanging/ferro",
+  },
+  {
+    id: ["pouch_hanging_ferro_hangboard"],
+    type: "MIGRATION",
+    replace: "pouch/hanging/ferro/hangboard",
+  },
+]

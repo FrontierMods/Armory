@@ -3,73 +3,68 @@
     "id": "loadout/lpspc/magazine_placard:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "plate_carrier/lpspc/perroz:any",
-        "contents-group": "placard/haley/magazine:any"
+        "contents-group": "placard/haley/magazine/triple:any"
       }
     ]
   },
-
   {
     "id": "loadout/lpspc/magazine_placard:coordinated",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "plate_carrier/lpspc/perroz:multicam",
-        "contents-group": "placard/haley/magazine:multicam",
+        "contents-group": "placard/haley/magazine/triple:multicam",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:multicam_black",
-        "contents-group": "placard/haley/magazine:black",
+        "contents-group": "placard/haley/magazine/triple:black",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:black",
-        "contents-group": "placard/haley/magazine:black",
+        "contents-group": "placard/haley/magazine/triple:black",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:coyote",
-        "contents-group": "placard/haley/magazine:coyote",
+        "contents-group": "placard/haley/magazine/triple:coyote",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:grey",
-        "contents-group": "placard/haley/magazine:grey",
+        "contents-group": "placard/haley/magazine/triple:grey",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:woodland",
-        "contents-group": "placard/haley/magazine:ranger",
+        "contents-group": "placard/haley/magazine/triple:ranger",
         "prob": 10
       }
     ]
   },
-
   {
     "id": "loadout/lpspc/magazine_placard:military",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "plate_carrier/lpspc/perroz:multicam",
-        "contents-group": "placard/haley/magazine:multicam",
+        "contents-group": "placard/haley/magazine/triple:multicam",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:coyote",
-        "contents-group": "placard/haley/magazine:coyote",
+        "contents-group": "placard/haley/magazine/triple:coyote",
         "prob": 10
       },
       {
         "group": "plate_carrier/lpspc/perroz:olive",
-        "contents-group": "placard/haley/magazine:ranger",
+        "contents-group": "placard/haley/magazine/triple:ranger",
         "prob": 10
       }
     ]

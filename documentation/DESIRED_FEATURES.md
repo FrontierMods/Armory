@@ -46,7 +46,7 @@ Overcapacity could, among other things, enable certain pistol holsters to take i
 
 [proper outline TBD]
 
-## Volume calculation from dimensions
+## Native volume calculation from dimensions
 
 **TL;DR**: allow initial volume and longest-side values to be calculated from a provided `dimensions` object (or an array of objects).
 
@@ -66,73 +66,74 @@ With this genericized approach to slots, the system could be expanded to include
 
 The pocket definition for the system would look something like this:
 
-```json
+```json5
 [
   {
-    "pocket_type": "SLOTS",
-    "system": "pals",
-    "//slots": "for PALS, one cell = one slot",
-    "slots": 24,
-    "description": "Front PALS webbing",
-    "volume_encumber_modifier": 0.75,
-    "//moves": [
-      "only affects the speed of attaching/detaching to the slots, NOT retrieving item from the pouch using the slots",
-      "overrides default move cost; see slot system definition"
-    ],
-    "moves": 220
-  }
+    pocket_type: "SLOTS",
+    system: "pals",
+    // * for PALS, one cell = one slot
+    slots: 24,
+    description: "Front PALS webbing",
+    volume_encumber_modifier: 0.75,
+    /* 
+      - only affects the speed of attaching/detaching to the slots, NOT retrieving item from the pouch which uses the slots
+      - overrides default move cost; see slot system definition
+     */
+    moves: 220,
+  },
 ]
 ```
 
 One would then define the system as a separate JSON object, in a way similar to defining flags:
 
-```json
+```json5
 [
   {
-    "type": "SLOT_SYSTEM",
-    "id": "pals",
-    "name": "PALS",
-    "//default_noise": [
-      "default noise for moving pouches etc. to/from this system",
-      "only affects pouches etc., NOT items inside those"
-    ],
-    "default_noise": 3,
-    "//default_moves": [
-      "default move cost for moving pouches etc. to/from this system",
-      "only affects pouches etc., NOT items inside those",
-      "each pouch may have its own move cost, which WOULD affect items inside them"
-    ],
-    "default_moves": 200
+    type: "SLOT_SYSTEM",
+    id: "pals",
+    name: "PALS",
+    /*
+      - default noise for moving pouches etc. to/from this system
+      - only affects attached pouches etc., NOT items inside those
+     */
+    default_noise: 3,
+    /*
+      - default move cost for moving pouches etc. to/from this system
+      - only affects pouches etc., NOT items inside those
+      - each pouch may have its own move cost, which WOULD affect items inside them
+     */
+    default_moves: 500,
   },
   {
-    "type": "SLOT_SYSTEM",
-    "id": "velcro",
-    "name": "hook-and-loop",
-    "//default_noise": "Velcro is noisy",
-    "default_noise": 15,
-    "//default_moves": "Velcro is fast to operate",
-    "default_moves": 80
-  }
+    type: "SLOT_SYSTEM",
+    id: "velcro",
+    name: "hook-and-loop",
+    // * Velcro is noisy
+    default_noise: 15,
+    // * Velcro is fast to operate
+    default_moves: 80,
+  },
 ]
 ```
 
 ### Why this is better for the player
 
-One crucial difference between regular, volume-based pockets and these slot-based ones is being able to handle effects that would otherwise be realistic in a consistent and player-friendly manner. For volume-based pockets, items which suddenly overflow the pocket's volume capacity can slip out of the pocket; this is perfectly-reasonably for regular pockets, but would make no sense for slot-based ones due to how they attach to the grid. (Attempts to implement a volume-based PALS system by Armory have failed for this reason in particular.)
+One crucial difference between regular, volume-based pockets and these slot-based ones is being able to handle effects that would otherwise be realistic in a consistent and player-friendly manner. For volume-based pockets, items which suddenly overflow the pocket's volume capacity can slip out of the pocket; this is perfectly-reasonably for regular pockets, but would make no sense for slot-based ones due to how they attach to the grid. (Attempts to implement a volume-based PALS system by an earlier version of Armory have failed for this reason in particular.)
 
-Another crucial difference is being able to treat slot-based pockets as "integral" pockets of the item they're attached to, for the purpose of inventory management. Rather than show as part of any other pocket (like a rock would inside a pants pocket), they could be reasonably expected to appear as though they're part of the "primary layer" of pockets. This is one advantage of the current PALS system: helping players maintain a reasonable mental model for their equipment.
+Another crucial difference is being able to treat slot-based pockets as "integral" pockets of the item they're attached to, for the purpose of inventory management. Rather than show as part of any other pocket (like a rock would inside a pants pocket), they could be reasonably expected to appear among inherent, non-detachable pockets. This is one advantage of the current PALS system: helping players maintain a reasonable mental model for their equipment.
 
-The latter also avoids pocket depth rot, where each pocket adds extra move cost for retrieving an item inside. As slot systems would generally position their attached pockets in a way that's easy to access, the slot pocket would not impose extra move cost onto containers inside it. In other words, the flashlight pouch on your ballistic vest would remain easy to access, even though the pouch is technically inside a pocket of its own. (Of course, putting the vest inside a large bag would impose retrieval cost limitations on the pouch as expected.)
+The latter also avoids pocket depth slowdown, where each pocket adds extra move cost for retrieving an item inside. As slot systems would generally position their attached pockets in a way that's easy to access, the slot itself would not impose extra move cost onto containers inside it. In other words, the flashlight pouch on your ballistic vest would remain easy to access, even though the pouch is technically inside a pocket of its own.
 
 ### Surface area slots
 
 A slot-based system could also serve as a reasonable approximation for equipment that relies on surface area, such as Velcro (aka hook-and-loop) pouches, hangers, and identification/morale patches. What constitutes a "slot" for something that doesn't follow a standardized grid can be derived experimentally, based on real-world options. For example, a Velcro slot can be defined as 1 in² based on morale patches from popular stores generally adhering to 0.5-inch-based steps in dimensions; then, an 11-inch by 3-inch Velcro panel that displays the name of the owner's law enforcement agency would take up 33 slots of hook-and-loop surface. The same system could be applied to morale patches (3.5″ × 1.25″ ≈ 5 slots, rounded up), pouches (6.5″ × 3″ ≈ 20 slots), and so on.
 
-## Whitelisted gunmods
+## Whitelisted gunmods for containers
 
 **TL;DR**: some holsters should allow guns with certain (classes of) gunmods to be put inside by discounting their volume and length (but not weight) for volume/length restriction calculations.
 
-[proper outline TBD]
+This primarily concerns muzzle devices (muzzle brakes, suppressors etc.) and external pistol sights (e.g. compact red dot sights), although other devices (such as large-capacity magazines, grip attachments, pistol stocks etc.) could benefit from this as well. Models of holsters exist that allow pistols with for either or both of these installed to fit comfortably inside the holster.
+
 ## Worn equipment parts
 
 **TL;DR**: one should be able to designate certain pockets as points for attaching wearable parts. These pockets should treat any direct contents (i.e. only items immediately inside the pockets, but not contents of those items, unless the contents are also in a "wearable" pocket) as being worn on one's body.

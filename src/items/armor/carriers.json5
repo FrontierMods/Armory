@@ -1,0 +1,1067 @@
+[
+  {
+    id: "plate_carrier/perroz/lpspc",
+    type: "ITEM",
+    subtypes: ["ARMOR", "ARTIFACT"],
+    category: "armor",
+
+    /*
+      SOURCES
+        https://perrozdesigns.com/products/low-profile-slick-plate-carrier-lpspc
+     */
+
+    /*
+      NOTES
+        - earlier reviews/advertisements of the LPSPC also show the top Velcro panel hiding an admin pouch underneath
+          - this no longer appears to be the case in the model available at the time of release of this mod
+     */
+
+    name: {
+      str: "low-profile plate carrier",
+    },
+    description: "A minimal and lightweight plate carrier.  Barebones on its own, it can be extended by a variety of pouches and other parts, or used in conjunction with a chest rig.  This plate carrier doesn't offer protection of its own, as it doesn't feature any stab- or bullet-resistant inserts; you can insert ballistic plates to make it effective against gunfire.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["coyote", 4],
+          ["olive", 2],
+          ["black", 2],
+          "grey",
+          "woodland",
+          "multicam_black",
+        ],
+
+        name: {
+          str: "Perroz Designs LPSPC plate carrier",
+        },
+        description: "The Low Profile Slick Plate Carrier, minimal and lightweight on its own.  Integrated QASM interface and a large hook-and-loop surface allow for attaching placards and chassis, as well as extending the functionality of the carrier with a variety of aftermarket hook-and-loop pouch options.  The LPSPC doesn't feature or allow for soft ballistic inserts due to its low-profile design, but could be enhanced with hard plates.",
+      },
+    ],
+
+    /* 
+      WEIGHT
+        - there appear to be no sources available on the weight of this particular model
+        - given that this model is designed to be slick, we can extrapolate its weight from similar models on the market
+          > https://eu.directactiongear.com/en/corsairr-low-profile-plate-carrier.html
+        - besides, reviews describe it as lightweight
+          > https://reddit.com/r/QualityTacticalGear/comments/e7zq94/some_quick_thoughts_on_the_perroz_lpspc/
+          > https://soldiersystems.net/2015/06/25/perroz-designs-low-profile-slick-plate-carrier-lpspc/
+        - we're going to assume this as the weight of LPSPC until a better source becomes available
+    */
+    weight: "290 g",
+    dimensions: [
+      {
+        // * PLATE BAG
+        // * measured off the front bag only
+        // * we assume the back bag has the same dimensions as the front bag
+        type: "area",
+        count: 2,
+
+        area: "116.35 in2",
+        // 3 mm padding + 0.1 mm nylon × 2 sides
+        length: "3.2 mm",
+      },
+
+      {
+        // * SHOULDER STRAP
+        type: "rectangle",
+        count: 2,
+
+        length: "3.25 in",
+        width: "2 in",
+        height: "0.1 mm",
+      },
+    ],
+    /* 
+      - review says this can fold very compactly
+        > https://old.reddit.com/r/QualityTacticalGear/comments/e7zq94/some_quick_thoughts_on_the_perroz_lpspc/
+      - we leave this as half of height of the plate bag: 12.75 in / 2 = 6.375 in
+    */
+    longest_side: "6.375 in",
+
+    material: ["nylon", "plastic_pad"],
+    repairs_like: "survivor_suit",
+    warmth: 10,
+
+    symbol: "[",
+    color: "light_gray",
+    looks_like: "ballistic_vest_light",
+
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.1,
+          },
+          {
+            // spacer mesh made of polyester
+            type: "plastic_pad",
+            covered_by_mat: 100,
+            thickness: 3,
+          },
+        ],
+
+        encumbrance: 14,
+
+        // medium SAPI plate upper torso coverage (34%) + straps and extra material (2%), for front and back
+        coverage: 72,
+        cover_melee: 36,
+        cover_ranged: 72,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.27,
+      },
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.1,
+          },
+          {
+            // spacer mesh made of polyester
+            type: "plastic_pad",
+            covered_by_mat: 100,
+            thickness: 3,
+          },
+        ],
+
+        // encumbrance: [1, 9],
+        encumbrance: 7,
+
+        // medium SAPI plate lower torso coverage (10%) + extra material (1%), for front and back
+        coverage: 22,
+        cover_melee: 11,
+        cover_ranged: 22,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.27,
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        moves: 400,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        moves: 400,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Buckles for QASM modular equipment",
+
+        holster: true,
+
+        max_contains_weight: "60 kg",
+        max_contains_volume: "15 L",
+
+        flag_restriction: ["QASM_ATTACH"],
+
+        moves: 10,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Cummerbund hook-and-loop attachment point",
+
+        holster: true,
+        ablative: true,
+
+        max_contains_weight: "60 kg",
+        max_contains_volume: "15 L",
+
+        flag_restriction: ["CUMMERBUND_VELCRO"],
+        inherits_flags: true,
+
+        volume_encumber_modifier: 0.87,
+        moves: 10,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Side pouch hook-and-loop attachment point",
+
+        holster: true,
+
+        max_contains_weight: "60 kg",
+        max_contains_volume: "15 L",
+
+        flag_restriction: ["SIDE_POUCH_VELCRO"],
+
+        moves: 10,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Side pouch hook-and-loop attachment point",
+
+        holster: true,
+
+        max_contains_weight: "60 kg",
+        max_contains_volume: "15 L",
+
+        flag_restriction: ["SIDE_POUCH_VELCRO"],
+
+        moves: 10,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hanging pouch hook-and-loop attachment point",
+
+        holster: true,
+
+        max_contains_weight: "60 kg",
+        max_contains_volume: "15 L",
+
+        flag_restriction: ["HANGING_POUCH_VELCRO"],
+
+        moves: 10,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Extra pouch hook-and-loop surface",
+
+        holster: true,
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: "1 L",
+
+        flag_restriction: ["EXTRA_POUCH_VELCRO"],
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Shoulder straps",
+
+        holster: true,
+        ablative: true,
+
+        max_contains_weight: "250 g",
+        max_contains_volume: "1 L",
+
+        flag_restriction: ["SHOULDER_PADS"],
+        inherits_flags: true,
+
+        volume_encumber_modifier: 0,
+        moves: 10,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "EUD bridge mount",
+
+        holster: true,
+
+        // while there's no clear indication as to any maximum weight for interfaces of this sort, we err on the side of caution with a lower weight limit
+        max_contains_weight: "2 kg",
+        max_contains_volume: "2 L",
+
+        flag_restriction: ["EUD_BRIDGE"],
+
+        moves: 10,
+      },
+    ],
+
+    passive_effects: [{ id: "PLATE_CARRIER_PROFICIENCY_EXTRA_PROTECTION" }],
+
+    flags: [
+      "STURDY",
+      "NORMAL" /* this carrier meant to be worn under outerwear */,
+      "MUNDANE",
+      "PLATE_CARRIER",
+    ],
+
+    price: "147 USD",
+    price_postapoc: "5 USD",
+  },
+  {
+    id: "plate_carrier/iotv/gen_iii",
+    type: "ITEM",
+    subtypes: ["ARMOR", "ARTIFACT"],
+    category: "armor",
+
+    /* 
+      SOURCES
+        FQ/PD 07-05
+          - materials
+          - weight
+
+        https://store.armyproperty.com/products/base-vest-assembly-iotv-improved-outer-tactical-vest-nsn-8470-01-604-6619-multicam-ocp-gen-iii-usgi-issue-size-medium.html
+          - price
+        
+        https://locknwalkharness.com/products/gen-3-iotv-multicam-plate-carriers-w-3a-soft-armor-included-large-inventory
+          - PALS webbing capacity reference
+     */
+
+    /* 
+      NOTES
+        - this item was supposed to be modelled after MTV in the base game
+        - the MTV does not have deltoid (shoulder) protectors, while IOTV (still in service) does
+        - for consistency's sake, and because reality still affords us the opportunity, we're modelling this item after the IOTV Gen III vest
+        - additionally, this item is modelled after size M, mostly for consistency
+     */
+
+    name: {
+      str: "Army plate carrier",
+    },
+    description: "A long-standing and field-tested, though not particularly beloved, design of a standard-issue plate carrier for the U.S. Army.  It can withstand small-caliber rounds and shrapnel due to embedded Kevlar inserts, and its protection could be further improved by adding ballistic plates.  Additionally, it can be augmented with shoulder, groin, lower-back, and neck protectors.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["ocp", 4],
+          ["ucp", 2],
+          ["coyote", 1],
+          ["black", 0],
+        ],
+
+        name: {
+          str: "IOTV Gen III plate carrier",
+        },
+        description: "A third-generation design of an Improved Outer Tactical Vest, itself an improvement over the older OTV plate carrier.  Uses soft-armor inserts for protection against pistol-caliber rounds and shrapnel, with hard-armor inserts enabling further protection against rifle-caliber fire.  In addition to that, it can be augmented with a set of soft-armor outserts for the groin, shoulder, lower back, and neck/nape areas.",
+      },
+    ],
+
+    /* 
+      - reference material provides IOTV weight as base vest (this item) + 2 ballistic panels
+      - we presume these panels to be soft, Kevlar panels
+      - we also presume (at least at this stage) that these panels are embedded into the vest and are not replaceable
+    */
+    weight: "10.37 lbs",
+    dimensions: {
+      type: "rectangle",
+
+      // aka thickness
+      // taken from LPSPC
+      length: "6.4 mm",
+      // in IOTV reference, front width likely refers to width of IOTV with cummerbunds laid out ouside
+      // we assume, for ease of calculations, that cummerbunds are tucked in, without making too much of a difference for other dimensions
+      width: "15.35 in",
+      height: "21 in",
+
+      trim: 0.2,
+    },
+    longest_side: "21 in",
+
+    material: ["nylon", "kevlar"],
+    warmth: 15,
+
+    symbol: "[",
+    color: "light_gray",
+    looks_like: "ballistic_vest_heavy",
+
+    armor: [
+      {
+        // base vest, upper torso
+
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.1,
+          },
+          {
+            type: "kevlar",
+            // approximated
+            covered_by_mat: 95,
+            // 0.3 in. (≈ 7.6 mm) total
+            // conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)
+            // this is likely incorrect, but no clearer data seem to be available
+            thickness: 7.6,
+          },
+        ],
+
+        encumbrance: 15,
+
+        // approximated from large ballistic plate coverage (38% per front/back)
+        // augmented from visual reference
+        // +2% for straps
+        coverage: 80,
+        cover_melee: 40,
+        cover_ranged: 80,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.35,
+      },
+      {
+        // base vest, lower torso
+
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            // 0.2 mm × 2 sides per end of the carrier
+            thickness: 0.4,
+          },
+          {
+            type: "kevlar",
+            // approximated
+            covered_by_mat: 95,
+            // 0.3 in. (≈ 7.6 mm) total
+            // conforms to IOTV spec (max. thickness of ballistic protection system 0.3 in.)
+            // this is likely incorrect, but no clearer data seem to be available
+            thickness: 7.6,
+          },
+        ],
+
+        encumbrance: 8,
+
+        // roughly approximated from visual reference
+        coverage: 50,
+        cover_melee: 25,
+        cover_ranged: 50,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.35,
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        moves: 800,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        moves: 800,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Attachment points for a shoulder protector",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "2500 g",
+        max_item_length: "318 mm",
+
+        moves: 1000,
+
+        flag_restriction: ["IOTV_SHOULDER"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Attachment points for a shoulder protector",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "2500 g",
+        max_item_length: "318 mm",
+
+        moves: 1000,
+
+        flag_restriction: ["IOTV_SHOULDER"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Attachment points for a groin protector",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "2500 g",
+        max_item_length: "318 mm",
+
+        moves: 1000,
+
+        flag_restriction: ["IOTV_GROIN"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Attachment points for a neck protector",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "2500 g",
+        max_item_length: "318 mm",
+
+        moves: 1200,
+
+        flag_restriction: ["IOTV_NECK"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Attachment points for a lower back protector",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "2500 g",
+        max_item_length: "318 mm",
+
+        moves: 1200,
+
+        flag_restriction: ["IOTV_BACK"],
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Cummerbund Quad Release system attachment point",
+
+        holster: true,
+        ablative: true,
+
+        max_contains_volume: "15 L",
+        max_contains_weight: "60 kg",
+
+        flag_restriction: ["CUMMERBUND_NMQRS"],
+        inherits_flags: true,
+
+        moves: 10,
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 7,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    passive_effects: [{ id: "PLATE_CARRIER_PROFICIENCY_EXTRA_PROTECTION" }],
+
+    flags: ["STURDY", "OUTER", "MUNDANE", "PLATE_CARRIER"],
+
+    price: "1449 USD",
+    price_postapoc: "10 USD",
+  },
+  {
+    id: "plate_carrier/msv/gen_ii",
+    type: "ITEM",
+    subtypes: ["ARMOR", "ARTIFACT"],
+    category: "armor",
+
+    /* 
+      SOURCES
+        AR/PD 15-03 REV D
+         - dimensions
+
+        https://locknwalkharness.com/products/kdh-multicam-army-modular-scalable-vest-sps-msv-w-3a-soft-armor?variant=39611129659454
+          - price
+          - coverage
+
+        https://www.armorexpress.com/product/msv-gen-ii/
+          - PALS cell count
+
+        https://abrams.com.ua/en/7559-bronezhilet-msv-0-grn-111/
+          - weight
+     */
+
+    /* 
+      NOTES
+        - modelled after size M
+
+        - there appears to be two parts of the MSV: a Tier I vest (to which cummerbunds strap?) and a Tier III vest (which has the webbing and the plate pouches)
+        - we are currently modelling them as the same item, as if a regular plate carrier
+
+        - while coyote-colored carriers appear in online search, they are by and large a minuscule portion of all indexed carriers
+        - until a conclusive proof of their widespread deployment in any given branch and/or conflict, we presume them to be exceedingly-rare and, therefore, not worthy of induction
+     */
+
+    name: {
+      str: "modern Army plate carrier",
+    },
+    description: "The most-recent model of a plate carrier deployed by the U.S. Army prior to the Cataclysm.  It boasts a significant weight reduction compared to the previous model, as well as increased comfort, especially during long missions.  Provides ballistic protection against small-caliber rounds thanks to Kevlar inserts, and could be augmented further by adding hard ballistic plates.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["ocp"],
+
+        name: {
+          str: "MSV Gen II plate carrier",
+        },
+        description: "The newest model of a plate carrier employed by the U.S. Army prior to the Cataclysm, the Modular Scalable Vest boasts improved ergonomics over its predecessor, the IOTV, both through weight reduction and through comfort and fit improvements.  Offers ballistic protection against small-caliber rounds thanks to Kevlar inserts, and can be augmented with hard ballistic plates.",
+      },
+    ],
+
+    // it may be impossible to calculate the carrier's weight accurately from its purchase description, so we use a store source
+    weight: "3800 g",
+    // from reference material
+    dimensions: {
+      type: "upperwear",
+
+      chest: "39 in",
+      height: "14.5 in",
+      thickness: "0.54 in",
+    },
+    longest_side: "14.5 in",
+
+    material: ["nylon", "kevlar"],
+    warmth: 10,
+
+    symbol: "[",
+    color: "light_gray",
+    looks_like: "ballistic_vest_esapi",
+
+    armor: [
+      {
+        // base vest and straps, upper torso
+
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.12,
+          },
+          {
+            type: "plastic_pad",
+            // approximated
+            covered_by_mat: 98,
+            thickness: 3.56 /* 0.14 in. */,
+          },
+          {
+            type: "kevlar",
+            // approximated
+            covered_by_mat: 98,
+            thickness: 3.3 /* 0.13 in. */,
+          },
+        ],
+
+        // encumbrance [5, 24],
+        encumbrance: 13,
+
+        // extrapolated from IOTV coverage based on visual reference
+        coverage: 68,
+        cover_melee: 34,
+        cover_ranged: 68,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.32,
+      },
+
+      {
+        // base vest, lower torso
+
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.12,
+          },
+          {
+            type: "plastic_pad",
+            // approximated
+            covered_by_mat: 98,
+            thickness: 3.56 /* 0.14 in. */,
+          },
+          {
+            type: "kevlar",
+            // approximated
+            covered_by_mat: 98,
+            thickness: 3.3 /* 0.13 in. */,
+          },
+        ],
+
+        encumbrance: 6,
+
+        // extrapolated from IOTV coverage based on visual reference
+        coverage: 46,
+        cover_melee: 23,
+        cover_ranged: 46,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.32,
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "5 kg",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        moves: 800,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "5 kg",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        moves: 800,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Cummerbund Quad Release system attachment point",
+
+        holster: true,
+        ablative: true,
+
+        max_contains_volume: "15 L",
+        max_contains_weight: "60 kg",
+
+        flag_restriction: ["CUMMERBUND_NMQRS"],
+        inherits_flags: true,
+
+        moves: 10,
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 6,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    passive_effects: [{ id: "PLATE_CARRIER_PROFICIENCY_EXTRA_PROTECTION" }],
+
+    flags: ["STURDY", "MUNDANE", "OUTER", "PLATE_CARRIER"],
+
+    price: "2500 USD",
+    price_postapoc: "10 USD",
+  },
+  {
+    id: "plate_carrier/point_blank/endeavor",
+    type: "ITEM",
+    subtypes: ["ARMOR", "ARTIFACT"],
+    category: "armor",
+
+    /* 
+      SOURCES
+        https://www.pointblankenterprises.com/point-blank-body-armor/odc-endeavor.html
+
+        https://www.pointblankenterprises.com/point-blank-body-armor/assets/endeavor-molle-2024.pdf
+          - variants
+
+        https://premierbodyarmor.com/products/hybrid-tactical-vest-carrier
+          - dimensions reference
+
+        https://highcomarmor.app.box.com/v/ProductSpecSheets/file/475773874894
+          - thickness reference
+          - HighCom Trooper sa3100 soft armor insert
+
+        https://s3-us-west-2.amazonaws.com/naspovaluepoint/1607704941_Point%20Blank%20Product%20and%20Price%20List%2012%202%202020.pdf
+         - price
+
+        https://highcomarmor.app.box.com/v/ProductSpecSheets/file/424151493381
+          - weight reference
+     */
+
+    /* 
+      NOTES
+        - modelled after size M
+        - we don't mention or model ID panels, pretending this is a generic, non-affiliated carrier
+        - description mentions internal removable cummerbund, but no clear way to handle it, so we model the cummerbund as integrated
+        - soft armor inside the carrier is modelled as integrated and NIJ IIIA
+        - carrier has one round Velcro surface and one tiny panel Velcro surface
+     */
+
+    /* 
+      TODO
+        - gun sling slot?
+        - Velcro panel pockets?
+     */
+
+    name: {
+      str: "federal plate carrier",
+    },
+    description: "A plain ballistic vest with a variety of hook-and-loop surfaces for identification badges and panels.  Favored by law enforcement and federal agencies due to its simplicity and ergonomics.  Embedded soft armor protects against pistol-caliber rounds",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["black", 12],
+          ["navy", 8],
+          /*
+            - the OCP variant doesn't exist explicitly for this carrier at the time of modelling these variants
+            - the manufacturer states that other colors are available upon request
+            - we model this variant temporarily in order to allow the National Guard to have a reasonable variant associated with them
+            - as members of either Army or Air Force, they're more likely than not to sport OCP uniforms and in-field armor
+          */
+          ["ocp", 4],
+          "olive",
+          "ranger",
+          "grey",
+          "coyote",
+        ],
+
+        name: {
+          str: "Point Blank Endeavor plate carrier",
+        },
+        description: "A plain-looking plate carrier.  Its ergonomic construction results in low encumbrance compared to the alternatives.  A variety of hook-and-loop surfaces could be used by identification panels.",
+      },
+    ],
+
+    // using a similar-profile and -intent plate carrier from a different manufacturer for reference
+    weight: "2.53 lbs",
+    dimensions: {
+      type: "upperwear",
+
+      chest: "40 in",
+      height: "15.5 in",
+      // * 0.29 in. [presumed thickness of soft armor insert]
+      // * + 0.01 in. [presumed thickness of material]
+      // * × 2 = 0.6 in.
+      thickness: "0.6 in",
+    },
+    longest_side: "15.5 in",
+
+    material: ["nylon", "kevlar"],
+    warmth: 10,
+
+    symbol: "[",
+    color: "light_gray",
+    looks_like: "level_3_vest",
+
+    armor: [
+      {
+        // base vest and straps, upper torso
+
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.254,
+          },
+          {
+            type: "kevlar",
+            // approximated
+            covered_by_mat: 70,
+            thickness: 7.366 /* 0.29 in. */,
+          },
+        ],
+
+        encumbrance: 4,
+
+        coverage: 90,
+        cover_melee: 75,
+        cover_ranged: 90,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.35,
+      },
+
+      {
+        // base vest, lower torso
+
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.254,
+          },
+          {
+            type: "kevlar",
+            // approximated
+            covered_by_mat: 70,
+            thickness: 7.366 /* 0.29 in. */,
+          },
+        ],
+
+        encumbrance: 2,
+
+        coverage: 46,
+        cover_melee: 30,
+        cover_ranged: 46,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.35,
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "5 kg",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        volume_encumber_modifier: 0,
+        moves: 800,
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Pocket for an armor plate",
+
+        ablative: true,
+
+        max_contains_volume: "2 L",
+        max_contains_weight: "5 kg",
+        max_item_length: "356 mm",
+
+        flag_restriction: [
+          "ABLATIVE_SMALL",
+          "ABLATIVE_MEDIUM",
+          "ABLATIVE_LARGE",
+          "ABLATIVE_XL",
+        ],
+
+        volume_encumber_modifier: 0,
+        moves: 800,
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 5,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    passive_effects: [{ id: "PLATE_CARRIER_PROFICIENCY_EXTRA_PROTECTION" }],
+
+    flags: ["STURDY", "MUNDANE", "NORMAL", "PLATE_CARRIER"],
+
+    price: "287 USD",
+    price_postapoc: "10 USD",
+  },
+]

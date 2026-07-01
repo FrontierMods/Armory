@@ -1,0 +1,99 @@
+[
+  {
+    id: "shoulder_pads/perroz",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /* 
+      SOURCES
+        https://perrozdesigns.com/products/slim-shoulder-pads
+        
+        https://www.zentauron.de/en/plate-carrier-accessories/415-plate-carrier-universal-shoulder-pad.html
+        - weight reference
+    */
+
+    name: {
+      str: "comfortable shoulder pads",
+      str_pl: "pairs of comfortable shoulder pads",
+    },
+    description: "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its encumbrance.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 2],
+          "black",
+          "coyote",
+          "multicam_black",
+          "grey",
+        ],
+        plural: true,
+
+        name: {
+          str: "Perroz Designs shoulder pads",
+          str_pl: "Perroz Designs shoulder pads",
+        },
+        description: "A pair of padded shoulder straps.  You can attach these to a plate carrier in order to reduce its baseline encumbrance.",
+      },
+    ],
+
+    // presuming the reference weight is for a pair
+    weight: "60 g",
+    dimensions: {
+      type: "rectangle",
+      // * doubled because the item is modelled as a pair
+      count: 2,
+
+      // * from visual reference
+      length: "8.25 in",
+      // * assumed from being able to fit 2 in. shoulder straps
+      width: "2 in",
+      // * 6.5 mm foam insert + (presumed) 1 mm nylon wrapper/cover × 2 sides
+      height: "8.5 mm",
+      trim: 0.125,
+      soft: true,
+    },
+
+    symbol: "[",
+    color: "dark_gray",
+
+    material: ["nylon", "plastic_pad"],
+    looks_like: "single_sling",
+    repairs_like: "single_sling",
+
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 2,
+          },
+          {
+            type: "plastic_pad",
+            covered_by_mat: 95,
+            thickness: 6.5,
+          },
+        ],
+
+        encumbrance: -1,
+
+        coverage: 1,
+        cover_melee: 1,
+        cover_ranged: 1,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        // volume_encumber_modifier: 0.3,
+      },
+    ],
+
+    flags: ["WATER_FRIENDLY", "CANT_WEAR", "SHOULDER_PADS"],
+
+    // * 60 CAD
+    price: "43 USD 85 cents",
+    price_postapoc: "1 USD",
+  },
+]

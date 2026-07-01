@@ -1,0 +1,53 @@
+[
+  {
+    id: "@gloves",
+    type: "PARTIAL",
+    category: "armor",
+    subtypes: ["ARMOR"],
+
+    patch: [{ op: "append", key: "flags", value: "VARSIZE" }],
+
+    material_thickness: 0.5,
+    environmental_protection: 2,
+    warmth: 10,
+
+    dimensions: {
+      type: "area",
+
+      /*
+        mean surface area of the human hand
+        see: https://doi.org/10.1177/154193129403801014
+       */
+      area: "388.98 cm2",
+      /*
+        we assume that this is the average thickness of a glove
+       */
+      length: "0.5 mm",
+
+      soft: true,
+    },
+
+    symbol: "[",
+    color: "dark_gray",
+  },
+  {
+    id: "@gloves/tactical",
+    inherit: ["@gloves"],
+    type: "PARTIAL",
+    subtypes: ["ARMOR", "ARTIFACT"],
+
+    patch: [
+      { op: "append", key: "flags", value: "MUNDANE" },
+      { op: "append", key: "flags", value: "STURDY" },
+    ],
+
+    looks_like: "gloves_survivor",
+    repairs_like: "gloves_survivor",
+
+    passive_effects: [
+      {
+        id: "GLOVES_RECOIL_CONTROL",
+      },
+    ],
+  },
+]

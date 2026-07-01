@@ -1,0 +1,876 @@
+[
+  {
+    id: "placard/haley/molle",
+    inherit: ["@chest_rig/chassis"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://haleystrategic.com/thorax-molle-placard
+     */
+
+    /*
+      NOTES
+        - modelled after size Large, because that's the size the Haley MOLLE placard is sold in
+     */
+
+    name: {
+      str: "MOLLE placard",
+    },
+    description: "A MOLLE placard with a pair of buckles.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to plate carrier to serve as space for more pouches.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["black", 2],
+          "multicam_black",
+          "coyote",
+          "ranger",
+          "grey",
+        ],
+
+        name: { str: "Haley Strategic MOLLE placard" },
+        description: "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.",
+      },
+    ],
+
+    weight: {
+      math: [
+        "2.7 oz",
+        { op: "add", value: { ref: "chest_rig/belly_pad", key: "weight" } },
+      ],
+    },
+    dimensions: {
+      type: "rectangle",
+
+      length: "10.25 in",
+      width: "6.75 in",
+      height: "0.125 in",
+
+      trim: 0.0125,
+      soft: true,
+    },
+
+    looks_like: "tacvest",
+
+    material: ["nylon"],
+    repairs_like: "tacvest",
+    warmth: 4,
+
+    armor: [
+      {
+        encumbrance: [1, 3],
+
+        /*
+          COVERAGE
+            large SAPI plate coverage / 2: 18%
+        */
+        coverage: 18,
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.5,
+      },
+      {
+        encumbrance: [0, 2],
+
+        /*
+          COVERAGE
+            large SAPI plate coverage / 2: 18%
+        */
+        coverage: 6,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.2,
+      },
+    ],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: {
+          description: "Side pouch hook-and-loop attachment point",
+        },
+        patch: [{ op: "merge", value: { multi: 2 } }],
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Hanging pouch hook-and-loop attachment point" },
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 3,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: "40 USD",
+  },
+  {
+    id: "placard/onetigris/vulture",
+    inherit: ["@chest_rig/chassis"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://tactical.onetigris.com/products/vulture-chest-rig
+     */
+
+    name: {
+      str: "recon chest rig chassis",
+    },
+    description: "A compact chest rig chassis with a pair of buckles.  Features four rifle magazine pouches, four pistol magazine pouches, and a general pouch for small supplies.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to a plate carrier to serve as a set of extra pouches.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["black", 2],
+          ["coyote", 2],
+          "multicam_black",
+          "ranger",
+        ],
+
+        name: { str: "OneTigris Vulture chest rig chassis" },
+        description: "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.",
+      },
+    ],
+
+    // * we presume, based on weights of other rigs and LBVs, that 18.3 oz is the weight of the entire assembly, including the harness
+    weight: {
+      math: [
+        "18.3 oz",
+        // * we assume the harness that ships with the chassis is the Haley Strategic X-harness (or a very similar alternative), for the purposes of calculating weight
+        {
+          op: "add",
+          value: {
+            math: [
+              { ref: "chest_rig/harness/x/haley", key: "weight" },
+              { op: "multiply", value: -1 },
+            ],
+          },
+        },
+      ],
+    },
+    dimensions: {
+      type: "rectangle",
+
+      length: "11 in",
+      width: "6 in",
+      height: "2 in",
+
+      trim: 0.075,
+      soft: true,
+    },
+
+    looks_like: "tacvest",
+
+    material: ["nylon", "plastic"],
+    repairs_like: "tacvest",
+    warmth: 7,
+
+    armor: [
+      {
+        encumbrance: [0, 1],
+
+        /*
+          COVERAGE
+            front upper torso coverage: 6% × 40% = 2.4%
+         */
+        coverage: 2,
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.1,
+      },
+      {
+        encumbrance: [1, 6],
+
+        /*
+          COVERAGE
+            front upper torso coverage: 40% × 40% = 16%
+         */
+        coverage: 16,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.6,
+      },
+    ],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Tall open-top rifle magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 4 } }],
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Pistol magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 4 } }],
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "General pouch",
+
+        max_contains_weight: "3 kg",
+        max_contains_volume: {
+          math: [
+            // * approximated from PALS webbing
+            "6 in" /* length */,
+            // * presumed based on overall depth of the rig
+            { op: "multiply", value: "1.5 in" /* depth */ },
+            // * approximated from PALS webbing
+            { op: "multiply", value: "5 in" /* height */ },
+            { op: "trim", value: 0.05 },
+          ],
+        },
+        max_item_length: "6 in",
+
+        moves: 180,
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Side pouch hook-and-loop attachment point" },
+        patch: [{ op: "merge", value: { multi: 2 } }],
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Hanging pouch hook-and-loop attachment point" },
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 1,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    // * pure guess based on how other modular options have been priced when sold separately
+    price: "40 USD",
+  },
+  {
+    id: "placard/haley/magazine/triple",
+    inherit: ["@chest_rig/chassis"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://haleystrategic.com/thorax-triple-rifle-mag-placard
+     */
+
+    /*
+      NOTES
+        - this placard comes with hard MP2 magazine-retainer inserts by default
+     */
+
+    name: {
+      str: "triple-magazine placard",
+    },
+    description: "A placard with a pair of buckles.  Holds three individual rifle magazines.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to a plate carrier to serve as magazine carry.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["black", 2],
+          ["coyote", 2],
+          "ranger",
+          "grey",
+          "multicam_black",
+        ],
+
+        name: { str: "Haley Strategic triple mag placard" },
+        description: "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.",
+      },
+    ],
+
+    /*
+      WEIGHT
+        - it appears this placard already comes with a belly pad, thus we assume its weight is counted into the overall weight
+        - see photos: https://www.pewtac.com/products_details/47.html
+     */
+    weight: "14.08 oz",
+    dimensions: {
+      type: "rectangle",
+
+      length: "7.5 in",
+      width: "11.5 in",
+      height: "1.75 in",
+
+      trim: 0.55,
+      soft: true,
+    },
+
+    looks_like: "tacvest",
+
+    material: ["nylon", "plastic" /* from MP2 hard inserts */],
+    repairs_like: "tacvest",
+    warmth: 5,
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Hard-retainer open-top rifle magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 3 } }],
+      },
+    ],
+
+    price: "95 USD",
+  },
+  {
+    id: "placard/direct_action/tempest",
+    inherit: ["@chest_rig/chassis"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://directactiongear.com/en/tempest-chest-rigen.html
+
+        https://us.directactiongear.com/tempest-chest-rig
+          - price
+          - dimensions
+     */
+
+    /*
+      NOTES
+        - the webbing underneath the magazines (advertised in the store description) is accounted for
+     */
+
+    name: {
+      str: "split assault chest rig chassis",
+    },
+    description: "A chest rig chassis with PALS webbing and several rifle-magazine pouches, supported by a pair of buckles.  Each side also has two flat pockets for intelligence items, such as maps or documents.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to a plate carrier to serve as a combination of magazine carry and additional space for pouches.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["coyote", 2],
+          ["ranger", 2],
+          ["black", 2],
+          "grey",
+          "fde",
+          "wildwood",
+        ],
+
+        name: { str: "Direct Action Tempest chassis" },
+        description: "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.",
+      },
+      {
+        /* 
+          - special variant for the Prepped Patriot profession
+          - this cannot spawn in the wild due to its special nature
+         */
+
+        id: "flag_chestrig",
+
+        name: { str: "Direct Action Tempest chassis" },
+        description: "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  This one features a custom paint job, turning the rig into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
+        expand_snippets: true,
+        weight: 0,
+      },
+    ],
+
+    /* 
+      WEIGHT
+        - there's a significant discrepancy between the weights listed in the EU and US stores for this product:
+          - US: 1.17 lbs = 530.6 g
+          - EU: 479 g
+        - we assume that the latter is the rig's own weight without the harness, and the former is with the H-harness
+     */
+    weight: "479 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "18 in",
+      width: "6 in",
+      // * assumed from width of an average STANAG magazine + a little extra for the pouch's textile
+      height: "0.85 in",
+
+      trim: 0.4,
+      soft: true,
+    },
+
+    looks_like: "vest",
+
+    material: ["nylon"],
+    material_thickness: 1,
+    repairs_like: "tacvest",
+    warmth: 6,
+
+    armor: [
+      {
+        encumbrance: [1, 6],
+
+        coverage: { fn: "coverage", args: [0.3, 0.5, "torso", "upper"] },
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.5,
+      },
+      {
+        encumbrance: [1, 5],
+
+        coverage: { fn: "coverage", args: [0.3, 0.5, "torso", "lower"] },
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.5,
+      },
+    ],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Flat side pocket" },
+        patch: [{ op: "merge", value: { multi: 2 } }],
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Double tall open-top rifle magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 4 } }],
+
+        // TODO: this may need to allow for shorter magazines to account for `ruger_arr_mag` (100 mm) spawns
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 8,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: "249 USD",
+  },
+  {
+    id: "placard/condor/stowaway",
+    inherit: ["@chest_rig/chassis"],
+    type: "ITEM",
+
+    /* 
+      SOURCES
+        https://condoroutdoor.com/products/stowaway-chest-rig
+
+        https://en.specshop.pl/product-eng-38426-Condor-Stowaway-Chest-Rig-Tactical-Vest-MOLLE-Coyote-201236-498.html
+        https://haleystrategic.com/micro-556-double-mag-insert
+        https://haleystrategic.com/single-micro-utility-pouch
+          - weight reference
+
+        https://ampedairsoft.com/condor-stowaway-chest-rig-black/
+          - coverage reference
+     */
+
+    /*
+      NOTES
+        - we model the placard as having magazine inserts, because we don't currently include inserts independently
+          - there is space behind the general pouch, flat when empty, to add inserts
+
+        - rifle-mag inserts come with an MP2 insert each
+
+        > https://www.recon-company.com/en/detail/index/sArticle/43925/number/808135.482
+          - weight reference for the panel itself
+          - harness weight does not appear to be available online (not sold by Condor, model unknown)
+     */
+
+    name: {
+      str: "stowaway chest rig chassis",
+    },
+    description: "A compact chest rig chassis with two rifle-magazine pouches, one pistol-magazine pouch, a medium-sized general pouch, and some PALS webbing for additional pouches.  Limited in capacity, but unencumbering.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 2], "coyote", "olive", "black"],
+
+        name: { str: "Condor Stowaway chassis" },
+        description: "A compact chassis meant to form an unencumbering, if not capacity-heavy, chest rig.  The general pouch at the front is coupled with an insert pocket at the back and external PALS webbing.  The insert pocket is filled with three inserts: two for a rifle magazine each, and one for a pistol magazine or a utility item, such as a multitool.",
+      },
+    ],
+
+    weight: {
+      math: [
+        "525 g" /* we presume chassis + harness */,
+        {
+          op: "subtract",
+          value: { ref: "chest_rig/harness/x/haley", key: "weight" },
+        },
+        {
+          op: "add",
+          value: { ref: "pouch/insert/magazine/mp2/double", key: "weight" },
+        },
+        {
+          op: "add",
+          value: { ref: "pouch/insert/utility", key: "weight" },
+        },
+      ],
+    },
+    dimensions: {
+      type: "rectangle",
+
+      length: "11 in",
+      width: "6 in",
+      height: "2 in",
+
+      soft: true,
+    },
+
+    looks_like: "purse",
+
+    material: ["nylon"],
+    material_thickness: 0.1,
+    repairs_like: "tacvest",
+    warmth: 4,
+
+    armor: [
+      {
+        encumbrance: [0, 1],
+
+        coverage: {
+          math: [
+            { fn: "coverage/end", args: [0.2, "torso", "upper"] },
+            { op: "round" },
+          ],
+        },
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.2,
+      },
+      {
+        encumbrance: [1, 4],
+
+        coverage: {
+          math: [
+            { fn: "coverage/side", args: [0.4, "torso", "lower"] },
+            { op: "round" },
+          ],
+        },
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.7,
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "General pouch",
+
+        max_contains_weight: "5 kg",
+
+        max_contains_volume: {
+          fn: "dimensions/rectangle:trim",
+          args: ["2 in", "10.75 in", "5.75 in", 0.025],
+        },
+        max_item_length: "10.75 in",
+
+        moves: 240,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Zippered flat pocket",
+
+        max_contains_weight: "300 g",
+        max_contains_volume: {
+          fn: "dimensions/rectangle:trim",
+          args: ["0.1 in", "10.75 in", "5.75 in", 0.025],
+        },
+        max_item_volume: "35 ml",
+        max_item_length: "10.75 in",
+
+        moves: 310,
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Hard-retainer open-top rifle magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 2 } }],
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Hard-retainer open-top pistol magazine pouch" },
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Side pouch hook-and-loop attachment point" },
+        patch: [{ op: "merge", value: { multi: 2 } }],
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Hanging pouch hook-and-loop attachment point" },
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 3,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: {
+      math: [
+        "55 USD 95 cents",
+        {
+          op: "subtract",
+          value: { ref: "chest_rig/harness/x/haley", key: "price" },
+        },
+      ],
+    },
+  },
+  {
+    id: "placard/tasm/mk_ii",
+    inherit: ["@chest_rig/chassis"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://tasmaniantigerusa.com/product.php?id=25
+
+        https://www.tasmaniantiger.info/en/product/tt-chest-rig-mkii/
+        https://www.tacwrk.com/en/p/tasmanian-tiger-tt-chest-rig-mkii-irr-stone-grey-olive-48673
+        https://www.tacwrk.com/en/p/tasmanian-tiger-tt-chest-rig-mkii-multicam-64
+          - variant reference
+     */
+
+    /*
+      NOTES
+        - this item does not allow the bib to be adjusted (tucked in or set up, the latter being the in-game configuration)
+        - bib adjustment shouldn't matter too much anyway because the encumbrance effect would be almost non-existent by the game's current standards
+        - it also doesn't presently allow for a ballistic plate to be inserted, partly for balance reasons (to be reviewed)
+        - we are modelling the front pouches as if they are irremovable, which seems to be the case, with reviewers not saying a word about it
+
+        - reference chart is explicit about this model having double-magazine pouches
+        > https://tasmaniantigerusa.com/admin/uploads/pdfs/GEAR-REFERENCE%202021.pdf
+     */
+
+    /*
+      TODO
+        - bib plate storage
+     */
+
+    name: {
+      str: "assault chest rig chassis",
+    },
+    description: "A large, comfortable chest rig chassis with plenty of PALS webbing.  It has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as with two spacious side pouches and a bib that offers some extra webbing.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["coyote", 4],
+          ["multicam", 2],
+          ["olive", 2],
+          ["fde", 2],
+          "black",
+          "grey",
+        ],
+
+        name: { str: "Tasmanian Tiger Mk II chassis" },
+        description: "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.",
+      },
+    ],
+
+    // * we presume the stated weight to be with harness
+    weight: {
+      fn: "chassis/weight",
+      args: ["39 oz"],
+    },
+    dimensions: [
+      {
+        // * PANEL
+        type: "rectangle",
+
+        // thickness of all the material, with pouches collapsed when empty
+        length: "1.5 mm",
+        // +0.5 in. extra, from visual reference
+        width: { fn: "pals/columns", args: [8.33] },
+        // 5 rows of PALS webbing (+ 4 empty rows in-between)
+        height: { fn: "pals/rows", args: [9] },
+
+        soft: true,
+      },
+      {
+        // * SIDE POUCH
+        // * dimensions from cell count
+        type: "rectangle",
+        count: 2,
+
+        length: "1.5 mm",
+        width: { fn: "pals/columns", args: [3.66] },
+        height: { fn: "pals/rows", args: [9] },
+
+        // slanted pouch MOLLE area
+        trim: 0.15,
+
+        soft: true,
+      },
+      {
+        // * BIB
+        type: "rectangle",
+
+        // thickness of all the material, with pouches collapsed when empty
+        length: "1 mm",
+        // + 0.25 in. extra, from visual reference
+        width: { fn: "pals/columns", args: [6.16] },
+        // 3 rows of PALS webbing (+ 4 empty rows in-between)
+        height: { fn: "pals/rows", args: [7] },
+
+        trim: 0.45,
+
+        soft: true,
+      },
+    ],
+
+    looks_like: "vest",
+
+    material: ["nylon"],
+    material_thickness: 1.5,
+    repairs_like: "tacvest",
+    warmth: 8,
+
+    armor: [
+      {
+        encumbrance: [1, 10],
+
+        coverage: {
+          fn: "coverage",
+          args: [
+            /*
+              22% for front panel
+              6% for big
+             */
+            0.28,
+            0,
+            "torso",
+            "upper",
+          ],
+        },
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+      },
+      {
+        encumbrance: [1, 4],
+
+        coverage: {
+          fn: "coverage",
+          args: [
+            /*
+              4% for front rig panel
+              5% × 2 for side pouches
+                - covering the same area as SAPI side plates
+             */
+            0.14,
+            0,
+            "torso",
+            "upper",
+          ],
+        },
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Side pouch",
+
+        multi: 2,
+
+        max_contains_weight: "6 kg",
+        max_contains_volume: {
+          fn: "dimensions/rectangle:trim",
+          // TODO: derive from PALS cells via dedicated function
+          args: [
+            "1.5 in",
+            "5 in",
+            "9.25 in",
+            0.15 /* the pouch is slanted slightly on one end */,
+          ],
+        },
+        max_item_volume: "700 ml",
+        max_item_length: "9 in",
+
+        volume_encumber_modifier: 0.65,
+        moves: 140,
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Flap-closure rifle magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 4 } }],
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 12,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: {
+      math: [
+        "219 USD",
+        {
+          op: "subtract",
+          value: { ref: "chest_rig/harness/x/haley", key: "price" },
+        },
+      ],
+    },
+  },
+]

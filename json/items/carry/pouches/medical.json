@@ -1,288 +1,188 @@
 [
   {
-    "id": "pouch_ifak_frogpro_chiron",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.frogpro.eu/en/pouches/183-1101-chiron-mini-ifak.html",
-      [
-        "https://www.frogpro.eu/en/accessories/188-1163-multi-purpose-organizer-chiron-horizontal-8052461550411.html",
-        "pocket restrictions"
-      ]
-    ],
-
-    "//notes": [
-      "this pouch is highly-modular, with hook-and-loop inserts",
-      "the tourniquet pouch is supposed to be a separate item as well",
-      "for now, we pretend all pockets are directly attached and not removable",
-      "pockets are modelled after an image in source showing the pouch unfolded"
-    ],
-
+    "id": "pouch/medical/rescue/mini",
+    "type": "ITEM",
     "name": {
       "str": "mini IFAK pouch",
       "str_pl": "mini IFAK pouches"
     },
-    "description": "A compact nylon pouch for first aid items.  There is a separate bottom pocket for a tourniquet.",
-
+    "description": "A compact nylon pouch for first aid items.  The straps inside the pouch allow for better sorting of different types of aid.",
     "variant_type": "gun",
     "variants": [
       {
+        "name": {
+          "str": "Rescue Essentials mini IFAK pouch",
+          "str_pl": "Rescue Essentials mini IFAK pouches"
+        },
+        "description": "A compact nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:multicam>",
         "id": "multicam",
-
-        "name": {
-          "str": "FROG.PRO Chiron IFAK pouch",
-          "str_pl": "FROG.PRO Chiron IFAK pouches"
-        },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
         "name": {
-          "str": "FROG.PRO Chiron IFAK pouch",
-          "str_pl": "FROG.PRO Chiron IFAK pouches"
+          "str": "Rescue Essentials mini IFAK pouch",
+          "str_pl": "Rescue Essentials mini IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
+        "description": "A compact nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:olive>",
+        "id": "olive",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
-          "str": "FROG.PRO Chiron IFAK pouch",
-          "str_pl": "FROG.PRO Chiron IFAK pouches"
+          "str": "Rescue Essentials mini IFAK pouch",
+          "str_pl": "Rescue Essentials mini IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "coyote",
-
-        "name": {
-          "str": "FROG.PRO Chiron IFAK pouch",
-          "str_pl": "FROG.PRO Chiron IFAK pouches"
-        },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
+        "description": "A compact nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:ranger>",
         "id": "ranger",
-
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
         "name": {
-          "str": "FROG.PRO Chiron IFAK pouch",
-          "str_pl": "FROG.PRO Chiron IFAK pouches"
+          "str": "Rescue Essentials mini IFAK pouch",
+          "str_pl": "Rescue Essentials mini IFAK pouches"
         },
-        "description": "A compact, folding nylon pouch for first aid items, such as bandages.  Two plastic inserts inside can hold a variety of different items, including pill bottles, secured in place by a cord.  There is a separate pocket for a tourniquet, hanging at the bottom of the pouch.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "description": "A compact nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "220 g",
-    "//dimensions": {
-      "length": "16.00 cm",
-      "width": "12.50 cm",
-      "height": "5 mm",
-      "raw": "100 ml",
-      "trim": 0.05
-    },
-    "volume": "95 ml",
-    "longest_side": "160 mm",
-
-    "symbol": ")",
-    "color": "red",
+    "weight": "180 g",
     "repairs_like": "legrig",
     "looks_like": "holster",
-
-    "material": ["nylon", "plastic"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Interior cord medical pouch",
-
-        "//max_contains_volume": [
-          "dimensions of an organizer insert",
-          {
-            "length": "16.00 cm",
-            "width": "12.00 cm",
-            "height": "2.00 cm",
-            "raw": "384 ml",
-            "trim": 0,
-            "notes": [
-              "height is assumed to be half of what the pouch is capable of, judging by the photos",
-              "there are supposed to be two of these inserts in the pouch"
-            ]
-          }
-        ],
-        "max_contains_volume": "384 ml",
-        "max_contains_weight": "1 kg",
-        "//max_item_length": "allows items to slightly exceed size of insert",
-        "max_item_length": "170 mm",
-
+        "description": "Tall medical elastic band",
+        "max_contains_weight": "1 kg 500 g",
+        "max_contains_volume": "560 ml",
+        "max_item_length": "14 cm 5 mm",
         "moves": 170
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Interior cord medical pouch",
-
-        "//max_contains_volume": [
-          "dimensions of an organizer insert",
-          {
-            "length": "16.00 cm",
-            "width": "12.00 cm",
-            "height": "2.00 cm",
-            "raw": "384 ml",
-            "trim": 0
-          }
-        ],
-        "max_contains_volume": "384 ml",
+        "description": "Short medical elastic band",
         "max_contains_weight": "1 kg",
-        "//max_item_length": "allows items to slightly exceed size of insert",
-        "max_item_length": "170 mm",
-
+        "max_contains_volume": "265 ml",
+        "max_item_length": "7 cm 2 mm",
         "moves": 170
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Tourniquet pouch",
-
-        "holster": true,
-
-        "//max_contains_weight": "actual CAT weighs ~86 g",
-        "max_contains_weight": "300 g",
-        "//max_contains_volume": [
-          "dimensions of a CAT",
-          "https://www.narescue.com/combat-application-tourniquet-c-a-t.html",
-          {
-            "length": "6.50 in",
-            "width": "2.40 in",
-            "height": "1.5 in",
-            "raw": "384 ml",
-            "trim": 0.2,
-            "notes": [
-              "height is assumed to be half the height of pouch",
-              "there are supposed to be two of these inserts in the pouch",
-              "negative trim is to allow items to slightly exceed the boundries of the insert itself, like in source"
-            ]
-          }
-        ],
-        "max_contains_volume": "307 ml",
-        "//max_item_length": "allows items to slightly exceed size of insert",
-        "max_item_length": "165 mm",
-
-        "moves": 110
+        "description": "Short medical elastic band",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "265 ml",
+        "max_item_length": "7 cm 2 mm",
+        "moves": 170
       }
     ],
-
-    "//flags": ["added WATER_FRIENDLY"],
+    "price": "19 USD 95 cents",
+    "volume": "33 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "red",
     "flags": [
-      "COLLAPSE_CONTENTS",
-      "WATER_FRIENDLY",
-      "CANT_WEAR",
-      "PALS_MEDIUM"
+      "COLLAPSE_CONTENTS"
     ],
-
-    "//price": "120 EUR",
-    "price": "127 USD",
-    "//price_postapoc": "2 USD"
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "pouch_ifak_rescue",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.rescue-essentials.com/rescue-essentials-trauma-ifak-pouch/",
-      [
-        "https://www.frogpro.eu/en/accessories/188-1163-multi-purpose-organizer-chiron-horizontal-8052461550411.html",
-        "pocket restrictions"
-      ]
-    ],
-
-    "//notes": [
-      "we currently don't model the straps as separate pocket, as it isn't apparent that this level of sorting would be of benefit to the player"
-    ],
-
-    "//TODO": ["Velcro surface"],
-
+    "id": "pouch/medical/rescue",
+    "type": "ITEM",
     "name": {
       "str": "IFAK pouch",
       "str_pl": "IFAK pouches"
     },
-    "description": "A nylon pouch for first aid items.  The straps inside the pouch allow for better sorting of different types of aid.",
-
+    "description": "A spacious nylon pouch for first aid items.  The straps inside the pouch allow for better sorting of different types of aid.",
     "variant_type": "gun",
     "variants": [
       {
-        "id": "black",
-
         "name": {
-          "str": "Rescue Essentials IFAK pouch",
-          "str_pl": "Rescue Essentials IFAK pouches"
+          "str": "Rescue Essentials Gen II IFAK pouch",
+          "str_pl": "Rescue Essentials Gen II IFAK pouches"
         },
-        "description": "A large nylon pouch for first aid items, such as bandages and tourniquets.  Stretchy nylon straps inside can hold a variety of different items, including pill bottles, secured in place.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "description": "A spacious nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Rescue Essentials Gen II IFAK pouch",
+          "str_pl": "Rescue Essentials Gen II IFAK pouches"
+        },
+        "description": "A spacious nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:red>",
+        "id": "red",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Rescue Essentials Gen II IFAK pouch",
+          "str_pl": "Rescue Essentials Gen II IFAK pouches"
+        },
+        "description": "A spacious nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:olive>",
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Rescue Essentials Gen II IFAK pouch",
+          "str_pl": "Rescue Essentials Gen II IFAK pouches"
+        },
+        "description": "A spacious nylon pouch for first aid items.  Elastic straps inside are designed to hold common varieties of medical supplies, such as bandages, tourniquets, trauma sheers, or medical gloves.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": "12 oz",
-    "weight": "340 g",
-    "//dimensions": {
-      "length": "7.5 in",
-      "width": "6 in",
-      "height": "3.5 in",
-      "raw": "2580.96 ml",
-      "trim": 0.05
-    },
-    "volume": "2452 ml",
-    "longest_side": "191 mm",
-
-    "symbol": ")",
-    "color": "red",
+    "weight": "396 g 893 mg",
     "repairs_like": "legrig",
     "looks_like": "holster",
-
-    "material": ["nylon"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "description": "IFAK pouch",
-
-        "max_contains_weight": "4 kg",
-        "//magazine_well": "20% of available volume inside the pouch (2329 ml)",
-        "magazine_well": "466 ml",
-        "//max_contains_volume": "95% of trimmed volume",
-        "max_contains_volume": "2329 ml",
-        "max_item_length": "178 mm",
-
-        "moves": 210,
-
-        "volume_encumber_modifier": 0.3
+        "description": "Tall medical elastic band",
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "1 L 907 ml",
+        "max_item_length": "16 cm 9 mm",
+        "moves": 210
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Short medical elastic band",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "903 ml",
+        "max_item_length": "12 cm 1 mm",
+        "moves": 210
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Short medical elastic band",
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "903 ml",
+        "max_item_length": "12 cm 1 mm",
+        "moves": 210
       }
     ],
-
-    "//flags": ["added WATER_FRIENDLY"],
+    "price": "25 USD",
+    "volume": "107 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "red",
     "flags": [
-      "CANT_WEAR",
-      "PALS_MEDIUM",
-      "COLLAPSE_CONTENTS",
-      "WATER_FRIENDLY"
+      "COLLAPSE_CONTENTS"
     ],
-
-    "price": "27 USD",
-    "price_postapoc": "2 USD"
+    "price_postapoc": "4 USD 50 cents"
   }
 ]

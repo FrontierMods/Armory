@@ -1,0 +1,281 @@
+[
+  {
+    id: "piece/iotv/groin",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+    category: "armor",
+
+    /* 
+      SOURCES
+        https://locknwalkharness.com/products/multicam-iotv-gen-iii-enhanced-groin-protector-w-3a-soft-armor-included
+          - visual reference
+          - price
+
+        https://punisher.com.ua/en/balistychnyi-zakhyst-pakhu-do-bronezhyletu-iotv/
+          - dimensions reference
+
+        FQ/PD 07-05
+          - weight
+     */
+
+    /* 
+      NOTES
+        - for the sake of simplicity, we're going to pretend that the ballistic insert is embedded into the protector and is repairable
+     */
+
+    name: {
+      str: "Army groin protector",
+    },
+    description: "Thin nylon pad with a Kevlar soft armor insert for groin and thigh protection.  Designed to be attached to the Army plate carrier, but could be independently worn on a belt.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["ocp"],
+
+        name: {
+          str: "IOTV groin protector",
+        },
+        description: "Thin nylon pad with a Kevlar soft armor insert for groin and thigh protection.  Designed to be attached to the IOTV plate carrier, but could be independently worn on a belt.",
+      },
+    ],
+
+    weight: "0.92 lbs",
+    dimensions: {
+      type: "area",
+
+      area: "69.81 in2",
+      // aka depth
+      // assumed from IOTV vest maximum thickness
+      length: "0.27 in",
+    },
+    longest_side: "11.5 in",
+
+    symbol: ",",
+    color: "dark_gray",
+
+    material: ["nylon", "kevlar"],
+
+    // there's also the thick nylon belt that might be worth considering
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            // 0.1 mm per side
+            thickness: 0.2,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // assumed 0.27 in. - 0.2 mm
+            thickness: 6.658,
+          },
+        ],
+
+        encumbrance: 4,
+
+        // approximated from visual reference
+        coverage: 16,
+        cover_melee: 8,
+        cover_ranged: 16,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.3,
+
+        layers: ["OUTER"],
+      },
+
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            // 0.1 mm per side
+            thickness: 0.2,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // assumed 0.27 in. - 0.2 mm
+            thickness: 6.658,
+          },
+        ],
+
+        encumbrance: 4,
+
+        // approximated from visual reference
+        // full front coverage of the waist ← 40% (fronts coverage) / 2
+        coverage: 20,
+        cover_melee: 10,
+        cover_ranged: 20,
+
+        covers: ["torso"],
+        specifically_covers: ["torso_waist"],
+
+        volume_encumber_modifier: 0.3,
+
+        layers: ["BELTED"],
+      },
+
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            // 0.1 mm per side
+            thickness: 0.2,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // assumed 0.27 in. - 0.2 mm
+            thickness: 6.658,
+          },
+        ],
+
+        encumbrance: 4,
+
+        // approximated from visual reference
+        // 56% of front coverage / 2
+        coverage: 23,
+        cover_melee: 12,
+        cover_ranged: 23,
+
+        covers: ["leg_l", "leg_r"],
+        specifically_covers: ["leg_hip_l", "leg_hip_r"],
+
+        volume_encumber_modifier: 0.3,
+      },
+    ],
+
+    flags: ["IOTV_GROIN", "BELTED"],
+
+    price: "150 USD",
+    price_postapoc: "1 USD",
+  },
+  {
+    id: "piece/iotv/shoulder",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+    category: "armor",
+
+    /* 
+      SOURCES
+        https://www.venturesurplus.com/products/acu-deltoid-protector-for-iotv/
+          - price
+
+        FQ/PD 07-05
+          - weight
+     */
+
+    /* 
+      NOTES
+        - for the sake of simplicity, we're going to pretend that the ballistic insert is embedded into the protector and is repairable
+        - size L (fits medium and large IOTVs)
+     */
+
+    name: {
+      str: "Army deltoid protector",
+    },
+    description: "Thin nylon pad with a Kevlar soft armor insert protecting the shoulder and the upper arm.  Designed to be attached to the Army plate carrier",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["ocp"],
+
+        name: {
+          str: "IOTV deltoid protector",
+        },
+        description: "Thin nylon pad with a Kevlar soft armor insert protecting the shoulder and the upper arm.  Designed to be attached to the IOTV plate carrier",
+      },
+    ],
+
+    // * 2.28 lbs / pair
+    weight: "1.14 lbs",
+    dimensions: {
+      type: "area",
+
+      area: "138.25 in2",
+      // * depth
+      // * assumed from IOTV vest maximum thickness
+      length: "0.27 in",
+    },
+    longest_side: "15.3 in",
+
+    symbol: ",",
+    color: "dark_gray",
+
+    material: ["nylon", "kevlar"],
+
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.2,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // assumed 0.27 in. - 0.2 mm of nylon
+            thickness: 6.658,
+          },
+        ],
+
+        encumbrance: 3,
+
+        coverage: 80,
+        cover_melee: 40,
+        cover_ranged: 80,
+
+        covers: ["arm_l", "arm_r"],
+        specifically_covers: ["arm_shoulder_l", "arm_shoulder_r"],
+        volume_encumber_modifier: 0,
+
+        layers: ["OUTER"],
+      },
+
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 0.2,
+          },
+          {
+            type: "kevlar",
+            covered_by_mat: 99,
+            // * assumed 0.27 in. minus 0.2 mm of nylon
+            // TODO: refactor into `math`?
+            // * the issue with `math` is: can't convert to unitless
+            // * can get scalar of quantity once `.devtools` expose it
+            thickness: 6.658,
+          },
+        ],
+
+        encumbrance: 3,
+
+        coverage: 60,
+        cover_melee: 30,
+        cover_ranged: 60,
+
+        covers: ["arm_l", "arm_r"],
+        specifically_covers: ["arm_upper_l", "arm_upper_r"],
+        volume_encumber_modifier: 0,
+
+        layers: ["OUTER"],
+      },
+    ],
+
+    flags: ["IOTV_SHOULDER", "CANT_WEAR"],
+
+    price: "44 USD 99 cents",
+    price_postapoc: "1 USD",
+  },
+]

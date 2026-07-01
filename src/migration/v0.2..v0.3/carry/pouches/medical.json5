@@ -1,0 +1,12 @@
+[
+  {
+    id: ["pouch_ifak_frogpro_chiron"],
+    type: "MIGRATION",
+    replace: "pouch/medical/rescue/mini",
+  },
+  {
+    id: ["pouch_ifak_rescue"],
+    type: "MIGRATION",
+    replace: "pouch/medical/rescue",
+  },
+]

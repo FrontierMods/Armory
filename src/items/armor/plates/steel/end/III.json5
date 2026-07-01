@@ -1,0 +1,85 @@
+[
+  {
+    id: "plate/steel/ar/iii/medium",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+    category: "armor",
+
+    /* 
+      SOURCES
+
+      https://www.ar500armor.com/heritage-plate.html
+    */
+
+    /*
+      NOTES
+
+      - modelled after size SAPI M, with base coat
+      - the thickness of the base coat itself doesn't appear to be available online, so we presume 40 mil
+    */
+
+    name: {
+      str: "AR steel medium plate",
+    },
+    description: 'A SAPI-cut ballistic plate with a single-curve profile, made of AR500 steel by Armored Republic.  On the outward-facing side the manufacturer\'s logo is proudly displayed above the phrase "STRIKE FACE".  <nij:iii>  Plates like this one are intended to be inserted into a plate carrier where it will absorb the energy of multiple rifle rounds before requiring replacement.  This model is sized "medium" and can only fit in carriers that allow medium-sized plates.',
+    expand_snippets: true,
+
+    weight: "8.5 lbs",
+    dimensions: {
+      type: "rectangle",
+
+      length: "12.5 in",
+      width: "9.5 in",
+      height: "0.34 in",
+      trim: 0.125,
+    },
+
+    material: ["mc_steel", "rubber" /* polyurea anti-spalling cover */],
+    material_thickness: 8.636,
+
+    symbol: ",",
+    color: "dark_gray",
+
+    armor: [
+      {
+        material: [
+          { type: "mc_steel", covered_by_mat: 100, thickness: 7.616 },
+          {
+            type: "rubber",
+            covered_by_mat: 100,
+            // 40 mil = 0.04 in. = 1.016 mm
+            thickness: 1.016,
+          },
+        ],
+
+        encumbrance: 4,
+
+        coverage: 34,
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+      },
+
+      {
+        material: [
+          { type: "mc_steel", covered_by_mat: 100, thickness: 7.616 },
+          {
+            type: "rubber",
+            covered_by_mat: 100,
+            thickness: 1.016,
+          },
+        ],
+
+        encumbrance: 2,
+
+        coverage: 10,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+      },
+    ],
+
+    flags: ["ABLATIVE_MEDIUM", "CANT_WEAR"],
+
+    price: "99 USD",
+    price_postapoc: "1 USD",
+  },
+]

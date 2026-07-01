@@ -1,22 +1,22 @@
 [
   {
-    "id": ["esapi_plate"],
+    "id": "esapi_plate",
     "type": "MIGRATION",
-    "replace": "plate_ceramic_medium_ceradyne_esapi"
+    "replace": "plate/ceramic/esapi/medium"
   },
   {
-    "id": ["esbi_plate"],
+    "id": "esbi_plate",
     "type": "MIGRATION",
-    "replace": "plate_side_tall_ceramic_ltc_esbi"
+    "replace": "plate/side/ceramic/esbi/tall"
   },
   {
-    "id": ["steel_ballistic_plate"],
+    "id": "steel_ballistic_plate",
     "type": "MIGRATION",
-    "replace": "plate_steel_medium_ar_iii"
+    "replace": "plate/steel/ar/iii/medium"
   },
   {
-    "id": ["heavy_steel_ballistic_plate"],
+    "id": "heavy_steel_ballistic_plate",
     "type": "MIGRATION",
-    "replace": "plate_steel_medium_tacticon_iiiplus"
+    "replace": "plate/steel/ar/iii/medium"
   }
 ]

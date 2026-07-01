@@ -1,0 +1,12 @@
+[
+  {
+    "id": "belt_webbing_haley_d3",
+    "type": "MIGRATION",
+    "replace": "belt/webbing/haley/d3"
+  },
+  {
+    "id": "belt_webbing_blackhawk_foundation",
+    "type": "MIGRATION",
+    "replace": "belt/webbing/blackhawk/foundation"
+  }
+]

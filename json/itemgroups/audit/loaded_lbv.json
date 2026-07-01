@@ -3,7 +3,6 @@
     "id": "loaded_lbv",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "container-group": "rigs/harnesses/all:any",
@@ -15,7 +14,6 @@
     "id": "loaded_lbv/military",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "container-group": "rigs/harnesses/all:any",
@@ -23,33 +21,36 @@
       }
     ]
   },
-
   {
     "id": "rigs/harnesses/all:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
-      { "item": "harness_x_haley" },
-      { "item": "harness_h_direct_action" }
+      {
+        "item": "chest_rig/harness/x/haley"
+      },
+      {
+        "item": "chest_rig/harness/h/direct_action"
+      }
     ]
   },
-
   {
     "id": "rigs/chassis/all:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
-      { "group": "rigs/chassis/civilian:any" },
-      { "group": "rigs/chassis/military:any" }
+      {
+        "group": "rigs/chassis/civilian:any"
+      },
+      {
+        "group": "rigs/chassis/military:any"
+      }
     ]
   },
   {
     "id": "rigs/chassis/civilian:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "placard/condor/stowaway:any"
@@ -63,10 +64,9 @@
     "id": "rigs/chassis/military:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
-        "group": "placard/haley/magazine:any"
+        "group": "placard/haley/magazine/triple:any"
       },
       {
         "group": "placard/haley/molle:any",

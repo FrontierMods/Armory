@@ -1,0 +1,12 @@
+[
+  {
+    id: ["harness_x_haley"],
+    type: "MIGRATION",
+    replace: "chest_rig/harness/x/haley",
+  },
+  {
+    id: ["harness_h_direct_action"],
+    type: "MIGRATION",
+    replace: "chest_rig/harness/h/direct_action",
+  },
+]

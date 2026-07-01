@@ -1,0 +1,691 @@
+[
+  {
+    id: "pouch/magazine/condor/556",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://condoroutdoor.com/collections/magazine-pouches/products/condor-open-top-m4-m16-mag-pouch
+
+        https://www.specshop.pl/Open-Top-Single-M4-M16-Mag-Pouch-Condor-MA18-498
+        - weight
+    */
+
+    name: {
+      str: "open-top rifle magazine pouch",
+      str_pl: "open-top rifle magazine pouches",
+    },
+    description: "A nylon pouch for a single rifle magazine.  Will fit many, though not all, rifle magazines.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 4], ["black", 2], ["coyote", 2], "ranger"],
+
+        name: {
+          str: "Condor STANAG magazine pouch",
+          str_pl: "Condor STANAG magazine pouches",
+        },
+        description: "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.",
+      },
+    ],
+
+    weight: "87 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: { fn: "pals/rows", args: [5] },
+      width: { fn: "pals/columns", args: [2] },
+      height: "6 mm",
+
+      soft: true,
+    },
+
+    looks_like: "ammo_satchel",
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Tall open-top rifle magazine pouch" },
+      },
+    ],
+
+    price: "14 USD",
+  },
+  {
+    id: "pouch/magazine/condor/kangaroo",
+    inherit: ["@pouch/large", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://condoroutdoor.com/collections/magazine-pouches/products/condor-single-kangaroo-mag-pouch-gen-ii
+
+        https://shop.afullmetaljacket.com/product/condor-single-kangaroo-mag-pouch-gen-ii-2/
+        - weight
+    */
+
+    name: {
+      str: "kangaroo magazine pouch",
+      str_pl: "kangaroo magazine pouches",
+    },
+    description: "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  Not as quick to use as two separate pouches, but takes up fewer slots on the webbing.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["multicam", "black", "coyote", "olive"],
+
+        name: {
+          str: "Condor kangaroo pouch",
+          str_pl: "Condor kangaroo pouches",
+        },
+        description: "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.",
+      },
+    ],
+
+    weight: "120 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "4.75 in",
+      width: "3 in",
+      height: "8 mm",
+      soft: true,
+    },
+
+    looks_like: "ragpouch",
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Open-top rifle magazine pouch" },
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Pistol magazine pouch" },
+      },
+    ],
+
+    price: "17 USD",
+  },
+  {
+    id: "pouch/shot/condor",
+    inherit: ["@pouch/medium", "@holster/ammo"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://condoroutdoor.com/collections/utility-pouches/products/condor-shotgun-ammo-pouch
+
+        https://www.amazon.com.be/-/en/Condor-Outdoor-SHOTGUN-POUCH-MA12-002/dp/B0082CWE1Q
+        - weight
+    */
+
+    name: {
+      str: "shot shell pouch",
+      str_pl: "shot shell pouches",
+    },
+    description: "A long nylon pouch, intended to hold up to 12 shotgun shells.  The flap keeps the shells shielded from the elements.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["multicam", "black", "coyote", "olive"],
+
+        name: {
+          str: "Condor shotgun ammo pouch",
+          str_pl: "Condor shotgun ammo pouches",
+        },
+        description: "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.",
+      },
+    ],
+
+    weight: "136 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "1.75 in",
+      width: "7.25 in",
+      height: "3.5 in",
+      trim: 0.075,
+      soft: true,
+    },
+
+    material: ["nylon"],
+    looks_like: "holster",
+    repairs_like: "legrig",
+
+    pocket_data: [
+      {
+        description: "Shot shell pouch",
+
+        ammo_restriction: {
+          "410shot": 12,
+          shot: 12,
+          "20x66mm": 12,
+          signal_flare: 12,
+        },
+
+        moves: 120,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hook-and-loop surface",
+
+        max_contains_weight: "200 g",
+        max_contains_volume: {
+          math: [
+            // * average height of a Velcro patch, for emulating area calculations
+            "5 mm",
+            { op: "multiply", value: "6.5 in" },
+            { op: "multiply", value: "2 in" },
+          ],
+        },
+
+        flag_restriction: ["VELCRO_ATTACH"],
+      },
+    ],
+
+    price: "21 USD 95 cents",
+  },
+  {
+    id: "pouch/magazine/condor/stacker/triple",
+    inherit: ["@pouch/large", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://condoroutdoor.com/collections/magazine-pouches/products/condor-triple-stacker-m4-mag-pouch-multicam
+
+        https://www.military1st.ca/ma44-001-condor-triple-stacker-m4-m16-mag-pouch-olive-drab.html
+        - weight
+
+        https://condoroutdoor.com/products/condor-triple-m4-mag-pouch-stacker
+        - variant reference
+    */
+
+    name: {
+      str: "triple stacker pouch",
+      str_pl: "triple stacker pouches",
+    },
+    description: "A set of six rifle-magazine pouches in a single pouch.  Named so because it has two rows of pouches stacked in front of the other.  The front row is quicker to use, but doesn't hold larger magazines.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 2], ["black", 2], ["coyote", 2], "olive"],
+
+        name: {
+          str: "Condor Triple Stacker pouch",
+          str_pl: "Condor Triple Stacker pouches",
+        },
+        description: "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.",
+      },
+    ],
+
+    weight: "255 g",
+    dimensions: {
+      type: "rectangle",
+
+      // * thickness
+      length: "5 mm",
+      width: "9 in",
+      height: "5.75 in",
+      trim: 0.2,
+      soft: true,
+    },
+
+    material: ["nylon"],
+    looks_like: "holster",
+    repairs_like: "legrig",
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Tall open-top rifle magazine pouch" },
+        patch: [
+          {
+            op: "merge",
+            value: {
+              description: "Inner rifle magazine pouch",
+            },
+          },
+        ],
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Tall open-top rifle magazine pouch" },
+        patch: [
+          {
+            op: "merge",
+            value: {
+              description: "Inner rifle magazine pouch",
+            },
+          },
+        ],
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Tall open-top rifle magazine pouch" },
+        patch: [
+          {
+            op: "merge",
+            value: {
+              description: "Inner rifle magazine pouch",
+            },
+          },
+        ],
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Open-top rifle magazine pouch" },
+        patch: [
+          {
+            op: "merge",
+            value: {
+              description: "Outer rifle magazine pouch",
+            },
+          },
+        ],
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Open-top rifle magazine pouch" },
+        patch: [
+          {
+            op: "merge",
+            value: {
+              description: "Outer rifle magazine pouch",
+            },
+          },
+        ],
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Open-top rifle magazine pouch" },
+        patch: [
+          {
+            op: "merge",
+            value: {
+              description: "Outer rifle magazine pouch",
+            },
+          },
+        ],
+      },
+    ],
+
+    price: "42 USD 95 cents",
+  },
+  {
+    id: "pouch/magazine/haley/pistol",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://haleystrategic.com/single-pistol-mag-pouch
+    */
+
+    /*
+      NOTES
+        - the pouch is shown to be able to comfortably hold a 30-round MP5 magazine, but anything longer would likely sway too much to sit comfortably
+    */
+
+    name: {
+      str: "pistol magazine pouch",
+      str_pl: "pistol magazine pouches",
+    },
+    description: "A thin nylon pouch for holding a single pistol magazine.  Being of open-top design, it's quicker to operate than those with flaps.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["coyote", 2],
+          ["black", 2],
+          "multicam_black",
+          "ranger",
+          "grey",
+        ],
+
+        name: {
+          str: "Haley Strategic pistol mag pouch",
+          str_pl: "Haley Strategic pistol mag pouches",
+        },
+        description: "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.",
+      },
+    ],
+
+    weight: "1.6 oz",
+    dimensions: {
+      type: "rectangle",
+
+      length: "2.5 mm",
+      width: "2 in",
+      height: "1.5 in",
+      // * to account for the extra parts (cord etc.)
+      trim: -0.05,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Open-top pistol magazine pouch" },
+      },
+    ],
+
+    price: "35 USD",
+  },
+  {
+    id: "pouch/magazine/molle/ii/m9",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.armyandoutdoors.com/products/usgi-molle-ii-9mm-mag-pouch
+    */
+
+    name: {
+      str: "flap military pistol mag pouch",
+      str_pl: "flap military pistol mag pouches",
+    },
+    description: "A nylon pouch fit for a pistol magazine.  The flap keeps the magazine soundly in place, but operating it is slower than the open-top alternatives.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["ucp"],
+
+        name: {
+          str: "MOLLE II older pistol mag pouch",
+          str_pl: "MOLLE II older pistol mag pouches",
+        },
+        description: "An older, faded nylon pouch.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.  The snap button on the flap makes the pouch slower to operate than the newer hook-and-loop flap on the M17 magazine pouch.",
+      },
+    ],
+
+    weight: "42 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "12 cm",
+      width: "4.5 cm",
+      height: "4 mm",
+      trim: 0.15,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Button-closure pistol magazine pouch" },
+      },
+    ],
+
+    price: "7 USD 50 cents",
+  },
+  {
+    id: "pouch/magazine/molle/ii/m17",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.ebay.com/itm/326493635694
+    */
+
+    name: {
+      str: "modern military pistol mag pouch",
+      str_pl: "modern military pistol mag pouches",
+    },
+    description: "A nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  A newer design for the newer standard-issue army pistol magazines.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["multicam"],
+
+        name: {
+          str: "MOLLE II pistol mag pouch",
+          str_pl: "MOLLE II pistol mag pouches",
+        },
+        description: "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.  The flap is quicker to operate than the previous snap-button design, but not as quick as the open-top alternatives.",
+      },
+    ],
+
+    weight: "1 oz",
+    dimensions: {
+      type: "rectangle",
+
+      length: "6 in",
+      width: "1.4 in",
+      height: "2 mm",
+      trim: 0.01,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Flap-closure pistol magazine pouch" },
+      },
+    ],
+
+    price: "12 USD",
+  },
+  {
+    id: "pouch/magazine/psigear/smg",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.psigear.net/pouches/skewer-laser-cut-smg-mag-pouch
+    */
+
+    /*
+      NOTES
+        - this might not be extended-mag-capable, but we keep it as such until a better model is added to the mod
+    */
+
+    name: {
+      str: "SMG magazine pouch",
+      str_pl: "SMG magazine pouches",
+    },
+    description: "A nylon pouch for storing an SMG magazine.  Also fits extended SMG magazines.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 4], ["black", 2], "ranger", "coyote", "grey"],
+
+        name: {
+          str: "PSIGEAR SMG magazine pouch",
+          str_pl: "PSIGEAR SMG magazine pouches",
+        },
+        description: "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.",
+      },
+    ],
+
+    weight: "37 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "2.5 mm",
+      width: "3.8 cm",
+      height: "11.9 cm",
+      trim: 0.01,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    looks_like: "ammo_satchel",
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "SMG magazine pouch" },
+      },
+    ],
+
+    price: "20 USD",
+  },
+  {
+    id: "pouch/magazine/tt/308",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://tacticaltailor.com/fight-light-7-62-6-8x51-single-mag-pouch-20rd/
+
+        https://www.entrygear.com/product.asp?id=TT-10028LW
+        - weight
+    */
+
+    name: {
+      str: "large rifle magazine pouch",
+      str_pl: "large rifle magazine pouches",
+    },
+    description: "A nylon pouch for storing a single large magazine.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 2], ["coyote", 2], "black", "ranger"],
+
+        name: {
+          str: "Tactical Tailor 7.62mm magazine pouch",
+          str_pl: "Tactical Tailor 7.62mm magazine pouches",
+        },
+        description: "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.",
+      },
+    ],
+
+    weight: "2.1 oz",
+    dimensions: {
+      type: "rectangle",
+
+      // estimated from PALS grid cells
+      length: "5 in",
+      // estimated from PALS grid cells
+      width: "3 in",
+      height: "3 mm",
+      trim: -0.02,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    looks_like: "ammo_satchel",
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "High-caliber rifle magazine pouch" },
+      },
+    ],
+
+    price: "27 USD",
+  },
+  {
+    id: "pouch/magazine/warrior/338",
+    inherit: ["@pouch/small", "@holster/magazine"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.armamat.com/en/p/.338-and-7.62mm-mag-pouch-10606175100/
+
+        https://www.warriorassaultsystems.com/product/warrior-assault-systems-warrior-338-single-mag-multicam-5542
+        - variant reference
+
+        https://www.gearzonetactical.com/Warrior-Assault-Systems-338-Single-Mag_p_7731.html
+        - price
+    */
+
+    /*
+      NOTES
+        - the description says it can hold a standard (20-round) 7.62mm NATO magazine, which appears to be impossible without some strong imbalance
+        - with that said, the description also advertises an internal grip surface
+    */
+
+    name: {
+      str: "sniper magazine pouch",
+      str_pl: "sniper magazine pouches",
+    },
+    description: "A nylon pouch for a single .338 sniper rifle magazine.  Can also hold some .308 and 7.62mm magazines.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 4], ["coyote", 2], "atacs_fg"],
+
+        name: {
+          str: "WAS .338 magazine pouch",
+          str_pl: "WAS .338 magazine pouches",
+        },
+        description: "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.",
+      },
+    ],
+
+    weight: "102 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "16.5 cm",
+      width: "15 cm",
+      height: "3 mm",
+      trim: -0.075,
+      soft: true,
+    },
+    longest_side: "1 in",
+
+    looks_like: "ammo_satchel",
+
+    material: ["nylon"],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Sniper rifle magazine pouch" },
+      },
+    ],
+
+    price: "36 USD 90 cents",
+  },
+]

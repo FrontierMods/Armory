@@ -15,15 +15,25 @@
 
 ## In Progress
 
-### v0.3
+### v0.4
 
 - [ ] **stashing small items in webbing**
-  - soldiers in the field often stash small, thin items inside PALS webbing
-- [ ] **extra cummerbund options** for plate carriers
-- [ ] **new pouches**
-  - multi-magazine single-slot magazine storage
+  - soldiers in the field often stash small, narrow-profile items inside PALS webbing
+- [ ] **extra cummerbund options** for existing plate carriers
+- [ ] **new types of pouches**
+  - multi-mag single-slot magazine storage
+  - suppressor pouch
+  - general storage pouch
+  - NVG pouch
+  - machine gun belt pouch
 
 ## Released
+
+### v0.3
+
+- [x] **refactor the mod** to use the `.devtools` format
+- [x] **update to 0.I**
+- [x] **add tactical gloves**
 
 ### v0.2
 
@@ -40,6 +50,13 @@
   - harnesses could be cut for nylon or reassembled into a separate chest rig with another panel
   - QASM panels can fit to some of the slicker plate carriers, thus adding extra PALS webbing and/or preset pouches
 
+## v0.1.2
+
+- [x] **rebalance new rigs**
+  - some of them were much too bulky, others too lightweight
+  - most of them provided way too much PALS webbing
+- [x] **audit MOLLE pouch slots**
+
 ## v0.1
 
 - [x] **remodel chest rigs**
@@ -48,16 +65,9 @@
   - [x] load-bearing vests
 - [x] **remodel MOLLE pouches**
 - [x] **add missing/required MOLLE pouches**
-  - [x] **air horn pouch**
-  - [x] **handcuff pouch**
-  - [x] **MOLLE baton holder**
-
-### v0.1.2
-
-- [x] **rebalance new rigs**
-  - some of them were much too bulky, others too lightweight
-  - most of them provided way too much PALS webbing
-- [x] **audit MOLLE pouch slots**
+  - [x] air horn pouch
+  - [x] handcuff pouch
+  - [x] MOLLE baton holder
 
 ## To Be Determined
 

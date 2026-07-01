@@ -1,0 +1,59 @@
+[
+  {
+    id: "shoulder_strap_simple",
+    "copy-from": "shoulder_strap_simple",
+    type: "ITEM",
+    subtypes: ["ARMOR", "GUNMOD"],
+
+    name: {
+      str: "two point sling",
+    },
+
+    extend: {
+      flags: ["GUN_SLING"],
+    },
+  },
+  {
+    id: "shoulder_strap",
+    "copy-from": "shoulder_strap",
+    type: "ITEM",
+    subtypes: ["GUNMOD"],
+
+    name: {
+      str: "adjustable sling",
+    },
+
+    extend: {
+      flags: ["GUN_SLING"],
+    },
+  },
+  {
+    id: "shoulder_strap_front",
+    "copy-from": "shoulder_strap_front",
+    type: "ITEM",
+    subtypes: ["ARMOR", "GUNMOD"],
+
+    name: {
+      str: "adjustable sling (front)",
+      str_pl: "adjustable slings (front)",
+    },
+
+    extend: {
+      flags: ["GUN_SLING"],
+    },
+  },
+  {
+    id: "single_sling",
+    "copy-from": "single_sling",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    name: {
+      str: "single point sling",
+    },
+
+    extend: {
+      flags: ["GUN_SLING"],
+    },
+  },
+]

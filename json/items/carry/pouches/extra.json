@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pouch/extra/ferro/knifenook",
+    "type": "ITEM",
+    "category": "container",
+    "name": {
+      "str": "hook-and-loop sheath mount"
+    },
+    "description": "A thin plastic plate with a set of screw holes and a hook-and-loop exterior.  Can hold a Kydex knife sheath, in order to carry a knife on your plate carrier or ballistic vest.  Can attach to vests with hook-and-loop mounts.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath mount"
+        },
+        "description": "A thin plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts hook-and-loop sheath mount"
+        },
+        "description": "A thin plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "20 g",
+    "symbol": "[",
+    "color": "dark_gray",
+    "material": [
+      "thermo_resin"
+    ],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Hook-and-loop sheath mount",
+        "holster": true,
+        "max_contains_weight": "500 g",
+        "max_contains_volume": "500 ml",
+        "max_item_length": "22 cm 9 mm",
+        "flag_restriction": [
+          "SCREW_MOUNTABLE_SHEATH"
+        ],
+        "moves": 10
+      }
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "EXTRA_POUCH_VELCRO"
+    ],
+    "price": "26 USD",
+    "price_postapoc": "1 USD",
+    "volume": "24 ml",
+    "longest_side": "13 cm 7 mm"
+  }
+]

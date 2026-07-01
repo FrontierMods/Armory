@@ -1,0 +1,76 @@
+[
+  {
+    id: "loadout/tasm/mk_ii:any",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      { group: "loadout/tasm/mk_ii/baseline:coordinated" },
+      { group: "loadout/tasm/mk_ii/baseline:any" },
+    ],
+  },
+  {
+    id: "loadout/tasm/mk_ii:coordinated",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [{ group: "loadout/tasm/mk_ii/baseline:coordinated" }],
+  },
+
+  {
+    id: "loadout/tasm/mk_ii/baseline:coordinated",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "multicam",
+        "contents-group": "placard/tasm/mk_ii:multicam",
+        prob: 10,
+      },
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "black",
+        "contents-group": "placard/tasm/mk_ii:black",
+        prob: 10,
+      },
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "coyote",
+        "contents-group": "placard/tasm/mk_ii:coyote",
+        prob: 10,
+      },
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "ranger",
+        "contents-group": "placard/tasm/mk_ii:olive",
+        prob: 10,
+      },
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "coyote",
+        "contents-group": "placard/tasm/mk_ii:fde",
+        prob: 10,
+      },
+      {
+        item: "chest_rig/harness/h/direct_action",
+        variant: "black",
+        "contents-group": "placard/tasm/mk_ii:grey",
+        prob: 10,
+      },
+    ],
+  },
+  {
+    id: "loadout/tasm/mk_ii/baseline:any",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "chest_rig/harness/h/direct_action",
+        "contents-group": "placard/tasm/mk_ii:any",
+      },
+    ],
+  },
+]

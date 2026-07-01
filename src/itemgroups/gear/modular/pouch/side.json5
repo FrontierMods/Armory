@@ -1,0 +1,14 @@
+[
+  {
+    id: "pouch/side/perroz",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "pouch/side/perroz",
+        from: ["multicam", "black", "coyote", "grey", "ranger", "white"],
+      },
+    ],
+  },
+]

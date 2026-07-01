@@ -1,0 +1,22 @@
+[
+  {
+    id: ["plate_carrier_perroz"],
+    type: "MIGRATION",
+    replace: "plate_carrier/perroz/lpspc",
+  },
+  {
+    id: ["plate_carrier_iotv"],
+    type: "MIGRATION",
+    replace: "plate_carrier/iotv/gen_iii",
+  },
+  {
+    id: ["plate_carrier_msv"],
+    type: "MIGRATION",
+    replace: "plate_carrier/msv/gen_ii",
+  },
+  {
+    id: ["plate_carrier_point_blank_endeavor"],
+    type: "MIGRATION",
+    replace: "plate_carrier/point_blank/endeavor",
+  },
+]

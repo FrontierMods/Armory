@@ -1,0 +1,7 @@
+[
+  {
+    id: ["pouch_extra_ferro_knifenook"],
+    type: "MIGRATION",
+    replace: "pouch/extra/ferro/knifenook",
+  },
+]

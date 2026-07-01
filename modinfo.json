@@ -1,7 +1,8 @@
 [
   {
-    "type": "MOD_INFO",
     "id": "armory",
+    "type": "MOD_INFO",
+    "version": "0.3",
 
     "name": "Armory",
     "description": "Armory models existing military (and adjacent) items on real ones, and adds a variety of equipment",

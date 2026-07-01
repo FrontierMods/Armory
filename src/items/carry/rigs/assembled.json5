@@ -1,0 +1,166 @@
+[
+  {
+    id: "chest_rig/condor/modular",
+    inherit: ["@chest_rig"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://condoroutdoor.com/collections/chest-rigs/products/condor-modular-chest-set
+
+        https://www.amazon.co.uk/Condor-Modular-Chest-Set/dp/B0037MGLVK
+        - dimensions
+        - weight
+
+        https://offgridwarehouse.com/spec-operator-condor-tactical-pro-chest-set-w-six-built-in-ar-m4-mag-pouches/
+        - coverage reference
+
+        https://www.rockstartactical.com/condor-modular-chest-set/
+        https://condoroutdoor.com/products/condor-modular-chest-set-scorpion-ocp
+        - variants
+    */
+
+    /*
+      NOTES
+        - this model doesn't come with the hydration bladder pouch by default, hence the "modular" in the name
+        - this item currently models the set: rig + hydration pouch harness
+        - when the deconstruction upgrade comes through, this item should have a different ID, with the 'empty' rig retaining this item's current ID
+        the bib can house a ballistic plate in the front
+     */
+
+    /*
+      TODO
+        - pocket for back PALS devices
+    */
+
+    name: {
+      str: "modular chest set",
+    },
+    description: "A slick chest rig with a lot of capacity of MOLLE capacity.  It features six pockets for STANAG magazines, an admin pouch, and a pouch for a hydration bladder.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["coyote", 4], ["multicam", 2], ["olive", 2], ["black", 2], "ocp"],
+
+        name: { str: "Condor modular chest set" },
+        description: "A slick and comfortable chest rig with a large amount of space for stuff, both in PALS webbing and in embedded pockets.  It features six pockets for STANAG magazines, a tall admin pouch hidden inside the bib, and a pouch for a 3L hydration bladder on the back.  Additionally, there are two large MOLLE areas on the front, a small space on the bib, a tall one on the back, and a very-small one on each shoulder strap.",
+      },
+    ],
+
+    weight: "812 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "508 mm",
+      width: "271.8 mm",
+      height: "48.3 mm",
+      trim: 0.6,
+      soft: true,
+    },
+
+    symbol: "[",
+    color: "dark_gray",
+
+    material: ["nylon"],
+    material_thickness: 1,
+    looks_like: "vest",
+    repairs_like: "tacvest",
+
+    armor: [
+      {
+        encumbrance: [2, 15],
+
+        /*
+          COVERAGE
+            bib: (30% / 2 =) 15%
+            back panel: 36%
+            shoulder straps: 2 × 2%
+            back straps: 2 × 1%
+        */
+        coverage: 57,
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.75,
+      },
+      {
+        encumbrance: [2, 10],
+
+        coverage: 95,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.9,
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        // * hidden inside the bib
+        // * goes all the way down to the highest buckle
+        description: "Admin pouch",
+
+        max_contains_weight: "300 g",
+        max_contains_volume: {
+          math: [
+            "3 mm",
+            { op: "multiply", value: "7.5 in" },
+            { op: "multiply", value: "7 in" },
+            { op: "trim", value: 0.05 },
+          ],
+        },
+        max_item_length: "178 mm",
+
+        moves: 150,
+      },
+
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hydration pouch",
+
+        holster: true,
+
+        max_contains_weight: "4 kg",
+        // * placeholder value
+        // * the pouch is stated to hold a 2.5L hydration insert
+        max_contains_volume: "2 L 750 ml",
+        min_item_length: {
+          math: [
+            { ref: "$", path: ["dimensions", "length"], raw: true },
+            { op: "trim", value: 0.5 },
+          ],
+        },
+        max_item_length: { ref: "$", path: ["dimensions", "length"], raw: true },
+
+        moves: 800,
+      },
+
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Tall open-top rifle magazine pouch" },
+        patch: [{ op: "merge", value: { multi: 6 } }],
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        // * 72 cells
+        size: 12,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    flags: ["WATER_FRIENDLY", "BELTED", "STURDY"],
+
+    price: "67 USD 95 cents",
+  },
+]

@@ -1,0 +1,97 @@
+[
+  {
+    id: ["canteen_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/canteen/tt/1qt",
+  },
+  {
+    id: ["dump_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/dump/bfg",
+  },
+  {
+    id: ["ifak_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/medical/rescue",
+  },
+  {
+    id: ["ammo_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/ammo/condor",
+  },
+  {
+    id: ["gas_mask_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/gas_mask/usmc",
+  },
+  {
+    id: ["h2o_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/water_bottle/ft",
+  },
+  {
+    id: ["chestpouch"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/condor/556",
+  },
+  {
+    id: ["ammo_satchel"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/condor/kangaroo",
+  },
+  {
+    id: ["tactical_shotshell_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/shot/condor",
+  },
+  {
+    id: ["tactical_grenade_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/grenade/haley",
+  },
+  {
+    id: ["radio_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/radio/tasm",
+  },
+  {
+    id: ["gadget_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/gadget/condor",
+  },
+  {
+    id: ["flashlight_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/flashlight/511",
+  },
+  {
+    id: ["triple_stacker_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/condor/stacker/triple",
+  },
+  {
+    id: ["deployment_bag"],
+    type: "MIGRATION",
+    replace: "pouch/deployment/condor",
+  },
+  {
+    id: ["legrig"],
+    type: "MIGRATION",
+    replace: "pouch/leg/fox",
+  },
+  {
+    id: ["tool_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/tool/wynex",
+  },
+  {
+    id: ["grenade_pouch"],
+    type: "MIGRATION",
+    replace: "pouch/40mm/blackhawk/x6",
+  },
+  {
+    id: ["legpouch_large"],
+    type: "MIGRATION",
+    replace: "pouch/leg/fox",
+  },
+]

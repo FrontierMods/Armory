@@ -1,0 +1,68 @@
+[
+  {
+    id: "loadout/lpspc/side_pouches:any",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        group: "plate_carrier/lpspc/perroz:any",
+        "contents-group": ["pouch/side/perroz:any", "pouch/side/perroz:any"],
+      },
+    ],
+  },
+
+  {
+    id: "loadout/lpspc/side_pouches:coordinated",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        group: "plate_carrier/lpspc/perroz:multicam",
+        "contents-group": [
+          "pouch/side/perroz:multicam",
+          "pouch/side/perroz:multicam",
+        ],
+        prob: 10,
+      },
+      {
+        group: "plate_carrier/lpspc/perroz:multicam_black",
+        "contents-group": [
+          "pouch/side/perroz:black",
+          "pouch/side/perroz:black",
+        ],
+        prob: 10,
+      },
+      {
+        group: "plate_carrier/lpspc/perroz:black",
+        "contents-group": [
+          "pouch/side/perroz:black",
+          "pouch/side/perroz:black",
+        ],
+        prob: 10,
+      },
+      {
+        group: "plate_carrier/lpspc/perroz:coyote",
+        "contents-group": [
+          "pouch/side/perroz:coyote",
+          "pouch/side/perroz:coyote",
+        ],
+        prob: 10,
+      },
+      {
+        group: "plate_carrier/lpspc/perroz:grey",
+        "contents-group": ["pouch/side/perroz:grey", "pouch/side/perroz:grey"],
+        prob: 10,
+      },
+      {
+        group: "plate_carrier/lpspc/perroz:woodland",
+        "contents-group": [
+          "pouch/side/perroz:ranger",
+          "pouch/side/perroz:ranger",
+        ],
+        prob: 10,
+      },
+    ],
+  },
+]

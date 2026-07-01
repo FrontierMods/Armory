@@ -1,0 +1,7 @@
+[
+  {
+    "id": "plate_side_tall_ceramic_ltc_esbi",
+    "type": "MIGRATION",
+    "replace": "plate/side/ceramic/esbi/tall"
+  }
+]

@@ -1,6 +1,14 @@
 [
-  { "result": "XL_holster", "type": "recipe", "obsolete": true },
-  { "result": "suspenders_holster", "type": "recipe", "obsolete": true },
+  {
+    "result": "XL_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "suspenders_holster",
+    "type": "recipe",
+    "obsolete": true
+  },
   {
     "result": "level_3_vest",
     "type": "recipe",
@@ -143,6 +151,16 @@
   },
   {
     "result": "tool_pouch",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "legrig",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "flintlock_pouch",
     "type": "recipe",
     "obsolete": true
   },

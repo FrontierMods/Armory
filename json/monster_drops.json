@@ -2,21 +2,29 @@
   {
     "id": "cop_armor",
     "type": "item_group",
-
-    "//": [
-      "we spawn police armor without hard plates for multiple reasons",
-      "for one, steel plates are displaced in favor of combined plates due to heavy weight and cost ineffectiveness",
-      "the police is more likely to sport soft armor, rated for pistol fire"
-    ],
-
     "items": [
-      ["armor_riot", 65],
-      ["armor_riot_arm", 5],
-      ["armor_riot_leg", 5],
-      ["armor_riot_torso", 10],
-      ["kevlar", 100],
+      [
+        "armor_riot",
+        65
+      ],
+      [
+        "armor_riot_arm",
+        5
+      ],
+      [
+        "armor_riot_leg",
+        5
+      ],
+      [
+        "armor_riot_torso",
+        10
+      ],
+      [
+        "kevlar",
+        100
+      ],
       {
-        "item": "plate_carrier_point_blank_endeavor",
+        "item": "plate_carrier/point_blank/endeavor",
         "variant": "black",
         "prob": 75
       }

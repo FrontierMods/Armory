@@ -1,0 +1,7 @@
+[
+  {
+    id: ["pouch_eud_ferro_admin"],
+    type: "MIGRATION",
+    replace: "pouch/eud/ferro/admin",
+  },
+]
