@@ -1,0 +1,79 @@
+[
+  {
+    "id": "loadout/haley/molle:any",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "group": "loadout/haley/molle/baseline:coordinated"
+      },
+      {
+        "group": "loadout/haley/molle/baseline:any"
+      }
+    ]
+  },
+  {
+    "id": "loadout/haley/molle:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "group": "loadout/haley/molle/baseline:coordinated"
+      }
+    ]
+  },
+  {
+    "id": "loadout/haley/molle/baseline:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "multicam",
+        "contents-group": "placard/haley/molle:multicam",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "multicam_black",
+        "contents-group": "placard/haley/molle:multicam_black",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "black",
+        "contents-group": "placard/haley/molle:black",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "coyote",
+        "contents-group": "placard/haley/molle:coyote",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "ranger",
+        "contents-group": "placard/haley/molle:ranger",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "grey",
+        "contents-group": "placard/haley/molle:grey",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "id": "loadout/haley/molle/baseline:any",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "item": "chest_rig/harness/x/haley",
+        "contents-group": "placard/haley/molle:any"
+      }
+    ]
+  }
+]

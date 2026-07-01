@@ -1,0 +1,7 @@
+[
+  {
+    id: ["shoulder_pads_perroz"],
+    type: "MIGRATION",
+    replace: "shoulder_pads/perroz",
+  },
+]

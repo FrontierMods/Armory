@@ -3,17 +3,22 @@
     "id": "security_armor",
     "type": "item_group",
     "subtype": "distribution",
-
     "items": [
       {
         "group": "military_ballistic_vest_light",
         "prob": 30,
-        "damage": [0, 2]
+        "damage": [
+          0,
+          2
+        ]
       },
       {
-        "item": "vest_stabproof_safeguard",
+        "item": "vest/stabproof/safeguard",
         "prob": 30,
-        "damage": [0, 2]
+        "damage": [
+          0,
+          2
+        ]
       }
     ]
   }

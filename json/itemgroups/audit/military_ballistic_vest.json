@@ -3,13 +3,15 @@
     "id": "military_ballistic_vest",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "distribution": [
           {
             "group": "loadout/msv/baseline:coordinated",
-            "contents-group": ["some_esapi_front_plates", "custom_medium_lbv"],
+            "contents-group": [
+              "some_esapi_front_plates",
+              "custom_medium_lbv"
+            ],
             "prob": 100
           },
           {
@@ -18,22 +20,29 @@
                 "group": "loadout/iotv/baseline:coordinated",
                 "contents-group": "some_esapi_front_plates"
               },
-              { "group": "loaded_lbv/military" }
+              {
+                "group": "loaded_lbv/military"
+              }
             ],
             "prob": 20
           }
         ],
         "prob": 50
       },
-      { "group": "military_ballistic_vest_light", "prob": 10 },
-      { "group": "military_ballistic_vest_heavy", "prob": 5 }
+      {
+        "group": "military_ballistic_vest_light",
+        "prob": 10
+      },
+      {
+        "group": "military_ballistic_vest_heavy",
+        "prob": 5
+      }
     ]
   },
   {
     "id": "military_ballistic_vest_pristine",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "distribution": [
@@ -51,25 +60,29 @@
                 "group": "loadout/iotv/baseline:coordinated",
                 "contents-group": "pristine_esapi_front_plates"
               },
-              { "group": "loaded_lbv/military" }
+              {
+                "group": "loaded_lbv/military"
+              }
             ],
             "prob": 20
           }
         ],
         "prob": 50
       },
-      { "group": "military_ballistic_vest_light_pristine", "prob": 10 },
-      { "group": "military_ballistic_vest_heavy_pristine", "prob": 5 }
+      {
+        "group": "military_ballistic_vest_light_pristine",
+        "prob": 10
+      },
+      {
+        "group": "military_ballistic_vest_heavy_pristine",
+        "prob": 5
+      }
     ]
   },
-
   {
     "id": "military_ballistic_vest_light",
     "type": "item_group",
     "subtype": "distribution",
-
-    "//": "much like in the base game, this item group is for aftermarket plate carriers you could get away with in the army",
-
     "entries": [
       {
         "group": "loadout/lpspc:military",
@@ -81,9 +94,6 @@
     "id": "military_ballistic_vest_light_pristine",
     "type": "item_group",
     "subtype": "distribution",
-
-    "//": "much like in the base game, this item group is for aftermarket plate carriers you could get away with in the army",
-
     "entries": [
       {
         "group": "loadout/lpspc:military",
@@ -91,16 +101,17 @@
       }
     ]
   },
-
   {
     "id": "military_ballistic_vest_heavy_pristine",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "loadout/iotv/baseline:coordinated",
-        "contents-group": ["pristine_esapi_front_plates", "custom_heavy_lbv"]
+        "contents-group": [
+          "pristine_esapi_front_plates",
+          "custom_heavy_lbv"
+        ]
       }
     ]
   },
@@ -108,11 +119,13 @@
     "id": "military_ballistic_vest_heavy",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "loadout/iotv/baseline:coordinated",
-        "contents-group": ["some_esapi_front_plates", "custom_heavy_lbv"]
+        "contents-group": [
+          "some_esapi_front_plates",
+          "custom_heavy_lbv"
+        ]
       }
     ]
   }

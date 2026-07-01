@@ -1,0 +1,312 @@
+[
+  {
+    "id": "gloves/tactical/mechanix/specialty",
+    "type": "ITEM",
+    "name": {
+      "str": "tactical gloves",
+      "str_pl": "pairs of tactical gloves"
+    },
+    "description": "A pair of tactical gloves, the kind used by the military and law enforcement.  Designed for protection of the hands while maintaining their dexterity and a solid grip on the gun, they are comfortable to wear over longer periods of time.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "Mechanix Wear Specialty tactical gloves",
+          "str_pl": "pairs of Mechanix Wear Specialty tactical gloves"
+        },
+        "description": "A pair of tactical gloves.  Relatively-thin and with numerous changes made to ensure maximum hand and trigger finger dexterity, the Specialty gloves are designed primarily for military and law-enforcement use.  The outer side of the glove is made of a breathable material, ensuring comfort during prolonged wear.  The inner side is made of faux leather, with the goal of improving firearm handling.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "58 g",
+    "material": [
+      "leather",
+      "nomex"
+    ],
+    "armor": [
+      {
+        "encumbrance": 5,
+        "coverage": 100,
+        "covers": [
+          "hand_l",
+          "hand_r"
+        ]
+      }
+    ],
+    "price": "37 USD 99 cents",
+    "price_postapoc": "1 USD",
+    "subtypes": [
+      "ARMOR",
+      "ARTIFACT"
+    ],
+    "looks_like": "gloves_survivor",
+    "repairs_like": "gloves_survivor",
+    "passive_effects": [
+      {
+        "id": "GLOVES_RECOIL_CONTROL"
+      }
+    ],
+    "category": "armor",
+    "material_thickness": 0.5,
+    "environmental_protection": 2,
+    "warmth": 10,
+    "symbol": "[",
+    "color": "dark_gray",
+    "volume": "19 ml",
+    "flags": [
+      "VARSIZE",
+      "MUNDANE",
+      "STURDY"
+    ],
+    "longest_side": "3 cm"
+  },
+  {
+    "id": "gloves/tactical/ferro/delta",
+    "type": "ITEM",
+    "name": {
+      "str": "spec ops tactical gloves",
+      "str_pl": "pairs of spec ops tactical gloves"
+    },
+    "description": "A pair of tactical gloves, the kind used by the military and law enforcement.  Designed for protection of the hands while maintaining their dexterity and a solid grip on the gun, they are comfortable to wear over longer periods of time.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "Ferro×Pig Delta FR tactical gloves",
+          "str_pl": "pairs of Ferro×Pig Delta FR tactical gloves"
+        },
+        "description": "A pair of tactical gloves.  TODO  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro×Pig Delta FR tactical gloves",
+          "str_pl": "pairs of Ferro×Pig Delta FR tactical gloves"
+        },
+        "description": "A pair of tactical gloves.  TODO  <variant:olive>",
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro×Pig Delta FR tactical gloves",
+          "str_pl": "pairs of Ferro×Pig Delta FR tactical gloves"
+        },
+        "description": "A pair of tactical gloves.  TODO  <variant:fde>",
+        "id": "fde",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "173 g 216 mg",
+    "material": [
+      "nomex"
+    ],
+    "armor": [
+      {
+        "encumbrance": 2,
+        "coverage": 100,
+        "covers": [
+          "hand_l",
+          "hand_r"
+        ]
+      }
+    ],
+    "price": "57 USD 95 cents",
+    "price_postapoc": "1 USD",
+    "subtypes": [
+      "ARMOR",
+      "ARTIFACT"
+    ],
+    "looks_like": "gloves_survivor",
+    "repairs_like": "gloves_survivor",
+    "passive_effects": [
+      {
+        "id": "GLOVES_RECOIL_CONTROL"
+      }
+    ],
+    "category": "armor",
+    "material_thickness": 0.5,
+    "environmental_protection": 2,
+    "warmth": 10,
+    "symbol": "[",
+    "color": "dark_gray",
+    "volume": "19 ml",
+    "flags": [
+      "VARSIZE",
+      "MUNDANE",
+      "STURDY"
+    ],
+    "longest_side": "3 cm"
+  },
+  {
+    "id": "gloves/tactical/cwgs/mitts",
+    "type": "ITEM",
+    "name": {
+      "str": "pair of CWGS trigger-finger mitts",
+      "str_pl": "pairs of CWGS trigger-finger mitts"
+    },
+    "description": "A pair of thick, insulated mitts with a separate trigger finger.  Part of CWGS (Cold Weather Glove System), this pair of mitts was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the trigger finger enables the use of touch screens without taking the mitt off.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "CWGS trigger-finger mitts",
+          "str_pl": "pairs of CWGS trigger-finger mitts"
+        },
+        "description": "A pair of thick, insulated mitts with a separate trigger finger; manufactured by Outdoor Research, and sold commercially as Firebrand TF Mitts.  Part of CWGS (Cold Weather Glove System), this pair of mitts was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the trigger finger enables the use of touch screens without taking the mitt off.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "204 g 117 mg",
+    "color": "white",
+    "looks_like": "fire_gauntlets",
+    "material": [
+      "plastic",
+      "leather",
+      "wool"
+    ],
+    "material_thickness": 51,
+    "warmth": 50,
+    "armor": [
+      {
+        "encumbrance": 18,
+        "coverage": 100,
+        "covers": [
+          "hand_l",
+          "hand_r"
+        ],
+        "layers": [
+          "OUTER"
+        ]
+      },
+      {
+        "encumbrance": 1,
+        "coverage": 14,
+        "covers": [
+          "arm_l",
+          "arm_r"
+        ],
+        "specifically_covers": [
+          "arm_lower_l",
+          "arm_lower_r"
+        ],
+        "layers": [
+          "OUTER"
+        ]
+      }
+    ],
+    "flags": [
+      "SOFT",
+      "WATERPROOF"
+    ],
+    "price": "350 USD",
+    "price_postapoc": "2 USD 50 cents",
+    "volume": "445 ml",
+    "subtypes": [
+      "ARMOR",
+      "ARTIFACT"
+    ],
+    "repairs_like": "gloves_survivor",
+    "passive_effects": [
+      {
+        "id": "GLOVES_RECOIL_CONTROL"
+      }
+    ],
+    "category": "armor",
+    "environmental_protection": 2,
+    "symbol": "[",
+    "longest_side": "3 cm"
+  },
+  {
+    "id": "gloves/tactical/cwgs/liner",
+    "type": "ITEM",
+    "name": {
+      "str": "pair of CWGS glove liners",
+      "str_pl": "pairs of CWGS glove liners"
+    },
+    "description": "A pair of thin, warm gloves.  Intended to be used as an underlayer for a heavier, thicker pair of gloves, these can also be used on their own.  Part of CWGS (Cold Weather Glove System), this pair of lines was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the index finger and the thumb enables the use of touch screens without taking the liner off.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "CWGS glove liners",
+          "str_pl": "pairs of CWGS glove liners"
+        },
+        "description": "A pair of thin, warm gloves; manufactured by Outdoor Research.  Intended to be used as an underlayer for a heavier, thicker pair of gloves, these can also be used on their own.  Part of CWGS (Cold Weather Glove System), this pair of lines was commissioned by the U.S. Army to enable combat in conditions of extreme cold.  Resistive leather over the index finger and the thumb enables the use of touch screens without taking the liner off.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "39 g 689 mg",
+    "material": [
+      {
+        "type": "nylon",
+        "portion": 90
+      },
+      {
+        "type": "lycra",
+        "portion": 9
+      },
+      {
+        "type": "leather",
+        "portion": 1
+      }
+    ],
+    "material_thickness": 0.25,
+    "warmth": 15,
+    "looks_like": "gloves_light",
+    "armor": [
+      {
+        "encumbrance": 2,
+        "coverage": 100,
+        "covers": [
+          "hand_l",
+          "hand_r"
+        ]
+      },
+      {
+        "encumbrance": 0,
+        "coverage": 7,
+        "covers": [
+          "arm_l",
+          "arm_r"
+        ],
+        "specifically_covers": [
+          "arm_lower_l",
+          "arm_lower_r"
+        ]
+      }
+    ],
+    "flags": [
+      "WATERPROOF",
+      "SKINTIGHT"
+    ],
+    "price": "90 USD",
+    "price_postapoc": "1 USD",
+    "subtypes": [
+      "ARMOR",
+      "ARTIFACT"
+    ],
+    "repairs_like": "gloves_survivor",
+    "passive_effects": [
+      {
+        "id": "GLOVES_RECOIL_CONTROL"
+      }
+    ],
+    "category": "armor",
+    "environmental_protection": 2,
+    "symbol": "[",
+    "color": "dark_gray",
+    "volume": "19 ml",
+    "longest_side": "3 cm"
+  }
+]

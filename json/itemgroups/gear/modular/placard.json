@@ -1,0 +1,436 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:any",
+    "entries": [
+      {
+        "item": "placard/haley/molle"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:multicam",
+    "entries": [
+      {
+        "item": "placard/haley/molle",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:multicam_black",
+    "entries": [
+      {
+        "item": "placard/haley/molle",
+        "variant": "multicam_black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:black",
+    "entries": [
+      {
+        "item": "placard/haley/molle",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:coyote",
+    "entries": [
+      {
+        "item": "placard/haley/molle",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:ranger",
+    "entries": [
+      {
+        "item": "placard/haley/molle",
+        "variant": "ranger"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/molle:grey",
+    "entries": [
+      {
+        "item": "placard/haley/molle",
+        "variant": "grey"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:any",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:multicam",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:multicam_black",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple",
+        "variant": "multicam_black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:black",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:coyote",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:ranger",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple",
+        "variant": "ranger"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/haley/magazine/triple:grey",
+    "entries": [
+      {
+        "item": "placard/haley/magazine/triple",
+        "variant": "grey"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:any",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:multicam",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:black",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:coyote",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:ranger",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "ranger"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:fde",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "fde"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:wildwood",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "wildwood"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/direct_action/tempest:flag_chestrig",
+    "entries": [
+      {
+        "item": "placard/direct_action/tempest",
+        "variant": "flag_chestrig"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/onetigris/vulture:any",
+    "entries": [
+      {
+        "item": "placard/onetigris/vulture"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/onetigris/vulture:multicam",
+    "entries": [
+      {
+        "item": "placard/onetigris/vulture",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/onetigris/vulture:multicam_black",
+    "entries": [
+      {
+        "item": "placard/onetigris/vulture",
+        "variant": "multicam_black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/onetigris/vulture:black",
+    "entries": [
+      {
+        "item": "placard/onetigris/vulture",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/onetigris/vulture:coyote",
+    "entries": [
+      {
+        "item": "placard/onetigris/vulture",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/onetigris/vulture:ranger",
+    "entries": [
+      {
+        "item": "placard/onetigris/vulture",
+        "variant": "ranger"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/condor/stowaway:any",
+    "entries": [
+      {
+        "item": "placard/condor/stowaway"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/condor/stowaway:multicam",
+    "entries": [
+      {
+        "item": "placard/condor/stowaway",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/condor/stowaway:black",
+    "entries": [
+      {
+        "item": "placard/condor/stowaway",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/condor/stowaway:coyote",
+    "entries": [
+      {
+        "item": "placard/condor/stowaway",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/condor/stowaway:olive",
+    "entries": [
+      {
+        "item": "placard/condor/stowaway",
+        "variant": "olive"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:any",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:multicam",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:black",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:coyote",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:fde",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii",
+        "variant": "fde"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:olive",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii",
+        "variant": "olive"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "placard/tasm/mk_ii:grey",
+    "entries": [
+      {
+        "item": "placard/tasm/mk_ii",
+        "variant": "grey"
+      }
+    ]
+  }
+]

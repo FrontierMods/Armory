@@ -1,0 +1,52 @@
+[
+  {
+    id: ["pouch_magazine_556_condor"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/condor/556",
+  },
+  {
+    id: ["pouch_magazine_556_pistol_condor"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/condor/kangaroo",
+  },
+  {
+    id: ["pouch_shot_condor"],
+    type: "MIGRATION",
+    replace: "pouch/shot/condor",
+  },
+  {
+    id: ["pouch_triple_stacker_condor"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/condor/stacker/triple",
+  },
+  {
+    id: ["pouch_magazine_pistol_haley"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/haley/pistol",
+  },
+  {
+    id: ["pouch_magazine_pistol_molle_ii_m9"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/molle/ii/m9",
+  },
+  {
+    id: ["pouch_magazine_pistol_molle_ii_m17"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/molle/ii/m17",
+  },
+  {
+    id: ["pouch_magazine_smg_psigear"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/psigear/smg",
+  },
+  {
+    id: ["pouch_magazine_308_tt"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/tt/308",
+  },
+  {
+    id: ["pouch_magazine_338_warrior"],
+    type: "MIGRATION",
+    replace: "pouch/magazine/warrior/338",
+  },
+]

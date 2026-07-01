@@ -1,0 +1,67 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shoulder_pads/perroz:any",
+    "entries": [
+      {
+        "item": "shoulder_pads/perroz"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shoulder_pads/perroz:multicam",
+    "entries": [
+      {
+        "item": "shoulder_pads/perroz",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shoulder_pads/perroz:multicam_black",
+    "entries": [
+      {
+        "item": "shoulder_pads/perroz",
+        "variant": "multicam_black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shoulder_pads/perroz:black",
+    "entries": [
+      {
+        "item": "shoulder_pads/perroz",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shoulder_pads/perroz:coyote",
+    "entries": [
+      {
+        "item": "shoulder_pads/perroz",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "shoulder_pads/perroz:grey",
+    "entries": [
+      {
+        "item": "shoulder_pads/perroz",
+        "variant": "grey"
+      }
+    ]
+  }
+]

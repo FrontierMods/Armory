@@ -1,211 +1,129 @@
 [
   {
-    "id": "harness_x_haley",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://haleystrategic.com/x-harness-chest-rig-kit",
-      [
-        "https://www.amazon.com/Evike-Strategic-Partners-Replacement-Harness/dp/B07FG9KQZF",
-        "weight"
-      ],
-      [
-        "https://haleystrategic.com/x-harness-replacement",
-        "additional dimensions reference"
-      ]
+    "id": "chest_rig/harness/x/haley",
+    "type": "ITEM",
+    "subtypes": [
+      "ARMOR"
     ],
-
     "name": {
       "str": "X-harness"
     },
     "description": "A set of straps and a soft pad, intended to hold a placard or a panel in order to form a chest rig.  This one is in the X pattern: shoulder straps cross each other at the back.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
-        "name": { "str": "Haley Strategic X-harness" },
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": { "str": "Haley Strategic X-harness" },
-        "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": { "str": "Haley Strategic X-harness" },
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": { "str": "Haley Strategic X-harness" },
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
-        "name": { "str": "Haley Strategic X-harness" },
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
+        "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "grey",
-
-        "name": { "str": "Haley Strategic X-harness" },
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:grey>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
         "id": "flag_chestrig",
-
-        "//": [
-          "special variant for the Prepped Patriot profession",
-          "this cannot spawn in the wild"
-        ],
-
-        "name": { "str": "Haley Strategic X-harness" },
+        "name": {
+          "str": "Haley Strategic X-harness"
+        },
         "description": "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  This one features a custom paint job, turning the harness into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
         "weight": 0
       }
     ],
-
-    "//weight": [
-      "original weight: 8.4 oz (with belly pad)",
-      "belly pad weight: 1.68 oz = 47.627 g",
-      "0.42 lbs = 6.72 oz = 190.51 g"
-    ],
-    "weight": "191 g",
-    "//dimensions": [
-      {
-        "description": "strap",
-        "quantity": 2,
-
-        "length": "25.35 in",
-        "width": "2.25 in",
-        "height": "0.1 in",
-
-        "raw": "93.47 ml",
-        "trim": -0.05,
-        "result": "98.13 ml",
-
-        "notes": [
-          "width and length acquired from visual reference",
-          "height presumed from the listed height of the placard",
-          "negative trim is to account for the buckles"
-        ]
-      },
-      {
-        "description": "belt",
-
-        "length": "16.25 in",
-        "width": "1.15 in",
-        "height": "0.1 in",
-
-        "raw": "30.62 ml",
-        "trim": -0.125,
-        "result": "34.45 ml",
-
-        "notes": [
-          "width and length acquired from visual reference",
-          "height presumed from the listed height of the placard",
-          "negative trim is to account for the buckles"
-        ]
-      },
-      {
-        "description": "pad",
-
-        "length": "6.25 in",
-        "width": "10.15 in",
-        "height": "0.125 in",
-
-        "raw": "129.94 ml",
-        "trim": 0,
-        "result": "129.94 ml",
-
-        "notes": [
-          "width and length acquired from visual reference",
-          "height assumes from the listed height of the placard"
-        ]
-      }
-    ],
-    "volume": "361 ml",
-    "//longest_side": [
-      "longest side of the pad",
-      "the pad is flexible but unable to roll up"
-    ],
-    "longest_side": "258 mm",
-
+    "weight": "285 g 763 mg",
     "symbol": "[",
     "color": "dark_gray",
     "looks_like": "seatbelt",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "repairs_like": "tacvest",
     "warmth": 1,
-
     "armor": [
       {
-        "encumbrance": [1, 4],
-
-        "//coverage": [
-          "2% × 2 from shoulders straps",
-          "1% × 2 from back straps"
+        "encumbrance": [
+          1,
+          4
         ],
         "coverage": 6,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ]
       },
       {
-        "encumbrance": [1, 2],
-
-        "//coverage": ["1% from back belt"],
+        "encumbrance": [
+          1,
+          2
+        ],
         "coverage": 1,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ]
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "QASM interface",
-
-        "//ablative": [
-          "making this pocket ablative allows the chassis to be damaged",
-          "more importantly, it shows the chassis clearly among the worn items, thus making inventory management more obvious when the player is dealing with the rig"
-        ],
         "ablative": true,
-
         "max_contains_weight": "16 kg",
-        "max_contains_volume": "8 L",
-
-        "flag_restriction": ["QASM_ATTACH"],
-
+        "max_contains_volume": "16 L",
+        "flag_restriction": [
+          "QASM_ATTACH"
+        ],
         "volume_encumber_modifier": 0,
-        "//moves": "not to upset the balance of chassis pocket moves",
         "moves": 10
       }
-    ],
-
-    "//use_action": [
-      "ideally, this should be 1 + 1 slots, separately",
-      "each slot is on a separate shoulder strap and cannot be coerced to form a single double-width slot"
     ],
     "use_action": [
       {
@@ -216,265 +134,163 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["BELTED"],
-
-    "price": "72 USD",
-    "price_postapoc": "50 cent"
+    "price": "50 USD",
+    "volume": "133 ml",
+    "flags": [
+      "BELTED"
+    ],
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "harness_h_direct_action",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://eu.directactiongear.com/en/front-flap-rig-interfacer.html",
-      [
-        "https://www.trex-arms.com/store/t-rex-h-harness/",
-        "https://raptortactical.com/dwarf-chest-rig-harness/",
-        "dimensions reference"
-      ],
-      ["https://us.directactiongear.com/front-flap-rig-interface", "price"]
+    "id": "chest_rig/harness/h/direct_action",
+    "type": "ITEM",
+    "subtypes": [
+      "ARMOR"
     ],
-
-    "//notes": [
-      "these dimensions and the resulting volume make no sense, but this is likely the best we can assess without actual dimensions or a viable reference",
-      "for the sake of sanity while managing migrations, using the T.REX harness as reference, we pretend that this harness can also host a gun sling"
-    ],
-
     "name": {
       "str": "H-harness"
     },
     "description": "A set of straps and a soft pad, intended to hold a placard or a panel in order to form a chest rig.  This one is in the H pattern: shoulder straps are connected by a textile bridge at the back.  An embedded set of retainers allow holding a gun sling, or a gun attached to one.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "ranger",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "fde",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:fde>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "fde",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "wildwood",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:wildwood>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "wildwood",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "woodland",
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  <variant:woodland>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "woodland",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
         "id": "flag_chestrig",
-
-        "//": [
-          "special variant for the Prepped Patriot profession",
-          "this cannot spawn in the wild"
-        ],
-
-        "name": { "str": "Direct Action H-harness" },
+        "name": {
+          "str": "Direct Action H-harness"
+        },
         "description": "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  This one features a custom paint job, turning the harness into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
         "expand_snippets": true,
         "weight": 0
       }
     ],
-
-    "//weight": [
-      "we subtract 1.68 oz = 47.627 g for the belly pad",
-      "see X-harness' weight calculations for more info",
-      "200 g - 47.627 g = 152.373 g"
-    ],
-    "weight": "152 g",
-    "//dimensions": [
-      {
-        "description": "upper strap",
-        "quantity": 2,
-
-        "length": "12.5 in",
-        "width": "2.25 in",
-        "height": "0.15 mm",
-
-        "raw": "2.72 ml",
-        "trim": -0.5,
-        "result": "4.08 ml",
-
-        "notes": [
-          "length assumed to be valid for the length between the bridge and the buckle",
-          "width assumed from visual reference, reliant on the fact that the slightly-narrower T.REX reference harness is 2-in. wide",
-          "height assumed from visual reference",
-          "negative trim is to account for extra plastic parts"
-        ]
-      },
-      {
-        "description": "lower strap",
-        "quantity": 2,
-
-        "length": "12.5 in",
-        "width": "1 in",
-        "height": "0.2 mm",
-
-        "raw": "1.61 ml",
-        "trim": -0.5,
-        "result": "2.42 ml",
-
-        "notes": [
-          "length assumed to be valid for the length between the bridge and the buckle",
-          "width and height assumed from visual reference",
-          "negative trim is to account for extra plastic parts"
-        ]
-      },
-      {
-        "description": "belt",
-
-        "length": "16.25 in",
-        "width": "1 in",
-        "height": "0.2 mm",
-
-        "raw": "2.1 ml",
-        "trim": -0.5,
-        "result": "3.15 ml",
-
-        "notes": [
-          "width and length acquired from visual reference",
-          "height presumed from the listed height of the placard",
-          "negative trim is to account for the buckles"
-        ]
-      },
-      {
-        "description": "H-bridge",
-
-        "length": "7.5 in",
-        "width": "2.25 in",
-        "height": "0.5 mm",
-
-        "raw": "5.44 ml",
-        "trim": 0,
-        "result": "5.44 ml",
-
-        "notes": [
-          "we presume the initial dimensions of the DWARF harness are that of the bridge",
-          "we also presume that the dimensions are equivalent to a straight-line bridge, rather than its visual bent shape",
-          "height assumed from visual reference"
-        ]
-      }
-    ],
-    "volume": "22 ml",
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "weight": "152 g 373 mg",
     "looks_like": "seatbelt",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "repairs_like": "tacvest",
     "warmth": 2,
-
     "armor": [
       {
-        "encumbrance": [1, 3],
-
-        "//coverage": [
-          "3% × 2 from shoulders straps",
-          "1% × 2 from back straps"
+        "encumbrance": [
+          1,
+          3
         ],
         "coverage": 8,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ],
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 2],
-
-        "//coverage": ["1% from back belt"],
+        "encumbrance": [
+          1,
+          2
+        ],
         "coverage": 1,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ],
         "volume_encumber_modifier": 0.5
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "QASM interface",
-
-        "//ablative": [
-          "making this pocket ablative allows the chassis to be damaged",
-          "more importantly, it shows the chassis clearly among the worn items, thus making inventory management more obvious when the player is dealing with the rig"
-        ],
         "ablative": true,
-
         "max_contains_weight": "16 kg",
-        "max_contains_volume": "8 L",
-
-        "flag_restriction": ["QASM_ATTACH"],
-
+        "max_contains_volume": "16 L",
+        "flag_restriction": [
+          "QASM_ATTACH"
+        ],
         "volume_encumber_modifier": 0,
-        "//moves": "not to upset the balance of chassis pocket moves",
         "moves": 10
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Slot for a gun sling",
-
         "holster": true,
-
-        "max_contains_weight": "8200 g",
+        "max_contains_weight": "8 kg 200 g",
         "max_contains_volume": "8 L",
-        "max_item_length": "1200 mm",
-
-        "flag_restriction": ["GUN_SLING"],
-
-        "volume_encumber_modifier": 0.25,
+        "max_item_length": "1 meter 20 cm",
+        "flag_restriction": [
+          "GUN_SLING"
+        ],
+        "volume_encumber_modifier": 0.5,
         "moves": 30
       }
     ],
-
-    "//use_action": "the harness has a lot more than two slot, but since we can't separate them, for balance reasons, we keep it down to 2 slots",
     "use_action": [
       {
         "type": "attach_molle",
@@ -484,10 +300,13 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["BELTED"],
-
     "price": "48 USD",
-    "price_postapoc": "50 cent"
+    "volume": "15 ml",
+    "color": "dark_gray",
+    "flags": [
+      "BELTED"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   }
 ]

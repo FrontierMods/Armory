@@ -1,0 +1,110 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/perroz:any",
+    "entries": [
+      {
+        "item": "cummerbund/perroz"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/perroz:multicam",
+    "entries": [
+      {
+        "item": "cummerbund/perroz",
+        "variant": "multicam"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/perroz:multicam_black",
+    "entries": [
+      {
+        "item": "cummerbund/perroz",
+        "variant": "multicam_black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/perroz:black",
+    "entries": [
+      {
+        "item": "cummerbund/perroz",
+        "variant": "black"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/perroz:coyote",
+    "entries": [
+      {
+        "item": "cummerbund/perroz",
+        "variant": "coyote"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/perroz:woodland",
+    "entries": [
+      {
+        "item": "cummerbund/perroz",
+        "variant": "woodland"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/iotv:any",
+    "entries": [
+      {
+        "item": "cummerbund/iotv"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/iotv:ocp",
+    "entries": [
+      {
+        "item": "cummerbund/iotv",
+        "variant": "ocp"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/iotv:ucp",
+    "entries": [
+      {
+        "item": "cummerbund/iotv",
+        "variant": "ucp"
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cummerbund/iotv:coyote",
+    "entries": [
+      {
+        "item": "cummerbund/iotv",
+        "variant": "coyote"
+      }
+    ]
+  }
+]

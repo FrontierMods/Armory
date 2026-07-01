@@ -1,0 +1,479 @@
+[
+  {
+    id: "pouch/holster/high_order",
+    inherit: ["@pouch/small", "@holster"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://highordertactical.com/products/magnetic-shotgun-retention-system
+
+    */
+
+    name: {
+      str: "magnetic holster",
+    },
+    description: "A PALS webbing-compatible magnetic holster designed to hold long firearms during breaching operations.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black", "olive"],
+
+        name: {
+          str: "High Order MSRS magnetic holster",
+        },
+        description: 'A Kydex body holding four strong magnets inside.  MSRS stands for "magnetic shotgun retention system", as it was originally designed to securely hold breaching shotguns.  The "holster" can, of course, hold any weapon made of a ferromagnetic material.',
+      },
+    ],
+
+    // rough estimate from assumed weights of components
+    weight: {
+      math: [
+        /*
+        4 × neodymium magnet = 4 × 30 g
+        > https://magnet-outlet.eu/en/collections/neodymium-magneten/products/neodymium-blokmagneet-40mm-x-10mm-x-10mm
+      */
+        "120 g",
+        {
+          op: "add",
+          value: {
+            math: [
+              {
+                ref: "kydex",
+                type: "material",
+                key: "density",
+              },
+              { op: "convert", value: "g/ml" },
+              // we assume there is roughly 40 ml of Kydex across the entire holster
+              { op: "multiply", value: "40 ml" },
+            ],
+          },
+        },
+      ],
+    },
+    dimensions: {
+      // reference: https://highordertactical.com/products/molle-attachment
+      type: "rectangle",
+
+      // assumed from visual reference, based on the Molle-Lok attachment's dimensions
+      length: "6 in",
+      // assumed from visual reference, based on the Molle-Lok attachment's dimensions
+      width: "2.25 in",
+      // presumed
+      height: "0.65 in",
+    },
+    // we assume that the holster would fold length-wise
+    longest_side: { ref: "$", path: ["dimensions", "length"], raw: true },
+
+    // the magnet in DDA is made from cast iron, whereas its actual material is stated to be alnico, an iron alloy
+    material: ["iron" /* neodymium */, "kydex"],
+    looks_like: "magnet",
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Magnetic holster",
+
+        holster: true,
+
+        max_contains_weight: "8200 g",
+        min_item_volume: "500 ml",
+        max_contains_volume: "4 L",
+        min_item_length: "20 cm",
+        max_item_length: "80 cm",
+
+        /*
+         * these are commented out because in 0.H, these restrictions don't work as expected
+         * in 0.H, an item must be *mostly* one of these materials to be restricted
+         * if an item had the default material format (e.g. `["iron", "plastic"]`), the engine would default to assuming each material exists in equal part to the others in the item
+         * for `["iron", "plastic"]`, it would make only 50% iron, which doesn't break the "mostly" caveat
+         */
+        /*
+          material_restriction: [
+            "iron",
+            "budget_steel",
+            "lc_steel",
+            "mc_steel",
+            "hc_steel",
+            "ch_steel",
+            "qt_steel",
+            "budget_steel_chain",
+            "lc_steel_chain",
+            "mc_steel_chain",
+            "hc_steel_chain",
+            "ch_steel_chain",
+            "qt_steel_chain",
+            "steel",
+          ],
+        */
+
+        moves: 130,
+      },
+    ],
+
+    // TODO: needs `"TARDIS"` flag?
+
+    price: "295 USD",
+  },
+  {
+    id: "pouch/baton/bfg",
+    inherit: ["@pouch/small", "@holster"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.blueforcegear.com/molle-baton-pouch
+
+        https://www.blueforcegear.com/SpecSheets/HW-TSP-BATON-01-MC.pdf
+        - weight
+        - dimensions
+        - material
+        - variants
+    */
+
+    name: {
+      str: "MOLLE baton pouch",
+      str_pl: "MOLLE baton pouches",
+    },
+    description: "A nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market.  Typically worn by police officers who use webbing duty belts.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["multicam", "black", "coyote", "ranger"],
+
+        name: {
+          str: "Blue Force Gear MOLLE baton pouch",
+          str_pl: "Blue Force Gear MOLLE baton pouches",
+        },
+        description: "A thin nylon MOLLE pouch for collapsible batons.  Can hold most models of batons available on the market. Typically worn by police officers who use webbing duty belts.",
+      },
+    ],
+
+    weight: "24 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "0.125 in",
+      width: "2 in",
+      height: "4 in",
+      trim: 0.05,
+      soft: true,
+    },
+
+    material: ["nylon" /* Ten-Speed® Elastic */],
+
+    looks_like: "holster",
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Collapsible baton holster",
+
+        holster: true,
+
+        max_contains_weight: {
+          math: [
+            {
+              ref: "baton",
+              key: "weight",
+            },
+            // to accomodate heavier batons
+            { op: "multiply", value: 1.5 },
+          ],
+        },
+        min_item_volume: "100 ml",
+        max_contains_volume: {
+          math: [
+            {
+              ref: "baton",
+              key: "volume",
+            },
+            // to accomodate bulkier batons
+            { op: "multiply", value: 1.5 },
+          ],
+        },
+        max_item_length: { ref: "baton", key: "longest_side" },
+
+        moves: 85,
+      },
+    ],
+
+    // TODO: needs `"TARDIS"` flag?
+
+    price: "26 USD 95 cents",
+  },
+  {
+    id: "pouch/tonfa/gng",
+    inherit: ["@pouch/small", "@holster", "@belt_gear"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.amazon.ca/Gould-Goodrich-GGB2070-Holder-Standard/dp/B005HO0A7M
+        - model
+        - weight
+
+        https://www.amazon.com/ROCOTACTICAL-Police-Holder-Flashlight-Slide/dp/B07GSN6XKL
+        - dimensions
+        - price
+        - ring material
+    */
+
+    /*
+      NOTES
+        - while the source of dimensions is not close to the model, we use it because finding dimensions of the model item online has proven to be difficult
+        - could this be a good location for carabiner-held gear?
+    */
+
+    name: {
+      str: "baton ring",
+    },
+    description: "A metal ring on a strap which attaches to the belt.  Can hold a PR-24 baton or a regular-sized flashlight.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black"],
+
+        name: { str: "Gould & Goodrich baton ring" },
+        description: "A metal ring with a tongue, held by a thin nylon strap.  Usually worn on the belt by an on-duty police officer, and holds the Monadnock PR-24 side-handle baton.  Can also hold standard-sized flashlight, though not smaller or larger ones.",
+      },
+    ],
+
+    weight: "23 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "6.1 in",
+      // from visual reference
+      width: "2.45 in",
+      height: "1 mm",
+      trim: 0.45,
+    },
+    // we assume that while the strap could fold any way, the ring cannot
+    longest_side: { ref: "$", path: ["dimensions", "width"], raw: true },
+
+    material: ["nylon", "plastic"],
+
+    looks_like: "axe_ring",
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Tonfa holster",
+
+        holster: true,
+
+        max_contains_weight: {
+          math: [
+            {
+              ref: "PR24-extended",
+              key: "weight",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        min_item_volume: "200 ml",
+        max_contains_volume: {
+          math: [
+            {
+              ref: "PR24-extended",
+              key: "volume",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        min_item_length: "330 mm",
+        max_item_length: { ref: "PR24-extended", key: "longest_side" },
+
+        moves: 85,
+      },
+    ],
+
+    price: "10 USD",
+  },
+  {
+    id: "pouch/stun_gun/streetwise",
+    inherit: ["@pouch/small", "@holster", "@belt_gear"],
+    type: "ITEM",
+
+    /*
+      SOURCES
+        https://www.streetsmartprotection.com/stun-guns/streetwise-touchdown-stun-gun
+    */
+
+    name: {
+      str: "stun gun pouch",
+    },
+    description: "A nylon pouch for stun guns.  Can fit a variety of models.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["grey"],
+
+        name: { str: "Streetwise stun gun pouch" },
+        description: "A nylon pouch for stun guns.  Fit for a specific model, but can fit similar models.",
+      },
+    ],
+
+    // guessed based on similar pouches
+    weight: "25 g",
+    volume: {
+      math: [
+        {
+          ref: "tazer",
+          key: "volume",
+        },
+        // appears to be ~5% larger than the bounding box (raw volume) of the stun gun
+        { op: "multiply", value: 1.05 },
+      ],
+    },
+    longest_side: {
+      math: [
+        {
+          ref: "tazer",
+          key: "longest_side",
+        },
+        { op: "multiply", value: 1.05 },
+      ],
+    },
+
+    material: ["nylon"],
+
+    looks_like: "holster",
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Stun gun holster",
+
+        holster: true,
+
+        max_contains_weight: "500 g",
+        min_item_volume: {
+          math: [
+            {
+              ref: "tazer",
+              key: "volume",
+            },
+            { op: "multiply", value: 0.7 },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "tazer",
+              key: "volume",
+            },
+            // medium battery offsets the volume when loaded in
+            { op: "multiply", value: 1.15 },
+          ],
+        },
+        max_item_length: {
+          math: [
+            {
+              ref: "tazer",
+              key: "longest_side",
+            },
+            // real length of loaded `tazer` is 65 mm because the medium battery it loads with sets overall value of the stun gun to 65 mm
+            // TODO: derive this length cleaner
+            { op: "add", value: "5 mm" },
+          ],
+        },
+
+        moves: 105,
+      },
+    ],
+
+    // TODO: needs `"TARDIS"` flag?
+
+    // sold alongside the stun gun, so no way to estimate a real price
+    price: "0 cents",
+  },
+  {
+    id: "pouch/holster/raptor/breaching",
+    // * listed as a large pouch for balance reasons
+    // TODO: make back panel pouch and gear belt only
+    inherit: ["@pouch/large", "@holster/tool"],
+    type: "ITEM",
+
+    category: "container",
+
+    /*
+      SOURCES
+        https://raptortactical.com/breacher-tool-holder/
+    */
+
+    name: {
+      str: "breacher tool holder",
+    },
+    description: "An arrangement of nylon straps locked together with a plastic buckle.  Can hold a medium- or large-sized breaching tool.  Straps to webbing, so could be carried on a plate carrier or a belt.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["coyote", 2],
+          ["black", 2],
+          "multicam_alpine",
+          "multicam_black",
+          "woodland",
+          "ranger",
+          "grey",
+        ],
+
+        name: { str: "Raptor breacher tool holder" },
+        description: "A couple of tough nylon straps locked together with a plastic buckle.  Can hold a single breaching tool.  Straps to PALS webbing on your plate carrier, rig, or belt.",
+      },
+    ],
+
+    // guess based on similar pouches
+    weight: "35 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "5.5 in",
+      width: "3 in",
+      // height of buckle, aka maximum height of the entire pouch when folded
+      // > https://americanplastics.com/products/1-black-side-release-buckle-2000-series-ap006705252000
+      height: "12.8 mm",
+      trim: 0.7,
+    },
+    // longest side is the length of the buckle
+    // > https://americanplastics.com/products/1-black-side-release-buckle-2000-series-ap006705252000
+    // the rest of the pouch is soft but the buckle does not flex
+    longest_side: "70 mm",
+
+    material: ["nylon", "plastic"],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Breaching tool holster",
+
+        holster: true,
+
+        max_contains_weight: "6 kg",
+        min_item_volume: "500 ml",
+        max_contains_volume: "1 L 500 ml",
+        min_item_length: "20 cm",
+        max_item_length: "80 cm",
+
+        // TODO: lower below 1 when changing to back/belt pouch
+        volume_encumber_modifier: 2,
+        moves: 240,
+      },
+    ],
+
+    price: "89 USD",
+  },
+]

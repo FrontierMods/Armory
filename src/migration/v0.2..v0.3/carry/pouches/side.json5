@@ -1,0 +1,12 @@
+[
+  {
+    id: ["pouch_side_perroz"],
+    type: "MIGRATION",
+    replace: "pouch/side/perroz",
+  },
+  {
+    id: ["pouch_side_ferro_wingthing"],
+    type: "MIGRATION",
+    replace: "pouch/side/ferro/wingthing",
+  },
+]

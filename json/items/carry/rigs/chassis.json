@@ -1,163 +1,140 @@
 [
   {
-    "id": "placard_haley_molle",
-    "type": "ARMOR",
-
-    "//sources": ["https://haleystrategic.com/thorax-molle-placard"],
-
-    "//notes": [
-      "modelled after size Large, because that's the size the Haley MOLLE placard is sold in"
-    ],
-
+    "id": "placard/haley/molle",
+    "type": "ITEM",
     "name": {
       "str": "MOLLE placard"
     },
     "description": "A MOLLE placard with a pair of buckles.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to plate carrier to serve as space for more pouches.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
-        "name": { "str": "Haley Strategic MOLLE placard" },
+        "name": {
+          "str": "Haley Strategic MOLLE placard"
+        },
         "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": { "str": "Haley Strategic MOLLE placard" },
-        "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": { "str": "Haley Strategic MOLLE placard" },
+        "name": {
+          "str": "Haley Strategic MOLLE placard"
+        },
         "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": { "str": "Haley Strategic MOLLE placard" },
+        "name": {
+          "str": "Haley Strategic MOLLE placard"
+        },
+        "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Haley Strategic MOLLE placard"
+        },
         "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
-        "name": { "str": "Haley Strategic MOLLE placard" },
+        "name": {
+          "str": "Haley Strategic MOLLE placard"
+        },
         "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "grey",
-
-        "name": { "str": "Haley Strategic MOLLE placard" },
+        "name": {
+          "str": "Haley Strategic MOLLE placard"
+        },
         "description": "A MOLLE placard with a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:grey>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": [
-      "2.7 oz = 76.544 g",
-      "+ 1.68 oz = 47.627 g for the belly pad",
-      "= 124.167 g"
-    ],
-    "weight": "124 g",
-    "//dimensions": {
-      "length": "10.25 in",
-      "width": "6.75 in",
-      "height": "0.125 in",
-      "raw": "141.72 ml",
-      "trim": 0.0125
-    },
-    "volume": "140 ml",
-
-    "symbol": "[",
-    "color": "light_gray",
+    "weight": "124 g 171 mg",
     "looks_like": "tacvest",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "repairs_like": "tacvest",
     "warmth": 4,
-
     "armor": [
       {
-        "encumbrance": [1, 3],
-
-        "//coverage": ["half of large SAPI plate coverage = 18%"],
+        "encumbrance": [
+          1,
+          3
+        ],
         "coverage": 18,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ],
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [0, 2],
-
-        "//coverage": "half of large SAPI plate coverage ≈ 6%",
+        "encumbrance": [
+          0,
+          2
+        ],
         "coverage": 6,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ],
         "volume_encumber_modifier": 0.2
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch hook-and-loop attachment point",
-
         "holster": true,
-
-        "max_contains_weight": "60 kg",
-        "max_contains_volume": "15 L",
-
-        "flag_restriction": ["SIDE_POUCH_VELCRO"],
-
+        "max_contains_weight": "10 kg",
+        "max_contains_volume": "10 L",
+        "flag_restriction": [
+          "SIDE_POUCH_VELCRO"
+        ],
         "moves": 10
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch hook-and-loop attachment point",
-
         "holster": true,
-
-        "max_contains_weight": "60 kg",
-        "max_contains_volume": "15 L",
-
-        "flag_restriction": ["SIDE_POUCH_VELCRO"],
-
+        "max_contains_weight": "10 kg",
+        "max_contains_volume": "10 L",
+        "flag_restriction": [
+          "SIDE_POUCH_VELCRO"
+        ],
         "moves": 10
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Hanging pouch hook-and-loop attachment point",
-
         "holster": true,
-
         "max_contains_weight": "60 kg",
         "max_contains_volume": "15 L",
-
-        "flag_restriction": ["HANGING_POUCH_VELCRO"],
-
+        "flag_restriction": [
+          "HANGING_POUCH_VELCRO"
+        ],
         "moves": 10
       }
     ],
-
     "use_action": [
       {
         "type": "attach_molle",
@@ -167,329 +144,251 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["CANT_WEAR", "QASM_ATTACH"],
-
     "price": "40 USD",
-    "price_postapoc": "50 cent"
+    "volume": "140 ml",
+    "color": "light_gray",
+    "flags": [
+      "CANT_WEAR",
+      "QASM_ATTACH"
+    ],
+    "subtypes": [
+      "ARMOR"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "placard_onetigris_vulture",
-    "type": "ARMOR",
-
-    "//sources": ["https://www.onetigris.com/eu/vulture-chest-rig.html"],
-
+    "id": "placard/onetigris/vulture",
+    "type": "ITEM",
     "name": {
       "str": "recon chest rig chassis"
     },
     "description": "A compact chest rig chassis with a pair of buckles.  Features four rifle magazine pouches, four pistol magazine pouches, and a general pouch for small supplies.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to a plate carrier to serve as a set of extra pouches.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
-        "name": { "str": "OneTigris Vulture chest rig chassis" },
+        "name": {
+          "str": "OneTigris Vulture chest rig chassis"
+        },
         "description": "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": { "str": "OneTigris Vulture chest rig chassis" },
-        "description": "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": { "str": "OneTigris Vulture chest rig chassis" },
+        "name": {
+          "str": "OneTigris Vulture chest rig chassis"
+        },
         "description": "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": { "str": "OneTigris Vulture chest rig chassis" },
+        "name": {
+          "str": "OneTigris Vulture chest rig chassis"
+        },
         "description": "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
-        "name": { "str": "OneTigris Vulture chest rig chassis" },
+        "name": {
+          "str": "OneTigris Vulture chest rig chassis"
+        },
+        "description": "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "OneTigris Vulture chest rig chassis"
+        },
         "description": "A compact chest rig chassis with a pair of buckles.  Can be combined with a harness to make a minimal chest rig fir for light recon missions.  It can also be worn on plate carriers via the QASM interface, as a replaceable alternative to a predefined PALS webbing or a set of pockets.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": [
-      "we assume the harness that ships with the chassis is the Haley Strategic X-harness (or a very similar alternative), for the purposes of calculating weight",
-      "we presume, based on weights of other rigs and LBVs, that 18.3 oz/520 g is the weight of the entire assembly, including the harness",
-      "18.3 oz - 6.72 oz (weight of the harness) = 11.58 oz = 328.29 g"
-    ],
-    "weight": "328 g",
-    "//dimensions": {
-      "length": "11 in",
-      "width": "6 in",
-      "height": "2 in",
-      "raw": "2163.09 ml",
-      "trim": 0.075
-    },
-    "volume": "2 L 1 ml",
-    "longest_side": "279 mm",
-
-    "symbol": "[",
-    "color": "light_gray",
+    "weight": "233 g 33 mg",
     "looks_like": "tacvest",
-
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "repairs_like": "tacvest",
     "warmth": 7,
-
     "armor": [
       {
-        "encumbrance": [0, 1],
-
-        "//coverage": ["~6% of front upper torso coverage = 2.4%"],
+        "encumbrance": [
+          0,
+          1
+        ],
         "coverage": 2,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ],
         "volume_encumber_modifier": 0.1
       },
       {
-        "encumbrance": [1, 6],
-
-        "//coverage": ["~40% of front lower torso coverage = 16%"],
+        "encumbrance": [
+          1,
+          6
+        ],
         "coverage": 16,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ],
         "volume_encumber_modifier": 0.6
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "40-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Tall open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["tall", "soft_retainer", "embedded_pocket"]
-        },
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Tall open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Tall open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Tall open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
-
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "medium pistol magazine capacity",
-
-        "description": "Pistol magazine pocket",
-
+        "description": "Pistol magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "120 ml",
-        "min_item_length": "80 mm",
-        "max_item_length": "142 mm",
-
-        "//magazine_pouch": {
-          "type": "II",
-          "modifiers": ["embedded_pocket"]
-        },
-
-        "volume_encumber_modifier": 1.4,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "131 ml",
+        "min_item_length": "9 cm 3 mm",
+        "max_item_length": "14 cm 2 mm",
+        "volume_encumber_modifier": 2,
         "ripoff": 20,
         "moves": 130
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Pistol magazine pocket",
-
+        "description": "Pistol magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "120 ml",
-        "min_item_length": "80 mm",
-        "max_item_length": "142 mm",
-
-        "volume_encumber_modifier": 1.4,
-        "ripoff": 20,
-        "moves": 130
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "description": "Pistol magazine pocket",
-
-        "holster": true,
-
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "120 ml",
-        "min_item_length": "80 mm",
-        "max_item_length": "142 mm",
-
-        "volume_encumber_modifier": 1.4,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "131 ml",
+        "min_item_length": "9 cm 3 mm",
+        "max_item_length": "14 cm 2 mm",
+        "volume_encumber_modifier": 2,
         "ripoff": 20,
         "moves": 130
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Pistol magazine pocket",
-
+        "description": "Pistol magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "120 ml",
-        "min_item_length": "80 mm",
-        "max_item_length": "142 mm",
-
-        "volume_encumber_modifier": 1.4,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "131 ml",
+        "min_item_length": "9 cm 3 mm",
+        "max_item_length": "14 cm 2 mm",
+        "volume_encumber_modifier": 2,
         "ripoff": 20,
         "moves": 130
       },
-
       {
         "pocket_type": "CONTAINER",
-
+        "description": "Pistol magazine pouch",
+        "holster": true,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "131 ml",
+        "min_item_length": "9 cm 3 mm",
+        "max_item_length": "14 cm 2 mm",
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 130
+      },
+      {
+        "pocket_type": "CONTAINER",
         "description": "General pouch",
-
         "max_contains_weight": "3 kg",
-        "//dimensions": {
-          "length": "6 in",
-          "width": "1.5 in",
-          "height": "5 in",
-          "raw": "737.42 ml",
-          "trim": 0.05,
-          "notes": [
-            "length and height are from the PALS webbing",
-            "width (depth) is presumed based on overall depth of the rig"
-          ]
-        },
         "max_contains_volume": "701 ml",
-        "//max_item_length": "6 in., the length of the pouch",
-        "max_item_length": "152 mm",
-
+        "max_item_length": "15 cm 2 mm",
         "moves": 180
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch hook-and-loop attachment point",
-
         "holster": true,
-
-        "max_contains_weight": "60 kg",
-        "max_contains_volume": "15 L",
-
-        "flag_restriction": ["SIDE_POUCH_VELCRO"],
-
+        "max_contains_weight": "10 kg",
+        "max_contains_volume": "10 L",
+        "flag_restriction": [
+          "SIDE_POUCH_VELCRO"
+        ],
         "moves": 10
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch hook-and-loop attachment point",
-
         "holster": true,
-
-        "max_contains_weight": "60 kg",
-        "max_contains_volume": "15 L",
-
-        "flag_restriction": ["SIDE_POUCH_VELCRO"],
-
+        "max_contains_weight": "10 kg",
+        "max_contains_volume": "10 L",
+        "flag_restriction": [
+          "SIDE_POUCH_VELCRO"
+        ],
         "moves": 10
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Hanging pouch hook-and-loop attachment point",
-
         "holster": true,
-
         "max_contains_weight": "60 kg",
         "max_contains_volume": "15 L",
-
-        "flag_restriction": ["HANGING_POUCH_VELCRO"],
-
+        "flag_restriction": [
+          "HANGING_POUCH_VELCRO"
+        ],
         "moves": 10
       }
     ],
-
     "use_action": [
       {
         "type": "attach_molle",
@@ -499,448 +398,330 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["CANT_WEAR", "QASM_ATTACH"],
-
-    "//price": "pure guess based on how other modular options have been priced when sold separately",
     "price": "40 USD",
-    "price_postapoc": "50 cent"
+    "volume": "2 L 1 ml",
+    "color": "light_gray",
+    "flags": [
+      "CANT_WEAR",
+      "QASM_ATTACH"
+    ],
+    "subtypes": [
+      "ARMOR"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "placard_haley_magazine",
-    "type": "ARMOR",
-
-    "//sources": ["https://haleystrategic.com/thorax-triple-rifle-mag-placard"],
-
-    "//notes": [
-      "this placard comes with hard MP2 magazine-retainer inserts by default"
-    ],
-
+    "id": "placard/haley/magazine/triple",
+    "type": "ITEM",
     "name": {
       "str": "triple-magazine placard"
     },
     "description": "A placard with a pair of buckles.  Holds three individual rifle magazines.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to a plate carrier to serve as magazine carry.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
-        "name": { "str": "Haley Strategic triple mag placard" },
+        "name": {
+          "str": "Haley Strategic triple mag placard"
+        },
         "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": { "str": "Haley Strategic triple mag placard" },
-        "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": { "str": "Haley Strategic triple mag placard" },
+        "name": {
+          "str": "Haley Strategic triple mag placard"
+        },
         "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": { "str": "Haley Strategic triple mag placard" },
+        "name": {
+          "str": "Haley Strategic triple mag placard"
+        },
         "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
-        "name": { "str": "Haley Strategic triple mag placard" },
+        "name": {
+          "str": "Haley Strategic triple mag placard"
+        },
         "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "grey",
-
-        "name": { "str": "Haley Strategic triple mag placard" },
+        "name": {
+          "str": "Haley Strategic triple mag placard"
+        },
         "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:grey>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Haley Strategic triple mag placard"
+        },
+        "description": "A placard with three rifle-magazine pouches, augmented by a pair of buckles.  Can be combined with a harness to make a compact, minimal chest rig.  It can also be worn on some plate carriers via the QASM interface, as a replaceable alternative sewn-in magazine pockets.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": [
-      "14.08 oz = 399.16 g",
-      "it appears this placard already comes with a belly pad, thus we assume its weight is counted into the overall weight",
-      "https://www.pewtac.com/products_details/47.html"
-    ],
-    "weight": "399 g",
-    "//dimensions": {
-      "length": "7.5 in",
-      "width": "11.5 in",
-      "height": "1.75 in",
-      "raw": "2473.42 ml",
-      "trim": 0.55
-    },
-    "volume": "1113 ml",
-
-    "symbol": "[",
-    "color": "light_gray",
+    "weight": "399 g 161 mg",
     "looks_like": "tacvest",
-
-    "//material": ["plastic is from the hard inserts"],
-    "material": ["nylon", "plastic"],
+    "material": [
+      "nylon",
+      "plastic"
+    ],
     "repairs_like": "tacvest",
     "warmth": 5,
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "40-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Hard-retainer open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["hard_retainer", "embedded_pocket"]
-        },
-
-        "volume_encumber_modifier": 0.65,
+        "max_contains_weight": "791 g",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "9 cm 1 mm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 1.25,
         "ripoff": 9,
         "moves": 50
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Hard-retainer open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.65,
+        "max_contains_weight": "791 g",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "9 cm 1 mm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 1.25,
         "ripoff": 9,
         "moves": 50
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Hard-retainer open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.65,
+        "max_contains_weight": "791 g",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "9 cm 1 mm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 1.25,
         "ripoff": 9,
         "moves": 50
       }
     ],
-
-    "flags": ["CANT_WEAR", "QASM_ATTACH"],
-
     "price": "95 USD",
-    "price_postapoc": "50 cent"
+    "volume": "1 L 113 ml",
+    "color": "light_gray",
+    "flags": [
+      "CANT_WEAR",
+      "QASM_ATTACH"
+    ],
+    "subtypes": [
+      "ARMOR"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "placard_direct_action_tempest",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://eu.directactiongear.com/en/tempest-chest-rig.html",
-      ["https://us.directactiongear.com/tempest-chest-rig", "price"],
-      [
-        "https://www.spartanat.com/2019/01/review-direct-action-hurricane-chest-rig-plattform/",
-        "coverage reference"
-      ],
-      ["https://www.ebay.com/itm/235056890554", "maximum item volume reference"]
-    ],
-
-    "//notes": [
-      "the webbing underneath the magazines (advertised in the store description) is accounted for"
-    ],
-
+    "id": "placard/direct_action/tempest",
+    "type": "ITEM",
     "name": {
       "str": "split assault chest rig chassis"
     },
     "description": "A chest rig chassis with PALS webbing and several rifle-magazine pouches, supported by a pair of buckles.  Each side also has two flat pockets for intelligence items, such as maps or documents.  Can attach to a harness to form a wearable chest rig.  Alternatively, it could be attached to a plate carrier to serve as a combination of magazine carry and additional space for pouches.",
-
     "variant_type": "gun",
     "variants": [
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:multicam>",
         "id": "multicam",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "weight": 4,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:coyote>",
         "id": "coyote",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "weight": 2,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:ranger>",
         "id": "ranger",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 2
+        "weight": 2,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:black>",
         "id": "black",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim placard, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "weight": 2,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:grey>",
         "id": "grey",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:grey>.",
-        "expand_snippets": true,
-        "weight": 1
+        "weight": 1,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:fde>",
         "id": "fde",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:fde>.",
-        "expand_snippets": true,
-        "weight": 1
+        "weight": 1,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
+        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  <variant:wildwood>",
         "id": "wildwood",
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:wildwood>.",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "woodland",
-
-        "//": [
-          "this color variant doesn't exist on the website at the time of modelling it for the mod",
-          "we pretend it does to maintain parity with the H-harness from the same manufacturer"
-        ],
-
-        "name": { "str": "Direct Action Tempest chassis" },
-        "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.   <variant:woodland>.",
-        "expand_snippets": true,
-        "weight": 1
+        "weight": 1,
+        "expand_snippets": true
       },
       {
         "id": "flag_chestrig",
-
-        "//": [
-          "special variant for the Prepped Patriot profession",
-          "this cannot spawn in the wild"
-        ],
-
-        "name": { "str": "Direct Action Tempest chassis" },
+        "name": {
+          "str": "Direct Action Tempest chassis"
+        },
         "description": "A slim chassis, split into two by a zipper.  Four rifle-magazine pockets can fit a pair each.  Pockets inside each side could be used to store flat objects like maps, notes, and IDs.  The chassis also features plenty of PALS webbing.  This one features a custom paint job, turning the rig into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
         "expand_snippets": true,
         "weight": 0
       }
     ],
-
-    "//weight": "1.17 lbs = 530.7 g (weight of the rig as a whole) - 152.373 g (weight of the H-harness we use for this chassis) = 378.327 g",
-    "weight": "378 g",
-    "//dimensions": {
-      "length": "18 in",
-      "width": "6 in",
-      "height": "0.85 in",
-      "raw": "1504.33 ml",
-      "trim": 0.4,
-      "notes": [
-        "height assumed from width of an average STANAG magazine + a little extra for the pouch's textile"
-      ]
-    },
-    "volume": "903 ml",
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "weight": "479 g",
     "looks_like": "vest",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "material_thickness": 1,
     "repairs_like": "tacvest",
     "warmth": 6,
-
     "armor": [
       {
-        "encumbrance": [1, 6],
-
-        "//coverage": [
-          "30% of front upper torso coverage = 14.4%",
-          "15% of side upper torso coverage = 1.5% * 2 = 3%"
+        "encumbrance": [
+          1,
+          6
         ],
-        "coverage": 17,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
+        "coverage": 19,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ],
         "volume_encumber_modifier": 0.5
       },
       {
-        "encumbrance": [1, 5],
-
-        "//coverage": [
-          "~30% of front lower torso coverage = 9.6% ≈ 10%",
-          "~25% of side lower torso coverage = 2.5% * 2 = 5%"
+        "encumbrance": [
+          1,
+          5
         ],
         "coverage": 15,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ],
         "volume_encumber_modifier": 0.5
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Flat side pocket",
-
-        "//notes": ["side pockets are copied from the MAV 2 Piece rig"],
-
         "max_contains_weight": "1 kg",
-        "//dimensions": {
-          "length": "5 mm",
-          "width": "12 in",
-          "height": "6 in",
-          "raw": "232.26 ml",
-          "trim": 0.05,
-          "notes": ["said to span the entire size of the panel"]
-        },
         "max_contains_volume": "221 ml",
-        "//max_item_volume": [
-          "based on the calculation of volume for a map of New York City subway",
-          {
-            "length": "23 in",
-            "width": "28 in",
-            "height": "0.1 mm",
-            "raw": "41.54 ml"
-          },
-          "we exaggerate the height (thickness) of the reference map in order to allow thicker paper items to fit"
-        ],
-        "max_item_volume": "42 ml",
-        "max_item_length": "229 mm",
-
+        "max_item_volume": "25 ml",
+        "max_item_length": "22 cm 9 mm",
         "moves": 250
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Flat side pocket",
-
         "max_contains_weight": "1 kg",
         "max_contains_volume": "221 ml",
-        "max_item_length": "229 mm",
-
+        "max_item_volume": "25 ml",
+        "max_item_length": "22 cm 9 mm",
         "moves": 250
       },
-
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": [
-          "double 40-round STANAG magazine capacity",
-          "to restore the original reference",
-          "the original reference had the lower limit of the 20-round magazine, length-wise"
-        ],
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Double tall open-top rifle magazine pouch",
+        "holster": true,
+        "max_contains_weight": "837 g",
         "max_contains_volume": "770 ml",
-        "//min_item_length": [
-          "length of STANAG 10-round magazine",
-          "this is necessary to allow `ruger_arr_mag` (100 mm) to spawn",
-          "without this, the game throws an error when trying to spawn ghost(?) magazines on load"
-        ],
-        "min_item_length": "91 mm",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["tall", "soft_retainer", "embedded_pocket"],
-          "capacity": 2
-        },
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "10 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
-        "moves": 110
+        "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Double tall open-top rifle magazine pouch",
+        "holster": true,
+        "max_contains_weight": "837 g",
         "max_contains_volume": "770 ml",
-        "min_item_length": "91 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "10 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
-        "moves": 110
+        "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Double tall open-top rifle magazine pouch",
+        "holster": true,
+        "max_contains_weight": "837 g",
         "max_contains_volume": "770 ml",
-        "min_item_length": "91 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "10 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
-        "moves": 110
+        "moves": 100
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Double tall open-top rifle magazine pouch",
+        "holster": true,
+        "max_contains_weight": "837 g",
         "max_contains_volume": "770 ml",
-        "min_item_length": "91 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.75,
+        "min_item_length": "10 cm",
+        "max_item_length": "26 cm 1 mm",
+        "volume_encumber_modifier": 1.35,
         "ripoff": 9,
-        "moves": 110
+        "moves": 100
       }
     ],
-
     "use_action": [
       {
         "type": "attach_molle",
@@ -950,281 +731,191 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["CANT_WEAR", "STURDY", "QASM_ATTACH"],
-
-    "price": "201 USD",
-    "price_postapoc": "1 USD"
+    "price": "249 USD",
+    "volume": "903 ml",
+    "color": "light_gray",
+    "flags": [
+      "CANT_WEAR",
+      "QASM_ATTACH"
+    ],
+    "subtypes": [
+      "ARMOR"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "placard_condor_stowaway",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://condoroutdoor.com/products/stowaway-chest-rig",
-      [
-        "https://defcon5.pl/strona-glowna/32700-kamizelka-taktyczna-condor-stowaway-chest-rig-molle-coyote-201236-498.html",
-        "https://haleystrategic.com/micro-556-double-mag-insert",
-        "https://haleystrategic.com/single-micro-utility-pouch",
-        "weight reference"
-      ],
-      [
-        "https://ampedairsoft.com/condor-stowaway-chest-rig-black/",
-        "coverage reference"
-      ]
-    ],
-
-    "//notes": [
-      "we model the placard as having magazine inserts, because we don't currently include inserts independently",
-      "rifle-mag inserts come with an MP2 insert each",
-      [
-        "weight reference for the panel itself",
-        "https://www.recon-company.com/en/detail/index/sArticle/43925/number/808135.482",
-        "harness weight does not appear to be available online (not sold by Condor, model unknown)"
-      ]
-    ],
-
+    "id": "placard/condor/stowaway",
+    "type": "ITEM",
     "name": {
       "str": "stowaway chest rig chassis"
     },
     "description": "A compact chest rig chassis with two rifle-magazine pouches, one pistol-magazine pouch, a medium-sized general pouch, and some PALS webbing for additional pouches.  Limited in capacity, but unencumbering.",
-
     "variant_type": "gun",
     "variants": [
       {
+        "name": {
+          "str": "Condor Stowaway chassis"
+        },
+        "description": "A compact chassis meant to form an unencumbering, if not capacity-heavy, chest rig.  The general pouch at the front is coupled with an insert pocket at the back and external PALS webbing.  The insert pocket is filled with three inserts: two for a rifle magazine each, and one for a pistol magazine or a utility item, such as a multitool.  <variant:multicam>",
         "id": "multicam",
-
-        "name": { "str": "Condor Stowaway chassis" },
-        "description": "A compact chassis meant to form an unencumbering, if not capacity-heavy, chest rig.  The general pouch at the front is coupled with an insert pocket at the back and external PALS webbing.  The insert pocket is filled with three inserts: two for a rifle magazine each, and one for a pistol magazine or a utility item, such as a multitool.   <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
-        "name": { "str": "Condor Stowaway chassis" },
+        "name": {
+          "str": "Condor Stowaway chassis"
+        },
         "description": "A compact chassis meant to form an unencumbering, if not capacity-heavy, chest rig.  The general pouch at the front is coupled with an insert pocket at the back and external PALS webbing.  The insert pocket is filled with three inserts: two for a rifle magazine each, and one for a pistol magazine or a utility item, such as a multitool.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
-        "name": { "str": "Condor Stowaway chassis" },
+        "name": {
+          "str": "Condor Stowaway chassis"
+        },
         "description": "A compact chassis meant to form an unencumbering, if not capacity-heavy, chest rig.  The general pouch at the front is coupled with an insert pocket at the back and external PALS webbing.  The insert pocket is filled with three inserts: two for a rifle magazine each, and one for a pistol magazine or a utility item, such as a multitool.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
-        "name": { "str": "Condor Stowaway chassis" },
+        "name": {
+          "str": "Condor Stowaway chassis"
+        },
         "description": "A compact chassis meant to form an unencumbering, if not capacity-heavy, chest rig.  The general pouch at the front is coupled with an insert pocket at the back and external PALS webbing.  The insert pocket is filled with three inserts: two for a rifle magazine each, and one for a pistol magazine or a utility item, such as a multitool.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": [
-      "525 g (complete rig)",
-      "- 0.42 lbs = 190.51 g (X-harness)",
-      "+ 1 oz = 28.35 g × 2 = 56.7 g (2 × rifle mag insert)",
-      "+ 0.5 oz = 14.175 g (pistol mag/utility insert)",
-      "= 405.365 g"
-    ],
-    "weight": "405 g",
-    "//dimensions": {
-      "length": "11 in",
-      "width": "6 in",
-      "height": "2 in",
-      "raw": "2163.09 ml",
-      "trim": 0
-    },
-    "volume": "2163 ml",
-    "longest_side": "279 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "weight": "284 g 597 mg",
     "looks_like": "purse",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "material_thickness": 0.1,
     "repairs_like": "tacvest",
     "warmth": 4,
-
     "armor": [
       {
-        "encumbrance": [0, 1],
-
-        "//coverage": "20% of front upper torso coverage = 8%",
-        "coverage": 8,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"],
-
+        "encumbrance": [
+          0,
+          1
+        ],
+        "coverage": 10,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ],
         "volume_encumber_modifier": 0.2
       },
       {
-        "encumbrance": [1, 4],
-
-        "//coverage": "40% of front lower torso coverage = 16%",
-        "coverage": 16,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
+        "encumbrance": [
+          1,
+          4
+        ],
+        "coverage": 4,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ],
         "volume_encumber_modifier": 0.7
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "General pouch",
-
         "max_contains_weight": "5 kg",
-        "//dimensions": {
-          "length": "2 in",
-          "width": "10.75 in",
-          "height": "5.75 in",
-          "raw": "2025.85 ml",
-          "trim": 0.025
-        },
-        "max_contains_volume": "1975 ml",
-        "max_item_length": "273 mm",
-
+        "max_contains_volume": "1 L 975 ml",
+        "max_item_length": "27 cm 3 mm",
         "moves": 240
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Zippered flat pocket",
-
         "max_contains_weight": "300 g",
-        "//dimensions": {
-          "length": "0.2 in",
-          "width": "10.75 in",
-          "height": "5.75 in",
-          "raw": "202.58 ml",
-          "trim": 0.025
-        },
-        "max_contains_volume": "198 ml",
+        "max_contains_volume": "99 ml",
         "max_item_volume": "35 ml",
-        "max_item_length": "273 mm",
-
+        "max_item_length": "27 cm 3 mm",
         "moves": 310
       },
-
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "40-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Hard-retainer open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["tall", "hard_retainer"]
-        },
-
-        "volume_encumber_modifier": 1.15,
-        "ripoff": 11,
-        "moves": 60
-      },
-      {
-        "pocket_type": "CONTAINER",
-
-        "//uses": "40-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
-        "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 1.15,
-        "ripoff": 11,
-        "moves": 60
-      },
-
-      {
-        "pocket_type": "CONTAINER",
-
-        "//uses": "large pistol magazine capacity",
-
-        "description": "Pistol magazine pouch",
-
-        "holster": true,
-
-        "max_contains_weight": "1 kg",
-        "max_contains_volume": "155 ml",
-        "min_item_length": "57 mm",
-        "max_item_length": "211 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["hard_retainer"]
-        },
-
+        "max_contains_weight": "791 g",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "9 cm 1 mm",
+        "max_item_length": "20 cm 7 mm",
         "volume_encumber_modifier": 1.25,
         "ripoff": 9,
-        "moves": 70
+        "moves": 50
       },
-
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Side pouch hook-and-loop attachment point",
-
+        "description": "Hard-retainer open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "60 kg",
-        "max_contains_volume": "15 L",
-
-        "flag_restriction": ["SIDE_POUCH_VELCRO"],
-
+        "max_contains_weight": "791 g",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "9 cm 1 mm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 1.25,
+        "ripoff": 9,
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Hard-retainer open-top pistol magazine pouch",
+        "holster": true,
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "160 ml",
+        "min_item_length": "10 cm 2 mm",
+        "max_item_length": "21 cm 1 mm",
+        "volume_encumber_modifier": 1.25,
+        "ripoff": 9,
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Side pouch hook-and-loop attachment point",
+        "holster": true,
+        "max_contains_weight": "10 kg",
+        "max_contains_volume": "10 L",
+        "flag_restriction": [
+          "SIDE_POUCH_VELCRO"
+        ],
         "moves": 10
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch hook-and-loop attachment point",
-
         "holster": true,
-
-        "max_contains_weight": "60 kg",
-        "max_contains_volume": "15 L",
-
-        "flag_restriction": ["SIDE_POUCH_VELCRO"],
-
+        "max_contains_weight": "10 kg",
+        "max_contains_volume": "10 L",
+        "flag_restriction": [
+          "SIDE_POUCH_VELCRO"
+        ],
         "moves": 10
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Hanging pouch hook-and-loop attachment point",
-
         "holster": true,
-
         "max_contains_weight": "60 kg",
         "max_contains_volume": "15 L",
-
-        "flag_restriction": ["HANGING_POUCH_VELCRO"],
-
+        "flag_restriction": [
+          "HANGING_POUCH_VELCRO"
+        ],
         "moves": 10
       }
     ],
-
     "use_action": [
       {
         "type": "attach_molle",
@@ -1234,291 +925,185 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["CANT_WEAR", "QASM_ATTACH"],
-
-    "//price": [
-      "50 USD 85 cent (full rig) - 15 USD (harness)",
-      "as the harness is not sold separately, we can only guess at its price",
-      "we assume a fairly low price relative to the X-harness we model in the mod due to Condor being known for making lower-price products"
+    "price": "5 USD 95 cents",
+    "volume": "2 L 163 ml",
+    "color": "light_gray",
+    "flags": [
+      "CANT_WEAR",
+      "QASM_ATTACH"
     ],
-    "price": "35 USD 85 cent",
-    "price_postapoc": "1 USD"
+    "subtypes": [
+      "ARMOR"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   },
   {
-    "id": "placard_tasm_mk_ii",
-    "type": "ARMOR",
-
-    "//sources": [
-      "https://tasmaniantigerusa.com/product.php?id=25",
-      [
-        "https://www.tasmaniantiger.info/en/product/tt-chest-rig-mkii/",
-        "https://www.tacwrk.com/en/p/tasmanian-tiger-tt-chest-rig-mkii-irr-stone-grey-olive-48673",
-        "https://www.tacwrk.com/en/p/tasmanian-tiger-tt-chest-rig-mkii-multicam-64",
-        "variant reference"
-      ]
-    ],
-
-    "//notes": [
-      "this item does not allow the bib to be adjusted (tucked in or set up, the latter being the in-game configuration)",
-      "bib adjustment shouldn't matter too much anyway because the encumbrance effect would be almost non-existent by the game's current standards",
-      "it also doesn't presently allow for a ballistic plate to be inserted, partly for balance reasons (to be reviewed)",
-      "we are modelling the front pouches as if they are irremovable, which seems to be the case, with reviewers not saying a word about it",
-      [
-        "reference chart is explicit about this model having double-magazine pouches",
-        "https://tasmaniantigerusa.com/admin/uploads/pdfs/GEAR-REFERENCE%202021.pdf"
-      ]
-    ],
-
-    "//TODO": ["bib plate storage"],
-
+    "id": "placard/tasm/mk_ii",
+    "type": "ITEM",
     "name": {
       "str": "assault chest rig chassis"
     },
     "description": "A large, comfortable chest rig chassis with plenty of PALS webbing.  It has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as with two spacious side pouches and a bib that offers some extra webbing.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
-        "name": { "str": "Tasmanian Tiger Mk II chassis" },
-        "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
-        "id": "coyote",
-
-        "name": { "str": "Tasmanian Tiger Mk II chassis" },
+        "name": {
+          "str": "Tasmanian Tiger Mk II chassis"
+        },
         "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "coyote",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
-        "name": { "str": "Tasmanian Tiger Mk II chassis" },
+        "name": {
+          "str": "Tasmanian Tiger Mk II chassis"
+        },
+        "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:multicam>",
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Tasmanian Tiger Mk II chassis"
+        },
         "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "olive",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
-        "name": { "str": "Tasmanian Tiger Mk II chassis" },
-        "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "fde",
-
-        "name": { "str": "Tasmanian Tiger Mk II chassis" },
+        "name": {
+          "str": "Tasmanian Tiger Mk II chassis"
+        },
         "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:fde>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "fde",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
+        "name": {
+          "str": "Tasmanian Tiger Mk II chassis"
+        },
+        "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Tasmanian Tiger Mk II chassis"
+        },
+        "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  <variant:grey>",
         "id": "grey",
-
-        "name": { "str": "Tasmanian Tiger Mk II chassis" },
-        "description": "A large chassis with plenty of PALS webbing.  Much of the rig is padded on the inside, making wearing it more comfortable.  The rig has four rifle magazine pouches, each fitting up to two STANAG magazines, as well as two spacious side pouches and a bib that offers some extra storage and webbing.  This one is colored stone grey, with slight greenish tint.",
-        "expand_snippets": true,
-        "weight": 1
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": "39 oz = 1105.6 g (weight of the complete rig) - 152.373 g (weight of the H-harness) = 953.227 g",
-    "weight": "953 g",
-    "//dimensions": [
-      {
-        "description": "panel",
-
-        "length": "1.5 mm",
-        "width": "12.5 in",
-        "height": "9 in",
-        "raw": "108.87 ml",
-        "trim": 0,
-        "result": "108.87 ml",
-        "notes": [
-          "width is 8 cells of PALS webbing (8 × 1.5 in. = 12 in.) + 0.5 in. extra, from visual reference",
-          "height is 5 rows of PALS webbing (5 webbing rows + 4 spacers = 9 × 1 in. = 9 in.)",
-          "length (depth) is presumed thickness of all the material, with pouches collapsed when empty",
-          "trim assumes all the material evens out once the pouches are folded onto themselves"
-        ]
-      },
-      {
-        "description": "side pouch",
-        "quantity": 2,
-
-        "length": "1.5 mm",
-        "width": "5 in",
-        "height": "9.25 in",
-        "raw": "44.76 ml",
-        "trim": 0.15,
-        "result": "38.04 ml",
-        "notes": [
-          "dimensions acquired from MOLLE cell count",
-          "trim is for slanted pouch MOLLE area"
-        ]
-      },
-      {
-        "description": "bib",
-
-        "length": "1 mm",
-        "width": "9.25 in",
-        "height": "7 in",
-        "raw": "41.77 ml",
-        "trim": 0.45,
-        "result": "22.97 ml",
-        "notes": [
-          "width is 6 cells of PALS webbing (6 × 1.5 in. = 9 in.) + 0.25 in. extra, from visual reference",
-          "height is 7 rows of PALS webbing (3 webbing rows + 4 spacers = 7 × 1 in. = 7 in.)",
-          "length (depth) is presumed thickness of all the material, with pouches collapsed when empty",
-          "trim assumes all the material evens out once the pouches are folded onto themselves"
-        ]
-      }
-    ],
-    "volume": "208 ml",
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "weight": "819 g 868 mg",
     "looks_like": "vest",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "material_thickness": 1.5,
     "repairs_like": "tacvest",
     "warmth": 8,
-
     "armor": [
       {
-        "encumbrance": [1, 10],
-
-        "//coverage": [
-          "22% from front panel",
-          "6% from bib",
-          "2% × 2 from shoulders straps",
-          "1% × 2 from back straps"
+        "encumbrance": [
+          1,
+          10
         ],
-        "coverage": 34,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
+        "coverage": 13,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ]
       },
       {
-        "encumbrance": [1, 4],
-
-        "//coverage": [
-          "4% from the front rig panel",
-          "5% × 2 from side pouches covering the same area as SAPI side plates",
-          "1% from back belt"
+        "encumbrance": [
+          1,
+          4
         ],
-        "coverage": 15,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
+        "coverage": 7,
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ]
       }
     ],
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch",
-
         "max_contains_weight": "6 kg",
-        "//dimensions": {
-          "length": "1.5 in",
-          "width": "5 in",
-          "height": "9.25 in",
-          "raw": "1136.85 ml",
-          "trim": 0.15,
-          "notes": [
-            "dimensions acquired from MOLLE cell count",
-            "trim is for slanted pouch MOLLE area"
-          ]
-        },
         "max_contains_volume": "966 ml",
         "max_item_volume": "700 ml",
-        "//max_item_length": "9 in., so that the items inside could be comfortably taken out",
-        "max_item_length": "229 mm",
-
+        "max_item_length": "22 cm 9 mm",
         "volume_encumber_modifier": 0.65,
         "moves": 140
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Side pouch",
-
         "max_contains_weight": "6 kg",
         "max_contains_volume": "966 ml",
         "max_item_volume": "700 ml",
-        "max_item_length": "229 mm",
-
+        "max_item_length": "22 cm 9 mm",
         "volume_encumber_modifier": 0.65,
         "moves": 140
       },
-
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "double 30-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Flap-closure rifle magazine pouch",
+        "max_contains_weight": "3 kg 164 g",
         "max_contains_volume": "610 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.7,
-
-        "moves": 100
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 150
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Flap-closure rifle magazine pouch",
+        "max_contains_weight": "3 kg 164 g",
         "max_contains_volume": "610 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.7,
-
-        "moves": 100
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 150
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Flap-closure rifle magazine pouch",
+        "max_contains_weight": "3 kg 164 g",
         "max_contains_volume": "610 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.7,
-
-        "moves": 100
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 150
       },
       {
         "pocket_type": "CONTAINER",
-
-        "description": "Rifle magazine pouch",
-
-        "max_contains_weight": "4 kg",
+        "description": "Flap-closure rifle magazine pouch",
+        "max_contains_weight": "3 kg 164 g",
         "max_contains_volume": "610 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "volume_encumber_modifier": 0.7,
-
-        "moves": 100
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
+        "volume_encumber_modifier": 2,
+        "ripoff": 20,
+        "moves": 150
       }
     ],
-
     "use_action": [
       {
         "type": "attach_molle",
@@ -1528,11 +1113,17 @@
         "type": "detach_molle"
       }
     ],
-
-    "flags": ["CANT_WEAR", "STURDY", "QASM_ATTACH"],
-
-    "//price": "219 USD (price of the complete rig) - 48 USD (price of the H-harness)",
-    "price": "171 USD",
-    "price_postapoc": "2 USD"
+    "price": "169 USD",
+    "volume": "172 ml",
+    "color": "light_gray",
+    "flags": [
+      "CANT_WEAR",
+      "QASM_ATTACH"
+    ],
+    "subtypes": [
+      "ARMOR"
+    ],
+    "symbol": "[",
+    "price_postapoc": "4 USD 50 cents"
   }
 ]

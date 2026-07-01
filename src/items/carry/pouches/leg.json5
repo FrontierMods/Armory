@@ -1,0 +1,403 @@
+[
+  {
+    id: "pouch/leg/gas_mask/hsgi",
+    inherit: ["@pouch/leg"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://www.highspeedgear.com/12gm01
+
+        https://kusemonotactical.sakura.ne.jp/hq/sample-page/review/equipments/hsgi-gas-mask-pouch-v2/
+        - coverage reference
+    */
+
+    name: {
+      str: "gas mask leg pouch",
+      str_pl: "gas mask leg pouches",
+    },
+    description: "A large nylon pouch worn on either leg.  It's intended to store one's gas mask, but could serve as a dump pouch.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 2],
+          ["multicam_black", 2],
+          ["black", 2],
+          ["coyote", 2],
+          "olive",
+        ],
+
+        name: {
+          str: "HSGI gas mask leg pouch",
+          str_pl: "HSGI gas mask leg pouches",
+        },
+        description: "A large nylon pouch.  Designed to take in a variety of gas masks, in a pinch it can be used as an impromptu dump pouch.  This model is meant to be worn on either leg, attached to the belt.",
+      },
+    ],
+
+    weight: "1 lb",
+    dimensions: {
+      type: "rectangle",
+
+      length: "10 in",
+      width: "4 mm",
+      height: "12 in",
+      trim: 0.3,
+      soft: true,
+    },
+
+    material: ["nylon", "plastic"],
+    looks_like: "holster",
+    repairs_like: "legrig",
+
+    sided: true,
+    armor: [
+      {
+        encumbrance: 2,
+
+        // 60% of the narrow side of the leg
+        // → 60% * 40% (narrow side coverage share)
+        coverage: 24,
+        covers: ["leg_l", "leg_r"],
+        specifically_covers: ["leg_upper_l", "leg_upper_r"],
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Gas mask pouch",
+
+        max_contains_weight: "4 kg",
+        max_contains_volume: {
+          math: [
+            {
+              ref: "$",
+              path: ["dimensions", "length"],
+              raw: true,
+            },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "height"] , raw: true},
+            },
+            {
+              op: "multiply",
+              value: "4 in",
+            },
+            { op: "multiply", value: 0.95 },
+          ],
+        },
+        // * in 0.H, the gask mask has no longest-side value
+        max_item_length: { ref: "$", path: ["dimensions", "height"] , raw: true},
+
+        moves: 170,
+      },
+    ],
+
+    price: "106 USD",
+  },
+  {
+    id: "pouch/leg/magazine/condor/556",
+    inherit: ["@pouch/leg", "@holster/magazine"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://condoroutdoor.com/products/drop-leg-m4-mag-pouch
+
+        https://www.amazon.com/Condor-Elite-MA65-800-Pouch-Scorpion/dp/B086XC2LF7
+        - dimensions
+        - weight
+    */
+
+    name: {
+      str: "drop leg magazine rig",
+    },
+    description: "A pair of nylon pouches with straps to attach to the leg with.  Each holds up to two rifle magazines.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["coyote", "black", "olive"],
+
+        name: {
+          str: "Condor drop leg magazine rig",
+        },
+        description: "A pair of nylon pouches for STANAG magazines, with straps to attach to the leg with.  Each pouch holds up to two 30-round STANAG magazines, or those of similar sizes.",
+      },
+    ],
+
+    weight: "1.1 lbs",
+    dimensions: {
+      type: "rectangle",
+
+      length: "10 in",
+      width: "7.5 in",
+      height: "6 mm",
+      soft: true,
+    },
+    // length of buckle
+    longest_side: "1 in",
+
+    material: ["nylon"],
+
+    looks_like: "legrig",
+    repairs_like: "legrig",
+
+    sided: true,
+    armor: [
+      {
+        encumbrance: 1,
+
+        coverage: 18,
+        covers: ["leg_l", "leg_r"],
+        specifically_covers: ["leg_upper_l", "leg_upper_r"],
+      },
+    ],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Buckle-closure rifle magazine pouch" },
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Buckle-closure rifle magazine pouch" },
+      },
+    ],
+
+    price: "38 USD 95 cents",
+  },
+  {
+    id: "pouch/leg/tacmed",
+    inherit: ["@pouch/leg", "@pouch/medium"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://tacmedsolutions.com/products/tacmed-drop-leg-pouch
+
+        https://www.rescue-essentials.com/tac-med-solutions-drop-leg-pouch-black/
+        - weight
+        - price
+    */
+
+    /*
+      NOTES
+        - currently modelled as a single large pouch, irrespective of the pocket division
+    */
+
+    name: {
+      str: "drop leg pouch",
+      str_pl: "drop leg pouches",
+    },
+    description: "A nylon pouch with straps to hold onto either leg.  Can also be strapped to webbing.  Provides extra storage.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 2], ["coyote", 2], "black", "ranger"],
+
+        name: {
+          str: "TacMed drop leg pouch",
+          str_pl: "TacMed drop leg pouches",
+        },
+        description: "A large nylon pouch, with straps to wear on the leg with.  Intended to carry medical devices and emergency medicine, it can easily be used for extra storage.  Can be strapped onto PALS webbing, and provides features external PALS webbing of its own.",
+      },
+    ],
+
+    weight: "14.3 oz",
+    dimensions: {
+      type: "rectangle",
+
+      length: "7.5 in",
+      width: "6.5 in",
+      height: "8 mm",
+      trim: 0.05,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    looks_like: "legrig",
+    repairs_like: "legrig",
+
+    sided: true,
+    armor: [
+      {
+        encumbrance: 1,
+
+        coverage: 15,
+        covers: ["leg_l", "leg_r"],
+        specifically_covers: ["leg_upper_l", "leg_upper_r"],
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Drop leg pouch",
+
+        max_contains_weight: "5 kg",
+
+        max_contains_volume: {
+          math: [
+            {
+              ref: "$",
+              path: ["dimensions", "width"],
+              raw: true,
+            },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "length"] , raw: true},
+            },
+            // 2 in. is the stated full depth of the pouch
+            { op: "multiply", value: "2 in" },
+          ],
+        },
+        max_item_length: {
+          math: [
+            {
+              ref: "$",
+              path: ["dimensions", "length"],
+              raw: true,
+            },
+            { op: "multiply", value: 0.975 },
+          ],
+        },
+
+        moves: 210,
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 2,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: "89 USD 92 cents",
+  },
+  {
+    id: "pouch/leg/fox",
+    inherit: ["@pouch/leg"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://foxoutdoor.com/products/tactical-drop-leg-dump-pouch
+
+        https://www.amazon.com/Fox-Outdoor-Products-Tactical-Pouch/dp/B01DJWM92W
+        - weight
+    */
+
+    /*
+      NOTES
+        - description says it can also be worn on the shoulder with a removable strap
+    */
+
+    /*
+      TODO
+        - Velcro patch surface
+    */
+
+    name: {
+      str: "large drop leg pouch",
+      str_pl: "large drop leg pouches",
+    },
+    description: "A large nylon pouch, with strap to hold onto either leg.  Provides a lot of extra storage in exchange for encumbrance.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 2], "coyote", "black", "ranger"],
+
+        name: {
+          str: "Fox Outdoor drop leg pouch",
+          str_pl: "Fox Outdoor drop leg pouches",
+        },
+        description: "A large nylon pouch, with straps to wear on the leg with.  The cord lock mechanism can quickly secure a large inner compartment.",
+      },
+    ],
+
+    weight: "1.1 lb",
+    dimensions: {
+      type: "rectangle",
+
+      length: "10 in",
+      width: "8.5 in",
+      height: "6 mm",
+      trim: 0.05,
+      soft: true,
+    },
+
+    material: ["nylon"],
+
+    looks_like: "legrig",
+    repairs_like: "legrig",
+
+    sided: true,
+    armor: [
+      {
+        encumbrance: 1,
+
+        coverage: 17,
+        covers: ["leg_l", "leg_r"],
+        specifically_covers: ["leg_upper_l", "leg_upper_r"],
+      },
+    ],
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Drop leg pouch",
+
+        max_contains_weight: "10 kg",
+        max_contains_volume: {
+          math: [
+            {
+              ref: "$",
+              path: ["dimensions", "width"],
+              raw: true,
+            },
+            {
+              op: "multiply",
+              value: { ref: "$", path: ["dimensions", "length"] , raw: true},
+            },
+            // 5 in. is the stated full depth of the pouch
+            { op: "multiply", value: "5 in" },
+          ],
+        },
+        max_item_length: {
+          math: [
+            {
+              ref: "$",
+              path: ["dimensions", "length"],
+              raw: true,
+            },
+            { op: "multiply", value: 0.975 },
+          ],
+        },
+
+        moves: 210,
+      },
+    ],
+
+    price: "44 USD 95 cents",
+  },
+]

@@ -1,0 +1,356 @@
+[
+  // we assume the length of all belts to be 38 in. (~size M)
+
+  {
+    id: "belt/webbing/haley/d3",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://haleystrategic.com/d3-belt-multicam
+        - price
+        - weight
+        - height
+        - webbing column count
+    */
+
+    // we model this two-piece belt as a single item right now
+
+    name: {
+      str: "webbing belt",
+    },
+    description: "An aftermarket nylon waist belt with webbing for MOLLE pouches throughout its length.  It is tough and will withstand harsh combat conditions well.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["multicam_black", 2],
+          "multicam_arid",
+          ["black", 4],
+          ["coyote", 4],
+          "ranger",
+          "grey",
+        ],
+
+        name: { str: "Haley Strategic D3 combat belt" },
+        description: "A nylon waist belt combining two parts: an inner belt with hook-and-loop surface throughout its length, and an outer belt that attaches to the hook-and-loop surface.  PALS webbing on the outer belt allows attaching MOLLE pouches, and the belt itself can support tactical belt accessories.  Additionally, this belt can support up to two large or leg-strapped pieces of gear attached to it.  It is designed to be worn as support for a pair of pants, but can be worn separately.",
+      },
+    ],
+
+    weight: {
+      math: [
+        "11.6 oz" /* outer belt */,
+        { op: "add", value: "4.1 oz" /* inner belt */ },
+      ],
+    },
+    dimensions: {
+      type: "rectangle",
+
+      length: "38 in",
+      width: "2 in",
+      height: "3 mm",
+
+      trim: 0.05,
+      soft: true,
+    },
+
+    symbol: "[",
+    color: "yellow",
+
+    material: ["nylon", "steel"],
+    material_thickness: 1.5,
+    looks_like: "leather_belt",
+    repairs_like: "tool_belt",
+
+    armor: [
+      {
+        encumbrance: 2,
+
+        volume_encumber_modifier: 0.75,
+
+        coverage: 100,
+        covers: ["torso"],
+        specifically_covers: ["torso_waist"],
+      },
+    ],
+    max_worn: 1,
+
+    /* pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Slot for hook-and-loop hanging gear",
+
+        holster: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        // 12 in.
+        max_item_length: "305 mm",
+
+        flag_restriction: ["VELCRO_ATTACH_HANG_DOWN"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Slot for hook-and-loop hanging gear",
+
+        holster: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        // 12 in.
+        max_item_length: "305 mm",
+
+        flag_restriction: ["VELCRO_ATTACH_HANG_DOWN"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Slot for hook-and-loop hanging gear",
+
+        holster: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        // 12 in.
+        max_item_length: "305 mm",
+
+        flag_restriction: ["VELCRO_ATTACH_HANG_DOWN"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Slot for hook-and-loop hanging gear",
+
+        holster: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        // 12 in.
+        max_item_length: "305 mm",
+
+        flag_restriction: ["VELCRO_ATTACH_HANG_DOWN"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Slot for hook-and-loop hanging gear",
+
+        holster: true,
+
+        max_contains_weight: "5 kg",
+        max_contains_volume: "2 L",
+        // 12 in.
+        max_item_length: "305 mm",
+
+        flag_restriction: ["VELCRO_ATTACH_HANG_DOWN"],
+      },
+    ], */
+    pocket_data: [
+      {
+        holster: true,
+        transparent: true,
+
+        max_contains_weight: "2500 g",
+        max_contains_volume: "2000 ml",
+        max_item_length: "70 cm",
+
+        flag_restriction: ["BELT_CLIP"],
+
+        moves: 90,
+      },
+      {
+        holster: true,
+        transparent: true,
+
+        max_contains_weight: "2500 g",
+        max_contains_volume: "2000 ml",
+        max_item_length: "70 cm",
+
+        flag_restriction: ["BELT_CLIP"],
+
+        moves: 90,
+      },
+
+      {
+        holster: true,
+        transparent: true,
+
+        max_contains_weight: "2500 g",
+        max_contains_volume: "2000 ml",
+        max_item_length: "70 cm",
+
+        flag_restriction: ["BELT_CLIP"],
+
+        moves: 160,
+      },
+      {
+        holster: true,
+        transparent: true,
+
+        max_contains_weight: "2500 g",
+        max_contains_volume: "2000 ml",
+        max_item_length: "70 cm",
+
+        flag_restriction: ["BELT_CLIP"],
+
+        moves: 160,
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 22,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    flags: ["BELTED", "STURDY"],
+
+    price: "190 USD",
+    price_postapoc: "2 USD",
+  },
+  {
+    id: "belt/webbing/blackhawk/foundation",
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://www.blackhawk.com/tactical-nylon/gun-belts/foundation-series-black-belt-with-cobra/P1628178.html
+
+        https://www.amazon.de/-/en/BLACKHAWK-Foundation-Lightweight-Durable-Gunbelt/dp/B000MF49JG
+        - weight
+    */
+
+    name: {
+      str: "police duty belt",
+    },
+    description: "A low-profile belt with webbing for MOLLE pouches, commonly worn by police officers while on duty.  Quite comfortable to wear even when fully-loaded.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black"],
+
+        name: { str: "Blackhawk Foundation duty belt" },
+        description: 'A low-profile, sturdy black belt with PALS webbing.  A "duty belt" in the sense of being worn by police officers while on duty, it features plenty of space for pouches to hold items such a duty would imply.  It is surprisingly comfortable even with a large amount of pouches attached.',
+      },
+    ],
+
+    weight: "272 g",
+    dimensions: {
+      type: "rectangle",
+
+      length: "38 in",
+      width: "2 in",
+      height: "1.5 mm",
+
+      trim: 0.01,
+      soft: true,
+    },
+
+    material: [
+      "nylon",
+      "aluminum" /* buckles; reference: https://austrialpin.net/product-information/cobra-quick-releases/ */,
+    ],
+    warmth: 2,
+
+    symbol: "[",
+    color: "brown",
+    looks_like: "fireman_belt",
+    repairs_like: "tool_belt",
+
+    armor: [
+      {
+        material: [
+          {
+            type: "nylon",
+            covered_by_mat: 100,
+            thickness: 1.5,
+          },
+          {
+            type: "aluminum",
+            covered_by_mat: 3,
+            thickness: 2,
+          },
+        ],
+
+        encumbrance: 1,
+
+        volume_encumber_modifier: 0.75,
+
+        coverage: 100,
+        covers: ["torso"],
+        specifically_covers: ["torso_waist"],
+      },
+    ],
+    max_worn: 1,
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Tucked under the belt",
+
+        holster: true,
+
+        volume_encumber_modifier: 0.5,
+
+        max_contains_weight: "8 kg",
+        max_contains_volume: "8500 ml",
+        max_item_length: "26 in",
+
+        moves: 130,
+        extra_encumbrance: 6,
+        ripoff: 3,
+
+        //flag_restriction: ["TUCKED_IN"],
+      },
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Tucked under the belt",
+
+        holster: true,
+
+        volume_encumber_modifier: 0.5,
+
+        max_contains_weight: "8 kg",
+        max_contains_volume: "8500 ml",
+        max_item_length: "26 in",
+
+        moves: 130,
+        extra_encumbrance: 6,
+        ripoff: 3,
+
+        //flag_restriction: ["TUCKED_IN"],
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 23,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    flags: [
+      /* no OVERSIZE: while this belt is somewhat-accomodating, it's unlikely to be comfortable for someone significantly larger than even a large regular human */
+      "BELTED",
+    ],
+
+    price: "125 USD",
+    price_postapoc: "250 cents",
+  },
+]

@@ -18,7 +18,7 @@ _[explainer](https://github.com/FrontierMods/Core/blob/main/documentation/DESIGN
 
 _Armory_ is currently **in development**.
 
-It aims to support the upcoming **0.H**. The mod will release after 0.H's official release.
+It supports the latest stable release (**0.I**).
 
 # Features
 
@@ -32,7 +32,7 @@ See [`ROADMAP.md`](./documentation/ROADMAP.md) to find out what's coming for Arm
 
 See [`HOW_YOU_CAN_HELP.md`](./documentation/HOW_YOU_CAN_HELP.md) to find out how you can help the mod grow.
 
-Additionally, consider donating. [`DONATE.md`](https://github.com/FrontierMods/Core/blob/0.H/documentation/DONATE.md) in Core explains how this helps, and what benefits you can get by donating.
+Additionally, consider donating. [`DONATE.md`](https://github.com/FrontierMods/Core/blob/main/documentation/DONATE.md) in _Core_ explains how this helps, and what benefits you can get by donating.
 
 # License
 

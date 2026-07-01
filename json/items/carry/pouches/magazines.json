@@ -1,1295 +1,909 @@
 [
   {
-    "id": "pouch_magazine_556_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/collections/magazine-pouches/products/condor-open-top-m4-m16-mag-pouch",
-      [
-        "https://www.specshop.pl/Open-Top-Single-M4-M16-Mag-Pouch-Condor-MA18-498",
-        "weight"
-      ]
-    ],
-
-    "//notes": [
-      "this pouch is 'tall', and thus able to reliably hold extended-capacity box magazines"
-    ],
-
+    "id": "pouch/magazine/condor/556",
+    "type": "ITEM",
     "name": {
       "str": "open-top rifle magazine pouch",
       "str_pl": "open-top rifle magazine pouches"
     },
     "description": "A nylon pouch for a single rifle magazine.  Will fit many, though not all, rifle magazines.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor STANAG magazine pouch",
           "str_pl": "Condor STANAG magazine pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor STANAG magazine pouch",
           "str_pl": "Condor STANAG magazine pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor STANAG magazine pouch",
           "str_pl": "Condor STANAG magazine pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "Condor STANAG magazine pouch",
           "str_pl": "Condor STANAG magazine pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine.  When stored, 30-round standard magazines poke out of the top, where it's secured with an elastic band.  This pouch design makes it that much faster to use than a closed-top design with a flap.  Has PALS webbing on the front, fit for the same pouch or something smaller.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "87 g",
-    "//dimensions": {
-      "length": "6.00 in",
-      "width": "3.50 in",
-      "height": "0.75 in",
-      "raw": "258 ml",
-      "trim": 0
-    },
-    "volume": "258 ml",
-    "longest_side": "152 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
     "looks_like": "ammo_satchel",
-
-    "material": ["nylon"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": "40-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Tall open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "//min_item_length": "length of STANAG 20-round magazine",
-        "min_item_length": "130 mm",
-        "//max_item_length": "length of STANAG 40-round magazine w/ ranger plate",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["tall", "soft_retainer"]
-        },
-
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
         "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       }
     ],
-
+    "price": "14 USD",
+    "volume": "58 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster",
-
-      "holster_prompt": "Stash ammo",
+      "holster_prompt": "Stash magazines",
       "holster_msg": "You stash your %s."
-    },
-
-    "//flags": ["replaced BELTED with CANT_WEAR"],
-    "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
-
-    "price": "14 USD",
-    "//price_postapoc": "1 USD"
+    }
   },
   {
-    "id": "pouch_magazine_556_pistol_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/collections/magazine-pouches/products/condor-single-kangaroo-mag-pouch-gen-ii",
-      [
-        "https://shop.afullmetaljacket.com/product/condor-single-kangaroo-mag-pouch-gen-ii-2/",
-        "weight"
-      ]
-    ],
-
+    "id": "pouch/magazine/condor/kangaroo",
+    "type": "ITEM",
     "name": {
       "str": "kangaroo magazine pouch",
       "str_pl": "kangaroo magazine pouches"
     },
     "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  Not as quick to use as two separate pouches, but takes up fewer slots on the webbing.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor kangaroo pouch",
           "str_pl": "Condor kangaroo pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor kangaroo pouch",
           "str_pl": "Condor kangaroo pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor kangaroo pouch",
           "str_pl": "Condor kangaroo pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "Condor kangaroo pouch",
           "str_pl": "Condor kangaroo pouches"
         },
         "description": "A nylon pouch fit for a single STANAG magazine and a single pistol magazine.  When stored, standard-length magazines poke out of the top.  Rifle magazines are secured with an elastic band, while pistol magazines are covered with a flap.  This design trades some quickness of use for covenience, since it allows you to carry magazines for both your rifle and your backup pistol in less space than two separate pouches would take.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "120 g",
-    "//dimensions": {
-      "length": "4.75 in",
-      "width": "3.00 in",
-      "height": "1.00 in",
-      "raw": "234 ml",
-      "trim": 0
-    },
-    "volume": "234 ml",
-    "longest_side": "121 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
     "looks_like": "ragpouch",
-
-    "material": ["nylon"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "40-round STANAG magazine capacity",
-
-        "description": "Rifle magazine pouch",
-
+        "description": "Open-top rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["soft_retainer"]
-        },
-
+        "max_contains_weight": "791 g",
+        "max_contains_volume": "305 ml",
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
         "volume_encumber_modifier": 1.45,
         "ripoff": 7,
         "moves": 80
       },
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": "medium pistol magazine capacity",
-
         "description": "Pistol magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "500 g",
-        "//max_contains_volume": "just larger than the 20-round FN Five-seveN 5.7mm NATO magazine",
-        "max_contains_volume": "120 ml",
-        "//min_item_length": "shorter than length of pouch (3.65 in. ≈ 92 mm)",
-        "min_item_length": "80 mm",
-        "//max_item_length": [
-          "5.6 in., slightly longer than the maximum double-stack magazine size permitted with USPSA",
-          "https://uspsa.org/rules"
-        ],
-        "max_item_length": "142 mm",
-
-        "//magazine_pouch": {
-          "type": "II"
-        },
-
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "131 ml",
+        "min_item_length": "9 cm 3 mm",
+        "max_item_length": "14 cm 2 mm",
         "volume_encumber_modifier": 2,
         "ripoff": 20,
         "moves": 130
       }
     ],
-
+    "price": "17 USD",
+    "volume": "74 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_LARGE"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster",
-
-      "holster_prompt": "Stash ammo",
+      "holster_prompt": "Stash magazines",
       "holster_msg": "You stash your %s."
-    },
-
-    "//flags": [
-      "replaced PALS_MEDIUM with PALS_SMALL: aligns with other single-rifle-magazine pouches",
-      "replaced BELTED with CANT_WEAR"
-    ],
-    "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
-
-    "price": "17 USD",
-    "price_postapoc": "1 USD"
+    }
   },
   {
-    "id": "pouch_shot_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/collections/utility-pouches/products/condor-shotgun-ammo-pouch",
-      [
-        "https://www.amazon.com.be/-/en/Condor-Outdoor-SHOTGUN-POUCH-MA12-002/dp/B0082CWE1Q",
-        "weight"
-      ]
-    ],
-
-    "//notes": [
-      "it appears as though the shell holder is not inherent to the pouch or is removable",
-      "photos of the pouch show a 5.56mm insert inside the pouch",
-      "we model the pouch as if the shell holder is inherent and the listed ammo are compatible with it in some fashion"
-    ],
-
+    "id": "pouch/shot/condor",
+    "type": "ITEM",
     "name": {
       "str": "shot shell pouch",
       "str_pl": "shot shell pouches"
     },
     "description": "A long nylon pouch, intended to hold up to 12 shotgun shells.  The flap keeps the shells shielded from the elements.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor shotgun ammo pouch",
           "str_pl": "Condor shotgun ammo pouches"
         },
         "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor shotgun ammo pouch",
           "str_pl": "Condor shotgun ammo pouches"
         },
         "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor shotgun ammo pouch",
           "str_pl": "Condor shotgun ammo pouches"
         },
         "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "Condor shotgun ammo pouch",
           "str_pl": "Condor shotgun ammo pouches"
         },
         "description": "A long nylon pouch, intended to hold up to 12 shotgun shells, or ammunition of similar calibers.  The flap keeps the shells shielded from the elements.  There is a strip of hook-and-loop surface, for sticking morale patches onto.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "136 g",
-    "//dimensions": {
-      "length": "1.75 in",
-      "width": "7.25 in",
-      "height": "3.5 in",
-      "raw": "728 ml",
-      "trim": 0.075
-    },
-    "volume": "673 ml",
-    "longest_side": "184 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "description": "Shot shell pouch",
-
         "ammo_restriction": {
           "410shot": 12,
           "shot": 12,
           "20x66mm": 12,
           "signal_flare": 12
         },
-
         "moves": 120
       },
-
       {
         "pocket_type": "CONTAINER",
-
         "description": "Hook-and-loop surface",
-
         "max_contains_weight": "200 g",
-        "//dimensions": {
-          "length": "5 mm",
-          "width": "6.5 in",
-          "height": "2 in",
-          "raw": "42 ml",
-          "trim": 0,
-          "notes": [
-            "length is average height of patch, for pseudo-area calculations"
-          ]
-        },
         "max_contains_volume": "42 ml",
-
-        "flag_restriction": ["VELCRO_ATTACH"]
+        "flag_restriction": [
+          "VELCRO_ATTACH"
+        ]
       }
     ],
-
-    "//flags": ["replaced BELTED and OVERSIZE with CANT_WEAR"],
-    "flags": ["WATER_FRIENDLY", "PALS_MEDIUM", "CANT_WEAR"],
-
-    "price": "15 USD",
-    "//price_postapoc": "1 USD"
+    "price": "21 USD 95 cents",
+    "volume": "673 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_MEDIUM"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash ammo",
+      "holster_msg": "You stash your %s."
+    }
   },
   {
-    "id": "pouch_triple_stacker_condor",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://condoroutdoor.com/collections/magazine-pouches/products/condor-triple-stacker-m4-mag-pouch-multicam",
-      [
-        "https://www.military1st.ca/ma44-001-condor-triple-stacker-m4-m16-mag-pouch-olive-drab.html",
-        "weight"
-      ],
-      [
-        "https://condoroutdoor.com/products/condor-triple-m4-mag-pouch-stacker",
-        "variant reference"
-      ]
-    ],
-
+    "id": "pouch/magazine/condor/stacker/triple",
+    "type": "ITEM",
     "name": {
       "str": "triple stacker pouch",
       "str_pl": "triple stacker pouches"
     },
     "description": "A set of six rifle-magazine pouches in a single pouch.  Named so because it has two rows of pouches stacked in front of the other.  The front row is quicker to use, but doesn't hold larger magazines.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Condor Triple Stacker pouch",
           "str_pl": "Condor Triple Stacker pouches"
         },
         "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Condor Triple Stacker pouch",
           "str_pl": "Condor Triple Stacker pouches"
         },
         "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Condor Triple Stacker pouch",
           "str_pl": "Condor Triple Stacker pouches"
         },
         "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "olive",
-
         "name": {
           "str": "Condor Triple Stacker pouch",
           "str_pl": "Condor Triple Stacker pouches"
         },
         "description": "A set of six sewn-together STANAG magazine pouches.  The front row is noticably shorter, so while these pouches are quicker to draw from, they don't allow larger-than-standard magazines in.  Each front pouch has its own small PALS webbing.  <variant:olive>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "olive",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "255 g",
-    "//dimensions": {
-      "length": "2 in",
-      "width": "9 in",
-      "height": "5.75 in",
-      "raw": "1696 ml",
-      "trim": 0.2
-    },
-    "volume": "1357 ml",
-    "longest_side": "229 mm",
-
-    "symbol": "[",
-    "color": "light_gray",
-
-    "material": ["nylon"],
+    "material": [
+      "nylon"
+    ],
     "looks_like": "holster",
     "repairs_like": "legrig",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "40-round STANAG magazine capacity",
-
         "description": "Inner rifle magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "//max_contains_volume": "STANAG 40-round magazine w/ ranger plate",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "//min_item_length": "length of STANAG 20-round magazine",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["tall", "soft_retainer"]
-        },
-
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
         "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Inner rifle magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
         "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Inner rifle magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "837 g",
         "max_contains_volume": "385 ml",
-        "min_item_length": "130 mm",
-        "max_item_length": "261 mm",
-
+        "min_item_length": "13 cm",
+        "max_item_length": "26 cm 1 mm",
         "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       },
-
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": "30-round STANAG magazine capacity",
-
         "description": "Outer rifle magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "//max_contains_volume": "STANAG 30-round magazine w/ ranger plate",
+        "max_contains_weight": "791 g",
         "max_contains_volume": "305 ml",
-        "//min_item_length": "length of STANAG 10-round magazine w/ ranger plate",
-        "min_item_length": "106 mm",
-        "//max_item_length": "length of STANAG 40-round magazine w/ ranger plate",
-        "max_item_length": "207 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["soft_retainer"]
-        },
-
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
         "volume_encumber_modifier": 1.45,
         "ripoff": 7,
         "moves": 80
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Outer rifle magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "791 g",
         "max_contains_volume": "305 ml",
-        "min_item_length": "106 mm",
-        "max_item_length": "207 mm",
-
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
         "volume_encumber_modifier": 1.45,
         "ripoff": 7,
         "moves": 80
       },
       {
         "pocket_type": "CONTAINER",
-
         "description": "Outer rifle magazine pouch",
-
         "holster": true,
-
-        "max_contains_weight": "2 kg",
+        "max_contains_weight": "791 g",
         "max_contains_volume": "305 ml",
-        "min_item_length": "106 mm",
-        "max_item_length": "207 mm",
-
+        "min_item_length": "13 cm",
+        "max_item_length": "20 cm 7 mm",
         "volume_encumber_modifier": 1.45,
         "ripoff": 7,
         "moves": 80
       }
     ],
-
+    "price": "42 USD 95 cents",
+    "volume": "134 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_LARGE"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster",
-
-      "holster_prompt": "Stash ammo",
+      "holster_prompt": "Stash magazines",
       "holster_msg": "You stash your %s."
-    },
-
-    "//flags": [
-      "replaced BELTED and OVERSIZE with CANT_WEAR",
-      "replaced PALS_SMALL with PALS_LARGE: takes up three slots",
-      "added WATER_FRIENDLY"
-    ],
-    "flags": ["CANT_WEAR", "WATER_FRIENDLY", "PALS_LARGE"],
-
-    "price": "37 USD",
-    "//price_postapoc": "2 USD"
+    }
   },
   {
-    "id": "pouch_magazine_pistol_haley",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": ["https://haleystrategic.com/single-pistol-mag-pouch"],
-
-    "//notes": [
-      "the pouch is shown to be able to comfortably hold a 30-round MP5 magazine, but anything longer would likely sway too much to sit comfortably"
-    ],
-
+    "id": "pouch/magazine/haley/pistol",
+    "type": "ITEM",
     "name": {
       "str": "pistol magazine pouch",
       "str_pl": "pistol magazine pouches"
     },
     "description": "A thin nylon pouch for holding a single pistol magazine.  Being of open-top design, it's quicker to operate than those with flaps.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Haley Strategic pistol mag pouch",
           "str_pl": "Haley Strategic pistol mag pouches"
         },
         "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "multicam_black",
-
-        "name": {
-          "str": "Haley Strategic pistol mag pouch",
-          "str_pl": "Haley Strategic pistol mag pouches"
-        },
-        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:multicam_black>",
-        "expand_snippets": true,
-        "weight": 1
-      },
-      {
-        "id": "black",
-
-        "name": {
-          "str": "Haley Strategic pistol mag pouch",
-          "str_pl": "Haley Strategic pistol mag pouches"
-        },
-        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
-      },
-      {
-        "id": "coyote",
-
         "name": {
           "str": "Haley Strategic pistol mag pouch",
           "str_pl": "Haley Strategic pistol mag pouches"
         },
         "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:black>",
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Haley Strategic pistol mag pouch",
+          "str_pl": "Haley Strategic pistol mag pouches"
+        },
+        "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
         "name": {
           "str": "Haley Strategic pistol mag pouch",
           "str_pl": "Haley Strategic pistol mag pouches"
         },
         "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "grey",
-
         "name": {
           "str": "Haley Strategic pistol mag pouch",
           "str_pl": "Haley Strategic pistol mag pouches"
         },
         "description": "A thin nylon pouch with a flexible retention cord.  It is quicker to operate than those pouches that close with a flap.  Can store a single pistol magazine, including some of the extended ones.  <variant:grey>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "45 g",
-    "//dimensions": {
-      "length": "1 in",
-      "width": "2 in",
-      "height": "4.5 in",
-      "raw": "147.48 ml",
-      "trim": -0.05,
-      "notes": [
-        "negative trim is to account for the extra parts (the cord etc.)"
-      ]
-    },
-    "volume": "155 ml",
-    "longest_side": "114 mm",
-
-    "symbol": "[",
-    "color": "brown",
-
-    "material": ["nylon"],
-
+    "weight": "45 g 359 mg",
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": [
-          "large pistol magazine capacity",
-          "standard SMG magazine capacity"
-        ],
-
-        "description": "Pistol magazine pouch",
-
+        "description": "Open-top pistol magazine pouch",
         "holster": true,
-
-        "//max_contains_weight": "large-enough to accomodate a full SMG magazine",
-        "max_contains_weight": "1 kg",
-        "//max_contains_volume": ["just larger the 30-round MP5 magazine"],
-        "max_contains_volume": "155 ml",
-        "//min_item_length": "roughly half the length of the pouch (4.5 in. / 2)",
-        "min_item_length": "57 mm",
-        "//max_item_length": "length of Glock 33-round magazine",
-        "max_item_length": "211 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["soft_retainer"]
-        },
-
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "160 ml",
+        "min_item_length": "10 cm 2 mm",
+        "max_item_length": "21 cm 1 mm",
         "volume_encumber_modifier": 1.45,
         "ripoff": 7,
         "moves": 80
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
     "price": "35 USD",
-    "price_postapoc": "20 cent"
+    "volume": "5 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash magazines",
+      "holster_msg": "You stash your %s."
+    }
   },
   {
-    "id": "pouch_magazine_pistol_molle_ii_m9",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.armyandoutdoors.com/products/usgi-molle-ii-9mm-mag-pouch"
-    ],
-
-    "//notes": [
-      "this pouch is restrictive in volume and length because of the flap"
-    ],
-
+    "id": "pouch/magazine/molle/ii/m9",
+    "type": "ITEM",
     "name": {
       "str": "flap military pistol mag pouch",
       "str_pl": "flap military pistol mag pouches"
     },
     "description": "A nylon pouch fit for a pistol magazine.  The flap keeps the magazine soundly in place, but operating it is slower than the open-top alternatives.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "ucp",
-
         "name": {
           "str": "MOLLE II older pistol mag pouch",
           "str_pl": "MOLLE II older pistol mag pouches"
         },
         "description": "An older, faded nylon pouch.  Can store a single pistol magazine, originally intended for the previously standard-issue M9 magazines.  The snap button on the flap makes the pouch slower to operate than the newer hook-and-loop flap on the M17 magazine pouch.  <variant:ucp>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ucp",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "42 g",
-    "//dimensions": {
-      "length": "12 cm",
-      "width": "4.5 cm",
-      "height": "4 mm",
-      "raw": "21.6 ml",
-      "trim": 0.15
-    },
-    "volume": "18 ml",
-    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
-
-    "symbol": "[",
-    "color": "brown",
-
-    "material": ["nylon"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "medium pistol magazine capacity",
-
-        "description": "Pistol magazine pouch",
-
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "120 ml",
-        "min_item_length": "80 mm",
-        "max_item_length": "142 mm",
-
-        "//magazine_pouch": {
-          "type": "II",
-          "modifiers": ["button_retainer"]
-        },
-
+        "description": "Button-closure pistol magazine pouch",
+        "holster": true,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "82 ml",
+        "min_item_length": "10 cm",
+        "max_item_length": "12 cm 7 mm",
         "volume_encumber_modifier": 2,
         "ripoff": 25,
         "moves": 140
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
-    "price": "6 USD",
-    "price_postapoc": "10 cent"
+    "price": "7 USD 50 cents",
+    "volume": "18 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash magazines",
+      "holster_msg": "You stash your %s."
+    }
   },
   {
-    "id": "pouch_magazine_pistol_molle_ii_m17",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": ["https://www.ebay.com/itm/126049688303"],
-
-    "//notes": [
-      "this pouch is slightly-less-restrictive in volume and length because of the Velcro flap, but is still restricted to medium-capacity pistol magazines"
-    ],
-
+    "id": "pouch/magazine/molle/ii/m17",
+    "type": "ITEM",
     "name": {
       "str": "modern military pistol mag pouch",
       "str_pl": "modern military pistol mag pouches"
     },
     "description": "A nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  A newer design for the newer standard-issue army pistol magazines.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "MOLLE II pistol mag pouch",
           "str_pl": "MOLLE II pistol mag pouches"
         },
-        "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.  The flap is quicker to operate than the previous snap-button design, but not as quick as the open-top alternatives. <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 1
+        "description": "A thin nylon pouch with a hook-and-loop flap.  Can store a single pistol magazine.  Originally designed to hold magazines for M17, the standard-issue pistol in the U.S. Army before the Cataclysm.  The flap is quicker to operate than the previous snap-button design, but not as quick as the open-top alternatives.  <variant:multicam>",
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "//weight": "1 oz = 28.35 g",
-    "weight": "28 g",
-    "//dimensions": {
-      "length": "6 in",
-      "width": "1.4 in",
-      "height": "2 mm",
-      "raw": "16.26 ml",
-      "trim": 0.01,
-      "notes": [
-        "even though the pouch appears to be rigid, we model it as being able to fold depth-wise, for storage purposes"
-      ]
-    },
-    "volume": "16 ml",
-    "longest_side": "152 mm",
-
-    "symbol": "[",
-    "color": "brown",
-
-    "material": ["nylon"],
-
+    "weight": "28 g 350 mg",
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//uses": "medium pistol magazine capacity",
-
-        "description": "Pistol magazine pouch",
-
-        "max_contains_weight": "500 g",
-        "max_contains_volume": "120 ml",
-        "min_item_length": "80 mm",
-        "max_item_length": "142 mm",
-
-        "//magazine_pouch": {
-          "type": "II"
-        },
-
+        "description": "Flap-closure pistol magazine pouch",
+        "holster": true,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "93 ml",
+        "min_item_length": "10 cm",
+        "max_item_length": "12 cm 1 mm",
         "volume_encumber_modifier": 2,
         "ripoff": 20,
         "moves": 130
       }
     ],
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
     "price": "12 USD",
-    "price_postapoc": "10 cent"
+    "volume": "11 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Stash magazines",
+      "holster_msg": "You stash your %s."
+    }
   },
   {
-    "id": "pouch_magazine_smg_psigear",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.psigear.net/pouches/skewer-laser-cut-smg-mag-pouch"
-    ],
-
-    "//notes": [
-      "this might not be extended-mag-capable, but we keep it as such until a better model is added to the mod"
-    ],
-
+    "id": "pouch/magazine/psigear/smg",
+    "type": "ITEM",
     "name": {
       "str": "SMG magazine pouch",
       "str_pl": "SMG magazine pouches"
     },
     "description": "A nylon pouch for storing an SMG magazine.  Also fits extended SMG magazines.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "PSIGEAR SMG magazine pouch",
           "str_pl": "PSIGEAR SMG magazine pouches"
         },
         "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "PSIGEAR SMG magazine pouch",
           "str_pl": "PSIGEAR SMG magazine pouches"
         },
         "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "black",
+        "weight": 2,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "PSIGEAR SMG magazine pouch",
+          "str_pl": "PSIGEAR SMG magazine pouches"
+        },
+        "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant:ranger>",
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "PSIGEAR SMG magazine pouch",
+          "str_pl": "PSIGEAR SMG magazine pouches"
+        },
+        "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "PSIGEAR SMG magazine pouch",
+          "str_pl": "PSIGEAR SMG magazine pouches"
+        },
+        "description": "A thin nylon pouch for storing a single SMG magazine.  Fits most regular and extended SMG magazines.  <variant:grey>",
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "37 g",
-    "//dimensions": {
-      "length": "1 mm",
-      "width": "3.8 cm",
-      "height": "11.9 cm",
-      "raw": "4.52 ml",
-      "trim": 0.01
-    },
-    "volume": "5 ml",
-    "longest_side": "119 mm",
-
-    "material": ["nylon"],
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "material": [
+      "nylon"
+    ],
     "looks_like": "ammo_satchel",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": "extended SMG magazine capacity",
-
         "description": "SMG magazine pouch",
-
         "holster": true,
-
         "max_contains_weight": "2 kg",
-        "//max_contains_volume": "just above the volume of MP5 40-round magazine",
-        "max_contains_volume": "240 ml",
-        "min_item_length": "75 mm",
-        "//max_item_length": "length of Uzi 50-round magazine",
-        "max_item_length": "302 mm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["soft_retainer"]
-        },
-
+        "max_contains_volume": "263 ml",
+        "min_item_length": "9 cm",
+        "max_item_length": "30 cm 2 mm",
         "volume_encumber_modifier": 1.45,
         "ripoff": 7,
         "moves": 80
       }
     ],
-
+    "price": "20 USD",
+    "volume": "11 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster",
-
-      "holster_prompt": "Stash magazine",
+      "holster_prompt": "Stash magazines",
       "holster_msg": "You stash your %s."
-    },
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
-    "//price": "for the black model",
-    "price": "20 USD",
-    "price_postapoc": "25 cent"
+    }
   },
   {
-    "id": "pouch_magazine_308_tt",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://tacticaltailor.com/fight-light-7-62-6-8x51-single-mag-pouch-20rd/"
-    ],
-
+    "id": "pouch/magazine/tt/308",
+    "type": "ITEM",
     "name": {
       "str": "large rifle magazine pouch",
       "str_pl": "large rifle magazine pouches"
     },
     "description": "A nylon pouch for storing a single large magazine.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "Tactical Tailor 7.62mm magazine pouch",
           "str_pl": "Tactical Tailor 7.62mm magazine pouches"
         },
         "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "multicam",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "Tactical Tailor 7.62mm magazine pouch",
           "str_pl": "Tactical Tailor 7.62mm magazine pouches"
         },
         "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "black",
-
         "name": {
           "str": "Tactical Tailor 7.62mm magazine pouch",
           "str_pl": "Tactical Tailor 7.62mm magazine pouches"
         },
         "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant:black>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
       },
       {
-        "id": "ranger",
-
         "name": {
           "str": "Tactical Tailor 7.62mm magazine pouch",
           "str_pl": "Tactical Tailor 7.62mm magazine pouches"
         },
         "description": "A nylon pouch for storing a single magazine in .308/7.62×51mm NATO caliber.  Fits magazines up to 30 rounds in capacity.  <variant:ranger>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
-    "weight": "37 g",
-    "//dimensions": {
-      "length": "4 in",
-      "width": "4 in",
-      "height": "1 mm",
-      "raw": "10.32 ml",
-      "trim": -0.02
-    },
-    "volume": "11 ml",
-    "//longest_side": "no longest side, since the pouch appears to be easily-foldable",
-
-    "material": ["nylon"],
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "weight": "59 g 534 mg",
+    "material": [
+      "nylon"
+    ],
     "looks_like": "ammo_satchel",
-
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": "high-caliber rifle magazine capacity",
-
-        "description": "Large rifle magazine pouch",
-
+        "description": "High-caliber rifle magazine pouch",
         "holster": true,
-
-        "max_contains_weight": "2 kg",
-        "//max_contains_volume": "volume of FAL 30-round magazine",
-        "max_contains_volume": "420 ml",
-        "//min_item_length": "3 in.",
-        "min_item_length": "76 mm",
-        "//max_item_length": "length of FAL 30-round magazine",
+        "max_contains_weight": "4 kg",
+        "max_contains_volume": "453 ml",
+        "min_item_length": "10 cm 2 mm",
         "max_item_length": "21 cm",
-
-        "//magazine_pouch": {
-          "type": "I",
-          "modifiers": ["tall", "soft_retainer"]
-        },
-
         "volume_encumber_modifier": 1.35,
         "ripoff": 9,
         "moves": 90
       }
     ],
-
+    "price": "27 USD",
+    "volume": "30 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster",
-
-      "holster_prompt": "Stash magazine",
+      "holster_prompt": "Stash magazines",
       "holster_msg": "You stash your %s."
-    },
-
-    "flags": ["WATER_FRIENDLY", "CANT_WEAR", "PALS_SMALL"],
-
-    "//price": "for the multicam model",
-    "price": "26 USD",
-    "price_postapoc": "25 cent"
+    }
   },
   {
-    "id": "pouch_magazine_338_warrior",
-    "type": "GENERIC",
-    "category": "container",
-
-    "//sources": [
-      "https://www.armamat.com/en/p/.338-and-7.62mm-mag-pouch-10606175100/",
-      [
-        "https://www.warriorassaultsystems.com/product/338-single-mag-multicam/",
-        "variant reference"
-      ],
-      [
-        "https://www.gearzonetactical.com/Warrior-Assault-Systems-338-Single-Mag_p_7731.html",
-        "price"
-      ]
-    ],
-
-    "//notes": [
-      "the description says it can hold a standard (20-round) 7.62mm NATO magazine, which appears to be impossible without some strong imbalance",
-      "with that said, the description also advertises an internal grip surface"
-    ],
-
+    "id": "pouch/magazine/warrior/338",
+    "type": "ITEM",
     "name": {
       "str": "sniper magazine pouch",
       "str_pl": "sniper magazine pouches"
     },
     "description": "A nylon pouch for a single .338 sniper rifle magazine.  Can also hold some .308 and 7.62mm magazines.",
-
     "variant_type": "gun",
     "variants": [
       {
-        "id": "multicam",
-
         "name": {
           "str": "WAS .338 magazine pouch",
           "str_pl": "WAS .338 magazine pouches"
         },
         "description": "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.  <variant:multicam>",
-        "expand_snippets": true,
-        "weight": 4
+        "id": "multicam",
+        "weight": 4,
+        "expand_snippets": true
       },
       {
-        "id": "coyote",
-
         "name": {
           "str": "WAS .338 magazine pouch",
           "str_pl": "WAS .338 magazine pouches"
         },
         "description": "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.  <variant:coyote>",
-        "expand_snippets": true,
-        "weight": 2
+        "id": "coyote",
+        "weight": 2,
+        "expand_snippets": true
       },
       {
-        "id": "atacs_fg",
-
         "name": {
           "str": "WAS .338 magazine pouch",
           "str_pl": "WAS .338 magazine pouches"
         },
         "description": "A small nylon pouch intended to hold a single .338 Lapua 5-round magazine, or a magazines of similar size.  Produced by Warrior Assault Systems.  The plastic buckle keeps the magazine securely in place, but also makes it somewhat slower to operate than open-top alternatives.  <variant:atacs_fg>",
-        "expand_snippets": true,
-        "weight": 1
+        "id": "atacs_fg",
+        "weight": 1,
+        "expand_snippets": true
       }
     ],
-
     "weight": "102 g",
-    "//dimensions": {
-      "length": "16.5 cm",
-      "width": "15 cm",
-      "height": "5 mm",
-      "raw": "123.75 ml",
-      "trim": 0.6,
-      "notes": [
-        "relatively-large height accounts for to the buckle",
-        "large trim accounts for the space outside of the buckle on the same plane"
-      ]
-    },
-    "volume": "50 ml",
-    "//longest_side": "1 in., the presumed width/height of the buckle, which cannot collapse even if the rest of the pouch can",
-    "longest_side": "25 mm",
-
-    "symbol": "[",
-    "color": "dark_gray",
+    "longest_side": "2 cm 5 mm",
     "looks_like": "ammo_satchel",
-
-    "material": ["nylon"],
-
+    "material": [
+      "nylon"
+    ],
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-
-        "//reference": ".338 sniper rifle magazine capacity",
-
         "description": "Sniper rifle magazine pouch",
-
         "holster": true,
-
         "max_contains_weight": "2 kg",
-        "//max_contains_volume": "volume of SCAR-H 20-round magazine (+ 1 ml)",
-        "max_contains_volume": "355 ml",
-        "//max_item_length": "length of SCAR-H 20-round magazine",
-        "max_item_length": "165 mm",
-
-        "//magazine_pouch": {
-          "type": "III"
-        },
-
+        "max_contains_volume": "354 ml",
+        "max_item_length": "16 cm 5 mm",
+        "volume_encumber_modifier": 1,
         "moves": 170
       }
     ],
-
+    "price": "36 USD 90 cents",
+    "volume": "80 ml",
+    "category": "container",
+    "symbol": "[",
+    "color": "dark_gray",
+    "flags": [
+      "CANT_WEAR",
+      "WATER_FRIENDLY",
+      "PALS_SMALL"
+    ],
+    "price_postapoc": "4 USD 50 cents",
     "use_action": {
       "type": "holster",
-
-      "holster_prompt": "Stash ammo",
+      "holster_prompt": "Stash magazines",
       "holster_msg": "You stash your %s."
-    },
-
-    "flags": ["WATER_FRIENDLY", "PALS_SMALL", "CANT_WEAR"],
-
-    "price": "3355 cent",
-    "price_postapoc": "1 USD"
+    }
   }
 ]

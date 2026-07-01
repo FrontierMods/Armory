@@ -1,0 +1,22 @@
+[
+  {
+    "id": "leg_rig_gas_mask_hsgi",
+    "type": "MIGRATION",
+    "replace": "pouch/leg/gas_mask/hsgi"
+  },
+  {
+    "id": "leg_rig_magazine_556_condor",
+    "type": "MIGRATION",
+    "replace": "pouch/leg/magazine/condor/556"
+  },
+  {
+    "id": "leg_rig_tacmed",
+    "type": "MIGRATION",
+    "replace": "pouch/leg/tacmed"
+  },
+  {
+    "id": "leg_rig_fox",
+    "type": "MIGRATION",
+    "replace": "pouch/leg/fox"
+  }
+]

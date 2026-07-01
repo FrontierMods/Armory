@@ -1,102 +1,97 @@
 [
   {
-    "id": ["canteen_pouch"],
+    "id": "canteen_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_canteen_1qt_tt"
+    "replace": "pouch/canteen/tt/1qt"
   },
   {
-    "id": ["dump_pouch"],
+    "id": "dump_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_dump_frogpro"
+    "replace": "pouch/dump/bfg"
   },
   {
-    "id": ["ifak_pouch"],
+    "id": "ifak_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_ifak_rescue"
+    "replace": "pouch/medical/rescue"
   },
   {
-    "id": ["ammo_pouch"],
+    "id": "ammo_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_ammo_condor"
+    "replace": "pouch/ammo/condor"
   },
   {
-    "id": ["gas_mask_pouch"],
+    "id": "gas_mask_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_gas_mask_usmc"
+    "replace": "pouch/gas_mask/usmc"
   },
   {
-    "id": ["h2o_pouch"],
+    "id": "h2o_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_water_bottle_ft"
+    "replace": "pouch/water_bottle/ft"
   },
   {
-    "id": ["chestpouch"],
+    "id": "chestpouch",
     "type": "MIGRATION",
-    "replace": "pouch_magazine_556_condor"
+    "replace": "pouch/magazine/condor/556"
   },
   {
-    "id": ["ammo_satchel"],
+    "id": "ammo_satchel",
     "type": "MIGRATION",
-    "replace": "pouch_magazine_556_pistol_condor"
+    "replace": "pouch/magazine/condor/kangaroo"
   },
   {
-    "id": ["tactical_shotshell_pouch"],
+    "id": "tactical_shotshell_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_shot_condor"
+    "replace": "pouch/shot/condor"
   },
   {
-    "id": ["tactical_grenade_pouch"],
+    "id": "tactical_grenade_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_grenade_haley"
+    "replace": "pouch/grenade/haley"
   },
   {
-    "id": ["radio_pouch"],
+    "id": "radio_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_radio_tasm"
+    "replace": "pouch/radio/tasm"
   },
   {
-    "id": ["gadget_pouch"],
+    "id": "gadget_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_gadget_condor"
+    "replace": "pouch/gadget/condor"
   },
   {
-    "id": ["flashlight_pouch"],
+    "id": "flashlight_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_flashlight_511"
+    "replace": "pouch/flashlight/511"
   },
   {
-    "id": ["triple_stacker_pouch"],
+    "id": "triple_stacker_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_triple_stacker_condor"
+    "replace": "pouch/magazine/condor/stacker/triple"
   },
   {
-    "id": ["deployment_bag"],
+    "id": "deployment_bag",
     "type": "MIGRATION",
-    "replace": "bag_deployment_condor"
+    "replace": "pouch/deployment/condor"
   },
   {
-    "id": ["h2o_pouch"],
+    "id": "legrig",
     "type": "MIGRATION",
-    "replace": "pouch_water_bottle_gonex"
+    "replace": "pouch/leg/fox"
   },
   {
-    "id": ["legrig"],
+    "id": "tool_pouch",
     "type": "MIGRATION",
-    "replace": "leg_rig_fox"
+    "replace": "pouch/tool/wynex"
   },
   {
-    "id": ["tool_pouch"],
+    "id": "grenade_pouch",
     "type": "MIGRATION",
-    "replace": "pouch_tool_wynex"
+    "replace": "pouch/40mm/blackhawk/x6"
   },
   {
-    "id": ["grenade_pouch"],
+    "id": "legpouch_large",
     "type": "MIGRATION",
-    "replace": "pouch_40mm_x6_blackhawk"
-  },
-  {
-    "id": ["legpouch_large"],
-    "type": "MIGRATION",
-    "replace": "leg_rig_magazine_556_condor"
+    "replace": "pouch/leg/fox"
   }
 ]

@@ -3,20 +3,20 @@
     "id": "loadout/lpspc/side_pouches:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "plate_carrier/lpspc/perroz:any",
-        "contents-group": ["pouch/side/perroz:any", "pouch/side/perroz:any"]
+        "contents-group": [
+          "pouch/side/perroz:any",
+          "pouch/side/perroz:any"
+        ]
       }
     ]
   },
-
   {
     "id": "loadout/lpspc/side_pouches:coordinated",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "plate_carrier/lpspc/perroz:multicam",
@@ -52,7 +52,10 @@
       },
       {
         "group": "plate_carrier/lpspc/perroz:grey",
-        "contents-group": ["pouch/side/perroz:grey", "pouch/side/perroz:grey"],
+        "contents-group": [
+          "pouch/side/perroz:grey",
+          "pouch/side/perroz:grey"
+        ],
         "prob": 10
       },
       {

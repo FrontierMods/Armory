@@ -3,36 +3,56 @@
     "id": "full_ifak",
     "type": "item_group",
     "subtype": "collection",
-
-    "container-item": "pouch_ifak_rescue",
-
+    "container-item": "pouch/medical/rescue",
     "entries": [
-      { "item": "medical_tape", "charges": 20 },
-      { "group": "quikclot_bag_plastic_5" },
-      { "item": "bandages", "count": 9 },
-      { "item": "medical_gauze", "count": 3 },
-      { "item": "adhesive_bandages", "count": 3 },
-      { "item": "gloves_medical" },
-      { "item": "scissors_medical" },
-      { "item": "tourniquet_upper" }
+      {
+        "item": "medical_tape",
+        "charges": 20
+      },
+      {
+        "group": "quikclot_bag_plastic_5"
+      },
+      {
+        "item": "bandages",
+        "count": 9
+      },
+      {
+        "item": "medical_gauze",
+        "count": 3
+      },
+      {
+        "item": "adhesive_bandages",
+        "count": 3
+      },
+      {
+        "item": "gloves_medical"
+      },
+      {
+        "item": "scissors_medical"
+      },
+      {
+        "item": "tourniquet_upper"
+      }
     ]
   },
   {
     "id": "canteen_with_clean_water",
     "type": "item_group",
     "subtype": "collection",
-
-    "entries": [{ "item": "water_clean", "container-item": "canteen" }]
+    "entries": [
+      {
+        "item": "water_clean",
+        "container-item": "canteen"
+      }
+    ]
   },
-
   {
     "id": "prepped_patriot_rig",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "harness_h_direct_action",
+        "item": "chest_rig/harness/h/direct_action",
         "variant": "flag_chestrig",
         "contents-group": "prepped_patriot_rig_contents"
       }
@@ -42,10 +62,9 @@
     "id": "prepped_patriot_rig_contents",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "placard_direct_action_tempest",
+        "item": "placard/direct_action/tempest",
         "variant": "flag_chestrig",
         "contents-group": "mags_ruger_arr"
       }
@@ -55,23 +74,27 @@
     "id": "seal_plate_carrier_contents",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "container-item": "pouch_grenade_haley",
+        "container-item": "pouch/grenade/haley",
         "item": "grenade",
         "count": 2
       },
-      { "container-item": "pouch_radio_tasm", "group": "charged_two_way_radio" }
+      {
+        "container-item": "pouch/radio/tasm",
+        "group": "charged_two_way_radio"
+      }
     ]
   },
   {
     "id": "seal_belt",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
-      { "item": "knife_rm42", "container-item": "sheath" },
+      {
+        "item": "knife_rm42",
+        "container-item": "sheath"
+      },
       {
         "item": "p226_9mm",
         "ammo-item": "9mm",
@@ -79,7 +102,7 @@
         "charges": 15
       },
       {
-        "container-item": "pouch_magazine_pistol_haley",
+        "container-item": "pouch/magazine/haley/pistol",
         "item": "p226mag_15rd_9x19mm",
         "ammo-item": "9mm",
         "charges": 15,
@@ -87,7 +110,7 @@
       },
       {
         "group": "canteen_with_clean_water",
-        "container-item": "pouch_canteen_1qt_tt"
+        "container-item": "pouch/canteen/tt/1qt"
       }
     ]
   },
@@ -95,7 +118,6 @@
     "id": "seal_sniper_rig",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "placard/haley/molle:multicam",
@@ -107,7 +129,6 @@
     "id": "seal_sniper_rig_contents",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "seal_sniper_rig_magazine_pouch",
@@ -115,7 +136,7 @@
         "count": 3
       },
       {
-        "item": "pouch_side_perroz",
+        "item": "pouch/side/perroz",
         "contents-group": "charged_two_way_radio"
       }
     ]
@@ -124,10 +145,9 @@
     "id": "seal_sniper_rig_magazine_pouch",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "pouch_magazine_338_warrior",
+        "item": "pouch/magazine/warrior/338",
         "variant": "multicam"
       }
     ]
@@ -136,7 +156,6 @@
     "id": "seal_sniper_rig_magazine",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "item": "ai_338mag",
@@ -149,10 +168,9 @@
     "id": "breacher_hammer_pouched",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "container-item": "pouch_holster_breaching_raptor",
+        "container-item": "pouch/holster/raptor/breaching",
         "item": "hammer_sledge_short"
       }
     ]
@@ -161,10 +179,9 @@
     "id": "40x46mm_m433_pouched",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "container-item": "pouch_40mm_haley",
+        "container-item": "pouch/40mm/haley",
         "item": "40x46mm_m433",
         "charges": 1
       }
@@ -174,12 +191,14 @@
     "id": "grenadier_vest_contents",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
-      { "group": "40x46mm_m433_pouched", "count": 4 },
+      {
+        "group": "40x46mm_m433_pouched",
+        "count": 4
+      },
       {
         "group": "charged_two_way_radio",
-        "container-item": "pouch_radio_tasm"
+        "container-item": "pouch/radio/tasm"
       }
     ]
   },
@@ -187,10 +206,9 @@
     "id": "us_ballistic_vest_grenadier",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "plate_carrier_msv",
+        "item": "plate_carrier/msv/gen_ii",
         "variant": "ocp",
         "contents-group": [
           "pristine_esapi_front_plates",
@@ -203,12 +221,11 @@
     "id": "charged_tazer",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "light_battery_cell",
+        "item": "medium_battery_cell",
         "ammo-item": "battery",
-        "charges": 100,
+        "charges": 500,
         "container-item": "tazer"
       }
     ]
@@ -217,15 +234,17 @@
     "id": "police_belt",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
-      { "item": "baton", "container-item": "pouch_baton_bfg" },
       {
-        "group": "charged_two_way_radio",
-        "container-item": "pouch_radio_tasm"
+        "item": "baton",
+        "container-item": "pouch/baton/bfg"
       },
       {
-        "container-item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm"
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
         "item": "usp45mag",
         "ammo-item": "45_acp",
         "charges": 12,
@@ -243,25 +262,30 @@
     "id": "police_belt_riot_control",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
-      { "item": "PR24-extended", "container-item": "holster_tonfa_gng" },
+      {
+        "item": "PR24-extended",
+        "container-item": "pouch/tonfa/gng"
+      },
       {
         "group": "charged_tazer",
-        "container-item": "holster_stun_gun_streetwise"
+        "container-item": "pouch/stun_gun/streetwise"
       },
       {
         "group": "charged_two_way_radio",
-        "container-item": "pouch_radio_tasm"
+        "container-item": "pouch/radio/tasm"
       },
       {
-        "container-item": "pouch_magazine_pistol_haley",
+        "container-item": "pouch/magazine/haley/pistol",
         "item": "usp45mag",
         "ammo-item": "45_acp",
         "charges": 12,
         "count": 2
       },
-      { "container-item": "pouch_flashbang_tt", "item": "gasbomb" },
+      {
+        "container-item": "pouch/flashbang/tt",
+        "item": "gasbomb"
+      },
       {
         "item": "usp_45",
         "ammo-item": "45_acp",
@@ -274,15 +298,17 @@
     "id": "police_belt_motorized",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
-      { "item": "baton", "container-item": "pouch_baton_bfg" },
       {
-        "group": "charged_two_way_radio",
-        "container-item": "pouch_radio_tasm"
+        "item": "baton",
+        "container-item": "pouch/baton/bfg"
       },
       {
-        "container-item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm"
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
         "item": "usp45mag",
         "ammo-item": "45_acp",
         "charges": 12,
@@ -300,21 +326,20 @@
     "id": "swat_belt",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "charged_two_way_radio",
-        "container-item": "pouch_radio_tasm"
+        "container-item": "pouch/radio/tasm"
       },
       {
-        "container-item": "pouch_magazine_pistol_haley",
+        "container-item": "pouch/magazine/haley/pistol",
         "item": "usp9mag",
         "ammo-item": "9mmfmj",
         "charges": 15,
         "count": 2
       },
       {
-        "container-item": "pouch_flashbang_tt",
+        "container-item": "pouch/flashbang/tt",
         "item": "flashbang",
         "count": 2
       }
@@ -324,22 +349,24 @@
     "id": "swat_belt_cqc",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
-      { "item": "baton", "container-item": "pouch_baton_bfg" },
       {
-        "group": "charged_two_way_radio",
-        "container-item": "pouch_radio_tasm"
+        "item": "baton",
+        "container-item": "pouch/baton/bfg"
       },
       {
-        "container-item": "pouch_magazine_pistol_haley",
+        "group": "charged_two_way_radio",
+        "container-item": "pouch/radio/tasm"
+      },
+      {
+        "container-item": "pouch/magazine/haley/pistol",
         "item": "usp9mag",
         "ammo-item": "9mmfmj",
         "charges": 15,
         "count": 2
       },
       {
-        "container-item": "pouch_flashbang_tt",
+        "container-item": "pouch/flashbang/tt",
         "item": "flashbang",
         "count": 2
       }
@@ -349,10 +376,9 @@
     "id": "mil_breacher_belt",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "container-item": "pouch_flashbang_tt",
+        "container-item": "pouch/flashbang/tt",
         "item": "flashbang",
         "count": 2
       }
@@ -362,27 +388,38 @@
     "id": "ar15_mag",
     "type": "item_group",
     "subtype": "collection",
-
-    "entries": [{ "item": "stanag30", "ammo-item": "556", "charges": 30 }]
+    "entries": [
+      {
+        "item": "stanag30",
+        "ammo-item": "556",
+        "charges": 30
+      }
+    ]
   },
   {
     "id": "triple_stacker_mags_ar15_full",
     "type": "item_group",
     "subtype": "collection",
-
     "container-item": "triple_stacker_pouch",
-
-    "entries": [{ "group": "ar15_mag", "count": 6 }]
+    "entries": [
+      {
+        "group": "ar15_mag",
+        "count": 6
+      }
+    ]
   },
   {
     "id": "militia_car_rig",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "group": "placard/haley/magazine:multicam",
-        "contents-group": ["ar15_mag", "ar15_mag", "ar15_mag"]
+        "group": "placard/haley/magazine/triple:multicam",
+        "contents-group": [
+          "ar15_mag",
+          "ar15_mag",
+          "ar15_mag"
+        ]
       }
     ]
   },
@@ -390,10 +427,9 @@
     "id": "specops_rig",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "group": "placard/haley/magazine:multicam_black",
+        "group": "placard/haley/magazine/triple:multicam_black",
         "contents-group": "specops_rig_contents"
       }
     ]
@@ -402,7 +438,6 @@
     "id": "specops_rig_contents",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "specops_mag_smg",
@@ -414,7 +449,6 @@
     "id": "specops_mag_smg",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "item": "mp5mag",
@@ -427,7 +461,6 @@
     "id": "sniper_police_rig",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "group": "placard/onetigris/vulture:black",
@@ -439,7 +472,6 @@
     "id": "sniper_police_rig_contents",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
         "item": "762_51",
@@ -451,10 +483,20 @@
     "id": "conversion_hunter_rig",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "container-item": "pouch_magazine_556_condor",
+        "group": "placard/haley/molle:multicam",
+        "contents-group": "conversion_hunter_rig_molle"
+      }
+    ]
+  },
+  {
+    "id": "conversion_hunter_rig_molle",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "container-item": "pouch/magazine/condor/556",
         "item": "50beowulf_ar15mag",
         "ammo-item": "50beowulf_xtp",
         "charges": 10,
@@ -466,10 +508,9 @@
     "id": "old_vet_rig_magazines_pouched",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "container-item": "pouch_magazine_308_tt",
+        "container-item": "pouch/magazine/tt/308",
         "item": "m14mag",
         "ammo-item": "762_51",
         "charges": 20,
@@ -477,52 +518,14 @@
       }
     ]
   },
-
   {
     "id": "specops",
-    "copy-from": "specops",
     "type": "profession",
-
     "name": "Special Operator",
-
-    "items": {
-      "both": {
-        "entries": [
-          {
-            "item": "harness_x_haley",
-            "variant": "multicam_black",
-            "contents-group": "specops_rig"
-          },
-          { "item": "wetsuit" },
-          { "item": "pants_army" },
-          { "item": "wetsuit_hood" },
-          { "item": "tac_helmet" },
-          { "item": "wetsuit_gloves" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "dive_bag" },
-          { "item": "diving_watch" },
-          { "item": "single_sling" },
-          { "group": "charged_two_way_radio" },
-          { "group": "canteen_with_clean_water" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
-          { "item": "kukri", "container-item": "sheath" },
-          {
-            "item": "hk_mp5sd",
-            "ammo-item": "9mm",
-            "charges": 30,
-            "contents-item": ["sights_mount", "holo_sight"]
-          }
-        ]
-      },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
-      }
-    },
-
+    "requirement": "achievement_reach_military_base",
+    "description": "You were the best of the best, the military's finest.  That's why you're still alive, even after all your comrades fell to the undead.  As far as you can tell, military command abandoned you in this hellhole when you missed the emergency evac.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 8,
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_traps",
@@ -530,38 +533,256 @@
       "prof_spotting",
       "prof_gun_cleaning",
       "prof_knives_familiar",
+      "prof_gross_anatomy",
       "prof_auto_rifles_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "militia_car",
-    "copy-from": "militia_car",
-    "type": "profession",
-
-    "name": "Militia",
-
+    ],
+    "skills": [
+      {
+        "level": 7,
+        "name": "gun"
+      },
+      {
+        "level": 7,
+        "name": "smg"
+      },
+      {
+        "level": 7,
+        "name": "rifle"
+      },
+      {
+        "level": 5,
+        "name": "melee"
+      },
+      {
+        "level": 5,
+        "name": "stabbing"
+      },
+      {
+        "level": 5,
+        "name": "dodge"
+      },
+      {
+        "level": 4,
+        "name": "traps"
+      },
+      {
+        "level": 4,
+        "name": "firstaid"
+      },
+      {
+        "level": 4,
+        "name": "throw"
+      },
+      {
+        "level": 4,
+        "name": "swimming"
+      },
+      {
+        "level": 4,
+        "name": "survival"
+      }
+    ],
     "items": {
       "both": {
         "entries": [
-          { "item": "pants_army" },
-          { "item": "combat_shirt" },
-          { "item": "socks" },
-          { "item": "sweatshirt" },
-          { "item": "boots" },
-          { "item": "cig" },
-          { "item": "elbow_pads" },
-          { "item": "slingpack" },
-          { "item": "kevlar" },
-          { "item": "balclava" },
-          { "item": "knee_pads" },
-          { "item": "beret" },
-          { "item": "wristwatch" },
-          { "item": "water_clean" },
-          { "group": "charged_cell_phone" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "knife_KABAR", "container-item": "sheath" },
+          {
+            "item": "wetsuit"
+          },
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "wetsuit_hood"
+          },
+          {
+            "group": "tac_helmet_nvg"
+          },
+          {
+            "item": "wetsuit_gloves"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "dive_bag"
+          },
+          {
+            "item": "diving_watch"
+          },
+          {
+            "item": "single_sling"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "glasses_bal",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "kukri",
+            "container-item": "sheath"
+          },
+          {
+            "item": "chest_rig/harness/x/haley",
+            "variant": "multicam_black",
+            "contents-group": "specops_rig"
+          },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [
+              "suppressor",
+              "holo_sight"
+            ]
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "militia_car",
+    "type": "profession",
+    "name": "Militia",
+    "requirement": "achievement_survive_28_days",
+    "description": "You and a group of like-minded individuals built a hideout in the woods from which to launch looting raids in a jury-rigged pickup.  The last run went bad, and now all your comrades are dead.  Every breath you take now is an act of rebellion against the cruelty of this doomed world.  Do not let that flame of hope perish inside you.",
+    "npc_background": "BG_survival_story_RURAL",
+    "points": 4,
+    "proficiencies": [
+      "prof_driver",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+      "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "rifle"
+      },
+      {
+        "level": 3,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "fabrication"
+      },
+      {
+        "level": 3,
+        "name": "mechanics"
+      },
+      {
+        "level": 3,
+        "name": "driving"
+      }
+    ],
+    "vehicle": "pickup_technical",
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "sweatshirt"
+          },
+          {
+            "item": "boots"
+          },
+          {
+            "group": "charged_cigs"
+          },
+          {
+            "item": "elbow_pads"
+          },
+          {
+            "item": "slingpack"
+          },
+          {
+            "item": "vest/ballistic/point_blank"
+          },
+          {
+            "item": "balclava",
+            "variant": "black"
+          },
+          {
+            "item": "knee_pads"
+          },
+          {
+            "item": "beret"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "water_clean"
+          },
+          {
+            "group": "charged_cell_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "knife_KABAR",
+            "container-item": "sheath"
+          },
           {
             "item": "m9",
             "ammo-item": "9mm",
@@ -569,206 +790,507 @@
             "container-item": "nylon_holster"
           },
           {
-            "item": "harness_x_haley",
+            "item": "chest_rig/harness/x/haley",
             "variant": "multicam",
             "contents-group": "militia_car_rig"
           },
-          { "item": "lighter", "charges": 100 },
+          {
+            "item": "lighter",
+            "charges": 100
+          },
           {
             "group": "modular_ar15",
             "ammo-item": "223",
             "charges": 30,
-            "contents-item": ["shoulder_strap"]
+            "contents-item": [
+              "shoulder_strap"
+            ]
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
     },
-
-    "proficiencies": [
-      "prof_driver",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+    "age_lower": 18
   },
   {
     "id": "conversion_hunter",
-    "copy-from": "conversion_hunter",
     "type": "profession",
-
     "name": "Big-Bore Hunter",
-
+    "description": "You always harbored a passion for hunting and a particular fondness for big-bore rifle calibers and affordable conversion kits.  Whether it was their cost-effective nature or the simple, testosterone-amplifying notion that you could retool your rifle to belt out .50-caliber bullets, you preferred them for your hunting trips.  Now, with your converted rifle in hand, you fancy that there isn't any game too large for you to take down.",
+    "npc_background": "BG_survival_story_RURAL",
+    "points": 3,
+    "proficiencies": [
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_butchering_basic",
+      "prof_skinning_basic",
+      "prof_gross_anatomy",
+      "prof_wp_ungulate"
+    ],
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "rifle"
+      },
+      {
+        "level": 3,
+        "name": "survival"
+      }
+    ],
     "items": {
       "both": {
         "entries": [
-          { "item": "army_top" },
-          { "item": "knit_scarf" },
-          { "item": "socks" },
-          { "item": "boots_steel" },
-          { "item": "pants_cargo" },
-          { "item": "jacket_flannel" },
-          { "item": "hat_hunting" },
-          { "item": "wristwatch" },
-          { "item": "back_holster" },
-          { "group": "charged_smart_phone" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "tank_top",
+            "variant": "tank_top_camo"
+          },
+          {
+            "item": "knit_scarf"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_steel"
+          },
+          {
+            "item": "pants_cargo"
+          },
+          {
+            "item": "jacket_flannel"
+          },
+          {
+            "item": "hat_hunting"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "back_holster"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
           {
             "group": "ar15_50",
             "ammo-item": "50beowulf_xtp",
             "charges": 10,
             "contents-item": "shoulder_strap_simple",
-            "custom-flags": ["no_auto_equip"]
+            "custom-flags": [
+              "no_auto_equip"
+            ]
           },
           {
-            "group": "loadout/haley/molle:coordinated",
+            "item": "chest_rig/harness/x/haley",
+            "variant": "multicam",
             "contents-group": "conversion_hunter_rig"
           },
-          { "item": "sheath", "contents-item": "knife_hunting" }
-        ]
-      },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
-      }
-    }
-  },
-  {
-    "id": "winter_army",
-    "copy-from": "winter_army",
-    "type": "profession",
-
-    "name": "Military Holdout",
-
-    "items": {
-      "both": {
-        "ammo": 100,
-        "entries": [
-          { "item": "socks" },
-          { "item": "winter_pants_army" },
-          { "item": "winter_jacket_army" },
-          { "item": "balclava" },
-          { "item": "boots_combat" },
-          { "item": "winter_gloves_army" },
-          { "item": "tac_helmet" },
-          { "item": "canteen" },
-          { "item": "wristwatch" },
-          { "item": "quikclot" },
-          { "item": "mess_kit" },
-          { "item": "water_clean", "container-item": "canteen" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
           {
-            "item": "knife_combat_army",
-            "variant": "m9bayonet",
-            "container-item": "sheath"
-          },
-          {
-            "item": "modular_m4_carbine",
-            "variant": "modular_m4a1",
-            "ammo-item": "556",
-            "contents-item": "shoulder_strap"
-          },
-          { "group": "charged_two_way_radio" },
-          {
-            "item": "chest_rig_molle_ii_flc",
-            "contents-group": "triple_stacker_mags_ar15_full"
+            "item": "sheath",
+            "contents-item": "knife_hunting"
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "panties" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
       }
     },
-
+    "missions": [
+      "MISSION_HUNTER"
+    ]
+  },
+  {
+    "id": "winter_army",
+    "type": "profession",
+    "name": "Military Holdout",
+    "requirement": "achievement_reach_military_bunker",
+    "description": "You must have paid attention to your survival training in boot camp; otherwise, you would never have lived long enough to outlast the chain of command and find yourself in this predicament.  The only mission now is to survive.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 6,
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_gun_cleaning",
       "prof_knives_familiar",
       "prof_auto_rifles_familiar",
       "prof_auto_pistols_familiar",
-
       "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "rifle"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "melee"
+      },
+      {
+        "level": 4,
+        "name": "stabbing"
+      },
+      {
+        "level": 4,
+        "name": "dodge"
+      },
+      {
+        "level": 4,
+        "name": "firstaid"
+      },
+      {
+        "level": 4,
+        "name": "survival"
+      },
+      {
+        "level": 4,
+        "name": "throw"
+      },
+      {
+        "level": 4,
+        "name": "swimming"
+      }
+    ],
+    "items": {
+      "both": {
+        "ammo": 100,
+        "entries": [
+          {
+            "item": "socks"
+          },
+          {
+            "item": "winter_pants_army"
+          },
+          {
+            "item": "winter_jacket_army"
+          },
+          {
+            "item": "balclava",
+            "variant": "black"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "winter_gloves_army"
+          },
+          {
+            "item": "tac_helmet"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "quikclot"
+          },
+          {
+            "item": "mess_kit"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "knife_combat_army",
+            "variant": "m9bayonet",
+            "container-item": "sheath"
+          },
+          {
+            "group": "modular_m4a1",
+            "ammo-item": "556",
+            "contents-item": "shoulder_strap"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "item": "chest_rig/molle_ii/flc",
+            "contents-group": "triple_stacker_mags_ar15_full"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "panties"
+          }
+        ]
+      }
+    },
+    "flags": [
+      "SCEN_ONLY"
     ]
   },
   {
     "id": "mili_pilot",
-    "copy-from": "mili_pilot",
     "type": "profession",
-
     "name": "Military Pilot",
-
-    "//items": ["pilots aren't issued with chest rigs or any external webbing"],
-    "items": {
-      "both": {
-        "entries": [
-          { "item": "nomex_socks" },
-          { "item": "boots_combat" },
-          { "item": "wristwatch" },
-          { "item": "gloves_tactical" },
-          {
-            "item": "flight_helmet",
-            "ammo-item": "light_plus_battery_cell",
-            "charges": 150
-          },
-          { "item": "mil_flight_suit" },
-          { "group": "charged_matches" },
-          { "group": "charged_flashlight" },
-          { "item": "handflare", "count": 2, "charges": 200 },
-          { "item": "whistle" },
-          { "item": "water_clean", "container-item": "canteen" },
-          {
-            "item": "m17",
-            "ammo-item": "9mm",
-            "container-item": "nylon_holster",
-            "charges": 17
-          },
-          { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 },
-          { "item": "p320mag_17rd_9x19mm", "ammo-item": "9mm", "charges": 17 }
-        ]
+    "requirement": "achievement_reach_military_bunker",
+    "description": "You got to see things fall apart from the sky, transporting soldiers and survivors from one holdout to the next.  You knew it was only a matter of time before the horrors patrolling the skies shot you down.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 5,
+    "skills": [
+      {
+        "level": 7,
+        "name": "driving"
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+      {
+        "level": 4,
+        "name": "mechanics"
+      },
+      {
+        "level": 3,
+        "name": "gun"
+      },
+      {
+        "level": 3,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "firstaid"
+      },
+      {
+        "level": 2,
+        "name": "melee"
+      },
+      {
+        "level": 2,
+        "name": "stabbing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "throw"
+      },
+      {
+        "level": 1,
+        "name": "swimming"
       }
-    },
-
-    "//proficiencies": [
-      "in the US armed forces (either Air Force or Army), pilots are required to complete basic training regardless of their eventual specialization",
-      "said basic training includes learning to operate in a full set of issued gear, which includes body armor"
     ],
     "proficiencies": [
       "prof_helicopter_pilot",
       "prof_spotting",
       "prof_gun_cleaning",
       "prof_auto_pistols_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "prepped_patriot",
-    "copy-from": "prepped_patriot",
-    "type": "profession",
-
-    "name": "Prepped Patriot",
-
-    "//items": [
-      "TODO: add American-flag nylon patch to the rig when decoration becomes available",
-      "cross draw vest ought to have a small patch of Velcro over the general pouch"
     ],
     "items": {
       "both": {
         "entries": [
-          { "item": "american_flag" },
-          { "item": "slippers" },
-          { "group": "charged_smart_phone" },
-          { "item": "mask_dust", "variant": "flag_mask_dust" },
-          { "group": "prepped_patriot_rig" },
-          { "item": "cowboy_hat", "variant": "flag_cowboy_hat" },
-          { "item": "leg_bag", "variant": "flag_leg_bag" },
+          {
+            "item": "nomex_socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "flight_helmet",
+            "ammo-item": "light_battery_cell",
+            "charges": 150
+          },
+          {
+            "item": "mil_flight_suit"
+          },
+          {
+            "group": "charged_matches"
+          },
+          {
+            "group": "charged_flashlight"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "handflare",
+            "count": 2,
+            "charges": 200
+          },
+          {
+            "item": "whistle"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "container-item": "holster",
+            "charges": 17
+          },
+          {
+            "item": "p320mag_17rd_9x19mm",
+            "ammo-item": "9mm",
+            "charges": 17
+          },
+          {
+            "item": "p320mag_17rd_9x19mm",
+            "ammo-item": "9mm",
+            "charges": 17
+          },
+          {
+            "item": "m17",
+            "ammo-item": "9mm",
+            "container-item": "nylon_holster",
+            "charges": 17
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
+    },
+    "flags": [
+      "SCEN_ONLY"
+    ],
+    "missions": [
+      "MISSION_HELICOPTER_PILOT"
+    ]
+  },
+  {
+    "id": "prepped_patriot",
+    "type": "profession",
+    "name": "Prepped Patriot",
+    "description": "Does the American dream still exist?  Well, recent events have put that to the test.  Does it still proudly live in your beating heart?  Yes.  Yes, it does.  A patriot to the bitter end, you've readied yourself to go toe to toe with the Cataclysm that would seek to do harm to your darling USA.  That is to say, you grabbed your gun… and nothing more.  God bless America, soldier.",
+    "npc_background": "BG_survival_story_ECCENTRIC",
+    "points": 2,
+    "skills": [
+      {
+        "level": 3,
+        "name": "gun"
+      },
+      {
+        "level": 2,
+        "name": "rifle"
+      },
+      {
+        "level": 2,
+        "name": "pistol"
+      },
+      {
+        "level": 2,
+        "name": "shotgun"
+      }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "american_flag"
+          },
+          {
+            "item": "slippers"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "mask_dust",
+            "variant": "flag_mask_dust"
+          },
+          {
+            "group": "prepped_patriot_rig"
+          },
+          {
+            "item": "cowboy_hat",
+            "variant": "flag_cowboy_hat"
+          },
+          {
+            "item": "leg_bag",
+            "variant": "flag_leg_bag"
+          },
           {
             "item": "ruger_arr",
             "ammo-item": "450_ftx",
@@ -778,242 +1300,571 @@
         ]
       },
       "male": {
-        "entries": [{ "item": "boxer_shorts", "variant": "flag_boxer_shorts" }]
-      },
-      "female": {
-        "entries": [{ "item": "boy_shorts", "variant": "flag_boy_shorts" }]
-      }
-    },
-
-    "//proficiencies": "we assume that this is someone who's already had informal training with military-style gear, which would likely include wearing a kitted plate carrier with plates",
-    "proficiencies": ["prof_plate_carrier"]
-  },
-  {
-    "id": "old_vet",
-    "copy-from": "old_vet",
-    "type": "profession",
-
-    "name": "Old Veteran",
-
-    "items": {
-      "both": {
         "entries": [
           {
-            "item": "chest_rig_molle_ii_flc",
-            "contents-group": "old_vet_rig_magazines_pouched"
-          },
-
-          { "item": "wristwatch" },
-          { "item": "jacket_army" },
-          { "item": "service_medal" },
-          { "item": "boots_combat" },
-          { "item": "socks" },
-          { "item": "officer_uniform" },
-          { "item": "pipe_tobacco" },
-          { "item": "tobacco" },
-          { "item": "beret" },
-          { "item": "pants", "variant": "pants_british_khaki" },
-          { "item": "cane", "custom-flags": ["auto_wield"] },
-          { "group": "charged_ref_lighter" },
-          { "item": "knife_combat", "container-item": "sheath" },
-          {
-            "item": "m1a",
-            "ammo-item": "762_51",
-            "charges": 20,
-            "contents-item": ["shoulder_strap_simple"]
+            "item": "boxer_shorts",
+            "variant": "flag_boxer_shorts"
           }
         ]
       },
-      "male": { "entries": [{ "item": "briefs" }] },
-      "female": { "entries": [{ "item": "boy_shorts" }, { "item": "bra" }] }
+      "female": {
+        "entries": [
+          {
+            "item": "boy_shorts",
+            "variant": "flag_boy_shorts"
+          }
+        ]
+      }
     },
-
-    "//proficiencies": [
-      "as of 2025, being the youngest Old Vet puts the character at being born in 1975, and being of age for military service in 1993",
-      "between 1993 and 2025, there have been a few military conflicts in which US troops had been involved extensively",
-      "as such, we presume that this person has had the ballistic armor training"
+    "proficiencies": [
+      "prof_plate_carrier"
+    ]
+  },
+  {
+    "id": "old_vet",
+    "type": "profession",
+    "name": "Old Veteran",
+    "description": "You've been through hell once before.  Hopefully those weekend range trips have kept your skills sharp.",
+    "npc_background": "BG_survival_story_RETIRED",
+    "points": 4,
+    "skills": [
+      {
+        "level": 3,
+        "name": "gun"
+      },
+      {
+        "level": 3,
+        "name": "rifle"
+      },
+      {
+        "level": 2,
+        "name": "pistol"
+      },
+      {
+        "level": 2,
+        "name": "firstaid"
+      },
+      {
+        "level": 2,
+        "name": "throw"
+      },
+      {
+        "level": 1,
+        "name": "survival"
+      }
     ],
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_spotting",
       "prof_gun_cleaning",
       "prof_auto_rifles_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "seal",
-    "copy-from": "seal",
-    "type": "profession",
-
-    "name": "Navy SEAL",
-
-    "//items": [
-      [
-        "of note is the fact that SEALs used LBT 6094 during the Osama bin Laden raid",
-        "https://lbtinc.com/products/6094",
-        "we use the MSV as the SEAL plate carrier until a better option (ideally the 6094) is modelled with Armory"
-      ],
-      [
-        "even though it does nothing for this loadout, we leave the webbing belt in",
-        "to be audited when Navy gear comes through"
-      ]
     ],
     "items": {
       "both": {
         "entries": [
           {
-            "group": "loadout/msv/baseline:ocp",
-            "contents-group": "seal_plate_carrier_contents"
+            "item": "wristwatch"
           },
-          { "item": "webbing_belt", "contents-group": "seal_belt" },
-          { "item": "combat_shirt" },
-          { "item": "tac_fullhelmet" },
-          { "item": "mask_ski" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "diving_watch" },
-          { "item": "boots_combat" },
-          { "group": "charged_powered_earmuffs" },
-          { "item": "tank_top", "variant": "tank_top_camo" },
-          { "item": "pants_army", "variant": "mil_pants_navy" },
           {
-            "item": "light_battery_cell",
-            "ammo-item": "battery",
-            "charges": 100,
-            "container-item": "goggles_nv"
+            "item": "jacket_army",
+            "variant": "m65_player"
           },
-          { "item": "water_clean", "container-item": "canteen" },
           {
-            "item": "leg_rig_magazine_556_condor",
-            "contents-group": "army_mags_m4"
+            "item": "service_medal"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "officer_uniform"
+          },
+          {
+            "item": "beret"
+          },
+          {
+            "item": "cane",
+            "custom-flags": [
+              "auto_wield"
+            ]
+          },
+          {
+            "group": "charged_ref_lighter"
+          },
+          {
+            "group": "starter_rich_wallet_full"
+          },
+          {
+            "item": "chest_rig/molle_ii/flc",
+            "contents-group": "old_vet_rig_magazines_pouched"
+          },
+          {
+            "item": "knife_combat",
+            "container-item": "sheath"
+          },
+          {
+            "item": "m1a",
+            "ammo-item": "762_51",
+            "charges": 20,
+            "contents-item": [
+              "shoulder_strap_simple"
+            ]
+          },
+          {
+            "item": "pipe_tobacco"
+          },
+          {
+            "item": "tobacco"
+          },
+          {
+            "item": "pants",
+            "variant": "pants_british_khaki"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "briefs"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "boy_shorts"
+          },
+          {
+            "item": "bra"
+          }
+        ]
+      }
+    },
+    "age_lower": 50
+  },
+  {
+    "id": "seal",
+    "type": "profession",
+    "name": "Navy SEAL",
+    "requirement": "achievement_reach_aircraft_carrier",
+    "description": "You were a member of the SEALs; a key component of the US Navy's special forces and a proficient combatant in both maritime and ground operations.  'The only easy day was yesterday', and with the chain of command in ruins, you may fulfill your final mission in any way you see fit.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 8,
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_wound_care",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_gross_anatomy",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+      "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 7,
+        "name": "gun"
+      },
+      {
+        "level": 7,
+        "name": "rifle"
+      },
+      {
+        "level": 6,
+        "name": "pistol"
+      },
+      {
+        "level": 5,
+        "name": "melee"
+      },
+      {
+        "level": 5,
+        "name": "stabbing"
+      },
+      {
+        "level": 5,
+        "name": "dodge"
+      },
+      {
+        "level": 4,
+        "name": "firstaid"
+      },
+      {
+        "level": 4,
+        "name": "survival"
+      },
+      {
+        "level": 4,
+        "name": "throw"
+      },
+      {
+        "level": 4,
+        "name": "swimming"
+      }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "group": "tac_helmet_nvg"
+          },
+          {
+            "item": "mask_ski"
+          },
+          {
+            "item": "gloves_liner"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "diving_watch"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "charged_powered_earmuffs"
+          },
+          {
+            "item": "tank_top",
+            "variant": "tank_top_camo"
+          },
+          {
+            "item": "pants_army",
+            "variant": "mil_pants_navy"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
           },
           {
             "group": "m4_cqbr",
             "ammo-item": "556",
             "charges": 30,
-            "contents-item": ["shoulder_strap", "holo_sight"]
+            "contents-item": [
+              "shoulder_strap",
+              "holo_sight"
+            ]
+          },
+          {
+            "group": "loadout/msv/baseline:ocp",
+            "contents-group": "seal_plate_carrier_contents"
+          },
+          {
+            "item": "belt/webbing/haley/d3",
+            "contents-group": "seal_belt"
+          },
+          {
+            "item": "pouch/leg/magazine/condor/556",
+            "contents-group": "army_mags_m4"
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
       }
     },
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_spotting",
-      "prof_wound_care",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
+    "flags": [
+      "SCEN_ONLY"
     ]
   },
   {
     "id": "seal_sniper",
-    "copy-from": "seal_sniper",
     "type": "profession",
-
-    "//name": [
-      "SEAL squads don't have a role of a designated marksman",
-      "additionally, a .338 rifle is above DMR-grade infantry fire"
-    ],
     "name": "Navy SEAL Sniper",
-
-    "//items": [
-      "even though it does nothing for this loadout, we leave the webbing belt in",
-      "to be audited when Navy gear comes through"
-    ],
-    "items": {
-      "both": {
-        "entries": [
-          {
-            "item": "harness_x_haley",
-            "variant": "multicam",
-            "contents-group": "seal_sniper_rig"
-          },
-          { "item": "webbing_belt", "contents-group": "seal_belt" },
-
-          { "item": "army_top" },
-          { "item": "combat_shirt" },
-          { "item": "tac_fullhelmet" },
-          { "item": "mask_ski" },
-          { "item": "gloves_liner" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "diving_watch" },
-          { "item": "boots_combat" },
-          { "group": "charged_powered_earmuffs" },
-          { "item": "pants_army", "variant": "mil_pants_navy" },
-          {
-            "item": "tac338",
-            "ammo-item": "338lapua_fmjbt",
-            "charges": 5,
-            "contents-item": ["shoulder_strap"]
-          }
-        ]
-      },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
-      }
-    },
-
+    "description": "Recruited into the ranks of the US Navy's Special Warfare forces as a designated sniper, your training in precision marksmanship and maritime operations was extensive.  As a proficient soldier and combative in all respects, you provided overwatch and long-range elimination services in the line of duty.  Now, with naval command imploding and your spotter MIA, your skills with a rifle and covert operations are the only things standing between you and the Cataclysm.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 8,
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_spotting",
       "prof_wound_care",
       "prof_gun_cleaning",
       "prof_knives_familiar",
+      "prof_gross_anatomy",
       "prof_auto_rifles_familiar",
       "prof_auto_pistols_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "marine",
-    "copy-from": "marine",
-    "type": "profession",
-
-    "name": "Marine Infantry",
-
-    "//items": [
-      [
-        "even though it does nothing for this loadout, we leave the webbing belt in",
-        "to be audited when Navy gear comes through"
-      ],
-      ["TODO: use a Marine plate carrier (MTV? Marines PC Gen III?)"]
+    ],
+    "skills": [
+      {
+        "level": 8,
+        "name": "gun"
+      },
+      {
+        "level": 8,
+        "name": "rifle"
+      },
+      {
+        "level": 6,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "melee"
+      },
+      {
+        "level": 4,
+        "name": "stabbing"
+      },
+      {
+        "level": 4,
+        "name": "dodge"
+      },
+      {
+        "level": 4,
+        "name": "firstaid"
+      },
+      {
+        "level": 4,
+        "name": "survival"
+      },
+      {
+        "level": 4,
+        "name": "throw"
+      },
+      {
+        "level": 4,
+        "name": "swimming"
+      }
     ],
     "items": {
       "both": {
         "entries": [
-          { "item": "combat_shirt" },
-          { "item": "jacket_army_modern" },
-          { "item": "hat_navy" },
-          { "item": "gloves_liner" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "diving_watch" },
-          { "item": "webbing_belt" },
-          { "group": "charged_two_way_radio" },
-          { "group": "military_ballistic_vest_pristine" },
-          { "item": "tank_top", "variant": "tank_top_camo" },
-          { "item": "pants_army", "variant": "apants_MARPAT" },
-          { "item": "water_clean", "container-item": "canteen" },
           {
-            "item": "leg_rig_magazine_556_condor",
+            "item": "tank_top",
+            "variant": "tank_top_camo"
+          },
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "item": "tac_fullhelmet"
+          },
+          {
+            "item": "mask_ski"
+          },
+          {
+            "item": "gloves_liner"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "diving_watch"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "charged_powered_earmuffs"
+          },
+          {
+            "item": "pants_army",
+            "variant": "mil_pants_navy"
+          },
+          {
+            "item": "tac338",
+            "ammo-item": "338lapua_fmjbt",
+            "charges": 5,
+            "contents-item": [
+              "shoulder_strap"
+            ]
+          },
+          {
+            "item": "chest_rig/harness/x/haley",
+            "variant": "multicam",
+            "contents-group": "seal_sniper_rig"
+          },
+          {
+            "item": "belt/webbing/haley/d3",
+            "contents-group": "seal_belt"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      }
+    },
+    "flags": [
+      "SCEN_ONLY"
+    ]
+  },
+  {
+    "id": "marine",
+    "type": "profession",
+    "name": {
+      "male": "Marine Infantryman",
+      "female": "Marine Infantrywoman"
+    },
+    "requirement": "achievement_reach_military_bunker",
+    "description": "You are one of the few and the proud: a member of the US Marine Corps.  Now that military command has collapsed in on itself as far as you can tell, you suppose that it falls to you to carry the memory of the Corps forward into the future.  Semper fi.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 6,
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_gross_anatomy",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+      "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 5,
+        "name": "gun"
+      },
+      {
+        "level": 5,
+        "name": "rifle"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "stabbing"
+      },
+      {
+        "level": 3,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "firstaid"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 3,
+        "name": "swimming"
+      },
+      {
+        "level": 2,
+        "name": "survival"
+      }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "item": "jacket_army_modern"
+          },
+          {
+            "item": "hat_navy"
+          },
+          {
+            "item": "gloves_liner"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "diving_watch"
+          },
+          {
+            "item": "belt/webbing/haley/d3"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "military_ballistic_vest_pristine"
+          },
+          {
+            "item": "tank_top",
+            "variant": "tank_top_camo"
+          },
+          {
+            "item": "pants_army",
+            "variant": "apants_MARPAT"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
+          {
+            "item": "pouch/leg/magazine/condor/556",
             "contents-group": "army_mags_m4"
           },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "knife_combat_marine", "container-item": "sheath" },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "knife_combat_marine",
+            "container-item": "sheath"
+          },
           {
             "item": "m18",
             "ammo-item": "9mm",
@@ -1030,94 +1881,238 @@
             "group": "m4_cqbr",
             "ammo-item": "556",
             "charges": 30,
-            "contents-item": ["shoulder_strap", "holo_sight"]
+            "contents-item": [
+              "shoulder_strap",
+              "holo_sight"
+            ]
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
       }
     },
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
+    "flags": [
+      "SCEN_ONLY"
     ]
   },
   {
     "id": "cop",
-    "copy-from": "cop",
     "type": "profession",
-
     "name": "Police Officer",
-
-    "items": {
-      "both": {
-        "entries": [
-          {
-            "item": "belt_webbing_blackhawk_foundation",
-            "contents-group": "police_belt"
-          },
-
-          { "item": "pants_army" },
-          { "item": "socks" },
-          { "item": "badge_deputy" },
-          { "item": "boots" },
-          { "item": "whistle" },
-          { "item": "wristwatch" },
-          { "group": "charged_smart_phone" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "sheriffshirt", "variant": "sheriff" }
-        ]
+    "requirement": "achievement_reach_police_station",
+    "description": "Just a small-town deputy, you got the call and were ready to come to the rescue.  Soon it was you who needed rescuing, and you were lucky to escape with your life.  Who's going to respect your authority when the government this badge represents might not even exist anymore?",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 4,
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    },
-
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "bashing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_POLICE"
+    ],
     "proficiencies": [
       "prof_spotting",
       "prof_gun_cleaning",
       "prof_batons_familiar",
       "prof_auto_pistols_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "sniper_police",
-    "copy-from": "sniper_police",
-    "type": "profession",
-
-    "name": "Police Sniper",
-
+    ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
+            "item": "pants_army"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
             "contents-group": "police_belt"
           },
-
-          { "item": "socks" },
-          { "item": "pants_army" },
-          { "item": "sweatshirt" },
-          { "item": "sneakers" },
-          { "item": "gloves_tactical" },
-          { "item": "hat_ball" },
-          { "item": "badge_deputy" },
-          { "item": "wristwatch" },
           {
-            "item": "harness_x_haley",
-            "contents-group": "sniper_police_rig"
+            "item": "boots"
           },
-          { "item": "glasses_bal", "custom-flags": ["no_auto_equip"] },
-          { "group": "charged_powered_earmuffs" },
+          {
+            "item": "whistle"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "sniper_police",
+    "type": "profession",
+    "name": "Police Sniper",
+    "requirement": "achievement_reach_police_station",
+    "description": "Your skill as a sharpshooter served you well in the line of duty, protecting the innocent with a single, well-placed bullet.  Now your own life is on the line, and you can't afford to miss if you don't want to end up as something's dinner.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 6,
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+      "prof_gross_anatomy",
+      "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 7,
+        "name": "gun"
+      },
+      {
+        "level": 7,
+        "name": "rifle"
+      },
+      {
+        "level": 5,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "bashing"
+      },
+      {
+        "level": 3,
+        "name": "stabbing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_POLICE"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "socks"
+          },
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
+            "contents-group": "police_belt"
+          },
+          {
+            "item": "sweatshirt"
+          },
+          {
+            "item": "sneakers"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "hat_ball"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "glasses_bal",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "group": "charged_powered_earmuffs"
+          },
           {
             "item": "usp_45",
             "ammo-item": "45_acp",
@@ -1130,51 +2125,107 @@
             "charges": 5,
             "contents-item": "shoulder_strap"
           },
-          { "item": "sheriffshirt", "variant": "sheriff" }
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          },
+          {
+            "item": "chest_rig/harness/x/haley",
+            "contents-group": "sniper_police_rig"
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    },
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_spotting",
-      "prof_gun_cleaning",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "detective",
-    "copy-from": "detective",
     "type": "profession",
-
     "name": "Police Detective",
-
+    "requirement": "achievement_reach_police_station",
+    "description": "You were on the brink of a major breakthrough in your latest homicide case when the Cataclysm struck.  Now your prime suspect is dead.  Everyone's dead.  You could really use a smoke.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 4,
+    "traits": [
+      "PROF_PD_DET"
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning"
+    ],
     "items": {
       "both": {
         "entries": [
-          { "item": "dress_shirt" },
-          { "item": "tie_skinny" },
-          { "item": "waistcoat" },
-          { "item": "trenchcoat" },
-          { "item": "leather_belt" },
-          { "item": "badge_detective" },
-          { "item": "gloves_leather" },
-          { "item": "knit_scarf" },
-          { "item": "fedora" },
-          { "item": "wristwatch" },
-          { "item": "socks" },
-          { "item": "dress_shoes" },
-          { "item": "cig" },
-          { "group": "charged_smart_phone" },
-          { "group": "charged_two_way_radio" },
-          { "group": "charged_ref_lighter" },
-          { "item": "pants", "variant": "pants_stone" },
-          { "group": "speedloaders_s&w619_magnum" },
+          {
+            "item": "dress_shirt"
+          },
+          {
+            "item": "tie_skinny"
+          },
+          {
+            "item": "waistcoat"
+          },
+          {
+            "item": "trenchcoat"
+          },
+          {
+            "item": "leather_belt"
+          },
+          {
+            "item": "badge_detective"
+          },
+          {
+            "item": "gloves_leather"
+          },
+          {
+            "item": "knit_scarf"
+          },
+          {
+            "item": "fedora"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "dress_shoes"
+          },
+          {
+            "group": "charged_cigs"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "group": "charged_ref_lighter"
+          },
+          {
+            "group": "speedloaders_s&w619_magnum"
+          },
           {
             "item": "sw_619",
             "ammo-item": "357mag_fmj",
@@ -1183,42 +2234,174 @@
           }
         ]
       },
-      "male": { "entries": [{ "item": "briefs" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "panties" }] }
-    }
+      "male": {
+        "entries": [
+          {
+            "item": "briefs"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "panties"
+          }
+        ]
+      }
+    },
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 1,
+        "name": "melee"
+      },
+      {
+        "level": 1,
+        "name": "bashing"
+      },
+      {
+        "level": 1,
+        "name": "dodge"
+      },
+      {
+        "level": 1,
+        "name": "swimming"
+      }
+    ],
+    "addictions": [
+      {
+        "intensity": 10,
+        "type": "nicotine"
+      }
+    ]
   },
   {
     "id": "swat",
-    "copy-from": "swat",
     "type": "profession",
-
     "name": "SWAT Officer",
-
-    "//items": [
-      "might be a good idea to transfer the gloves to a belt carabiner eventually"
+    "requirement": "achievement_reach_police_station",
+    "description": "As a member of the police force's most elite division, you are more than adequately trained and equipped to survive the brutal onslaught of the apocalypse.  Unfortunately, the chain of command has broken down; your only mission now is to stay alive.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 6,
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_auto_pistols_familiar",
+      "prof_batons_familiar",
+      "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 5,
+        "name": "gun"
+      },
+      {
+        "level": 5,
+        "name": "smg"
+      },
+      {
+        "level": 5,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "shotgun"
+      },
+      {
+        "level": 4,
+        "name": "melee"
+      },
+      {
+        "level": 4,
+        "name": "stabbing"
+      },
+      {
+        "level": 4,
+        "name": "bashing"
+      },
+      {
+        "level": 3,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 3,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_SWAT"
     ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
+            "item": "socks"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
             "contents-group": "swat_belt"
           },
-
-          { "item": "socks" },
-          { "item": "tac_helmet" },
-          { "item": "boots_combat" },
-          { "item": "gloves_tactical" },
-          { "item": "badge_swat" },
-          { "item": "wristwatch" },
-          { "item": "pants_tactical" },
-          { "item": "elbow_pads" },
-          { "item": "knee_pads" },
-          { "item": "single_sling" },
-          { "group": "swat_ballistic_vest_pristine" },
-          { "item": "sheriffshirt", "variant": "swat_shirt" },
-          { "group": "army_mags_mp5" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "tac_helmet"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "badge_swat"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "pants_tactical"
+          },
+          {
+            "item": "elbow_pads"
+          },
+          {
+            "item": "knee_pads"
+          },
+          {
+            "item": "single_sling"
+          },
+          {
+            "group": "swat_ballistic_vest_pristine"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "swat"
+          },
+          {
+            "group": "army_mags_mp5"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
           {
             "item": "usp_9mm",
             "ammo-item": "9mm",
@@ -1229,53 +2412,141 @@
             "item": "hk_mp5",
             "ammo-item": "9mm",
             "charges": 30,
-            "contents-item": ["rail_laser_sight"]
+            "contents-item": [
+              "rail_laser_sight"
+            ]
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
       }
-    },
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_spotting",
-      "prof_gun_cleaning",
-      "prof_auto_pistols_familiar",
-      "prof_batons_familiar",
-
-      "prof_plate_carrier"
-    ]
+    }
   },
   {
     "id": "swat_heavy",
-    "copy-from": "swat_heavy",
     "type": "profession",
-
     "name": "SWAT CQC Specialist",
-
+    "requirement": "achievement_reach_police_station",
+    "description": "As a member of the police force's most elite division, you were given special training and became an expert in close-quarters combat.  Unfortunately, the chain of command has broken down; your only mission now is to stay alive.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 6,
+    "skills": [
+      {
+        "level": 5,
+        "name": "gun"
+      },
+      {
+        "level": 5,
+        "name": "shotgun"
+      },
+      {
+        "level": 5,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "melee"
+      },
+      {
+        "level": 4,
+        "name": "bashing"
+      },
+      {
+        "level": 4,
+        "name": "stabbing"
+      },
+      {
+        "level": 4,
+        "name": "unarmed"
+      },
+      {
+        "level": 4,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 3,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_SWAT"
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_batons_familiar",
+      "prof_batons_pro",
+      "prof_unarmed_familiar",
+      "prof_unarmed_pro",
+      "prof_auto_pistols_familiar",
+      "prof_gross_anatomy"
+    ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
-            "contents-group": "swat_belt_cqc"
+            "item": "socks"
           },
-
-          { "item": "socks" },
-          { "item": "tac_fullhelmet" },
-          { "item": "boots_combat" },
-          { "item": "gloves_tactical" },
-          { "item": "badge_swat" },
-          { "item": "wristwatch" },
-          { "item": "pants_tactical" },
-          { "item": "elbow_pads" },
-          { "item": "knee_pads" },
-          { "group": "swat_ballistic_vest_pristine" },
-          { "item": "sheriffshirt", "variant": "swat_shirt" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "tac_fullhelmet"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "badge_swat"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "pants_tactical",
+            "variant": "tactical_pants_black"
+          },
+          {
+            "item": "elbow_pads"
+          },
+          {
+            "item": "knee_pads"
+          },
+          {
+            "group": "swat_ballistic_vest_pristine"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "swat"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
           {
             "item": "bandolier_shotgun",
             "contents-group": "bandolier_swat_cqc1"
@@ -1294,358 +2565,1171 @@
             "item": "ksg",
             "ammo-item": "shot_00",
             "charges": 7,
-            "contents-item": ["shoulder_strap"]
+            "contents-item": [
+              "shoulder_strap"
+            ]
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
+            "contents-group": "swat_belt_cqc"
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boy_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
       }
     }
   },
   {
     "id": "riot_police",
-    "copy-from": "riot_police",
     "type": "profession",
-
     "name": "Riot Control Officer",
-
-    "items": {
-      "both": {
-        "entries": [
-          {
-            "item": "belt_webbing_blackhawk_foundation",
-            "contents-group": "police_belt_riot_control"
-          },
-
-          { "item": "socks" },
-          { "item": "pants_tactical" },
-          { "item": "longshirt" },
-          { "item": "boots_combat" },
-          { "item": "gloves_tactical" },
-          { "item": "armor_riot" },
-          { "item": "helmet_riot" },
-          { "item": "badge_deputy" },
-          { "item": "wristwatch" },
-          { "group": "full_gasmask" }
-        ]
+    "requirement": "achievement_reach_police_station",
+    "description": "The riots were brutal, even before the dead rose and started to devour the living.  The line you were holding broke.  It was only through a bit of luck and a lot of head-bashing that you got away in one piece, and the worst is yet to come.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 5,
+    "skills": [
+      {
+        "level": 5,
+        "name": "melee"
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    }
-  },
-  {
-    "id": "cop_motor",
-    "copy-from": "cop_motor",
-    "type": "profession",
-
-    "name": "Motorized Police Officer",
-
-    "items": {
-      "both": {
-        "entries": [
-          {
-            "item": "belt_webbing_blackhawk_foundation",
-            "contents-group": "police_belt_motorized"
-          },
-
-          { "item": "socks" },
-          { "item": "police_breeches" },
-          { "item": "badge_deputy" },
-          { "item": "undershirt" },
-          { "item": "motor_police_boots" },
-          { "item": "whistle" },
-          { "item": "wristwatch" },
-          {
-            "item": "leather_police_jacket",
-            "variant": "leather_police_jacket"
-          },
-          { "group": "charged_smart_phone" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "gloves_leather", "custom-flags": ["no_auto_equip"] },
-          { "item": "sheriffshirt", "variant": "sheriff" }
-        ]
+      {
+        "level": 4,
+        "name": "bashing"
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
-    }
-  },
-  {
-    "id": "horse_cop",
-    "copy-from": "horse_cop",
-    "type": "profession",
-
-    "name": "Mounted Police Officer",
-
-    "//items": [
-      "no evidence of mounted police using suppressed sidearms seems to be available",
-      "as such, we replace the suppressed pistol with an unsuppressed version",
-      "if evidence surfaces, we revert"
+      {
+        "level": 3,
+        "name": "unarmed"
+      },
+      {
+        "level": 3,
+        "name": "gun"
+      },
+      {
+        "level": 3,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "launcher"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 3,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_POLICE"
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_batons_familiar",
+      "prof_gross_anatomy",
+      "prof_auto_pistols_familiar"
     ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
+            "item": "socks"
+          },
+          {
+            "item": "pants_tactical",
+            "variant": "tactical_pants_black"
+          },
+          {
+            "item": "longshirt"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "armor_riot"
+          },
+          {
+            "item": "helmet_riot"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "full_gasmask"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
+            "contents-group": "police_belt_riot_control"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "cop_motor",
+    "type": "profession",
+    "name": "Motorized Police Officer",
+    "requirement": "achievement_reach_police_station",
+    "description": "Just a small-town deputy, you got the call and were ready to ride to the rescue.  Soon it was you who needed rescuing, and you had to abandon your motorcycle to escape.  Who's going to respect your authority when the government this badge represents doesn't exist anymore?",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 4,
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "driving"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "bashing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "mechanics"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_POLICE"
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_batons_familiar",
+      "prof_auto_pistols_familiar",
+      "prof_driver"
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "socks"
+          },
+          {
+            "item": "police_breeches"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "undershirt"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
+            "contents-group": "police_belt_motorized"
+          },
+          {
+            "item": "motor_police_boots"
+          },
+          {
+            "item": "whistle"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "leather_police_jacket",
+            "variant": "leather_police_jacket"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "gloves_leather",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "horse_cop",
+    "type": "profession",
+    "name": "Mounted Police Officer",
+    "requirement": "achievement_reach_police_station",
+    "description": "You have spent many long years forging a bond with your equine companion, from running down common thugs, to entertaining kids when you ride on by.  The Cataclysm is upon you, but at least you have each other.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 5,
+    "skills": [
+      {
+        "level": 5,
+        "name": "survival"
+      },
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "bashing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_POLICE"
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_batons_familiar",
+      "prof_auto_pistols_familiar"
+    ],
+    "pets": [
+      {
+        "name": "mon_horse_police",
+        "amount": 1
+      }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
             "contents-group": "police_belt"
           },
-
-          { "item": "pants_army" },
-          { "item": "socks" },
-          { "item": "badge_deputy" },
-          { "item": "boots" },
-          { "item": "wristwatch" },
-          { "item": "helmet_bike" },
-          { "item": "knee_pads" },
-          { "item": "elbow_pads" },
-          { "group": "charged_smart_phone" },
-          { "item": "sheriffshirt", "variant": "sheriff" }
+          {
+            "item": "boots"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "helmet_bike"
+          },
+          {
+            "item": "knee_pads"
+          },
+          {
+            "item": "elbow_pads"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
         ]
       }
     }
   },
   {
     "id": "cop_car",
-    "copy-from": "cop_car",
     "type": "profession",
-
     "name": "Police Interceptor",
-
+    "requirement": "achievement_reach_police_station",
+    "description": "An on-duty officer, you received the call and were ready to respond to the robbery.  It all went to shit, your backup got eaten, and you were lucky to escape with your life and patrol car.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 5,
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "driving"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "bashing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_driver",
+      "prof_batons_familiar",
+      "prof_auto_pistols_familiar"
+    ],
+    "vehicle": "policecar",
+    "traits": [
+      "PROF_POLICE"
+    ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
+            "item": "pants_army"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
             "contents-group": "police_belt"
           },
-
-          { "item": "pants_army" },
-          { "item": "socks" },
-          { "item": "badge_deputy" },
-          { "item": "boots" },
-          { "item": "whistle" },
-          { "item": "kevlar" },
-          { "item": "wristwatch" },
-          { "group": "charged_smart_phone" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "sheriffshirt", "variant": "sheriff" }
+          {
+            "item": "boots"
+          },
+          {
+            "item": "whistle"
+          },
+          {
+            "item": "vest/ballistic/point_blank"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
     }
   },
   {
     "id": "k9_cop",
-    "copy-from": "k9_cop",
     "type": "profession",
-
     "name": "K9 Officer",
-
+    "requirement": "achievement_reach_police_station",
+    "description": "You spent your career busting drug smugglers with your faithful canine companion.  Now the world has ended, and none of that matters anymore.  Your loyal dog is still at your side, though, ready to face the Cataclysm with you.",
+    "npc_background": "BG_survival_story_POLICE",
+    "points": 5,
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "bashing"
+      },
+      {
+        "level": 2,
+        "name": "dodge"
+      },
+      {
+        "level": 2,
+        "name": "survival"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "traits": [
+      "PROF_POLICE"
+    ],
+    "proficiencies": [
+      "prof_spotting",
+      "prof_gun_cleaning",
+      "prof_batons_familiar",
+      "prof_auto_pistols_familiar"
+    ],
+    "pets": [
+      {
+        "name": "mon_dog_gshepherd",
+        "amount": 1
+      }
+    ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
+            "item": "pants_army"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "badge_deputy"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
             "contents-group": "police_belt"
           },
-
-          { "item": "pants_army" },
-          { "item": "socks" },
-          { "item": "badge_deputy" },
-          { "item": "boots" },
-          { "item": "dog_whistle" },
-          { "item": "wristwatch" },
-          { "item": "dogfood_dry" },
-          { "group": "charged_smart_phone" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "kevlar_harness", "container-item": "runner_bag" },
-          { "item": "sheriffshirt", "variant": "sheriff" }
+          {
+            "item": "boots"
+          },
+          {
+            "item": "dog_whistle"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "dogfood_dry",
+            "count": 2,
+            "container-item": "null",
+            "entry-wrapper": "bag_plastic"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "kevlar_harness",
+            "container-item": "runner_bag"
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
     }
   },
   {
     "id": "park_ranger",
-    "copy-from": "park_ranger",
     "type": "profession",
-
     "name": "Park Ranger",
-
+    "description": "Your days of patrolling the park and protecting people and wildlife from each other have taught you many useful skills.  After finding a gruesome scene at a campsite and getting no response when you radioed for help, you stockpiled as many supplies as possible and set out in your pickup looking for answers.",
+    "npc_background": "BG_survival_story_WORKER_PUBLIC",
+    "points": 5,
+    "proficiencies": [
+      "prof_driver",
+      "prof_wound_care"
+    ],
+    "skills": [
+      {
+        "level": 5,
+        "name": "survival"
+      },
+      {
+        "level": 5,
+        "name": "firstaid"
+      },
+      {
+        "level": 5,
+        "name": "driving"
+      },
+      {
+        "level": 3,
+        "name": "gun"
+      },
+      {
+        "level": 3,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "fabrication"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "vehicle": "pickup",
     "items": {
       "both": {
-        "//entries": [
-          [
-            "park rangers in Massachusetts do not appear to be permitted to carry firearm unless their job is in Boston(?), in which case they're required to complete Special Officer training, which permits them to carry a sidearm",
-            "https://www.parkrangeredu.org/massachusetts/",
-            "in general, only the Law Enforcement Ranger position permits carrying a sidearm, since it requires the capacity to enforce the law",
-            "https://www.parkrangeredu.org/careers/",
-            "however, evidence is unclear, given that different sources say different things about whether or not park rangers are law enforcement",
-            "https://www.gamewarden.org/career/park-ranger"
-          ],
-          [
-            "the Rangers appear to generally be armed with batons and pepper sprays, similarly to the police",
-            "https://www.bostonherald.com/2014/10/16/gelzinis-giving-park-rangers-guns-not-the-answer/",
-            "pouches for the leather belt (which replaces an out-of-place police belt) will be added once belts become audited"
-          ]
-        ],
         "entries": [
-          { "item": "leather_belt" },
-
-          { "item": "boots_hiking" },
-          { "item": "cowboy_hat" },
-          { "item": "diving_watch" },
-          { "item": "e_tool" },
-          { "item": "hammer" },
-          { "item": "knife_folding" },
-          { "item": "multitool" },
-          { "item": "pants_army" },
-          { "item": "rollmat" },
-          { "item": "socks" },
-          { "item": "travelpack" },
-          { "item": "vest" },
-          { "item": "water_clean" },
-          { "item": "whistle_multitool" },
-          { "group": "charged_smart_phone" },
-          { "group": "charged_flashlight" },
-          { "group": "charged_two_way_radio" },
-          { "group": "full_1st_aid" },
-          { "item": "black_pen", "charges": 100 },
-          { "item": "coat_rain", "custom-flags": ["no_auto_equip"] },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
-          { "item": "file" },
-          { "item": "lighter", "charges": 100 },
+          {
+            "item": "boots_hiking"
+          },
+          {
+            "item": "cowboy_hat"
+          },
+          {
+            "item": "diving_watch"
+          },
+          {
+            "item": "e_tool"
+          },
+          {
+            "item": "hammer"
+          },
+          {
+            "item": "knife_folding"
+          },
+          {
+            "item": "multitool"
+          },
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "leather_belt"
+          },
+          {
+            "item": "rollmat"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "travelpack"
+          },
+          {
+            "item": "vest"
+          },
+          {
+            "item": "water_clean"
+          },
+          {
+            "item": "whistle_multitool"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "charged_flashlight"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "group": "full_1st_aid"
+          },
+          {
+            "item": "black_pen",
+            "charges": 100
+          },
+          {
+            "item": "coat_rain",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "file"
+          },
+          {
+            "item": "lighter",
+            "charges": 100
+          },
           {
             "item": "paper",
             "charges": 20,
             "container-item": "leather_journal"
           },
-          { "item": "permanent_marker", "charges": 500 },
-          { "item": "roadmap" },
-          { "item": "sm_extinguisher", "charges": 10 },
-          { "item": "trailmap" },
-          { "item": "sheriffshirt", "variant": "sheriff" }
+          {
+            "item": "permanent_marker",
+            "charges": 500
+          },
+          {
+            "item": "roadmap"
+          },
+          {
+            "item": "sm_extinguisher",
+            "charges": 10
+          },
+          {
+            "item": "trailmap"
+          },
+          {
+            "item": "postman_shirt",
+            "variant": "sheriff"
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
     }
   },
   {
     "id": "ninja",
-    "copy-from": "ninja",
     "type": "profession",
-
-    "name": { "male": "Ninja", "female": "Kunoichi" },
-
-    "//items": [
-      "replace grenade pouch (no longer valid with Armory) with a leg bag"
+    "name": {
+      "male": "Ninja",
+      "female": "Kunoichi"
+    },
+    "description": "You are obsessed with the techniques and aesthetics of the ninja, so you practiced your movements, dressed all in black, and spent big bucks to acquire some tools of the trade.  Some may question your historical authenticity, but you're perfectly happy living out your fantasy regardless.",
+    "npc_background": "BG_survival_story_SPORTS",
+    "points": 5,
+    "skills": [
+      {
+        "level": 4,
+        "name": "melee"
+      },
+      {
+        "level": 4,
+        "name": "cutting"
+      },
+      {
+        "level": 4,
+        "name": "dodge"
+      },
+      {
+        "level": 4,
+        "name": "throw"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "proficiencies": [
+      "prof_long_swords_familiar",
+      "prof_gross_anatomy"
     ],
     "items": {
       "both": {
         "entries": [
-          { "item": "hood_ninja" },
-          { "item": "jacket_ninja" },
-          { "item": "trousers_ninja" },
-          { "item": "tabi_dress" },
-          { "item": "geta" },
-          { "item": "gloves_wraps" },
-          { "item": "bellywrap" },
-          { "item": "katana", "container-item": "scabbard" },
+          {
+            "item": "hood_ninja"
+          },
+          {
+            "item": "jacket_ninja"
+          },
+          {
+            "item": "trousers_ninja"
+          },
+          {
+            "item": "tabi_dress"
+          },
+          {
+            "item": "geta"
+          },
+          {
+            "item": "gloves_wraps"
+          },
+          {
+            "item": "bellywrap"
+          },
+          {
+            "item": "ch_katana",
+            "container-item": "scabbard"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
           {
             "item": "leg_bag",
             "contents-group": "ninja_grenade_pouch"
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "chestwrap" }, { "item": "panties" }] }
-    }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "chestwrap"
+          },
+          {
+            "item": "panties"
+          }
+        ]
+      }
+    },
+    "traits": [
+      "LIGHTSTEP"
+    ],
+    "missions": [
+      "MISSION_NINJA"
+    ]
   },
   {
     "id": "mil_undercover",
-    "copy-from": "mil_undercover",
     "type": "profession",
-
     "name": "Undercover Operative",
-
-    "//": [
-      "this loadout makes no sense for an undercover operative",
-      "it could use IWB magazine pouches once those become available"
-    ],
-
-    "items": {
-      "both": {
-        "entries": [
-          { "item": "leg_rig_fox", "contents-group": "army_mags_57" },
-          { "item": "scarf" },
-          { "item": "dress_shirt" },
-          { "item": "jeans" },
-          { "item": "longshirt" },
-          { "item": "kevlar" },
-          { "item": "mbag" },
-          { "item": "fancy_sunglasses" },
-          { "item": "socks" },
-          { "item": "lowtops" },
-          { "item": "pockknife" },
-          { "item": "diving_watch" },
-          { "group": "charged_smart_phone" },
-          { "item": "nylon_holster", "contents-group": "holster_supp_57" },
-          { "item": "suppressor" },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] }
-        ]
-      },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": {
-        "entries": [{ "item": "boy_shorts" }, { "item": "sports_bra" }]
-      }
-    },
-
-    "//proficiencies": "there is no clear indicator what sort of military this profession belongs to, but we have to presume that someone of this skill level must've had at least basic training in armor",
+    "description": "You've been tailing your target for months, and now he's a zombie.  So much for that lead.  Command isn't responding to your calls for an evac, so you'll have to make do with what you have on you.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 5,
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_gun_cleaning",
       "prof_knives_familiar",
       "prof_auto_pistols_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "mil_grenadier",
-    "copy-from": "mil_grenadier",
-    "type": "profession",
-
-    "name": "Military Grenadier",
-
+    ],
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 4,
+        "name": "speech"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "stabbing"
+      },
+      {
+        "level": 3,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "firstaid"
+      },
+      {
+        "level": 2,
+        "name": "throw"
+      },
+      {
+        "level": 2,
+        "name": "survival"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
     "items": {
       "both": {
         "entries": [
-          { "group": "us_ballistic_vest_grenadier" },
-
-          { "item": "pants_army" },
-          { "item": "undershirt" },
-          { "item": "combat_shirt" },
-          { "item": "helmet_army" },
-          { "item": "mask_ski" },
-          { "item": "gloves_liner" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "pockknife" },
-          { "item": "wristwatch" },
-          { "item": "molle_pack" },
-          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "scarf"
+          },
+          {
+            "item": "dress_shirt"
+          },
+          {
+            "item": "jeans"
+          },
+          {
+            "item": "longshirt"
+          },
+          {
+            "item": "vest/ballistic/point_blank"
+          },
+          {
+            "item": "mbag"
+          },
+          {
+            "item": "sunglasses"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "lowtops"
+          },
+          {
+            "item": "pockknife"
+          },
+          {
+            "item": "diving_watch"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "item": "nylon_holster",
+            "contents-group": "holster_supp_57"
+          },
+          {
+            "item": "suppressor"
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
+          {
+            "item": "pouch/leg/fox",
+            "contents-group": "army_mags_57"
+          }
+        ]
+      },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "boy_shorts"
+          },
+          {
+            "item": "sports_bra"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "mil_grenadier",
+    "type": "profession",
+    "name": "Military Grenadier",
+    "requirement": "achievement_reach_military_bunker",
+    "description": "There's no kill like overkill, and not many people in this world can boast that they have a grenade launcher and know how to use it.  Just try not to blow yourself up, that would be really embarrassing.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 4,
+    "proficiencies": [
+      "prof_gunsmithing_basic",
+      "prof_gun_cleaning",
+      "prof_knives_familiar",
+      "prof_auto_rifles_familiar",
+      "prof_auto_pistols_familiar",
+      "prof_plate_carrier"
+    ],
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "launcher"
+      },
+      {
+        "level": 3,
+        "name": "rifle"
+      },
+      {
+        "level": 3,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "stabbing"
+      },
+      {
+        "level": 3,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "firstaid"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 2,
+        "name": "survival"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "undershirt"
+          },
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "item": "helmet_army"
+          },
+          {
+            "item": "mask_ski"
+          },
+          {
+            "item": "gloves_liner"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "pockknife"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "molle_pack"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "us_ballistic_vest_grenadier"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
           {
             "item": "m320",
             "ammo-item": "40x46mm_m433",
             "charges": 1,
-            "contents-item": ["shoulder_strap_simple", "holo_sight"]
+            "contents-item": [
+              "shoulder_strap_simple",
+              "holo_sight"
+            ]
           },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "group": "modular_m4a1",
+            "ammo-item": "556_mk318",
+            "charges": 30,
+            "contents-item": [
+              "shoulder_strap",
+              "holo_sight"
+            ]
+          },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
           {
             "item": "m17",
             "ammo-item": "9mm",
@@ -1654,58 +3738,154 @@
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
       }
-    },
-
+    }
+  },
+  {
+    "id": "mil_sniper",
+    "type": "profession",
+    "name": "Military Sniper",
+    "requirement": "achievement_reach_military_bunker",
+    "description": "You're a crack shot with a rifle, and the farther you can stay away from zombies, the better.  The only thing stopping you is limited ammo, so you should try to find a place to restock sooner or later.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 5,
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_gun_cleaning",
       "prof_knives_familiar",
       "prof_auto_rifles_familiar",
       "prof_auto_pistols_familiar",
-
+      "prof_gross_anatomy",
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "mil_sniper",
-    "copy-from": "mil_sniper",
-    "type": "profession",
-
-    "name": "Military Sniper",
-
-    "//items": [
-      "we spawn M17 magazines without the leg pouch, because the leg pouch is currently specialized and cannot accept magazines which are too short"
+    ],
+    "skills": [
+      {
+        "level": 7,
+        "name": "gun"
+      },
+      {
+        "level": 7,
+        "name": "rifle"
+      },
+      {
+        "level": 4,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "melee"
+      },
+      {
+        "level": 3,
+        "name": "stabbing"
+      },
+      {
+        "level": 3,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "firstaid"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 2,
+        "name": "survival"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
     ],
     "items": {
       "both": {
         "entries": [
-          { "item": "pants_army" },
-          { "item": "undershirt" },
-          { "item": "combat_shirt" },
-          { "item": "helmet_army" },
-          { "item": "mask_ski" },
-          { "item": "gloves_liner" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "wristwatch" },
-          { "item": "molle_pack" },
-          { "item": "cloak" },
-          { "group": "charged_two_way_radio" },
-          { "group": "us_ballistic_vest_pristine" },
-          { "group": "army_mags_m2010" },
-          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "pants_army"
+          },
+          {
+            "item": "undershirt"
+          },
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "item": "helmet_army"
+          },
+          {
+            "item": "mask_ski"
+          },
+          {
+            "item": "gloves_liner"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "molle_pack"
+          },
+          {
+            "item": "cloak"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "us_ballistic_vest_pristine"
+          },
+          {
+            "group": "army_mags_m2010"
+          },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
           {
             "item": "m2010",
             "ammo-item": "300_winmag",
             "charges": 5,
-            "contents-item": ["shoulder_strap", "rifle_scope"]
+            "contents-item": [
+              "shoulder_strap",
+              "rifle_scope"
+            ]
           },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
           {
             "item": "knife_combat_army",
             "variant": "m9bayonet",
@@ -1717,66 +3897,166 @@
             "container-item": "nylon_holster",
             "charges": 17
           },
-          { "group": "army_mags_m17" }
+          {
+            "group": "army_mags_m17"
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
       }
-    },
-
+    }
+  },
+  {
+    "id": "mil_breacher",
+    "type": "profession",
+    "name": "Military Breacher",
+    "requirement": "achievement_reach_military_bunker",
+    "description": "Doors and windows everywhere dare not speak your name.  You're going to be breaking into buildings for supplies rather than combat operations now, but the principle is about the same.",
+    "npc_background": "BG_survival_story_SOLDIER",
+    "points": 5,
     "proficiencies": [
       "prof_gunsmithing_basic",
       "prof_gun_cleaning",
       "prof_knives_familiar",
       "prof_auto_rifles_familiar",
       "prof_auto_pistols_familiar",
-
       "prof_plate_carrier"
-    ]
-  },
-  {
-    "id": "mil_breacher",
-    "copy-from": "mil_breacher",
-    "type": "profession",
-
-    "name": "Military Breacher",
-
+    ],
+    "skills": [
+      {
+        "level": 4,
+        "name": "gun"
+      },
+      {
+        "level": 4,
+        "name": "shotgun"
+      },
+      {
+        "level": 4,
+        "name": "melee"
+      },
+      {
+        "level": 4,
+        "name": "bashing"
+      },
+      {
+        "level": 3,
+        "name": "rifle"
+      },
+      {
+        "level": 3,
+        "name": "pistol"
+      },
+      {
+        "level": 3,
+        "name": "stabbing"
+      },
+      {
+        "level": 3,
+        "name": "dodge"
+      },
+      {
+        "level": 3,
+        "name": "firstaid"
+      },
+      {
+        "level": 3,
+        "name": "throw"
+      },
+      {
+        "level": 2,
+        "name": "survival"
+      },
+      {
+        "level": 2,
+        "name": "swimming"
+      }
+    ],
     "items": {
       "both": {
         "entries": [
           {
-            "item": "belt_webbing_blackhawk_foundation",
-            "contents-group": "mil_breacher_belt"
+            "item": "pants_army"
           },
-
-          { "item": "pants_army" },
-          { "item": "undershirt" },
-          { "item": "combat_shirt" },
-          { "item": "tac_fullhelmet" },
-          { "item": "armguard_hard" },
-          { "item": "legguard_hard" },
-          { "item": "mask_ski" },
-          { "item": "gloves_liner" },
-          { "item": "gloves_tactical" },
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "wristwatch" },
-          { "item": "molle_pack" },
-          { "group": "charged_two_way_radio" },
+          {
+            "item": "undershirt"
+          },
+          {
+            "item": "combat_shirt"
+          },
+          {
+            "item": "tac_fullhelmet"
+          },
+          {
+            "item": "armguard_hard"
+          },
+          {
+            "item": "legguard_hard"
+          },
+          {
+            "item": "mask_ski"
+          },
+          {
+            "item": "gloves_liner"
+          },
+          {
+            "item": "gloves_tactical"
+          },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "molle_pack"
+          },
+          {
+            "group": "charged_two_way_radio"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
           {
             "group": "us_ballistic_vest_pristine",
             "contents-group": "breacher_hammer_pouched"
           },
-          { "item": "water_clean", "container-item": "canteen" },
+          {
+            "item": "water_clean",
+            "container-item": "canteen"
+          },
           {
             "item": "mossberg_500",
             "ammo-item": "shot_00",
             "charges": 6,
-            "contents-item": ["shoulder_strap"]
+            "contents-item": [
+              "shoulder_strap"
+            ]
           },
-          { "item": "ear_plugs", "custom-flags": ["no_auto_equip"] },
+          {
+            "item": "ear_plugs",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          },
           {
             "item": "bandolier_shotgun",
             "contents-group": "bandolier_swat_cqc1"
@@ -1791,227 +4071,306 @@
             "ammo-item": "9mm",
             "charges": 17,
             "container-item": "nylon_holster"
+          },
+          {
+            "item": "belt/webbing/blackhawk/foundation",
+            "contents-group": "mil_breacher_belt"
           }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
       "female": {
-        "entries": [{ "item": "sports_bra" }, { "item": "boxer_shorts" }]
+        "entries": [
+          {
+            "item": "sports_bra"
+          },
+          {
+            "item": "boxer_shorts"
+          }
+        ]
       }
-    },
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+    }
   },
   {
     "id": "security",
-    "copy-from": "security",
     "type": "profession",
-
     "name": "Security Guard",
-
+    "requirement": "achievement_reach_megastore",
+    "description": "You had a boring, underpaid job watching cameras and patrolling hallways, but things have suddenly gotten a lot more dangerous.  You have some useful equipment, but you've never had any call to use it until now.",
+    "npc_background": "BG_survival_story_WORKER_COMMERCIAL",
+    "points": 2,
+    "skills": [
+      {
+        "level": 2,
+        "name": "gun"
+      },
+      {
+        "level": 2,
+        "name": "pistol"
+      },
+      {
+        "level": 2,
+        "name": "melee"
+      },
+      {
+        "level": 2,
+        "name": "bashing"
+      }
+    ],
     "items": {
       "both": {
         "entries": [
-          { "item": "socks" },
-          { "item": "boots_combat" },
-          { "item": "longshirt" },
-          { "item": "knife_folding" },
-          { "item": "hat_ball" },
-          { "item": "wristwatch" },
-          { "item": "leather_belt" },
-          { "group": "charged_smart_phone" },
-          { "group": "charged_flashlight" },
-          { "item": "pants", "variant": "pants_black" },
-          { "item": "vest_stabproof_safeguard" },
-          { "item": "baton", "custom-flags": ["auto_wield"] },
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots_combat"
+          },
+          {
+            "item": "longshirt"
+          },
+          {
+            "item": "knife_folding"
+          },
+          {
+            "item": "hat_ball"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "leather_belt"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "charged_flashlight"
+          },
+          {
+            "item": "pants",
+            "variant": "pants_black"
+          },
+          {
+            "item": "vest/stabproof/safeguard"
+          },
+          {
+            "item": "baton",
+            "custom-flags": [
+              "auto_wield"
+            ]
+          },
           {
             "item": "m9",
             "ammo-item": "9mm",
             "charges": 15,
             "container-item": "holster"
           },
-          { "item": "m9mag", "ammo-item": "9mm", "charges": 15 },
-          { "item": "m9mag", "ammo-item": "9mm", "charges": 15 }
+          {
+            "item": "m9mag",
+            "ammo-item": "9mm",
+            "charges": 15
+          },
+          {
+            "item": "m9mag",
+            "ammo-item": "9mm",
+            "charges": 15
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
     }
   },
   {
     "id": "mall_cop",
-    "copy-from": "mall_cop",
     "type": "profession",
-
     "name": "Mall Security",
-
+    "description": "You spent dull nights guarding the local mall against teen hooligans and petty thieves.  Your job training didn't provide any terribly useful skills, but you do have your trusty stun gun, baton, and pocket knife.",
+    "npc_background": "BG_survival_story_WORKER_COMMERCIAL",
+    "points": 0,
+    "skills": [
+      {
+        "level": 2,
+        "name": "melee"
+      },
+      {
+        "level": 2,
+        "name": "bashing"
+      }
+    ],
     "items": {
       "both": {
         "entries": [
-          { "item": "socks" },
-          { "item": "boots" },
-          { "item": "longshirt" },
-          { "item": "holster" },
-          { "item": "pockknife" },
-          { "item": "wristwatch" },
-          { "item": "leather_belt" },
-          { "group": "charged_smart_phone" },
-          { "group": "charged_flashlight" },
-          { "group": "charged_tazer" },
-          { "item": "pants", "variant": "pants_urban" },
-          { "item": "vest_stabproof_safeguard" },
-          { "item": "baton", "custom-flags": ["auto_wield"] }
+          {
+            "item": "socks"
+          },
+          {
+            "item": "boots"
+          },
+          {
+            "item": "longshirt"
+          },
+          {
+            "item": "holster"
+          },
+          {
+            "item": "pockknife"
+          },
+          {
+            "item": "wristwatch"
+          },
+          {
+            "item": "leather_belt"
+          },
+          {
+            "group": "charged_smart_phone"
+          },
+          {
+            "group": "starter_wallet_full"
+          },
+          {
+            "group": "charged_flashlight"
+          },
+          {
+            "group": "charged_tazer"
+          },
+          {
+            "item": "pants",
+            "variant": "pants_urban"
+          },
+          {
+            "item": "vest/stabproof/safeguard"
+          },
+          {
+            "item": "baton",
+            "custom-flags": [
+              "auto_wield"
+            ]
+          }
         ]
       },
-      "male": { "entries": [{ "item": "boxer_shorts" }] },
-      "female": { "entries": [{ "item": "bra" }, { "item": "boy_shorts" }] }
+      "male": {
+        "entries": [
+          {
+            "item": "boxer_shorts"
+          }
+        ]
+      },
+      "female": {
+        "entries": [
+          {
+            "item": "bra"
+          },
+          {
+            "item": "boy_shorts"
+          }
+        ]
+      }
     }
   },
-
   {
     "id": "national_guard",
     "copy-from": "national_guard",
     "type": "profession",
-
-    "name": "National Guardsman",
-
-    "proficiencies": [
-      "prof_wound_care",
-      "prof_gun_cleaning",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "mil_marksman",
     "copy-from": "mil_marksman",
     "type": "profession",
-
-    "name": "Military Marksman",
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "mil_auto_rifleman",
     "copy-from": "mil_auto_rifleman",
     "type": "profession",
-
-    "name": "Military Automatic Rifleman",
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "mili_medic",
     "copy-from": "mili_medic",
     "type": "profession",
-
-    "name": "Combat Medic",
-
-    "proficiencies": [
-      "prof_spotting",
-      "prof_wound_care",
-      "prof_wound_care_expert",
-      "prof_intro_biology",
-      "prof_physiology",
-      "prof_burn_care",
-      "prof_dissect_humans",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "major-general",
     "copy-from": "major-general",
     "type": "profession",
-
-    "name": "Major General",
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_gun_cleaning",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "nco",
     "copy-from": "nco",
     "type": "profession",
-
-    "name": "Non-Commissioned Officer",
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_spotting",
-      "prof_gun_cleaning",
-      "prof_knives_familiar",
-      "prof_auto_rifles_familiar",
-      "prof_auto_pistols_familiar",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "combat-mechanic",
     "copy-from": "combat-mechanic",
     "type": "profession",
-
-    "name": "Combat Mechanic",
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_metalworking",
-      "prof_welding_basic",
-      "prof_welding",
-      "prof_gun_cleaning",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   },
   {
     "id": "combat-engineer",
     "copy-from": "combat-engineer",
     "type": "profession",
-
-    "name": "Combat Engineer",
-
-    "proficiencies": [
-      "prof_gunsmithing_basic",
-      "prof_traps",
-      "prof_trapsetting",
-      "prof_disarming",
-      "prof_spotting",
-      "prof_gun_cleaning",
-
-      "prof_plate_carrier"
-    ]
+    "extend": {
+      "proficiencies": [
+        "prof_plate_carrier"
+      ]
+    }
   }
 ]

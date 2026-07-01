@@ -1,213 +1,159 @@
 [
   {
-    "id": "piece_iotv_groin",
-    "type": "ARMOR",
+    "id": "piece/iotv/groin",
+    "type": "ITEM",
+    "subtypes": [
+      "ARMOR"
+    ],
     "category": "armor",
-
-    "//sources": [
-      [
-        "https://locknwalkharness.com/products/multicam-iotv-gen-iii-enhanced-groin-protector-w-3a-soft-armor-included",
-        "visual reference",
-        "price"
-      ],
-      ["https://ciehub.info/spec/PD/FQ-PD-07-05.html", "weight"]
-    ],
-
-    "//notes": [
-      "for the sake of simplicity, we're going to pretend that the ballistic insert is embedded into the protector and is repairable"
-    ],
-
     "name": {
-      "str": "IOTV Gen III groin protector"
+      "str": "Army groin protector"
     },
-    "description": "Front nylon armor with a soft armor insert for groin and thigh protection.  Designed to be attached to IOTV Gen III ballistic vest, but could also be worn on a belt.",
-
-    "weight": "417 g",
-    "//dimensions": {
-      "length": "0.27 in",
-      "width": "11.50 in",
-      "height": "12.75 in",
-      "raw": "648.74 ml",
-      "trim": 0.3,
-      "notes": [
-        "depth (length) is assumed from IOTV vest maximum thickness",
-        "other dimensions acquired from visual reference"
-      ]
-    },
-    "volume": "454 ml",
-    "longest_side": "324 mm",
-
+    "description": "Thin nylon pad with a Kevlar soft armor insert for groin and thigh protection.  Designed to be attached to the Army plate carrier, but could be independently worn on a belt.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "IOTV groin protector"
+        },
+        "description": "Thin nylon pad with a Kevlar soft armor insert for groin and thigh protection.  Designed to be attached to the IOTV plate carrier, but could be independently worn on a belt.  <variant:ocp>",
+        "id": "ocp",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "417 g 305 mg",
+    "longest_side": "29 cm 2 mm",
     "symbol": ",",
     "color": "dark_gray",
-
-    "material": ["nylon", "kevlar"],
-
-    "//armor": [
-      "there's also the thick nylon belt that might be worth considering"
+    "material": [
+      "nylon",
+      "kevlar"
     ],
     "armor": [
       {
-        "//description": "Groin protector",
-
         "material": [
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "0.1 mm per side",
             "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
-            "//thickness": [
-              "assumed 0.27 in. - 0.2 mm",
-              "similar to other soft armor inserts"
-            ],
             "thickness": 6.658
           }
         ],
-
         "encumbrance": 4,
-
-        "//coverage": ["approximated from visual reference"],
         "coverage": 16,
         "cover_melee": 8,
         "cover_ranged": 16,
-
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ],
         "volume_encumber_modifier": 0.3,
-
-        "layers": ["OUTER"]
+        "layers": [
+          "OUTER"
+        ]
       },
-
       {
-        "//description": "Groin protector",
-
         "material": [
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "0.1 mm per side",
             "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
-            "//thickness": [
-              "assumed 0.27 in. - 0.2 mm",
-              "similar to other soft armor inserts"
-            ],
             "thickness": 6.658
           }
         ],
-
         "encumbrance": 4,
-
-        "//coverage": [
-          "approximated from visual reference",
-          "full front coverage of the waist ← 40% (fronts coverage) / 2"
-        ],
         "coverage": 20,
         "cover_melee": 10,
         "cover_ranged": 20,
-
-        "covers": ["torso"],
-        "specifically_covers": ["torso_waist"],
-
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_waist"
+        ],
         "volume_encumber_modifier": 0.3,
-
-        "layers": ["BELTED"]
+        "layers": [
+          "BELTED"
+        ]
       },
-
       {
-        "//description": "Groin protector",
-
         "material": [
           {
             "type": "nylon",
             "covered_by_mat": 100,
-            "//thickness": "0.1 mm per side",
             "thickness": 0.2
           },
           {
             "type": "kevlar",
             "covered_by_mat": 99,
-            "//thickness": [
-              "assumed 0.27 in. - 0.2 mm",
-              "similar to other soft armor inserts"
-            ],
             "thickness": 6.658
           }
         ],
-
         "encumbrance": 4,
-
-        "//coverage": [
-          "approximated from visual reference",
-          "56% of front coverage / 2"
-        ],
         "coverage": 23,
         "cover_melee": 12,
         "cover_ranged": 23,
-
-        "covers": ["leg_l", "leg_r"],
-        "specifically_covers": ["leg_hip_l", "leg_hip_r"],
-
+        "covers": [
+          "leg_l",
+          "leg_r"
+        ],
+        "specifically_covers": [
+          "leg_hip_l",
+          "leg_hip_r"
+        ],
         "volume_encumber_modifier": 0.3
       }
     ],
-
-    "flags": ["IOTV_GROIN", "BELTED"],
-
+    "flags": [
+      "IOTV_GROIN",
+      "BELTED"
+    ],
     "price": "150 USD",
-    "price_postapoc": "1 USD"
+    "price_postapoc": "1 USD",
+    "volume": "309 ml"
   },
   {
-    "id": "piece_iotv_shoulder",
-    "type": "ARMOR",
+    "id": "piece/iotv/shoulder",
+    "type": "ITEM",
+    "subtypes": [
+      "ARMOR"
+    ],
     "category": "armor",
-
-    "//sources": [
-      [
-        "https://www.venturesurplus.com/products/usgi-iotv-deltoid-protector-multicam/",
-        "price",
-        "weight"
-      ]
-    ],
-
-    "//notes": [
-      "for the sake of simplicity, we're going to pretend that the ballistic insert is embedded into the protector and is repairable",
-      "size L (fits medium and large IOTVs)"
-    ],
-
     "name": {
-      "str": "IOTV Gen III deltoid protector"
+      "str": "Army deltoid protector"
     },
-    "description": "Nylon armor with soft armor insert protecting the shoulder and upper arm.  Designed to be attached to IOTV Gen III ballistic vest.",
-
-    "weight": "482 g",
-    "//dimensions": {
-      "length": "0.27 in",
-      "width": "5.90 in",
-      "height": "5.20 in",
-      "raw": "135.74 ml",
-      "trim": 0.25,
-      "notes": [
-        "depth (length) is assumed from IOTV vest maximum thickness",
-        "other dimensions acquired from visual reference"
-      ]
-    },
-    "volume": "102 ml",
-    "//longest_side": "height, assuming collapse along the longest side",
-    "longest_side": "132 mm",
-
+    "description": "Thin nylon pad with a Kevlar soft armor insert protecting the shoulder and the upper arm.  Designed to be attached to the Army plate carrier",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "IOTV deltoid protector"
+        },
+        "description": "Thin nylon pad with a Kevlar soft armor insert protecting the shoulder and the upper arm.  Designed to be attached to the IOTV plate carrier  <variant:ocp>",
+        "id": "ocp",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "517 g 95 mg",
+    "longest_side": "38 cm 9 mm",
     "symbol": ",",
     "color": "dark_gray",
-
-    "material": ["nylon", "kevlar"],
-
+    "material": [
+      "nylon",
+      "kevlar"
+    ],
     "armor": [
       {
         "material": [
@@ -219,27 +165,26 @@
           {
             "type": "kevlar",
             "covered_by_mat": 99,
-            "//thickness": [
-              "assumed 0.27 in. - 0.2 mm of nylon",
-              "similar to other soft armor inserts"
-            ],
             "thickness": 6.658
           }
         ],
-
         "encumbrance": 3,
-
         "coverage": 80,
         "cover_melee": 40,
         "cover_ranged": 80,
-
-        "covers": ["arm_l", "arm_r"],
-        "specifically_covers": ["arm_shoulder_l", "arm_shoulder_r"],
+        "covers": [
+          "arm_l",
+          "arm_r"
+        ],
+        "specifically_covers": [
+          "arm_shoulder_l",
+          "arm_shoulder_r"
+        ],
         "volume_encumber_modifier": 0,
-
-        "layers": ["OUTER"]
+        "layers": [
+          "OUTER"
+        ]
       },
-
       {
         "material": [
           {
@@ -250,31 +195,33 @@
           {
             "type": "kevlar",
             "covered_by_mat": 99,
-            "//thickness": [
-              "assumed 0.27 in. - 0.2 mm of nylon",
-              "similar to other soft armor inserts"
-            ],
             "thickness": 6.658
           }
         ],
-
         "encumbrance": 3,
-
         "coverage": 60,
         "cover_melee": 30,
         "cover_ranged": 60,
-
-        "covers": ["arm_l", "arm_r"],
-        "specifically_covers": ["arm_upper_l", "arm_upper_r"],
+        "covers": [
+          "arm_l",
+          "arm_r"
+        ],
+        "specifically_covers": [
+          "arm_upper_l",
+          "arm_upper_r"
+        ],
         "volume_encumber_modifier": 0,
-
-        "layers": ["OUTER"]
+        "layers": [
+          "OUTER"
+        ]
       }
     ],
-
-    "flags": ["IOTV_SHOULDER", "CANT_WEAR"],
-
-    "price": "60 USD",
-    "price_postapoc": "1 USD"
+    "flags": [
+      "IOTV_SHOULDER",
+      "CANT_WEAR"
+    ],
+    "price": "44 USD 99 cents",
+    "price_postapoc": "1 USD",
+    "volume": "612 ml"
   }
 ]

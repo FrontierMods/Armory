@@ -1,0 +1,182 @@
+[
+  {
+    id: "plate_carrier/lpspc/perroz:any",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        "contents-group": "cummerbund/perroz:any",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        "contents-group": ["cummerbund/perroz:any", "shoulder_pads/perroz:any"],
+        prob: 1,
+      },
+    ],
+  },
+
+  {
+    id: "plate_carrier/lpspc/perroz:multicam",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "multicam",
+        "contents-group": "cummerbund/perroz:multicam",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "multicam",
+        "contents-group": [
+          "cummerbund/perroz:multicam",
+          "shoulder_pads/perroz:multicam",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+  {
+    id: "plate_carrier/lpspc/perroz:multicam_black",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "multicam_black",
+        "contents-group": "cummerbund/perroz:multicam_black",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "multicam_black",
+        "contents-group": [
+          "cummerbund/perroz:multicam_black",
+          "shoulder_pads/perroz:multicam_black",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+  {
+    id: "plate_carrier/lpspc/perroz:black",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "black",
+        "contents-group": "cummerbund/perroz:black",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "black",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "shoulder_pads/perroz:black",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+  {
+    id: "plate_carrier/lpspc/perroz:coyote",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "coyote",
+        "contents-group": "cummerbund/perroz:coyote",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "coyote",
+        "contents-group": [
+          "cummerbund/perroz:coyote",
+          "shoulder_pads/perroz:coyote",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+  {
+    id: "plate_carrier/lpspc/perroz:grey",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "grey",
+        "contents-group": "cummerbund/perroz:black",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "grey",
+        "contents-group": [
+          "cummerbund/perroz:black",
+          "shoulder_pads/perroz:grey",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+  {
+    id: "plate_carrier/lpspc/perroz:woodland",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "woodland",
+        "contents-group": "cummerbund/perroz:woodland",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "woodland",
+        "contents-group": [
+          "cummerbund/perroz:woodland",
+          "shoulder_pads/perroz:multicam",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+  {
+    id: "plate_carrier/lpspc/perroz:olive",
+    type: "item_group",
+    subtype: "distribution",
+
+    entries: [
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "olive",
+        "contents-group": "cummerbund/perroz:multicam_black",
+        prob: 4,
+      },
+      {
+        item: "plate_carrier/perroz/lpspc",
+        variant: "olive",
+        "contents-group": [
+          "cummerbund/perroz:multicam_black",
+          "shoulder_pads/perroz:multicam_black",
+        ],
+        prob: 1,
+      },
+    ],
+  },
+]

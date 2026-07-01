@@ -1,0 +1,32 @@
+[
+  {
+    "id": "placard_haley_molle",
+    "type": "MIGRATION",
+    "replace": "placard/haley/molle"
+  },
+  {
+    "id": "placard_onetigris_vulture",
+    "type": "MIGRATION",
+    "replace": "placard/onetigris/vulture"
+  },
+  {
+    "id": "placard_haley_magazine",
+    "type": "MIGRATION",
+    "replace": "placard/haley/magazine/triple"
+  },
+  {
+    "id": "placard_direct_action_tempest",
+    "type": "MIGRATION",
+    "replace": "placard/direct_action/tempest"
+  },
+  {
+    "id": "placard_condor_stowaway",
+    "type": "MIGRATION",
+    "replace": "placard/condor/stowaway"
+  },
+  {
+    "id": "placard_tasm_mk_ii",
+    "type": "MIGRATION",
+    "replace": "placard/tasm/mk_ii"
+  }
+]

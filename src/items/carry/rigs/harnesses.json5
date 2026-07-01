@@ -1,0 +1,347 @@
+[
+  {
+    id: "chest_rig/harness/x/haley",
+    inherit: ["@chest_rig/harness"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://haleystrategic.com/x-harness-chest-rig-kit
+     
+        https://www.amazon.com/Evike-Strategic-Partners-Replacement-Harness/dp/B07FG9KQZF
+        - weight
+     
+        https://haleystrategic.com/x-harness-replacement
+        - additional dimensions reference
+     */
+
+    name: {
+      str: "X-harness",
+    },
+    description: "A set of straps and a soft pad, intended to hold a placard or a panel in order to form a chest rig.  This one is in the X pattern: shoulder straps cross each other at the back.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["black", 2],
+          ["coyote", 2],
+          "multicam_black",
+          "ranger",
+          "grey",
+        ],
+
+        name: { str: "Haley Strategic X-harness" },
+        description: "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.",
+      },
+
+      {
+        id: "flag_chestrig",
+
+        /*
+          NOTES
+            special variant for the Prepped Patriot profession
+         */
+
+        name: { str: "Haley Strategic X-harness" },
+        description: "A pair of cross-pattern shoulder straps, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  This one features a custom paint job, turning the harness into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
+        // * this cannot spawn in the wild
+        weight: 0,
+      },
+    ],
+
+    // * weight originally taken from the X harness kit
+    // > https://haleystrategic.com/x-harness-chest-rig-kit
+    // * it is apparently no longer sold anywhere, so we cannot re-confirm it
+    weight: {
+      math: [
+        "8.4 oz" /* whole kit */,
+        { op: "add", value: { ref: "chest_rig/belly_pad", key: "weight" } },
+      ],
+    },
+    dimensions: [
+      {
+        // * SHOULDER STRAP
+        type: "rectangle",
+        count: 2,
+
+        // * from visual reference
+        length: "25.35 in",
+        // * from visual reference
+        width: "2.25 in",
+        // * presumed from the listed height of the placard
+        height: "0.1 in",
+        // * to account for the buckles
+        trim: -0.05,
+        soft: true,
+      },
+
+      {
+        // * BELLY BELT
+        type: "rectangle",
+
+        // * from visual reference
+        length: "16.25 in",
+        // * from visual reference
+        width: "1.15 in",
+        // * presumed from the listed height of the placard
+        height: "0.1 in",
+        // * to account for the buckles
+        trim: -0.125,
+        soft: true,
+      },
+    ],
+
+    symbol: "[",
+    color: "dark_gray",
+    looks_like: "seatbelt",
+
+    material: ["nylon"],
+    repairs_like: "tacvest",
+    warmth: 1,
+
+    armor: [
+      {
+        encumbrance: [1, 4],
+
+        /*
+          COVERAGE
+            shoulder straps: 2% × 2
+            back straps: 1% × 2
+        */
+        coverage: 6,
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+      },
+      {
+        encumbrance: [1, 2],
+
+        /*
+          COVERAGE
+            belly belt: 1%
+        */
+        coverage: 1,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+      },
+    ],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "QASM interface" },
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        // * ideally, this should be 1 + 1 slots, separately
+        // * each slot is on a separate shoulder strap and cannot be coerced to form a single double-width slot
+        size: 2,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: "50 USD",
+  },
+  {
+    id: "chest_rig/harness/h/direct_action",
+    inherit: ["@chest_rig/harness"],
+    type: "ITEM",
+    subtypes: ["ARMOR"],
+
+    /*
+      SOURCES
+        https://eu.directactiongear.com/en/front-flap-rig-interfacer.html
+
+        https://us.directactiongear.com/front-flap-rig-interface
+        - price
+
+        https://www.trex-arms.com/store/t-rex-h-harness/
+        https://raptortactical.com/dwarf-chest-rig-harness/
+        - additional dimensions reference
+    */
+
+    /*
+      NOTES
+        - these dimensions and the resulting volume make no sense, but this is likely the best we can assess without actual dimensions or a viable reference
+        - for the sake of sanity while managing migrations, using the T.REX harness as reference, we pretend that this harness can also host a gun sling
+    */
+
+    name: {
+      str: "H-harness",
+    },
+    description: "A set of straps and a soft pad, intended to hold a placard or a panel in order to form a chest rig.  This one is in the H pattern: shoulder straps are connected by a textile bridge at the back.  An embedded set of retainers allow holding a gun sling, or a gun attached to one.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [
+          ["multicam", 4],
+          ["black", 2],
+          ["coyote", 2],
+          ["ranger", 2],
+          "fde",
+          "wildwood",
+          "woodland",
+        ],
+
+        name: { str: "Direct Action H-harness" },
+        description: "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.",
+      },
+      {
+        id: "flag_chestrig",
+
+        // * special variant for the Prepped Patriot profession
+
+        name: { str: "Direct Action H-harness" },
+        description: "A pair of shoulder straps connected by a textile bridge, a waist belt, and a spacer pad tangled together.  Can be combined with a panel or a placard into a wearable chest rig.  This one features a custom paint job, turning the harness into a representation of all things American: the flag, a bald eagle, fireworks, and loose rounds of .50 BMG.",
+        expand_snippets: true,
+        // * this cannot spawn in the wild
+        weight: 0,
+      },
+    ],
+
+    // * see X-harness weight notes for more detail
+    weight: {
+      math: ["200 g", { op: "subtract", value: "1.68 oz" /* belly pad */ }],
+    },
+    dimensions: [
+      {
+        // * UPPER STRAP
+        type: "rectangle",
+        count: 2,
+
+        // * assumed to be valid for the length between the bridge and the buckle
+        length: "12.5 in",
+        // * assumed from visual reference
+        // * reliant on the fact that the slightly-narrower T.REX reference harness is 2-in. wide
+        width: "2.25 in",
+        // * assumed from visual reference
+        height: "0.15 mm",
+        // * to account for extra plastic parts
+        trim: -0.5,
+        soft: true,
+      },
+
+      {
+        // * LOWER STRAP
+        type: "rectangle",
+        count: 2,
+
+        // * assumed to be valid for the length between the bridge and the buckle
+        length: "12.5 in",
+        // * assumed from visual reference
+        width: "1 in",
+        // * assumed from visual reference
+        height: "0.2 mm",
+        // * to account for extra plastic parts
+        trim: -0.5,
+        soft: true,
+      },
+
+      {
+        // * BELT
+        type: "rectangle",
+
+        // * from visual reference
+        length: "16.25 in",
+        // * from visual reference
+        width: "1 in",
+        // * presumed from the listed height of the placard
+        height: "0.2 mm",
+        // * to account for the buckles
+        trim: -0.5,
+        soft: true,
+      },
+
+      {
+        // * H-BRIDGE
+        type: "rectangle",
+
+        /*
+          NOTES
+         
+          - we presume the initial dimensions of the DWARF harness are that of the bridge
+          - we also presume that the dimensions are equivalent to a straight-line bridge, rather than its visual bent shape
+         
+         */
+
+        length: "7.5 in",
+        width: "2.25 in",
+        // * assumed from visual reference
+        height: "0.5 mm",
+        soft: true,
+      },
+    ],
+
+    looks_like: "seatbelt",
+
+    material: ["nylon", "plastic"],
+    repairs_like: "tacvest",
+    warmth: 2,
+
+    armor: [
+      {
+        encumbrance: [1, 3],
+
+        /*
+          COVERAGE
+            shoulder straps: 3% × 2
+            back straps: 1% × 2
+         */
+        coverage: 8,
+        covers: ["torso"],
+        specifically_covers: ["torso_upper"],
+
+        volume_encumber_modifier: 0.5,
+      },
+      {
+        encumbrance: [1, 2],
+
+        /*
+          COVERAGE
+            belly belt: 1%
+         */
+        coverage: 1,
+        covers: ["torso"],
+        specifically_covers: ["torso_lower"],
+
+        volume_encumber_modifier: 0.5,
+      },
+    ],
+
+    pocket_data: [
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "QASM interface" },
+      },
+      {
+        ref: "@pockets",
+        key: "pocket_data",
+        filter: { description: "Slot for a gun sling" },
+      },
+    ],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        // * the harness has a lot more than two slot
+        // * since we can't separate them, for balance reasons, we keep it down to 2 slots
+        size: 2,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: "48 USD",
+  },
+]

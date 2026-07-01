@@ -3,21 +3,22 @@
     "id": "loadout/msv:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
-      { "group": "loadout/msv/baseline:any" },
-      { "group": "loadout/msv/baseline:coordinated" }
+      {
+        "group": "loadout/msv/baseline:any"
+      },
+      {
+        "group": "loadout/msv/baseline:coordinated"
+      }
     ]
   },
-
   {
     "id": "loadout/msv/baseline:any",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
-        "item": "plate_carrier_msv",
+        "item": "plate_carrier/msv/gen_ii",
         "contents-group": "cummerbund/iotv:any"
       }
     ]
@@ -26,7 +27,6 @@
     "id": "loadout/msv/baseline:coordinated",
     "type": "item_group",
     "subtype": "distribution",
-
     "entries": [
       {
         "group": "loadout/msv/baseline:ocp",
@@ -34,15 +34,13 @@
       }
     ]
   },
-
   {
     "id": "loadout/msv/baseline:ocp",
     "type": "item_group",
     "subtype": "collection",
-
     "entries": [
       {
-        "item": "plate_carrier_msv",
+        "item": "plate_carrier/msv/gen_ii",
         "variant": "ocp",
         "contents-group": "cummerbund/iotv:ocp"
       }

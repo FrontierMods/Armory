@@ -1,0 +1,12 @@
+[
+  {
+    id: ["cummerbund_perroz"],
+    type: "MIGRATION",
+    replace: "cummerbund/perroz",
+  },
+  {
+    id: ["cummerbund_iotv"],
+    type: "MIGRATION",
+    replace: "cummerbund/iotv",
+  },
+]

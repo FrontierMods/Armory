@@ -1,0 +1,12 @@
+[
+  {
+    "id": "vest_stabproof_safeguard",
+    "type": "MIGRATION",
+    "replace": "vest/stabproof/safeguard"
+  },
+  {
+    "id": "vest_ballistic_point_blank",
+    "type": "MIGRATION",
+    "replace": "vest/ballistic/point_blank"
+  }
+]

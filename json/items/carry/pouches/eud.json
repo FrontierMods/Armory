@@ -1,0 +1,117 @@
+[
+  {
+    "id": "pouch/eud/ferro/admin",
+    "type": "ITEM",
+    "category": "container",
+    "name": {
+      "str": "EUD admin pouch"
+    },
+    "description": "A compact zippered pouch for storing small items.  In addition to mounting onto PALS webbing, it can mount onto the EUD interface.  Has two external loops for holding onto things like pens, small batteries, and glowsticks.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "name": {
+          "str": "Ferro Concepts ADAPT admin pouch"
+        },
+        "description": "A compact pouch for holding onto small items in the field.  In addition to PALS, this pouch can mount onto the EUD interface, making it useful on aftermarket plate carriers and chest rigs.  Two external loops can hold onto longer, smaller objects, such as pens and glowsticks.  <variant:multicam>",
+        "id": "multicam",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts ADAPT admin pouch"
+        },
+        "description": "A compact pouch for holding onto small items in the field.  In addition to PALS, this pouch can mount onto the EUD interface, making it useful on aftermarket plate carriers and chest rigs.  Two external loops can hold onto longer, smaller objects, such as pens and glowsticks.  <variant:multicam_black>",
+        "id": "multicam_black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts ADAPT admin pouch"
+        },
+        "description": "A compact pouch for holding onto small items in the field.  In addition to PALS, this pouch can mount onto the EUD interface, making it useful on aftermarket plate carriers and chest rigs.  Two external loops can hold onto longer, smaller objects, such as pens and glowsticks.  <variant:black>",
+        "id": "black",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts ADAPT admin pouch"
+        },
+        "description": "A compact pouch for holding onto small items in the field.  In addition to PALS, this pouch can mount onto the EUD interface, making it useful on aftermarket plate carriers and chest rigs.  Two external loops can hold onto longer, smaller objects, such as pens and glowsticks.  <variant:coyote>",
+        "id": "coyote",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts ADAPT admin pouch"
+        },
+        "description": "A compact pouch for holding onto small items in the field.  In addition to PALS, this pouch can mount onto the EUD interface, making it useful on aftermarket plate carriers and chest rigs.  Two external loops can hold onto longer, smaller objects, such as pens and glowsticks.  <variant:ranger>",
+        "id": "ranger",
+        "weight": 1,
+        "expand_snippets": true
+      },
+      {
+        "name": {
+          "str": "Ferro Concepts ADAPT admin pouch"
+        },
+        "description": "A compact pouch for holding onto small items in the field.  In addition to PALS, this pouch can mount onto the EUD interface, making it useful on aftermarket plate carriers and chest rigs.  Two external loops can hold onto longer, smaller objects, such as pens and glowsticks.  <variant:grey>",
+        "id": "grey",
+        "weight": 1,
+        "expand_snippets": true
+      }
+    ],
+    "weight": "62 g 369 mg",
+    "symbol": "[",
+    "color": "dark_gray",
+    "material": [
+      "nylon"
+    ],
+    "looks_like": "ammo_satchel",
+    "repairs_like": "ammo_satchel",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Admin pouch",
+        "rigid": true,
+        "max_contains_weight": "1 kg",
+        "max_contains_volume": "498 ml",
+        "max_item_length": "16 cm 9 mm",
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Elastic loop",
+        "holster": true,
+        "max_contains_weight": "50 g",
+        "min_item_volume": "8 ml",
+        "max_contains_volume": "36 ml",
+        "min_item_length": "4 cm 5 mm",
+        "max_item_length": "17 cm",
+        "moves": 50
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "description": "Elastic loop",
+        "holster": true,
+        "max_contains_weight": "50 g",
+        "min_item_volume": "8 ml",
+        "max_contains_volume": "36 ml",
+        "min_item_length": "4 cm 5 mm",
+        "max_item_length": "17 cm",
+        "moves": 50
+      }
+    ],
+    "flags": [
+      "CANT_WEAR",
+      "EUD_BRIDGE"
+    ],
+    "price": "61 USD",
+    "price_postapoc": "1 USD",
+    "volume": "506 ml",
+    "longest_side": "17 cm"
+  }
+]

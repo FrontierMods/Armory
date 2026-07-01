@@ -1,0 +1,30 @@
+[
+  {
+    id: "@constants",
+    type: "PARTIAL",
+
+    pi: 3.1415926535897932384626433,
+
+    size: {
+      pals: {
+        column: "1.5 in",
+        row: "1 in",
+      },
+    },
+
+    coverage: {
+      torso: {
+        end: {
+          total: 0.8,
+          side: 0.4,
+          parts: { upper: 0.6, lower: 0.4 },
+        },
+        side: {
+          total: 0.2,
+          side: 0.1,
+          parts: { upper: 0.5, lower: 0.5 },
+        },
+      },
+    },
+  },
+]

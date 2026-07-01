@@ -1,0 +1,11 @@
+[
+  {
+    id: "@ballistic_vest",
+    type: "PARTIAL",
+    subtypes: ["ARMOR"],
+    category: "armor",
+
+    symbol: "[",
+    color: "light_gray",
+  },
+]

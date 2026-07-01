@@ -1,135 +1,200 @@
 [
   {
-    "//changes": [
-      [
-        "removed `light_load_bearing_vest` and `load_bearing_vest` from components for torso pockets",
-        "these are now chassis/panels, not full rigs",
-        "replaced with `chest_rig_condor_modular`, which is currently an inseparable rig"
-      ]
-    ],
-
     "result": "nomad_rig",
     "copy-from": "nomad_rig",
     "type": "recipe",
-
     "components": [
       [
-        ["leather", 4],
-        ["tanned_hide", 1],
-        ["sheet_leather", 1],
-        ["sheet_leather_patchwork", 1]
+        [
+          "leather",
+          4
+        ],
+        [
+          "tanned_hide",
+          1
+        ],
+        [
+          "sheet_leather",
+          1
+        ],
+        [
+          "sheet_leather_patchwork",
+          1
+        ]
       ],
       [
-        ["sheet_denim", 4],
-        ["sheet_denim_patchwork", 4]
-      ],
-      [["exodii_wire_kit", 1]],
-      [
-        ["flashlight", 1],
-        ["heavy_flashlight", 1]
-      ],
-      [["plastic_sheet", 2]],
-      [
-        ["chest_rig_condor_modular", 1],
-        ["vest", 1],
-        ["tacvest", 1]
+        [
+          "sheet_denim",
+          4
+        ],
+        [
+          "sheet_denim_patchwork",
+          4
+        ]
       ],
       [
-        ["purse", 2],
-        ["leather_pouch", 4],
-        ["dump_pouch", 2],
-        ["fanny", 2]
+        [
+          "exodii_wire_kit",
+          1
+        ]
       ],
       [
-        ["tool_belt", 1],
-        ["legrig", 1]
+        [
+          "flashlight",
+          1
+        ],
+        [
+          "heavy_flashlight",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_sheet",
+          2
+        ]
+      ],
+      [
+        [
+          "vest",
+          1
+        ],
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "chest_rig/condor/modular",
+          1
+        ]
+      ],
+      [
+        [
+          "purse",
+          2
+        ],
+        [
+          "leather_pouch",
+          4
+        ],
+        [
+          "dump_pouch",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ]
       ]
     ]
   },
   {
-    "//changes": [
-      [
-        "removed `heavy_load_bearing_vest`, `light_load_bearing_vest`, and `load_bearing_vest` from possible options for torso pockets",
-        "these are now chassis/panels, not full rigs",
-        "replaced some of the options with `chest_rig_condor_modular`, which is currently an inseparable rig"
-      ]
-    ],
-
     "result": "xl_ballistic_vest",
     "copy-from": "xl_ballistic_vest",
     "type": "recipe",
-
     "components": [
       [
-        ["chest_rig_condor_modular", 1],
-        ["molle_large_rucksack", 1],
-        ["molle_medium_rucksack", 1]
+        [
+          "molle_large_rucksack",
+          1
+        ],
+        [
+          "molle_medium_rucksack",
+          1
+        ],
+        [
+          "chest_rig/condor/modular",
+          1
+        ]
       ],
       [
-        ["webbing_belt", 1],
-        ["molle_pack", 1]
+        [
+          "webbing_belt",
+          1
+        ],
+        [
+          "molle_pack",
+          1
+        ]
       ]
     ]
   },
   {
-    "//changes": [
-      [
-        "removed `ballistic_vest_light` and `ballistic_vest_esapi` from possible options for torso pockets",
-        "aside from the fact that vests' use being not obvious, entry suits do not use Kevlar or PALS webbing"
-      ]
-    ],
-
     "result": "entry_suit",
     "copy-from": "entry_suit",
     "type": "recipe",
-
     "components": [
-      [["sheet_kevlar_layered", 8]],
       [
-        ["duct_tape", 200],
-        ["superglue", 5]
+        [
+          "sheet_kevlar_layered",
+          8
+        ]
       ],
       [
-        ["kevlar", 1],
-        ["sheet_kevlar_layered", 24]
+        [
+          "kevlar",
+          1
+        ],
+        [
+          "sheet_kevlar_layered",
+          24
+        ]
       ]
     ]
   },
   {
-    "//changes": ["see `entry_suit` recipe audit for changes"],
-
     "result": "entry_suit_xs",
     "copy-from": "entry_suit_xs",
     "type": "recipe",
-
     "components": [
-      [["sheet_kevlar_layered", 6]],
       [
-        ["duct_tape", 150],
-        ["superglue", 3]
+        [
+          "sheet_kevlar_layered",
+          6
+        ]
       ],
       [
-        ["kevlar", 1],
-        ["sheet_kevlar_layered", 18]
+        [
+          "kevlar",
+          1
+        ],
+        [
+          "sheet_kevlar_layered",
+          18
+        ]
       ]
     ]
   },
   {
-    "//changes": ["see `entry_suit` recipe audit for changes"],
-
     "result": "xl_entry_suit",
     "copy-from": "xl_entry_suit",
     "type": "recipe",
-
     "components": [
-      [["sheet_kevlar_layered", 12]],
       [
-        ["duct_tape", 300],
-        ["superglue", 7]
+        [
+          "sheet_kevlar_layered",
+          12
+        ]
       ],
       [
-        ["kevlar", 2],
-        ["sheet_kevlar_layered", 30]
+        [
+          "kevlar",
+          2
+        ],
+        [
+          "sheet_kevlar_layered",
+          30
+        ]
       ]
     ]
   }

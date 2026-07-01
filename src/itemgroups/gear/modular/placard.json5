@@ -1,0 +1,100 @@
+[
+  {
+    id: "placard/condor/stowaway",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/condor/stowaway",
+        from: ["multicam", "black", "coyote", "olive"],
+      },
+    ],
+  },
+
+  {
+    id: "placard/direct_action/tempest",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/direct_action/tempest",
+        from: [
+          "multicam",
+          "black",
+          "coyote",
+          "ranger",
+          "fde",
+          "wildwood",
+          "flag_chestrig",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "placard/tasm/mk_ii",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/tasm/mk_ii",
+        from: ["multicam", "black", "coyote", "fde", "olive", "grey"],
+      },
+    ],
+  },
+
+  {
+    id: "placard/onetigris/vulture",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/onetigris/vulture",
+        from: ["multicam", "multicam_black", "black", "coyote", "ranger"],
+      },
+    ],
+  },
+
+  {
+    id: "placard/haley/magazine/triple",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/haley/magazine/triple",
+        from: [
+          "multicam",
+          "multicam_black",
+          "black",
+          "coyote",
+          "ranger",
+          "grey",
+        ],
+      },
+    ],
+  },
+  {
+    id: "placard/haley/molle",
+    type: "item_group",
+    subtype: "collection",
+
+    entries: [
+      {
+        item: "placard/haley/molle",
+        from: [
+          "multicam",
+          "multicam_black",
+          "black",
+          "coyote",
+          "ranger",
+          "grey",
+        ],
+      },
+    ],
+  },
+]

@@ -1,0 +1,169 @@
+[
+  {
+    id: "@collapse_contents",
+    type: "PARTIAL",
+
+    patch: [
+      {
+        op: "append",
+        key: "flags",
+        value: "COLLAPSE_CONTENTS",
+      },
+    ],
+  },
+
+  {
+    id: "@pouch",
+    type: "PARTIAL",
+
+    category: "container",
+
+    symbol: "[",
+    color: "dark_gray",
+
+    flags: ["CANT_WEAR", "WATER_FRIENDLY"],
+
+    price_postapoc: {
+      // * useful only for those who already have a stable, well-developed shelter or community
+      utility: 1,
+      // * can take a beating
+      longevity: 2,
+      // * possible to produce a similar item by hand with a needle, some thread, and some cotton or nylon
+      scarcity: 1,
+    },
+  },
+
+  {
+    id: "@pouch/small",
+    inherit: ["@pouch"],
+    type: "PARTIAL",
+
+    patch: [
+      {
+        op: "append",
+        key: "flags",
+        value: "PALS_SMALL",
+      },
+    ],
+  },
+  {
+    id: "@pouch/medium",
+    inherit: ["@pouch"],
+    type: "PARTIAL",
+
+    patch: [
+      {
+        op: "append",
+        key: "flags",
+        value: "PALS_MEDIUM",
+      },
+    ],
+  },
+  {
+    id: "@pouch/large",
+    inherit: ["@pouch"],
+    type: "PARTIAL",
+
+    patch: [
+      {
+        op: "append",
+        key: "flags",
+        value: "PALS_LARGE",
+      },
+    ],
+  },
+  {
+    id: "@pouch/leg",
+    inherit: ["@pouch"],
+    type: "PARTIAL",
+
+    flags: ["BELTED", "WATER_FRIENDLY"],
+  },
+
+  {
+    id: "@pouch/medical",
+    inherit: ["@pouch", "@collapse_contents"],
+    type: "PARTIAL",
+
+    color: "red",
+  },
+
+  {
+    id: "@holster",
+    type: "PARTIAL",
+
+    use_action: {
+      type: "holster",
+    },
+  },
+
+  {
+    id: "@holster/grenade",
+    type: "PARTIAL",
+
+    use_action: {
+      type: "holster",
+
+      holster_prompt: "Stash grenades",
+      holster_msg: "You stash your %s.",
+    },
+  },
+  {
+    id: "@holster/tool",
+    type: "PARTIAL",
+
+    use_action: {
+      type: "holster",
+
+      holster_prompt: "Stash tool",
+      holster_msg: "You stash your %s.",
+    },
+  },
+  {
+    id: "@holster/magazine",
+    type: "PARTIAL",
+
+    use_action: {
+      type: "holster",
+
+      holster_prompt: "Stash magazines",
+      holster_msg: "You stash your %s.",
+    },
+  },
+  {
+    // * specifically for loose ammo: one rifle round per loop; shotgun shells; 40mm grenades; etc.
+    id: "@holster/ammo",
+    type: "PARTIAL",
+
+    use_action: {
+      type: "holster",
+
+      holster_prompt: "Stash ammo",
+      holster_msg: "You stash your %s.",
+    },
+  },
+  {
+    id: "@holster/radio",
+    type: "PARTIAL",
+
+    use_action: {
+      type: "holster",
+
+      holster_prompt: "Stash radio",
+      holster_msg: "You stash your %s.",
+    },
+  },
+
+  {
+    id: "@belt_gear",
+    type: "PARTIAL",
+
+    patch: [
+      {
+        op: "append",
+        key: "flags",
+        value: "BELT_GEAR",
+      },
+    ],
+  },
+]

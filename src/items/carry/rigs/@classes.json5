@@ -1,0 +1,46 @@
+[
+  {
+    id: "@chest_rig",
+    type: "PARTIAL",
+    subtypes: ["ARMOR"],
+
+    symbol: "[",
+
+    price_postapoc: { utility: 1, longevity: 2, scarcity: 1 },
+  },
+
+  {
+    id: "@chest_rig/chassis",
+    inherit: ["@chest_rig"],
+    type: "PARTIAL",
+
+    color: "light_gray",
+
+    flags: ["CANT_WEAR", "QASM_ATTACH"],
+  },
+
+  {
+    id: "@chest_rig/harness",
+    inherit: ["@chest_rig"],
+    type: "PARTIAL",
+
+    color: "dark_gray",
+
+    flags: ["BELTED"],
+  },
+
+  {
+    id: "@chest_rig/whole",
+    inherit: ["@chest_rig"],
+    type: "PARTIAL",
+
+    color: "dark_gray",
+
+    looks_like: "vest",
+    repairs_like: "tacvest",
+
+    material: ["nylon"],
+
+    flags: ["WATER_FRIENDLY", "BELTED", "STURDY"],
+  },
+]

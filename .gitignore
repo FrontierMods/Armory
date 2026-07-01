@@ -1,5 +1,4 @@
 .vscode
-.prettierrc
+.frontier
 *.todo
 *.old
-TODO

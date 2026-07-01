@@ -1,0 +1,717 @@
+[
+  {
+    id: "@pockets",
+    type: "PARTIAL",
+
+    pocket_data: [
+      // Offensive grenade pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Offensive grenade pouch",
+
+        holster: true,
+
+        max_contains_weight: {
+          math: [
+            {
+              ref: "grenade",
+              key: "weight",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "grenade",
+              key: "volume",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        max_item_length: {
+          ref: "grenade",
+          key: "longest_side",
+        },
+
+        moves: 100,
+      },
+      // Utility grenade pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Utility grenade pouch",
+
+        holster: true,
+
+        max_contains_weight: {
+          math: [
+            {
+              // `gasbomb` is much heavier than `smokebomb`
+              ref: "gasbomb",
+              key: "weight",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "smokebomb",
+              key: "volume",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        max_item_length: {
+          ref: "smokebomb",
+          key: "longest_side",
+        },
+
+        moves: 100,
+      },
+
+      // Tall open-top rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Tall open-top rifle magazine pouch",
+
+        holster: true,
+
+        // * `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag40ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+          ],
+        },
+        max_contains_volume: {
+          ref: "stanag40ranger",
+          key: "volume",
+        },
+        min_item_length: { ref: "stanag20", key: "longest_side" },
+        max_item_length: { ref: "stanag40ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 1,
+          modifiers: ["TALL", "SOFT_RETAINER"],
+        },
+      },
+      // Hard-retainer open-top rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hard-retainer open-top rifle magazine pouch",
+
+        holster: true,
+
+        // `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+          ],
+        },
+        max_contains_volume: {
+          ref: "stanag30ranger",
+          key: "volume",
+        },
+        min_item_length: { ref: "stanag10", key: "longest_side" },
+        max_item_length: { ref: "stanag30ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 1,
+          modifiers: ["HARD_RETAINER"],
+        },
+      },
+      // Open-top rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Open-top rifle magazine pouch",
+
+        holster: true,
+
+        // `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+          ],
+        },
+        max_contains_volume: {
+          ref: "stanag30ranger",
+          key: "volume",
+        },
+        min_item_length: { ref: "stanag20", key: "longest_side" },
+        max_item_length: { ref: "stanag30ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 1,
+          modifiers: ["SOFT_RETAINER"],
+        },
+      },
+      // Buckle-closure rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Buckle-closure rifle magazine pouch",
+
+        // * `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+            // * this type of pouch is more likely to be resilient to carried weight due to the presumed sturdiness of construction
+            { op: "multiply", value: 4 },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "volume",
+            },
+            { op: "multiply", value: 2 },
+          ],
+        },
+        min_item_length: { ref: "stanag20", key: "longest_side" },
+        max_item_length: { ref: "stanag30ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "III",
+          capacity: 2,
+        },
+      },
+      // Flap-closure rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Flap-closure rifle magazine pouch",
+
+        // * `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+            // * this type of pouch is more likely to be resilient to carried weight due to the presumed sturdiness of construction
+            { op: "multiply", value: 4 },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "volume",
+            },
+            { op: "multiply", value: 2 },
+          ],
+        },
+        min_item_length: { ref: "stanag20", key: "longest_side" },
+        max_item_length: { ref: "stanag30ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "II",
+          capacity: 2,
+        },
+      },
+      // High-caliber rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "High-caliber rifle magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "4 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "falbigmag", key: "volume" },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        min_item_length: "4 in",
+        max_item_length: { ref: "falbigmag", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 1,
+          modifiers: ["TALL", "SOFT_RETAINER"],
+        },
+      },
+      // Sniper rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        /*
+          MAGAZINE POUCH
+            type: III
+            capacity: 1
+         */
+
+        description: "Sniper rifle magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "2 kg",
+        max_contains_volume: { ref: "scarhmag", key: "volume" },
+        max_item_length: { ref: "scarhmag", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "III",
+          capacity: 1,
+        },
+      },
+
+      // Double tall open-top rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Double tall open-top rifle magazine pouch",
+
+        holster: true,
+
+        // * `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag40ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "stanag40ranger",
+              key: "volume",
+            },
+            { op: "multiply", value: 2 },
+          ],
+        },
+        min_item_length: { ref: "ruger_arr_mag", key: "longest_side" },
+        max_item_length: { ref: "stanag40ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 2,
+          modifiers: ["TALL", "SOFT_RETAINER"],
+        },
+      },
+      // Double open-top rifle magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Double open-top rifle magazine pouch",
+
+        holster: true,
+
+        // * `300blk_ss` is the heaviest round that fits inside a STANAG mag
+        max_contains_weight: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "weight",
+            },
+            {
+              op: "add",
+              value: {
+                math: [
+                  {
+                    ref: "300blk_ss",
+                    type: "ITEM",
+                    key: "weight",
+                  },
+                  { op: "multiply", value: 30 },
+                ],
+              },
+            },
+          ],
+        },
+        max_contains_volume: {
+          math: [
+            {
+              ref: "stanag30ranger",
+              key: "volume",
+            },
+            { op: "multiply", value: 2 },
+          ],
+        },
+        min_item_length: { ref: "ruger_arr_mag", key: "longest_side" },
+        max_item_length: { ref: "stanag30ranger", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 2,
+          modifiers: ["SOFT_RETAINER"],
+        },
+      },
+
+      // Pistol magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        /*
+          MAGAZINE POUCH
+            type: II
+            capacity: 1
+         */
+        description: "Pistol magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            {
+              ref: "fn57mag",
+              key: "volume",
+            },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        min_item_length: "3.65 in",
+        // slightly longer than the maximum double-stack magazine size permitted with USPSA
+        // > https://uspsa.org/rules
+        max_item_length: "5.6 in",
+
+        volume_encumber_modifier: 2,
+        ripoff: 20,
+        moves: 130,
+      },
+      // Open-top pistol magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        /*
+          MAGAZINE POUCH
+            type: I
+            capacity: 1
+            modifiers:
+              - soft retainer
+         */
+        description: "Open-top pistol magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "2 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "mp5mag", key: "volume" },
+            { op: "multiply", value: 1.05 },
+          ],
+        },
+        min_item_length: "4 in",
+        max_item_length: { ref: "glockbigmag", key: "longest_side" },
+
+        volume_encumber_modifier: 1.45,
+        ripoff: 7,
+        moves: 80,
+      },
+      // Hard-retainer open-top pistol magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hard-retainer open-top pistol magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "2 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "mp5mag", key: "volume" },
+            { op: "multiply", value: 1.05 },
+          ],
+        },
+        min_item_length: "4 in",
+        max_item_length: { ref: "glockbigmag", key: "longest_side" },
+
+        magazine_pouch: {
+          type: "I",
+          capacity: 1,
+          modifiers: ["HARD_RETAINER"],
+        },
+      },
+      // Button-closure pistol magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        /*
+          MAGAZINE POUCH
+            type: II
+            capacity: 1
+            modifiers:
+              - button retainer
+         */
+        description: "Button-closure pistol magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "m9mag", key: "volume" },
+            { op: "multiply", value: 1.05 },
+          ],
+        },
+        min_item_length: "10 cm",
+        max_item_length: { ref: "m9mag", key: "longest_side" },
+
+        volume_encumber_modifier: 2,
+        ripoff: 25,
+        moves: 140,
+      },
+      // Flap-closure pistol magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        /*
+          MAGAZINE POUCH
+            type: II
+            capacity: 1
+         */
+        description: "Flap-closure pistol magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "p320mag_17rd_9x19mm", key: "volume" },
+            { op: "multiply", value: 1.05 },
+          ],
+        },
+        min_item_length: "10 cm",
+        max_item_length: { ref: "p320mag_17rd_9x19mm", key: "longest_side" },
+
+        volume_encumber_modifier: 2,
+        ripoff: 20,
+        moves: 130,
+      },
+
+      // SMG magazine pouch
+      {
+        pocket_type: "CONTAINER",
+
+        /*
+          MAGAZINE POUCH
+            type: I
+            capacity: 1
+            modifiers:
+              - soft retainer
+         */
+        description: "SMG magazine pouch",
+
+        holster: true,
+
+        max_contains_weight: "2 kg",
+        max_contains_volume: {
+          math: [
+            { ref: "mp5mag_40rd", key: "volume" },
+            { op: "multiply", value: 1.1 },
+          ],
+        },
+        min_item_length: "9 cm",
+        max_item_length: { ref: "uzimag_50rd", key: "longest_side" },
+
+        volume_encumber_modifier: 1.45,
+        ripoff: 7,
+        moves: 80,
+      },
+
+      // Side pouch hook-and-loop attachment point
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Side pouch hook-and-loop attachment point",
+
+        holster: true,
+
+        max_contains_weight: "10 kg",
+        max_contains_volume: "10 L",
+
+        flag_restriction: ["SIDE_POUCH_VELCRO"],
+
+        moves: 10,
+      },
+      // Hanging pouch hook-and-loop attachment point
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hanging pouch hook-and-loop attachment point",
+
+        holster: true,
+
+        max_contains_weight: "60 kg",
+        max_contains_volume: "15 L",
+
+        flag_restriction: ["HANGING_POUCH_VELCRO"],
+
+        moves: 10,
+      },
+
+      // QASM interface
+      {
+        pocket_type: "CONTAINER",
+
+        description: "QASM interface",
+
+        // * making this pocket ablative allows the chassis to be damaged
+        // * more importantly, it shows the chassis clearly among the worn items
+        // * the latter makes inventory management more obvious when the player is dealing with the rig
+        ablative: true,
+
+        max_contains_weight: "16 kg",
+        max_contains_volume: "16 L",
+
+        flag_restriction: ["QASM_ATTACH"],
+
+        // * chassis provide their own encumbrance
+        volume_encumber_modifier: 0,
+        // * not to upset the balance of chassis pocket moves
+        moves: 10,
+      },
+      // Slot for a gun sling
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Slot for a gun sling",
+
+        holster: true,
+
+        max_contains_weight: "8200 g",
+        max_contains_volume: "8 L",
+        max_item_length: "1200 mm",
+
+        // * since guns inherit flags from gunmods, we can use this to allow adding sling-augmented guns
+        flag_restriction: ["GUN_SLING"],
+
+        volume_encumber_modifier: 0.5,
+        moves: 30,
+      },
+
+      // Flat side pocket
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Flat side pocket",
+
+        max_contains_weight: "1 kg",
+        // * the pocket is assumed to span the entire side
+        max_contains_volume: {
+          math: [
+            "6 in",
+            { op: "multiply", value: "12 in" },
+            { op: "multiply", value: "5 mm" },
+            { op: "trim", value: 0.05 },
+          ],
+        },
+        /*
+          MAXIMUM ITEM VOLUME
+            - we use the dimensions of the New York City subway map to make sure only lean items would fit into these flat pockets
+              > https://www.amazon.com/Subway-Poster-Official-Decor-Print/dp/B0C2ZV76JV
+            - we exaggerate the height (thickness) of the reference map in order to allow thicker paper items to fit
+         */
+        max_item_volume: {
+          math: ["16 in", { op: "multiply", value: "24 in" }, { op: "multiply", value: "0.1 mm" }],
+        },
+        max_item_length: "229 mm",
+
+        moves: 250,
+      },
+    ],
+  },
+]

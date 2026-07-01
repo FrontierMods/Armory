@@ -1,50 +1,96 @@
 [
   {
-    "id": ["chestrig", "xs_chestrig", "xl_chestrig"],
+    "id": "chestrig",
     "type": "MIGRATION",
-    "replace": "placard_direct_action_tempest"
+    "replace": "placard/direct_action/tempest"
   },
   {
-    "id": ["light_load_bearing_vest"],
+    "id": "xs_chestrig",
     "type": "MIGRATION",
-    "replace": "placard_haley_molle",
-    "contents": [{ "id": "placard_haley_molle", "count": 1 }]
+    "replace": "placard/direct_action/tempest"
   },
   {
-    "id": ["load_bearing_vest"],
+    "id": "xl_chestrig",
     "type": "MIGRATION",
-    "replace": "placard_onetigris_vulture"
+    "replace": "placard/direct_action/tempest"
   },
   {
-    "id": ["heavy_load_bearing_vest"],
+    "id": "light_load_bearing_vest",
     "type": "MIGRATION",
-    "replace": "placard_tasm_mk_ii",
-    "contents": [{ "id": "placard_tasm_mk_ii", "count": 1 }]
-  },
-  {
-    "id": ["load_bearing_vest_sling"],
-    "type": "MIGRATION",
-    "replace": "placard_onetigris_vulture",
-    "contents": [{ "id": "single_sling", "count": 1 }]
-  },
-  {
-    "id": ["heavy_load_bearing_vest_sling"],
-    "type": "MIGRATION",
-    "replace": "chest_rig_condor_modular",
-    "contents": [{ "id": "single_sling", "count": 1 }]
-  },
-  {
-    "id": ["heavy_load_bearing_vest_breacher"],
-    "type": "MIGRATION",
-    "replace": "chest_rig_condor_modular",
+    "replace": "placard/haley/molle",
     "contents": [
-      { "id": "single_sling", "count": 1 },
-      { "id": "pouch_holster_magnet_hot", "count": 1 }
+      {
+        "id": "placard/haley/molle",
+        "count": 1
+      }
     ]
   },
   {
-    "id": ["tacvest", "xs_tacvest", "xl_tacvest"],
+    "id": "load_bearing_vest",
     "type": "MIGRATION",
-    "replace": "chest_rig_condor_cross_draw"
+    "replace": "placard/onetigris/vulture"
+  },
+  {
+    "id": "heavy_load_bearing_vest",
+    "type": "MIGRATION",
+    "replace": "placard/tasm/mk_ii",
+    "contents": [
+      {
+        "id": "placard/tasm/mk_ii",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "load_bearing_vest_sling",
+    "type": "MIGRATION",
+    "replace": "placard/onetigris/vulture",
+    "contents": [
+      {
+        "id": "single_sling",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "heavy_load_bearing_vest_sling",
+    "type": "MIGRATION",
+    "replace": "chest_rig/condor/modular",
+    "contents": [
+      {
+        "id": "single_sling",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "heavy_load_bearing_vest_breacher",
+    "type": "MIGRATION",
+    "replace": "chest_rig/condor/modular",
+    "contents": [
+      {
+        "id": "single_sling",
+        "count": 1
+      },
+      {
+        "id": "pouch/holster/high_order",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "tacvest",
+    "type": "MIGRATION",
+    "replace": "chest_rig/condor/cross_draw"
+  },
+  {
+    "id": "xs_tacvest",
+    "type": "MIGRATION",
+    "replace": "chest_rig/condor/cross_draw"
+  },
+  {
+    "id": "xl_tacvest",
+    "type": "MIGRATION",
+    "replace": "chest_rig/condor/cross_draw"
   }
 ]

@@ -1,51 +1,35 @@
 [
   {
-    "id": "plate_ceramic_medium_ceradyne_esapi",
-    "type": "ARMOR",
-    "category": "armor",
-
-    "//sources": [
-      "https://ciehub.info/equipment/protective/IBA/SAPI/ESAPI.html",
-      [
-        "https://www.ar15.com/forums/Armory/Ultimate-Guide-to-MILSPEC-Armor-a-work-in-progress-/10-502266/",
-        "thickness"
-      ],
-      ["TM 10-8470-210-10", "weight"]
+    "id": "plate/ceramic/esapi/medium",
+    "type": "ITEM",
+    "subtypes": [
+      "ARMOR"
     ],
-
+    "category": "armor",
     "name": {
       "str": "ESAPI medium plate"
     },
     "description": "A polygonal ballistic plate wrapped in a thin layer of nylon.  It combines a ceramic strike face with a polyethylene backer in order to achieve protection against even armor-piercing rifle rounds.  The ceramic breaks on impact, absorbing much of the damage, so while this plate is tough, it will wear out after a few hits.  Must be inserted into a plate carrier to be used.",
-
-    "//weight": [
-      "Wikipedia lists the weight of a medium-sized ESAPI as 5.5 lbs ≈ 2495 g",
-      "IOTV technical manual (TM 10-8470-210-10) lists it as 10.9 lbs per pair, or 5.45 lbs ≈ 2472 g per plate",
-      "we choose the Army source as likely to be more accurate"
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "green",
+        "name": {
+          "str": "ESAPI medium plate"
+        },
+        "description": "The standard ballistic plate issued by the U.S. Army, ESAPI -- Enhanced Small Arms Protective Insert -- is a full-cut ballistic plate with a single-curve profile, composed of a boron carbide strike face, a UHMWPE backer, and a nylon cover.  This plate has been certified ESAPI, which exceeds the civilian NIJ IV rating and provides protection against armor-piercing rifle rounds including M855A1 and M80A1.  Plates like this one are intended to be inserted into a plate carrier, where it will absorb the energy of multiple rifle rounds before requiring replacement.  On the front, it says <color_yellow>\nMEDIUM\nSTRIKE FACE\n\n\nHANDLE WITH CARE</color>\nOn the back, starting from the top, it says <color_yellow>TOP\nESAPI - REV. G\n\nU.S.</color>, as well as the name of the manufacturer -- Ceradyne, Inc. -- and its NSN.",
+        "weight": 1
+      }
     ],
-    "weight": "2472 g",
-    "//dimensions": {
-      "length": "12.5 in",
-      "width": "9.5 in",
-      "height": "0.9 in",
-      "raw": "1751 ml",
-      "trim": 0.125,
-      "notes": [
-        "while the thickness of these plates does not appear to be uniform between any two batches, we're going to assume an average of 0.9 in. of thickness"
-      ]
-    },
-    "volume": "1532 ml",
-    "longest_side": "318 mm",
-
-    "material": ["boron_carbide", "uhmwpe", "nylon"],
+    "weight": "2 kg 472 g 78 mg",
+    "material": [
+      "boron_carbide",
+      "uhmwpe",
+      "nylon"
+    ],
     "material_thickness": 22.86,
-
     "symbol": ",",
     "color": "dark_gray",
-
-    "//non_functional": "plate_ceramic_medium_ceradyne_esapi_compromised",
-    "//damage_verb": "makes a crunch, something has shifted",
-
     "armor": [
       {
         "material": [
@@ -59,14 +43,20 @@
             "covered_by_mat": 100,
             "thickness": 13.66
           },
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.1 }
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 0.1
+          }
         ],
-
         "encumbrance": 3,
-
         "coverage": 42,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_upper"]
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_upper"
+        ]
       },
       {
         "material": [
@@ -80,20 +70,29 @@
             "covered_by_mat": 100,
             "thickness": 13.66
           },
-          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.1 }
+          {
+            "type": "nylon",
+            "covered_by_mat": 100,
+            "thickness": 0.1
+          }
         ],
-
         "encumbrance": 1,
-
         "coverage": 10,
-        "covers": ["torso"],
-        "specifically_covers": ["torso_lower"]
+        "covers": [
+          "torso"
+        ],
+        "specifically_covers": [
+          "torso_lower"
+        ]
       }
     ],
-
-    "flags": ["ABLATIVE_MEDIUM", "CANT_WEAR"],
-
-    "price": "359 USD",
-    "price_postapoc": "1 USD"
+    "flags": [
+      "ABLATIVE_MEDIUM",
+      "CANT_WEAR"
+    ],
+    "price": "1 kUSD 875 USD",
+    "price_postapoc": "1 USD",
+    "volume": "1 L 532 ml",
+    "longest_side": "31 cm 8 mm"
   }
 ]

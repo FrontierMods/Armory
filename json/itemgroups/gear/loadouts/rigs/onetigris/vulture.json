@@ -1,0 +1,73 @@
+[
+  {
+    "id": "loadout/onetigris/vulture:any",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "group": "loadout/onetigris/vulture/baseline:coordinated"
+      },
+      {
+        "group": "loadout/onetigris/vulture/baseline:any"
+      }
+    ]
+  },
+  {
+    "id": "loadout/onetigris/vulture:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "group": "loadout/onetigris/vulture/baseline:coordinated"
+      }
+    ]
+  },
+  {
+    "id": "loadout/onetigris/vulture/baseline:coordinated",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "multicam",
+        "contents-group": "placard/onetigris/vulture:multicam",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "multicam_black",
+        "contents-group": "placard/onetigris/vulture:multicam_black",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "black",
+        "contents-group": "placard/onetigris/vulture:black",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "coyote",
+        "contents-group": "placard/onetigris/vulture:coyote",
+        "prob": 10
+      },
+      {
+        "item": "chest_rig/harness/x/haley",
+        "variant": "ranger",
+        "contents-group": "placard/onetigris/vulture:ranger",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "id": "loadout/onetigris/vulture/baseline:any",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "item": "chest_rig/harness/x/haley",
+        "contents-group": "placard/onetigris/vulture:any"
+      }
+    ]
+  }
+]

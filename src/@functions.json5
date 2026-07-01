@@ -1,0 +1,186 @@
+[
+  {
+    id: "dimensions/rectangle:trim",
+    type: "FUNCTION",
+    args: [
+      ["length", "string"],
+      ["width", "string"],
+      ["height", "string"],
+      ["trim", "number"],
+    ],
+    returns: {
+      math: [
+        {
+          fn: "dimensions/rectangle",
+          args: [{ arg: "length" }, { arg: "width" }, { arg: "height" }],
+        },
+        { fn: "trim", args: [{ arg: "trim" }] },
+      ],
+    },
+  },
+  {
+    id: "dimensions/rectangle",
+    type: "FUNCTION",
+    args: [
+      ["length", "string"],
+      ["width", "string"],
+      ["height", "string"],
+    ],
+    returns: {
+      math: [
+        { arg: "length" },
+        { op: "multiply", value: { arg: "width" } },
+        { op: "multiply", value: { arg: "height" } },
+      ],
+    },
+  },
+  {
+    id: "trim",
+    type: "FUNCTION",
+    args: [["trim", "number"]],
+    returns: { op: "trim", value: { arg: "trim" } },
+  },
+
+  {
+    id: "coverage",
+    type: "FUNCTION",
+    args: [
+      ["percentage_end", "number"],
+      ["percentage_side", "number"],
+      ["bodypart", "string"],
+      ["section", "string"],
+    ],
+    returns: {
+      math: [
+        {
+          fn: "coverage/end",
+          args: [
+            { arg: "percentage_end" },
+            { arg: "bodypart" },
+            { arg: "section" },
+          ],
+        },
+        {
+          op: "add",
+          value: {
+            fn: "coverage/side",
+            args: [
+              { arg: "percentage_side" },
+              { arg: "bodypart" },
+              { arg: "section" },
+            ],
+          },
+        },
+        { op: "round" },
+      ],
+    },
+  },
+  {
+    id: "coverage/end",
+    type: "FUNCTION",
+    args: [
+      ["percentage", "number"],
+      ["bodypart", "string"],
+      ["section", "string"],
+    ],
+    returns: {
+      math: [
+        { arg: "percentage" },
+        {
+          op: "multiply",
+          value: {
+            ref: "@constants",
+            path: ["coverage", { arg: "bodypart" }, "end", "total"],
+          },
+        },
+        {
+          op: "multiply",
+          value: {
+            ref: "@constants",
+            path: [
+              "coverage",
+              { arg: "bodypart" },
+              "end",
+              "parts",
+              { arg: "section" },
+            ],
+          },
+        },
+        { op: "multiply", value: 100 },
+      ],
+    },
+  },
+  {
+    id: "coverage/side",
+    type: "FUNCTION",
+    args: [
+      ["percentage", "number"],
+      ["bodypart", "string"],
+      ["section", "string"],
+    ],
+    returns: {
+      math: [
+        { arg: "percentage" },
+        {
+          op: "multiply",
+          value: {
+            ref: "@constants",
+            path: ["coverage", { arg: "bodypart" }, "side", "total"],
+          },
+        },
+        {
+          op: "multiply",
+          value: {
+            ref: "@constants",
+            path: [
+              "coverage",
+              { arg: "bodypart" },
+              "side",
+              "parts",
+              { arg: "section" },
+            ],
+          },
+        },
+        { op: "multiply", value: 100 },
+      ],
+    },
+  },
+
+  {
+    id: "pals/columns",
+    type: "FUNCTION",
+    args: [["columns", "number"]],
+    returns: {
+      math: [
+        { ref: "@constants", path: ["size", "pals", "column"] },
+        { op: "multiply", value: { arg: "columns" } },
+      ],
+    },
+  },
+  {
+    id: "pals/rows",
+    type: "FUNCTION",
+    args: [["rows", "number"]],
+    returns: {
+      math: [
+        { ref: "@constants", path: ["size", "pals", "row"] },
+        { op: "multiply", value: { arg: "rows" } },
+      ],
+    },
+  },
+
+  {
+    id: "chassis/weight",
+    type: "FUNCTION",
+    args: [["weight", "string"]],
+    returns: {
+      math: [
+        { arg: "weight" },
+        {
+          op: "subtract",
+          value: { ref: "chest_rig/harness/x/haley", key: "weight" },
+        },
+      ],
+    },
+  },
+]

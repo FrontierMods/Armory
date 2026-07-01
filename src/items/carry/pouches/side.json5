@@ -1,0 +1,187 @@
+[
+  {
+    // these pouches come in left- and right-hand configurations, and are generally sold in complementary pairs throughout different manufacturer stores
+    // we model them as achiral, for ease of inventory management
+
+    id: "pouch/side/perroz",
+    type: "ITEM",
+
+    category: "container",
+
+    /*
+      SOURCES
+        https://perrozdesigns.com/products/side-pouch-set-short
+
+        https://www.amazon.co.jp/-/en/Ferro-Wingman-BKMC-Type-Pouch/dp/B0C23GKQGZ
+        - weight reference
+    */
+
+    name: {
+      str: "vest side pouch",
+      str_pl: "vest side pouches",
+    },
+    description: "A side pouch for a plate carrier or a ballistic vest.  Allows storing a bit extra stuff, up to and including a rifle magazine.  Can attach to vests with hook-and-loop mounts.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: [["multicam", 2], "black", "coyote", "ranger", "white", "grey"],
+
+        name: {
+          str: "Perroz Designs side pouch",
+          str_pl: "Perroz Designs side pouches",
+        },
+        description: "A side pouch for a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces under the cummerbund flap, allowing the wearer to take on a little more stuff, including rifle magazines.",
+      },
+    ],
+
+    // the weight for this specific model doesn't appear to be available, so we reference it off of a similar item from a different manufacturer
+    weight: "2.5 oz",
+    dimensions: [
+      {
+        // * POUCH
+        type: "rectangle",
+
+        length: "5.5 in",
+        width: "4 in",
+        height: "3.75 mm",
+        trim: 0.0125,
+        soft: true,
+      },
+      {
+        // * VELCRO PANEL
+        type: "rectangle",
+
+        length: "4.15 in",
+        width: "2.8 in",
+        height: "1 mm",
+        trim: 0,
+        soft: true,
+      },
+    ],
+
+    symbol: "[",
+    color: "dark_gray",
+
+    material: ["nylon"],
+    looks_like: "ammo_satchel",
+    repairs_like: "ammo_satchel",
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hook-and-loop side pouch",
+
+        max_contains_weight: "2 kg",
+        max_contains_volume: {
+          math: [
+            {
+              ref: "stanag30",
+              key: "volume",
+            },
+            { op: "multiply", value: 2 },
+          ],
+        },
+        min_item_length: {
+          // the radio is shorter than most mags in the base game
+          ref: "two_way_radio",
+          key: "longest_side",
+        },
+        max_item_length: {
+          ref: "stanag40ranger",
+          key: "longest_side",
+        },
+
+        moves: 100,
+      },
+    ],
+
+    flags: ["WATER_FRIENDLY", "CANT_WEAR", "SIDE_POUCH_VELCRO"],
+
+    price: "43 USD 60 cents" /* 60 CAD */,
+    price_postapoc: "1 USD",
+  },
+  {
+    id: "pouch/side/ferro/wingthing",
+    type: "ITEM",
+
+    category: "container",
+
+    /*
+      SOURCES
+        https://ferroconcepts.com/collections/pockets/products/wingthing
+
+        https://secretsquirrel.com.ua/snaryazhenie/ohliad-platformy-ferro-concepts-wingthing/
+        - weight
+    */
+
+    name: {
+      str: "hook-and-loop sheath side mount",
+    },
+    description: "A thin plastic plate with a set of screw holes and a hook-and-loop exterior.  Can hold a Kydex knife sheath or a single-slot MOLLE pouch, in order to carry a knife on the side of a plate carrier or ballistic vest.  Can attach to vests with hook-and-loop mounts.",
+
+    variant_type: "gun",
+    variants: [
+      {
+        from: ["black", "coyote"],
+
+        name: {
+          str: "Ferro Concepts hook-and-loop sheath side mount",
+        },
+        description: "A thin elongated plastic fold with a set of screw holes and a hook-and-loop exterior.  Can hold a single Kydex knife sheath or a single-slot MOLLE pouch, to be worn on a plate carrier or a ballistic vest.  Attaches to hook-and-loop surfaces.  Can be worn underneath other hook-and-loop equipment.",
+      },
+    ],
+
+    weight: "20 g",
+    dimensions: {
+      type: "area",
+
+      area: "29.5 in2",
+      // assumed
+      length: "1.5 mm",
+      // for the fact that the PALS-capable area is much thinner
+      trim: 0.45,
+    },
+    longest_side: "8.3 in",
+
+    symbol: "[",
+    color: "dark_gray",
+
+    material: ["thermo_resin"],
+    looks_like: "ammo_satchel",
+    repairs_like: "ammo_satchel",
+
+    pocket_data: [
+      {
+        pocket_type: "CONTAINER",
+
+        description: "Hook-and-loop sheath mount",
+
+        holster: true,
+
+        max_contains_weight: "1 kg",
+        max_contains_volume: "650 ml",
+        max_item_length: "9 in",
+
+        flag_restriction: ["SCREW_MOUNTABLE_SHEATH", "PALS_SMALL"],
+        moves: 10,
+      },
+    ],
+
+    flags: ["WATER_FRIENDLY", "CANT_WEAR", "SIDE_POUCH_VELCRO"],
+
+    use_action: [
+      {
+        type: "attach_molle",
+        size: 1,
+      },
+      {
+        type: "detach_molle",
+      },
+    ],
+
+    price: "35 USD",
+    price_postapoc: "1 USD",
+  },
+]

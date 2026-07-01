@@ -1,0 +1,72 @@
+[
+  // * obsolete recipes which return industrially-crafted items
+  {
+    id: "nested_holsters",
+    type: "nested_category",
+    inherit: "nested_holsters",
+
+    patch: [
+      {
+        op: "drop",
+        key: "nested_category_data",
+        value: [
+          "XL_holster",
+          "XL_nylon_holster",
+          "suspenders_holster",
+          "holster",
+          "western_holster",
+          "tactical_holster",
+          "shoulder_holster",
+          "back_holster",
+          "bholster",
+          "bootstrap",
+          "bbholster",
+          "nylon_holster",
+          "sholster",
+        ],
+      },
+    ],
+  },
+  {
+    // * obsolete recipes which return industrially-crafted items
+    id: "nested_belts",
+    type: "nested_category",
+    inherit: "nested_belts",
+
+    patch: [
+      {
+        op: "drop",
+        key: "nested_category_data",
+        value: ["webbing_belt", "police_belt"],
+      },
+    ],
+  },
+  {
+    // * obsolete recipes which return industrially-crafted items
+    id: "nested_pouch",
+    type: "nested_category",
+    inherit: "nested_pouch",
+
+    patch: [
+      {
+        op: "drop",
+        key: "nested_category_data",
+        value: [
+          "legrig",
+          "dump_pouch",
+          "legpouch",
+          "legpouch_large",
+          "chestpouch",
+          "grenade_pouch",
+          "grenadebandolier",
+          "tactical_grenade_pouch",
+          "flintlock_pouch",
+          "tactical_shotshell_pouch",
+          "tool_pouch",
+          "triple_stacker_pouch",
+          "ammo_pouch",
+        ],
+      },
+    ],
+  },
+]
