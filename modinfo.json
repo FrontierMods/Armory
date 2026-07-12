@@ -11,7 +11,7 @@
 
     "category": "items",
 
-    "dependencies": ["dda", "frontier_core", "frontier_materials"],
+    "dependencies": ["dda", "frontier", "materials"],
 
     "path": "json"
   }
